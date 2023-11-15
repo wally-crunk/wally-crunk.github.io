@@ -501,7 +501,7 @@ table.box2 {
 
 #logo a,
 #extra5 {
-  background: url("https://wally-crunk.github.io/ops-loop.svg") right no-repeat; }
+  background: url("https://wally-crunk.github.io/ops-lockup.svg") right no-repeat; }
 
 #logo > a {
   background-size: 200px;
@@ -1998,7 +1998,7 @@ blockquote {
     top: 0; }
 
   #extra5 {
-    background-image: url(https://wally-crunk.github.io/ops-lockup.svg);
+    background-image: url(https://wally-crunk.github.io/ops-loop.svg);
     background-position: 0;
     background-size: auto 24px;
     background-repeat: no-repeat;
