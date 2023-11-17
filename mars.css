@@ -548,35 +548,35 @@ table.box2 {
 }
 
 .read {
-  background: url(ike/document.svg) center no-repeat;
+  background: url(https://wally-crunk.github.io/ike/document.svg) center no-repeat;
 }
 
 .unread {
-  background: url(ike/document-round.svg) center no-repeat;
+  background: url(https://wally-crunk.github.io/ike/document-round.svg) center no-repeat;
 }
 
 .read_locked {
-  background: url(ike/lock.svg) center no-repeat;
+  background: url(https://wally-crunk.github.io/ike/lock.svg) center no-repeat;
 }
 
 .unread_locked {
-  background: url(ike/lock-round.svg) center no-repeat;
+  background: url(https://wally-crunk.github.io/ike/lock-round.svg) center no-repeat;
 }
 
 .read_sticky {
-  background: url(ike/pin.svg) center no-repeat;
+  background: url(https://wally-crunk.github.io/ike/pin.svg) center no-repeat;
 }
 
 .unread_sticky {
-  background: url(ike/pin-round.svg) center no-repeat;
+  background: url(https://wally-crunk.github.io/ike/pin-round.svg) center no-repeat;
 }
 
 .read_locked_sticky {
-  background: url(ike/lock-pin.svg) center no-repeat;
+  background: url(https://wally-crunk.github.io/ike/lock-pin.svg) center no-repeat;
 }
 
 .unread_locked_sticky {
-  background: url(ike/lock-pin-round.svg) center no-repeat;
+  background: url(https://wally-crunk.github.io/ike/lock-pin-round.svg) center no-repeat;
 }
 
 #header,
@@ -602,7 +602,7 @@ table.box2 {
 
 #logo a,
 #extra5 {
-  background: url(ike/ops-lockup.svg) right no-repeat;
+  background: url(https://wally-crunk.github.io/ike/ops-lockup.svg) right no-repeat;
 }
 
 #logo > a {
@@ -1614,7 +1614,7 @@ blockquote {
 }
 
 #userinfo_minor:hover::before {
-  background: url(ike/ops-loop.svg) 21px 20px no-repeat;
+  background: url(https://wally-crunk.github.io/ike/ops-loop.svg) 21px 20px no-repeat;
 }
 
 #menu > ul a:hover {
@@ -1739,7 +1739,7 @@ blockquote {
     color: #c7fada;
   }
   #userinfo_minor::before {
-    background: url(ike/chevrons-bottom.svg) 21px 20px no-repeat;
+    background: url(https://wally-crunk.github.io/ike/chevrons-bottom.svg) 21px 20px no-repeat;
     display: block;
     height: 50px;
     line-height: 50px;
@@ -2012,7 +2012,7 @@ blockquote {
   .td_snatched.m_td_right::before,
   .td_seeders.m_td_right::before,
   .td_leechers.m_td_right::before {
-    background: left/10px no-repeat url(ike/arrow-snatches.svg);
+    background: left/10px no-repeat url(https://wally-crunk.github.io/ike/arrow-snatches.svg);
     color: #fff;
     content: ":";
     filter: brightness(80%);
@@ -2022,10 +2022,10 @@ blockquote {
     width: 14px;
   }
   .td_seeders.m_td_right::before {
-    background-image: url(ike/arrow-up-round.svg);
+    background-image: url(https://wally-crunk.github.io/ike/arrow-up-round.svg);
   }
   .td_leechers.m_td_right::before {
-    background-image: url(ike/arrow-down-round.svg);
+    background-image: url(https://wally-crunk.github.io/ike/arrow-down-round.svg);
   }
   .m_table.checkboxes td:first-child {
     display: block;
@@ -2281,7 +2281,7 @@ blockquote {
     width: 100vw;
   }
   #extra5 {
-    background-image: url(ike/ops-loop.svg);
+    background-image: url(https://wally-crunk.github.io/ike/ops-loop.svg);
     background-position: left;
     background-size: auto 18px;
     height: 32px;
