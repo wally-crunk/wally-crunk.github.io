@@ -572,11 +572,11 @@ table.box2 {
 }
 
 .read_locked_sticky {
-  background: url(https://wally-crunk.github.io/ike/lock-pin.svg) center no-repeat;
+  background: url(https://wally-crunk.github.io/ike/pin-and-lock.svg) center no-repeat;
 }
 
 .unread_locked_sticky {
-  background: url(https://wally-crunk.github.io/ike/lock-pin-round.svg) center no-repeat;
+  background: url(https://wally-crunk.github.io/ike/pin-and-lock-round.svg) center no-repeat;
 }
 
 #header,
