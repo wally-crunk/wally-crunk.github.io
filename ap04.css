@@ -84,7 +84,7 @@ textarea {
 }
 
 body {
-  background-color: #1d1c1d;
+  background-color: #041813;
   box-sizing: border-box;
   color: #b9bdbd;
   font-size: 12px;
@@ -111,7 +111,7 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-  color: #c5b09b;
+  color: #83e4a6;
 }
 
 h1,
@@ -130,20 +130,20 @@ h5 {
 }
 
 a {
-  color: #f4f4f4;
+  color: #f0f0f0;
   text-decoration: none;
 }
 
 a:hover {
-  color: #eedfd1;
+  color: #c7fada;
 }
 
 svg|a {
-  fill: #f4f4f4;
+  fill: #f0f0f0;
 }
 
 svg|a:hover {
-  fill: #eedfd1;
+  fill: #c7fada;
 }
 
 b,
@@ -172,14 +172,14 @@ li:last-child {
 }
 
 blockquote {
-  background-color: #323132;
+  background-color: #33363d;
   border: 1px dashed rgba(255, 255, 255, 0.25);
   margin: 12px;
   padding: 12px;
 }
 
 ::selection {
-  background-color: rgba(180, 160, 139, 0.6);
+  background-color: rgba(105, 217, 146, 0.6);
   color: #fff;
 }
 
@@ -190,7 +190,7 @@ form input {
 table,
 table .rowa:nth-child(even),
 table .rowb:nth-child(even) {
-  background-color: #2b2a2b;
+  background-color: #212A2D;
 }
 
 table {
@@ -201,12 +201,12 @@ table {
 
 table .rowa,
 table .rowb {
-  border-top: 2px solid #242324;
+  border-top: 2px solid #262e27;
 }
 
 table .rowa:nth-child(odd),
 table .rowb:nth-child(odd) {
-  background-color: #383738;
+  background-color: #252F32;
 }
 
 table ul.options_list {
@@ -216,7 +216,7 @@ table ul.options_list {
 
 .colhead,
 .colhead_dark {
-  background-color: #383738;
+  background-color: #252F32;
   line-height: 18px;
 }
 
@@ -251,11 +251,11 @@ td:last-child {
 }
 
 form {
-  background-color: #2b2a2b;
+  background-color: #1B2426;
 }
 
 form table td.label {
-  color: #949494;
+  color: #959a9e;
   padding-top: 9px;
   font-weight: 600;
   text-align: right;
@@ -272,10 +272,10 @@ textarea {
 button,
 input[type=button],
 input[type=submit] {
-  background: linear-gradient(#f4f4f4, #b8b8b8);
+  background: linear-gradient(#f0f0f0, #b8b8b8);
   border: none;
   border-radius: 1.5px;
-  color: #383738;
+  color: #252F32;
   cursor: pointer;
   font-weight: 600;
   height: 32px;
@@ -285,7 +285,7 @@ input[type=submit] {
 button:active,
 input[type=button]:active,
 input[type=submit]:active {
-  background: linear-gradient(#b8b8b8, #f4f4f4);
+  background: linear-gradient(#b8b8b8, #f0f0f0);
 }
 
 input[type=email],
@@ -294,7 +294,7 @@ input[type=text],
 input[type=search],
 select,
 textarea {
-  background: #383738;
+  background: #252F32;
   border: 1px solid rgba(255, 255, 255, 0.08);
   color: #c6c9c9;
   height: 32px;
@@ -308,7 +308,7 @@ input[type=search]:focus,
 select:focus,
 textarea:focus {
   border: 1px solid rgba(255, 255, 255, 0.2);
-  color: #f4f4f4;
+  color: #f0f0f0;
 }
 
 textarea {
@@ -364,7 +364,7 @@ span.size10 {
 }
 
 strong.important_text {
-  color: #e74e4e;
+  color: #e85050;
 }
 
 strong.important_text_alt {
@@ -379,7 +379,7 @@ strong.important_text_alt {
 .r02,
 .r03,
 .warning {
-  color: #e74e4e;
+  color: #e85050;
 }
 
 .r04,
@@ -388,7 +388,7 @@ strong.important_text_alt {
 .r07,
 .r08,
 .r09 {
-  color: #e1b661;
+  color: #e3ba65;
 }
 
 .r10,
@@ -414,7 +414,7 @@ strong.important_text_alt {
 .vote_artist_down,
 .vote_tag_down {
   font-weight: bolder;
-  color: #e74e4e;
+  color: #e85050;
 }
 
 #wrapper {
@@ -435,7 +435,7 @@ strong.important_text_alt {
 
 .box,
 .box2 {
-  background-color: #2b2a2b;
+  background-color: #1B2426;
   margin-bottom: 8px;
   margin-top: 8px;
 }
@@ -446,7 +446,7 @@ table.box2 {
 }
 
 .head {
-  background-color: #383738;
+  background-color: #252F32;
   line-height: 18px;
 }
 
@@ -467,7 +467,7 @@ table.box2 {
 }
 
 .autocomplete-suggestions {
-  background-color: #f4f4f4;
+  background-color: #f0f0f0;
   border: none;
   color: #26282e;
   margin-top: 4px;
@@ -479,7 +479,7 @@ table.box2 {
 }
 
 .autocomplete-suggestions .autocomplete-suggestion.autocomplete-selected {
-  background-color: #eedfd1;
+  background-color: #c7fada;
 }
 
 .autocomplete-suggestions .autocomplete-suggestion strong {
@@ -487,7 +487,7 @@ table.box2 {
 }
 
 .forum_post.forum_unread {
-  border-top: 2px solid #eedfd1;
+  border-top: 2px solid #c7fada;
 }
 
 .forum_post .avatar {
@@ -548,35 +548,35 @@ table.box2 {
 }
 
 .read {
-  background: url(https://wally-crunk.github.io/ike/document.svg) center no-repeat;
+  background: url("https://wally-crunk.github.io/ike/document.svg") center no-repeat;
 }
 
 .unread {
-  background: url(https://wally-crunk.github.io/ike/document-round.svg) center no-repeat;
+  background: url("https://wally-crunk.github.io/ike/document-round.svg") center no-repeat;
 }
 
 .read_locked {
-  background: url(https://wally-crunk.github.io/ike/lock.svg) center no-repeat;
+  background: url("https://wally-crunk.github.io/ike/lock.svg") center no-repeat;
 }
 
 .unread_locked {
-  background: url(https://wally-crunk.github.io/ike/lock-round.svg) center no-repeat;
+  background: url("https://wally-crunk.github.io/ike/lock-round.svg") center no-repeat;
 }
 
 .read_sticky {
-  background: url(https://wally-crunk.github.io/ike/pin.svg) center no-repeat;
+  background: url("https://wally-crunk.github.io/ike/pin.svg") center no-repeat;
 }
 
 .unread_sticky {
-  background: url(https://wally-crunk.github.io/ike/pin-round.svg) center no-repeat;
+  background: url("https://wally-crunk.github.io/ike/pin-round.svg") center no-repeat;
 }
 
 .read_locked_sticky {
-  background: url(https://wally-crunk.github.io/ike/pin-and-lock.svg) center no-repeat;
+  background: url("https://wally-crunk.github.io/ike/pin-and-lock.svg") center no-repeat;
 }
 
 .unread_locked_sticky {
-  background: url(https://wally-crunk.github.io/ike/pin-and-lock-round.svg) center no-repeat;
+  background: url("https://wally-crunk.github.io/ike/pin-and-lock-round.svg") center no-repeat;
 }
 
 #header,
@@ -602,7 +602,7 @@ table.box2 {
 
 #logo a,
 #extra5 {
-  background: url(https://wally-crunk.github.io/ike/ops-lockup.svg) right no-repeat;
+  background: url("https://wally-crunk.github.io/ike/ops-lockup.svg") right no-repeat;
 }
 
 #logo > a {
@@ -637,7 +637,7 @@ table.box2 {
 #menu > ul a:hover,
 #userinfo_minor:hover a:hover,
 #userinfo_username:hover a:hover {
-  background-color: #eedfd1;
+  background-color: #c7fada;
 }
 
 #nav_index {
@@ -694,7 +694,7 @@ table.box2 {
 
 #searchbars > ul {
   align-items: center;
-  background-color: #383738;
+  background-color: #252F32;
   display: flex;
   display: -ms-flexbox;
   -ms-flex-align: center;
@@ -713,44 +713,44 @@ table.box2 {
 }
 
 #searchbars > ul input {
-  background-color: #2b2a2b;
+  background-color: #1B2426;
   width: 100%;
 }
 
 #menu li:nth-child(2) {
-  background-color: #8e6354;
+  background-color: #0a3a2e;
 }
 
 #menu li:nth-child(3) {
-  background-color: #8a6152;
+  background-color: #0c4a3b;
 }
 
 #menu li:nth-child(4) {
-  background-color: #845c4f;
+  background-color: #0f5b48;
 }
 
 #menu li:nth-child(5) {
-  background-color: #7f574c;
+  background-color: #126c56;
 }
 
 #menu li:nth-child(6) {
-  background-color: #785248;
+  background-color: #157d63;
 }
 
 #menu li:nth-child(7) {
-  background-color: #734d45;
+  background-color: #188e70;
 }
 
 #menu li:nth-child(8) {
-  background-color: #6d4942;
+  background-color: #1a9f7d;
 }
 
 #menu li:nth-child(9) {
-  background-color: #6a4640;
+  background-color: #1daf8b;
 }
 
 #userinfo_username {
-  background-color: #66433e;
+  background-color: #20c098;
   right: 50px;
 }
 
@@ -765,7 +765,7 @@ table.box2 {
 }
 
 .linkbox > strong {
-  color: #c5b09b;
+  color: #83e4a6;
 }
 
 #footer,
@@ -814,14 +814,14 @@ table.box2 {
 
 #noty_bottomRight_layout_container > li {
   background: 0 0 !important;
-  border: 2px solid #f4f4f4 !important;
+  border: 2px solid #f0f0f0 !important;
   border-radius: 0 !important;
   box-shadow: 0 0 32px rgba(0, 0, 0, 0.25) !important;
 }
 
 #noty_bottomRight_layout_container .noty_message {
-  background-color: #f4f4f4 !important;
-  color: #1d1c1d !important;
+  background-color: #f0f0f0 !important;
+  color: #041813 !important;
   font-weight: 700;
   padding: 0 !important;
 }
@@ -832,17 +832,17 @@ table.box2 {
 }
 
 #noty_bottomRight_layout_container .noty_buttons {
-  background-color: #2b2a2b !important;
+  background-color: #1B2426 !important;
   border: none !important;
   padding: 8px !important;
 }
 
 #noty_bottomRight_layout_container .noty_buttons a {
-  color: #f4f4f4 !important;
+  color: #f0f0f0 !important;
 }
 
 #noty_bottomRight_layout_container .noty_buttons a:hover {
-  color: #eedfd1 !important;
+  color: #c7fada !important;
 }
 
 #noty_bottomRight_layout_container .brackets {
@@ -998,11 +998,11 @@ div#flip_view_1 div#similar-artist .name {
 }
 
 .torrent_table {
-  background-color: #242324;
+  background-color: #262e27;
 }
 
 .torrent_table tr:not(.colhead):not(.colhead_dark) {
-  border-top: 2px solid #242324;
+  border-top: 2px solid #262e27;
 }
 
 .torrent_table tr .number_column:not(:last-child) {
@@ -1010,16 +1010,16 @@ div#flip_view_1 div#similar-artist .name {
 }
 
 .torrent_table .group {
-  background-color: #383738;
+  background-color: #252F32;
 }
 
 .group_torrent {
-  background-color: #2b2a2b;
+  background-color: #1B2426;
 }
 
 .group_torrent.edition,
 .torrent {
-  background-color: #323132;
+  background-color: #1F282B;
 }
 
 .torrentdetails .linkbox {
@@ -1048,18 +1048,18 @@ div#flip_view_1 div#similar-artist .name {
 }
 
 .tags a {
-  color: #949494;
+  color: #959a9e;
   font-size: 11px;
 }
 
 .tags a:hover {
-  color: #eedfd1;
+  color: #c7fada;
 }
 
 .group_info > span:first-child,
 .group_torrent td:first-child > span,
 .torrent_links_block {
-  color: #949494;
+  color: #959a9e;
   float: right;
   margin-right: 4px;
 }
@@ -1140,7 +1140,7 @@ div#flip_view_1 div#similar-artist .name {
 .cats_comics,
 .cats_ebooks,
 .cats_elearningvideos {
-  border-right: 2px solid #1d1c1d;
+  border-right: 2px solid #041813;
   bottom: 0;
   left: auto;
   opacity: 0.35;
@@ -1183,14 +1183,14 @@ div#flip_view_1 div#similar-artist .name {
 }
 
 .tooltipster-default {
-  background-color: #1d1c1d;
-  border: 0 solid #c5b09b;
+  background-color: #041813;
+  border: 0 solid #83e4a6;
   border-radius: 2.5px;
   color: #c6c9c9;
 }
 
 .tooltipster-default .tooltipster-content {
-  background-color: #1d1c1d;
+  background-color: #041813;
   color: #c6c9c9;
   font-size: 12px;
   line-height: 1.4;
@@ -1198,14 +1198,14 @@ div#flip_view_1 div#similar-artist .name {
 }
 
 .tooltipster-default .tooltipster-content a {
-  background-color: #1d1c1d;
+  background-color: #041813;
   color: #c6c9c9;
   font-weight: 600;
 }
 
 .alertbar,
 .tooltipster-default .tooltipster-content a:hover {
-  color: #c5b09b;
+  color: #83e4a6;
 }
 
 #content .header > h1,
@@ -1296,7 +1296,7 @@ ul.collage_images li a > span {
 
 #userform #settings_sections h2 a,
 .rule_short {
-  color: #f4f4f4;
+  color: #f0f0f0;
 }
 
 .poll li {
@@ -1304,14 +1304,14 @@ ul.collage_images li a > span {
 }
 
 .poll .graph {
-  background-color: rgba(197, 176, 155, 0.1);
+  background-color: rgba(131, 228, 166, 0.1);
   display: block;
   height: 8px;
   margin-bottom: 12px;
 }
 
 .poll .graph span {
-  background-color: #c5b09b;
+  background-color: #83e4a6;
   display: block;
   float: left;
   height: 8px;
@@ -1357,7 +1357,7 @@ ul.collage_images li a > span {
 
 #footer {
   width: 100%;
-  color: #949494;
+  color: #959a9e;
   font-synthesis: 11px;
   margin: 32px auto 16px;
 }
@@ -1372,7 +1372,7 @@ ul.collage_images li a > span {
 }
 
 #discog_table > div.box.center {
-  background-color: #383738;
+  background-color: #252F32;
   padding: 12px;
   text-align: left;
 }
@@ -1395,16 +1395,16 @@ ul.collage_images li a > span {
 }
 
 #musicbrainz_popup {
-  color: #1d1c1d;
+  color: #041813;
   font-weight: 600;
 }
 
 #musicbrainz_popup a {
-  color: #1d1c1d;
+  color: #041813;
 }
 
 #musicbrainz_popup a:hover {
-  color: #c5b09b;
+  color: #83e4a6;
 }
 
 #musicbrainz_popup .brackets {
@@ -1478,7 +1478,7 @@ ul.collage_images li a > span {
 }
 
 #userform #settings_sections h2 a:hover {
-  color: #eedfd1;
+  color: #c7fada;
 }
 
 #userform #settings_sections input {
@@ -1490,7 +1490,7 @@ ul.collage_images li a > span {
 }
 
 #dnulist tr:not(.colhead):not(.colhead_dark):nth-child(odd) {
-  background-color: #323132;
+  background-color: #33363d;
 }
 
 #menu > ul a:hover,
@@ -1550,20 +1550,20 @@ ul.collage_images li a > span {
 
 .box table:not(.layout),
 .box2 table:not(.layout) {
-  border: 2px solid #242324;
+  border: 2px solid #262e27;
   margin: 8px 0;
 }
 
 span[style*="color: green"] {
-  color: #4eb44e !important;
+  color: #4fb650 !important;
 }
 
 span[style*="color: red"] {
-  color: #e74e4e !important;
+  color: #e85050 !important;
 }
 
 span[style*="color: blue"] {
-  color: #4e4ee7 !important;
+  color: #4f50e9 !important;
 }
 
 .filelist_table td,
@@ -1581,7 +1581,7 @@ blockquote {
 .reportinfo_table,
 .torrentdetails,
 blockquote {
-  background-color: #383738;
+  background-color: #252F32;
 }
 
 #bookmarks #torrent_table tr:not(.colhead):not(.colhead_dark) td:nth-child(2) {
@@ -1614,7 +1614,7 @@ blockquote {
 }
 
 #userinfo_minor:hover::before {
-  background: url(https://wally-crunk.github.io/ike/ops-loop.svg) 21px 20px no-repeat;
+  background: url("https://wally-crunk.github.io/ike/ops-loop.svg") 21px 20px no-repeat;
 }
 
 #menu > ul a:hover {
@@ -1623,7 +1623,7 @@ blockquote {
 
 #userinfo_minor:hover a,
 #userinfo_username:hover a {
-  color: #f4f4f4;
+  color: #f0f0f0;
 }
 
 #searchbars .search_form {
@@ -1637,7 +1637,7 @@ blockquote {
 }
 
 #searchbars .search_form input:focus {
-  background: #242324;
+  background: #262e27;
 }
 
 .sidebar {
@@ -1736,10 +1736,10 @@ blockquote {
   }
   #menu > ul > #nav_staff > a:hover {
     background-color: transparent;
-    color: #eedfd1;
+    color: #c7fada;
   }
   #userinfo_minor::before {
-    background: url(https://wally-crunk.github.io/ike/chevrons-bottom.svg) 21px 20px no-repeat;
+    background: url("https://wally-crunk.github.io/ike/chevrons-bottom.svg") 21px 20px no-repeat;
     display: block;
     height: 50px;
     line-height: 50px;
@@ -1756,7 +1756,7 @@ blockquote {
     margin-left: 100px;
   }
   #userinfo_minor {
-    background-color: #63403c;
+    background-color: #23d1a5;
     border-radius: 0 5px 0 0;
     right: 0;
   }
@@ -1774,10 +1774,10 @@ blockquote {
     right: 0;
   }
   #userinfo_minor:hover {
-    background-color: #794e49;
+    background-color: #189273;
   }
   #userinfo_username:hover {
-    background-color: #875752;
+    background-color: #16866a;
   }
   .settings_sidebar {
     margin-left: 8px;
@@ -2012,7 +2012,7 @@ blockquote {
   .td_snatched.m_td_right::before,
   .td_seeders.m_td_right::before,
   .td_leechers.m_td_right::before {
-    background: left/10px no-repeat url(https://wally-crunk.github.io/ike/arrow-snatches.svg);
+    background: left/10px no-repeat url("https://wally-crunk.github.io/ike/arrow-snatches.svg");
     color: #fff;
     content: ":";
     filter: brightness(80%);
@@ -2022,10 +2022,10 @@ blockquote {
     width: 14px;
   }
   .td_seeders.m_td_right::before {
-    background-image: url(https://wally-crunk.github.io/ike/arrow-up-round.svg);
+    background-image: url("https://wally-crunk.github.io/ike/arrow-up-round.svg");
   }
   .td_leechers.m_td_right::before {
-    background-image: url(https://wally-crunk.github.io/ike/arrow-down-round.svg);
+    background-image: url("https://wally-crunk.github.io/ike/arrow-down-round.svg");
   }
   .m_table.checkboxes td:first-child {
     display: block;
@@ -2242,15 +2242,35 @@ blockquote {
   /* END rules */
   /* BEGIN site header */
   #header {
-    background: #6d4942;
-    bottom: 120%;
-    height: 100%;
+    background: #1a9f7d;
+    top: 0;
+    height: 0;
     left: 0;
     position: fixed;
     transform: translateY(0);
-    transition: transform 200ms;
+    transition: 200ms;
     width: 100%;
-    z-index: 100;
+    z-index: 1000;
+    padding-bottom: 32px;
+    opacity: 0;
+  }
+  #header:hover {
+    height: 43%;
+    opacity: 1;
+    transition: height 0.2s;
+  }
+  #extra1 {
+    position: fixed;
+    top: 5px;
+    left: calc(50% - 12.5px);
+    display: block;
+    opacity: 1 !important;
+    width: 25px;
+    height: 25px;
+    background-image: url("https://i.postimg.cc/Tw47V1VN/arrow-down.gif");
+    background-size: contain;
+    z-index: 500;
+    pointer-events: none;
   }
   /* BEGIN hamburger bar */
   #logo {
@@ -2270,47 +2290,34 @@ blockquote {
     height: 32px;
     width: 100%;
   }
-  #extra4 {
-    background: #6d4942;
-    border-radius: 0 0 4px 4px;
-    display: block;
+  #extra4,
+  #extra5 {
     height: 32px;
     position: fixed;
-    right: 0;
     top: 0;
-    width: 100vw;
   }
   #extra5 {
-    background-image: url(https://wally-crunk.github.io/ike/ops-loop.svg);
-    background-position: left;
-    background-size: auto 18px;
-    height: 32px;
+    background-image: url("https://wally-crunk.github.io/ike/ops-lockup.svg");
+    background-position: 0;
+    background-size: auto 24px;
+    background-repeat: no-repeat;
     left: 4px;
     pointer-events: none;
-    position: fixed;
-    top: 0;
     transform: translateZ(0);
     width: 32px;
     z-index: 400;
   }
-  #extra1,
-  #extra2,
-  #extra3 {
-    background: white;
-    height: 1px;
+  #extra4 {
+    background: #1a9f7d;
+    border-radius: 0 0 4px 4px;
+    display: block;
+    right: 0;
+    width: 100vw;
+  }
+  #extra4, #extra5 {
+    height: 32px;
     position: fixed;
-    right: 12px;
-    top: 10px;
-    transform-origin: center;
-    transition: all 200ms;
-    width: 20px;
-    z-index: 101;
-  }
-  #extra2 {
-    top: 15px;
-  }
-  #extra3 {
-    top: 20px;
+    top: 0;
   }
   /* END hamburger bar */
   #header {
@@ -2369,13 +2376,13 @@ blockquote {
     white-space: nowrap;
   }
   #stats_ratio {
-    color: #f4f4f4;
+    color: #f0f0f0;
   }
   #stats_ratio .tooltip {
     color: white;
   }
   #userinfo_username {
-    background: radial-gradient(circle at top left, rgba(99, 64, 60, 0.6862745098), #63403c);
+    background: radial-gradient(circle at top left, rgba(34, 105, 110, 0.6862745098), #22696e);
     bottom: calc(var(--row-height) * 2);
     left: 0;
     position: absolute;
@@ -2384,7 +2391,7 @@ blockquote {
     display: none;
   }
   #userinfo_minor {
-    background: radial-gradient(circle at top left, rgba(99, 64, 60, 0.6862745098), #63403c);
+    background: radial-gradient(circle at top left, rgba(34, 105, 110, 0.6862745098), #22696e);
     bottom: calc(var(--row-height) * 3);
     position: absolute;
   }
@@ -2446,4 +2453,4 @@ blockquote {
   }
 }
 
-/*# sourceMappingURL=apollostage-coffee-blatz1.css.map */
+/*# sourceMappingURL=ap04.css.map */
