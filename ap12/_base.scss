@@ -1627,11 +1627,10 @@ blockquote {
 
 #userinfo_minor:hover::before {
 	background-color: rgba(0, 0, 0, 0);
-	background-position-x: 11px;
-	background-position-y: 10px;
+	background-position: center;
 	background-repeat: no-repeat;
 	background-attachment: scroll;
-	background-image: url("https://wally-crunk.github.io/ike/menu.svg");
+	background-image: url("$menu-open-icon");
 	background-size: 30px;
 	background-origin: padding-box;
 	background-clip: border-box;
@@ -1759,7 +1758,8 @@ blockquote {
   }
 
   #userinfo_minor::before {
-    background: $arrow-down-icon 21px 20px no-repeat;
+    background: url("$arrow-down-icon") 21px 20px no-repeat;
+    background-position: center;
     display: block;
     height: 50px;
     line-height: 50px;
