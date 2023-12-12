@@ -1626,14 +1626,13 @@ blockquote {
   color: #f4f4f4;
 }
 
-/* newf */
 #userinfo_minor:hover::before {
   background-color: rgba(0, 0, 0, 0);
   background-position-x: 11px;
   background-position-y: 10px;
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-image: url("https://svgur.com/i/10cd.svg");
+  background-image: url("https://wally-crunk.github.io/ike/menu-cccccc.svg");
   background-size: 30px;
   background-origin: padding-box;
   background-clip: border-box;
