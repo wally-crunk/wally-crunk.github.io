@@ -1630,7 +1630,7 @@ blockquote {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-attachment: scroll;
-	background-image: url("$menu-open-icon");
+	background-image: url($menu-open-icon);
 	background-size: 30px;
 	background-origin: padding-box;
 	background-clip: border-box;
@@ -1758,7 +1758,7 @@ blockquote {
   }
 
   #userinfo_minor::before {
-    background: url("$arrow-down-icon") 21px 20px no-repeat;
+    background: url($arrow-down-icon) 21px 20px no-repeat;
     background-position: center;
     display: block;
     height: 50px;
