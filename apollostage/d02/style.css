@@ -50,7 +50,7 @@ h6,
 input,
 select,
 textarea {
-  font-family: Times, "Open Sans", Helvetica, Arial, Tahoma, "Microsoft Yahei", sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, Tahoma, "Microsoft Yahei", sans-serif;
 }
 
 
@@ -325,8 +325,8 @@ textarea {
   padding: 12px;
 }
 
-.box.pad  {
-  background-color: yellowgreen;
+.main_column .box.pad  {
+  background-color: darkslategray;
   border: 2px solid #7E4F00;
   margin: 8px 8px 8px 8px;
   border-radius: 6px;
