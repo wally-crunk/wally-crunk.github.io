@@ -54,7 +54,7 @@ textarea {
 }
 
   /** foo **/ 
-.box.pad,  {
+.box.pad  {
   background-color: #191700;
   border: 2px solid #7E4F00;
   margin: 8px 8px 8px 8px;
