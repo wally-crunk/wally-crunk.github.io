@@ -53,14 +53,7 @@ textarea {
   font-family: Tahoma, "Open Sans", Helvetica, Arial, Tahoma, "Microsoft Yahei", sans-serif;
 }
 
-  /** foo **/ 
-.box.pad  {
-  background-color: #191700;
-  border: 2px solid #7E4F00;
-  margin: 8px 8px 8px 8px;
-  border-radius: 6px;
-  }
-  /** foo **/ 
+
 
 #header ul,
 .poll {
@@ -75,7 +68,15 @@ textarea {
 .wiki_article img {
   vertical-align: middle;
 }
-
+  /** foo **/ 
+.box.pad  {
+  background-color: #191700;
+  border: 2px solid #7E4F00;
+  margin: 8px 8px 8px 8px;
+  border-radius: 6px;
+  }
+  /** foo **/ 
+  
 @font-face {
   font-family: "Open Sans";
   font-style: normal;
