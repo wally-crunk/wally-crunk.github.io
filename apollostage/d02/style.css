@@ -50,13 +50,13 @@ h6,
 input,
 select,
 textarea {
-  font-family: "Open Sans", Helvetica, Arial, Tahoma, "Microsoft Yahei", sans-serif;
+  font-family: Tahoma, "Open Sans", Helvetica, Arial, Tahoma, "Microsoft Yahei", sans-serif;
 }
 
   /** foo **/ 
-#blog .box, .box2, .main_column .box.pad,  {
-  background-color: #bba1a1;
-  border: 2px solid mediumvioletred;
+.box.pad,  {
+  background-color: #191700;
+  border: 2px solid #7E4F00;
   margin: 8px 8px 8px 8px;
   border-radius: 6px;
   }
