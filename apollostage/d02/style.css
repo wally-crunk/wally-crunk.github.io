@@ -68,15 +68,7 @@ textarea {
 .wiki_article img {
   vertical-align: middle;
 }
-  /** foo **/ 
-.box.pad  {
-  background-color: #191700;
-  border: 2px solid #7E4F00;
-  margin: 8px 8px 8px 8px;
-  border-radius: 6px;
-  }
-  /** foo **/ 
-  
+
 @font-face {
   font-family: "Open Sans";
   font-style: normal;
@@ -332,6 +324,13 @@ textarea {
 .pad {
   padding: 12px;
 }
+
+.box.pad  {
+  background-color: yellowgreen;
+  border: 2px solid #7E4F00;
+  margin: 8px 8px 8px 8px;
+  border-radius: 6px;
+  }
 
 span.size1 {
   font-size: 0.75em;
