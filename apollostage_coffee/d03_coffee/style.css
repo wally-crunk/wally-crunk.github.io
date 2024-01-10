@@ -14,12 +14,13 @@ textarea:focus {
   outline: 0;
 }
 
-.box.pad {
-  background: rgba(0, 144, 0, 0.0666666667);
-  border: 1.5px solid #888;
-  margin: 15px;
-  border-radius: 1.5px;
+.main_column .box.pad  {
+  background-color: $box-accent-color;
+  border: 2px solid $box-accent-border;
+  margin: 8px 8px 8px 8px;
+  border-radius: 6px;
 }
+
 
 #content > .thin,
 .box,
