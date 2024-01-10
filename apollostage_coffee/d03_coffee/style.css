@@ -15,12 +15,11 @@ textarea:focus {
 }
 
 .main_column .box.pad  {
-  background-color: $box-accent-color;
-  border: 2px solid $box-accent-border;
+  background-color: #50505070;
+  border: 2px solid #888;
   margin: 8px 8px 8px 8px;
-  border-radius: 6px;
+  border-radius: 0.75px;
 }
-
 
 #content > .thin,
 .box,
