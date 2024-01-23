@@ -1,6 +1,6 @@
-@charset "UTF-8";
 @namespace url(http://www.w3.org/1999/xhtml);
 @namespace svg url(http://www.w3.org/2000/svg);
+
 a:active,
 a:focus,
 button:active,
@@ -14,11 +14,18 @@ textarea:focus {
   outline: 0;
 }
 
-.main_column .box.pad:not(#reply_box) {
-  background-color: rgba(80, 80, 80, 0.4392156863);
-  border: 2px solid rgba(33, 42, 45, 0.6666666667);
-  margin: 8px 8px 8px 8px;
-  border-radius: 6px;
+.main_column .box.pad  {
+	  // 2024 fix -- provide formatting on .box.pad for the [box] tag
+	  //
+	  // We're targeting main content only, so exclude the 'reply box' 
+	  // at the bottom which also uses this tag.
+
+	  &:not(#reply_box) {
+		  background-color: $box-background-color;
+		  border: 2px solid $box-border-color;
+		  margin: 8px 8px 8px 8px;
+		  border-radius: 6px;
+		}
 }
 
 #content > .thin,
@@ -31,7 +38,7 @@ textarea:focus {
 
 .clear::after,
 .profileinfo::before {
-  content: "";
+  content: '';
 }
 
 #menu > ul a,
@@ -57,7 +64,7 @@ h6,
 input,
 select,
 textarea {
-  font-family: "Open Sans", Helvetica, Arial, Tahoma, "Microsoft Yahei", sans-serif;
+  font-family: 'Open Sans', Helvetica, Arial, Tahoma, "Microsoft Yahei", sans-serif;
 }
 
 #header ul,
@@ -75,25 +82,27 @@ textarea {
 }
 
 @font-face {
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
-  src: local("Open Sans"), local("OpenSans"), url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3aCWcynf_cDxXwCLxiixG1c.ttf) format("truetype");
+  src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3aCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
 }
+
 @font-face {
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   font-style: normal;
   font-weight: 600;
-  src: local("Open Sans Semibold"), local("OpenSans-Semibold"), url(https://fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNSonF5uFdDttMLvmWuJdhhgs.ttf) format("truetype");
+  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(https://fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNSonF5uFdDttMLvmWuJdhhgs.ttf) format('truetype');
 }
+
 * {
   box-sizing: inherit;
 }
 
 body {
-  background-color: #041813;
+  background-color: $base-background-color;
   box-sizing: border-box;
-  color: #b9bdbd;
+  color: $base-text-color;
   font-size: 12px;
   line-height: 1.6;
   margin: 0 8px;
@@ -118,7 +127,7 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-  color: #83e4a6;
+  color: $primary-accent-color;
 }
 
 h1,
@@ -137,20 +146,20 @@ h5 {
 }
 
 a {
-  color: #f0f0f0;
+  color: $a-color;
   text-decoration: none;
 }
 
 a:hover {
-  color: #c7fada;
+  color: $a-hover-color;
 }
 
 svg|a {
-  fill: #f0f0f0;
+  fill: $a-color;
 }
 
 svg|a:hover {
-  fill: #c7fada;
+  fill: $a-hover-color;
 }
 
 b,
@@ -179,14 +188,14 @@ li:last-child {
 }
 
 blockquote {
-  background-color: #33363d;
+  background-color: $blockquote-background-color;
   border: 1px dashed rgba(255, 255, 255, 0.25);
   margin: 12px;
   padding: 12px;
 }
 
 ::selection {
-  background-color: rgba(105, 217, 146, 0.6);
+  background-color: $selection-background-color;
   color: #fff;
 }
 
@@ -197,7 +206,7 @@ form input {
 table,
 table .rowa:nth-child(even),
 table .rowb:nth-child(even) {
-  background-color: #212A2D;
+  background-color: $table-background-color;
 }
 
 table {
@@ -208,12 +217,12 @@ table {
 
 table .rowa,
 table .rowb {
-  border-top: 2px solid #262e27;
+  border-top: 2px solid $secondary-table-background-color;
 }
 
 table .rowa:nth-child(odd),
 table .rowb:nth-child(odd) {
-  background-color: #252F32;
+  background-color: $input-background-color;
 }
 
 table ul.options_list {
@@ -223,7 +232,7 @@ table ul.options_list {
 
 .colhead,
 .colhead_dark {
-  background-color: #252F32;
+  background-color: $input-background-color;
   line-height: 18px;
 }
 
@@ -258,11 +267,11 @@ td:last-child {
 }
 
 form {
-  background-color: #1B2426;
+  background-color: $form-background-color;
 }
 
 form table td.label {
-  color: #959a9e;
+  color: $footer-color;
   padding-top: 9px;
   font-weight: 600;
   text-align: right;
@@ -279,10 +288,10 @@ textarea {
 button,
 input[type=button],
 input[type=submit] {
-  background: linear-gradient(#f0f0f0, #b8b8b8);
+  background: linear-gradient($a-color, #b8b8b8);
   border: none;
   border-radius: 1.5px;
-  color: #252F32;
+  color: $input-background-color;
   cursor: pointer;
   font-weight: 600;
   height: 32px;
@@ -292,7 +301,7 @@ input[type=submit] {
 button:active,
 input[type=button]:active,
 input[type=submit]:active {
-  background: linear-gradient(#b8b8b8, #f0f0f0);
+  background: linear-gradient(#b8b8b8, $a-color);
 }
 
 input[type=email],
@@ -301,7 +310,7 @@ input[type=text],
 input[type=search],
 select,
 textarea {
-  background: #252F32;
+  background: $input-background-color;
   border: 1px solid rgba(255, 255, 255, 0.08);
   color: #c6c9c9;
   height: 32px;
@@ -315,7 +324,7 @@ input[type=search]:focus,
 select:focus,
 textarea:focus {
   border: 1px solid rgba(255, 255, 255, 0.2);
-  color: #f0f0f0;
+  color: $a-color;
 }
 
 textarea {
@@ -371,7 +380,7 @@ span.size10 {
 }
 
 strong.important_text {
-  color: #e85050;
+  color: $ratio-red-color;
 }
 
 strong.important_text_alt {
@@ -386,7 +395,7 @@ strong.important_text_alt {
 .r02,
 .r03,
 .warning {
-  color: #e85050;
+  color: $ratio-red-color;
 }
 
 .r04,
@@ -395,7 +404,7 @@ strong.important_text_alt {
 .r07,
 .r08,
 .r09 {
-  color: #e3ba65;
+  color: $ratio-yellow-color;
 }
 
 .r10,
@@ -421,7 +430,7 @@ strong.important_text_alt {
 .vote_artist_down,
 .vote_tag_down {
   font-weight: bolder;
-  color: #e85050;
+  color: $ratio-red-color;
 }
 
 #wrapper {
@@ -442,7 +451,7 @@ strong.important_text_alt {
 
 .box,
 .box2 {
-  background-color: #1B2426;
+  background-color: $form-background-color;
   margin-bottom: 8px;
   margin-top: 8px;
 }
@@ -453,7 +462,7 @@ table.box2 {
 }
 
 .head {
-  background-color: #252F32;
+  background-color: $input-background-color;
   line-height: 18px;
 }
 
@@ -474,7 +483,7 @@ table.box2 {
 }
 
 .autocomplete-suggestions {
-  background-color: #f0f0f0;
+  background-color: $a-color;
   border: none;
   color: #26282e;
   margin-top: 4px;
@@ -486,7 +495,7 @@ table.box2 {
 }
 
 .autocomplete-suggestions .autocomplete-suggestion.autocomplete-selected {
-  background-color: #c7fada;
+  background-color: $a-hover-color;
 }
 
 .autocomplete-suggestions .autocomplete-suggestion strong {
@@ -494,7 +503,7 @@ table.box2 {
 }
 
 .forum_post.forum_unread {
-  border-top: 2px solid #c7fada;
+  border-top: 2px solid $a-hover-color;
 }
 
 .forum_post .avatar {
@@ -518,9 +527,10 @@ table.box2 {
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   .forum_post .body img {
-    max-width: 720px;
+	max-width: 720px;
   }
 }
+
 .forum_index h4,
 .forum_list h4 {
   font-size: 12px;
@@ -531,8 +541,8 @@ table.box2 {
   margin-top: 24px;
 }
 
-.forum_index td[style*="width: 2%"],
-.forum_list td[style*="width: 2%"] {
+.forum_index td[style*='width: 2%'],
+.forum_list td[style*='width: 2%'] {
   width: 24px !important;
 }
 
@@ -541,49 +551,48 @@ table.box2 {
 }
 
 .last_read ::before {
-  content: "➟";
+  content: '➟';
   display: inline-block;
 }
 
 #userinfo_minor::before,
 .linkbox br {
-  content: "";
+  content: '';
 }
-
 #nav_logchecker {
   display: block;
 }
 
 .read {
-  background: url("https://wally-crunk.github.io/ike/document.svg") center no-repeat;
+  background: $read-icon center no-repeat;
 }
 
 .unread {
-  background: url("https://wally-crunk.github.io/ike/document-round.svg") center no-repeat;
+  background: $unread-icon center no-repeat;
 }
 
 .read_locked {
-  background: url("https://wally-crunk.github.io/ike/lock.svg") center no-repeat;
+  background: $read-locked-icon center no-repeat;
 }
 
 .unread_locked {
-  background: url("https://wally-crunk.github.io/ike/lock-round.svg") center no-repeat;
+  background: $unread-locked-icon center no-repeat;
 }
 
 .read_sticky {
-  background: url("https://wally-crunk.github.io/ike/pin.svg") center no-repeat;
+  background: $read-sticky-icon center no-repeat;
 }
 
 .unread_sticky {
-  background: url("https://wally-crunk.github.io/ike/pin-round.svg") center no-repeat;
+  background: $unread-sticky-icon center no-repeat;
 }
 
 .read_locked_sticky {
-  background: url("https://wally-crunk.github.io/ike/pin-and-lock.svg") center no-repeat;
+  background: $read-locked-sticky-icon center no-repeat;
 }
 
 .unread_locked_sticky {
-  background: url("https://wally-crunk.github.io/ike/pin-and-lock-round.svg") center no-repeat;
+  background: $unread-locked-sticky-icon center no-repeat;
 }
 
 #header,
@@ -609,7 +618,7 @@ table.box2 {
 
 #logo a,
 #extra5 {
-  background: url("https://wally-crunk.github.io/ops-roy-3bd4.svg") right no-repeat;
+  background: $ops-lockup-icon right no-repeat;
 }
 
 #logo > a {
@@ -644,7 +653,7 @@ table.box2 {
 #menu > ul a:hover,
 #userinfo_minor:hover a:hover,
 #userinfo_username:hover a:hover {
-  background-color: #c7fada;
+  background-color: $a-hover-color;
 }
 
 #nav_index {
@@ -701,7 +710,7 @@ table.box2 {
 
 #searchbars > ul {
   align-items: center;
-  background-color: #252F32;
+  background-color: $input-background-color;
   display: flex;
   display: -ms-flexbox;
   -ms-flex-align: center;
@@ -720,44 +729,44 @@ table.box2 {
 }
 
 #searchbars > ul input {
-  background-color: #1B2426;
+  background-color: $form-background-color;
   width: 100%;
 }
 
 #menu li:nth-child(2) {
-  background-color: #0a3a2e;
+  background-color: $menu-li-second-child-background-color;
 }
 
 #menu li:nth-child(3) {
-  background-color: #0c4a3b;
+  background-color: $menu-li-third-child-background-color;
 }
 
 #menu li:nth-child(4) {
-  background-color: #0f5b48;
+  background-color: $menu-li-fourth-child-background-color;
 }
 
 #menu li:nth-child(5) {
-  background-color: #126c56;
+  background-color: $menu-li-fifth-child-background-color;
 }
 
 #menu li:nth-child(6) {
-  background-color: #157d63;
+  background-color: $menu-li-sixth-child-background-color;
 }
 
 #menu li:nth-child(7) {
-  background-color: #188e70;
+  background-color: $menu-li-seventh-child-background-color;
 }
 
 #menu li:nth-child(8) {
-  background-color: #1a9f7d;
+  background-color: $header-background-color;
 }
 
 #menu li:nth-child(9) {
-  background-color: #1daf8b;
+  background-color: $menu-li-ninth-child-background-color;
 }
 
 #userinfo_username {
-  background-color: #20c098;
+  background-color: $userinfo-username-color;
   right: 50px;
 }
 
@@ -772,7 +781,7 @@ table.box2 {
 }
 
 .linkbox > strong {
-  color: #83e4a6;
+  color: $primary-accent-color;
 }
 
 #footer,
@@ -821,14 +830,14 @@ table.box2 {
 
 #noty_bottomRight_layout_container > li {
   background: 0 0 !important;
-  border: 2px solid #f0f0f0 !important;
+  border: 2px solid $a-color !important;
   border-radius: 0 !important;
   box-shadow: 0 0 32px rgba(0, 0, 0, 0.25) !important;
 }
 
 #noty_bottomRight_layout_container .noty_message {
-  background-color: #f0f0f0 !important;
-  color: #041813 !important;
+  background-color: $a-color !important;
+  color: $base-background-color !important;
   font-weight: 700;
   padding: 0 !important;
 }
@@ -839,17 +848,17 @@ table.box2 {
 }
 
 #noty_bottomRight_layout_container .noty_buttons {
-  background-color: #1B2426 !important;
+  background-color: $form-background-color !important;
   border: none !important;
   padding: 8px !important;
 }
 
 #noty_bottomRight_layout_container .noty_buttons a {
-  color: #f0f0f0 !important;
+  color: $a-color !important;
 }
 
 #noty_bottomRight_layout_container .noty_buttons a:hover {
-  color: #c7fada !important;
+  color: $a-hover-color !important;
 }
 
 #noty_bottomRight_layout_container .brackets {
@@ -885,9 +894,9 @@ table.box2 {
 }
 
 div#flip_view_1 div#similar-artist .name {
-  border: 1px solid #b9bdbd;
+  border: 1px solid $base-text-color;
   background: rgba(60, 60, 60, 0.7);
-  color: #b9bdbd;
+  color: $base-text-color;
   margin: 0;
   padding: 0 5px;
 }
@@ -927,7 +936,7 @@ div#flip_view_1 div#similar-artist .name {
 .box_artists .brackets::before,
 .box_tags .edit_tags_votes .brackets::after,
 .box_tags .edit_tags_votes .brackets::before {
-  content: "";
+  content: '';
   display: none;
 }
 
@@ -1005,11 +1014,11 @@ div#flip_view_1 div#similar-artist .name {
 }
 
 .torrent_table {
-  background-color: #262e27;
+  background-color: $secondary-table-background-color;
 }
 
 .torrent_table tr:not(.colhead):not(.colhead_dark) {
-  border-top: 2px solid #262e27;
+  border-top: 2px solid $secondary-table-background-color;
 }
 
 .torrent_table tr .number_column:not(:last-child) {
@@ -1017,16 +1026,16 @@ div#flip_view_1 div#similar-artist .name {
 }
 
 .torrent_table .group {
-  background-color: #252F32;
+  background-color: $input-background-color;
 }
 
 .group_torrent {
-  background-color: #1B2426;
+  background-color: $form-background-color;
 }
 
 .group_torrent.edition,
 .torrent {
-  background-color: #1F282B;
+  background-color: $torrent-background-color;
 }
 
 .torrentdetails .linkbox {
@@ -1055,18 +1064,18 @@ div#flip_view_1 div#similar-artist .name {
 }
 
 .tags a {
-  color: #959a9e;
+  color: $footer-color;
   font-size: 11px;
 }
 
 .tags a:hover {
-  color: #c7fada;
+  color: $a-hover-color;
 }
 
 .group_info > span:first-child,
 .group_torrent td:first-child > span,
 .torrent_links_block {
-  color: #959a9e;
+  color: $footer-color;
   float: right;
   margin-right: 4px;
 }
@@ -1123,8 +1132,8 @@ div#flip_view_1 div#similar-artist .name {
   margin-left: -8px;
 }
 
-.colhead td[width*="70%"],
-.colhead_dark td[width*="70%"] {
+.colhead td[width*='70%'],
+.colhead_dark td[width*='70%'] {
   width: 100%;
 }
 
@@ -1147,7 +1156,7 @@ div#flip_view_1 div#similar-artist .name {
 .cats_comics,
 .cats_ebooks,
 .cats_elearningvideos {
-  /* This does not work */
+/* This does not work */
 }
 
 .cats_applications {
@@ -1184,14 +1193,14 @@ div#flip_view_1 div#similar-artist .name {
 }
 
 .tooltipster-default {
-  background-color: #041813;
-  border: 0 solid #83e4a6;
+  background-color: $base-background-color;
+  border: 0 solid $primary-accent-color;
   border-radius: 2.5px;
   color: #c6c9c9;
 }
 
 .tooltipster-default .tooltipster-content {
-  background-color: #041813;
+  background-color: $base-background-color;
   color: #c6c9c9;
   font-size: 12px;
   line-height: 1.4;
@@ -1199,14 +1208,14 @@ div#flip_view_1 div#similar-artist .name {
 }
 
 .tooltipster-default .tooltipster-content a {
-  background-color: #041813;
+  background-color: $base-background-color;
   color: #c6c9c9;
   font-weight: 600;
 }
 
 .alertbar,
 .tooltipster-default .tooltipster-content a:hover {
-  color: #83e4a6;
+  color: $primary-accent-color;
 }
 
 #content .header > h1,
@@ -1240,7 +1249,7 @@ ul.collage_images li a img {
 }
 
 ul.collage_images li::before {
-  content: "";
+  content: '';
   float: left;
   padding-top: 100%;
 }
@@ -1270,7 +1279,7 @@ ul.collage_images li a > span {
 }
 
 .recent tr:not(.colhead):not(.colhead_dark) > td::before {
-  content: "";
+  content: '';
   float: left;
   padding-top: 100%;
 }
@@ -1297,7 +1306,7 @@ ul.collage_images li a > span {
 
 #userform #settings_sections h2 a,
 .rule_short {
-  color: #f0f0f0;
+  color: $a-color;
 }
 
 .poll li {
@@ -1305,14 +1314,14 @@ ul.collage_images li a > span {
 }
 
 .poll .graph {
-  background-color: rgba(131, 228, 166, 0.1);
+  background-color: $poll-background-color;
   display: block;
   height: 8px;
   margin-bottom: 12px;
 }
 
 .poll .graph span {
-  background-color: #83e4a6;
+  background-color: $primary-accent-color;
   display: block;
   float: left;
   height: 8px;
@@ -1358,7 +1367,7 @@ ul.collage_images li a > span {
 
 #footer {
   width: 100%;
-  color: #959a9e;
+  color: $footer-color;
   font-synthesis: 11px;
   margin: 32px auto 16px;
 }
@@ -1373,7 +1382,7 @@ ul.collage_images li a > span {
 }
 
 #discog_table > div.box.center {
-  background-color: #252F32;
+  background-color: $input-background-color;
   padding: 12px;
   text-align: left;
 }
@@ -1396,16 +1405,16 @@ ul.collage_images li a > span {
 }
 
 #musicbrainz_popup {
-  color: #041813;
+  color: $base-background-color;
   font-weight: 600;
 }
 
 #musicbrainz_popup a {
-  color: #041813;
+  color: $base-background-color;
 }
 
 #musicbrainz_popup a:hover {
-  color: #83e4a6;
+  color: $primary-accent-color;
 }
 
 #musicbrainz_popup .brackets {
@@ -1459,7 +1468,7 @@ ul.collage_images li a > span {
   height: auto !important;
 }
 
-#user .box > .head span[style="float: left;"]:first-child {
+#user .box > .head span[style='float: left;']:first-child {
   float: none !important;
 }
 
@@ -1479,7 +1488,7 @@ ul.collage_images li a > span {
 }
 
 #userform #settings_sections h2 a:hover {
-  color: #c7fada;
+  color: $a-hover-color;
 }
 
 #userform #settings_sections input {
@@ -1491,7 +1500,7 @@ ul.collage_images li a > span {
 }
 
 #dnulist tr:not(.colhead):not(.colhead_dark):nth-child(odd) {
-  background-color: #33363d;
+  background-color: $blockquote-background-color;
 }
 
 #menu > ul a:hover,
@@ -1527,7 +1536,7 @@ ul.collage_images li a > span {
 #collages.collage_table .colhead td:last-child,
 #personal_collages .colhead td:last-child,
 .filelist_table .colhead_dark td:last-child,
-.forum_index .colhead td[style*="width: 7%"] {
+.forum_index .colhead td[style*='width: 7%'] {
   text-align: right;
 }
 
@@ -1551,20 +1560,20 @@ ul.collage_images li a > span {
 
 .box table:not(.layout),
 .box2 table:not(.layout) {
-  border: 2px solid #262e27;
+  border: 2px solid $secondary-table-background-color;
   margin: 8px 0;
 }
 
-span[style*="color: green"] {
-  color: #4fb650 !important;
+span[style*='color: green'] {
+  color: $span-green-color !important;
 }
 
-span[style*="color: red"] {
-  color: #e85050 !important;
+span[style*='color: red'] {
+  color: $ratio-red-color !important;
 }
 
-span[style*="color: blue"] {
-  color: #4f50e9 !important;
+span[style*='color: blue'] {
+  color: $span-blue-color !important;
 }
 
 .filelist_table td,
@@ -1582,7 +1591,7 @@ blockquote {
 .reportinfo_table,
 .torrentdetails,
 blockquote {
-  background-color: #252F32;
+  background-color: $input-background-color;
 }
 
 #bookmarks #torrent_table tr:not(.colhead):not(.colhead_dark) td:nth-child(2) {
@@ -1614,24 +1623,17 @@ blockquote {
   margin-right: 4px;
 }
 
+#userinfo_minor:hover::before {
+  background: $ops-square-icon 21px 20px no-repeat;
+}
+
 #menu > ul a:hover {
   color: #fff;
 }
 
 #userinfo_minor:hover a,
 #userinfo_username:hover a {
-  color: #f0f0f0;
-}
-
-#userinfo_minor:hover::before {
-  background-color: rgba(0, 0, 0, 0);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgY2xhc3M9ImNmLWljb24tc3ZnIGNmLWljb24tc3ZnX19hcnJvdy1kb3duLXJvdW5kIgogICB2aWV3Qm94PSIwIDAgMTcgMTkiCiAgIHZlcnNpb249IjEuMSIKICAgaWQ9InN2ZzE0NjQ1IgogICBzb2RpcG9kaTpkb2NuYW1lPSJtZW51LnN2ZyIKICAgaW5rc2NhcGU6dmVyc2lvbj0iMS4zLjIgKDA5MWUyMGUsIDIwMjMtMTEtMjUpIgogICB4bWxuczppbmtzY2FwZT0iaHR0cDovL3d3dy5pbmtzY2FwZS5vcmcvbmFtZXNwYWNlcy9pbmtzY2FwZSIKICAgeG1sbnM6c29kaXBvZGk9Imh0dHA6Ly9zb2RpcG9kaS5zb3VyY2Vmb3JnZS5uZXQvRFREL3NvZGlwb2RpLTAuZHRkIgogICB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxkZWZzCiAgICAgaWQ9ImRlZnMxNDY0OSIgLz4KICA8c29kaXBvZGk6bmFtZWR2aWV3CiAgICAgaWQ9Im5hbWVkdmlldzE0NjQ3IgogICAgIHBhZ2Vjb2xvcj0iIzUwNTA1MCIKICAgICBib3JkZXJjb2xvcj0iI2VlZWVlZSIKICAgICBib3JkZXJvcGFjaXR5PSIxIgogICAgIGlua3NjYXBlOnNob3dwYWdlc2hhZG93PSIwIgogICAgIGlua3NjYXBlOnBhZ2VvcGFjaXR5PSIwIgogICAgIGlua3NjYXBlOnBhZ2VjaGVja2VyYm9hcmQ9IjAiCiAgICAgaW5rc2NhcGU6ZGVza2NvbG9yPSIjNTA1MDUwIgogICAgIHNob3dncmlkPSJmYWxzZSIKICAgICBpbmtzY2FwZTp6b29tPSIxNi43NzE1NTUiCiAgICAgaW5rc2NhcGU6Y3g9IjIuMDg2ODY2NyIKICAgICBpbmtzY2FwZTpjeT0iNy4wNjU1MzQzIgogICAgIGlua3NjYXBlOndpbmRvdy13aWR0aD0iMTQ0MCIKICAgICBpbmtzY2FwZTp3aW5kb3ctaGVpZ2h0PSI3OTIiCiAgICAgaW5rc2NhcGU6d2luZG93LXg9IjAiCiAgICAgaW5rc2NhcGU6d2luZG93LXk9IjI1IgogICAgIGlua3NjYXBlOndpbmRvdy1tYXhpbWl6ZWQ9IjEiCiAgICAgaW5rc2NhcGU6Y3VycmVudC1sYXllcj0ic3ZnMTQ2NDUiIC8+CiAgPGcKICAgICBpZD0iZzEiCiAgICAgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoOS42MTcwMDE5ZS01KSI+CiAgICA8cGF0aAogICAgICAgZD0ibSA1LjA1OTcxNyw3LjEwNTAyNzcgYyAwLC0wLjQ5ODE2NzQgMC4wODAyMTMsLTAuNTY2OTkxMSAwLjU4NTIwODMsLTAuNTY2OTkxIEggMTEuMzU1MDYgYyAwLjQ4OTE1MSwwIDAuNTg1MDM1LDAuMDUzOTk5IDAuNTg1MDM1LDAuNTUxNjU2MyAwLDAuNDk3NjU3IC0wLjA4MjA2LDAuNTgyODc2OCAtMC41ODUwMzUsMC41ODI4NzY4IEggNS42NDQzNzQzIGMgLTAuNTAxMzQ1MSwwIC0wLjU4NDY1NzMsLTAuMDY5Mzc1IC0wLjU4NDY1NzMsLTAuNTY3NTQyMSB6IG0gNi44ODAzNzgsMi4zOTUyNDc2IGMgMCwwLjQ5NTkyMjggLTAuMDg2MTUsMC41NjY5OTE3IC0wLjU4NTU4NiwwLjU2Njk5MTcgSCA1LjY0NDkyNTMgYyAtMC41MDUxNTcyLDAgLTAuNTg1MjA4MywtMC4xMDk4OTc2IC0wLjU4NTIwODMsLTAuNjA2ODE1MSAwLC0wLjQ5NjkxNzQgMC4wODkwODksLTAuNTI3NzE4NCAwLjU4NTIwODMsLTAuNTI3NzE4NCBoIDUuNzEwNjg1NyBjIDAuNTA0MzY1LDAgMC41ODQ0ODQsMC4wNzE2MTkgMC41ODQ0ODQsMC41Njc1NDE4IHogbSAwLDIuMzk0MTQ1NyBjIDAsMC41MDM2ODcgLTAuMDg2NzgsMC41Njc1NDMgLTAuNTg1NTg2LDAuNTY3NTQzIEggNS42NDQ5MjUzIGMgLTAuNDk4NDA4NywwIC0wLjU4NTkyNDIsLTAuMDY4OTkgLTAuNTg1MjA4MywtMC41NjgxOTMgNy4xNTllLTQsLTAuNDk5MjA1IDAuMDg3MTI2LC0wLjU2NjM0MSAwLjU4NTIwODMsLTAuNTY2MzQxIGggNS43MTA2ODU3IGMgMC41MDQyODksMCAwLjU4NDQ4NCwwLjA2MzMgMC41ODQ0ODQsMC41NjY5OTEgeiIKICAgICAgIGlkPSJwYXRoMSIKICAgICAgIHN0eWxlPSJmaWxsOiNmMmYyZjI7ZmlsbC1vcGFjaXR5OjE7c3Ryb2tlLXdpZHRoOjAuNTUxMDEyIgogICAgICAgc29kaXBvZGk6bm9kZXR5cGVzPSJ6Y2N6Y2N6emNzenNjenpjc3pzY3oiIC8+CiAgPC9nPgo8L3N2Zz4K");
-  background-size: 30px;
-  background-origin: padding-box;
-  background-clip: border-box;
+  color: $a-color;
 }
 
 #searchbars .search_form {
@@ -1645,13 +1647,12 @@ blockquote {
 }
 
 #searchbars .search_form input:focus {
-  background: #262e27;
+  background: $secondary-table-background-color;
 }
 
 .sidebar {
   order: 5;
 }
-
 .thin:last-child {
   display: flex;
   flex-wrap: wrap;
@@ -1663,6 +1664,7 @@ blockquote {
  * So, instead, we set width: 100% on everything, which is basically the same as column
  * flex, and then just override that to be default if there is a sidebar.
  */
+
 .thin:not(.linkbox) > :not(.two_columns) {
   width: 100%;
 }
@@ -1704,6 +1706,7 @@ blockquote {
  * - they have much more uniform HTML across different places (comments and
  * "real" forum), so classes to simplify CSS aren't necessary
  */
+
 /*
  * Portrait phones, and sometimes landscape
  * TODO: currently, responsive is optimized for either desktop or portrait phone
@@ -1713,752 +1716,907 @@ blockquote {
  * then tweaked a bit. Ideally, before that happens, the whole styling system
  * should be made to use a CSS preprocessor so that we can have reusable styles
  */
+
 /* this query is mostly copied from what used to be above
  * despite the fact that this exists, there are still many
  * rules above that are overridden by media queries, rather
  * than being put here like they should be
  */
+
 @media (min-width: 480px) {
   .thin:last-child > :not(.two_columns) {
-    margin: 4px;
+	margin: 4px;
   }
+
   #nav_donate .tooltip::after {
-    color: red;
-    content: "❤️";
-    font-size: 75%;
-    vertical-align: top;
+	color: red;
+	content: '❤️';
+	font-size: 75%;
+	vertical-align: top;
   }
+
   #nav_staff {
-    font-weight: 400;
+	font-weight: 400;
   }
+
   #menu > ul > #nav_staff {
-    display: inline;
-    font-size: 13px;
-    position: absolute;
-    right: 8px;
-    top: 29px;
+	display: inline;
+	font-size: 13px;
+	position: absolute;
+	right: 8px;
+	top: 29px;
   }
+
   #menu > ul > #nav_staff > a {
-    line-height: 1.6;
-    padding: 0;
+	line-height: 1.6;
+	padding: 0;
   }
+
   #menu > ul > #nav_staff > a:hover {
-    background-color: transparent;
-    color: #c7fada;
+	background-color: transparent;
+	color: $a-hover-color;
   }
+
   #userinfo_minor::before {
-    background: url("https://wally-crunk.github.io/ike/chevrons-bottom.svg") 21px 20px no-repeat;
-    display: block;
-    height: 50px;
-    line-height: 50px;
-    width: 50px;
+	background: $arrow-down-icon 21px 20px no-repeat;
+	display: block;
+	height: 50px;
+	line-height: 50px;
+	width: 50px;
   }
+
   #userinfo_minor a,
   #userinfo_username a {
-    display: none;
-    line-height: 32px;
-    padding: 0 8px;
-    width: 150px;
+	display: none;
+	line-height: 32px;
+	padding: 0 8px;
+	width: 150px;
   }
+
   #userinfo_minor:hover::before {
-    margin-left: 100px;
+	margin-left: 100px;
   }
+
   #userinfo_minor {
-    background-color: #23d1a5;
-    border-radius: 0 5px 0 0;
-    right: 0;
+	background-color: $userinfo-minor-color;
+	border-radius: 0 5px 0 0;
+	right: 0;
   }
+
   #userinfo_minor,
   #userinfo_username {
-    position: absolute;
-    z-index: 900;
+	position: absolute;
+	z-index: 900;
   }
+
   #userinfo_minor:hover,
   #userinfo_username:hover {
-    z-index: 800;
+	z-index: 800;
   }
+
   #userinfo_username:hover {
-    border-radius: 0 10px 0 0;
-    right: 0;
+	border-radius: 0 10px 0 0;
+	right: 0;
   }
+
   #userinfo_minor:hover {
-    background-color: #189273;
+	background-color: $userinfo-minor-hover-background-color;
   }
+
   #userinfo_username:hover {
-    background-color: #16866a;
+	background-color: $userinfo-username-hover-background-color;
   }
+
   .settings_sidebar {
-    margin-left: 8px;
+	margin-left: 8px;
   }
+
   #userform #settings_sections {
-    width: 240px;
+	width: 240px;
   }
 }
+
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
-  #inbox input[type=submit] {
-    font-size: 10px;
-    padding: 4px;
+  #inbox input[type="submit"] {
+	font-size: 10px;
+	padding: 4px;
   }
+
   #forums input {
-    font-size: 10px;
-    padding: 4px;
+	font-size: 10px;
+	padding: 4px;
   }
 }
+
 @media (max-width: 480px) {
   .m_hidden {
-    display: none !important;
+	display: none !important;
   }
+
   /* override from earlier, it makes shit weird */
   td:first-child {
-    padding-left: 6px;
+	padding-left: 6px;
   }
+
   /* BEGIN site layout */
   #wrapper {
-    padding-top: 36px;
+	padding-top: 36px;
   }
+
   .thin {
-    flex-direction: column;
-    margin: auto;
+	flex-direction: column;
+	margin: auto;
   }
+
   /* the specificity goes up to 11 */
   html > body div.thin > * {
-    width: 100%;
+	width: 100%;
   }
+
   form table td.label {
-    width: 5rem;
+	width: 5rem;
   }
+
   .linkbox {
-    text-align: left;
-    width: 90%;
+	text-align: left;
+	width: 90%;
   }
+
   html body .scale_image,
   #stats img {
-    max-width: 100%;
+	max-width: 100%;
   }
   /* END site layout */
+
   /* BEGIN notifications */
   .i-am-new {
-    width: calc(100% - 48px) !important;
+	width: calc(100% - 48px) !important;
   }
+
   .i-am-new li {
-    width: 100% !important;
+	width: 100% !important;
   }
   /* END notifications */
+
   /* BEGIN user settings */
   #user #userform {
-    align-items: stretch;
-    display: flex;
-    flex-direction: column;
-    margin-left: 0;
-    width: 100%;
+	align-items: stretch;
+	display: flex;
+	flex-direction: column;
+	margin-left: 0;
+	width: 100%;
   }
+
   .settings_sidebar {
-    flex: unset;
-    order: -1;
+	flex: unset;
+	order: -1;
   }
+
   /* tired of specificity :( */
   #settings_sections {
-    position: static !important;
+	position: static !important;
   }
   /* END user settings */
+
   /* BEGIN forms */
   input[type=search],
   input[type=text],
   input[type=email],
   input[type=password],
   select {
-    width: 100%;
+	width: 100%;
   }
+
   #upload .box {
-    width: 100% !important;
+	width: 100% !important;
   }
+
   .cat_list tr {
-    display: flex;
-    flex-wrap: wrap;
+	display: flex;
+	flex-wrap: wrap;
   }
   /* END forms */
+
   /* BEGIN general tables */
   .m_table tbody,
   .m_table .colhead,
   .m_table .colhead_dark {
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
   }
+
   .m_table tbody {
-    align-items: stretch;
-    flex-direction: column;
+	align-items: stretch;
+	flex-direction: column;
   }
   /* END general tables */
+
   /* BEGIN table headers */
   .m_table .colhead,
   .m_table .colhead_dark {
-    flex-wrap: nowrap;
+	flex-wrap: nowrap;
   }
+
   .m_table .colhead td:not(.m_th_right):not(.m_th_left),
   .m_table .colhead_dark td:not(.m_th_right):not(.m_th_left) {
-    display: none;
+	display: none;
   }
+
   .m_table .colhead td,
   .m_table .colhead_dark td {
-    width: auto !important;
+	width: auto !important;
   }
+
   .m_th_left {
-    visibility: hidden;
+	visibility: hidden;
   }
+
   .m_th_left_collapsable {
-    padding-left: 34px;
+	padding-left: 34px;
   }
+
   .m_th_left::before {
-    color: white;
-    content: "Info";
-    visibility: visible;
+	color: white;
+	content: 'Info';
+	visibility: visible;
   }
+
   /* ghetto :first-of-class */
   .m_th_right {
-    margin-left: auto;
+	margin-left: auto;
   }
+
   .m_th_right + .m_th_right {
-    margin-left: unset;
+	margin-left: unset;
   }
+
   .m_th_right + .m_th_right + .m_th_right {
-    margin-left: unset;
-    padding-right: 12px;
+	margin-left: unset;
+	padding-right: 12px;
   }
   /* END table headers */
+
   /* BEGIN table bodies */
   .m_table tr:not(.hidden):not(.colhead):not(.colhead_dark) {
-    display: block;
-    line-height: 1.4;
-    padding-bottom: 3px;
-    /* for position:absolute children */
-    position: relative;
-    width: 100%;
+	display: block;
+	line-height: 1.4;
+	padding-bottom: 3px;
+	/* for position:absolute children */
+	position: relative;
+	width: 100%;
   }
+
   .m_table td {
-    display: block;
+	display: block;
   }
+
   .m_table tr:not(.colhead):not(.colhead_dark) td:not(.m_td_left):not(.m_td_right) {
-    padding-bottom: 0;
-    padding-top: 0;
-    text-align: left;
-    width: 81%;
+	padding-bottom: 0;
+	padding-top: 0;
+	text-align: left;
+	width: 81%;
   }
+
   td.m_td_left {
-    align-items: center;
-    display: flex;
-    float: left;
-    height: 100%;
-    width: 34px;
+	align-items: center;
+	display: flex;
+	float: left;
+	height: 100%;
+	width: 34px;
   }
   /* END table bodies */
+
   /* BEGIN right-aligned numerical stats */
   .m_td_right {
-    margin: 0;
-    padding: 0 !important;
-    position: absolute;
-    right: 16px;
-    /* this is for the first one only */
-    text-align: right;
-    top: 0.2rem;
+	margin: 0;
+	padding: 0 !important;
+	position: absolute;
+	right: 16px;
+	/* this is for the first one only */
+	text-align: right;
+	top: 0.2rem;
   }
+
   /* specificity override will occur for third one, so this is fine */
   .m_td_right + .m_td_right {
-    top: 1.6em;
+	top: 1.6em;
   }
+
   .m_td_right + .m_td_right + .m_td_right {
-    top: 3em;
+	top: 3em;
   }
   /* END right-aligned numerical stats */
+
   /* BEGIN torrent table */
   .torrent_table * {
-    float: none;
+	float: none;
   }
+
   .torrent_table .remove_bookmark a,
   .torrent_table .add_bookmark a {
-    float: none !important;
+	float: none !important;
   }
+
   .torrent_table .cats_col:not(.m_cats_col) {
-    display: none;
+	display: none;
   }
+
   /* on mobile, it wraps even on normal words, so better like this */
   /* TODO: how to handle super long-words */
   .group .group_info,
   .torrent .group_info {
-    word-break: inherit;
+	word-break: inherit;
   }
+
   .torrent .group_info span:first-child {
-    order: 10;
+	order: 10;
   }
+
   .group_info .tags {
-    order: 20;
-    width: 100%;
+	order: 20;
+	width: 100%;
   }
+
   #wrapper .m_table .edition {
-    padding-top: 0;
-    padding-bottom: 0;
+	padding-top: 0;
+	padding-bottom: 0;
   }
+
   .edition_info {
-    padding: 4px 12px 4px 32px !important;
+	padding: 4px 12px 4px 32px !important;
   }
+
   .group_torrent .edition_info a {
-    line-height: 23px;
+	line-height: 23px;
   }
+
   .edition_1 {
-    /* for the right aligned numbers */
-    min-height: 5em;
+	/* for the right aligned numbers */
+	min-height: 5em;
   }
+
   .td_snatched.m_td_right,
   .td_seeders.m_td_right,
   .td_leechers.m_td_right {
-    min-width: 30px;
-    right: 4px;
-    text-align: left;
+	min-width: 30px;
+	right: 4px;
+	text-align: left;
   }
+
   .td_snatched.m_td_right::before,
   .td_seeders.m_td_right::before,
   .td_leechers.m_td_right::before {
-    background: left/10px no-repeat url("https://wally-crunk.github.io/ike/arrow-snatches.svg");
-    color: #fff;
-    content: ":";
-    filter: brightness(80%);
-    position: absolute;
-    right: calc(100% + 2px);
-    text-align: right;
-    width: 14px;
+	background: left / 10px no-repeat $number-snatches-icon;
+	color: #fff;
+	content: ':';
+	filter: brightness(80%);
+	position: absolute;
+	right: calc(100% + 2px);
+	text-align: right;
+	width: 14px;
   }
+
   .td_seeders.m_td_right::before {
-    background-image: url("https://wally-crunk.github.io/ike/arrow-up-round.svg");
+	background-image: $number-seeders-icon;
   }
+
   .td_leechers.m_td_right::before {
-    background-image: url("https://wally-crunk.github.io/ike/arrow-down-round.svg");
+	background-image: $number-leechers-icon;
   }
+
   .m_table.checkboxes td:first-child {
-    display: block;
+	display: block;
   }
+
   /* BEGIN expanded torrent group */
   .group_torrent:not(.edition):not(.hidden) {
-    display: flex;
-    flex-direction: column;
-    padding: 5px 0 0 22px;
+	display: flex;
+	flex-direction: column;
+	padding: 5px 0 0 22px;
   }
+
   /* it would be nice to use flex for all group_torrents, but we can't de display:flex
    * on any old table cell. It only works here because our trs aren't using the normal
    * table display anyways.
    */
+
   .torrent_table .group_torrent:not(.edition) td:first-child {
-    display: flex;
-    /* for those ones with a million buttons */
-    flex-wrap: wrap;
-    padding: 0;
-    width: 80%;
+	display: flex;
+	/* for those ones with a million buttons */
+	flex-wrap: wrap;
+	padding: 0;
+	width: 80%;
   }
+
   .torrent_table .group_torrent:not(.edition) td:first-child span {
-    order: 5;
-    padding-left: 6px;
+	order: 5;
+	padding-left: 6px;
   }
+
   .td_file_count::before {
-    content: "Files: ";
+	content: 'Files: ';
   }
+
   .torrent_table .group_torrent td:nth-child(4) {
-    padding-bottom: 5px;
-    text-align: left;
+	padding-bottom: 5px;
+	text-align: left;
   }
+
   /* artist view page */
   #torrents_album .edition_1 td:nth-child(n+2) {
-    padding-left: 15px;
+	padding-left: 15px;
   }
   /* END expanded torrent group */
+
   /* BEGIN top10 */
   /* 4 and 5 in colhead are hidden anyways */
   #top10 .td_size::before {
-    content: "Size: ";
+	content: 'Size: ';
   }
+
   .td_data::before {
-    content: "Transferred: ";
+	content: 'Transferred: ';
   }
   /* END top10 */
   /* END torrent table */
+
   /* BEGIN invite table */
   .invite_table tr:not(.colhead) td:nth-child(3)::before {
-    content: "Joined: ";
+	content: 'Joined: ';
   }
+
   .invite_table tr:not(.colhead) td:nth-child(4)::before {
-    content: "Seen: ";
+	content: 'Seen: ';
   }
+
   .td_dl.m_td_right::before {
-    content: "D: ";
+	content: 'D: ';
   }
+
   .td_up.m_td_right::before {
-    content: "U: ";
+	content: 'U: ';
   }
+
   .td_ratio.m_td_right::before {
-    content: "R: ";
+	content: 'R: ';
   }
   /* END invite table */
+
   /* BEGIN collage table */
   table.m_table.collage_table tr:not(.colhead):not(.colhead) {
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
   }
+
   .m_table .td_collage_category::before {
-    content: "Category: ";
+	content: 'Category: ';
   }
+
   .m_table .td_collage_category {
-    order: 2;
-    padding-top: 0;
+	order: 2;
+	padding-top: 0;
   }
+
   .collage_table .td_info {
-    padding-bottom: 0;
+	padding-bottom: 0;
   }
+
   .collage_table .td_updated::before {
-    content: "Updated: ";
+	content: 'Updated: ';
   }
+
   .collage_table .td_updated {
-    order: 3;
+	order: 3;
   }
+
   .collage_table .td_author::before {
-    content: "Author: ";
+	content: 'Author: ';
   }
+
   .collage_table .td_author {
-    order: 3;
+	order: 3;
   }
+
   .collage_table .td_torrent_count::before {
-    content: "T: ";
+	content: 'T: ';
   }
+
   .collage_table .td_subscribers::before {
-    content: "S: ";
+	content: 'S: ';
   }
   /* END collage table */
+
   /* BEGIN requests */
   /* TODO: still show the time the request was filled without taking up too much space */
+
   #requests .request_table tr:not(.colhead) td:nth-child(n+2) {
-    padding: 0 6px;
+	padding: 0 6px;
   }
+
   #requests .request_table tr:not(.colhead) td:nth-child(5)::before {
-    content: "Filler: ";
+	content: 'Filler: ';
   }
+
   #requests .request_table tr:not(.colhead) td:nth-child(6)::before {
-    content: "Requester: ";
+	content: 'Requester: ';
   }
+
   #requests .request_table tr:not(.colhead) td:nth-child(6) {
-    padding: 0 6px;
+	padding: 0 6px;
   }
+
   #requests .request_table tr:not(.colhead) td:nth-child(7)::before {
-    content: "Added: ";
+	content: 'Added: ';
   }
+
   #requests .request_table tr:not(.colhead) td:nth-child(8)::before {
-    content: "Last Vote: ";
+	content: 'Last Vote: ';
   }
+
   #requests .request_table tr:not(.colhead) td:nth-child(8) {
-    padding-bottom: 4px;
+	padding-bottom: 4px;
   }
   /* END requests */
+
   /* BEGIN forums */
   /* BEGIN forum index */
   .forum_index .last_read {
-    float: none !important;
+	float: none !important;
   }
+
   .forum_index .last_topic,
   .forum_index .last_poster {
-    float: none !important;
+	float: none !important;
   }
+
   .forum_index .last_topic {
-    display: block;
+	display: block;
   }
+
   #wrapper .td_read {
-    float: left;
-    height: 12px;
-    margin: 3px 5px 0 5px;
-    width: 11px;
+	float: left;
+	height: 12px;
+	margin: 3px 5px 0 5px;
+	width: 11px;
   }
+
   .td_topic_count.m_td_right::before {
-    content: "T: ";
+	content: 'T: ';
   }
+
   .td_post_count.m_td_right::before {
-    content: "P: ";
+	content: 'P: ';
   }
+
   .td_author::before {
-    content: "Author: ";
+	content: 'Author: ';
   }
+
   .td_replies.m_td_right::before {
-    content: "R: ";
+	content: 'R: ';
   }
   /* END forum index */
+
   /* BEGIN forum table structure */
   /* this is copied from general tables. We put it here in case that changes
    in ways specific for tabular data */
+
   .forum_post tbody {
-    align-items: stretch;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 100%;
+	align-items: stretch;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	width: 100%;
   }
+
   .forum_post tr:not(.colhead_dark):not(.hidden) {
-    display: block;
-    position: relative;
-    width: 100%;
+	display: block;
+	position: relative;
+	width: 100%;
   }
   /* END forum table structure */
+
   /* BEGIN forum headers */
   /* remove dashes from forum post headers */
   .forum_post tr.colhead_dark {
-    color: transparent;
-    min-height: 50px;
-    padding-left: 54px;
+	color: transparent;
+	min-height: 50px;
+	padding-left: 54px;
   }
+
   .forum_post tr.colhead_dark span,
   .forum_post tr.colhead_dark strong {
-    color: #c6c9c9;
+	color: #c6c9c9;
   }
+
   .forum_post tr.colhead_dark div {
-    display: inline;
+	display: inline;
   }
+
   .forum_post .time::after {
-    content: "\a";
-    white-space: pre;
+	content: '\a';
+	white-space: pre;
   }
+
   .forum_post tr.colhead_dark div:nth-child(2) {
-    padding-left: 8px;
+	padding-left: 8px;
   }
+
   .forum_post .avatar {
-    left: 5px;
-    position: absolute;
-    top: -55px;
-    width: 0;
-    word-break: break-all;
+	left: 5px;
+	position: absolute;
+	top: -55px;
+	width: 0;
+	word-break: break-all;
   }
+
   .forum_post .avatar img {
-    max-height: 50px !important;
-    max-width: 50px !important;
-    min-height: 0;
-    min-width: 0;
-    position: absolute;
+	max-height: 50px !important;
+	max-width: 50px !important;
+	min-height: 0;
+	min-width: 0;
+	position: absolute;
   }
   /* END forum headers */
   /* END forums */
+
   /* BEGIN rules */
   #rules .m_th_left::before {
-    content: "Rules";
+	content: 'Rules';
   }
+
   .rule_table .nobr {
-    white-space: unset;
+	white-space: unset;
   }
   /* END rules */
+
   /* BEGIN site header */
   #header {
-    background: #1a9f7d;
-    top: 0;
-    height: 0;
-    left: 0;
-    position: fixed;
-    transform: translateY(0);
-    transition: 200ms;
-    width: 100%;
-    z-index: 1000;
-    padding-bottom: 32px;
-    opacity: 0;
+	background: $header-background-color;
+	top: 0;
+	height: 0;
+	left: 0;
+	position: fixed;
+	transform: translateY(0);
+	transition: 200ms;
+	width: 100%;
+	z-index: 1000;
+	padding-bottom: 32px;
+	opacity: 0;
   }
+
   #header:hover {
-    height: 80%;
-    opacity: 0.96;
-    transition: all 600ms cubic-bezier(1, 0.01, 0.3, 1.31);
+	height: 80%;
+	opacity: .96;
+	transition: all 600ms cubic-bezier(1.000, 0.010, 0.300, 1.310);
   }
-  #extra1 {
-    position: fixed;
-    top: 5px;
-    left: calc(50% - 12.5px);
-    display: block;
-    opacity: 1 !important;
-    width: 25px;
-    height: 25px;
-    background-image: url("https://i.postimg.cc/Tw47V1VN/arrow-down.gif");
-    background-size: contain;
-    z-index: 500;
-    pointer-events: none;
+  
+  #extra1{ 
+	  position: fixed;
+	  top: 5px;
+	  left: calc(50% - 12.5px);
+	  display: block;
+	  opacity: 1!important;
+	  width: 25px;
+	  height: 25px;
+	  background-image: url('https://i.postimg.cc/Tw47V1VN/arrow-down.gif');
+	  background-size: contain;
+	  z-index:500;
+	  pointer-events: none;
   }
   /* BEGIN hamburger bar */
   #logo {
-    height: 2%;
-    left: 0;
-    padding: 0;
-    position: fixed;
-    top: 0;
-    /* it's OVER 9000! */
-    transform: translateY(6000%);
-    width: 20%;
-    z-index: 500;
+	height: 2%;
+	left: 0;
+	padding: 0;
+	position: fixed;
+	top: 0;
+	/* it's OVER 9000! */
+	transform: translateY(6000%);
+	width: 20%;
+	z-index: 500;
   }
+
   #logo a {
-    background-image: none;
-    display: block;
-    height: 32px;
-    width: 100%;
+	background-image: none;
+	display: block;
+	height: 32px;
+	width: 100%;
   }
+
   #extra4,
   #extra5 {
-    height: 32px;
-    position: fixed;
-    top: 0;
+	  height: 32px;
+	  position: fixed;
+	  top: 0
   }
   #extra5 {
-    background-image: url("https://wally-crunk.github.io/ops-roy-meatball-3bd4.svg");
-    background-position: 0;
-    background-size: auto 24px;
-    background-repeat: no-repeat;
-    left: 4px;
-    pointer-events: none;
-    transform: translateZ(0);
-    width: 32px;
-    z-index: 400;
+	  background-image: $ops-square-icon; 
+	  background-position: 0;
+	  background-size: auto 24px;
+	  background-repeat: no-repeat;
+	  left: 4px;
+	  pointer-events: none;
+	  transform: translateZ(0);
+	  width: 32px;
+	  z-index: 400;
   }
   #extra4 {
-    background: #1a9f7d;
-    border-radius: 0 0 4px 4px;
-    display: block;
-    right: 0;
-    width: 100vw;
+	  background: $header-background-color;
+	  border-radius: 0 0 4px 4px;
+	  display: block;
+	  right: 0;
+	  width: 100vw
   }
-  #extra4, #extra5 {
-    height: 32px;
-    position: fixed;
-    top: 0;
+
+  #extra4,#extra5 {
+	  height: 32px;
+	  position: fixed;
+	  top: 0
   }
   /* END hamburger bar */
+
   #header {
-    --row-height: 40px;
+	--row-height: 40px;
   }
+
   #header ul:not(#userinfo_major):not(#userinfo_stats) {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
   }
+
   #header ul:not(#userinfo_major):not(#userinfo_stats) li {
-    margin: 0;
-    width: 33.3%;
+	margin: 0;
+	width: 33.3%;
   }
+
   #header ul:not(#userinfo_major):not(#userinfo_stats) a {
-    line-height: var(--row-height);
+	line-height: var(--row-height);
   }
+
   #alerts {
-    display: none;
+	display: none;
   }
+
   /* BEGIN searchboxes */
   #searchbars ul {
-    bottom: 0;
-    height: unset;
-    padding: 0 0 0 6px;
-    position: absolute;
+	bottom: 0;
+	height: unset;
+	padding: 0 0 0 6px;
+	position: absolute;
   }
+
   #searchbars li {
-    height: var(--row-height);
+	height: var(--row-height);
   }
+
   #searchbars li:nth-child(-n+3) .search_form {
-    margin: 6px 6px 3px 0;
+	margin: 6px 6px 3px 0;
   }
+
   #searchbars li:nth-child(n+4) .search_form {
-    margin: 3px 6px 6px 0;
+	margin: 3px 6px 6px 0;
   }
+
   #header #searchbars input {
-    height: calc(var(--row-height) - 9px);
+	height: calc(var(--row-height) - 9px);
   }
   /* END searchboxes */
+
   /* BEGIN userinfo */
   #userinfo {
-    position: static;
+	position: static;
   }
+
   #userinfo_major {
-    right: 12px;
-    top: calc(100% - var(--row-height) * 10 - 55px);
+	right: 12px;
+	top: calc(100% - var(--row-height) * 10 - 55px);
   }
+
   #userinfo_stats {
-    color: white;
-    line-height: 1.3;
-    right: 12px;
-    top: calc(100% - var(--row-height) * 10 - 38px);
+	color: white;
+	line-height: 1.3;
+	right: 12px;
+	top: calc(100% - var(--row-height) * 10 - 38px);
   }
+
   #userinfo_stats span {
-    white-space: nowrap;
+	white-space: nowrap;
   }
+
   #stats_ratio {
-    color: #f0f0f0;
+	color: $a-color;
   }
+
   #stats_ratio .tooltip {
-    color: white;
+	color: white;
   }
+
   #userinfo_username {
-    background: radial-gradient(circle at top left, rgba(34, 105, 110, 0.6862745098), #22696e);
-    bottom: calc(var(--row-height) * 2);
-    left: 0;
-    position: absolute;
+	background: radial-gradient(circle at top left, $userinfo-background-color-1, $userinfo-background-color-2);
+	bottom: calc(var(--row-height) * 2);
+	left: 0;
+	position: absolute;
   }
+
   #nav_userclass {
-    display: none;
+	display: none;
   }
+
   #userinfo_minor {
-    background: radial-gradient(circle at top left, rgba(34, 105, 110, 0.6862745098), #22696e);
-    bottom: calc(var(--row-height) * 3);
-    position: absolute;
+	background: radial-gradient(circle at top left, $userinfo-background-color-1, $userinfo-background-color-2);
+	bottom: calc(var(--row-height) * 3);
+	position: absolute;
   }
+
   /* S P E C I F I C I T Y */
   html > body #userinfo_minor a,
   html > body #userinfo_username a {
-    display: block;
-    height: 100%;
-    line-height: 50px;
-    text-align: center;
+	display: block;
+	height: 100%;
+	line-height: 50px;
+	text-align: center;
   }
+
   #userinfo_username #nav_userinfo a {
-    width: unset;
+	width: unset;
   }
   /* END userinfo */
+
   /* BEGIN browse links */
   #menu ul {
-    background: radial-gradient(circle at top left, rgba(0, 153, 153, 0.6), #088);
-    bottom: calc(var(--row-height) * 7);
-    position: absolute;
+	background: radial-gradient(circle at top left, #0999, #088);
+	bottom: calc(var(--row-height) * 7);
+	position: absolute;
   }
+
   #menu li {
-    background: transparent !important;
+	background: transparent !important;
   }
   /* END browse links */
+
   #extracb1 {
-    display: block;
-    height: 32px;
-    margin: 0;
-    opacity: 0;
-    position: fixed;
-    right: 0;
-    top: 0;
-    width: 50vw;
-    z-index: 999;
+	display: block;
+	height: 32px;
+	margin: 0;
+	opacity: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 50vw;
+	z-index: 999;
   }
+
   /* BEGIN checked */
   #extracb1:checked ~ #wrapper #header {
-    transform: translateY(120%);
+	transform: translateY(120%);
   }
+
   #extracb1:checked ~ #wrapper #logo {
-    transform: none;
+	transform: none;
   }
+
   #extracb1:checked ~ #extra1 {
-    transform: translateY(5px) rotate(45deg);
+	transform: translateY(5px) rotate(45deg);
   }
+
   #extracb1:checked ~ #extra2 {
-    opacity: 0;
+	opacity: 0;
   }
+
   #extracb1:checked ~ #extra3 {
-    transform: translateY(-5px) rotate(-45deg);
+	transform: translateY(-5px) rotate(-45deg);
   }
   /* END checked */
   /* END site header */
 }
+
 @media (max-width: 480px) and (max-height: 480px) {
   #header {
-    --row-height: 35px;
+	--row-height: 35px;
   }
 }
-
-/*# sourceMappingURL=style.css.map */

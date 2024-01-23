@@ -618,7 +618,7 @@ table.box2 {
 
 #logo a,
 #extra5 {
-  background: $ops-lockup-icon right no-repeat;
+  background: $site-lockup-icon right no-repeat;
 }
 
 #logo > a {
@@ -1623,9 +1623,6 @@ blockquote {
   margin-right: 4px;
 }
 
-#userinfo_minor:hover::before {
-  background: $ops-square-icon 21px 20px no-repeat;
-}
 
 #menu > ul a:hover {
   color: #fff;
@@ -1634,6 +1631,17 @@ blockquote {
 #userinfo_minor:hover a,
 #userinfo_username:hover a {
   color: $a-color;
+}
+
+#userinfo_minor:hover::before {
+	background-color: rgba(0, 0, 0, 0);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-image: $menu-open-icon;
+	background-size: 30px;
+	background-origin: padding-box;
+	background-clip: border-box;
 }
 
 #searchbars .search_form {
@@ -1758,11 +1766,12 @@ blockquote {
   }
 
   #userinfo_minor::before {
-	background: $arrow-down-icon 21px 20px no-repeat;
-	display: block;
-	height: 50px;
-	line-height: 50px;
-	width: 50px;
+    background: $arrow-down-icon 21px 20px no-repeat;
+    background-position: center;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    width: 50px;
   }
 
   #userinfo_minor a,
@@ -1881,21 +1890,21 @@ blockquote {
 
   /* BEGIN user settings */
   #user #userform {
-	align-items: stretch;
-	display: flex;
-	flex-direction: column;
-	margin-left: 0;
-	width: 100%;
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    width: 100%;
   }
 
   .settings_sidebar {
-	flex: unset;
-	order: -1;
+    flex: unset;
+    order: -1;
   }
 
   /* tired of specificity :( */
   #settings_sections {
-	position: static !important;
+    position: static !important;
   }
   /* END user settings */
 
@@ -1905,16 +1914,16 @@ blockquote {
   input[type=email],
   input[type=password],
   select {
-	width: 100%;
+    width: 100%;
   }
 
   #upload .box {
-	width: 100% !important;
+    width: 100% !important;
   }
 
   .cat_list tr {
-	display: flex;
-	flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
   }
   /* END forms */
 
@@ -1922,15 +1931,15 @@ blockquote {
   .m_table tbody,
   .m_table .colhead,
   .m_table .colhead_dark {
-	align-items: center;
-	display: flex;
-	flex-wrap: wrap;
-	width: 100%;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
   }
 
   .m_table tbody {
-	align-items: stretch;
-	flex-direction: column;
+    align-items: stretch;
+    flex-direction: column;
   }
   /* END general tables */
 
@@ -2434,7 +2443,7 @@ blockquote {
 	  top: 0
   }
   #extra5 {
-	  background-image: $ops-square-icon; 
+	  background-image: $site-square-icon; 
 	  background-position: 0;
 	  background-size: auto 24px;
 	  background-repeat: no-repeat;
