@@ -1766,7 +1766,8 @@ blockquote {
   }
 
   #userinfo_minor::before {
-    background: $arrow-down-icon 21px 20px no-repeat;
+    background: $arrow-down-icon no-repeat;
+    background-size: 28px;
     background-position: center;
     display: block;
     height: 50px;
