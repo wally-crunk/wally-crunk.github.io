@@ -1178,27 +1178,27 @@ div#flip_view_1 div#similar-artist .name {
 }
 
 .cats_applications {
-  border-right: thick solid silver;
+  border-right: thick solid $accent-color-cats_applications;
 }
 
 .cats_audiobooks {
-  border-right: thick solid cornflowerblue;
+  border-right: thick solid $accent-color-cats_audiobooks;
 }
 
 .cats_comedy {
-  border-right: thick solid deepskyblue;
+  border-right: thick solid $accent-color-cats_comedy;
 }
 
 .cats_comics {
-  border-right: thick solid gold;
+  border-right: thick solid $accent-color-cats_comics;
 }
 
 .cats_ebooks {
-  border-right: thick solid darkbrown;
+  border-right: thick solid $accent-color-cats_ebooks;
 }
 
 .cats_elearningvideos {
-  border-right: thick solid mediumpurple;
+  border-right: thick solid $accent-color-cats_elearningvideos;
 }
 
 /* end of category decorations for torrent tables on torrent & collage pages */
