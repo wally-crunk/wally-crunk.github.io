@@ -18,19 +18,19 @@ textarea:focus {
 }
 
 
-
+.box .box.pad, 
 .main_column .box.pad:not(#reply_box) {
-          background-color: $box-background-color;
-          border: 2px solid $box-border-color;
-          margin: 8px 8px 8px 8px;
-          border-radius: 6px;
+  background-color: rgba(80, 80, 80, 0.4392156863);
+  border: 2px solid rgba(33, 42, 45, 0.6666666667);
+  margin: 8px 8px 8px 8px;
+  border-radius: 6px;
+}
 
       // 2024 fix -- provide formatting on .box.pad for the [box] tag
       //
       // We're targeting main content only, so exclude the 'reply box' 
       // at the bottom which also uses this tag.
 
-}
 
 #content > .thin,
 .box,
