@@ -20,15 +20,15 @@ textarea:focus {
 
 
 .main_column .box.pad:not(#reply_box) {
-		  background-color: $box-background-color;
-		  border: 2px solid $box-border-color;
-		  margin: 8px 8px 8px 8px;
-		  border-radius: 6px;
+          background-color: $box-background-color;
+          border: 2px solid $box-border-color;
+          margin: 8px 8px 8px 8px;
+          border-radius: 6px;
 
-	  // 2024 fix -- provide formatting on .box.pad for the [box] tag
-	  //
-	  // We're targeting main content only, so exclude the 'reply box' 
-	  // at the bottom which also uses this tag.
+      // 2024 fix -- provide formatting on .box.pad for the [box] tag
+      //
+      // We're targeting main content only, so exclude the 'reply box' 
+      // at the bottom which also uses this tag.
 
 }
 
@@ -416,7 +416,7 @@ strong.important_text_alt {
 .r50,
 .r99,
 .vote_tag_up {
-  color: #4fb650;
+  color: $ratio-green-color;
 }
 
 .small_upvote,
@@ -425,7 +425,7 @@ strong.important_text_alt {
 .vote_artist_up,
 .vote_tag_up {
   font-weight: bolder;
-  color: #4fb650;
+  color: $ratio-green-color;
 }
 
 .small_downvote,
@@ -531,7 +531,7 @@ table.box2 {
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   .forum_post .body img {
-	max-width: 720px;
+    max-width: 720px;
   }
 }
 
@@ -1174,7 +1174,7 @@ div#flip_view_1 div#similar-artist .name {
 
 .cats_music {
   /* Memo: turn off to not provide any decoration for music uploads */
-  border-right: thin solid darkslategray; 
+  border-right: thin solid $accent-color-cats_music; 
 }
 
 .cats_applications {
@@ -1753,37 +1753,37 @@ blockquote {
 
 @media (min-width: 480px) {
   .thin:last-child > :not(.two_columns) {
-	margin: 4px;
+    margin: 4px;
   }
 
-// heart emoji symbol 
+
   #nav_donate .tooltip::after {
-	color: red;
-	content: '\2764\FE0F️';  
-	font-size: 75%;
-	vertical-align: top;
+    color: red;
+    content: '\2764\FE0F️';  // heart emoji symbol 
+    font-size: 75%;
+    vertical-align: top;
   }
 
   #nav_staff {
-	font-weight: 400;
+    font-weight: 400;
   }
 
   #menu > ul > #nav_staff {
-	display: inline;
-	font-size: 13px;
-	position: absolute;
-	right: 8px;
-	top: 29px;
+    display: inline;
+    font-size: 13px;
+    position: absolute;
+    right: 8px;
+    top: 29px;
   }
 
   #menu > ul > #nav_staff > a {
-	line-height: 1.6;
-	padding: 0;
+    line-height: 1.6;
+    padding: 0;
   }
 
   #menu > ul > #nav_staff > a:hover {
-	background-color: transparent;
-	color: $a-hover-color;
+    background-color: transparent;
+    color: $a-hover-color;
   }
 
   /* icon-button to open the menu */
@@ -1799,135 +1799,137 @@ blockquote {
 
   #userinfo_minor a,
   #userinfo_username a {
-	display: none;
-	line-height: 32px;
-	padding: 0 8px;
-	width: 150px;
+    display: none;
+    line-height: 32px;
+    padding: 0 8px;
+    width: 150px;
   }
 
   #userinfo_minor:hover::before {
-	margin-left: 100px;
+    margin-left: 100px;
   }
 
   #userinfo_minor {
-	background-color: $userinfo-minor-color;
-	border-radius: 0 5px 0 0;
-	right: 0;
+    background-color: $userinfo-minor-color;
+    border-radius: 0 5px 0 0;
+    right: 0;
   }
 
   #userinfo_minor,
   #userinfo_username {
-	position: absolute;
-	z-index: 900;
+    position: absolute;
+    z-index: 900;
   }
 
   #userinfo_minor:hover,
   #userinfo_username:hover {
-	z-index: 800;
+    z-index: 800;
   }
 
   #userinfo_username:hover {
-	border-radius: 0 10px 0 0;
-	right: 0;
+    border-radius: 0 10px 0 0;
+    right: 0;
   }
 
   #userinfo_minor:hover {
-	background-color: $userinfo-minor-hover-background-color;
+    background-color: $userinfo-minor-hover-background-color;
   }
 
   #userinfo_username:hover {
-	background-color: $userinfo-username-hover-background-color;
+    background-color: $userinfo-username-hover-background-color;
   }
 
   .settings_sidebar {
-	margin-left: 8px;
+    margin-left: 8px;
   }
 
   #userform #settings_sections {
-	width: 240px;
+    width: 240px;
   }
 }
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   #inbox input[type="submit"] {
-	font-size: 10px;
-	padding: 4px;
+    font-size: 10px;
+    padding: 4px;
   }
 
   #forums input {
-	font-size: 10px;
-	padding: 4px;
+    font-size: 10px;
+    padding: 4px;
   }
 }
 
+/* Begin Changes for Mobile Site */
+
 @media (max-width: 480px) {
   .m_hidden {
-	display: none !important;
+    display: none !important;
   }
 
   /* override from earlier, it makes shit weird */
   td:first-child {
-	padding-left: 6px;
+    padding-left: 6px;
   }
 
   /* BEGIN site layout */
   #wrapper {
-	padding-top: 36px;
+    padding-top: 36px;
   }
 
   .thin {
-	flex-direction: column;
-	margin: auto;
+    flex-direction: column;
+    margin: auto;
   }
 
   /* the specificity goes up to 11 */
   html > body div.thin > * {
-	width: 100%;
+    width: 100%;
   }
 
   form table td.label {
-	width: 5rem;
+    width: 5rem;
   }
 
   .linkbox {
-	text-align: left;
-	width: 90%;
+    text-align: left;
+    width: 90%;
   }
 
   html body .scale_image,
   #stats img {
-	max-width: 100%;
+    max-width: 100%;
   }
   /* END site layout */
 
   /* BEGIN notifications */
   .i-am-new {
-	width: calc(100% - 48px) !important;
+    width: calc(100% - 48px) !important;
   }
 
   .i-am-new li {
-	width: 100% !important;
+    width: 100% !important;
   }
   /* END notifications */
 
   /* BEGIN user settings */
   #user #userform {
-	align-items: stretch;
-	display: flex;
-	flex-direction: column;
-	margin-left: 0;
-	width: 100%;
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    width: 100%;
   }
 
   .settings_sidebar {
-	flex: unset;
-	order: -1;
+    flex: unset;
+    order: -1;
   }
 
   /* tired of specificity :( */
   #settings_sections {
-	position: static !important;
+    position: static !important;
   }
   /* END user settings */
 
@@ -1937,16 +1939,16 @@ blockquote {
   input[type=email],
   input[type=password],
   select {
-	width: 100%;
+    width: 100%;
   }
 
   #upload .box {
-	width: 100% !important;
+    width: 100% !important;
   }
 
   .cat_list tr {
-	display: flex;
-	flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
   }
   /* END forms */
 
@@ -1954,200 +1956,200 @@ blockquote {
   .m_table tbody,
   .m_table .colhead,
   .m_table .colhead_dark {
-	align-items: center;
-	display: flex;
-	flex-wrap: wrap;
-	width: 100%;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
   }
 
   .m_table tbody {
-	align-items: stretch;
-	flex-direction: column;
+    align-items: stretch;
+    flex-direction: column;
   }
   /* END general tables */
 
   /* BEGIN table headers */
   .m_table .colhead,
   .m_table .colhead_dark {
-	flex-wrap: nowrap;
+    flex-wrap: nowrap;
   }
 
   .m_table .colhead td:not(.m_th_right):not(.m_th_left),
   .m_table .colhead_dark td:not(.m_th_right):not(.m_th_left) {
-	display: none;
+    display: none;
   }
 
   .m_table .colhead td,
   .m_table .colhead_dark td {
-	width: auto !important;
+    width: auto !important;
   }
 
   .m_th_left {
-	visibility: hidden;
+    visibility: hidden;
   }
 
   .m_th_left_collapsable {
-	padding-left: 34px;
+    padding-left: 34px;
   }
 
   .m_th_left::before {
-	color: white;
-	content: 'Info';
-	visibility: visible;
+    color: white;
+    content: 'Info';
+    visibility: visible;
   }
 
   /* ghetto :first-of-class */
   .m_th_right {
-	margin-left: auto;
+    margin-left: auto;
   }
 
   .m_th_right + .m_th_right {
-	margin-left: unset;
+    margin-left: unset;
   }
 
   .m_th_right + .m_th_right + .m_th_right {
-	margin-left: unset;
-	padding-right: 12px;
+    margin-left: unset;
+    padding-right: 12px;
   }
   /* END table headers */
 
   /* BEGIN table bodies */
   .m_table tr:not(.hidden):not(.colhead):not(.colhead_dark) {
-	display: block;
-	line-height: 1.4;
-	padding-bottom: 3px;
-	/* for position:absolute children */
-	position: relative;
-	width: 100%;
+    display: block;
+    line-height: 1.4;
+    padding-bottom: 3px;
+    /* for position:absolute children */
+    position: relative;
+    width: 100%;
   }
 
   .m_table td {
-	display: block;
+    display: block;
   }
 
   .m_table tr:not(.colhead):not(.colhead_dark) td:not(.m_td_left):not(.m_td_right) {
-	padding-bottom: 0;
-	padding-top: 0;
-	text-align: left;
-	width: 81%;
+    padding-bottom: 0;
+    padding-top: 0;
+    text-align: left;
+    width: 81%;
   }
 
   td.m_td_left {
-	align-items: center;
-	display: flex;
-	float: left;
-	height: 100%;
-	width: 34px;
+    align-items: center;
+    display: flex;
+    float: left;
+    height: 100%;
+    width: 34px;
   }
   /* END table bodies */
 
   /* BEGIN right-aligned numerical stats */
   .m_td_right {
-	margin: 0;
-	padding: 0 !important;
-	position: absolute;
-	right: 16px;
-	/* this is for the first one only */
-	text-align: right;
-	top: 0.2rem;
+    margin: 0;
+    padding: 0 !important;
+    position: absolute;
+    right: 16px;
+    /* this is for the first one only */
+    text-align: right;
+    top: 0.2rem;
   }
 
   /* specificity override will occur for third one, so this is fine */
   .m_td_right + .m_td_right {
-	top: 1.6em;
+    top: 1.6em;
   }
 
   .m_td_right + .m_td_right + .m_td_right {
-	top: 3em;
+    top: 3em;
   }
   /* END right-aligned numerical stats */
 
   /* BEGIN torrent table */
   .torrent_table * {
-	float: none;
+    float: none;
   }
 
   .torrent_table .remove_bookmark a,
   .torrent_table .add_bookmark a {
-	float: none !important;
+    float: none !important;
   }
 
   .torrent_table .cats_col:not(.m_cats_col) {
-	display: none;
+    display: none;
   }
 
   /* on mobile, it wraps even on normal words, so better like this */
   /* TODO: how to handle super long-words */
   .group .group_info,
   .torrent .group_info {
-	word-break: inherit;
+    word-break: inherit;
   }
 
   .torrent .group_info span:first-child {
-	order: 10;
+    order: 10;
   }
 
   .group_info .tags {
-	order: 20;
-	width: 100%;
+    order: 20;
+    width: 100%;
   }
 
   #wrapper .m_table .edition {
-	padding-top: 0;
-	padding-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   .edition_info {
-	padding: 4px 12px 4px 32px !important;
+    padding: 4px 12px 4px 32px !important;
   }
 
   .group_torrent .edition_info a {
-	line-height: 23px;
+    line-height: 23px;
   }
 
   .edition_1 {
-	/* for the right aligned numbers */
-	min-height: 5em;
+    /* for the right aligned numbers */
+    min-height: 5em;
   }
 
   .td_snatched.m_td_right,
   .td_seeders.m_td_right,
   .td_leechers.m_td_right {
-	min-width: 30px;
-	right: 4px;
-	text-align: left;
+    min-width: 30px;
+    right: 4px;
+    text-align: left;
   }
 
   .td_snatched.m_td_right::before,
   .td_seeders.m_td_right::before,
   .td_leechers.m_td_right::before {
-	background: left / 10px no-repeat $number-snatches-icon;
-	color: #fff;
-	content: ':';
-	filter: brightness(80%);
-	position: absolute;
-	right: calc(100% + 2px);
-	text-align: right;
-	width: 14px;
+    background: left / 10px no-repeat $number-snatches-icon;
+    color: #fff;
+    content: ':';
+    filter: brightness(80%);
+    position: absolute;
+    right: calc(100% + 2px);
+    text-align: right;
+    width: 14px;
   }
 
   .td_seeders.m_td_right::before {
-	background-image: $number-seeders-icon;
+    background-image: $number-seeders-icon;
   }
 
   .td_leechers.m_td_right::before {
-	background-image: $number-leechers-icon;
+    background-image: $number-leechers-icon;
   }
 
   .m_table.checkboxes td:first-child {
-	display: block;
+    display: block;
   }
 
   /* BEGIN expanded torrent group */
   .group_torrent:not(.edition):not(.hidden) {
-	display: flex;
-	flex-direction: column;
-	padding: 5px 0 0 22px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0 0 22px;
   }
 
   /* it would be nice to use flex for all group_torrents, but we can't de display:flex
@@ -2156,108 +2158,108 @@ blockquote {
    */
 
   .torrent_table .group_torrent:not(.edition) td:first-child {
-	display: flex;
-	/* for those ones with a million buttons */
-	flex-wrap: wrap;
-	padding: 0;
-	width: 80%;
+    display: flex;
+    /* for those ones with a million buttons */
+    flex-wrap: wrap;
+    padding: 0;
+    width: 80%;
   }
 
   .torrent_table .group_torrent:not(.edition) td:first-child span {
-	order: 5;
-	padding-left: 6px;
+    order: 5;
+    padding-left: 6px;
   }
 
   .td_file_count::before {
-	content: 'Files: ';
+    content: 'Files: ';
   }
 
   .torrent_table .group_torrent td:nth-child(4) {
-	padding-bottom: 5px;
-	text-align: left;
+    padding-bottom: 5px;
+    text-align: left;
   }
 
   /* artist view page */
   #torrents_album .edition_1 td:nth-child(n+2) {
-	padding-left: 15px;
+    padding-left: 15px;
   }
   /* END expanded torrent group */
 
   /* BEGIN top10 */
   /* 4 and 5 in colhead are hidden anyways */
   #top10 .td_size::before {
-	content: 'Size: ';
+    content: 'Size: ';
   }
 
   .td_data::before {
-	content: 'Transferred: ';
+    content: 'Transferred: ';
   }
   /* END top10 */
   /* END torrent table */
 
   /* BEGIN invite table */
   .invite_table tr:not(.colhead) td:nth-child(3)::before {
-	content: 'Joined: ';
+    content: 'Joined: ';
   }
 
   .invite_table tr:not(.colhead) td:nth-child(4)::before {
-	content: 'Seen: ';
+    content: 'Seen: ';
   }
 
   .td_dl.m_td_right::before {
-	content: 'D: ';
+    content: 'D: ';
   }
 
   .td_up.m_td_right::before {
-	content: 'U: ';
+    content: 'U: ';
   }
 
   .td_ratio.m_td_right::before {
-	content: 'R: ';
+    content: 'R: ';
   }
   /* END invite table */
 
   /* BEGIN collage table */
   table.m_table.collage_table tr:not(.colhead):not(.colhead) {
-	display: flex;
-	flex-direction: column;
+    display: flex;
+    flex-direction: column;
   }
 
   .m_table .td_collage_category::before {
-	content: 'Category: ';
+    content: 'Category: ';
   }
 
   .m_table .td_collage_category {
-	order: 2;
-	padding-top: 0;
+    order: 2;
+    padding-top: 0;
   }
 
   .collage_table .td_info {
-	padding-bottom: 0;
+    padding-bottom: 0;
   }
 
   .collage_table .td_updated::before {
-	content: 'Updated: ';
+    content: 'Updated: ';
   }
 
   .collage_table .td_updated {
-	order: 3;
+    order: 3;
   }
 
   .collage_table .td_author::before {
-	content: 'Author: ';
+    content: 'Author: ';
   }
 
   .collage_table .td_author {
-	order: 3;
+    order: 3;
   }
 
   .collage_table .td_torrent_count::before {
-	content: 'T: ';
+    content: 'T: ';
   }
 
   .collage_table .td_subscribers::before {
-	content: 'S: ';
+    content: 'S: ';
   }
   /* END collage table */
 
@@ -2265,70 +2267,70 @@ blockquote {
   /* TODO: still show the time the request was filled without taking up too much space */
 
   #requests .request_table tr:not(.colhead) td:nth-child(n+2) {
-	padding: 0 6px;
+    padding: 0 6px;
   }
 
   #requests .request_table tr:not(.colhead) td:nth-child(5)::before {
-	content: 'Filler: ';
+    content: 'Filler: ';
   }
 
   #requests .request_table tr:not(.colhead) td:nth-child(6)::before {
-	content: 'Requester: ';
+    content: 'Requester: ';
   }
 
   #requests .request_table tr:not(.colhead) td:nth-child(6) {
-	padding: 0 6px;
+    padding: 0 6px;
   }
 
   #requests .request_table tr:not(.colhead) td:nth-child(7)::before {
-	content: 'Added: ';
+    content: 'Added: ';
   }
 
   #requests .request_table tr:not(.colhead) td:nth-child(8)::before {
-	content: 'Last Vote: ';
+    content: 'Last Vote: ';
   }
 
   #requests .request_table tr:not(.colhead) td:nth-child(8) {
-	padding-bottom: 4px;
+    padding-bottom: 4px;
   }
   /* END requests */
 
   /* BEGIN forums */
   /* BEGIN forum index */
   .forum_index .last_read {
-	float: none !important;
+    float: none !important;
   }
 
   .forum_index .last_topic,
   .forum_index .last_poster {
-	float: none !important;
+    float: none !important;
   }
 
   .forum_index .last_topic {
-	display: block;
+    display: block;
   }
 
   #wrapper .td_read {
-	float: left;
-	height: 12px;
-	margin: 3px 5px 0 5px;
-	width: 11px;
+    float: left;
+    height: 12px;
+    margin: 3px 5px 0 5px;
+    width: 11px;
   }
 
   .td_topic_count.m_td_right::before {
-	content: 'T: ';
+    content: 'T: ';
   }
 
   .td_post_count.m_td_right::before {
-	content: 'P: ';
+    content: 'P: ';
   }
 
   .td_author::before {
-	content: 'Author: ';
+    content: 'Author: ';
   }
 
   .td_replies.m_td_right::before {
-	content: 'R: ';
+    content: 'R: ';
   }
   /* END forum index */
 
@@ -2337,321 +2339,329 @@ blockquote {
    in ways specific for tabular data */
 
   .forum_post tbody {
-	align-items: stretch;
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	width: 100%;
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
   }
 
   .forum_post tr:not(.colhead_dark):not(.hidden) {
-	display: block;
-	position: relative;
-	width: 100%;
+    display: block;
+    position: relative;
+    width: 100%;
   }
   /* END forum table structure */
 
   /* BEGIN forum headers */
   /* remove dashes from forum post headers */
   .forum_post tr.colhead_dark {
-	color: transparent;
-	min-height: 50px;
-	padding-left: 54px;
+    color: transparent;
+    min-height: 50px;
+    padding-left: 54px;
   }
 
   .forum_post tr.colhead_dark span,
   .forum_post tr.colhead_dark strong {
-	color: #c6c9c9;
+    color: #c6c9c9;
   }
 
   .forum_post tr.colhead_dark div {
-	display: inline;
+    display: inline;
   }
 
   .forum_post .time::after {
-	content: '\a';
-	white-space: pre;
+    content: '\a';
+    white-space: pre;
   }
 
   .forum_post tr.colhead_dark div:nth-child(2) {
-	padding-left: 8px;
+    padding-left: 8px;
   }
 
   .forum_post .avatar {
-	left: 5px;
-	position: absolute;
-	top: -55px;
-	width: 0;
-	word-break: break-all;
+    left: 5px;
+    position: absolute;
+    top: -55px;
+    width: 0;
+    word-break: break-all;
   }
 
   .forum_post .avatar img {
-	max-height: 50px !important;
-	max-width: 50px !important;
-	min-height: 0;
-	min-width: 0;
-	position: absolute;
+    max-height: 50px !important;
+    max-width: 50px !important;
+    min-height: 0;
+    min-width: 0;
+    position: absolute;
   }
   /* END forum headers */
   /* END forums */
 
   /* BEGIN rules */
   #rules .m_th_left::before {
-	content: 'Rules';
+    content: 'Rules';
   }
 
   .rule_table .nobr {
-	white-space: unset;
+    white-space: unset;
   }
   /* END rules */
 
   /* BEGIN site header */
   #header {
-	background: $header-background-color;
-	top: 0;
-	height: 0;
-	left: 0;
-	position: fixed;
-	transform: translateY(0);
-	transition: 200ms;
-	width: 100%;
-	z-index: 1000;
-	padding-bottom: 32px;
-	opacity: 0;
+    background: $header-background-color;
+    top: 0;
+    height: 0;
+    left: 0;
+    position: fixed;
+    transform: translateY(0);
+    transition: 200ms;
+    width: 100%;
+    z-index: 1000;
+    padding-bottom: 32px;
+    opacity: 0;
   }
 
   #header:hover {
-	height: 80%;
-	opacity: .96;
-	transition: all 600ms cubic-bezier(1.000, 0.010, 0.300, 1.310);
+    height: 80%;
+    opacity: .96;
+    transition: all 600ms cubic-bezier(1.000, 0.010, 0.300, 1.310);
   }
 
   /* pulldown arrow icon for mobile view, top menu */
   #extra1{ 
-	  position: fixed;
-	  top: 5px;
-	  left: calc(50% - 12.5px);
-	  display: block;
-	  opacity: 1!important;
-	  width: 25px;
-	  height: 25px;
-	  background-image: $mobile-pulldown-icon;
-	  background-size: contain;
-	  z-index:500;
-	  pointer-events: none;
+      position: fixed;
+      top: 5px;
+      left: calc(50% - 12.5px);
+      display: block;
+      opacity: 1!important;
+      width: 25px;
+      height: 25px;
+      background-image: $mobile-pulldown-icon;
+      background-size: contain;
+      z-index:500;
+      pointer-events: none;
   }
   /* BEGIN hamburger bar */
   #logo {
-	height: 2%;
-	left: 0;
-	padding: 0;
-	position: fixed;
-	top: 0;
-	/* it's OVER 9000! */
-	transform: translateY(6000%);
-	width: 20%;
-	z-index: 500;
+    height: 2%;
+    left: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    /* it's OVER 9000! */
+    transform: translateY(6000%);
+    width: 20%;
+    z-index: 500;
   }
 
   #logo a {
-	background-image: none;
-	display: block;
-	height: 32px;
-	width: 100%;
+    background-image: none;
+    display: block;
+    height: 32px;
+    width: 100%;
   }
 
   #extra4,
   #extra5 {
-	  height: 32px;
-	  position: fixed;
-	  top: 0
+      height: 32px;
+      position: fixed;
+      top: 0
   }
 
 // site logo in topbar for mobile
   #extra5 {
-	  background-image: $site-logo-square; 
-	  background-position: 0;
-	  background-size: auto 24px;
-	  background-repeat: no-repeat;
-	  left: 4px;
-	  pointer-events: none;
-	  transform: translateZ(0);
-	  width: 32px;
-	  z-index: 400;
+      background-image: $site-logo-square; 
+      background-position: 0;
+      background-size: auto 24px;
+      background-repeat: no-repeat;
+      left: 4px;
+      pointer-events: none;
+      transform: translateZ(0);
+      width: 32px;
+      z-index: 400;
   }
   #extra4 {
-	  background: $header-background-color;
-	  border-radius: 0 0 4px 4px;
-	  display: block;
-	  right: 0;
-	  width: 100vw
+      background: $header-background-color;
+      border-radius: 0 0 4px 4px;
+      display: block;
+      right: 0;
+      width: 100vw
   }
 
   #extra4,#extra5 {
-	  height: 32px;
-	  position: fixed;
-	  top: 0
+      height: 32px;
+      position: fixed;
+      top: 0
   }
   /* END hamburger bar */
 
   #header {
-	--row-height: 40px;
+    --row-height: 40px;
   }
 
   #header ul:not(#userinfo_major):not(#userinfo_stats) {
-	display: flex;
-	flex-wrap: wrap;
-	width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
   }
 
   #header ul:not(#userinfo_major):not(#userinfo_stats) li {
-	margin: 0;
-	width: 33.3%;
+    margin: 0;
+    width: 33.3%;
   }
 
   #header ul:not(#userinfo_major):not(#userinfo_stats) a {
-	line-height: var(--row-height);
+    line-height: var(--row-height);
   }
 
   #alerts {
-	display: none;
+    display: none;
   }
 
   /* BEGIN searchboxes */
   #searchbars ul {
-	bottom: 0;
-	height: unset;
-	padding: 0 0 0 6px;
-	position: absolute;
+    bottom: 0;
+    height: unset;
+    padding: 0 0 0 6px;
+    position: absolute;
   }
 
   #searchbars li {
-	height: var(--row-height);
+    height: var(--row-height);
   }
 
   #searchbars li:nth-child(-n+3) .search_form {
-	margin: 6px 6px 3px 0;
+    margin: 6px 6px 3px 0;
   }
 
   #searchbars li:nth-child(n+4) .search_form {
-	margin: 3px 6px 6px 0;
+    margin: 3px 6px 6px 0;
   }
 
   #header #searchbars input {
-	height: calc(var(--row-height) - 9px);
+    height: calc(var(--row-height) - 9px);
   }
   /* END searchboxes */
 
   /* BEGIN userinfo */
   #userinfo {
-	position: static;
+    position: static;
   }
 
   #userinfo_major {
-	right: 12px;
-	top: calc(100% - var(--row-height) * 10 - 55px);
+    right: 12px;
+    top: calc(100% - var(--row-height) * 10 - 55px);
   }
 
   #userinfo_stats {
-	color: white;
-	line-height: 1.3;
-	right: 12px;
-	top: calc(100% - var(--row-height) * 10 - 38px);
+    color: white;
+    line-height: 1.3;
+    right: 12px;
+    top: calc(100% - var(--row-height) * 10 - 38px);
   }
 
   #userinfo_stats span {
-	white-space: nowrap;
+    white-space: nowrap;
   }
 
   #stats_ratio {
-	color: $a-color;
+    // We'll allow the color-keyed ratio number to appear, with a dark background. No need to force a color here.
   }
 
   #stats_ratio .tooltip {
-	color: white;
+  	// Provide a small dark background for the number to appear in color
+    background-color: #404040;
+    border-radius: 0.45rem;
+    padding-left: 0.45rem;
+    padding-right: 0.45rem;
   }
 
   #userinfo_username {
-	background: radial-gradient(circle at top left, $userinfo-background-color-1, $userinfo-background-color-2);
-	bottom: calc(var(--row-height) * 2);
-	left: 0;
-	position: absolute;
+    background: radial-gradient(circle at top left, $userinfo-background-color-1, $userinfo-background-color-2);
+    position: absolute; 
+    left: 0;
+    /* #2024 fixed */
   }
 
   #nav_userclass {
-	display: none;
+    display: none;
   }
 
   #userinfo_minor {
-	background: radial-gradient(circle at top left, $userinfo-background-color-1, $userinfo-background-color-2);
-	bottom: calc(var(--row-height) * 3);
-	position: absolute;
+    background: radial-gradient(circle at top left, $userinfo-background-color-1, $userinfo-background-color-2);
+    bottom: calc(var(--row-height) * 3);
+    position: absolute;
   }
 
   /* S P E C I F I C I T Y */
   html > body #userinfo_minor a,
   html > body #userinfo_username a {
-	display: block;
-	height: 100%;
-	line-height: 50px;
-	text-align: center;
+    display: block;
+    height: 100%;
+    line-height: 50px;
+    text-align: center;
   }
 
   #userinfo_username #nav_userinfo a {
-	width: unset;
+    width: unset;
   }
   /* END userinfo */
 
   /* BEGIN browse links */
   #menu ul {
-	background: radial-gradient(circle at top left, #0999, #088);
-	bottom: calc(var(--row-height) * 7);
-	position: absolute;
+    /* verify this later #qwerty #2024 */
+    background: radial-gradient(circle at top left, $userinfo-background-color-2, $userinfo-background-color-1);
+    bottom: calc(var(--row-height) * 7);
+    position: absolute;
   }
 
   #menu li {
-	background: transparent !important;
+    background: transparent !important;
   }
   /* END browse links */
 
   #extracb1 {
-	display: block;
-	height: 32px;
-	margin: 0;
-	opacity: 0;
-	position: fixed;
-	right: 0;
-	top: 0;
-	width: 50vw;
-	z-index: 999;
+    display: block;
+    height: 32px;
+    margin: 0;
+    opacity: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 50vw;
+    z-index: 999;
   }
 
   /* BEGIN checked */
   #extracb1:checked ~ #wrapper #header {
-	transform: translateY(120%);
+    transform: translateY(120%);
   }
 
   #extracb1:checked ~ #wrapper #logo {
-	transform: none;
+    transform: none;
   }
 
   #extracb1:checked ~ #extra1 {
-	transform: translateY(5px) rotate(45deg);
+    transform: translateY(5px) rotate(45deg);
   }
 
   #extracb1:checked ~ #extra2 {
-	opacity: 0;
+    opacity: 0;
   }
 
   #extracb1:checked ~ #extra3 {
-	transform: translateY(-5px) rotate(-45deg);
+    transform: translateY(-5px) rotate(-45deg);
   }
   /* END checked */
   /* END site header */
 }
 
+
+/* Begin Changes for Mobile, super small window */
+
 @media (max-width: 480px) and (max-height: 480px) {
   #header {
-	--row-height: 35px;
+    --row-height: 35px;
   }
 }

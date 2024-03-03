@@ -1819,7 +1819,6 @@ blockquote {
     padding: 4px;
   }
 }
-/* Begin Changes for Mobile Site */
 @media (max-width: 480px) {
   .m_hidden {
     display: none !important;
@@ -2399,17 +2398,17 @@ blockquote {
   #userinfo_stats span {
     white-space: nowrap;
   }
+  #stats_ratio {
+    color: #f4f4f4;
+  }
   #stats_ratio .tooltip {
-    background-color: #404040;
-    border-radius: 0.45rem;
-    padding-left: 0.45rem;
-    padding-right: 0.45rem;
+    color: white;
   }
   #userinfo_username {
     background: radial-gradient(circle at top left, rgba(99, 64, 60, 0.6862745098), #63403c);
-    position: absolute;
+    bottom: calc(var(--row-height) * 2);
     left: 0;
-    /* #2024 fixed */
+    position: absolute;
   }
   #nav_userclass {
     display: none;
@@ -2433,8 +2432,7 @@ blockquote {
   /* END userinfo */
   /* BEGIN browse links */
   #menu ul {
-    /* verify this later #qwerty #2024 */
-    background: radial-gradient(circle at top left, #63403c, rgba(99, 64, 60, 0.6862745098));
+    background: radial-gradient(circle at top left, rgba(0, 153, 153, 0.6), #088);
     bottom: calc(var(--row-height) * 7);
     position: absolute;
   }
@@ -2472,7 +2470,6 @@ blockquote {
   /* END checked */
   /* END site header */
 }
-/* Begin Changes for Mobile, super small window */
 @media (max-width: 480px) and (max-height: 480px) {
   #header {
     --row-height: 35px;
