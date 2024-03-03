@@ -17,6 +17,10 @@ textarea:focus {
   outline: 0;
 }
 
+// 2024 fix -- provide formatting on .box.pad for the [box] tag
+//
+// We're targeting main content only, so exclude the 'reply box' 
+// at the bottom which also uses this tag.
 
 .box .box.pad, 
 .main_column .box.pad:not(#reply_box) {
@@ -25,12 +29,6 @@ textarea:focus {
   margin: 8px 8px 8px 8px;
   border-radius: 6px;
 }
-
-      // 2024 fix -- provide formatting on .box.pad for the [box] tag
-      //
-      // We're targeting main content only, so exclude the 'reply box' 
-      // at the bottom which also uses this tag.
-
 
 #content > .thin,
 .box,
@@ -2543,6 +2541,25 @@ blockquote {
     height: calc(var(--row-height) - 9px);
   }
   /* END searchboxes */
+    
+  /* Handling to prevent keyboard from opening on iPhone and other mobile devices */
+
+  @keyframes delay-pointer-events {
+    0% {
+        visibility: hidden;
+    }
+    50% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: visible;
+    }
+  }
+  #header:hover #searchbars input{
+    animation: delay-pointer-events 2000ms linear;
+  }
+
+  /* END Handling to prevent..*/
 
   /* BEGIN userinfo */
   #userinfo {

@@ -15,7 +15,7 @@ textarea:focus {
   outline: 0;
 }
 
-.box .box.pad, 
+.box .box.pad,
 .main_column .box.pad:not(#reply_box) {
   background-color: rgba(80, 80, 80, 0.4392156863);
   border: 2px solid rgba(33, 42, 45, 0.6666666667);
@@ -2383,6 +2383,22 @@ blockquote {
     height: calc(var(--row-height) - 9px);
   }
   /* END searchboxes */
+  /* Handling to prevent keyboard from opening on iPhone and other mobile devices */
+  @keyframes delay-pointer-events {
+    0% {
+      visibility: hidden;
+    }
+    50% {
+      visibility: hidden;
+    }
+    100% {
+      visibility: visible;
+    }
+  }
+  #header:hover #searchbars input {
+    animation: delay-pointer-events 2000ms linear;
+  }
+  /* END Handling to prevent..*/
   /* BEGIN userinfo */
   #userinfo {
     position: static;
