@@ -819,39 +819,39 @@ table.box2 {
 }
 
 #menu li:nth-child(2) {
-  background-color: #7a5546;
+  background-color: #926354;
 }
 
 #menu li:nth-child(3) {
-  background-color: #704d40;
+  background-color: #8c5d50;
 }
 
 #menu li:nth-child(4) {
-  background-color: #67453a;
+  background-color: #85584c;
 }
 
 #menu li:nth-child(5) {
-  background-color: #5d3d34;
+  background-color: #7f5247;
 }
 
 #menu li:nth-child(6) {
-  background-color: #54362e;
+  background-color: #784d43;
 }
 
 #menu li:nth-child(7) {
-  background-color: #4b2e28;
+  background-color: #72483f;
 }
 
 #menu li:nth-child(8) {
-  background-color: #6d4942;
+  background-color: #6c423b;
 }
 
 #menu li:nth-child(9) {
-  background-color: #422722;
+  background-color: #653d37;
 }
 
 #userinfo_username {
-  background-color: #66433e;
+  background-color: #5f3833;
   right: 50px;
 }
 
@@ -1892,7 +1892,7 @@ blockquote {
     margin-left: 100px;
   }
   #userinfo_minor {
-    background-color: #63403c;
+    background-color: #59332f;
     border-radius: 0 5px 0 0;
     right: 0;
   }
@@ -1910,10 +1910,10 @@ blockquote {
     right: 0;
   }
   #userinfo_minor:hover {
-    background-color: #794e49;
+    background-color: #a1726d;
   }
   #userinfo_username:hover {
-    background-color: #875752;
+    background-color: #9C6F68;
   }
   .settings_sidebar {
     margin-left: 8px;
@@ -2441,7 +2441,7 @@ blockquote {
   /* END Handling to prevent..*/
   /* ## 3.15.2 BEGIN MOBILE MENU LAYOUT */
   #header {
-    background: #6d4942;
+    background: #6c423b;
     top: 0;
     height: 0;
     left: 0;
@@ -2509,7 +2509,7 @@ blockquote {
     z-index: 400;
   }
   #extra4 {
-    background: #6d4942;
+    background: #6c423b;
     border-radius: 0 0 4px 4px;
     display: block;
     right: 0;
@@ -2582,7 +2582,7 @@ blockquote {
     padding-right: 0.45rem;
   }
   #userinfo_username {
-    background: radial-gradient(circle at top left, rgba(99, 64, 60, 0.6862745098), #63403c);
+    background: radial-gradient(circle at top left, #341409, #59332f);
     position: absolute;
     left: 0;
     /* #2024 fixed */
@@ -2591,7 +2591,7 @@ blockquote {
     display: none;
   }
   #userinfo_minor {
-    background: radial-gradient(circle at top left, rgba(99, 64, 60, 0.6862745098), #63403c);
+    background: radial-gradient(circle at top left, #341409, #59332f);
     bottom: calc(var(--row-height) * 3);
     position: absolute;
   }
@@ -2610,7 +2610,7 @@ blockquote {
   /* ## 3.15.5 BEGIN browse links */
   #menu ul {
     /* verify this later #qwerty #2024 */
-    background: radial-gradient(circle at top left, #63403c, rgba(99, 64, 60, 0.6862745098));
+    background: radial-gradient(circle at top left, #59332f, #341409);
     bottom: calc(var(--row-height) * 7);
     position: absolute;
   }
