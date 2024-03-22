@@ -40,7 +40,11 @@
 //     on collage views. Fixed.
 //
 //   Added: Tag bubbles ~ tags now appear in roundrects on torrent, collage-listing,
-//     and collage-discog pages.
+//     collage-discog and requests pages.   
+//
+//   Added: Tag bubbles have a hover effect on torrent, collage-listing, 
+//     and collage-discog pages, but not request pages because tags are not 
+//     clickable on request pages.
 //
 //   Change: On mobile, images in private inbox no longer overrun the width,
 //     just like other locations.
@@ -2890,11 +2894,10 @@ blockquote {
 
 /* ## 4.2 tag bubble appearance on widescreen */
 /* #wideload */
-
-/* applies to Torrent Pages, Collage Pages, and Requests pages. */
-
+/* applies to Torrent Pages, collage-listing pages, collage-discog pages, and Requests pages. */
 .collage_table .td_info .tags :not(:empty),
 #torrent_table .group .tags :not(:empty),
+#discog_table .group .tags :not(:empty),
 #request_table .tags {
      visibility: visible;
      box-sizing: border-box;
@@ -2912,15 +2915,16 @@ blockquote {
 
 /* hover effect: the people have spoken */
 /* does not apply to #request_table because the links are not clickable. */
-
 .collage_table .td_info .tags :not(:empty):hover,
-#torrent_table .group .tags :not(:empty):hover {
-  color: $tag-bubble-background-color; 
-  background: $tag-bubble-foreground-color; 
-  transition: all 0.3s;
-  box-shadow:
-   rgba(0, 0, 0, 0.25) 0px 14px 28px, 
-   rgba(0, 0, 0, 0.22) 0px 10px 10px; 
+#torrent_table .group .tags :not(:empty):hover,
+#discog_table .tags :hover
+{
+     color: $tag-bubble-background-color !important; 
+     background: $tag-bubble-foreground-color !important; 
+     transition: all 0.3s;
+     box-shadow:
+     rgba(0, 0, 0, 0.25) 0px 14px 28px, 
+     rgba(0, 0, 0, 0.22) 0px 10px 10px; 
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -2641,9 +2641,10 @@ blockquote {
 }
 /* ## 4.2 tag bubble appearance on widescreen */
 /* #wideload */
-/* applies to Torrent Pages, Collage Pages, and Requests pages. */
+/* applies to Torrent Pages, collage-listing pages, collage-discog pages, and Requests pages. */
 .collage_table .td_info .tags :not(:empty),
 #torrent_table .group .tags :not(:empty),
+#discog_table .group .tags :not(:empty),
 #request_table .tags {
   visibility: visible;
   box-sizing: border-box;
@@ -2662,9 +2663,10 @@ blockquote {
 /* hover effect: the people have spoken */
 /* does not apply to #request_table because the links are not clickable. */
 .collage_table .td_info .tags :not(:empty):hover,
-#torrent_table .group .tags :not(:empty):hover {
-  color: #0a3a2e;
-  background: #1daf8b;
+#torrent_table .group .tags :not(:empty):hover,
+#discog_table .tags :hover {
+  color: #0a3a2e !important;
+  background: #1daf8b !important;
   transition: all 0.3s;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
