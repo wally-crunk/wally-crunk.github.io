@@ -71,6 +71,11 @@
 
 /* # 1 DESKTOP VIEW */
 /* ## 1.1 Desktop view, handling of all classes */
+/* ## 1.4 Upload Category Decoration Striping */
+/* ## 1.5 Menu Handling */
+/* ## 1.6 Notification Box */
+/* ## 1.7 Sidebar */
+
 
 /* # 2 DOCUMENTATION OF MOBILE CLASSES */
 
@@ -682,8 +687,9 @@ table.box2 {
 }
 
 .last_read ::before {
-     content: '\279F';
-     display: inline-block;
+  content: '➤'; 
+  color: $primary-accent-color;
+  display: inline-block;
 }
 
 #userinfo_minor::before,
@@ -955,64 +961,6 @@ table.box2 {
      margin-top: 8px;
 }
 
-#noty_bottomRight_layout_container {
-     bottom: 24px !important;
-     right: 24px !important;
-}
-
-#noty_bottomRight_layout_container > li {
-     background: 0 0 !important;
-     border: 2px solid $a-color !important;
-     border-radius: 0 !important;
-     box-shadow: 0 0 32px rgba(0, 0, 0, 0.25) !important;
-}
-
-#noty_bottomRight_layout_container .noty_message {
-     background-color: $a-color !important;
-     color: $base-background-color !important;
-     font-weight: 700;
-     padding: 0 !important;
-}
-
-#noty_bottomRight_layout_container .noty_message .noty_text {
-     line-height: 34px;
-     padding: 0 8px;
-}
-
-#noty_bottomRight_layout_container .noty_buttons {
-     background-color: $form-background-color !important;
-     border: none !important;
-     padding: 8px !important;
-}
-
-#noty_bottomRight_layout_container .noty_buttons a {
-     color: $a-color !important;
-}
-
-#noty_bottomRight_layout_container .noty_buttons a:hover {
-     color: $a-hover-color !important;
-}
-
-#noty_bottomRight_layout_container .brackets {
-     margin: 0 2px;
-}
-
-.sidebar .pad ol,
-.sidebar .pad ul {
-     margin-bottom: 0;
-     margin-top: 0;
-     padding-bottom: 0;
-}
-
-.sidebar ol.nobullet,
-.sidebar ul.nobullet {
-     padding-left: 0;
-}
-
-.sidebar img {
-     height: auto;
-     width: auto;
-}
 
 #covers .pad,
 #covers p {
@@ -1275,63 +1223,6 @@ div#flip_view_1 div#similar-artist .name {
      padding: 0;
 }
 
-/* Begin category decorations for torrent-tables on torrent & collage pages */
-/* #2024 bugfix:*/
-/* Apollostage highlights different upload types,
-/* using not an icon but a small color-coded rectangle (provided by a table border).
-/* The line (border-right:) can be replaced by an image or other (content:) as needed. */
-.cats_applications,
-.cats_audiobooks,
-.cats_comedy,
-.cats_comics,
-.cats_ebooks,
-.cats_elearningvideos,
-.cats_music {
-     width: 0;
-     height: 80px;   // 'album cover' images are hard-coded to 90px
-}
-
-/* collages do not include Images in their table rows, so they 
-/* need much less height. */
-body#collage .cats_applications,
-body#collage .cats_audiobooks,
-body#collage .cats_comedy,
-body#collage .cats_comics,
-body#collage .cats_ebooks,
-body#collage .cats_elearningvideos,
-body#collage .cats_music {
-     height: 2rem;
-}
-.cats_music {
-     /* Memo: turn off to not provide any decoration for music uploads */
-     border-right: thin solid darkslategray;
-}
-
-.cats_applications {
-     border-right: thick solid silver;
-}
-
-.cats_audiobooks {
-     border-right: thick solid cornflowerblue;
-}
-
-.cats_comedy {
-     border-right: thick solid deepskyblue;
-}
-
-.cats_comics {
-     border-right: thick solid gold;
-}
-
-.cats_ebooks {
-     border-right: thick solid chocolate;
-}
-
-.cats_elearningvideos {
-     border-right: thick solid mediumpurple;
-}
-/* #2024 */
-/* END category decorations for torrent tables on torrent & collage pages */
 
 /* #2024 bugfix for messages with 'pre' that overrun the width of their message box. */
 pre {
@@ -1778,10 +1669,110 @@ blockquote {
      margin-right: 4px;
 }
 
-#menu > ul a:hover {
-     color: #fff;
+
+
+
+/* */
+/* We want vertical flex unless there's a sidebar. However, CSS has no parent selectors.
+/* So, instead, we set width: 100% on everything, which is basically the same as column
+/* flex, and then just override that to be default if there is a sidebar.
+/* */
+
+.thin:not(.linkbox) > :not(.two_columns) {
+     width: 100%;
 }
 
+.thin > table {
+     /* fuck css, dude. Still not sure why this actually happens. */
+     width: calc(100% - 8px);
+}
+
+.thin > .sidebar ~ * {
+     width: auto;
+}
+
+#header {
+     display: flex;
+     flex-direction: column;
+}
+
+#alerts {
+     order: 10;
+}
+
+/* END desktop view, handling of classes */
+
+
+
+/* # 1.4 BEGIN UPLOAD CATEGORY DECORATION STRIPING */
+/* Begin category decorations for torrent-tables on torrent & collage pages */
+/* #2024 bugfix:*/
+/* Apollostage highlights different upload types,
+/* using not an icon but a small color-coded rectangle (provided by a table border).
+/* The line (border-right:) can be replaced by an image or other (content:) as needed. */
+.cats_applications,
+.cats_audiobooks,
+.cats_comedy,
+.cats_comics,
+.cats_ebooks,
+.cats_elearningvideos,
+.cats_music {
+     width: 0;
+     height: 80px;   // 'album cover' images are hard-coded to 90px
+}
+
+/* collages do not include Images in their table rows, so they 
+/* need much less height. */
+body#collage .cats_applications,
+body#collage .cats_audiobooks,
+body#collage .cats_comedy,
+body#collage .cats_comics,
+body#collage .cats_ebooks,
+body#collage .cats_elearningvideos,
+body#collage .cats_music {
+     height: 2rem;
+}
+.cats_music {
+     /* Memo: turn off to not provide any decoration for music uploads */
+     border-right: thin solid darkslategray;
+}
+
+.cats_applications {
+     border-right: thick solid silver;
+}
+
+.cats_audiobooks {
+     border-right: thick solid cornflowerblue;
+}
+
+.cats_comedy {
+     border-right: thick solid deepskyblue;
+}
+
+.cats_comics {
+     border-right: thick solid gold;
+}
+
+.cats_ebooks {
+     border-right: thick solid chocolate;
+}
+
+.cats_elearningvideos {
+     border-right: thick solid mediumpurple;
+}
+/* #2024 */
+/* END category decorations for torrent tables on torrent & collage pages */
+
+
+
+/* #1.5 BEGIN Menu handling */
+/* horizontal menu */
+/* #2024 change to styled color instead of #fff to match vertical pulldown menu */
+#menu > ul a:hover {
+     color: $a-color
+}
+
+/* vertical pulldown menu */
 #userinfo_minor:hover a,
 #userinfo_username:hover a {
      color: $a-color;
@@ -1823,35 +1814,100 @@ blockquote {
      margin: -4px;
 }
 
-/* */
-/* We want vertical flex unless there's a sidebar. However, CSS has no parent selectors.
-/* So, instead, we set width: 100% on everything, which is basically the same as column
-/* flex, and then just override that to be default if there is a sidebar.
-/* */
+/* END MENU HANDLING */
 
-.thin:not(.linkbox) > :not(.two_columns) {
-     width: 100%;
+
+/* # 1.6 BEGIN NOTIFICATION BOX */
+
+/* basic positioning */
+#noty_bottomRight_layout_container {
+  bottom: 24px !important;
+  right: 24px !important;
 }
 
-.thin > table {
-     /* fuck css, dude. Still not sure why this actually happens. */
-     width: calc(100% - 8px);
+#noty_bottomRight_layout_container > li {
+  background: 0 0 !important;
+  border: 4px solid $userinfo-minor-color !important;
+  border-radius: 1 !important;
 }
 
-.thin > .sidebar ~ * {
+/* elevation & levitation */
+#noty_bottomRight_layout_container {
+  box-shadow: 0 10px 18px rgba(0,0,0,0.25), 0 7px 7px rgba(0,0,0,0.22);
+  transition: all 0.25s cubic-bezier(.25,.8,.25,1);
+}
+
+#noty_bottomRight_layout_container:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  transform: translateY(-5px);
+}
+
+/* first row of each box */
+#noty_bottomRight_layout_container .noty_message {
+  background: radial-gradient(circle at top right, 
+     $menu-li-sixth-child-background-color, $userinfo-minor-color) !important;
+  color: $a-color !important;
+  font-weight: 700;
+  padding: 0 !important;
+}
+
+/* first row words */
+#noty_bottomRight_layout_container .noty_message .noty_text {
+  line-height: 34px;
+  padding: 0 8px;
+}
+
+/* second row of each box */
+#noty_bottomRight_layout_container .noty_buttons {
+  background-color: $form-background-color !important;
+  border: none !important;
+  padding: 8px !important;
+}
+
+#noty_bottomRight_layout_container .noty_buttons a {
+  color: $a-color !important;
+  background-color: none;
+  border: thin solid transparent; /* prevents button movement */
+  border-radius: 14px;
+  padding: 0px 6px;
+  transition: all .6s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+#noty_bottomRight_layout_container .noty_buttons a:hover {
+  color: #ffc !important;
+  background-color: $userinfo-minor-color;
+  border-radius: 14px;
+  border: thin solid $primary-accent-color;
+  transition: all 0.15s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* END NOTIFICATION BOX */
+
+/* # 1.7 BEGIN SIDEBAR */
+
+.sidebar .pad ol,
+.sidebar .pad ul {
+     margin-bottom: 0;
+     margin-top: 0;
+     padding-bottom: 0;
+}
+
+.sidebar ol.nobullet,
+.sidebar ul.nobullet {
+     padding-left: 0;
+}
+
+.sidebar img {
+     height: auto;
      width: auto;
 }
 
-#header {
-     display: flex;
-     flex-direction: column;
-}
+/* END SIDEBAR */
 
-#alerts {
-     order: 10;
-}
 
-/* END desktop view, handling of classes */
+
+
+
 /* */
 /* */
 /* ################################################################################ */
