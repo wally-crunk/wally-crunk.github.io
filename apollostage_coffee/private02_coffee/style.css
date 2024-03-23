@@ -611,7 +611,7 @@ table.box2 {
 
 .last_read ::before {
   content: "➤";
-  color: #2b2a2b;
+  color: #926354;
   display: inline-block;
 }
 

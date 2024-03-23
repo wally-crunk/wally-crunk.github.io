@@ -682,7 +682,8 @@ table.box2 {
 }
 
 .last_read ::before {
-  content: '➤'; color: $form-background-color;
+  content: '➤'; 
+  color: $menu-li-second-child-background-color;
   display: inline-block;
 }
 
