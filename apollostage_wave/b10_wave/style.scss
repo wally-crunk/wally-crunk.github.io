@@ -18,12 +18,15 @@ $veronica: #9A41DBff;
 $phlox: #BE46FFff;
 $fuchsia: #FF4CFFff;
 $mauve: #FEACFEff;
-$icterine: #FEFE78ff;
+$icterine: #FEFE78ff;     // avail
 $aqua: #1DF6FD;
 $deepskyblue: #1ED4F5;
 $babyblue: #FA61FA;
 $darkmagenta: #A802A8;
-$delayedyellow: #f9f902;
+$delayedyellow: #f9f902;  // avail
+
+$salmonred: #F97A7F;
+$menudored: #c30910;
 
 // define theme colors
 
@@ -39,18 +42,18 @@ $a-hover-color: $deepskyblue;
 
 // Ten color gradient:
 
-$menu-li-second-child-background-color: $federal-blue;    // torrents
-$menu-li-third-child-background-color: $midnight-blue;     // collages
-$menu-li-fourth-child-background-color: $tekhelet;    // requests
-$menu-li-fifth-child-background-color: $grape;     // forums
-$menu-li-sixth-child-background-color: $french-violet;     // irc
-$menu-li-seventh-child-background-color: $veronica;   // top10
-$header-background-color: $phlox;                  // rules, also mobile menu header
-$menu-li-ninth-child-background-color: $fuchsia;     // wiki
-$userinfo-username-color: $mauve;                  // username menu ~ closed
-$userinfo-username-hover-background-color: $darkmagenta; // username menu ~ open
-$userinfo-minor-color: $icterine;                     // VV pulldown menu ~ closed
-$userinfo-minor-hover-background-color: $delayedyellow;    // VV pulldown menu ~ open
+$menu-li-second-child-background-color: $federal-blue;   // torrents
+$menu-li-third-child-background-color: $midnight-blue;   // collages
+$menu-li-fourth-child-background-color: $tekhelet;       // requests
+$menu-li-fifth-child-background-color: $grape;           // forums
+$menu-li-sixth-child-background-color: $french-violet;   // irc
+$menu-li-seventh-child-background-color: $veronica;      // top10
+$header-background-color: $phlox;                        // rules, also mobile menu header
+$menu-li-ninth-child-background-color: $fuchsia;         // wiki
+$userinfo-username-color: $darkmagenta;                  // username menu ~ closed
+$userinfo-username-hover-background-color: $mauve;       // username menu ~ open
+$userinfo-minor-color: $salmonred;                       // VV pulldown menu ~ closed
+$userinfo-minor-hover-background-color: $menudored;      // VV pulldown menu ~ open
 
 // mobile pulldown menu gradient
 
@@ -59,7 +62,7 @@ $userinfo-background-color-2: $grape;    // mobile pulldown menu gradient 2
 
 // notification gradient
 
-$gradient-color-1: $midnight-blue;	// usually works well with 'third-child'
+$gradient-color-1: $midnight-blue;  // usually works well with 'third-child'
 $gradient-color-2: $veronica; // usually works well with 'seventh-child'
 
 // these are GNDN: goes nowhere, does nothing
