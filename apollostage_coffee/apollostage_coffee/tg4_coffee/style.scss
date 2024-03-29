@@ -19,13 +19,13 @@ $a-color: #f4f4f4;
 $a-hover-color: #eedfd1;
 $header-background-color: #6d4942;
 
-$menu-li-second-child-background-color: #8e6354;
-$menu-li-third-child-background-color: #8a6152;
-$menu-li-fourth-child-background-color: #845c4f;
-$menu-li-fifth-child-background-color: #7f574c;
-$menu-li-sixth-child-background-color: #785248;
-$menu-li-seventh-child-background-color: #734d45;
-$menu-li-ninth-child-background-color: #6a4640;
+$menu-li-second-child-background-color: #7a5546;
+$menu-li-third-child-background-color: #704d40;
+$menu-li-fourth-child-background-color: #67453a;
+$menu-li-fifth-child-background-color: #5d3d34;
+$menu-li-sixth-child-background-color: #54362e;
+$menu-li-seventh-child-background-color: #4b2e28;
+$menu-li-ninth-child-background-color: #422722;
 
 $blockquote-background-color: #323132;
 $input-background-color: #383738;
@@ -44,6 +44,9 @@ $ratio-yellow-color: #e1b661;
 
 $menu-background-color-1: #7f574c40;
 $menu-background-color-2: #7f574c;
+
+$tag-bubble-background-color: #422722; // suggest >= to $menu-li-ninth-child-background-color
+$tag-bubble-foreground-color: #8d6653; // suggest <+ to $menu-li-second-child-background-color
 
 $selection-background-color: rgba(180, 160, 139, 0.6);
 $poll-background-color: rgba(197, 176, 155, 0.1);

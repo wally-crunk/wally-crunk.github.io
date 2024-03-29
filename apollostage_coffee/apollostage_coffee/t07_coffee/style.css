@@ -1,180 +1,7 @@
 @charset "UTF-8";
-/* ################################################################################ */
-/* APOLLOSTAGE THEME */
-/* version 2024 
-/* ################################################################################ */
-/* ################################################################################ */
-/* CHANGELOG */
-/* ################################################################################ */
-/**/
-/**/
-/*  # 2024-03-29 - R.A. (thanks H.E.)*/
-/*  # Fix: mobile menu, category stripes;  Add tag bubbles.
-/*  # Chore: Organized and documented the SCSS. */
-/*  For full changelog: see uncompiled SASS file. */
-/*   Original version by burtoo and contributors.  */
-/**/
-/**/
-/* ################################################################################ */
-/* TABLE OF CONTENTS */
-/* ################################################################################ */
-/**/
-/**/
-/* # 0 GENERAL SETUP */
-/* ## 0.1 Font loading */
-/* # 1 DESKTOP VIEW */
-/* ## 1.1 Desktop view, handling of all classes */
-/* ## 1.2 Reserved
-/* ## 1.3 Reserved
-/* ## 1.4 Upload Category Decoration Striping */
-/* ## 1.5 Header and menu layout */
-/* ## 1.6 Menu Handling */
-/* ## 1.7 Notification Box */
-/* ## 1.8 Sidebar */
-/* # 2 DOCUMENTATION OF MOBILE CLASSES */
-/* # 3 CHANGES FOR MOBILE VIEW */
-/* ## 3.1 site layout */
-/* ## 3.2 notifications */
-/* ## 3.3 user settings */
-/* ## 3.4 forms */
-/* ## 3.5 general tables */
-/* ## 3.6 table headers */
-/* ## 3.7 table bodies */
-/* ## 3.8 right-aligned numerical stats */
-/* ## 3.9 torrent table */
-/* ## 3.9.1 expanded torrent group */
-/* ## 3.9.2 top10 */
-/* ## 3.10 invite table */
-/* ## 3.11 collage table */
-/* ## 3.11.1 tag bubble appearance on mobile */
-/* ## 3.11.2 title of collages on mobile */
-/* ## 3.12 requests */
-/* ## 3.13 forums */
-/* ## 3.13.1 forum index */
-/* ## 3.13.2 forum table structure */
-/* ## 3.13.3 forum headers */
-/* ## 3.14 rules */
-/* ## 3.15 site header */
-/* ## 3.15.1 handling to prevent keyboard opening on iP---e and other mobile devices */
-/* ## 3.15.2 mobile menu layout */
-/* ## 3.15.3 searchboxes */
-/* ## 3.15.4 userinfo */
-/* ## 3.15.5 browse links */
-/* ## 3.15.6 checked */
-/* # 4 MISCELLANEOUS
-/* ## 4.1 Changes for Mobile, super small window */
-/* ## 4.2 Tag bubble appearance on widescreen #wideload */
-/**/
-/**/
-/* ################################################################################
-/* # 0 GENERAL SETUP
-/* ################################################################################
-
-/**/
-/* Reminder: */
-/* slash-asterisk sass/scss comments are passed through to compiled css */
-/**/
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
-@namespace url("http://www.w3.org/1999/xhtml");
-@namespace svg url("http://www.w3.org/2000/svg");
-/**/
-/**/
-/* ## 0.1 BEGIN font loading */
-/* Finally add WOFF and Italic support */
-/* END font loading */
-/**/
-/**/
-/* ################################################################################
-/* # 1 DESKTOP VIEW */
-/* ################################################################################
-/**/
-/* ## 1.1 BEGIN desktop view, handling of classes */
-* {
-  box-sizing: inherit;
-}
-
-body,
-button,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-input,
-select,
-textarea,
-.tooltipster-default .tooltipster-content {
-  font-family: "Open Sans", Noto, "Noto Sans", Helvetica, Arial, Tahoma, "Microsoft Yahei", sans-serif;
-}
-
-body {
-  background-color: #1d1c1d;
-  box-sizing: border-box;
-  color: #b9bdbd;
-  font-size: 12px;
-  line-height: 1.6;
-  margin: 0 8px;
-}
-
-pre, code {
-  font-family: "JetBrains Mono", "Cascadia Code", Consolas, "Ubuntu Mono", Monaco, monospace;
-  font-optical-sizing: auto;
-  font-variant-ligatures: no-contextual;
-  font-weight: 200;
-  font-style: normal;
-  font-size: 13px;
-  color: #bdd;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #fff;
-  line-height: normal;
-  margin: 8px 0;
-  max-width: 100%;
-}
-
-h1 a,
-h2 a,
-h3 a,
-h4 a,
-h5 a,
-h6 a {
-  color: #c5b09b;
-}
-
-h1,
-h2 {
-  font-size: 23px;
-  font-weight: 600;
-}
-
-h3,
-h4 {
-  font-size: 18px;
-  font-weight: 600;
-}
-
-h4,
-h5 {
-  font-size: 16px;
-  font-weight: 400;
-}
-
-a {
-  color: #f4f4f4;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #eedfd1;
-}
-
+/* comments are passed through to compiled css */
+@namespace url(http://www.w3.org/1999/xhtml);
+@namespace svg url(http://www.w3.org/2000/svg);
 a:active,
 a:focus,
 button:active,
@@ -188,11 +15,10 @@ textarea:focus {
   outline: 0;
 }
 
-.box .box.pad,
 .main_column .box.pad:not(#reply_box) {
-  background-color: rgba(80, 80, 80, 0.439);
-  border: 2px solid rgba(33, 42, 45, 0.667);
-  margin: 8px;
+  background-color: rgba(80, 80, 80, 0.4392156863);
+  border: 2px solid rgba(33, 42, 45, 0.6666666667);
+  margin: 8px 8px 8px 8px;
   border-radius: 6px;
 }
 
@@ -220,6 +46,21 @@ textarea:focus {
   float: right;
 }
 
+.tooltipster-default .tooltipster-content,
+body,
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+select,
+textarea {
+  font-family: "Open Sans", Helvetica, Arial, Tahoma, "Microsoft Yahei", sans-serif;
+}
+
 #header ul,
 .poll {
   list-style: none;
@@ -232,6 +73,77 @@ textarea:focus {
 .profileinfo:not(.head) img,
 .wiki_article img {
   vertical-align: middle;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans"), local("OpenSans"), url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3aCWcynf_cDxXwCLxiixG1c.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Open Sans Semibold"), local("OpenSans-Semibold"), url(https://fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNSonF5uFdDttMLvmWuJdhhgs.ttf) format("truetype");
+}
+* {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #1d1c1d;
+  box-sizing: border-box;
+  color: #b9bdbd;
+  font-size: 12px;
+  line-height: 1.6;
+  margin: 0 8px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #fff;
+  font-weight: 400;
+  line-height: normal;
+  margin: 8px 0;
+  max-width: 100%;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: #c5b09b;
+}
+
+h1,
+h2 {
+  font-size: 23px;
+}
+
+h3,
+h4 {
+  font-size: 18px;
+}
+
+h4,
+h5 {
+  font-size: 16px;
+}
+
+a {
+  color: #f4f4f4;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #eedfd1;
 }
 
 svg|a {
@@ -392,7 +304,7 @@ select,
 textarea {
   background: #383738;
   border: 1px solid rgba(255, 255, 255, 0.08);
-  color: #c2c2c2;
+  color: #c6c9c9;
   height: 32px;
   padding: 0 8px;
 }
@@ -463,7 +375,6 @@ strong.important_text {
   color: #e74e4e;
 }
 
-/* used for anything? */
 strong.important_text_alt {
   color: #4fb650;
 }
@@ -631,8 +542,7 @@ table.box2 {
 }
 
 .last_read ::before {
-  content: "➤";
-  color: #c5b09b;
+  content: "➟";
   display: inline-block;
 }
 
@@ -646,35 +556,35 @@ table.box2 {
 }
 
 .read {
-  background: url("https://wally-crunk.github.io/svg/gazelle/document.svg") center no-repeat;
+  background: url("https://wally-crunk.github.io/ike/document.svg") center no-repeat;
 }
 
 .unread {
-  background: url("https://wally-crunk.github.io/svg/gazelle/document-round.svg") center no-repeat;
+  background: url("https://wally-crunk.github.io/ike/document-round.svg") center no-repeat;
 }
 
 .read_locked {
-  background: url("https://wally-crunk.github.io/svg/gazelle/lock.svg") center no-repeat;
+  background: url("https://wally-crunk.github.io/ike/lock.svg") center no-repeat;
 }
 
 .unread_locked {
-  background: url("https://wally-crunk.github.io/svg/gazelle/lock-round.svg") center no-repeat;
+  background: url("https://wally-crunk.github.io/ike/lock-round.svg") center no-repeat;
 }
 
 .read_sticky {
-  background: url("https://wally-crunk.github.io/svg/gazelle/pin.svg") center no-repeat;
+  background: url("https://wally-crunk.github.io/ike/pin.svg") center no-repeat;
 }
 
 .unread_sticky {
-  background: url("https://wally-crunk.github.io/svg/gazelle/pin-round.svg") center no-repeat;
+  background: url("https://wally-crunk.github.io/ike/pin-round.svg") center no-repeat;
 }
 
 .read_locked_sticky {
-  background: url("https://wally-crunk.github.io/svg/gazelle/pin-and-lock.svg") center no-repeat;
+  background: url("https://wally-crunk.github.io/ike/pin-and-lock.svg") center no-repeat;
 }
 
 .unread_locked_sticky {
-  background: url("https://wally-crunk.github.io/svg/gazelle/pin-and-lock-round.svg") center no-repeat;
+  background: url("https://wally-crunk.github.io/ike/pin-and-lock-round.svg") center no-repeat;
 }
 
 #header,
@@ -905,6 +815,65 @@ table.box2 {
   margin-top: 8px;
 }
 
+#noty_bottomRight_layout_container {
+  bottom: 24px !important;
+  right: 24px !important;
+}
+
+#noty_bottomRight_layout_container > li {
+  background: 0 0 !important;
+  border: 2px solid #f4f4f4 !important;
+  border-radius: 0 !important;
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.25) !important;
+}
+
+#noty_bottomRight_layout_container .noty_message {
+  background-color: #f4f4f4 !important;
+  color: #1d1c1d !important;
+  font-weight: 700;
+  padding: 0 !important;
+}
+
+#noty_bottomRight_layout_container .noty_message .noty_text {
+  line-height: 34px;
+  padding: 0 8px;
+}
+
+#noty_bottomRight_layout_container .noty_buttons {
+  background-color: #2b2a2b !important;
+  border: none !important;
+  padding: 8px !important;
+}
+
+#noty_bottomRight_layout_container .noty_buttons a {
+  color: #f4f4f4 !important;
+}
+
+#noty_bottomRight_layout_container .noty_buttons a:hover {
+  color: #eedfd1 !important;
+}
+
+#noty_bottomRight_layout_container .brackets {
+  margin: 0 2px;
+}
+
+.sidebar .pad ol,
+.sidebar .pad ul {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+}
+
+.sidebar ol.nobullet,
+.sidebar ul.nobullet {
+  padding-left: 0;
+}
+
+.sidebar img {
+  height: auto;
+  width: auto;
+}
+
 #covers .pad,
 #covers p {
   margin: 0;
@@ -1040,7 +1009,7 @@ div#flip_view_1 div#similar-artist .name {
   background-color: #242324;
 }
 
-.torrent_table tr:not(.colhead, .colhead_dark) {
+.torrent_table tr:not(.colhead):not(.colhead_dark) {
   border-top: 2px solid #242324;
 }
 
@@ -1166,9 +1135,35 @@ div#flip_view_1 div#similar-artist .name {
   padding: 0;
 }
 
-/* #2024 bugfix for messages with 'pre' that overrun the width of their message box. */
-pre {
-  white-space: pre-wrap;
+.cats_col {
+  border-top: 1px solid transparent;
+  height: 100%;
+  padding: 0;
+  position: relative;
+}
+
+.cats_applications {
+  background-color: #2b99ff;
+}
+
+.cats_audiobooks {
+  background-color: #ffe70f;
+}
+
+.cats_comedy {
+  background-color: #ff382b;
+}
+
+.cats_comics {
+  background-color: #b52bff;
+}
+
+.cats_ebooks {
+  background-color: #3fee23;
+}
+
+.cats_elearningvideos {
+  background-color: #22fad9;
 }
 
 .log_section pre {
@@ -1261,18 +1256,18 @@ ul.collage_images li a > span {
   table-layout: fixed;
 }
 
-.recent tr:not(.colhead, .colhead_dark) > td {
+.recent tr:not(.colhead):not(.colhead_dark) > td {
   padding: 0;
   position: relative;
 }
 
-.recent tr:not(.colhead, .colhead_dark) > td::before {
+.recent tr:not(.colhead):not(.colhead_dark) > td::before {
   content: "";
   float: left;
   padding-top: 100%;
 }
 
-.recent tr:not(.colhead, .colhead_dark) > td a {
+.recent tr:not(.colhead):not(.colhead_dark) > td a {
   height: 100%;
   left: 0;
   overflow: hidden;
@@ -1281,7 +1276,7 @@ ul.collage_images li a > span {
   width: 100%;
 }
 
-.recent tr:not(.colhead, .colhead_dark) > td a img {
+.recent tr:not(.colhead):not(.colhead_dark) > td a img {
   height: 100%;
   position: absolute;
   width: 100%;
@@ -1483,11 +1478,11 @@ ul.collage_images li a > span {
   margin-top: 8px;
 }
 
-#dnulist tr:not(.colhead, .colhead_dark):nth-child(even) {
+#dnulist tr:not(.colhead):not(.colhead_dark):nth-child(even) {
   background-color: #3d3336;
 }
 
-#dnulist tr:not(.colhead, .colhead_dark):nth-child(odd) {
+#dnulist tr:not(.colhead):not(.colhead_dark):nth-child(odd) {
   background-color: #323132;
 }
 
@@ -1582,7 +1577,7 @@ blockquote {
   background-color: #383738;
 }
 
-#bookmarks #torrent_table tr:not(.colhead, .colhead_dark) td:nth-child(2) {
+#bookmarks #torrent_table tr:not(.colhead):not(.colhead_dark) td:nth-child(2) {
   border-top: 1px solid transparent;
   height: 100%;
   padding: 0;
@@ -1611,11 +1606,56 @@ blockquote {
   margin-right: 4px;
 }
 
-/* */
-/* We want vertical flex unless there's a sidebar. However, CSS has no parent selectors.
-/* So, instead, we set width: 100% on everything, which is basically the same as column
-/* flex, and then just override that to be default if there is a sidebar.
-/* */
+#menu > ul a:hover {
+  color: #fff;
+}
+
+#userinfo_minor:hover a,
+#userinfo_username:hover a {
+  color: #f4f4f4;
+}
+
+/* Icon revealed when menu is open */
+#userinfo_minor:hover::before {
+  background-color: rgba(0, 0, 0, 0);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-image: url("https://wally-crunk.github.io/ike/menu.svg");
+  background-size: 30px;
+  background-origin: padding-box;
+  background-clip: border-box;
+}
+
+#searchbars .search_form {
+  background: 0 0;
+}
+
+#searchbars .search_form input {
+  border: none;
+  border-radius: 2.5px;
+  height: 30px;
+}
+
+#searchbars .search_form input:focus {
+  background: #242324;
+}
+
+.sidebar {
+  order: 5;
+}
+
+.thin:last-child {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -4px;
+}
+
+/*
+ * We want vertical flex unless there's a sidebar. However, CSS has no parent selectors.
+ * So, instead, we set width: 100% on everything, which is basically the same as column
+ * flex, and then just override that to be default if there is a sidebar.
+ */
 .thin:not(.linkbox) > :not(.two_columns) {
   width: 100%;
 }
@@ -1638,80 +1678,46 @@ blockquote {
   order: 10;
 }
 
-/* END desktop view, handling of classes */
-/* # 1.2 Reserved [for more organization in the future]
-/* # 1.3 Reserved [for more organization in the future]
-
-/* # 1.4 BEGIN UPLOAD CATEGORY DECORATION STRIPING */
-/* Begin category decorations for torrent-tables on torrent & collage pages */
-/* #2024 bugfix:*/
-/* Apollostage highlights different upload types,
-/* using not an icon but a small color-coded rectangle (done using a border).
-/* The line (border-right:) can be replaced by an image or other (content:) as needed. */
-.cats_applications,
-.cats_audiobooks,
-.cats_comedy,
-.cats_comics,
-.cats_ebooks,
-.cats_elearningvideos,
-.cats_music {
-  width: 0;
-  height: 80px;
-}
-
-/* collages do not include Images in their table rows, so they 
-/* need much less height. */
-body#collage .cats_applications,
-body#collage .cats_audiobooks,
-body#collage .cats_comedy,
-body#collage .cats_comics,
-body#collage .cats_ebooks,
-body#collage .cats_elearningvideos,
-body#collage .cats_music {
-  height: 2rem;
-}
-
-.cats_music {
-  /* Memo: If you desire NO decoration on music uploads,
-  /* turn this off. */
-  border-right: thin solid darkslategray;
-}
-
-.cats_applications {
-  border-right: thick solid silver;
-}
-
-.cats_audiobooks {
-  border-right: thick solid cornflowerblue;
-}
-
-.cats_comedy {
-  border-right: thick solid deepskyblue;
-}
-
-.cats_comics {
-  border-right: thick solid gold;
-}
-
-.cats_ebooks {
-  border-right: thick solid chocolate;
-}
-
-.cats_elearningvideos {
-  border-right: thick solid mediumpurple;
-}
-
-/* #2024 */
-/* END category decorations for torrent tables on torrent & collage pages */
-/* #1.5 HEADER AND MENU LAYOUT */
-/* MENU AND TOP BAR, DESKTOP ONLY */
-@media (width >= 480px) {
+/*
+ * Documentation of mobile classes:
+ * GENERAL:
+ * .m_hidden: display: none on mobile
+ * TABLES:
+ * .m_table: table which will be mobilized
+ * .m_th_left: which table header should be preserved on the left. It will be replaced with the word "Info". Only 1
+ * .m_th_left_collapsable: extra padding applied to align right of the collapse button
+ * .m_th_right: table headers that will be "floated" to the right. Max of 3
+ * .m_td_left: will be left-aligned, and expanded vertically. Mainly for collapse button
+ * .m_td_right: tables cells which will be put on the right with absolute positioning, to correspond with .m_th_right headers. Max of 3
+ *
+ * forum posts, although they share some of the styles, do not actually use
+ * these classes, because:
+ * - they are not tabular data, so for semantics
+ * - they should not be compact the same way as a table
+ * - they have much more uniform HTML across different places (comments and
+ * "real" forum), so classes to simplify CSS aren't necessary
+ */
+/*
+ * Portrait phones, and sometimes landscape
+ * TODO: currently, responsive is optimized for either desktop or portrait phone
+ * We need to handle landscape phones as well
+ *
+ * this stuff can *probably* be mostly copy-pasted into other stylesheets
+ * then tweaked a bit. Ideally, before that happens, the whole styling system
+ * should be made to use a CSS preprocessor so that we can have reusable styles
+ */
+/* this query is mostly copied from what used to be above
+ * despite the fact that this exists, there are still many
+ * rules above that are overridden by media queries, rather
+ * than being put here like they should be
+ */
+@media (min-width: 480px) {
   .thin:last-child > :not(.two_columns) {
     margin: 4px;
   }
   #nav_donate .tooltip::after {
     color: red;
-    content: "❤️️";
+    content: "❤️";
     font-size: 75%;
     vertical-align: top;
   }
@@ -1733,9 +1739,9 @@ body#collage .cats_music {
     background-color: transparent;
     color: #eedfd1;
   }
+  /* icon-button to open the menu */
   #userinfo_minor::before {
-    background: url("https://wally-crunk.github.io/svg/gazelle/chevrons-down.svg") no-repeat;
-    filter: brightness(200%); /*force white */
+    background: url("https://wally-crunk.github.io/ike/chevrons-down.svg") no-repeat;
     background-size: 28px;
     background-position: center;
     display: block;
@@ -1784,184 +1790,7 @@ body#collage .cats_music {
     width: 240px;
   }
 }
-/* END Menu and topbar, desktop only */
-/* #1.6 BEGIN Menu handling */
-/* horizontal menu */
-/* #2024 change to styled color instead of #fff to match vertical pulldown menu */
-#menu > ul a:hover {
-  color: #f4f4f4;
-}
-
-/* vertical pulldown menu */
-#userinfo_minor:hover a,
-#userinfo_username:hover a {
-  color: #f4f4f4;
-}
-
-/* Icon revealed when menu is open */
-#userinfo_minor:hover::before {
-  background-color: rgba(0, 0, 0, 0);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-image: url("https://wally-crunk.github.io/svg/gazelle/menu.svg");
-  background-size: 30px;
-  background-origin: padding-box;
-  background-clip: border-box;
-}
-
-#searchbars .search_form {
-  background: 0 0;
-}
-
-#searchbars .search_form input {
-  border: none;
-  border-radius: 2.5px;
-  height: 30px;
-}
-
-#searchbars .search_form input:focus {
-  background: #242324;
-}
-
-.sidebar {
-  order: 5;
-}
-
-.thin:last-child {
-  display: flex;
-  flex-wrap: wrap;
-  margin: -4px;
-}
-
-/* END MENU HANDLING */
-/**/
-/**/
-/* # 1.7 BEGIN NOTIFICATION BOX */
-/* basic positioning */
-#noty_bottomRight_layout_container {
-  bottom: 24px !important;
-  right: 24px !important;
-}
-
-#noty_bottomRight_layout_container > li {
-  background: 0 0 !important;
-  border: 2px solid #63403c !important;
-  border-radius: 1px !important;
-}
-
-/* elevation & levitation */
-#noty_bottomRight_layout_container {
-  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.25), 0 7px 7px rgba(0, 0, 0, 0.22);
-  transition: all 0.25s cubic-bezier(0.25, 0.8, 0.25, 1);
-}
-
-#noty_bottomRight_layout_container:hover {
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  transform: translateY(-5px);
-}
-
-/* first row of each box */
-#noty_bottomRight_layout_container .noty_message {
-  background: radial-gradient(circle at top right, #0c4a3b, #188e70) !important;
-  color: #f4f4f4 !important;
-  font-weight: 700;
-  padding: 0 !important;
-}
-
-/* first row words */
-#noty_bottomRight_layout_container .noty_message .noty_text {
-  line-height: 34px;
-  padding: 0 8px;
-}
-
-/* second row of each box */
-#noty_bottomRight_layout_container .noty_buttons {
-  background-color: #2b2a2b !important;
-  border: none !important;
-  padding: 8px !important;
-}
-
-#noty_bottomRight_layout_container .noty_buttons a {
-  color: #f4f4f4 !important;
-  background-color: none;
-  border: thin solid transparent; /* prevents button movement */
-  border-radius: 14px;
-  padding: 0 6px;
-  transition: all 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
-}
-
-#noty_bottomRight_layout_container .noty_buttons a:hover {
-  color: #ffc !important;
-  background-color: #63403c;
-  border-radius: 14px;
-  border: thin solid #c5b09b;
-  transition: all 0.15s cubic-bezier(0.25, 0.8, 0.25, 1);
-}
-
-/* END NOTIFICATION BOX */
-/**/
-/**/
-/* # 1.8 BEGIN SIDEBAR */
-.sidebar .pad ol,
-.sidebar .pad ul {
-  margin-bottom: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-}
-
-.sidebar ol.nobullet,
-.sidebar ul.nobullet {
-  padding-left: 0;
-}
-
-.sidebar img {
-  height: auto;
-  width: auto;
-}
-
-/* END SIDEBAR */
-/* */
-/* */
-/* ################################################################################ */
-/* # 2 DOCUMENTATION OF MOBILE CLASSES */
-/* ################################################################################ */
-/* */
-/* */
-/* Documentation of mobile classes:
-/* GENERAL:
-/* .m_hidden: display: none on mobile
-/* TABLES:
-/* .m_table: table which will be mobilized
-/* .m_th_left: which table header should be preserved on the left. It will be replaced with the word "Info". Only 1
-/* .m_th_left_collapsable: extra padding applied to align right of the collapse button
-/* .m_th_right: table headers that will be "floated" to the right. Max of 3
-/* .m_td_left: will be left-aligned, and expanded vertically. Mainly for collapse button
-/* .m_td_right: tables cells which will be put on the right with absolute positioning, to correspond with .m_th_right headers. Max of 3
-/*
-/* forum posts, although they share some of the styles, do not actually use
-/* these classes, because:
-/* - they are not tabular data, so for semantics
-/* - they should not be compact the same way as a table
-/* - they have much more uniform HTML across different places (comments and
-/* "real" forum), so classes to simplify CSS aren't necessary
-/*/
-/* Portrait phones, and sometimes landscape
-/* TODO: currently, responsive is optimized for either desktop or portrait phone
-/* We need to handle landscape phones as well
-/*
-/* this stuff can *probably* be mostly copy-pasted into other stylesheets
-/* then tweaked a bit. Ideally, before that happens, the whole styling system
-/* should be made to use a CSS preprocessor so that we can have reusable styles
-/*/
-/**/
-/**/
-/* this query is mostly copied from what used to be above
-/* despite the fact that this exists, there are still many
-/* rules above that are overridden by media queries, rather
-/* than being put here like they should be
-/*/
-@media only screen and (width <= 768px) {
+@media only screen and (max-width: 768px) {
   /* For mobile phones: */
   #inbox input[type=submit] {
     font-size: 10px;
@@ -1972,13 +1801,7 @@ body#collage .cats_music {
     padding: 4px;
   }
 }
-/* */
-/* ################################################################################
-/* # 3 CHANGES FOR MOBILE SITE
-/* ################################################################################
-/* */
-/* Begin Changes for Mobile Site */
-@media (width <= 480px) {
+@media (max-width: 480px) {
   .m_hidden {
     display: none !important;
   }
@@ -1986,11 +1809,7 @@ body#collage .cats_music {
   td:first-child {
     padding-left: 6px;
   }
-  /* by request, limit inbox images to window size on mobile */
-  #inbox .body img {
-    max-width: 100% !important;
-  }
-  /* ## 3.1 BEGIN site layout */
+  /* BEGIN site layout */
   #wrapper {
     padding-top: 36px;
   }
@@ -2014,7 +1833,7 @@ body#collage .cats_music {
     max-width: 100%;
   }
   /* END site layout */
-  /* ## 3.2 BEGIN notifications */
+  /* BEGIN notifications */
   .i-am-new {
     width: calc(100% - 48px) !important;
   }
@@ -2022,7 +1841,7 @@ body#collage .cats_music {
     width: 100% !important;
   }
   /* END notifications */
-  /* ## 3.3 BEGIN user settings */
+  /* BEGIN user settings */
   #user #userform {
     align-items: stretch;
     display: flex;
@@ -2039,7 +1858,7 @@ body#collage .cats_music {
     position: static !important;
   }
   /* END user settings */
-  /* ## 3.4 BEGIN forms */
+  /* BEGIN forms */
   input[type=search],
   input[type=text],
   input[type=email],
@@ -2055,7 +1874,7 @@ body#collage .cats_music {
     flex-wrap: wrap;
   }
   /* END forms */
-  /* ## 3.5 BEGIN general tables */
+  /* BEGIN general tables */
   .m_table tbody,
   .m_table .colhead,
   .m_table .colhead_dark {
@@ -2069,13 +1888,13 @@ body#collage .cats_music {
     flex-direction: column;
   }
   /* END general tables */
-  /* ## 3.6 BEGIN table headers */
+  /* BEGIN table headers */
   .m_table .colhead,
   .m_table .colhead_dark {
     flex-wrap: nowrap;
   }
-  .m_table .colhead td:not(.m_th_right, .m_th_left),
-  .m_table .colhead_dark td:not(.m_th_right, .m_th_left) {
+  .m_table .colhead td:not(.m_th_right):not(.m_th_left),
+  .m_table .colhead_dark td:not(.m_th_right):not(.m_th_left) {
     display: none;
   }
   .m_table .colhead td,
@@ -2105,8 +1924,8 @@ body#collage .cats_music {
     padding-right: 12px;
   }
   /* END table headers */
-  /* ## 3.7 BEGIN table bodies */
-  .m_table tr:not(.hidden, .colhead, .colhead_dark) {
+  /* BEGIN table bodies */
+  .m_table tr:not(.hidden):not(.colhead):not(.colhead_dark) {
     display: block;
     line-height: 1.4;
     padding-bottom: 3px;
@@ -2117,7 +1936,7 @@ body#collage .cats_music {
   .m_table td {
     display: block;
   }
-  .m_table tr:not(.colhead, .colhead_dark, .m_td_left, .m_td_right) {
+  .m_table tr:not(.colhead):not(.colhead_dark) td:not(.m_td_left):not(.m_td_right) {
     padding-bottom: 0;
     padding-top: 0;
     text-align: left;
@@ -2131,7 +1950,7 @@ body#collage .cats_music {
     width: 34px;
   }
   /* END table bodies */
-  /* ## 3.8 BEGIN right-aligned numerical stats */
+  /* BEGIN right-aligned numerical stats */
   .m_td_right {
     margin: 0;
     padding: 0 !important;
@@ -2149,7 +1968,7 @@ body#collage .cats_music {
     top: 3em;
   }
   /* END right-aligned numerical stats */
-  /* ## 3.9 BEGIN torrent table */
+  /* BEGIN torrent table */
   .torrent_table * {
     float: none;
   }
@@ -2197,7 +2016,7 @@ body#collage .cats_music {
   .td_snatched.m_td_right::before,
   .td_seeders.m_td_right::before,
   .td_leechers.m_td_right::before {
-    background: left/10px no-repeat url("https://wally-crunk.github.io/svg/gazelle/arrow-loop.svg");
+    background: left/10px no-repeat url("https://wally-crunk.github.io/ike/arrow-snatches.svg");
     color: #fff;
     content: ":";
     filter: brightness(80%);
@@ -2207,16 +2026,16 @@ body#collage .cats_music {
     width: 14px;
   }
   .td_seeders.m_td_right::before {
-    background-image: url("https://wally-crunk.github.io/svg/gazelle/arrow-up-round.svg");
+    background-image: url("https://wally-crunk.github.io/ike/arrow-up-round.svg");
   }
   .td_leechers.m_td_right::before {
-    background-image: url("https://wally-crunk.github.io/svg/gazelle/arrow-down-round.svg");
+    background-image: url("https://wally-crunk.github.io/ike/arrow-down-round.svg");
   }
   .m_table.checkboxes td:first-child {
     display: block;
   }
-  /* ## 3.9.1 BEGIN expanded torrent group */
-  .group_torrent:not(.edition, .hidden) {
+  /* BEGIN expanded torrent group */
+  .group_torrent:not(.edition):not(.hidden) {
     display: flex;
     flex-direction: column;
     padding: 5px 0 0 22px;
@@ -2248,7 +2067,7 @@ body#collage .cats_music {
     padding-left: 15px;
   }
   /* END expanded torrent group */
-  /* ## 3.9.2 BEGIN top10 */
+  /* BEGIN top10 */
   /* 4 and 5 in colhead are hidden anyways */
   #top10 .td_size::before {
     content: "Size: ";
@@ -2258,7 +2077,7 @@ body#collage .cats_music {
   }
   /* END top10 */
   /* END torrent table */
-  /* ## 3.10 BEGIN invite table */
+  /* BEGIN invite table */
   .invite_table tr:not(.colhead) td:nth-child(3)::before {
     content: "Joined: ";
   }
@@ -2275,7 +2094,7 @@ body#collage .cats_music {
     content: "R: ";
   }
   /* END invite table */
-  /* ## 3.11 BEGIN collage table */
+  /* BEGIN collage table */
   table.m_table.collage_table tr:not(.colhead):not(.colhead) {
     display: flex;
     flex-direction: column;
@@ -2308,38 +2127,8 @@ body#collage .cats_music {
   .collage_table .td_subscribers::before {
     content: "S: ";
   }
-  /* For mobile view */
-  .collage_table .td_collage_category,
-  .collage_table .td_updated,
-  .collage_table .td_author {
-    margin-left: 1rem;
-  }
-  .collage_table .td_info .tags a:hover {
-    background: slategray !important;
-    color: darkslategray;
-  }
-  /* ## 3.11.1 BEGIN tag bubble appearance on mobile */
-  .collage_table .td_info .tags :not(:empty) {
-    box-sizing: border-box;
-    display: inline-block;
-    font-weight: 400;
-    font-size: 0.55rem;
-    vertical-align: baseline;
-    color: #1daf8b;
-    background: #0a3a2e !important;
-    padding: 0.05rem 0.5rem;
-    border: none !important;
-    border-radius: 1rem;
-    transition: all 0.35s;
-  }
-  /* END tag bubble appearance on mobile */
-  /* ## 3.11.2 BEGIN title of collages on mobile */
-  .collage_table .td_info {
-    font-size: larger;
-  }
-  /* END title of collages on mobile */
   /* END collage table */
-  /* ## 3.12 BEGIN requests */
+  /* BEGIN requests */
   /* TODO: still show the time the request was filled without taking up too much space */
   #requests .request_table tr:not(.colhead) td:nth-child(n+2) {
     padding: 0 6px;
@@ -2363,8 +2152,8 @@ body#collage .cats_music {
     padding-bottom: 4px;
   }
   /* END requests */
-  /* 3.13 BEGIN forums */
-  /* 3.13.1 BEGIN forum index */
+  /* BEGIN forums */
+  /* BEGIN forum index */
   .forum_index .last_read {
     float: none !important;
   }
@@ -2378,7 +2167,7 @@ body#collage .cats_music {
   #wrapper .td_read {
     float: left;
     height: 12px;
-    margin: 3px 5px 0;
+    margin: 3px 5px 0 5px;
     width: 11px;
   }
   .td_topic_count.m_td_right::before {
@@ -2394,7 +2183,7 @@ body#collage .cats_music {
     content: "R: ";
   }
   /* END forum index */
-  /* 3.13.2 BEGIN forum table structure */
+  /* BEGIN forum table structure */
   /* this is copied from general tables. We put it here in case that changes
    in ways specific for tabular data */
   .forum_post tbody {
@@ -2410,7 +2199,7 @@ body#collage .cats_music {
     width: 100%;
   }
   /* END forum table structure */
-  /* 3.13.3 BEGIN forum headers */
+  /* BEGIN forum headers */
   /* remove dashes from forum post headers */
   .forum_post tr.colhead_dark {
     color: transparent;
@@ -2419,7 +2208,7 @@ body#collage .cats_music {
   }
   .forum_post tr.colhead_dark span,
   .forum_post tr.colhead_dark strong {
-    color: #c2c2c2;
+    color: #c6c9c9;
   }
   .forum_post tr.colhead_dark div {
     display: inline;
@@ -2447,7 +2236,7 @@ body#collage .cats_music {
   }
   /* END forum headers */
   /* END forums */
-  /* ## 3.14 BEGIN rules */
+  /* BEGIN rules */
   #rules .m_th_left::before {
     content: "Rules";
   }
@@ -2455,28 +2244,7 @@ body#collage .cats_music {
     white-space: unset;
   }
   /* END rules */
-  /* ## 3.15 BEGIN site header */
-  /* affectionately known as the hamburger bar on desktop */
-  /* ## 3.15.1 BEGIN Handling to prevent keyboard from opening on iP---e and other mobile devices */
-  @keyframes delay-pointer-events {
-    0% {
-      visibility: hidden;
-    }
-    50% {
-      visibility: hidden;
-    }
-    100% {
-      visibility: visible;
-    }
-  }
-  #header:hover #searchbars input,
-  #nav_userinfo,
-  #nav_useredit,
-  #nav_logout {
-    animation: delay-pointer-events 2000ms linear;
-  }
-  /* END Handling to prevent..*/
-  /* ## 3.15.2 BEGIN MOBILE MENU LAYOUT */
+  /* BEGIN site header */
   #header {
     background: #6d4942;
     top: 0;
@@ -2504,18 +2272,18 @@ body#collage .cats_music {
     opacity: 1 !important;
     width: 25px;
     height: 25px;
-    background-image: url("https://wally-crunk.github.io/svg/gazelle/chevrons-down.svg");
+    background-image: url("https://wally-crunk.github.io/ike/chevrons-down.svg");
     background-size: contain;
     z-index: 500;
     pointer-events: none;
   }
+  /* BEGIN hamburger bar */
   #logo {
     height: 2%;
     left: 0;
     padding: 0;
     position: fixed;
     top: 0;
-    /* #2024 - this is a weird comment and code: */
     /* it's OVER 9000! */
     transform: translateY(6000%);
     width: 20%;
@@ -2533,7 +2301,6 @@ body#collage .cats_music {
     position: fixed;
     top: 0;
   }
-  /* site logo in topbar for mobile */
   #extra5 {
     background-image: url("https://wally-crunk.github.io/svg/orpheus/ops-classic-loop-dark-trans.svg");
     background-position: 0;
@@ -2557,6 +2324,7 @@ body#collage .cats_music {
     position: fixed;
     top: 0;
   }
+  /* END hamburger bar */
   #header {
     --row-height: 40px;
   }
@@ -2575,7 +2343,7 @@ body#collage .cats_music {
   #alerts {
     display: none;
   }
-  /* ## 3.15.3 BEGIN searchboxes */
+  /* BEGIN searchboxes */
   #searchbars ul {
     bottom: 0;
     height: unset;
@@ -2595,7 +2363,7 @@ body#collage .cats_music {
     height: calc(var(--row-height) - 9px);
   }
   /* END searchboxes */
-  /* 3.15.4 BEGIN userinfo */
+  /* BEGIN userinfo */
   #userinfo {
     position: static;
   }
@@ -2613,20 +2381,16 @@ body#collage .cats_music {
     white-space: nowrap;
   }
   #stats_ratio {
-    /* No need to force a color here, but this is where you could. */
+    color: #f4f4f4;
   }
   #stats_ratio .tooltip {
-    /* Provide a small dark background for the number to appear in color */
-    background-color: #242424;
-    border-radius: 0.45rem;
-    padding-left: 0.45rem;
-    padding-right: 0.45rem;
+    color: white;
   }
   #userinfo_username {
     background: radial-gradient(circle at top left, rgba(99, 64, 60, 0.6862745098), #63403c);
-    position: absolute;
+    bottom: calc(var(--row-height) * 2);
     left: 0;
-    /* #2024 fixed */
+    position: absolute;
   }
   #nav_userclass {
     display: none;
@@ -2648,10 +2412,9 @@ body#collage .cats_music {
     width: unset;
   }
   /* END userinfo */
-  /* ## 3.15.5 BEGIN browse links */
+  /* BEGIN browse links */
   #menu ul {
-    /* verify this later #qwerty #2024 */
-    background: radial-gradient(circle at top left, #63403c, rgba(99, 64, 60, 0.6862745098));
+    background: radial-gradient(circle at top left, rgba(0, 153, 153, 0.6), #088);
     bottom: calc(var(--row-height) * 7);
     position: absolute;
   }
@@ -2659,7 +2422,6 @@ body#collage .cats_music {
     background: transparent !important;
   }
   /* END browse links */
-  /* 3.15.6 BEGIN checked */
   #extracb1 {
     display: block;
     height: 32px;
@@ -2671,6 +2433,7 @@ body#collage .cats_music {
     width: 50vw;
     z-index: 999;
   }
+  /* BEGIN checked */
   #extracb1:checked ~ #wrapper #header {
     transform: translateY(120%);
   }
@@ -2689,80 +2452,10 @@ body#collage .cats_music {
   /* END checked */
   /* END site header */
 }
-/* ################################################################################
-/* # 4 MISCELLANEOUS
-/* ################################################################################
-
-/* ## 4.1 Begin Changes for Mobile, SUPER SMALL window */
-@media (width <= 480px) and (height <= 480px) {
+@media (max-width: 480px) and (max-height: 480px) {
   #header {
     --row-height: 35px;
   }
 }
-/* #wideload */
-/* ## 4.2 tag bubble appearance on widescreen */
-/* Full clickable appearance: Applies to Torrent Pages, collage-listing pages, collage-discog pages. */
-.collage_table .td_info .tags :not(:empty),
-#torrent_table .group .tags :not(:empty),
-#discog_table .group .tags :not(:empty),
-#request_table .tags,
-#top10 .tags,
-table.torrent_table.cats.checkboxes.border.m_table td.td_info.big_info div.group_info.clear div.tags a,
-table.torrent_table.cats.m_table td.td_info.big_info div.group_info.clear div.tags a {
-  visibility: visible;
-  box-sizing: border-box;
-  display: inline-block;
-  font-weight: 700;
-  font-size: 0.6rem;
-  vertical-align: baseline;
-  color: #1daf8b;
-  background: #0a3a2e;
-  padding: 0 0.5rem;
-  border-radius: 1rem;
-  margin-bottom: 0.1rem;
-  transition: all 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
-}
-
-/* Special non-clickable appearance: Applies to top10 and request_table pages, where tags are not clickable links. */
-#request_table .tags,
-#top10 .tags {
-  font-style: italic;
-  font-weight: normal;
-  margin-inline: 1rem;
-}
-
-/* Hover effect: the people have spoken */
-/* Applies only to pages that get full clickable appearance. */
-.collage_table .td_info .tags :not(:empty):hover,
-#torrent_table .group .tags :not(:empty):hover,
-#discog_table .tags :hover,
-table.torrent_table.cats.checkboxes.border.m_table td.td_info.big_info div.group_info.clear div.tags a:hover,
-table.torrent_table.cats.m_table td.td_info.big_info div.group_info.clear div.tags a:hover {
-  color: #0a3a2e !important;
-  background: #1daf8b !important;
-  transition: all 0.15s cubic-bezier(0.25, 0.8, 0.25, 1);
-  box-shadow: rgba(0, 0, 0, 0.25) 0 14px 28px, rgba(0, 0, 0, 0.22) 0 10px 10px;
-}
-
-/* remove commas between tag bubbles:
-/* only needed on torrent and collage-discog pages. */
-#torrent_table .tags,
-#discog_table .tags,
-table.torrent_table.cats.checkboxes.border.m_table td.td_info.big_info div.group_info.clear div.tags,
-table.torrent_table.cats.m_table td.td_info.big_info div.group_info.clear div.tags {
-  visibility: hidden;
-}
-
-/* This should not be necessary... */
-.tags a {
-  visibility: visible;
-}
-
-/**/
-/**/
-
-/* ####### */
-/* # EOF # */
-/* ####### */
 
 /*# sourceMappingURL=style.css.map */

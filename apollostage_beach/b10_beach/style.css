@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* SCSS HEX */
 /* ################################################################################ */
 /* APOLLOSTAGE THEME */
 /* version 2024 
@@ -145,7 +146,7 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-  color: #c5b09b;
+  color: #1ED4F5;
 }
 
 h1,
@@ -167,12 +168,12 @@ h5 {
 }
 
 a {
-  color: #f4f4f4;
+  color: #1DF6FD;
   text-decoration: none;
 }
 
 a:hover {
-  color: #eedfd1;
+  color: #1ED4F5;
 }
 
 a:active,
@@ -235,11 +236,11 @@ textarea:focus {
 }
 
 svg|a {
-  fill: #f4f4f4;
+  fill: #1DF6FD;
 }
 
 svg|a:hover {
-  fill: #eedfd1;
+  fill: #1ED4F5;
 }
 
 b,
@@ -275,7 +276,7 @@ blockquote {
 }
 
 ::selection {
-  background-color: rgba(180, 160, 139, 0.6);
+  background-color: rgba(245, 40, 145, 0.6);
   color: #fff;
 }
 
@@ -368,7 +369,7 @@ textarea {
 button,
 input[type=button],
 input[type=submit] {
-  background: linear-gradient(#f4f4f4, #b8b8b8);
+  background: linear-gradient(#1DF6FD, #b8b8b8);
   border: none;
   border-radius: 1.5px;
   color: #383738;
@@ -381,7 +382,7 @@ input[type=submit] {
 button:active,
 input[type=button]:active,
 input[type=submit]:active {
-  background: linear-gradient(#b8b8b8, #f4f4f4);
+  background: linear-gradient(#b8b8b8, #1DF6FD);
 }
 
 input[type=email],
@@ -404,7 +405,7 @@ input[type=search]:focus,
 select:focus,
 textarea:focus {
   border: 1px solid rgba(255, 255, 255, 0.2);
-  color: #f4f4f4;
+  color: #1DF6FD;
 }
 
 textarea {
@@ -564,7 +565,7 @@ table.box2 {
 }
 
 .autocomplete-suggestions {
-  background-color: #f4f4f4;
+  background-color: #1DF6FD;
   border: none;
   color: #26282e;
   margin-top: 4px;
@@ -576,7 +577,7 @@ table.box2 {
 }
 
 .autocomplete-suggestions .autocomplete-suggestion.autocomplete-selected {
-  background-color: #eedfd1;
+  background-color: #1ED4F5;
 }
 
 .autocomplete-suggestions .autocomplete-suggestion strong {
@@ -584,7 +585,7 @@ table.box2 {
 }
 
 .forum_post.forum_unread {
-  border-top: 2px solid #eedfd1;
+  border-top: 2px solid #1ED4F5;
 }
 
 .forum_post .avatar {
@@ -632,7 +633,7 @@ table.box2 {
 
 .last_read ::before {
   content: "➤";
-  color: #c5b09b;
+  color: #1ED4F5;
   display: inline-block;
 }
 
@@ -735,7 +736,7 @@ table.box2 {
 #menu > ul a:hover,
 #userinfo_minor:hover a:hover,
 #userinfo_username:hover a:hover {
-  background-color: #eedfd1;
+  background-color: #1ED4F5;
 }
 
 #nav_index {
@@ -816,39 +817,39 @@ table.box2 {
 }
 
 #menu li:nth-child(2) {
-  background-color: #8e6354;
+  background-color: #030864;
 }
 
 #menu li:nth-child(3) {
-  background-color: #8a6152;
+  background-color: #1d157c;
 }
 
 #menu li:nth-child(4) {
-  background-color: #845c4f;
+  background-color: #511ea7;
 }
 
 #menu li:nth-child(5) {
-  background-color: #7f574c;
+  background-color: #6e23b3;
 }
 
 #menu li:nth-child(6) {
-  background-color: #785248;
+  background-color: #8531c5;
 }
 
 #menu li:nth-child(7) {
-  background-color: #734d45;
+  background-color: #9a41db;
 }
 
 #menu li:nth-child(8) {
-  background-color: #6d4942;
+  background-color: #be46ff;
 }
 
 #menu li:nth-child(9) {
-  background-color: #6a4640;
+  background-color: #ff4cff;
 }
 
 #userinfo_username {
-  background-color: #66433e;
+  background-color: #feacfe;
   right: 50px;
 }
 
@@ -863,7 +864,7 @@ table.box2 {
 }
 
 .linkbox > strong {
-  color: #c5b09b;
+  color: #1ED4F5;
 }
 
 #footer,
@@ -1092,7 +1093,7 @@ div#flip_view_1 div#similar-artist .name {
 }
 
 .tags a:hover {
-  color: #eedfd1;
+  color: #1ED4F5;
 }
 
 .group_info > span:first-child,
@@ -1182,7 +1183,7 @@ pre {
 
 .tooltipster-default {
   background-color: #1d1c1d;
-  border: 0 solid #c5b09b;
+  border: 0 solid #1ED4F5;
   border-radius: 2.5px;
   color: #c6c9c9;
 }
@@ -1203,7 +1204,7 @@ pre {
 
 .alertbar,
 .tooltipster-default .tooltipster-content a:hover {
-  color: #c5b09b;
+  color: #1ED4F5;
 }
 
 #content .header > h1,
@@ -1294,7 +1295,7 @@ ul.collage_images li a > span {
 
 #userform #settings_sections h2 a,
 .rule_short {
-  color: #f4f4f4;
+  color: #1DF6FD;
 }
 
 .poll li {
@@ -1302,14 +1303,14 @@ ul.collage_images li a > span {
 }
 
 .poll .graph {
-  background-color: rgba(197, 176, 155, 0.1);
+  background-color: #1d157c;
   display: block;
   height: 8px;
   margin-bottom: 12px;
 }
 
 .poll .graph span {
-  background-color: #c5b09b;
+  background-color: #1ED4F5;
   display: block;
   float: left;
   height: 8px;
@@ -1402,7 +1403,7 @@ ul.collage_images li a > span {
 }
 
 #musicbrainz_popup a:hover {
-  color: #c5b09b;
+  color: #1ED4F5;
 }
 
 #musicbrainz_popup .brackets {
@@ -1476,7 +1477,7 @@ ul.collage_images li a > span {
 }
 
 #userform #settings_sections h2 a:hover {
-  color: #eedfd1;
+  color: #1ED4F5;
 }
 
 #userform #settings_sections input {
@@ -1731,7 +1732,7 @@ body#collage .cats_music {
   }
   #menu > ul > #nav_staff > a:hover {
     background-color: transparent;
-    color: #eedfd1;
+    color: #1ED4F5;
   }
   #userinfo_minor::before {
     background: url("https://wally-crunk.github.io/svg/gazelle/chevrons-down.svg") no-repeat;
@@ -1754,7 +1755,7 @@ body#collage .cats_music {
     margin-left: 100px;
   }
   #userinfo_minor {
-    background-color: #63403c;
+    background-color: #fefe78;
     border-radius: 0 5px 0 0;
     right: 0;
   }
@@ -1772,10 +1773,10 @@ body#collage .cats_music {
     right: 0;
   }
   #userinfo_minor:hover {
-    background-color: #794e49;
+    background-color: #f9f902;
   }
   #userinfo_username:hover {
-    background-color: #875752;
+    background-color: #A802A8;
   }
   .settings_sidebar {
     margin-left: 8px;
@@ -1789,13 +1790,13 @@ body#collage .cats_music {
 /* horizontal menu */
 /* #2024 change to styled color instead of #fff to match vertical pulldown menu */
 #menu > ul a:hover {
-  color: #f4f4f4;
+  color: #1DF6FD;
 }
 
 /* vertical pulldown menu */
 #userinfo_minor:hover a,
 #userinfo_username:hover a {
-  color: #f4f4f4;
+  color: #1DF6FD;
 }
 
 /* Icon revealed when menu is open */
@@ -1846,7 +1847,7 @@ body#collage .cats_music {
 
 #noty_bottomRight_layout_container > li {
   background: 0 0 !important;
-  border: 2px solid #63403c !important;
+  border: 2px solid #fefe78 !important;
   border-radius: 1px !important;
 }
 
@@ -1863,8 +1864,8 @@ body#collage .cats_music {
 
 /* first row of each box */
 #noty_bottomRight_layout_container .noty_message {
-  background: radial-gradient(circle at top right, #0c4a3b, #188e70) !important;
-  color: #f4f4f4 !important;
+  background: radial-gradient(circle at top right, #1d157c, #9a41db) !important;
+  color: #1DF6FD !important;
   font-weight: 700;
   padding: 0 !important;
 }
@@ -1883,7 +1884,7 @@ body#collage .cats_music {
 }
 
 #noty_bottomRight_layout_container .noty_buttons a {
-  color: #f4f4f4 !important;
+  color: #1DF6FD !important;
   background-color: none;
   border: thin solid transparent; /* prevents button movement */
   border-radius: 14px;
@@ -1893,9 +1894,9 @@ body#collage .cats_music {
 
 #noty_bottomRight_layout_container .noty_buttons a:hover {
   color: #ffc !important;
-  background-color: #63403c;
+  background-color: #fefe78;
   border-radius: 14px;
-  border: thin solid #c5b09b;
+  border: thin solid #1ED4F5;
   transition: all 0.15s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
@@ -2325,8 +2326,8 @@ body#collage .cats_music {
     font-weight: 400;
     font-size: 0.55rem;
     vertical-align: baseline;
-    color: #1daf8b;
-    background: #0a3a2e !important;
+    color: #fefe78;
+    background: #ff4cff !important;
     padding: 0.05rem 0.5rem;
     border: none !important;
     border-radius: 1rem;
@@ -2478,7 +2479,7 @@ body#collage .cats_music {
   /* END Handling to prevent..*/
   /* ## 3.15.2 BEGIN MOBILE MENU LAYOUT */
   #header {
-    background: #6d4942;
+    background: #be46ff;
     top: 0;
     height: 0;
     left: 0;
@@ -2546,7 +2547,7 @@ body#collage .cats_music {
     z-index: 400;
   }
   #extra4 {
-    background: #6d4942;
+    background: #be46ff;
     border-radius: 0 0 4px 4px;
     display: block;
     right: 0;
@@ -2623,7 +2624,7 @@ body#collage .cats_music {
     padding-right: 0.45rem;
   }
   #userinfo_username {
-    background: radial-gradient(circle at top left, rgba(99, 64, 60, 0.6862745098), #63403c);
+    background: radial-gradient(circle at top left, #ff4cff, #6e23b3);
     position: absolute;
     left: 0;
     /* #2024 fixed */
@@ -2632,7 +2633,7 @@ body#collage .cats_music {
     display: none;
   }
   #userinfo_minor {
-    background: radial-gradient(circle at top left, rgba(99, 64, 60, 0.6862745098), #63403c);
+    background: radial-gradient(circle at top left, #ff4cff, #6e23b3);
     bottom: calc(var(--row-height) * 3);
     position: absolute;
   }
@@ -2651,7 +2652,7 @@ body#collage .cats_music {
   /* ## 3.15.5 BEGIN browse links */
   #menu ul {
     /* verify this later #qwerty #2024 */
-    background: radial-gradient(circle at top left, #63403c, rgba(99, 64, 60, 0.6862745098));
+    background: radial-gradient(circle at top left, #6e23b3, #ff4cff);
     bottom: calc(var(--row-height) * 7);
     position: absolute;
   }
@@ -2715,8 +2716,8 @@ table.torrent_table.cats.m_table td.td_info.big_info div.group_info.clear div.ta
   font-weight: 700;
   font-size: 0.6rem;
   vertical-align: baseline;
-  color: #1daf8b;
-  background: #0a3a2e;
+  color: #fefe78;
+  background: #ff4cff;
   padding: 0 0.5rem;
   border-radius: 1rem;
   margin-bottom: 0.1rem;
@@ -2738,8 +2739,8 @@ table.torrent_table.cats.m_table td.td_info.big_info div.group_info.clear div.ta
 #discog_table .tags :hover,
 table.torrent_table.cats.checkboxes.border.m_table td.td_info.big_info div.group_info.clear div.tags a:hover,
 table.torrent_table.cats.m_table td.td_info.big_info div.group_info.clear div.tags a:hover {
-  color: #0a3a2e !important;
-  background: #1daf8b !important;
+  color: #ff4cff !important;
+  background: #fefe78 !important;
   transition: all 0.15s cubic-bezier(0.25, 0.8, 0.25, 1);
   box-shadow: rgba(0, 0, 0, 0.25) 0 14px 28px, rgba(0, 0, 0, 0.22) 0 10px 10px;
 }

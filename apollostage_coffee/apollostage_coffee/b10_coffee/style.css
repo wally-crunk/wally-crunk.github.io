@@ -816,39 +816,39 @@ table.box2 {
 }
 
 #menu li:nth-child(2) {
-  background-color: #8e6354;
+  background-color: #926354;
 }
 
 #menu li:nth-child(3) {
-  background-color: #8a6152;
+  background-color: #8c5d50;
 }
 
 #menu li:nth-child(4) {
-  background-color: #845c4f;
+  background-color: #85584c;
 }
 
 #menu li:nth-child(5) {
-  background-color: #7f574c;
+  background-color: #7f5247;
 }
 
 #menu li:nth-child(6) {
-  background-color: #785248;
+  background-color: #784d43;
 }
 
 #menu li:nth-child(7) {
-  background-color: #734d45;
+  background-color: #72483f;
 }
 
 #menu li:nth-child(8) {
-  background-color: #6d4942;
+  background-color: #6c423b;
 }
 
 #menu li:nth-child(9) {
-  background-color: #6a4640;
+  background-color: #653d37;
 }
 
 #userinfo_username {
-  background-color: #66433e;
+  background-color: #5f3833;
   right: 50px;
 }
 
@@ -1754,7 +1754,7 @@ body#collage .cats_music {
     margin-left: 100px;
   }
   #userinfo_minor {
-    background-color: #63403c;
+    background-color: #59332f;
     border-radius: 0 5px 0 0;
     right: 0;
   }
@@ -1772,10 +1772,10 @@ body#collage .cats_music {
     right: 0;
   }
   #userinfo_minor:hover {
-    background-color: #794e49;
+    background-color: #a1726d;
   }
   #userinfo_username:hover {
-    background-color: #875752;
+    background-color: #9C6F68;
   }
   .settings_sidebar {
     margin-left: 8px;
@@ -1846,7 +1846,7 @@ body#collage .cats_music {
 
 #noty_bottomRight_layout_container > li {
   background: 0 0 !important;
-  border: 2px solid #63403c !important;
+  border: 2px solid #59332f !important;
   border-radius: 1px !important;
 }
 
@@ -1863,7 +1863,7 @@ body#collage .cats_music {
 
 /* first row of each box */
 #noty_bottomRight_layout_container .noty_message {
-  background: radial-gradient(circle at top right, #0c4a3b, #188e70) !important;
+  background: radial-gradient(circle at top right, #8c5d50, #72483f) !important;
   color: #f4f4f4 !important;
   font-weight: 700;
   padding: 0 !important;
@@ -1893,7 +1893,7 @@ body#collage .cats_music {
 
 #noty_bottomRight_layout_container .noty_buttons a:hover {
   color: #ffc !important;
-  background-color: #63403c;
+  background-color: #59332f;
   border-radius: 14px;
   border: thin solid #c5b09b;
   transition: all 0.15s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -2325,8 +2325,8 @@ body#collage .cats_music {
     font-weight: 400;
     font-size: 0.55rem;
     vertical-align: baseline;
-    color: #1daf8b;
-    background: #0a3a2e !important;
+    color: #8d6653;
+    background: #422722 !important;
     padding: 0.05rem 0.5rem;
     border: none !important;
     border-radius: 1rem;
@@ -2478,7 +2478,7 @@ body#collage .cats_music {
   /* END Handling to prevent..*/
   /* ## 3.15.2 BEGIN MOBILE MENU LAYOUT */
   #header {
-    background: #6d4942;
+    background: #6c423b;
     top: 0;
     height: 0;
     left: 0;
@@ -2546,7 +2546,7 @@ body#collage .cats_music {
     z-index: 400;
   }
   #extra4 {
-    background: #6d4942;
+    background: #6c423b;
     border-radius: 0 0 4px 4px;
     display: block;
     right: 0;
@@ -2623,7 +2623,7 @@ body#collage .cats_music {
     padding-right: 0.45rem;
   }
   #userinfo_username {
-    background: radial-gradient(circle at top left, rgba(99, 64, 60, 0.6862745098), #63403c);
+    background: radial-gradient(circle at top left, #341409, #59332f);
     position: absolute;
     left: 0;
     /* #2024 fixed */
@@ -2632,7 +2632,7 @@ body#collage .cats_music {
     display: none;
   }
   #userinfo_minor {
-    background: radial-gradient(circle at top left, rgba(99, 64, 60, 0.6862745098), #63403c);
+    background: radial-gradient(circle at top left, #341409, #59332f);
     bottom: calc(var(--row-height) * 3);
     position: absolute;
   }
@@ -2651,7 +2651,7 @@ body#collage .cats_music {
   /* ## 3.15.5 BEGIN browse links */
   #menu ul {
     /* verify this later #qwerty #2024 */
-    background: radial-gradient(circle at top left, #63403c, rgba(99, 64, 60, 0.6862745098));
+    background: radial-gradient(circle at top left, #59332f, #341409);
     bottom: calc(var(--row-height) * 7);
     position: absolute;
   }
@@ -2715,8 +2715,8 @@ table.torrent_table.cats.m_table td.td_info.big_info div.group_info.clear div.ta
   font-weight: 700;
   font-size: 0.6rem;
   vertical-align: baseline;
-  color: #1daf8b;
-  background: #0a3a2e;
+  color: #8d6653;
+  background: #422722;
   padding: 0 0.5rem;
   border-radius: 1rem;
   margin-bottom: 0.1rem;
@@ -2738,8 +2738,8 @@ table.torrent_table.cats.m_table td.td_info.big_info div.group_info.clear div.ta
 #discog_table .tags :hover,
 table.torrent_table.cats.checkboxes.border.m_table td.td_info.big_info div.group_info.clear div.tags a:hover,
 table.torrent_table.cats.m_table td.td_info.big_info div.group_info.clear div.tags a:hover {
-  color: #0a3a2e !important;
-  background: #1daf8b !important;
+  color: #422722 !important;
+  background: #8d6653 !important;
   transition: all 0.15s cubic-bezier(0.25, 0.8, 0.25, 1);
   box-shadow: rgba(0, 0, 0, 0.25) 0 14px 28px, rgba(0, 0, 0, 0.22) 0 10px 10px;
 }

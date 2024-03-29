@@ -1,0 +1,55 @@
+@import '../apollostage/_variables';
+
+$primary-accent-color: #c5b09b;
+$base-background-color: #1d1c1d;
+
+$userinfo-background-color-1: #341409; // mobile pulldown menu gradient 1
+$userinfo-background-color-2: #59332f; // mobile pulldown menu gradient 2
+
+$table-background-color: #2b2a2b;
+$secondary-table-background-color: #242324;
+
+$form-background-color: #2b2a2b;
+$a-color: #f4f4f4;
+$a-hover-color: #eedfd1;
+
+// Ten color gradient:
+$menu-li-second-child-background-color: #926354; // torrents
+$menu-li-third-child-background-color: #8c5d50;  // collages
+$menu-li-fourth-child-background-color: #85584c; // requests
+$menu-li-fifth-child-background-color: #7f5247;  // forums
+$menu-li-sixth-child-background-color: #784d43;  // irc
+$menu-li-seventh-child-background-color: #72483f;  // top10
+$header-background-color: #6c423b; //rules, //also mobile menu header
+$menu-li-ninth-child-background-color: #653d37;  // wiki
+$userinfo-username-color: #5f3833; //username menu ~ closed
+$userinfo-username-hover-background-color: #9C6F68; //username menu ~ open
+$userinfo-minor-color: #59332f; // VV pulldown menu ~ closed
+$userinfo-minor-hover-background-color: #a1726d; // VV pulldown menu ~ open
+
+$menu-background-color-1: #880D1E; //where are you, this goes nowhere and does nothing
+$menu-background-color-2: #DD2D4A;  //where are you, this goes nowhere and does nothing
+
+$blockquote-background-color: #323132;
+$input-background-color: #383738;
+
+$span-green-color: #4eb44e;
+$span-blue-color: #4e4ee7;
+
+$torrent-background-color: #323132;
+
+$footer-color: #949494;
+
+$input-color: #c2c2c2;
+
+$ratio-red-color: #e74e4e;
+$ratio-yellow-color: #e1b661;
+
+
+$tag-bubble-background-color: #422722; // suggest >= to $menu-li-ninth-child-background-color
+$tag-bubble-foreground-color: #8d6653; // suggest <+ to $menu-li-second-child-background-color
+
+$selection-background-color: rgba(180, 160, 139, 0.6);
+$poll-background-color: rgba(197, 176, 155, 0.1);
+
+@import '../apollostage/_base';
