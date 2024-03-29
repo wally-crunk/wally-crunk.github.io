@@ -19,52 +19,53 @@
 /**/
 /**/
 
-/*  # 2024-03-22 - R.A. (thanks H.E.)*/
+/*  # 2024-03-29 - R.A. (thanks H.E.)*/
 /*  # Fix: mobile menu, category stripes;  Add tag bubbles.
 /*  # Chore: Organized and documented the SCSS. */
 /*  For full changelog: see uncompiled SASS file. */
 
 // FULL CHANGELOG:
 //
-//   Bug fix: Fixed the mobile view (media <480px) with big help from H.E. Mobile
+//   Fix: Fixed the mobile view (media <480px) with big help from H.E. Mobile
 //     menu includes an animation, and handling to prevent keyboard from opening 
 //     on iPh--e and other mobile devices.
 //
-//   Improved: Replaced all PNGs in the stylesheet with SVGs. SVGs are currently to
+//   Feature: Replaced all PNGs in the stylesheet with SVGs. SVGs are currently to
 //     be loaded from the gazelle edge server (or github repo), not encoded inline.
 //
-//   Improved: For SVGs, there is clear separation of 'gazelle' (universal) SVG
+//   Feature: For SVGs, there is clear separation of 'gazelle' (universal) SVG
 //     images into one directory, and site-specific SVGs (like the site logo).
 //
-//   Bug fix: Messages with 'pre' were overrunning their box. Fixed with wrap.
+//   Fix: Messages with 'pre' were overrunning their box. Fixed with wrap.
 //
-//   Bug fix: Category decorations ~ Different categories (music, applications,
+//   Fix: Category decorations ~ Different categories (music, applications,
 //     Ebooks) have a colored stripe that was missing on desktop and 'floating'
 //     on collage views. Fixed.
 //
-//   Added: Tag bubbles ~ tags now appear in roundrects on torrent, collage-listing,
+//   Feature: Tag bubbles ~ tags now appear in roundrects on torrent, collage-listing,
 //     collage-discog and requests pages. Commas are suppressed.  
 //
-//   Added: Tag bubbles have a hover effect on torrent, artist-discog, 
+//   Feature: Tag bubbles have a hover effect on torrent, artist-discog, 
 //     collage-listing, and collage-discog pages. (Not available on request pages 
 //     because tags are not clickable on request pages.)  
 //
-//   Change: On mobile, images in private inbox no longer overrun the width,
+//   Fix: On mobile, images in private inbox no longer overrun the width,
 //     just like other locations.
 //
-//   Change: adjusted some colors for clarity. (Apollostage, Coffee and Sunset).
+//   Style: adjusted some colors for clarity. (Apollostage, Coffee and Sunset).
 //
-//   Change: fix lack of Italic support (replace oblique with Italic).  
+//   Feature: fix lack of Italic support (replace oblique with Italic).  
 //
-//   Added: specific font for Monospace (not system default).
+//   Feature: specific font for Monospace (not system default).
 //
-//   Added change log and table of contents and section numbering. (SECTION 1 is 
+//   Format: change log and table of contents and section numbering. (SECTION 1 is 
 //     super long: this CSS doesn't have much structure in Desktop view.)
 //
-//   Added: theme styling for all notification dialogs.
+//   Feature: theme styling for all notification dialogs.
 //
-//   Added comments where feasible.
-//   Changelog started.
+//   Chore: Added comments where feasible.
+//   
+//   Chore: Changelog started.
 
 /*   Original version by burtoo and contributors.  */
 
@@ -129,21 +130,26 @@
 /* ################################################################################
 /* # 0 GENERAL SETUP
 /* ################################################################################
+
 /**/
 /* Reminder: */
 /* slash-asterisk sass/scss comments are passed through to compiled css */
 // double-slash sass/scss comments ARE NOT passed through to compiled css //
 /**/
-@namespace url(http://www.w3.org/1999/xhtml);
-@namespace svg url(http://www.w3.org/2000/svg);
+
+@namespace url("http://www.w3.org/1999/xhtml");
+@namespace svg url("http://www.w3.org/2000/svg");
+
 /**/
 /**/
 
 /* ## 0.1 BEGIN font loading */
+
 /* Finally add WOFF and Italic support */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
 /* END font loading */
+
 /**/
 /**/
 
@@ -183,7 +189,7 @@ body {
 }
 
 pre,code {
-     font-family: "JetBrains Mono", "Cascadia Code", Consolas, Monaco, "Ubuntu Mono", monospace;
+     font-family: "JetBrains Mono", "Cascadia Code", Consolas, "Ubuntu Mono", Monaco, monospace;
      font-optical-sizing: auto;
      font-variant-ligatures: no-contextual;
      font-weight: 200;
@@ -259,9 +265,9 @@ textarea:focus {
 
 .box .box.pad, 
 .main_column .box.pad:not(#reply_box) {
-     background-color: rgba(80, 80, 80, 0.4392156863);
-     border: 2px solid rgba(33, 42, 45, 0.6666666667);
-     margin: 8px 8px 8px 8px;
+     background-color: rgb(80 80 80 / 43.9%);
+     border: 2px solid rgb(33 42 45 / 66.7%);
+     margin: 8px;
      border-radius: 6px;
 }
 
@@ -339,7 +345,7 @@ li:last-child {
 
 blockquote {
      background-color: $blockquote-background-color;
-     border: 1px dashed rgba(255, 255, 255, 0.25);
+     border: 1px dashed rgb(255 255 255 / 25%);
      margin: 12px;
      padding: 12px;
 }
@@ -436,8 +442,8 @@ textarea {
 }
 
 button,
-input[type=button],
-input[type=submit] {
+input[type="button"],
+input[type="submit"] {
      background: linear-gradient($a-color, #b8b8b8);
      border: none;
      border-radius: 1.5px;
@@ -449,31 +455,31 @@ input[type=submit] {
 }
 
 button:active,
-input[type=button]:active,
-input[type=submit]:active {
+input[type="button"]:active,
+input[type="submit"]:active {
      background: linear-gradient(#b8b8b8, $a-color);
 }
 
-input[type=email],
-input[type=password],
-input[type=text],
-input[type=search],
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[type="search"],
 select,
 textarea {
      background: $input-background-color;
-     border: 1px solid rgba(255, 255, 255, 0.08);
-     color: #c6c9c9;
+     border: 1px solid rgb(255 255 255 / 8%);
+     color: $input-color;
      height: 32px;
      padding: 0 8px;
 }
 
-input[type=email]:focus,
-input[type=password]:focus,
-input[type=text]:focus,
-input[type=search]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="text"]:focus,
+input[type="search"]:focus,
 select:focus,
 textarea:focus {
-     border: 1px solid rgba(255, 255, 255, 0.2);
+     border: 1px solid rgb(255 255 255 / 20%);
      color: $a-color;
 }
 
@@ -533,8 +539,9 @@ strong.important_text {
      color: $ratio-red-color;
 }
 
+/* used for anything? */
 strong.important_text_alt {
-     color: #4fb650;
+     color: $ratio-green-color;
 }
 
 .error,
@@ -989,7 +996,7 @@ table.box2 {
 
 div#flip_view_1 div#similar-artist .name {
      border: 1px solid $base-text-color;
-     background: rgba(60, 60, 60, 0.7);
+     background: rgb(60 60 60 / 70%);
      color: $base-text-color;
      margin: 0;
      padding: 0 5px;
@@ -1007,7 +1014,7 @@ div#flip_view_1 div#similar-artist .name {
      margin: 8px 12px;
 }
 
-#add_cover_div .add_form input[type=text] {
+#add_cover_div .add_form input[type="text"] {
      margin-bottom: 8px;
      width: 100%;
 }
@@ -1045,15 +1052,15 @@ div#flip_view_1 div#similar-artist .name {
      flex-flow: row wrap;
 }
 
-.box_addartists input[type=text],
+.box_addartists input[type="text"],
 .box_addartists select,
-.box_addartists_similar input[type=text],
+.box_addartists_similar input[type="text"],
 .box_addartists_similar select,
-.box_addtag input[type=text],
+.box_addtag input[type="text"],
 .box_addtag select,
-.box_search input[type=text],
+.box_search input[type="text"],
 .box_search select,
-.box_zipdownload input[type=text],
+.box_zipdownload input[type="text"],
 .box_zipdownload select {
      -ms-flex: 1 1 auto;
      flex: 1 1 auto;
@@ -1093,7 +1100,7 @@ div#flip_view_1 div#similar-artist .name {
      width: 100% !important;
 }
 
-.box_zipdownload input[type=submit] {
+.box_zipdownload input[type="submit"] {
      margin-bottom: 0;
 }
 
@@ -1111,7 +1118,7 @@ div#flip_view_1 div#similar-artist .name {
      background-color: $secondary-table-background-color;
 }
 
-.torrent_table tr:not(.colhead):not(.colhead_dark) {
+.torrent_table tr:not(.colhead, .colhead_dark) {
      border-top: 2px solid $secondary-table-background-color;
 }
 
@@ -1248,7 +1255,7 @@ pre {
 }
 
 .tooltipster-base {
-     box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+     box-shadow: 0 0 8px rgb(0 0 0 / 25%);
      width: auto !important;
 }
 
@@ -1333,18 +1340,18 @@ ul.collage_images li a > span {
      table-layout: fixed;
 }
 
-.recent tr:not(.colhead):not(.colhead_dark) > td {
+.recent tr:not(.colhead, .colhead_dark) > td {
      padding: 0;
      position: relative;
 }
 
-.recent tr:not(.colhead):not(.colhead_dark) > td::before {
+.recent tr:not(.colhead, .colhead_dark) > td::before {
      content: '';
      float: left;
      padding-top: 100%;
 }
 
-.recent tr:not(.colhead):not(.colhead_dark) > td a {
+.recent tr:not(.colhead, .colhead_dark) > td a {
      height: 100%;
      left: 0;
      overflow: hidden;
@@ -1353,7 +1360,7 @@ ul.collage_images li a > span {
      width: 100%;
 }
 
-.recent tr:not(.colhead):not(.colhead_dark) > td a img {
+.recent tr:not(.colhead, .colhead_dark) > td a img {
      height: 100%;
      position: absolute;
      width: 100%;
@@ -1389,7 +1396,7 @@ ul.collage_images li a > span {
 
 .lightbox {
      align-items: center;
-     background-color: rgba(0, 0, 0, 0.32);
+     background-color: rgb(0 0 0 / 32%);
      bottom: 0;
      cursor: pointer;
      display: flex;
@@ -1413,7 +1420,7 @@ ul.collage_images li a > span {
 }
 
 .lightbox img {
-     box-shadow: 0 0 32px 6px rgba(0, 0, 0, 0.32);
+     box-shadow: 0 0 32px 6px rgb(0 0 0 / 32%);
      display: block;
      max-height: 92%;
      max-width: 92%;
@@ -1487,8 +1494,8 @@ ul.collage_images li a > span {
      font-weight: 600;
 }
 
-#inbox #content .search_form input[type=search],
-#wiki #content .search_form input[type=search] {
+#inbox #content .search_form input[type="search"],
+#wiki #content .search_form input[type="search"] {
      margin-top: 8px;
      width: 100% !important;
 }
@@ -1502,7 +1509,7 @@ ul.collage_images li a > span {
 }
 
 #inbox .unreadpm {
-     background: rgba(255, 255, 255, 0.25);
+     background: rgb(255 255 255 / 25%);
 }
 
 #wiki .navigation_list {
@@ -1555,18 +1562,18 @@ ul.collage_images li a > span {
      margin-top: 8px;
 }
 
-#dnulist tr:not(.colhead):not(.colhead_dark):nth-child(even) {
+#dnulist tr:not(.colhead, .colhead_dark):nth-child(even) {
      background-color: #3d3336;
 }
 
-#dnulist tr:not(.colhead):not(.colhead_dark):nth-child(odd) {
+#dnulist tr:not(.colhead, .colhead_dark):nth-child(odd) {
      background-color: $blockquote-background-color;
 }
 
 #menu > ul a:hover,
 #userinfo_minor:hover a:hover,
 #userinfo_username:hover a:hover {
-     background-color: rgba(255, 255, 255, 0.2);
+     background-color: rgb(255 255 255 / 20%);
 }
 
 #torrents .filter_torrents .ft_submit {
@@ -1654,7 +1661,7 @@ blockquote {
      background-color: $input-background-color;
 }
 
-#bookmarks #torrent_table tr:not(.colhead):not(.colhead_dark) td:nth-child(2) {
+#bookmarks #torrent_table tr:not(.colhead, .colhead_dark) td:nth-child(2) {
      border-top: 1px solid transparent;
      height: 100%;
      padding: 0;
@@ -1674,11 +1681,11 @@ blockquote {
      margin-right: 0;
 }
 
-#messageform #buttons input[type=button],
+#messageform #buttons input[type="button"],
 #messageform #buttons label,
-#quickpostform .preview_submit input[type=button],
+#quickpostform .preview_submit input[type="button"],
 #quickpostform .preview_submit label,
-.forum_post .colhead_dark input[type=button],
+.forum_post .colhead_dark input[type="button"],
 .forum_post .colhead_dark label {
      margin-right: 4px;
 }
@@ -1783,7 +1790,7 @@ body#collage .cats_music {
 /* #1.5 HEADER AND MENU LAYOUT */
 /* MENU AND TOP BAR, DESKTOP ONLY */
 
-@media (min-width: 480px) {
+@media (width >= 480px) {
      .thin:last-child > :not(.two_columns) {
           margin: 4px;
      }
@@ -1896,7 +1903,7 @@ body#collage .cats_music {
 
 /* Icon revealed when menu is open */
 #userinfo_minor:hover::before {
-     background-color: rgba(0, 0, 0, 0);
+     background-color: rgb(0 0 0 / 0%);
      background-position: center;
      background-repeat: no-repeat;
      background-attachment: scroll;
@@ -1955,12 +1962,12 @@ body#collage .cats_music {
 
 /* elevation & levitation */
 #noty_bottomRight_layout_container {
-  box-shadow: 0 10px 18px rgba(0,0,0,0.25), 0 7px 7px rgba(0,0,0,0.22);
+  box-shadow: 0 10px 18px rgb(0 0 0 / 25%), 0 7px 7px rgb(0 0 0/22%);
   transition: all 0.25s cubic-bezier(.25,.8,.25,1);
 }
 
 #noty_bottomRight_layout_container:hover {
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0/22%);
   transform: translateY(-5px);
 }
 
@@ -1991,8 +1998,8 @@ body#collage .cats_music {
   background-color: none;
   border: thin solid transparent; /* prevents button movement */
   border-radius: 14px;
-  padding: 0px 6px;
-  transition: all .6s cubic-bezier(0.25, 0.8, 0.25, 1);
+  padding: 0 6px;
+  transition: all 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 #noty_bottomRight_layout_container .noty_buttons a:hover {
@@ -2077,7 +2084,7 @@ body#collage .cats_music {
 /* than being put here like they should be
 /*/
 
-@media only screen and (max-width: 768px) {
+@media only screen and (width <= 768px) {
      /* For mobile phones: */
      #inbox input[type="submit"] {
           font-size: 10px;
@@ -2095,12 +2102,9 @@ body#collage .cats_music {
 /* ################################################################################
 /* */
 
-/**/
-/**/
-
 /* Begin Changes for Mobile Site */
 
-@media (max-width: 480px) {
+@media (width <= 480px) {
      .m_hidden {
           display: none !important;
      }
@@ -2179,10 +2183,10 @@ body#collage .cats_music {
 
      /* ## 3.4 BEGIN forms */
 
-     input[type=search],
-     input[type=text],
-     input[type=email],
-     input[type=password],
+     input[type="search"],
+     input[type="text"],
+     input[type="email"],
+     input[type="password"],
      select {
           width: 100%;
      }
@@ -2220,8 +2224,8 @@ body#collage .cats_music {
           flex-wrap: nowrap;
      }
 
-     .m_table .colhead td:not(.m_th_right):not(.m_th_left),
-     .m_table .colhead_dark td:not(.m_th_right):not(.m_th_left) {
+     .m_table .colhead td:not(.m_th_right, .m_th_left),
+     .m_table .colhead_dark td:not(.m_th_right, .m_th_left) {
           display: none;
      }
 
@@ -2261,7 +2265,7 @@ body#collage .cats_music {
 
      /* ## 3.7 BEGIN table bodies */
      
-     .m_table tr:not(.hidden):not(.colhead):not(.colhead_dark) {
+     .m_table tr:not(.hidden, .colhead, .colhead_dark) {
           display: block;
           line-height: 1.4;
           padding-bottom: 3px;
@@ -2274,7 +2278,7 @@ body#collage .cats_music {
           display: block;
      }
 
-     .m_table tr:not(.colhead):not(.colhead_dark) td:not(.m_td_left):not(.m_td_right) {
+     .m_table tr:not(.colhead, .colhead_dark, .m_td_left, .m_td_right) {
           padding-bottom: 0;
           padding-top: 0;
           text-align: left;
@@ -2393,7 +2397,7 @@ body#collage .cats_music {
      }
 
      /* ## 3.9.1 BEGIN expanded torrent group */
-     .group_torrent:not(.edition):not(.hidden) {
+     .group_torrent:not(.edition, .hidden) {
           display: flex;
           flex-direction: column;
           padding: 5px 0 0 22px;
@@ -2529,8 +2533,6 @@ body#collage .cats_music {
           font-weight: 400;
           font-size: 0.55rem;
           vertical-align: baseline;
-          color: darkgray; /* old */
-          background: darkslategray !important; /*old */
           color: $tag-bubble-foreground-color; 
           background: $tag-bubble-background-color !important;
           padding: 0.05rem 0.5rem;
@@ -2596,7 +2598,7 @@ body#collage .cats_music {
      #wrapper .td_read {
           float: left;
           height: 12px;
-          margin: 3px 5px 0 5px;
+          margin: 3px 5px 0;
           width: 11px;
      }
 
@@ -2646,7 +2648,7 @@ body#collage .cats_music {
 
      .forum_post tr.colhead_dark span,
      .forum_post tr.colhead_dark strong {
-          color: #c6c9c9;
+          color: $input-color;
      }
 
      .forum_post tr.colhead_dark div {
@@ -2976,7 +2978,7 @@ body#collage .cats_music {
 
 /* ## 4.1 Begin Changes for Mobile, SUPER SMALL window */
 
-@media (max-width: 480px) and (max-height: 480px) {
+@media (width <= 480px) and (height <= 480px) {
      #header {
           --row-height: 35px;
      }
@@ -2998,7 +3000,7 @@ body#collage .cats_music {
      vertical-align: baseline;
      color: $tag-bubble-foreground-color; 
      background: $tag-bubble-background-color; 
-     padding: 0rem 0.5rem;
+     padding: 0 0.5rem;
      border-radius: 1rem;
      margin-bottom: 0.1rem;
      transition: all 0.6s cubic-bezier(.25,.8,.25,1);;
@@ -3020,10 +3022,10 @@ body#collage .cats_music {
 {
      color: $tag-bubble-background-color !important; 
      background: $tag-bubble-foreground-color !important; 
-     transition: all 0.15s cubic-bezier(.25,.8,.25,1);
+     transition: all 0.15s cubic-bezier(0.25,0.8,0.25,1);
      box-shadow:
-     rgba(0, 0, 0, 0.25) 0px 14px 28px, 
-     rgba(0, 0, 0, 0.22) 0px 10px 10px; 
+     rgb(0 0 0 / 25%) 0 14px 28px, 
+     rgb(0 0 0 / 22%) 0 10px 10px; 
 }
 
 /* remove commas between tag bubbles:

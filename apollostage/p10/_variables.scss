@@ -7,7 +7,7 @@
 $primary-accent-color: #83e4a6;
 $base-background-color: #041813;
 $base-text-color: #b9bdbd;
-$mono-text-color: #bbdddd;
+$mono-text-color: #bdd;
 
 $table-background-color: #212A2D;						
 $secondary-table-background-color: #262e27;				// also form field in focus
@@ -56,8 +56,8 @@ $input-color: #c6c9c9;
 $ratio-red-color: #e85050;
 $ratio-yellow-color: #e3ba65;
 $ratio-green-color: #4fb650;
-$selection-background-color: rgba(105, 217, 146, 0.6);
-$poll-background-color: rgba(131, 228, 166, 0.1);
+$selection-background-color: rgb(105 217 146 / 60%);
+$poll-background-color: rgb(131 228 166 / 10%);
 
 // overrides these colors when called: why?
 
