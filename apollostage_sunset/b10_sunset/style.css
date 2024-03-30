@@ -1,4 +1,15 @@
 @charset "UTF-8";
+/* APOLLOSTAGE SUNSET THEME */
+/* Scarlet red */
+/* Gray */
+/* Vermilion */
+/* Red */
+/* Violet */
+/* Crimson */
+/* Purple violet */
+/* Bluish green */
+/* Khaki */
+/* Scarlet */
 /* ################################################################################ */
 /* APOLLOSTAGE THEME */
 /* version 2024 
@@ -191,7 +202,7 @@ textarea:focus {
 .box .box.pad,
 .main_column .box.pad:not(#reply_box) {
   background-color: rgba(80, 80, 80, 0.439);
-  border: 2px solid rgba(33, 42, 45, 0.667);
+  border: 2px solid rgba(217, 130, 111, 0.6);
   margin: 8px;
   border-radius: 6px;
 }
@@ -700,7 +711,7 @@ table.box2 {
 
 /* main logo during desktop view */
 #logo a {
-  background: url("https://wally-crunk.github.io/svg/orpheus/ops-classic-lockup-dark-trans.svg") right no-repeat;
+  background: url("https://wally-crunk.github.io/svg/orpheus/ops-logo-lockup.svg") right no-repeat;
 }
 
 #logo > a {
@@ -1553,7 +1564,7 @@ ul.collage_images li a > span {
 }
 
 span[style*="color: green"] {
-  color: #7AC792 !important;
+  color: #7ac792 !important;
 }
 
 span[style*="color: red"] {
@@ -1621,7 +1632,7 @@ blockquote {
 }
 
 .thin > table {
-  /* fuck css, dude. Still not sure why this actually happens. */
+  /* Still not sure why this actually happens. */
   width: calc(100% - 8px);
 }
 

@@ -1,70 +1,113 @@
-// 
-// APOLLOSTAGE SUNSET THEME 
-// DEFINE THEME COLORS AND ICONS
+/* APOLLOSTAGE SUNSET THEME */
 
+// DEFINE THEME COLORS AND ICONS
 // import basic colors as a backup:
 
 @import '../apollostage/_variables';
 
 // and override as follows:
 
-// define theme colors
+// define theme colors with convenience names
 
-$primary-accent-color: #e69f90;
-$base-background-color: #211f25;
+ /* Scarlet red */
+  $scarletRed-100: #ef959c;
+  $scarletRed-200: #fe8691;
+  $scarletRed-300: #f07c8e;
+  $scarletRed-400: #da7c92;
+  $scarletRed-500: #c47891;
+  $scarletRed-600: #880d1e;
+  /* Gray */
+  $gray-100: #fdf6f4;
+  $gray-200: #f4f4f4;
+  $gray-300: #d1d1d1;
+  $gray-400: #a4a4a4;
+  $gray-500: #3f3e46;
+  $gray-600: #38363d;
+  $gray-700: #302d34;
+  $gray-800: #29262d;
+  $gray-900: #211f25;
+  /* Vermilion */
+  $vermilion-100: #fad5cd;
+  $vermilion-200: #e9b4a9;
+  $vermilion-300: #ffb0a0;
+  $vermilion-400: #e69f90;
+  /* Red */
+  $red-100: #ff9e98;
+  $red-200: #ed5454;
+  /* Violet */
+  $violet-100: #7d809e;
+  $violet-200: #5454ed;
+  $violet-300: #5c6086;
+  /* Crimson */
+  $crimson-100: #8d6a87;
+  $crimson-200: #875e80;
+  /* Purple violet */
+  $purpleViolet-100: #89849d;
+  $purpleViolet-200: #6c6584;
+  /* Bluish green */
+  $bluishGreen-100: #7ac792;
+  /* Khaki */
+  $khaki-100: #e8be69;
+  /* Scarlet */
+  $scarlet-100: #ab718d;
 
-$table-background-color: #302d34;
-$secondary-table-background-color: #29262d;
+// set theme colors
 
-$form-background-color: #302d34;
-$a-color: #f4f4f4;
-$a-hover-color: #fad5cd;
+$primary-accent-color: $vermilion-400;
+$base-background-color: $gray-900;
+
+$table-background-color: $gray-700;
+$secondary-table-background-color: $gray-800;
+
+$form-background-color: $gray-700;
+$a-color: $gray-200;
+$a-hover-color: $vermilion-100;
 
 // Ten color gradient:
-$menu-li-second-child-background-color: #ffb0a0;	// torrents
-$menu-li-third-child-background-color: #ff9e98; 	// collages
-$menu-li-fourth-child-background-color: #fe8691;	// requests
-$menu-li-fifth-child-background-color: #f07c8e; 	// forums
-$menu-li-sixth-child-background-color: #da7c92; 	// irc
-$menu-li-seventh-child-background-color: #c47891; 	// top10
-$header-background-color: #ab718d;					//rules, //also mobile menu header
-$menu-li-ninth-child-background-color: #8d6a87; 	// wiki
-$userinfo-username-color: #6c6584;					// username menu ~ closed
-$userinfo-username-hover-background-color: #89849d;	//username menu ~ open
-$userinfo-minor-color: #5c6086;						// VV pulldown menu ~ closed
-$userinfo-minor-hover-background-color: #7d809e;	// VV pulldown menu ~ open
+$menu-li-second-child-background-color: $vermilion-300;	// torrents
+$menu-li-third-child-background-color: $red-100; 	// collages
+$menu-li-fourth-child-background-color: $scarletRed-200;	// requests
+$menu-li-fifth-child-background-color: $scarletRed-300; 	// forums
+$menu-li-sixth-child-background-color: $scarletRed-400; 	// irc
+$menu-li-seventh-child-background-color: $scarletRed-500; 	// top10
+$header-background-color: $scarlet-100;					//rules, //also mobile menu header
+$menu-li-ninth-child-background-color: $crimson-100; 	// wiki
+$userinfo-username-color: $purpleViolet-200;					// username menu ~ closed
+$userinfo-username-hover-background-color: $purpleViolet-100;	//username menu ~ open
+$userinfo-minor-color: $violet-300;						// VV pulldown menu ~ closed
+$userinfo-minor-hover-background-color: $violet-100;	// VV pulldown menu ~ open
 
 // mobile pulldown menu gradient
 
-$userinfo-background-color-1: #875e80; // mobile pulldown menu gradient 1
-$userinfo-background-color-2: #ef959c; // mobile pulldown menu gradient 2
+$userinfo-background-color-1: $crimson-200; // mobile pulldown menu gradient 1
+$userinfo-background-color-2: $scarletRed-100; // mobile pulldown menu gradient 2
 
 // notification gradient
 
-$gradient-color-1: #ff9e98;	// usually works well with 'third-child'
-$gradient-color-2: #c47891;  // usually works well with 'seventh-child'
+$gradient-color-1: $red-100;	// usually works well with 'third-child'
+$gradient-color-2: $scarletRed-500;  // usually works well with 'seventh-child'
 
 // these are GNDN: goes nowhere, does nothing
 
-$menu-background-color-1: #880D1E;  //where are you, this goes nowhere and does nothing
-$menu-background-color-2: #c47891;  //where are you, this goes nowhere and does nothing
+$menu-background-color-1: $scarletRed-600;  //where are you, this goes nowhere and does nothing
+$menu-background-color-2: $scarletRed-500;  //where are you, this goes nowhere and does nothing
 
 // formatting colors for page elements
 
-$blockquote-background-color: #38363d;
-$input-background-color: #3f3e46;
-$torrent-background-color: #38363d;
-$footer-color: #a4a4a4;
-$input-color: #d1d1d1;
-$ratio-red-color: #ed5454;
-$ratio-yellow-color: #e8be69;
-$selection-background-color: rgba(217, 130, 111, 0.6);
-$poll-background-color: rgba(230, 159, 144, 0.1);
+$blockquote-background-color: $gray-600;
+$input-background-color: $gray-500;
+$torrent-background-color: $gray-600;
+$footer-color: $gray-400;
+$input-color: $gray-300;
+$ratio-red-color: $red-200;
+$ratio-yellow-color: $khaki-100;
+$selection-background-color: rgba(217 130 111 /60%);
+$poll-background-color: rgba(230 159 144 /10%);
 
 // overrides these colors when called: for more theme flavor?
 
-$span-green-color: #7AC792;
-$span-blue-color: #5454ed;
+$span-green-color: $bluishGreen-100;
+$span-blue-color: $violet-200;
 
 // accent color for upload categories (stripes)
 
@@ -80,8 +123,8 @@ $accent-color-cats_elearningvideos: #793555;
 
 // These can equal "ninth" and "second"
 // or adjust contrast as desired to emphasize/de-emphaszie
-$tag-bubble-background-color: #8d6a87; 
-$tag-bubble-foreground-color: #ffb0a0; 
+$tag-bubble-background-color: $crimson-100; 
+$tag-bubble-foreground-color: $vermilion-300; 
 
 @import '../apollostage/_base';
 
