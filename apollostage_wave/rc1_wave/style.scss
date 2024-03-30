@@ -1,4 +1,3 @@
- 
 /* APOLLOSTAGE WAVE THEME */
 
 // DEFINE THEME COLORS AND ICONS
@@ -6,10 +5,10 @@
 
 @import '../apollostage/_variables';
 
-
 // and override as follows:
 
-/* SCSS HEX */
+// define theme colors with convenience names
+
 $federal-blue: #030864ff;
 $midnight-blue: #1D157Cff;
 $tekhelet: #511EA7ff;
@@ -18,20 +17,19 @@ $french-violet: #8531C5ff;
 $veronica: #9A41DBff;
 $phlox: #BE46FFff;
 $fuchsia: #FF4CFFff;
-$mauve: #FEACFEff;
+$mauve: #FEACFEff;        // unused
 $aqua: #1DF6FD;
 $deepskyblue: #1ED4F5;
-$babyblue: #FA61FA;
+$babyblue: #FA61FA;       // unused
 $magentapink: #f652bb;
 $deepmagenta: #D427D4;
 $darkmagenta: #A802A8;
-$icterine: #FEFE78ff;     // unused
+$icterine: #FEFE78ff;     
 $delayedyellow: #f9f902;  // unused
+$salmonred: #F97A7F;      // unused
+$menudored: #c30910;      // unused
 
-$salmonred: #F97A7F;
-$menudored: #c30910;
-
-// define theme colors
+// use theme colors
 
 $primary-accent-color: $deepskyblue;
 $base-background-color: #1d1c1d;
@@ -41,7 +39,7 @@ $secondary-table-background-color: #242324;
 
 $form-background-color: #2b2a2b;
 $a-color: $aqua;
-$a-hover-color: $deepskyblue;
+$a-hover-color: $icterine;
 
 // Ten color gradient:
 
@@ -107,24 +105,8 @@ $accent-color-cats_elearningvideos: #793555;
 $tag-bubble-background-color: $fuchsia; 
 $tag-bubble-foreground-color: $icterine; 
 
-/* ack */
 @import '../apollostage/_base';
 
-/* Eddie Murphy */
+/* Johnson & Thomas in a Testarossa */
 
-/* Charlie Sheen in Platoon */
-
-@import url('https://fonts.googleapis.com/css2?family=Workbench&display=swap');
-
-/* Don Johnson in a Testarossa */
-
-h1, h2, h3, span.size4, span.size5, span.size6, span.size7, span.size8, span.size9, span.size10 {
- font-family: "Workbench", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings:
-    "BLED" 0,
-    "SCAN" 0;
-}
 // EOF
