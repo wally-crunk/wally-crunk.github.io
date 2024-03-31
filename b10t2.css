@@ -2491,7 +2491,7 @@ body#collage .cats_music {
     opacity: 0;
   }
   #header:hover {
-    height: clamp(200px, 32rem, 100%);
+    height: clamp(200px, var(--row-height) * 15, 100%);
     opacity: 1;
     transition: all 600ms cubic-bezier(1, 0.01, 0.3, 1.31);
     border-bottom: groove #1a9f7d;
@@ -2777,4 +2777,4 @@ table.torrent_table.cats.m_table td.td_info.big_info div.group_info.clear div.ta
 /* # EOF # */
 /* ####### */
 
-/*# sourceMappingURL=b10.9.css.map */
+/*# sourceMappingURL=b10t2.css.map */
