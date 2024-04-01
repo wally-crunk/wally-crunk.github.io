@@ -26,7 +26,7 @@
 /* # 1 DESKTOP VIEW */
 /* ## 1.1 Desktop view, handling of all classes */
 /* ## 1.2 Reserved
-/* ## 1.3 Reserved
+/* ## 1.3 Experimental Fix for Sticky Column Headings
 /* ## 1.4 Upload Category Decoration Striping */
 /* ## 1.5 Header and menu layout */
 /* ## 1.6 Menu Handling */
@@ -62,7 +62,7 @@
 /* ## 3.15.4 userinfo */
 /* ## 3.15.5 browse links */
 /* ## 3.15.6 checked */
-/* ## 3.16 Experimental handling for sticky table headers on Mobile */
+/* ## 3.16 Handling for sticky table headers on Mobile */
 /* # 4 MISCELLANEOUS
 /* ## 4.1 Changes for Mobile, super small window */
 /* ## 4.2 Tag bubble appearance on widescreen #wideload */
@@ -1642,7 +1642,18 @@ blockquote {
 
 /* END desktop view, handling of classes */
 /* # 1.2 Reserved [for more organization in the future]
-/* # 1.3 Reserved [for more organization in the future]
+
+/* ## 1.3 EXPERIMENTAL FIX FOR STICKY COLUMN HEADINGS
+/* Not all table headings are setup this way. 
+/* Examples include bonus points rate and Token history.
+/* Attempting to overwrite Global.css */
+.colhead_dark td, .colhead_dark th, .colhead td, .colhead th, td.colhead, td.colhead_dark {
+  top: 0;
+  position: sticky;
+  position: -webkit-sticky;
+  background: inherit !important; /* This is the important line. */
+  z-index: 10; /* On mobile this will be overwritten. */
+}
 
 /* # 1.4 BEGIN UPLOAD CATEGORY DECORATION STRIPING */
 /* Begin category decorations for torrent-tables on torrent & collage pages */
@@ -2744,12 +2755,13 @@ body#collage .cats_music {
   }
   /* END checked */
   /* END site header */
-  /* ## 3.16 Experimental handling for sticky table headers on Mobile */
+  /* ## 3.16 Handling for sticky table headers on Mobile */
+  /* As with section 1.3 above, this only is useful on certain tables */
   /* replacing the version in Global.css (hopefully) */
   .colhead_dark td, .colhead_dark th, .colhead td, .colhead th, td.colhead, td.colhead_dark {
-    top: 2rem; /* lower on mobile due to the O-header and pulldown menu */
+    top: 2rem; /* lower on mobile due to the header and pulldown menu */
     position: sticky;
-    z-index: 800;
+    z-index: 0 !important; /* To go under the pulldown menu */
     background: inherit !important;
   }
 }
@@ -2820,16 +2832,6 @@ table.torrent_table.cats.m_table td.td_info.big_info div.group_info.clear div.ta
 /* This should not be necessary... */
 .tags a {
   visibility: visible;
-}
-
-/* ## 4.3 Experimental fix for sticky column headings that are troublesome on desktop */
-/* attempting to overwrite Global.css */
-.colhead_dark td, .colhead_dark th, .colhead td, .colhead th, td.colhead, td.colhead_dark {
-  top: 0;
-  position: sticky;
-  position: -webkit-sticky;
-  z-index: 10;
-  background: inherit !important; /* this is the needed line */
 }
 
 /**/
