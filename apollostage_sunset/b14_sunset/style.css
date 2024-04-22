@@ -1,5 +1,184 @@
-@namespace url(http://www.w3.org/1999/xhtml);
-@namespace svg url(http://www.w3.org/2000/svg);
+@charset "UTF-8";
+/* APOLLOSTAGE SUNSET THEME */
+/* ################################################################################ */
+/* APOLLOSTAGE THEME */
+/* version 2024
+/* ################################################################################ */
+/* ################################################################################ */
+/* CHANGELOG */
+/* ################################################################################ */
+/**/
+/**/
+/*  # 2024-04-01 - Updated by rubric_alert with hawkeye and community feedback. */
+/*  # Fix: mobile menu, category stripes;  
+/*  # Feature: Add SVGs, tag bubbles, italic fonts and more;
+/*  # Chore: Organized and documented the SCSS. */
+/*  For full changelog: see uncompiled SASS file. */
+/*   Original version by burtoo and contributors.  */
+/**/
+/**/
+/* ################################################################################ */
+/* TABLE OF CONTENTS */
+/* ################################################################################ */
+/**/
+/**/
+/* # 0 GENERAL SETUP */
+/* ## 0.1 Font loading */
+/* # 1 DESKTOP VIEW */
+/* ## 1.1 Desktop view, handling of all classes */
+/* ## 1.2 Reserved */
+/* ## 1.3 Experimental Fix for Sticky Column Headings */
+/* ## 1.4 Upload Category Decoration Striping */
+/* ## 1.5 Header and menu layout */
+/* ## 1.6 Menu Handling */
+/* ## 1.7 Notification Box */
+/* ## 1.8 Sidebar */
+/* # 2 DOCUMENTATION OF MOBILE CLASSES */
+/* # 3 CHANGES FOR MOBILE VIEW */
+/* ## 3.1 site layout */
+/* ## 3.2 notifications */
+/* ## 3.3 user settings */
+/* ## 3.4 forms */
+/* ## 3.5 general tables */
+/* ## 3.6 table headers */
+/* ## 3.7 table bodies */
+/* ## 3.8 right-aligned numerical stats */
+/* ## 3.9 torrent table */
+/* ## 3.9.1 expanded torrent group */
+/* ## 3.9.2 top10 */
+/* ## 3.10 invite table */
+/* ## 3.11 collage table */
+/* ## 3.11.1 tag bubble appearance on mobile */
+/* ## 3.11.2 title of collages on mobile */
+/* ## 3.12 requests */
+/* ## 3.13 forums */
+/* ## 3.13.1 forum index */
+/* ## 3.13.2 forum table structure */
+/* ## 3.13.3 forum headers */
+/* ## 3.14 rules */
+/* ## 3.14 reserved */
+/* ## 3.16 handling for sticky table headers on mobile */
+/* ## 3.17 site header */
+/* ## 3.17.1 prevent keyboard opening on ip---e and other mobile devices */
+/* ## 3.17.2 mobile menu layout */
+/* ## 3.17.3 searchboxes */
+/* ## 3.17.4 userinfo */
+/* ## 3.17.5 browse links */
+/* ## 3.17.6 checked */
+/* ## 3.18 torrent search, handling for tag appearance */
+/* # 4 MISCELLANEOUS
+/* ## 4.1 Changes for Mobile, super small window */
+/* ## 4.2 Tag bubble appearance on widescreen #wideload */
+/**/
+/**/
+/* ################################################################################
+/* # 0 GENERAL SETUP
+/* ################################################################################
+
+/**/
+/* Reminder: */
+/* slash-asterisk sass/scss comments are passed through to compiled css */
+/**/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+@namespace url("http://www.w3.org/1999/xhtml");
+@namespace svg url("http://www.w3.org/2000/svg");
+/**/
+/**/
+/* ## 0.1 BEGIN font loading */
+/* Finally add WOFF and Italic support */
+/* END font loading */
+/**/
+/**/
+/* ################################################################################
+/* # 1 DESKTOP VIEW */
+/* ################################################################################
+/**/
+/* ## 1.1 BEGIN desktop view, handling of classes */
+* {
+  box-sizing: inherit;
+}
+
+body,
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+select,
+textarea,
+.tooltipster-default .tooltipster-content {
+  font-family: "Open Sans", Noto, "Noto Sans", Helvetica, Arial, Tahoma, "Microsoft Yahei", sans-serif;
+}
+
+body {
+  background-color: #211f25;
+  box-sizing: border-box;
+  color: #b9bdbd;
+  font-size: 12px;
+  line-height: 1.6;
+  margin: 0 8px;
+}
+
+pre, code {
+  font-family: "JetBrains Mono", "Cascadia Code", Consolas, "Ubuntu Mono", Monaco, monospace;
+  font-optical-sizing: auto;
+  font-variant-ligatures: no-contextual;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 12.5px;
+  color: #bdd;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #fff;
+  line-height: normal;
+  margin: 8px 0;
+  max-width: 100%;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: #e69f90;
+}
+
+h1,
+h2 {
+  font-size: 23px;
+  font-weight: 600;
+}
+
+h3,
+h4 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+h4,
+h5 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+a {
+  color: #f4f4f4;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fad5cd;
+}
 
 a:active,
 a:focus,
@@ -14,18 +193,12 @@ textarea:focus {
   outline: 0;
 }
 
-.main_column .box.pad  {
-      // 2024 fix -- provide formatting on .box.pad for the [box] tag
-      //
-      // We're targeting main content only, so exclude the 'reply box' 
-      // at the bottom which also uses this tag.
-
-      &:not(#reply_box) {
-          background-color: $box-background-color;
-          border: 2px solid $box-border-color;
-          margin: 8px 8px 8px 8px;
-          border-radius: 6px;
-        }
+.box .box.pad,
+.main_column .box.pad:not(#reply_box) {
+  background-color: rgba(80, 80, 80, 0.439);
+  border: 2px solid rgba(217, 130, 111, 0.6);
+  margin: 8px;
+  border-radius: 6px;
 }
 
 #content > .thin,
@@ -38,7 +211,7 @@ textarea:focus {
 
 .clear::after,
 .profileinfo::before {
-  content: '';
+  content: "";
 }
 
 #menu > ul a,
@@ -50,21 +223,6 @@ textarea:focus {
 .add_bookmark,
 .sidebar {
   float: right;
-}
-
-.tooltipster-default .tooltipster-content,
-body,
-button,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-input,
-select,
-textarea {
-  font-family: 'Open Sans', Helvetica, Arial, Tahoma, "Microsoft Yahei", sans-serif;
 }
 
 #header ul,
@@ -81,85 +239,12 @@ textarea {
   vertical-align: middle;
 }
 
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3aCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 600;
-  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(https://fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNSonF5uFdDttMLvmWuJdhhgs.ttf) format('truetype');
-}
-
-* {
-  box-sizing: inherit;
-}
-
-body {
-  background-color: $base-background-color;
-  box-sizing: border-box;
-  color: $base-text-color;
-  font-size: 12px;
-  line-height: 1.6;
-  margin: 0 8px;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #fff;
-  font-weight: 400;
-  line-height: normal;
-  margin: 8px 0;
-  max-width: 100%;
-}
-
-h1 a,
-h2 a,
-h3 a,
-h4 a,
-h5 a,
-h6 a {
-  color: $primary-accent-color;
-}
-
-h1,
-h2 {
-  font-size: 23px;
-}
-
-h3,
-h4 {
-  font-size: 18px;
-}
-
-h4,
-h5 {
-  font-size: 16px;
-}
-
-a {
-  color: $a-color;
-  text-decoration: none;
-}
-
-a:hover {
-  color: $a-hover-color;
-}
-
 svg|a {
-  fill: $a-color;
+  fill: #f4f4f4;
 }
 
 svg|a:hover {
-  fill: $a-hover-color;
+  fill: #fad5cd;
 }
 
 b,
@@ -188,14 +273,14 @@ li:last-child {
 }
 
 blockquote {
-  background-color: $blockquote-background-color;
+  background-color: #38363d;
   border: 1px dashed rgba(255, 255, 255, 0.25);
   margin: 12px;
   padding: 12px;
 }
 
 ::selection {
-  background-color: $selection-background-color;
+  background-color: rgba(217, 130, 111, 0.6);
   color: #fff;
 }
 
@@ -206,7 +291,7 @@ form input {
 table,
 table .rowa:nth-child(even),
 table .rowb:nth-child(even) {
-  background-color: $table-background-color;
+  background-color: #302d34;
 }
 
 table {
@@ -217,12 +302,12 @@ table {
 
 table .rowa,
 table .rowb {
-  border-top: 2px solid $secondary-table-background-color;
+  border-top: 2px solid #29262d;
 }
 
 table .rowa:nth-child(odd),
 table .rowb:nth-child(odd) {
-  background-color: $input-background-color;
+  background-color: #3f3e46;
 }
 
 table ul.options_list {
@@ -232,7 +317,7 @@ table ul.options_list {
 
 .colhead,
 .colhead_dark {
-  background-color: $input-background-color;
+  background-color: #3f3e46;
   line-height: 18px;
 }
 
@@ -267,11 +352,11 @@ td:last-child {
 }
 
 form {
-  background-color: $form-background-color;
+  background-color: #302d34;
 }
 
 form table td.label {
-  color: $footer-color;
+  color: #a4a4a4;
   padding-top: 9px;
   font-weight: 600;
   text-align: right;
@@ -288,10 +373,10 @@ textarea {
 button,
 input[type=button],
 input[type=submit] {
-  background: linear-gradient($a-color, #b8b8b8);
+  background: linear-gradient(#f4f4f4, #b8b8b8);
   border: none;
   border-radius: 1.5px;
-  color: $input-background-color;
+  color: #3f3e46;
   cursor: pointer;
   font-weight: 600;
   height: 32px;
@@ -301,7 +386,7 @@ input[type=submit] {
 button:active,
 input[type=button]:active,
 input[type=submit]:active {
-  background: linear-gradient(#b8b8b8, $a-color);
+  background: linear-gradient(#b8b8b8, #f4f4f4);
 }
 
 input[type=email],
@@ -310,9 +395,9 @@ input[type=text],
 input[type=search],
 select,
 textarea {
-  background: $input-background-color;
+  background: #3f3e46;
   border: 1px solid rgba(255, 255, 255, 0.08);
-  color: #c6c9c9;
+  color: #d1d1d1;
   height: 32px;
   padding: 0 8px;
 }
@@ -324,7 +409,7 @@ input[type=search]:focus,
 select:focus,
 textarea:focus {
   border: 1px solid rgba(255, 255, 255, 0.2);
-  color: $a-color;
+  color: #f4f4f4;
 }
 
 textarea {
@@ -380,9 +465,10 @@ span.size10 {
 }
 
 strong.important_text {
-  color: $ratio-red-color;
+  color: #ed5454;
 }
 
+/* used for anything? */
 strong.important_text_alt {
   color: #4fb650;
 }
@@ -395,7 +481,7 @@ strong.important_text_alt {
 .r02,
 .r03,
 .warning {
-  color: $ratio-red-color;
+  color: #ed5454;
 }
 
 .r04,
@@ -404,7 +490,7 @@ strong.important_text_alt {
 .r07,
 .r08,
 .r09 {
-  color: $ratio-yellow-color;
+  color: #e8be69;
 }
 
 .r10,
@@ -430,7 +516,7 @@ strong.important_text_alt {
 .vote_artist_down,
 .vote_tag_down {
   font-weight: bolder;
-  color: $ratio-red-color;
+  color: #ed5454;
 }
 
 #wrapper {
@@ -451,7 +537,7 @@ strong.important_text_alt {
 
 .box,
 .box2 {
-  background-color: $form-background-color;
+  background-color: #302d34;
   margin-bottom: 8px;
   margin-top: 8px;
 }
@@ -462,7 +548,7 @@ table.box2 {
 }
 
 .head {
-  background-color: $input-background-color;
+  background-color: #3f3e46;
   line-height: 18px;
 }
 
@@ -483,7 +569,7 @@ table.box2 {
 }
 
 .autocomplete-suggestions {
-  background-color: $a-color;
+  background-color: #f4f4f4;
   border: none;
   color: #26282e;
   margin-top: 4px;
@@ -495,7 +581,7 @@ table.box2 {
 }
 
 .autocomplete-suggestions .autocomplete-suggestion.autocomplete-selected {
-  background-color: $a-hover-color;
+  background-color: #fad5cd;
 }
 
 .autocomplete-suggestions .autocomplete-suggestion strong {
@@ -503,7 +589,7 @@ table.box2 {
 }
 
 .forum_post.forum_unread {
-  border-top: 2px solid $a-hover-color;
+  border-top: 2px solid #fad5cd;
 }
 
 .forum_post .avatar {
@@ -530,7 +616,6 @@ table.box2 {
     max-width: 720px;
   }
 }
-
 .forum_index h4,
 .forum_list h4 {
   font-size: 12px;
@@ -541,8 +626,8 @@ table.box2 {
   margin-top: 24px;
 }
 
-.forum_index td[style*='width: 2%'],
-.forum_list td[style*='width: 2%'] {
+.forum_index td[style*="width: 2%"],
+.forum_list td[style*="width: 2%"] {
   width: 24px !important;
 }
 
@@ -551,48 +636,50 @@ table.box2 {
 }
 
 .last_read ::before {
-  content: '➟';
+  content: "➤";
+  color: #e69f90;
   display: inline-block;
 }
 
 #userinfo_minor::before,
 .linkbox br {
-  content: '';
+  content: "";
 }
+
 #nav_logchecker {
   display: block;
 }
 
 .read {
-  background: $read-icon center no-repeat;
+  background: url("https://wally-crunk.github.io/svg/gazelle/document.svg") center no-repeat;
 }
 
 .unread {
-  background: $unread-icon center no-repeat;
+  background: url("https://wally-crunk.github.io/svg/gazelle/document-round.svg") center no-repeat;
 }
 
 .read_locked {
-  background: $read-locked-icon center no-repeat;
+  background: url("https://wally-crunk.github.io/svg/gazelle/lock.svg") center no-repeat;
 }
 
 .unread_locked {
-  background: $unread-locked-icon center no-repeat;
+  background: url("https://wally-crunk.github.io/svg/gazelle/lock-round.svg") center no-repeat;
 }
 
 .read_sticky {
-  background: $read-sticky-icon center no-repeat;
+  background: url("https://wally-crunk.github.io/svg/gazelle/pin.svg") center no-repeat;
 }
 
 .unread_sticky {
-  background: $unread-sticky-icon center no-repeat;
+  background: url("https://wally-crunk.github.io/svg/gazelle/pin-round.svg") center no-repeat;
 }
 
 .read_locked_sticky {
-  background: $read-locked-sticky-icon center no-repeat;
+  background: url("https://wally-crunk.github.io/svg/gazelle/pin-and-lock.svg") center no-repeat;
 }
 
 .unread_locked_sticky {
-  background: $unread-locked-sticky-icon center no-repeat;
+  background: url("https://wally-crunk.github.io/svg/gazelle/pin-and-lock-round.svg") center no-repeat;
 }
 
 #header,
@@ -617,10 +704,8 @@ table.box2 {
 }
 
 /* main logo during desktop view */
-#logo a,
-// #extra5 ~ removed //
- {
-  background: $site-logo-lockup right no-repeat;
+#logo a {
+  background: url("https://wally-crunk.github.io/svg/orpheus/ops-logo-lockup.svg") right no-repeat;
 }
 
 #logo > a {
@@ -655,7 +740,7 @@ table.box2 {
 #menu > ul a:hover,
 #userinfo_minor:hover a:hover,
 #userinfo_username:hover a:hover {
-  background-color: $a-hover-color;
+  background-color: #fad5cd;
 }
 
 #nav_index {
@@ -712,7 +797,7 @@ table.box2 {
 
 #searchbars > ul {
   align-items: center;
-  background-color: $input-background-color;
+  background-color: #3f3e46;
   display: flex;
   display: -ms-flexbox;
   -ms-flex-align: center;
@@ -731,44 +816,44 @@ table.box2 {
 }
 
 #searchbars > ul input {
-  background-color: $form-background-color;
+  background-color: #302d34;
   width: 100%;
 }
 
 #menu li:nth-child(2) {
-  background-color: $menu-li-second-child-background-color;
+  background-color: #ffb0a0;
 }
 
 #menu li:nth-child(3) {
-  background-color: $menu-li-third-child-background-color;
+  background-color: #ff9e98;
 }
 
 #menu li:nth-child(4) {
-  background-color: $menu-li-fourth-child-background-color;
+  background-color: #fe8691;
 }
 
 #menu li:nth-child(5) {
-  background-color: $menu-li-fifth-child-background-color;
+  background-color: #f07c8e;
 }
 
 #menu li:nth-child(6) {
-  background-color: $menu-li-sixth-child-background-color;
+  background-color: #da7c92;
 }
 
 #menu li:nth-child(7) {
-  background-color: $menu-li-seventh-child-background-color;
+  background-color: #c47891;
 }
 
 #menu li:nth-child(8) {
-  background-color: $header-background-color;
+  background-color: #ab718d;
 }
 
 #menu li:nth-child(9) {
-  background-color: $menu-li-ninth-child-background-color;
+  background-color: #8d6a87;
 }
 
 #userinfo_username {
-  background-color: $userinfo-username-color;
+  background-color: #6c6584;
   right: 50px;
 }
 
@@ -783,7 +868,7 @@ table.box2 {
 }
 
 .linkbox > strong {
-  color: $primary-accent-color;
+  color: #e69f90;
 }
 
 #footer,
@@ -825,65 +910,6 @@ table.box2 {
   margin-top: 8px;
 }
 
-#noty_bottomRight_layout_container {
-  bottom: 24px !important;
-  right: 24px !important;
-}
-
-#noty_bottomRight_layout_container > li {
-  background: 0 0 !important;
-  border: 2px solid $a-color !important;
-  border-radius: 0 !important;
-  box-shadow: 0 0 32px rgba(0, 0, 0, 0.25) !important;
-}
-
-#noty_bottomRight_layout_container .noty_message {
-  background-color: $a-color !important;
-  color: $base-background-color !important;
-  font-weight: 700;
-  padding: 0 !important;
-}
-
-#noty_bottomRight_layout_container .noty_message .noty_text {
-  line-height: 34px;
-  padding: 0 8px;
-}
-
-#noty_bottomRight_layout_container .noty_buttons {
-  background-color: $form-background-color !important;
-  border: none !important;
-  padding: 8px !important;
-}
-
-#noty_bottomRight_layout_container .noty_buttons a {
-  color: $a-color !important;
-}
-
-#noty_bottomRight_layout_container .noty_buttons a:hover {
-  color: $a-hover-color !important;
-}
-
-#noty_bottomRight_layout_container .brackets {
-  margin: 0 2px;
-}
-
-.sidebar .pad ol,
-.sidebar .pad ul {
-  margin-bottom: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-}
-
-.sidebar ol.nobullet,
-.sidebar ul.nobullet {
-  padding-left: 0;
-}
-
-.sidebar img {
-  height: auto;
-  width: auto;
-}
-
 #covers .pad,
 #covers p {
   margin: 0;
@@ -896,9 +922,9 @@ table.box2 {
 }
 
 div#flip_view_1 div#similar-artist .name {
-  border: 1px solid $base-text-color;
+  border: 1px solid #b9bdbd;
   background: rgba(60, 60, 60, 0.7);
-  color: $base-text-color;
+  color: #b9bdbd;
   margin: 0;
   padding: 0 5px;
 }
@@ -938,7 +964,7 @@ div#flip_view_1 div#similar-artist .name {
 .box_artists .brackets::before,
 .box_tags .edit_tags_votes .brackets::after,
 .box_tags .edit_tags_votes .brackets::before {
-  content: '';
+  content: "";
   display: none;
 }
 
@@ -1016,11 +1042,11 @@ div#flip_view_1 div#similar-artist .name {
 }
 
 .torrent_table {
-  background-color: $secondary-table-background-color;
+  background-color: #29262d;
 }
 
-.torrent_table tr:not(.colhead):not(.colhead_dark) {
-  border-top: 2px solid $secondary-table-background-color;
+.torrent_table tr:not(.colhead, .colhead_dark) {
+  border-top: 2px solid #29262d;
 }
 
 .torrent_table tr .number_column:not(:last-child) {
@@ -1028,16 +1054,16 @@ div#flip_view_1 div#similar-artist .name {
 }
 
 .torrent_table .group {
-  background-color: $input-background-color;
+  background-color: #3f3e46;
 }
 
 .group_torrent {
-  background-color: $form-background-color;
+  background-color: #302d34;
 }
 
 .group_torrent.edition,
 .torrent {
-  background-color: $torrent-background-color;
+  background-color: #38363d;
 }
 
 .torrentdetails .linkbox {
@@ -1066,18 +1092,18 @@ div#flip_view_1 div#similar-artist .name {
 }
 
 .tags a {
-  color: $footer-color;
+  color: #a4a4a4;
   font-size: 11px;
 }
 
 .tags a:hover {
-  color: $a-hover-color;
+  color: #fad5cd;
 }
 
 .group_info > span:first-child,
 .group_torrent td:first-child > span,
 .torrent_links_block {
-  color: $footer-color;
+  color: #a4a4a4;
   float: right;
   margin-right: 4px;
 }
@@ -1134,8 +1160,8 @@ div#flip_view_1 div#similar-artist .name {
   margin-left: -8px;
 }
 
-.colhead td[width*='70%'],
-.colhead_dark td[width*='70%'] {
+.colhead td[width*="70%"],
+.colhead_dark td[width*="70%"] {
   width: 100%;
 }
 
@@ -1145,44 +1171,9 @@ div#flip_view_1 div#similar-artist .name {
   padding: 0;
 }
 
-.cats_col {
-  border-top: 1px solid transparent;
-  height: 100%;
-  padding: 0;
-  position: relative;
-}
-
-.cats_applications,
-.cats_audiobooks,
-.cats_comedy,
-.cats_comics,
-.cats_ebooks,
-.cats_elearningvideos {
-/* This does not work */
-}
-
-.cats_applications {
-  background-color: #2b99ff;
-}
-
-.cats_audiobooks {
-  background-color: #ffe70f;
-}
-
-.cats_comedy {
-  background-color: #ff382b;
-}
-
-.cats_comics {
-  background-color: #b52bff;
-}
-
-.cats_ebooks {
-  background-color: #3fee23;
-}
-
-.cats_elearningvideos {
-  background-color: #22fad9;
+/* #2024 bugfix for messages with 'pre' that overrun the width of their message box. */
+pre {
+  white-space: pre-wrap;
 }
 
 .log_section pre {
@@ -1195,14 +1186,14 @@ div#flip_view_1 div#similar-artist .name {
 }
 
 .tooltipster-default {
-  background-color: $base-background-color;
-  border: 0 solid $primary-accent-color;
+  background-color: #211f25;
+  border: 0 solid #e69f90;
   border-radius: 2.5px;
   color: #c6c9c9;
 }
 
 .tooltipster-default .tooltipster-content {
-  background-color: $base-background-color;
+  background-color: #211f25;
   color: #c6c9c9;
   font-size: 12px;
   line-height: 1.4;
@@ -1210,14 +1201,14 @@ div#flip_view_1 div#similar-artist .name {
 }
 
 .tooltipster-default .tooltipster-content a {
-  background-color: $base-background-color;
+  background-color: #211f25;
   color: #c6c9c9;
   font-weight: 600;
 }
 
 .alertbar,
 .tooltipster-default .tooltipster-content a:hover {
-  color: $primary-accent-color;
+  color: #e69f90;
 }
 
 #content .header > h1,
@@ -1251,7 +1242,7 @@ ul.collage_images li a img {
 }
 
 ul.collage_images li::before {
-  content: '';
+  content: "";
   float: left;
   padding-top: 100%;
 }
@@ -1275,18 +1266,18 @@ ul.collage_images li a > span {
   table-layout: fixed;
 }
 
-.recent tr:not(.colhead):not(.colhead_dark) > td {
+.recent tr:not(.colhead, .colhead_dark) > td {
   padding: 0;
   position: relative;
 }
 
-.recent tr:not(.colhead):not(.colhead_dark) > td::before {
-  content: '';
+.recent tr:not(.colhead, .colhead_dark) > td::before {
+  content: "";
   float: left;
   padding-top: 100%;
 }
 
-.recent tr:not(.colhead):not(.colhead_dark) > td a {
+.recent tr:not(.colhead, .colhead_dark) > td a {
   height: 100%;
   left: 0;
   overflow: hidden;
@@ -1295,7 +1286,7 @@ ul.collage_images li a > span {
   width: 100%;
 }
 
-.recent tr:not(.colhead):not(.colhead_dark) > td a img {
+.recent tr:not(.colhead, .colhead_dark) > td a img {
   height: 100%;
   position: absolute;
   width: 100%;
@@ -1308,7 +1299,7 @@ ul.collage_images li a > span {
 
 #userform #settings_sections h2 a,
 .rule_short {
-  color: $a-color;
+  color: #f4f4f4;
 }
 
 .poll li {
@@ -1316,14 +1307,14 @@ ul.collage_images li a > span {
 }
 
 .poll .graph {
-  background-color: $poll-background-color;
+  background-color: rgba(230, 159, 144, 0.1);
   display: block;
   height: 8px;
   margin-bottom: 12px;
 }
 
 .poll .graph span {
-  background-color: $primary-accent-color;
+  background-color: #e69f90;
   display: block;
   float: left;
   height: 8px;
@@ -1369,7 +1360,7 @@ ul.collage_images li a > span {
 
 #footer {
   width: 100%;
-  color: $footer-color;
+  color: #a4a4a4;
   font-synthesis: 11px;
   margin: 32px auto 16px;
 }
@@ -1384,7 +1375,7 @@ ul.collage_images li a > span {
 }
 
 #discog_table > div.box.center {
-  background-color: $input-background-color;
+  background-color: #3f3e46;
   padding: 12px;
   text-align: left;
 }
@@ -1407,16 +1398,16 @@ ul.collage_images li a > span {
 }
 
 #musicbrainz_popup {
-  color: $base-background-color;
+  color: #211f25;
   font-weight: 600;
 }
 
 #musicbrainz_popup a {
-  color: $base-background-color;
+  color: #211f25;
 }
 
 #musicbrainz_popup a:hover {
-  color: $primary-accent-color;
+  color: #e69f90;
 }
 
 #musicbrainz_popup .brackets {
@@ -1470,7 +1461,7 @@ ul.collage_images li a > span {
   height: auto !important;
 }
 
-#user .box > .head span[style='float: left;']:first-child {
+#user .box > .head span[style="float: left;"]:first-child {
   float: none !important;
 }
 
@@ -1490,19 +1481,19 @@ ul.collage_images li a > span {
 }
 
 #userform #settings_sections h2 a:hover {
-  color: $a-hover-color;
+  color: #fad5cd;
 }
 
 #userform #settings_sections input {
   margin-top: 8px;
 }
 
-#dnulist tr:not(.colhead):not(.colhead_dark):nth-child(even) {
+#dnulist tr:not(.colhead, .colhead_dark):nth-child(even) {
   background-color: #3d3336;
 }
 
-#dnulist tr:not(.colhead):not(.colhead_dark):nth-child(odd) {
-  background-color: $blockquote-background-color;
+#dnulist tr:not(.colhead, .colhead_dark):nth-child(odd) {
+  background-color: #38363d;
 }
 
 #menu > ul a:hover,
@@ -1538,13 +1529,19 @@ ul.collage_images li a > span {
 #collages.collage_table .colhead td:last-child,
 #personal_collages .colhead td:last-child,
 .filelist_table .colhead_dark td:last-child,
-.forum_index .colhead td[style*='width: 7%'] {
+.forum_index .colhead td[style*="width: 7%"] {
   text-align: right;
 }
 
 .search_form {
   margin: 8px 0;
-  overflow: hidden;
+  /* here */
+  /* #2024b14 only on desktop, not on mobile */
+}
+@media (min-width: 575px) {
+  .search_form {
+    overflow: hidden;
+  }
 }
 
 .search_form div.submit {
@@ -1562,20 +1559,20 @@ ul.collage_images li a > span {
 
 .box table:not(.layout),
 .box2 table:not(.layout) {
-  border: 2px solid $secondary-table-background-color;
+  border: 2px solid #29262d;
   margin: 8px 0;
 }
 
-span[style*='color: green'] {
-  color: $span-green-color !important;
+span[style*="color: green"] {
+  color: #7ac792 !important;
 }
 
-span[style*='color: red'] {
-  color: $ratio-red-color !important;
+span[style*="color: red"] {
+  color: #ed5454 !important;
 }
 
-span[style*='color: blue'] {
-  color: $span-blue-color !important;
+span[style*="color: blue"] {
+  color: #5454ed !important;
 }
 
 .filelist_table td,
@@ -1593,10 +1590,10 @@ blockquote {
 .reportinfo_table,
 .torrentdetails,
 blockquote {
-  background-color: $input-background-color;
+  background-color: #3f3e46;
 }
 
-#bookmarks #torrent_table tr:not(.colhead):not(.colhead_dark) td:nth-child(2) {
+#bookmarks #torrent_table tr:not(.colhead, .colhead_dark) td:nth-child(2) {
   border-top: 1px solid transparent;
   height: 100%;
   padding: 0;
@@ -1625,62 +1622,17 @@ blockquote {
   margin-right: 4px;
 }
 
-
-#menu > ul a:hover {
-  color: #fff;
-}
-
-#userinfo_minor:hover a,
-#userinfo_username:hover a {
-  color: $a-color;
-}
-
-#userinfo_minor:hover::before {
-    background-color: rgba(0, 0, 0, 0);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-image: $menu-open-state-icon;
-    background-size: 30px;
-    background-origin: padding-box;
-    background-clip: border-box;
-}
-
-#searchbars .search_form {
-  background: 0 0;
-}
-
-#searchbars .search_form input {
-  border: none;
-  border-radius: 2.5px;
-  height: 30px;
-}
-
-#searchbars .search_form input:focus {
-  background: $secondary-table-background-color;
-}
-
-.sidebar {
-  order: 5;
-}
-.thin:last-child {
-  display: flex;
-  flex-wrap: wrap;
-  margin: -4px;
-}
-
-/*
- * We want vertical flex unless there's a sidebar. However, CSS has no parent selectors.
- * So, instead, we set width: 100% on everything, which is basically the same as column
- * flex, and then just override that to be default if there is a sidebar.
- */
-
+/* */
+/* We want vertical flex unless there's a sidebar. However, CSS has no parent selectors.
+/* So, instead, we set width: 100% on everything, which is basically the same as column
+/* flex, and then just override that to be default if there is a sidebar.
+/* */
 .thin:not(.linkbox) > :not(.two_columns) {
   width: 100%;
 }
 
 .thin > table {
-  /* fuck css, dude. Still not sure why this actually happens. */
+  /* Still not sure why this actually happens. */
   width: calc(100% - 8px);
 }
 
@@ -1697,58 +1649,97 @@ blockquote {
   order: 10;
 }
 
-/*
- * Documentation of mobile classes:
- * GENERAL:
- * .m_hidden: display: none on mobile
- * TABLES:
- * .m_table: table which will be mobilized
- * .m_th_left: which table header should be preserved on the left. It will be replaced with the word "Info". Only 1
- * .m_th_left_collapsable: extra padding applied to align right of the collapse button
- * .m_th_right: table headers that will be "floated" to the right. Max of 3
- * .m_td_left: will be left-aligned, and expanded vertically. Mainly for collapse button
- * .m_td_right: tables cells which will be put on the right with absolute positioning, to correspond with .m_th_right headers. Max of 3
- *
- * forum posts, although they share some of the styles, do not actually use
- * these classes, because:
- * - they are not tabular data, so for semantics
- * - they should not be compact the same way as a table
- * - they have much more uniform HTML across different places (comments and
- * "real" forum), so classes to simplify CSS aren't necessary
- */
+/* END desktop view, handling of classes */
+/* # 1.2 Reserved [for more organization in the future]
 
-/*
- * Portrait phones, and sometimes landscape
- * TODO: currently, responsive is optimized for either desktop or portrait phone
- * We need to handle landscape phones as well
- *
- * this stuff can *probably* be mostly copy-pasted into other stylesheets
- * then tweaked a bit. Ideally, before that happens, the whole styling system
- * should be made to use a CSS preprocessor so that we can have reusable styles
- */
+/* ## 1.3 EXPERIMENTAL FIX FOR STICKY COLUMN HEADINGS
+/* Not all table headings are setup this way. 
+/* Examples include bonus points rate and Token history.
+/* Attempting to overwrite Global.css */
+.colhead_dark td, .colhead_dark th, .colhead td, .colhead th, td.colhead, td.colhead_dark {
+  top: 0;
+  position: sticky;
+  position: -webkit-sticky;
+  background: inherit !important; /* This is the important line. */
+  z-index: 10; /* On mobile this will be overwritten. */
+}
 
-/* this query is mostly copied from what used to be above
- * despite the fact that this exists, there are still many
- * rules above that are overridden by media queries, rather
- * than being put here like they should be
- */
+/* # 1.4 BEGIN UPLOAD CATEGORY DECORATION STRIPING */
+/* Begin category decorations for torrent-tables on torrent & collage pages */
+/* #2024 bugfix:*/
+/* Apollostage highlights different upload types,
+/* using not an icon but a small color-coded rectangle (done using a border).
+/* The line (border-right:) can be replaced by an image or other (content:) as needed. */
+.cats_applications,
+.cats_audiobooks,
+.cats_comedy,
+.cats_comics,
+.cats_ebooks,
+.cats_elearningvideos,
+.cats_music {
+  width: 0;
+  height: 80px;
+}
 
-@media (min-width: 480px) {
+/* collages do not include Images in their table rows, so they 
+/* need much less height. */
+body#collage .cats_applications,
+body#collage .cats_audiobooks,
+body#collage .cats_comedy,
+body#collage .cats_comics,
+body#collage .cats_ebooks,
+body#collage .cats_elearningvideos,
+body#collage .cats_music {
+  height: 2rem;
+}
+
+.cats_music {
+  /* Memo: If you desire NO decoration on music uploads,
+  /* turn this off. */
+  border-right: thin solid darkslategray;
+}
+
+.cats_applications {
+  border-right: thick solid silver;
+}
+
+.cats_audiobooks {
+  border-right: thick solid cornflowerblue;
+}
+
+.cats_comedy {
+  border-right: thick solid deepskyblue;
+}
+
+.cats_comics {
+  border-right: thick solid gold;
+}
+
+.cats_ebooks {
+  border-right: thick solid chocolate;
+}
+
+.cats_elearningvideos {
+  border-right: thick solid mediumpurple;
+}
+
+/* #2024 */
+/* END category decorations for torrent tables on torrent & collage pages */
+/* #1.5 HEADER AND MENU LAYOUT */
+/* MENU AND TOP BAR, DESKTOP ONLY */
+@media (min-width: 575px) {
   .thin:last-child > :not(.two_columns) {
     margin: 4px;
   }
-
   #nav_donate .tooltip::after {
     color: red;
-    content: '❤️';
+    content: "❤️️";
     font-size: 75%;
     vertical-align: top;
   }
-
   #nav_staff {
     font-weight: 400;
   }
-
   #menu > ul > #nav_staff {
     display: inline;
     font-size: 13px;
@@ -1756,19 +1747,17 @@ blockquote {
     right: 8px;
     top: 29px;
   }
-
   #menu > ul > #nav_staff > a {
     line-height: 1.6;
     padding: 0;
   }
-
   #menu > ul > #nav_staff > a:hover {
     background-color: transparent;
-    color: $a-hover-color;
+    color: #fad5cd;
   }
-
   #userinfo_minor::before {
-    background: $menu-closed-state-icon no-repeat;
+    background: url("https://wally-crunk.github.io/svg/gazelle/chevrons-down.svg") no-repeat;
+    filter: brightness(200%); /*force white */
     background-size: 28px;
     background-position: center;
     display: block;
@@ -1776,7 +1765,6 @@ blockquote {
     line-height: 50px;
     width: 50px;
   }
-
   #userinfo_minor a,
   #userinfo_username a {
     display: none;
@@ -1784,114 +1772,279 @@ blockquote {
     padding: 0 8px;
     width: 150px;
   }
-
   #userinfo_minor:hover::before {
     margin-left: 100px;
   }
-
   #userinfo_minor {
-    background-color: $userinfo-minor-color;
+    background-color: #5c6086;
     border-radius: 0 5px 0 0;
     right: 0;
   }
-
   #userinfo_minor,
   #userinfo_username {
     position: absolute;
     z-index: 900;
   }
-
   #userinfo_minor:hover,
   #userinfo_username:hover {
     z-index: 800;
   }
-
   #userinfo_username:hover {
     border-radius: 0 10px 0 0;
     right: 0;
   }
-
   #userinfo_minor:hover {
-    background-color: $userinfo-minor-hover-background-color;
+    background-color: #7d809e;
   }
-
   #userinfo_username:hover {
-    background-color: $userinfo-username-hover-background-color;
+    background-color: #89849d;
   }
-
   .settings_sidebar {
     margin-left: 8px;
   }
-
   #userform #settings_sections {
     width: 240px;
   }
 }
+/* END Menu and topbar, desktop only */
+/* #1.6 BEGIN Menu handling */
+/* horizontal menu */
+/* #2024 change to styled color instead of #fff to match vertical pulldown menu */
+#menu > ul a:hover {
+  color: #f4f4f4;
+}
 
-@media only screen and (max-width: 768px) {
+/* vertical pulldown menu */
+#userinfo_minor:hover a,
+#userinfo_username:hover a {
+  color: #f4f4f4;
+}
+
+/* Icon revealed when menu is open */
+#userinfo_minor:hover::before {
+  background-color: rgba(0, 0, 0, 0);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-image: url("https://wally-crunk.github.io/svg/gazelle/menu.svg");
+  background-size: 30px;
+  background-origin: padding-box;
+  background-clip: border-box;
+}
+
+#searchbars .search_form {
+  background: 0 0;
+}
+
+#searchbars .search_form input {
+  border: none;
+  border-radius: 2.5px;
+  height: 30px;
+}
+
+#searchbars .search_form input:focus {
+  background: #29262d;
+}
+
+.sidebar {
+  order: 5;
+}
+
+.thin:last-child {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -4px;
+}
+
+/* END MENU HANDLING */
+/**/
+/**/
+/* # 1.7 BEGIN NOTIFICATION BOX */
+/* basic positioning */
+#noty_bottomRight_layout_container {
+  bottom: 24px !important;
+  right: 24px !important;
+}
+
+#noty_bottomRight_layout_container > li {
+  background: 0 0 !important;
+  border: 2px solid #5c6086 !important;
+  border-radius: 1px !important;
+}
+
+/* elevation & levitation */
+#noty_bottomRight_layout_container {
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.25), 0 7px 7px rgba(0, 0, 0, 0.22);
+  transition: all 0.25s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+#noty_bottomRight_layout_container:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  transform: translateY(-5px);
+}
+
+/* first row of each box */
+#noty_bottomRight_layout_container .noty_message {
+  background: radial-gradient(circle at top right, #ff9e98, #c47891) !important;
+  color: #f4f4f4 !important;
+  font-weight: 700;
+  padding: 0 !important;
+}
+
+/* first row words */
+#noty_bottomRight_layout_container .noty_message .noty_text {
+  line-height: 34px;
+  padding: 0 8px;
+}
+
+/* second row of each box */
+#noty_bottomRight_layout_container .noty_buttons {
+  background-color: #302d34 !important;
+  border: none !important;
+  padding: 8px !important;
+}
+
+#noty_bottomRight_layout_container .noty_buttons a {
+  color: #f4f4f4 !important;
+  background-color: none;
+  border: thin solid transparent; /* prevents button movement */
+  border-radius: 14px;
+  padding: 0 6px;
+  transition: all 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+#noty_bottomRight_layout_container .noty_buttons a:hover {
+  color: #ffc !important;
+  background-color: #5c6086;
+  border-radius: 14px;
+  border: thin solid #e69f90;
+  transition: all 0.15s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* END NOTIFICATION BOX */
+/**/
+/**/
+/* # 1.8 BEGIN SIDEBAR */
+.sidebar .pad ol,
+.sidebar .pad ul {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+}
+
+.sidebar ol.nobullet,
+.sidebar ul.nobullet {
+  padding-left: 0;
+}
+
+.sidebar img {
+  height: auto;
+  width: auto;
+}
+
+/* END SIDEBAR */
+/* */
+/* */
+/* ################################################################################ */
+/* # 2 DOCUMENTATION OF MOBILE CLASSES */
+/* ################################################################################ */
+/* */
+/* */
+/* Documentation of mobile classes:
+/* GENERAL:
+/* .m_hidden: display: none on mobile
+/* TABLES:
+/* .m_table: table which will be mobilized
+/* .m_th_left: which table header should be preserved on the left. It will be replaced with the word "Info". Only 1
+/* .m_th_left_collapsable: extra padding applied to align right of the collapse button
+/* .m_th_right: table headers that will be "floated" to the right. Max of 3
+/* .m_td_left: will be left-aligned, and expanded vertically. Mainly for collapse button
+/* .m_td_right: tables cells which will be put on the right with absolute positioning, to correspond with .m_th_right headers. Max of 3
+/*
+/* forum posts, although they share some of the styles, do not actually use
+/* these classes, because:
+/* - they are not tabular data, so for semantics
+/* - they should not be compact the same way as a table
+/* - they have much more uniform HTML across different places (comments and
+/* "real" forum), so classes to simplify CSS aren't necessary
+/*/
+/* Portrait phones, and sometimes landscape
+/* TODO: currently, responsive is optimized for either desktop or portrait phone
+/* We need to handle landscape phones as well
+/*
+/* this stuff can *probably* be mostly copy-pasted into other stylesheets
+/* then tweaked a bit. Ideally, before that happens, the whole styling system
+/* should be made to use a CSS preprocessor so that we can have reusable styles
+/*/
+/**/
+/**/
+/* this query is mostly copied from what used to be above
+/* despite the fact that this exists, there are still many
+/* rules above that are overridden by media queries, rather
+/* than being put here like they should be
+/*/
+@media only screen and (max-width: 575px) {
   /* For mobile phones: */
-  #inbox input[type="submit"] {
+  #inbox input[type=submit] {
     font-size: 10px;
     padding: 4px;
   }
-
   #forums input {
     font-size: 10px;
     padding: 4px;
   }
 }
-
-@media (max-width: 480px) {
+/* */
+/* ################################################################################
+/* # 3 CHANGES FOR MOBILE SITE
+/* ################################################################################
+/* */
+/* Begin Changes for Mobile Site */
+@media (max-width: 575px) {
   .m_hidden {
     display: none !important;
   }
-
   /* override from earlier, it makes shit weird */
   td:first-child {
     padding-left: 6px;
   }
-
-  /* BEGIN site layout */
+  /* by request, limit inbox images to window size on mobile */
+  #inbox .body img {
+    max-width: 100% !important;
+  }
+  /* ## 3.1 BEGIN site layout */
   #wrapper {
     padding-top: 36px;
   }
-
   .thin {
     flex-direction: column;
     margin: auto;
   }
-
   /* the specificity goes up to 11 */
   html > body div.thin > * {
     width: 100%;
   }
-
   form table td.label {
     width: 5rem;
   }
-
   .linkbox {
     text-align: left;
     width: 90%;
   }
-
   html body .scale_image,
   #stats img {
     max-width: 100%;
   }
   /* END site layout */
-
-  /* BEGIN notifications */
+  /* ## 3.2 BEGIN notifications */
   .i-am-new {
     width: calc(100% - 48px) !important;
   }
-
   .i-am-new li {
     width: 100% !important;
   }
   /* END notifications */
-
-  /* BEGIN user settings */
+  /* ## 3.3 BEGIN user settings */
   #user #userform {
     align-items: stretch;
     display: flex;
@@ -1899,19 +2052,16 @@ blockquote {
     margin-left: 0;
     width: 100%;
   }
-
   .settings_sidebar {
     flex: unset;
     order: -1;
   }
-
   /* tired of specificity :( */
   #settings_sections {
     position: static !important;
   }
   /* END user settings */
-
-  /* BEGIN forms */
+  /* ## 3.4 BEGIN forms */
   input[type=search],
   input[type=text],
   input[type=email],
@@ -1919,18 +2069,24 @@ blockquote {
   select {
     width: 100%;
   }
-
   #upload .box {
     width: 100% !important;
   }
-
   .cat_list tr {
     display: flex;
     flex-wrap: wrap;
   }
+  /* readability improvement for checkboxes on torrent.php */
+  /* specific improvement for a specific problem; apologies */
+  .layout.cat_list.ft_cat_list {
+    flex-direction: row;
+    height: auto;
+  }
+  .layout.cat_list.ft_cat_list tr td {
+    width: 40% !important;
+  }
   /* END forms */
-
-  /* BEGIN general tables */
+  /* ## 3.5 BEGIN general tables */
   .m_table tbody,
   .m_table .colhead,
   .m_table .colhead_dark {
@@ -1939,60 +2095,49 @@ blockquote {
     flex-wrap: wrap;
     width: 100%;
   }
-
   .m_table tbody {
     align-items: stretch;
     flex-direction: column;
   }
   /* END general tables */
-
-  /* BEGIN table headers */
+  /* ## 3.6 BEGIN table headers */
   .m_table .colhead,
   .m_table .colhead_dark {
     flex-wrap: nowrap;
   }
-
-  .m_table .colhead td:not(.m_th_right):not(.m_th_left),
-  .m_table .colhead_dark td:not(.m_th_right):not(.m_th_left) {
+  .m_table .colhead td:not(.m_th_right, .m_th_left),
+  .m_table .colhead_dark td:not(.m_th_right, .m_th_left) {
     display: none;
   }
-
   .m_table .colhead td,
   .m_table .colhead_dark td {
     width: auto !important;
   }
-
   .m_th_left {
     visibility: hidden;
   }
-
   .m_th_left_collapsable {
     padding-left: 34px;
   }
-
   .m_th_left::before {
     color: white;
-    content: 'Info';
+    content: "Info";
     visibility: visible;
   }
-
   /* ghetto :first-of-class */
   .m_th_right {
     margin-left: auto;
   }
-
   .m_th_right + .m_th_right {
     margin-left: unset;
   }
-
   .m_th_right + .m_th_right + .m_th_right {
     margin-left: unset;
     padding-right: 12px;
   }
   /* END table headers */
-
-  /* BEGIN table bodies */
-  .m_table tr:not(.hidden):not(.colhead):not(.colhead_dark) {
+  /* ## 3.7 BEGIN table bodies */
+  .m_table tr:not(.hidden, .colhead, .colhead_dark) {
     display: block;
     line-height: 1.4;
     padding-bottom: 3px;
@@ -2000,18 +2145,15 @@ blockquote {
     position: relative;
     width: 100%;
   }
-
   .m_table td {
     display: block;
   }
-
   .m_table tr:not(.colhead):not(.colhead_dark) td:not(.m_td_left):not(.m_td_right) {
     padding-bottom: 0;
     padding-top: 0;
     text-align: left;
     width: 81%;
   }
-
   td.m_td_left {
     align-items: center;
     display: flex;
@@ -2020,8 +2162,7 @@ blockquote {
     width: 34px;
   }
   /* END table bodies */
-
-  /* BEGIN right-aligned numerical stats */
+  /* ## 3.8 BEGIN right-aligned numerical stats */
   .m_td_right {
     margin: 0;
     padding: 0 !important;
@@ -2031,65 +2172,56 @@ blockquote {
     text-align: right;
     top: 0.2rem;
   }
-
   /* specificity override will occur for third one, so this is fine */
   .m_td_right + .m_td_right {
     top: 1.6em;
   }
-
   .m_td_right + .m_td_right + .m_td_right {
     top: 3em;
   }
   /* END right-aligned numerical stats */
-
-  /* BEGIN torrent table */
+  /* ## 3.9 BEGIN torrent table */
   .torrent_table * {
     float: none;
   }
-
   .torrent_table .remove_bookmark a,
   .torrent_table .add_bookmark a {
     float: none !important;
   }
-
   .torrent_table .cats_col:not(.m_cats_col) {
     display: none;
   }
-
   /* on mobile, it wraps even on normal words, so better like this */
-  /* TODO: how to handle super long-words */
   .group .group_info,
   .torrent .group_info {
     word-break: inherit;
+    /* #2024b11
+    /* On Torrent listings, prevent 'bookmark' and long titles
+    /* from overrunning the stats on the right  */
+    .
+        margin-right: 40px;
   }
-
   .torrent .group_info span:first-child {
     order: 10;
   }
-
   .group_info .tags {
     order: 20;
     width: 100%;
   }
-
   #wrapper .m_table .edition {
     padding-top: 0;
     padding-bottom: 0;
   }
-
   .edition_info {
     padding: 4px 12px 4px 32px !important;
   }
-
   .group_torrent .edition_info a {
     line-height: 23px;
   }
-
   .edition_1 {
     /* for the right aligned numbers */
     min-height: 5em;
   }
-
   .td_snatched.m_td_right,
   .td_seeders.m_td_right,
   .td_leechers.m_td_right {
@@ -2097,44 +2229,37 @@ blockquote {
     right: 4px;
     text-align: left;
   }
-
   .td_snatched.m_td_right::before,
   .td_seeders.m_td_right::before,
   .td_leechers.m_td_right::before {
-    background: left / 10px no-repeat $number-snatches-icon;
+    background: left/10px no-repeat url("https://wally-crunk.github.io/svg/gazelle/arrow-loop.svg");
     color: #fff;
-    content: ':';
+    content: ":";
     filter: brightness(80%);
     position: absolute;
     right: calc(100% + 2px);
     text-align: right;
     width: 14px;
   }
-
   .td_seeders.m_td_right::before {
-    background-image: $number-seeders-icon;
+    background-image: url("https://wally-crunk.github.io/svg/gazelle/arrow-up-round.svg");
   }
-
   .td_leechers.m_td_right::before {
-    background-image: $number-leechers-icon;
+    background-image: url("https://wally-crunk.github.io/svg/gazelle/arrow-down-round.svg");
   }
-
   .m_table.checkboxes td:first-child {
     display: block;
   }
-
-  /* BEGIN expanded torrent group */
-  .group_torrent:not(.edition):not(.hidden) {
+  /* ## 3.9.1 BEGIN expanded torrent group */
+  .group_torrent:not(.edition, .hidden) {
     display: flex;
     flex-direction: column;
     padding: 5px 0 0 22px;
   }
-
   /* it would be nice to use flex for all group_torrents, but we can't de display:flex
    * on any old table cell. It only works here because our trs aren't using the normal
    * table display anyways.
    */
-
   .torrent_table .group_torrent:not(.edition) td:first-child {
     display: flex;
     /* for those ones with a million buttons */
@@ -2142,180 +2267,188 @@ blockquote {
     padding: 0;
     width: 80%;
   }
-
   .torrent_table .group_torrent:not(.edition) td:first-child span {
     order: 5;
     padding-left: 6px;
   }
-
   .td_file_count::before {
-    content: 'Files: ';
+    content: "Files: ";
   }
-
   .torrent_table .group_torrent td:nth-child(4) {
     padding-bottom: 5px;
     text-align: left;
   }
-
   /* artist view page */
   #torrents_album .edition_1 td:nth-child(n+2) {
     padding-left: 15px;
   }
   /* END expanded torrent group */
-
-  /* BEGIN top10 */
+  /* BEGIN special treatment of Sizes */
+  /* On Collage-discog and Bookmark pages, sizes need to be forced left */
+  /* Apologies for being ultra-specific here, but don't want any side-effects */
+  table#discog_table.torrent_table.grouping.cats.m_table .number_column.td_size.nobr,
+  table#torrent_table.torrent_table.grouping.cats.m_table td.number_column.td_size.nobr {
+    text-align: left;
+    margin-left: 1rem;
+  }
+  table#discog_table.torrent_table.grouping.cats.m_table .number_column.td_size.nobr::before,
+  table#torrent_table.torrent_table.grouping.cats.m_table td.number_column.td_size.nobr::before {
+    content: "📁";
+  }
+  /* END special treatment of Sizes */
+  /* ## 3.9.2 BEGIN top10 */
   /* 4 and 5 in colhead are hidden anyways */
   #top10 .td_size::before {
-    content: 'Size: ';
+    content: "Size: ";
   }
-
   .td_data::before {
-    content: 'Transferred: ';
+    content: "Transferred: ";
   }
   /* END top10 */
   /* END torrent table */
-
-  /* BEGIN invite table */
+  /* ## 3.10 BEGIN invite table */
   .invite_table tr:not(.colhead) td:nth-child(3)::before {
-    content: 'Joined: ';
+    content: "Joined: ";
   }
-
   .invite_table tr:not(.colhead) td:nth-child(4)::before {
-    content: 'Seen: ';
+    content: "Seen: ";
   }
-
   .td_dl.m_td_right::before {
-    content: 'D: ';
+    content: "D: ";
   }
-
   .td_up.m_td_right::before {
-    content: 'U: ';
+    content: "U: ";
   }
-
   .td_ratio.m_td_right::before {
-    content: 'R: ';
+    content: "R: ";
   }
   /* END invite table */
-
-  /* BEGIN collage table */
+  /* ## 3.11 BEGIN collage table */
   table.m_table.collage_table tr:not(.colhead):not(.colhead) {
     display: flex;
     flex-direction: column;
   }
-
   .m_table .td_collage_category::before {
-    content: 'Category: ';
+    content: "Category: ";
   }
-
   .m_table .td_collage_category {
     order: 2;
     padding-top: 0;
   }
-
   .collage_table .td_info {
     padding-bottom: 0;
   }
-
   .collage_table .td_updated::before {
-    content: 'Updated: ';
+    content: "Updated: ";
   }
-
   .collage_table .td_updated {
     order: 3;
   }
-
   .collage_table .td_author::before {
-    content: 'Author: ';
+    content: "Author: ";
   }
-
   .collage_table .td_author {
     order: 3;
   }
-
   .collage_table .td_torrent_count::before {
-    content: 'T: ';
+    content: "T: ";
   }
-
   .collage_table .td_subscribers::before {
-    content: 'S: ';
+    content: "S: ";
   }
+  /* For mobile view */
+  .collage_table .td_collage_category,
+  .collage_table .td_updated,
+  .collage_table .td_author {
+    margin-left: 1rem;
+  }
+  .collage_table .td_info .tags a:hover {
+    background: slategray !important;
+    color: darkslategray;
+  }
+  /* ## 3.11.1 BEGIN tag bubble appearance on mobile */
+  .collage_table .td_info .tags :not(:empty) {
+    box-sizing: border-box;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 0.55rem;
+    vertical-align: baseline;
+    color: #ffb0a0;
+    background: #8d6a87 !important;
+    padding: 0.05rem 0.5rem;
+    border: none !important;
+    border-radius: 1rem;
+    transition: all 0.35s;
+  }
+  /* uniquely for top10 page */
+  #top10 .tags {
+    width: auto;
+  }
+  /* END tag bubble appearance on mobile */
+  /* ## 3.11.2 BEGIN title of collages on mobile */
+  .collage_table .td_info {
+    font-size: larger;
+  }
+  /* END title of collages on mobile */
   /* END collage table */
-
-  /* BEGIN requests */
+  /* ## 3.12 BEGIN requests */
   /* TODO: still show the time the request was filled without taking up too much space */
-
   #requests .request_table tr:not(.colhead) td:nth-child(n+2) {
     padding: 0 6px;
   }
-
   #requests .request_table tr:not(.colhead) td:nth-child(5)::before {
-    content: 'Filler: ';
+    content: "Filler: ";
   }
-
   #requests .request_table tr:not(.colhead) td:nth-child(6)::before {
-    content: 'Requester: ';
+    content: "Requester: ";
   }
-
   #requests .request_table tr:not(.colhead) td:nth-child(6) {
     padding: 0 6px;
   }
-
   #requests .request_table tr:not(.colhead) td:nth-child(7)::before {
-    content: 'Added: ';
+    content: "Added: ";
   }
-
   #requests .request_table tr:not(.colhead) td:nth-child(8)::before {
-    content: 'Last Vote: ';
+    content: "Last Vote: ";
   }
-
   #requests .request_table tr:not(.colhead) td:nth-child(8) {
     padding-bottom: 4px;
   }
   /* END requests */
-
-  /* BEGIN forums */
-  /* BEGIN forum index */
+  /* 3.13 BEGIN forums */
+  /* 3.13.1 BEGIN forum index */
   .forum_index .last_read {
     float: none !important;
   }
-
   .forum_index .last_topic,
   .forum_index .last_poster {
     float: none !important;
   }
-
   .forum_index .last_topic {
     display: block;
   }
-
   #wrapper .td_read {
     float: left;
     height: 12px;
     margin: 3px 5px 0 5px;
     width: 11px;
   }
-
   .td_topic_count.m_td_right::before {
-    content: 'T: ';
+    content: "T: ";
   }
-
   .td_post_count.m_td_right::before {
-    content: 'P: ';
+    content: "P: ";
   }
-
   .td_author::before {
-    content: 'Author: ';
+    content: "Author: ";
   }
-
   .td_replies.m_td_right::before {
-    content: 'R: ';
+    content: "R: ";
   }
   /* END forum index */
-
-  /* BEGIN forum table structure */
+  /* 3.13.2 BEGIN forum table structure */
   /* this is copied from general tables. We put it here in case that changes
    in ways specific for tabular data */
-
   .forum_post tbody {
     align-items: stretch;
     display: flex;
@@ -2323,40 +2456,33 @@ blockquote {
     flex-wrap: wrap;
     width: 100%;
   }
-
   .forum_post tr:not(.colhead_dark):not(.hidden) {
     display: block;
     position: relative;
     width: 100%;
   }
   /* END forum table structure */
-
-  /* BEGIN forum headers */
+  /* 3.13.3 BEGIN forum headers */
   /* remove dashes from forum post headers */
   .forum_post tr.colhead_dark {
     color: transparent;
     min-height: 50px;
     padding-left: 54px;
   }
-
   .forum_post tr.colhead_dark span,
   .forum_post tr.colhead_dark strong {
-    color: #c6c9c9;
+    color: #d1d1d1;
   }
-
   .forum_post tr.colhead_dark div {
     display: inline;
   }
-
   .forum_post .time::after {
-    content: '\a';
+    content: "\a";
     white-space: pre;
   }
-
   .forum_post tr.colhead_dark div:nth-child(2) {
     padding-left: 8px;
   }
-
   .forum_post .avatar {
     left: 5px;
     position: absolute;
@@ -2364,7 +2490,6 @@ blockquote {
     width: 0;
     word-break: break-all;
   }
-
   .forum_post .avatar img {
     max-height: 50px !important;
     max-width: 50px !important;
@@ -2374,20 +2499,48 @@ blockquote {
   }
   /* END forum headers */
   /* END forums */
-
-  /* BEGIN rules */
+  /* ## 3.14 BEGIN rules */
   #rules .m_th_left::before {
-    content: 'Rules';
+    content: "Rules";
   }
-
   .rule_table .nobr {
     white-space: unset;
   }
   /* END rules */
-
-  /* BEGIN site header */
+  /* ## 3.15 reserved */
+  /* ## 3.16 Handling for sticky table headers on Mobile */
+  /* As with section 1.3 above, this only is useful on certain tables */
+  /* replacing the version in Global.css (hopefully) */
+  .colhead_dark td, .colhead_dark th, .colhead td, .colhead th, td.colhead, td.colhead_dark {
+    top: 2rem !important; /* lower on mobile due to the header and pulldown menu */
+    position: sticky;
+    z-index: 0 !important; /* To go under the pulldown menu */
+    background: inherit !important;
+  }
+  /* ## 3.17 BEGIN site header */
+  /* affectionately known as the hamburger bar on desktop */
+  /* ## 3.17.1 BEGIN Handling to prevent keyboard from opening on iP---e and other mobile devices */
+  @keyframes delay-pointer-events {
+    0% {
+      visibility: hidden;
+    }
+    50% {
+      visibility: hidden;
+    }
+    100% {
+      visibility: visible;
+    }
+  }
+  #header:hover #searchbars input,
+  #nav_userinfo,
+  #nav_useredit,
+  #nav_logout {
+    animation: delay-pointer-events 2000ms linear;
+  }
+  /* END Handling to prevent..*/
+  /* ## 3.17.2 BEGIN MOBILE MENU LAYOUT */
   #header {
-    background: $header-background-color;
+    background: #ab718d;
     top: 0;
     height: 0;
     left: 0;
@@ -2399,172 +2552,186 @@ blockquote {
     padding-bottom: 32px;
     opacity: 0;
   }
-
+  /* menu opens on hover #2024 */
   #header:hover {
-    height: 80%;
-    opacity: .96;
-    transition: all 600ms cubic-bezier(1.000, 0.010, 0.300, 1.310);
+    height: clamp(200px, var(--row-height) * 15, 100%);
+    opacity: 1;
+    transition: all 600ms cubic-bezier(1, 0.01, 0.3, 1.31);
+    border-bottom: groove #ab718d;
+    box-shadow: 0px 50px 70px #ff9e98, 0 160px 160px #080808;
   }
-  
-  #extra1{ 
-      position: fixed;
-      top: 5px;
-      left: calc(50% - 12.5px);
-      display: block;
-      opacity: 1!important;
-      width: 25px;
-      height: 25px;
-      background-image: url($mobile-pulldown-icon);
-      background-size: contain;
-      z-index:500;
-      pointer-events: none;
+  /* pulldown arrow icon for mobile view, top menu */
+  #extra1 {
+    position: fixed;
+    top: 5px;
+    left: calc(50% - 12.5px);
+    display: block;
+    opacity: 1 !important;
+    width: 25px;
+    height: 25px;
+    background-image: url("https://wally-crunk.github.io/svg/gazelle/chevrons-down.svg");
+    background-size: contain;
+    z-index: 500;
+    pointer-events: none;
   }
-  /* BEGIN hamburger bar */
   #logo {
     height: 2%;
     left: 0;
     padding: 0;
     position: fixed;
     top: 0;
+    /* #2024 - this is a weird comment and code: */
     /* it's OVER 9000! */
     transform: translateY(6000%);
     width: 20%;
     z-index: 500;
   }
-
   #logo a {
     background-image: none;
     display: block;
     height: 32px;
     width: 100%;
   }
-
   #extra4,
   #extra5 {
-      height: 32px;
-      position: fixed;
-      top: 0
+    height: 32px;
+    position: fixed;
+    top: 0;
   }
+  /* site logo in topbar for mobile */
   #extra5 {
-      background-image: $site-logo-icon; 
-      background-position: 0;
-      background-size: auto 24px;
-      background-repeat: no-repeat;
-      left: 4px;
-      pointer-events: none;
-      transform: translateZ(0);
-      width: 32px;
-      z-index: 400;
+    background-image: url("https://wally-crunk.github.io/svg/orpheus/ops-logo-loop.svg");
+    background-position: 0;
+    background-size: auto 24px;
+    background-repeat: no-repeat;
+    left: 4px;
+    pointer-events: none;
+    transform: translateZ(0);
+    width: 32px;
+    z-index: 400;
   }
   #extra4 {
-      background: $header-background-color;
-      border-radius: 0 0 4px 4px;
-      display: block;
-      right: 0;
-      width: 100vw
+    background: #ab718d;
+    border-radius: 0 0 9px 9px;
+    display: block;
+    right: 0;
+    width: 100%;
   }
-
-  #extra4,#extra5 {
-      height: 32px;
-      position: fixed;
-      top: 0
+  #extra4, #extra5 {
+    height: 32px;
+    position: fixed;
+    top: 0;
   }
-  /* END hamburger bar */
-
   #header {
     --row-height: 40px;
   }
-
   #header ul:not(#userinfo_major):not(#userinfo_stats) {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
   }
-
   #header ul:not(#userinfo_major):not(#userinfo_stats) li {
     margin: 0;
     width: 33.3%;
   }
-
   #header ul:not(#userinfo_major):not(#userinfo_stats) a {
     line-height: var(--row-height);
   }
-
   #alerts {
     display: none;
   }
-
-  /* BEGIN searchboxes */
+  /* ## 3.17.3 BEGIN searchboxes */
   #searchbars ul {
     bottom: 0;
     height: unset;
     padding: 0 0 0 6px;
     position: absolute;
   }
-
   #searchbars li {
     height: var(--row-height);
   }
-
   #searchbars li:nth-child(-n+3) .search_form {
     margin: 6px 6px 3px 0;
   }
-
   #searchbars li:nth-child(n+4) .search_form {
     margin: 3px 6px 6px 0;
   }
-
   #header #searchbars input {
     height: calc(var(--row-height) - 9px);
   }
   /* END searchboxes */
-
-  /* BEGIN userinfo */
+  /* 3.17.4 BEGIN userinfo */
+  /* remove the nonce words DEBUGGING to see how this works */
+  #debugging #userinfo_major,
+  #debugging #userinfo_major > * {
+    border: thin dotted blue;
+    border-radius: 1rem;
+  }
+  #debugging #userinfo_stats,
+  #debugging #userinfo_stats > * {
+    border: thin dotted pink;
+    border-radius: 1rem;
+  }
+  /* end debugging */
   #userinfo {
     position: static;
   }
-
   #userinfo_major {
-    right: 12px;
-    top: calc(100% - var(--row-height) * 10 - 55px);
+    left: 2vw;
+    right: auto;
+    width: 60vw;
+    margin: auto;
+    top: calc(100% - var(--row-height) * 10 - 125px);
+    height: calc(2.4 * var(--row-height));
+    flex-direction: column;
+    justify-content: space-around;
+    background: #ab718d;
   }
-
   #userinfo_stats {
-    color: white;
-    line-height: 1.3;
-    right: 12px;
-    top: calc(100% - var(--row-height) * 10 - 38px);
+    left: auto;
+    right: 2vw;
+    width: 60vw;
+    margin: auto;
+    color: #bdd;
+    top: calc(100% - var(--row-height) * 10 - 125px);
+    height: calc(2.4 * var(--row-height));
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: right;
+    background: #ab718d;
   }
-
+  #userinfo_stats a,
+  #userinfo_major a {
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+  }
   #userinfo_stats span {
     white-space: nowrap;
   }
-
   #stats_ratio {
-    color: $a-color;
+    /* No need to force a color here, but this is where you could. */
   }
-
   #stats_ratio .tooltip {
-    color: white;
+    /* Provide a small dark background for the number to appear in color */
+    background-color: #242424;
+    border-radius: 0.45rem;
+    padding-left: 0.45rem;
+    padding-right: 0.45rem;
   }
-
   #userinfo_username {
-    background: radial-gradient(circle at top left, $userinfo-background-color-1, $userinfo-background-color-2);
-    bottom: calc(var(--row-height) * 2);
-    left: 0;
+    background: radial-gradient(circle at top left, #875e80, #ef959c);
     position: absolute;
+    left: 0;
+    /* #2024 fixed */
   }
-
   #nav_userclass {
     display: none;
   }
-
   #userinfo_minor {
-    background: radial-gradient(circle at top left, $userinfo-background-color-1, $userinfo-background-color-2);
+    background: radial-gradient(circle at top left, #875e80, #ef959c);
     bottom: calc(var(--row-height) * 3);
     position: absolute;
   }
-
   /* S P E C I F I C I T Y */
   html > body #userinfo_minor a,
   html > body #userinfo_username a {
@@ -2573,24 +2740,22 @@ blockquote {
     line-height: 50px;
     text-align: center;
   }
-
   #userinfo_username #nav_userinfo a {
     width: unset;
   }
   /* END userinfo */
-
-  /* BEGIN browse links */
+  /* ## 3.17.5 BEGIN browse links */
   #menu ul {
-    background: radial-gradient(circle at top left, #0999, #088);
+    /* verify this later #qwerty #2024 */
+    background: radial-gradient(circle at top left, #ef959c, #875e80);
     bottom: calc(var(--row-height) * 7);
     position: absolute;
   }
-
   #menu li {
     background: transparent !important;
   }
   /* END browse links */
-
+  /* 3.17.6 BEGIN checked */
   #extracb1 {
     display: block;
     height: 32px;
@@ -2602,33 +2767,159 @@ blockquote {
     width: 50vw;
     z-index: 999;
   }
-
-  /* BEGIN checked */
   #extracb1:checked ~ #wrapper #header {
     transform: translateY(120%);
   }
-
   #extracb1:checked ~ #wrapper #logo {
     transform: none;
   }
-
   #extracb1:checked ~ #extra1 {
     transform: translateY(5px) rotate(45deg);
   }
-
   #extracb1:checked ~ #extra2 {
     opacity: 0;
   }
-
   #extracb1:checked ~ #extra3 {
     transform: translateY(-5px) rotate(-45deg);
   }
   /* END checked */
   /* END site header */
+  /* ## 3.18 Torrent search, handling for tag appearance */
+  /* BEGIN tag display for Torrent search form on Mobile, 
+  /* when tags are set to display in profile settings */
+  #taglist tr.label {
+    position: sticky;
+    height: 2rem;
+    top: 2rem; /* lower on mobile due to the header and pulldown menu */
+    z-index: 999 !important; /* To go under the pulldown menu */
+  }
+  #taglist tr.label td {
+    background: #ffb0a0;
+    color: #e69f90;
+    align-content: center;
+    text-align: center;
+    border: #e69f90;
+    width: 100%;
+  }
+  #taglist tr.label td::after {
+    font-style: italic;
+    content: '— Use "Hide Tags" above or Profile Settings to hide this list of tags.';
+  }
+  #taglist tr:not(.label) td {
+    border: 0.1px solid gray;
+    width: 31% !important;
+    visibility: visible;
+    box-sizing: border-box;
+    display: inline-block;
+    font-weight: 200;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-style: italic;
+    vertical-align: baseline;
+    color: #ffb0a0 !important; /*$tag-bubble-background-color;*/
+    background: #8d6a87;
+    padding: 0.25rem;
+    border-radius: 1rem;
+    margin-bottom: 0.1rem;
+    transition: all 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+  }
+  /* END tag display for Torrent search form on Mobile, 
+  /* when tags are set to display in profile settings */
 }
+/* ################################################################################
+/* # 4 MISCELLANEOUS
+/* ################################################################################
 
-@media (max-width: 480px) and (max-height: 480px) {
+
+/* ## 4.1 Begin Changes for Mobile, SUPER SMALL window */
+/* compact the Menu in two steps */
+@media (max-width: 575px) and (max-height: 600px) {
   #header {
     --row-height: 35px;
   }
 }
+@media (max-width: 575px) and (max-height: 510px) {
+  #userinfo_major,
+  #userinfo_major > * {
+    display: none;
+  }
+  #userinfo_stats,
+  #userinfo_stats > * {
+    display: none;
+  }
+}
+/* #wideload */
+/* ## 4.2 tag bubble appearance on widescreen */
+/* Full clickable appearance: Applies to Torrent Pages, collage-listing pages, collage-discog pages. */
+.collage_table .td_info .tags :not(:empty),
+#torrent_table .group .tags :not(:empty),
+#discog_table .group .tags :not(:empty),
+#request_table .tags,
+#top10 .tags,
+table.torrent_table.cats.checkboxes.border.m_table td.td_info.big_info div.group_info.clear div.tags a,
+table.torrent_table.cats.m_table td.td_info.big_info div.group_info.clear div.tags a {
+  visibility: visible;
+  box-sizing: border-box;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 0.6rem;
+  vertical-align: baseline;
+  color: #ffb0a0;
+  background: #8d6a87;
+  padding: 0 0.5rem;
+  border-radius: 1rem;
+  margin-bottom: 0.1rem;
+  transition: all 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Special non-clickable appearance: Applies to top10 and request_table pages, where tags are not clickable links. */
+#request_table .tags,
+#top10 .tags {
+  font-style: italic;
+  font-weight: normal;
+  margin-inline: 1rem;
+}
+
+/* Hover effect: the people have spoken */
+/* Applies only to pages that get full clickable appearance. */
+.collage_table .td_info .tags :not(:empty):hover,
+#torrent_table .group .tags :not(:empty):hover,
+#discog_table .tags :hover,
+table.torrent_table.cats.checkboxes.border.m_table td.td_info.big_info div.group_info.clear div.tags a:hover,
+table.torrent_table.cats.m_table td.td_info.big_info div.group_info.clear div.tags a:hover {
+  color: #8d6a87 !important;
+  background: #ffb0a0 !important;
+  transition: all 0.15s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: rgba(0, 0, 0, 0.25) 0 14px 28px, rgba(0, 0, 0, 0.22) 0 10px 10px;
+}
+
+/* remove commas between tag bubbles:
+/* only needed on torrent and collage-discog pages. */
+#torrent_table .tags,
+#discog_table .tags,
+table.torrent_table.cats.checkboxes.border.m_table td.td_info.big_info div.group_info.clear div.tags,
+table.torrent_table.cats.m_table td.td_info.big_info div.group_info.clear div.tags {
+  visibility: hidden;
+}
+
+/* This should not be necessary... */
+.tags a {
+  visibility: visible;
+}
+
+/* Possible fix for i-devices converting long numbers to telephone numbers. */
+*[x-apple-data-detectors] {
+  border-bottom: 0 !important;
+  cursor: default !important;
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+/* */
+/* */
+
+/* ####### */
+/* # EOF # */
+/* ####### */
+
+/*# sourceMappingURL=style.css.map */
