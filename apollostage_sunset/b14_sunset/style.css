@@ -1358,6 +1358,22 @@ ul.collage_images li a > span {
   display: none;
 }
 
+/* for rows 'Albums', 'Compilations', 'Live Albums', etc. */
+#discog_table tr[id^=torrents_] {
+  background-color: #875e80;
+}
+#discog_table tr[id^=torrents_] :not(a.tooltip.brackets) {
+  font-size: 125%;
+  color: #e69f90;
+}
+
+/* for names of albums, to help them stand out somewhat */
+#discog_table .discog strong a,
+#discog_table td.td_info.big_info div.group_info.clear strong a {
+  font-size: 115%;
+  color: #e69f90;
+}
+
 #footer {
   width: 100%;
   color: #a4a4a4;
