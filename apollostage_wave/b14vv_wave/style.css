@@ -1358,7 +1358,7 @@ ul.collage_images li a > span {
   display: none;
 }
 
-/* for rows 'Albums', 'Compilations', 'Live Albums', etc. */
+/* Discog table: for rows 'Albums', 'Compilations', 'Live Albums', etc. */
 #discog_table tr[id^=torrents_] {
   background-color: #ff4cff;
 }
@@ -1367,11 +1367,16 @@ ul.collage_images li a > span {
   color: #1ED4F5;
 }
 
-/* for names of albums, to help them stand out somewhat */
+/* Discog table: for names of albums, to help them stand out somewhat */
 #discog_table .discog strong a,
 #discog_table td.td_info.big_info div.group_info.clear strong a {
   font-size: 115%;
   color: #1ED4F5;
+}
+
+/* Discog table:  for encodings, to get breathing room after the >> character */
+div#discog_table td.td_info:not(span.torrent_links_block) > a {
+  padding-inline-start: 1em;
 }
 
 #footer {
