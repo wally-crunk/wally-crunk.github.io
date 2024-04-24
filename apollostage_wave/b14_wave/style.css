@@ -9,7 +9,7 @@
 /* ################################################################################ */
 /**/
 /**/
-/*  # 2024-04-01 - Updated by rubric_alert with hawkeye and community feedback. */
+/*  # 2024-04-23 - Updated by rubric_alert with hawkeye and community feedback. */
 /*  # Fix: mobile menu, category stripes;  
 /*  # Feature: Add SVGs, tag bubbles, italic fonts and more;
 /*  # Chore: Organized and documented the SCSS. */
@@ -116,7 +116,7 @@ textarea,
 body {
   background-color: #1d1c1d;
   box-sizing: border-box;
-  color: #b9bdbd;
+  color: #C6E6EB;
   font-size: 12px;
   line-height: 1.6;
   margin: 0 8px;
@@ -129,7 +129,7 @@ pre, code {
   font-weight: 200;
   font-style: normal;
   font-size: 12.5px;
-  color: #bdd;
+  color: #D3C0BA;
 }
 
 h1,
@@ -922,9 +922,9 @@ table.box2 {
 }
 
 div#flip_view_1 div#similar-artist .name {
-  border: 1px solid #b9bdbd;
+  border: 1px solid #C6E6EB;
   background: rgba(60, 60, 60, 0.7);
-  color: #b9bdbd;
+  color: #C6E6EB;
   margin: 0;
   padding: 0 5px;
 }
@@ -1358,6 +1358,7 @@ ul.collage_images li a > span {
   display: none;
 }
 
+/* #2024 style update for
 /* Discog table: for rows 'Albums', 'Compilations', 'Live Albums', etc. */
 #discog_table tr[id^=torrents_] {
   background-color: #ff4cff;
@@ -1367,6 +1368,7 @@ ul.collage_images li a > span {
   color: #1ED4F5;
 }
 
+/* #2024 style update for
 /* Discog table: for names of albums, to help them stand out somewhat */
 #discog_table .discog strong a,
 #discog_table td.td_info.big_info div.group_info.clear strong a {
@@ -1374,9 +1376,17 @@ ul.collage_images li a > span {
   color: #1ED4F5;
 }
 
+/* #2024 style update for
 /* Discog table:  for encodings, to get breathing room after the >> character */
 div#discog_table td.td_info:not(span.torrent_links_block) > a {
   padding-inline-start: 1em;
+}
+
+/* #2024 fix for 
+/* Sessions table should scroll */
+.box.pad:has(.session_table.border),
+.box.pad .session_table.border {
+  overflow: scroll !important;
 }
 
 #footer {
@@ -2713,7 +2723,7 @@ body#collage .cats_music {
     right: 2vw;
     width: 60vw;
     margin: auto;
-    color: #bdd;
+    color: #D3C0BA;
     top: calc(100% - var(--row-height) * 10 - 125px);
     height: calc(2.4 * var(--row-height));
     flex-direction: column;

@@ -19,7 +19,7 @@
 /**/
 /**/
 
-/*  # 2024-04-01 - Updated by rubric_alert with hawkeye and community feedback. */
+/*  # 2024-04-23 - Updated by rubric_alert with hawkeye and community feedback. */
 /*  # Fix: mobile menu, category stripes;  
 /*  # Feature: Add SVGs, tag bubbles, italic fonts and more;
 /*  # Chore: Organized and documented the SCSS. */
@@ -55,7 +55,11 @@
 //
 //   Style: adjusted some colors for clarity. (Apollostage, Coffee and Sunset).
 //
-//   Feature: fix lack of Italic support (replace oblique with Italic).  
+//   Style: torrent discog pages have more visible headers.
+//
+//   Fix: sessions page did not scroll to the right on mobile.
+//
+//   Feature: add Italic support (replace oblique with Italic).  
 //
 //   Feature: specific font for Monospace (not system default).
 //
@@ -1437,12 +1441,14 @@ ul.collage_images li a > span {
     display: none;
 }
 
+/* #2024 style update for
 /* Discog table: for rows 'Albums', 'Compilations', 'Live Albums', etc. */
 #discog_table tr[id^=torrents_] {
 background-color: $userinfo-background-color-1;
   :not(a.tooltip.brackets){font-size:125%; color:$primary-accent-color }
 }
 
+/* #2024 style update for
 /* Discog table: for names of albums, to help them stand out somewhat */
 #discog_table .discog strong a,
 #discog_table td.td_info.big_info div.group_info.clear strong a {
@@ -1450,10 +1456,18 @@ font-size:115%;
 color: $primary-accent-color
 }
 
+/* #2024 style update for
 /* Discog table:  for encodings, to get breathing room after the >> character */
 div#discog_table td.td_info:not(span.torrent_links_block) > a 
 {padding-inline-start: 1em;}
 
+/* #2024 fix for 
+/* Sessions table should scroll */
+// override *both* have overflow set not to scroll
+.box.pad:has(.session_table.border),
+.box.pad .session_table.border {
+  overflow: scroll !important;
+}
 
 #footer {
     width: 100%;
