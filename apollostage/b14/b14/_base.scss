@@ -1770,14 +1770,17 @@ blockquote {
 /* Not all table headings are setup this way. 
 /* Examples include bonus points rate and Token history.
 /* Attempting to overwrite Global.css */
-.colhead_dark td, .colhead_dark th, .colhead td, .colhead th, td.colhead, td.colhead_dark {
-  top: 0;
-  position: sticky;
-  position: -webkit-sticky;
-  background: inherit !important; /* This is the important line. */
-  z-index: 10;  /* On mobile this will be overwritten. */
-  
-  }
+
+/* disabled at beta 14 pending fix */
+
+// .colhead_dark td, .colhead_dark th, .colhead td, .colhead th, td.colhead, td.colhead_dark {
+//   top: 0;
+//   position: sticky;
+//   position: -webkit-sticky;
+//   background: inherit !important; /* This is the important line. */
+//   z-index: 10;  /* On mobile this will be overwritten. */
+//   
+//   }
 
 /* # 1.4 BEGIN UPLOAD CATEGORY DECORATION STRIPING */
 /* Begin category decorations for torrent-tables on torrent & collage pages */
@@ -2787,12 +2790,16 @@ body#collage .cats_music {
     /* ## 3.16 Handling for sticky table headers on Mobile */
     /* As with section 1.3 above, this only is useful on certain tables */
     /* replacing the version in Global.css (hopefully) */
-    .colhead_dark td, .colhead_dark th, .colhead td, .colhead th, td.colhead, td.colhead_dark {
-      top: 2.0rem !important;   /* lower on mobile due to the header and pulldown menu */
-      position: sticky;
-      z-index: 0 !important; /* To go under the pulldown menu */
-      background: inherit !important;
-    }
+    
+    /* disabled at b14 */ 
+    
+// 
+//     .colhead_dark td, .colhead_dark th, .colhead td, .colhead th, td.colhead, td.colhead_dark {
+//       top: 2.0rem !important;   /* lower on mobile due to the header and pulldown menu */
+//       position: sticky;
+//       z-index: 0 !important; /* To go under the pulldown menu */
+//       background: inherit !important;
+//     }
 
     /* ## 3.17 BEGIN site header */
     /* affectionately known as the hamburger bar on desktop */
