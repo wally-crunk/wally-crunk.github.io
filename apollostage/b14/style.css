@@ -205,7 +205,7 @@ textarea:focus {
 .box2,
 .main_column,
 .sidebar {
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .clear::after,
