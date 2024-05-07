@@ -2397,7 +2397,7 @@ body#collage .cats_music {
     font-weight: 400;
     font-size: 0.55rem;
     vertical-align: baseline;
-    color: #89644C;
+    color: #C0906A;
     background: #563E37 !important;
     padding: 0.05rem 0.5rem;
     border: none !important;
@@ -2834,7 +2834,7 @@ body#collage .cats_music {
     text-overflow: ellipsis;
     font-style: italic;
     vertical-align: baseline;
-    color: #89644C !important; /*$tag-bubble-background-color;*/
+    color: #C0906A !important; /*$tag-bubble-background-color;*/
     background: #563E37;
     padding: 0.25rem;
     border-radius: 1rem;
@@ -2882,7 +2882,7 @@ table.torrent_table.cats.m_table td.td_info.big_info div.group_info.clear div.ta
   font-weight: 700;
   font-size: 0.6rem;
   vertical-align: baseline;
-  color: #89644C;
+  color: #C0906A;
   background: #563E37;
   padding: 0 0.5rem;
   border-radius: 1rem;
@@ -2906,7 +2906,7 @@ table.torrent_table.cats.m_table td.td_info.big_info div.group_info.clear div.ta
 table.torrent_table.cats.checkboxes.border.m_table td.td_info.big_info div.group_info.clear div.tags a:hover,
 table.torrent_table.cats.m_table td.td_info.big_info div.group_info.clear div.tags a:hover {
   color: #563E37 !important;
-  background: #89644C !important;
+  background: #C0906A !important;
   transition: all 0.15s cubic-bezier(0.25, 0.8, 0.25, 1);
   box-shadow: rgba(0, 0, 0, 0.25) 0 14px 28px, rgba(0, 0, 0, 0.22) 0 10px 10px;
 }
