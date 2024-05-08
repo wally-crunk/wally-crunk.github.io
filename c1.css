@@ -118,7 +118,7 @@ textarea,
 body {
   background-color: #1d1c1d;
   box-sizing: border-box;
-  color: #D7B18B;
+  color: #E4C6A6;
   font-size: 12px;
   line-height: 1.6;
   margin: 0 8px;
@@ -174,7 +174,7 @@ h5 {
 }
 
 a {
-  color: #EFDAC1;
+  color: #fffacd;
   text-decoration: none;
 }
 
@@ -242,7 +242,7 @@ textarea:focus {
 }
 
 svg|a {
-  fill: #EFDAC1;
+  fill: #fffacd;
 }
 
 svg|a:hover {
@@ -375,7 +375,7 @@ textarea {
 button,
 input[type=button],
 input[type=submit] {
-  background: linear-gradient(#EFDAC1, #b8b8b8);
+  background: linear-gradient(#fffacd, #b8b8b8);
   border: none;
   border-radius: 1.5px;
   color: #302C2B;
@@ -388,7 +388,7 @@ input[type=submit] {
 button:active,
 input[type=button]:active,
 input[type=submit]:active {
-  background: linear-gradient(#b8b8b8, #EFDAC1);
+  background: linear-gradient(#b8b8b8, #fffacd);
 }
 
 input[type=email],
@@ -411,7 +411,7 @@ input[type=search]:focus,
 select:focus,
 textarea:focus {
   border: 1px solid rgba(255, 255, 255, 0.2);
-  color: #EFDAC1;
+  color: #fffacd;
 }
 
 textarea {
@@ -571,7 +571,7 @@ table.box2 {
 }
 
 .autocomplete-suggestions {
-  background-color: #EFDAC1;
+  background-color: #fffacd;
   border: none;
   color: #26282e;
   margin-top: 4px;
@@ -924,9 +924,9 @@ table.box2 {
 }
 
 div#flip_view_1 div#similar-artist .name {
-  border: 1px solid #D7B18B;
+  border: 1px solid #E4C6A6;
   background: rgba(60, 60, 60, 0.7);
-  color: #D7B18B;
+  color: #E4C6A6;
   margin: 0;
   padding: 0 5px;
 }
@@ -1301,7 +1301,7 @@ ul.collage_images li a > span {
 
 #userform #settings_sections h2 a,
 .rule_short {
-  color: #EFDAC1;
+  color: #fffacd;
 }
 
 .poll li {
@@ -1834,13 +1834,13 @@ body#collage .cats_music {
 /* horizontal menu */
 /* #2024 change to styled color instead of #fff to match vertical pulldown menu */
 #menu > ul a:hover {
-  color: #EFDAC1;
+  color: #fffacd;
 }
 
 /* vertical pulldown menu */
 #userinfo_minor:hover a,
 #userinfo_username:hover a {
-  color: #EFDAC1;
+  color: #fffacd;
 }
 
 /* Icon revealed when menu is open */
@@ -1909,7 +1909,7 @@ body#collage .cats_music {
 /* first row of each box */
 #noty_bottomRight_layout_container .noty_message {
   background: radial-gradient(circle at top right, #805D49, #4E3833) !important;
-  color: #EFDAC1 !important;
+  color: #fffacd !important;
   font-weight: 700;
   padding: 0 !important;
 }
@@ -1928,7 +1928,7 @@ body#collage .cats_music {
 }
 
 #noty_bottomRight_layout_container .noty_buttons a {
-  color: #EFDAC1 !important;
+  color: #fffacd !important;
   background-color: none;
   border: thin solid transparent; /* prevents button movement */
   border-radius: 14px;
