@@ -1,14 +1,14 @@
 @charset "UTF-8";
 /* ################################################################################ */
 /* APOLLOSTAGE THEME */
-/* version 2024
+/* version 2024.05.08b
 /* ################################################################################ */
 /* ################################################################################ */
 /* CHANGELOG */
 /* ################################################################################ */
 /**/
 /**/
-/*  # 2024-04-26 - Updated by rubric_alert with hawkeye and community feedback. */
+/*  # 2024-05-08 - Updated by rubric_alert with hawkeye and community feedback. */
 /*  # Fix: mobile menu, category stripes;  
 /*  # Feature: Add SVGs, tag bubbles, italic fonts and more;
 /*  # Chore: Organized and documented the SCSS. */
@@ -2866,14 +2866,16 @@ body#collage .cats_music {
 }
 /* #wideload */
 /* ## 4.2 tag bubble appearance on widescreen */
-/* Full clickable appearance: Applies to Torrent Pages, collage-listing pages, collage-discog pages. */
+/* Full clickable appearance; more comments in SCSS */
+/* Applies to Torrent Pages, collage-listing pages, collage-discog pages. */
 .collage_table .td_info .tags :not(:empty),
 #torrent_table .group .tags :not(:empty),
 #discog_table .group .tags :not(:empty),
 #request_table .tags,
 #top10 .tags,
 table.torrent_table.cats.checkboxes.border.m_table td.td_info.big_info div.group_info.clear div.tags a,
-table.torrent_table.cats.m_table td.td_info.big_info div.group_info.clear div.tags a {
+table.torrent_table.cats.m_table td.td_info.big_info div.group_info.clear div.tags a,
+body#torrents div.box.box_tags li > a:first-child {
   visibility: visible;
   box-sizing: border-box;
   display: inline-block;
@@ -2902,7 +2904,8 @@ table.torrent_table.cats.m_table td.td_info.big_info div.group_info.clear div.ta
 #torrent_table .group .tags :not(:empty):hover,
 #discog_table .tags :hover,
 table.torrent_table.cats.checkboxes.border.m_table td.td_info.big_info div.group_info.clear div.tags a:hover,
-table.torrent_table.cats.m_table td.td_info.big_info div.group_info.clear div.tags a:hover {
+table.torrent_table.cats.m_table td.td_info.big_info div.group_info.clear div.tags a:hover,
+body#torrents div.box.box_tags li > a:first-child:hover {
   color: #0a3a2e !important;
   background: #1daf8b !important;
   transition: all 0.15s cubic-bezier(0.25, 0.8, 0.25, 1);
