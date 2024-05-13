@@ -93,6 +93,7 @@
 /* END font loading */
 /* ## 0.2 Global variables */
 * {
+  /* recordkeeping only.  browsers do not allow vars in the CSS @media rule. */
   --phone-screen-size: 575px;
 }
 
@@ -125,7 +126,7 @@ textarea,
 body {
   background-color: #1d1c1d;
   box-sizing: border-box;
-  color: #A5E4D9;
+  color: #c3c6c6;
   font-size: 12px;
   line-height: 1.6;
   margin: 0 8px;
@@ -157,7 +158,7 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-  color: #C1EFE7;
+  color: #147862;
 }
 
 h1,
@@ -647,7 +648,7 @@ table.box2 {
 
 .last_read ::before {
   content: "➤";
-  color: #C1EFE7;
+  color: #147862;
   display: inline-block;
 }
 
@@ -706,7 +707,7 @@ table.box2 {
   margin: 0;
 }
 
-@media only screen and (min-width: var(--phone-screen-size)) {
+@media only screen and (min-width: 575px) {
   #logo {
     box-sizing: content-box;
     height: 42px;
@@ -877,7 +878,7 @@ table.box2 {
 }
 
 .linkbox > strong {
-  color: #C1EFE7;
+  color: #147862;
 }
 
 #footer,
@@ -931,9 +932,9 @@ table.box2 {
 }
 
 div#flip_view_1 div#similar-artist .name {
-  border: 1px solid #A5E4D9;
+  border: 1px solid #c3c6c6;
   background: rgba(60, 60, 60, 0.7);
-  color: #A5E4D9;
+  color: #c3c6c6;
   margin: 0;
   padding: 0 5px;
 }
@@ -1196,7 +1197,7 @@ pre {
 
 .tooltipster-default {
   background-color: #1d1c1d;
-  border: 0 solid #C1EFE7;
+  border: 0 solid #147862;
   border-radius: 2.5px;
   color: #c6c9c9;
 }
@@ -1217,7 +1218,7 @@ pre {
 
 .alertbar,
 .tooltipster-default .tooltipster-content a:hover {
-  color: #C1EFE7;
+  color: #147862;
 }
 
 #content .header > h1,
@@ -1323,7 +1324,7 @@ ul.collage_images li a > span {
 }
 
 .poll .graph span {
-  background-color: #C1EFE7;
+  background-color: #147862;
   display: block;
   float: left;
   height: 8px;
@@ -1383,7 +1384,7 @@ ul.collage_images li a > span {
 #discog_table .discog strong a,
 #discog_table td.td_info.big_info div.group_info.clear strong a {
   font-size: 115%;
-  color: #C1EFE7;
+  color: #147862;
 }
 
 /* #2024 style update for
@@ -1448,7 +1449,7 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
 }
 
 #musicbrainz_popup a:hover {
-  color: #C1EFE7;
+  color: #147862;
 }
 
 #musicbrainz_popup .brackets {
@@ -1579,7 +1580,7 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
 }
 
 /* #2024b14 only on desktop, not on mobile */
-@media (min-width: var(--phone-screen-size)) {
+@media (min-width: 575px) {
   .search_form {
     overflow: hidden;
   }
@@ -1757,7 +1758,7 @@ body#collage .cats_music {
 /* END category decorations for torrent tables on torrent & collage pages */
 /* #1.5 HEADER AND MENU LAYOUT */
 /* MENU AND TOP BAR, DESKTOP ONLY */
-@media (min-width: var(--phone-screen-size)) {
+@media (min-width: 575px) {
   .thin:last-child > :not(.two_columns) {
     margin: 4px;
   }
@@ -1947,7 +1948,7 @@ body#collage .cats_music {
   color: #ffc !important;
   background-color: #178972;
   border-radius: 14px;
-  border: thin solid #C1EFE7;
+  border: thin solid #147862;
   transition: all 0.15s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
@@ -2013,7 +2014,7 @@ body#collage .cats_music {
 /* rules above that are overridden by media queries, rather
 /* than being put here like they should be
 /*/
-@media only screen and (max-width: var(--phone-screen-size)) {
+@media only screen and (max-width: 575px) {
   /* For mobile phones: */
   #inbox input[type=submit] {
     font-size: 10px;
@@ -2031,7 +2032,7 @@ body#collage .cats_music {
 /* ################################################################################ */
 /* */
 /* Begin Changes for Mobile Site */
-@media (max-width: var(--phone-screen-size)) {
+@media (max-width: 575px) {
   .m_hidden {
     display: none !important;
   }
@@ -2855,12 +2856,12 @@ body#collage .cats_music {
 /* ################################################################################ */
 /* ## 4.1 Begin Changes for Mobile, SUPER SMALL window */
 /* compact the Menu in two steps */
-@media (max-width: var(--phone-screen-size)) and (max-height: 600px) {
+@media (max-width: 575px) and (max-height: 600px) {
   #header {
     --row-height: 35px;
   }
 }
-@media (max-width: var(--phone-screen-size)) and (max-height: 510px) {
+@media (max-width: 575px) and (max-height: 510px) {
   #userinfo_major,
   #userinfo_major > * {
     display: none;
