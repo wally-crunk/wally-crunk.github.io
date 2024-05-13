@@ -408,7 +408,7 @@ select,
 textarea {
   background: #B5B9BA;
   border: 1px solid #2D83B5;
-  color: #c6c9c9;
+  color: #727576;
   height: 32px;
   padding: 0 8px;
 }
@@ -2517,7 +2517,7 @@ body#collage .cats_music {
   }
   .forum_post tr.colhead_dark span,
   .forum_post tr.colhead_dark strong {
-    color: #c6c9c9;
+    color: #727576;
   }
   .forum_post tr.colhead_dark div {
     display: inline;
