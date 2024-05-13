@@ -124,9 +124,9 @@ textarea,
 }
 
 body {
-  background-color: #0B1815;
+  background-color: #131918;
   box-sizing: border-box;
-  color: #BDE0CF;
+  color: #C7D7C7;
   font-size: 12px;
   line-height: 1.6;
   margin: 0 8px;
@@ -137,7 +137,7 @@ pre, code {
   font-optical-sizing: auto;
   font-variant-ligatures: no-contextual;
   font-weight: 200;
-  color: #B0DDBB;
+  color: #C3D3C1;
 }
 
 h1,
@@ -146,7 +146,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #CAE3DB;
+  color: #CCDCCD;
   line-height: normal;
   margin: 8px 0;
   max-width: 100%;
@@ -180,12 +180,12 @@ h5 {
 }
 
 a {
-  color: #E5EFEF;
+  color: #E5EFE9;
   text-decoration: none;
 }
 
 a:hover {
-  color: #B0DDBB;
+  color: #C3D3C1;
 }
 
 a:active,
@@ -249,16 +249,16 @@ textarea:focus {
 }
 
 svg|a {
-  fill: #E5EFEF;
+  fill: #E5EFE9;
 }
 
 svg|a:hover {
-  fill: #B0DDBB;
+  fill: #C3D3C1;
 }
 
 b,
 strong {
-  color: #CAE3DB;
+  color: #CCDCCD;
   font-weight: 600;
 }
 
@@ -283,14 +283,14 @@ li:last-child {
 
 blockquote {
   background-color: #093A2E;
-  border: 1px dashed #1C3C33;
+  border: 1px dashed #1E2926;
   margin: 12px;
   padding: 12px;
 }
 
 ::selection {
   background-color: rgba(105, 217, 146, 0.6);
-  color: #CAE3DB;
+  color: #CCDCCD;
 }
 
 form input {
@@ -300,7 +300,7 @@ form input {
 table,
 table .rowa:nth-child(even),
 table .rowb:nth-child(even) {
-  background-color: #0F1F1B;
+  background-color: #161C1B;
 }
 
 table {
@@ -311,7 +311,7 @@ table {
 
 table .rowa,
 table .rowb {
-  border-top: 2px solid #20433A;
+  border-top: 2px solid #202C29;
 }
 
 table .rowa:nth-child(odd),
@@ -361,7 +361,7 @@ td:last-child {
 }
 
 form {
-  background-color: #122622;
+  background-color: #181F1E;
 }
 
 form table td.label {
@@ -382,7 +382,7 @@ textarea {
 button,
 input[type=button],
 input[type=submit] {
-  background: linear-gradient(#b8b8b8, #E5EFEF);
+  background: linear-gradient(#b8b8b8, #E5EFE9);
   border: none;
   border-radius: 1.5px;
   color: #2B302F;
@@ -395,7 +395,7 @@ input[type=submit] {
 button:active,
 input[type=button]:active,
 input[type=submit]:active {
-  background: linear-gradient(#E5EFEF, #b8b8b8);
+  background: linear-gradient(#E5EFE9, #b8b8b8);
 }
 
 input[type=email],
@@ -418,7 +418,7 @@ input[type=search]:focus,
 select:focus,
 textarea:focus {
   border: 1px solid rgba(255, 255, 255, 0.2);
-  color: #E5EFEF;
+  color: #E5EFE9;
 }
 
 textarea {
@@ -546,7 +546,7 @@ strong.important_text_alt {
 
 .box,
 .box2 {
-  background-color: #122622;
+  background-color: #181F1E;
   margin-bottom: 8px;
   margin-top: 8px;
 }
@@ -580,7 +580,7 @@ table.box2 {
 /* #2024 note: Many of these appear to be overridden by
  * global.css or auto-complete.css: your mileage may vary. */
 .autocomplete-suggestions {
-  background-color: #E5EFEF;
+  background-color: #E5EFE9;
   border: none;
   color: #26282e;
   margin-top: 4px;
@@ -592,7 +592,7 @@ table.box2 {
 }
 
 .autocomplete-suggestions .autocomplete-suggestion.autocomplete-selected {
-  background-color: #B0DDBB;
+  background-color: #C3D3C1;
 }
 
 .autocomplete-suggestions .autocomplete-suggestion strong {
@@ -750,7 +750,7 @@ table.box2 {
 #menu > ul a:hover,
 #userinfo_minor:hover a:hover,
 #userinfo_username:hover a:hover {
-  background-color: #B0DDBB;
+  background-color: #C3D3C1;
 }
 
 #nav_index {
@@ -826,7 +826,7 @@ table.box2 {
 }
 
 #searchbars > ul input {
-  background-color: #122622;
+  background-color: #181F1E;
   width: 100%;
 }
 
@@ -932,9 +932,9 @@ table.box2 {
 }
 
 div#flip_view_1 div#similar-artist .name {
-  border: 1px solid #BDE0CF;
+  border: 1px solid #C7D7C7;
   background: rgba(60, 60, 60, 0.7);
-  color: #BDE0CF;
+  color: #C7D7C7;
   margin: 0;
   padding: 0 5px;
 }
@@ -945,6 +945,7 @@ div#flip_view_1 div#similar-artist .name {
 
 #covers .stats {
   margin: 0 8px 8px;
+  overflow: hidden;
 }
 
 #add_cover_div > div:first-child .additional_add_artists {
@@ -1059,11 +1060,11 @@ div#flip_view_1 div#similar-artist .name {
 }
 
 .torrent_table {
-  background-color: #20433A;
+  background-color: #202C29;
 }
 
 .torrent_table tr:not(.colhead, .colhead_dark) {
-  border-top: 2px solid #20433A;
+  border-top: 2px solid #202C29;
 }
 
 .torrent_table tr .number_column:not(:last-child) {
@@ -1075,7 +1076,7 @@ div#flip_view_1 div#similar-artist .name {
 }
 
 .group_torrent {
-  background-color: #122622;
+  background-color: #181F1E;
 }
 
 .group_torrent.edition,
@@ -1114,7 +1115,7 @@ div#flip_view_1 div#similar-artist .name {
 }
 
 .tags a:hover {
-  color: #B0DDBB;
+  color: #C3D3C1;
 }
 
 .group_info > span:first-child,
@@ -1203,14 +1204,14 @@ pre {
 }
 
 .tooltipster-default {
-  background-color: #0B1815;
+  background-color: #131918;
   border: 0 solid #C7C958;
   border-radius: 2.5px;
   color: #c6c9c9;
 }
 
 .tooltipster-default .tooltipster-content {
-  background-color: #0B1815;
+  background-color: #131918;
   color: #c6c9c9;
   font-size: 12px;
   line-height: 1.4;
@@ -1218,7 +1219,7 @@ pre {
 }
 
 .tooltipster-default .tooltipster-content a {
-  background-color: #0B1815;
+  background-color: #131918;
   color: #c6c9c9;
   font-weight: 600;
 }
@@ -1316,7 +1317,7 @@ ul.collage_images li a > span {
 
 #userform #settings_sections h2 a,
 .rule_short {
-  color: #E5EFEF;
+  color: #E5EFE9;
 }
 
 .poll li {
@@ -1383,7 +1384,7 @@ ul.collage_images li a > span {
 
 #discog_table tr[id^=torrents_] :not(a.tooltip.brackets) {
   font-size: 125%;
-  color: #CAE3DB;
+  color: #CCDCCD;
 }
 
 /* #2024 style update for
@@ -1447,12 +1448,12 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
 }
 
 #musicbrainz_popup {
-  color: #0B1815;
+  color: #131918;
   font-weight: 600;
 }
 
 #musicbrainz_popup a {
-  color: #0B1815;
+  color: #131918;
 }
 
 #musicbrainz_popup a:hover {
@@ -1530,7 +1531,7 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
 }
 
 #userform #settings_sections h2 a:hover {
-  color: #B0DDBB;
+  color: #C3D3C1;
 }
 
 #userform #settings_sections input {
@@ -1607,7 +1608,7 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
 
 .box table:not(.layout),
 .box2 table:not(.layout) {
-  border: 2px solid #20433A;
+  border: 2px solid #202C29;
   margin: 8px 0;
 }
 
@@ -1791,7 +1792,7 @@ body#collage .cats_music {
   }
   #menu > ul > #nav_staff > a:hover {
     background-color: transparent;
-    color: #B0DDBB;
+    color: #C3D3C1;
   }
   #userinfo_minor::before {
     background: url("https://wally-crunk.github.io/svg/gazelle/chevrons-down.svg") no-repeat;
@@ -1849,13 +1850,13 @@ body#collage .cats_music {
 /* horizontal menu */
 /* #2024 change to styled color instead of #fff to match vertical pulldown menu */
 #menu > ul a:hover {
-  color: #E5EFEF;
+  color: #E5EFE9;
 }
 
 /* vertical pulldown menu */
 #userinfo_minor:hover a,
 #userinfo_username:hover a {
-  color: #E5EFEF;
+  color: #E5EFE9;
 }
 
 /* Icon revealed when menu is open */
@@ -1881,7 +1882,7 @@ body#collage .cats_music {
 }
 
 #searchbars .search_form input:focus {
-  background: #20433A;
+  background: #202C29;
 }
 
 .sidebar {
@@ -1924,7 +1925,7 @@ body#collage .cats_music {
 /* first row of each box */
 #noty_bottomRight_layout_container .noty_message {
   background: radial-gradient(circle at top right, #20C098, #0F5B49) !important;
-  color: #E5EFEF !important;
+  color: #E5EFE9 !important;
   font-weight: 700;
   padding: 0 !important;
 }
@@ -2277,7 +2278,7 @@ body#collage .cats_music {
   .td_seeders.m_td_right::before,
   .td_leechers.m_td_right::before {
     background: left/10px no-repeat url("https://wally-crunk.github.io/svg/gazelle/arrow-loop.svg");
-    color: #CAE3DB;
+    color: #CCDCCD;
     content: ":";
     filter: brightness(80%);
     position: absolute;

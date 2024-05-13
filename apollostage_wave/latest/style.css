@@ -147,7 +147,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #CAE3DB;
+  color: #CCDCCD;
   line-height: normal;
   margin: 8px 0;
   max-width: 100%;
@@ -259,7 +259,7 @@ svg|a:hover {
 
 b,
 strong {
-  color: #CAE3DB;
+  color: #CCDCCD;
   font-weight: 600;
 }
 
@@ -284,14 +284,14 @@ li:last-child {
 
 blockquote {
   background-color: #323132;
-  border: 1px dashed #1C3C33;
+  border: 1px dashed #1E2926;
   margin: 12px;
   padding: 12px;
 }
 
 ::selection {
   background-color: rgba(245, 40, 145, 0.6);
-  color: #CAE3DB;
+  color: #CCDCCD;
 }
 
 form input {
@@ -383,7 +383,7 @@ textarea {
 button,
 input[type=button],
 input[type=submit] {
-  background: linear-gradient(#b8b8b8, #E5EFEF);
+  background: linear-gradient(#b8b8b8, #E5EFE9);
   border: none;
   border-radius: 1.5px;
   color: #2B302F;
@@ -396,7 +396,7 @@ input[type=submit] {
 button:active,
 input[type=button]:active,
 input[type=submit]:active {
-  background: linear-gradient(#E5EFEF, #b8b8b8);
+  background: linear-gradient(#E5EFE9, #b8b8b8);
 }
 
 input[type=email],
@@ -946,6 +946,7 @@ div#flip_view_1 div#similar-artist .name {
 
 #covers .stats {
   margin: 0 8px 8px;
+  overflow: hidden;
 }
 
 #add_cover_div > div:first-child .additional_add_artists {
@@ -1384,7 +1385,7 @@ ul.collage_images li a > span {
 
 #discog_table tr[id^=torrents_] :not(a.tooltip.brackets) {
   font-size: 125%;
-  color: #CAE3DB;
+  color: #CCDCCD;
 }
 
 /* #2024 style update for
@@ -2278,7 +2279,7 @@ body#collage .cats_music {
   .td_seeders.m_td_right::before,
   .td_leechers.m_td_right::before {
     background: left/10px no-repeat url("https://wally-crunk.github.io/svg/gazelle/arrow-loop.svg");
-    color: #CAE3DB;
+    color: #CCDCCD;
     content: ":";
     filter: brightness(80%);
     position: absolute;

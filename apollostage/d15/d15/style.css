@@ -1,29 +1,29 @@
 @charset "UTF-8";
-/* APOLLOSTAGE WAVE THEME */
 /* ################################################################################ */
 /* APOLLOSTAGE THEME */
-/* version 2024.05.08b
+/* version 2024.05.10 b15
 /* ################################################################################ */
 /* ################################################################################ */
 /* CHANGELOG */
 /* ################################################################################ */
-/**/
-/**/
-/*  # 2024-05-08 - Updated by rubric_alert with hawkeye and community feedback. */
+/* */
+/* */
+/*  # 2024-05-10 - Updated by rubric_alert with hawkeye and community feedback. */
 /*  # Fix: mobile menu, category stripes;  
 /*  # Feature: Add SVGs, tag bubbles, italic fonts and more;
 /*  # Chore: Organized and documented the SCSS. */
 /*  For full changelog: see uncompiled SASS file. */
 /*   Original version by burtoo and contributors.  */
-/**/
-/**/
+/* */
+/* */
 /* ################################################################################ */
 /* TABLE OF CONTENTS */
 /* ################################################################################ */
-/**/
-/**/
+/* */
+/* */
 /* # 0 GENERAL SETUP */
 /* ## 0.1 Font loading */
+/* ## 0.2 Global variables */
 /* # 1 DESKTOP VIEW */
 /* ## 1.1 Desktop view, handling of all classes */
 /* ## 1.2 Reserved */
@@ -35,65 +35,74 @@
 /* ## 1.8 Sidebar */
 /* # 2 DOCUMENTATION OF MOBILE CLASSES */
 /* # 3 CHANGES FOR MOBILE VIEW */
-/* ## 3.1 site layout */
-/* ## 3.2 notifications */
-/* ## 3.3 user settings */
-/* ## 3.4 forms */
-/* ## 3.5 general tables */
-/* ## 3.6 table headers */
-/* ## 3.7 table bodies */
-/* ## 3.8 right-aligned numerical stats */
-/* ## 3.9 torrent table */
-/* ## 3.9.1 expanded torrent group */
-/* ## 3.9.2 top10 */
-/* ## 3.10 invite table */
-/* ## 3.11 collage table */
-/* ## 3.11.1 tag bubble appearance on mobile */
-/* ## 3.11.2 title of collages on mobile */
-/* ## 3.12 requests */
-/* ## 3.13 forums */
-/* ## 3.13.1 forum index */
-/* ## 3.13.2 forum table structure */
-/* ## 3.13.3 forum headers */
-/* ## 3.14 rules */
-/* ## 3.15 reserved */
-/* ## 3.16 handling for sticky table headers on mobile */
-/* ## 3.17 site header */
-/* ## 3.17.1 prevent keyboard opening on ip---e and other mobile devices */
-/* ## 3.17.2 mobile menu layout */
-/* ## 3.17.3 searchboxes */
-/* ## 3.17.4 userinfo */
-/* ## 3.17.5 browse links */
-/* ## 3.17.6 checked */
-/* ## 3.18 torrent search, handling for tag appearance */
+/* ## 3.1  Site Layout */
+/* ## 3.2  Notifications */
+/* ## 3.3  User Settings */
+/* ## 3.4  Forms */
+/* ## 3.5  General Tables */
+/* ## 3.6  Table Headers */
+/* ## 3.7  Table Bodies */
+/* ## 3.8  Right-Aligned Numerical Stats */
+/* ## 3.9  Torrent Table */
+/* ## 3.9.1  Expanded Torrent Group */
+/* ## 3.9.2  top10 */
+/* ## 3.10  Invite Table */
+/* ## 3.11  Collage Table */
+/* ## 3.11.1 Collage ~ Tag Bubble Appearance on Mobile */
+/* ## 3.11.2 Collage ~ Title of Collages on Mobile */
+/* ## 3.12  Requests */
+/* ## 3.13  Forums */
+/* ## 3.13.1  Forum Index */
+/* ## 3.13.2  Forum Table Structure */
+/* ## 3.13.3  Forum Headers */
+/* ## 3.14  Rules */
+/* ## 3.15 Reserved */
+/* ## 3.16 Handling for Sticky Table Headers on Mobile */
+/* ## 3.17 Site Header and Menu */
+/* ## 3.17.1  Delay Searchboxes So Keyboard Doesn't Open */
+/* ## 3.17.2  Mobile Menu Layout */
+/* ## 3.17.3  Top Menubar */
+/* ## 3.17.4  Mobile Menu When Open, Setup */
+/* ## 3.17.5  Menu When Open, Row One */
+/* ## 3.17.6  Menu When Open, Row Two (Has Subrows) */
+/* ## 3.17.7  Menu When Open, Row Three */
+/* ## 3.17.8  Menu When Open, Row Four */
+/* ## 3.17.9  Menu When Open, Row Five ~ Searchboxes */
+/* ## 3.18 Checkboxes ~ Purpose Undocumented */
+/* ## 3.19 Torrent Search, Handling for Tag Appearance */
 /* # 4 MISCELLANEOUS
-/* ## 4.1 Changes for Mobile, super small window */
-/* ## 4.2 Tag bubble appearance on widescreen #wideload */
-/* ## 4.3 i-devices telephone number prevention */
-/**/
-/**/
-/* ################################################################################
+/* ## 4.1 Changes for Mobile, Super Small Window */
+/* ## 4.2 Tag Bubble Appearance on Widescreen #Wideload */
+/* ## 4.3 I-Devices Telephone Number Prevention */
+/* */
+/* */
+/* ################################################################################ */
 /* # 0 GENERAL SETUP
-/* ################################################################################
-
-/**/
+/* ################################################################################ */
+/* */
 /* Reminder: */
 /* slash-asterisk sass/scss comments are passed through to compiled css */
-/**/
+/* */
+/* */
+/* */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
 @namespace url("http://www.w3.org/1999/xhtml");
 @namespace svg url("http://www.w3.org/2000/svg");
-/**/
-/**/
 /* ## 0.1 BEGIN font loading */
 /* Finally add WOFF and Italic support */
 /* END font loading */
-/**/
-/**/
-/* ################################################################################
+/* ## 0.2 Global variables */
+* {
+  /* recordkeeping only.  browsers do not allow vars in the CSS @media rule. */
+  --phone-screen-size: 575px;
+}
+
+/* */
+/* */
+/* ################################################################################ */
 /* # 1 DESKTOP VIEW */
-/* ################################################################################
-/**/
+/* ################################################################################ */
+/* */
 /* ## 1.1 BEGIN desktop view, handling of classes */
 * {
   box-sizing: inherit;
@@ -115,9 +124,9 @@ textarea,
 }
 
 body {
-  background-color: #1d1c1d;
+  background-color: #131918;
   box-sizing: border-box;
-  color: #C6E6EB;
+  color: #C7D7C7;
   font-size: 12px;
   line-height: 1.6;
   margin: 0 8px;
@@ -128,9 +137,7 @@ pre, code {
   font-optical-sizing: auto;
   font-variant-ligatures: no-contextual;
   font-weight: 200;
-  font-style: normal;
-  font-size: 12.5px;
-  color: #D3C0BA;
+  color: #C3D3C1;
 }
 
 h1,
@@ -139,7 +146,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #fff;
+  color: #CCDCCD;
   line-height: normal;
   margin: 8px 0;
   max-width: 100%;
@@ -151,7 +158,7 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-  color: #1ED4F5;
+  color: #1A9F7E;
 }
 
 h1,
@@ -173,12 +180,12 @@ h5 {
 }
 
 a {
-  color: #1DF6FD;
+  color: #E5EFE9;
   text-decoration: none;
 }
 
 a:hover {
-  color: #fefe78;
+  color: #C3D3C1;
 }
 
 a:active,
@@ -194,12 +201,13 @@ textarea:focus {
   outline: 0;
 }
 
+/* formatting on .box.pad for the [box] bbcode tag */
 .box .box.pad,
 .main_column .box.pad:not(#reply_box) {
-  background-color: rgba(80, 80, 80, 0.439);
-  border: 2px solid rgba(245, 40, 145, 0.6);
+  background-color: rgba(80, 80, 80, 0.4392156863);
+  border: 2px solid rgba(105, 217, 146, 0.6);
   margin: 8px;
-  border-radius: 6px;
+  border-radius: 0.25rem;
 }
 
 #content > .thin,
@@ -241,16 +249,16 @@ textarea:focus {
 }
 
 svg|a {
-  fill: #1DF6FD;
+  fill: #E5EFE9;
 }
 
 svg|a:hover {
-  fill: #fefe78;
+  fill: #C3D3C1;
 }
 
 b,
 strong {
-  color: #fff;
+  color: #CCDCCD;
   font-weight: 600;
 }
 
@@ -274,15 +282,15 @@ li:last-child {
 }
 
 blockquote {
-  background-color: #323132;
-  border: 1px dashed rgba(255, 255, 255, 0.25);
+  background-color: #093A2E;
+  border: 1px dashed #1E2926;
   margin: 12px;
   padding: 12px;
 }
 
 ::selection {
-  background-color: rgba(245, 40, 145, 0.6);
-  color: #fff;
+  background-color: rgba(105, 217, 146, 0.6);
+  color: #CCDCCD;
 }
 
 form input {
@@ -292,7 +300,7 @@ form input {
 table,
 table .rowa:nth-child(even),
 table .rowb:nth-child(even) {
-  background-color: #2b2a2b;
+  background-color: #161C1B;
 }
 
 table {
@@ -303,12 +311,12 @@ table {
 
 table .rowa,
 table .rowb {
-  border-top: 2px solid #242324;
+  border-top: 2px solid #202C29;
 }
 
 table .rowa:nth-child(odd),
 table .rowb:nth-child(odd) {
-  background-color: #383738;
+  background-color: #252F32;
 }
 
 table ul.options_list {
@@ -318,7 +326,7 @@ table ul.options_list {
 
 .colhead,
 .colhead_dark {
-  background-color: #383738;
+  background-color: #252F32;
   line-height: 18px;
 }
 
@@ -353,11 +361,11 @@ td:last-child {
 }
 
 form {
-  background-color: #2b2a2b;
+  background-color: #181F1E;
 }
 
 form table td.label {
-  color: #949494;
+  color: #959a9e;
   padding-top: 9px;
   font-weight: 600;
   text-align: right;
@@ -374,10 +382,10 @@ textarea {
 button,
 input[type=button],
 input[type=submit] {
-  background: linear-gradient(#1DF6FD, #b8b8b8);
+  background: linear-gradient(#b8b8b8, #E5EFE9);
   border: none;
   border-radius: 1.5px;
-  color: #383738;
+  color: #2B302F;
   cursor: pointer;
   font-weight: 600;
   height: 32px;
@@ -387,7 +395,7 @@ input[type=submit] {
 button:active,
 input[type=button]:active,
 input[type=submit]:active {
-  background: linear-gradient(#b8b8b8, #1DF6FD);
+  background: linear-gradient(#E5EFE9, #b8b8b8);
 }
 
 input[type=email],
@@ -396,9 +404,9 @@ input[type=text],
 input[type=search],
 select,
 textarea {
-  background: #383738;
+  background: #252F32;
   border: 1px solid rgba(255, 255, 255, 0.08);
-  color: #c2c2c2;
+  color: #c6c9c9;
   height: 32px;
   padding: 0 8px;
 }
@@ -410,7 +418,7 @@ input[type=search]:focus,
 select:focus,
 textarea:focus {
   border: 1px solid rgba(255, 255, 255, 0.2);
-  color: #1DF6FD;
+  color: #E5EFE9;
 }
 
 textarea {
@@ -466,7 +474,7 @@ span.size10 {
 }
 
 strong.important_text {
-  color: #e74e4e;
+  color: #e85050;
 }
 
 /* used for anything? */
@@ -482,7 +490,7 @@ strong.important_text_alt {
 .r02,
 .r03,
 .warning {
-  color: #e74e4e;
+  color: #e85050;
 }
 
 .r04,
@@ -491,7 +499,7 @@ strong.important_text_alt {
 .r07,
 .r08,
 .r09 {
-  color: #e1b661;
+  color: #e3ba65;
 }
 
 .r10,
@@ -517,7 +525,7 @@ strong.important_text_alt {
 .vote_artist_down,
 .vote_tag_down {
   font-weight: bolder;
-  color: #e74e4e;
+  color: #e85050;
 }
 
 #wrapper {
@@ -538,7 +546,7 @@ strong.important_text_alt {
 
 .box,
 .box2 {
-  background-color: #2b2a2b;
+  background-color: #181F1E;
   margin-bottom: 8px;
   margin-top: 8px;
 }
@@ -549,7 +557,7 @@ table.box2 {
 }
 
 .head {
-  background-color: #383738;
+  background-color: #252F32;
   line-height: 18px;
 }
 
@@ -569,8 +577,10 @@ table.box2 {
   display: table;
 }
 
+/* #2024 note: Many of these appear to be overridden by
+ * global.css or auto-complete.css: your mileage may vary. */
 .autocomplete-suggestions {
-  background-color: #1DF6FD;
+  background-color: #E5EFE9;
   border: none;
   color: #26282e;
   margin-top: 4px;
@@ -582,7 +592,7 @@ table.box2 {
 }
 
 .autocomplete-suggestions .autocomplete-suggestion.autocomplete-selected {
-  background-color: #fefe78;
+  background-color: #C3D3C1;
 }
 
 .autocomplete-suggestions .autocomplete-suggestion strong {
@@ -590,7 +600,7 @@ table.box2 {
 }
 
 .forum_post.forum_unread {
-  border-top: 2px solid #fefe78;
+  border-top: 2px solid #C7C958;
 }
 
 .forum_post .avatar {
@@ -638,7 +648,7 @@ table.box2 {
 
 .last_read ::before {
   content: "➤";
-  color: #1ED4F5;
+  color: #C7C958;
   display: inline-block;
 }
 
@@ -697,25 +707,24 @@ table.box2 {
   margin: 0;
 }
 
-#logo {
-  box-sizing: content-box;
-  height: 42px;
-  padding: 24px 8px 16px;
-  width: 200px;
+@media only screen and (min-width: 575px) {
+  #logo {
+    box-sizing: content-box;
+    height: 42px;
+    padding: 24px 8px 16px;
+    width: 200px;
+  }
+  /* main logo during desktop view */
+  #logo a {
+    background: url("https://wally-crunk.github.io/svg/orpheus/ops-logo-lockup.svg") right no-repeat;
+  }
+  #logo > a {
+    background-size: 200px;
+    display: block;
+    height: 100%;
+    margin-top: 0;
+  }
 }
-
-/* main logo during desktop view */
-#logo a {
-  background: url("https://wally-crunk.github.io/svg/orpheus/ops-logo-lockup.svg") right no-repeat;
-}
-
-#logo > a {
-  background-size: 200px;
-  display: block;
-  height: 100%;
-  margin-top: 0;
-}
-
 #menu > ul {
   display: flex;
   display: -ms-flexbox;
@@ -741,7 +750,7 @@ table.box2 {
 #menu > ul a:hover,
 #userinfo_minor:hover a:hover,
 #userinfo_username:hover a:hover {
-  background-color: #fefe78;
+  background-color: #C3D3C1;
 }
 
 #nav_index {
@@ -798,7 +807,7 @@ table.box2 {
 
 #searchbars > ul {
   align-items: center;
-  background-color: #383738;
+  background-color: #252F32;
   display: flex;
   display: -ms-flexbox;
   -ms-flex-align: center;
@@ -817,44 +826,44 @@ table.box2 {
 }
 
 #searchbars > ul input {
-  background-color: #2b2a2b;
+  background-color: #181F1E;
   width: 100%;
 }
 
 #menu li:nth-child(2) {
-  background-color: #030864;
+  background-color: #093A2E;
 }
 
 #menu li:nth-child(3) {
-  background-color: #1d157c;
+  background-color: #0C4A3B;
 }
 
 #menu li:nth-child(4) {
-  background-color: #511ea7;
+  background-color: #0F5B49;
 }
 
 #menu li:nth-child(5) {
-  background-color: #6e23b3;
+  background-color: #126C56;
 }
 
 #menu li:nth-child(6) {
-  background-color: #8531c5;
+  background-color: #157D63;
 }
 
 #menu li:nth-child(7) {
-  background-color: #9a41db;
+  background-color: #188E71;
 }
 
 #menu li:nth-child(8) {
-  background-color: #be46ff;
+  background-color: #1A9F7E;
 }
 
 #menu li:nth-child(9) {
-  background-color: #ff4cff;
+  background-color: #1DAF8B;
 }
 
 #userinfo_username {
-  background-color: #D427D4;
+  background-color: #20C098;
   right: 50px;
 }
 
@@ -869,7 +878,7 @@ table.box2 {
 }
 
 .linkbox > strong {
-  color: #1ED4F5;
+  color: #1A9F7E;
 }
 
 #footer,
@@ -923,9 +932,9 @@ table.box2 {
 }
 
 div#flip_view_1 div#similar-artist .name {
-  border: 1px solid #C6E6EB;
+  border: 1px solid #C7D7C7;
   background: rgba(60, 60, 60, 0.7);
-  color: #C6E6EB;
+  color: #C7D7C7;
   margin: 0;
   padding: 0 5px;
 }
@@ -936,6 +945,7 @@ div#flip_view_1 div#similar-artist .name {
 
 #covers .stats {
   margin: 0 8px 8px;
+  overflow: hidden;
 }
 
 #add_cover_div > div:first-child .additional_add_artists {
@@ -996,6 +1006,13 @@ div#flip_view_1 div#similar-artist .name {
   width: auto;
 }
 
+/* Artist page ~ ensure wrap after vote buttons */
+.box_artists ul.stats.nobullet li {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 #AddArtists input,
 #AddArtists select {
   margin-bottom: 8px;
@@ -1043,11 +1060,11 @@ div#flip_view_1 div#similar-artist .name {
 }
 
 .torrent_table {
-  background-color: #242324;
+  background-color: #202C29;
 }
 
 .torrent_table tr:not(.colhead, .colhead_dark) {
-  border-top: 2px solid #242324;
+  border-top: 2px solid #202C29;
 }
 
 .torrent_table tr .number_column:not(:last-child) {
@@ -1055,16 +1072,16 @@ div#flip_view_1 div#similar-artist .name {
 }
 
 .torrent_table .group {
-  background-color: #383738;
+  background-color: #252F32;
 }
 
 .group_torrent {
-  background-color: #2b2a2b;
+  background-color: #181F1E;
 }
 
 .group_torrent.edition,
 .torrent {
-  background-color: #323132;
+  background-color: #1F282B;
 }
 
 .torrentdetails .linkbox {
@@ -1093,18 +1110,18 @@ div#flip_view_1 div#similar-artist .name {
 }
 
 .tags a {
-  color: #949494;
+  color: #959a9e;
   font-size: 11px;
 }
 
 .tags a:hover {
-  color: #fefe78;
+  color: #C3D3C1;
 }
 
 .group_info > span:first-child,
 .group_torrent td:first-child > span,
 .torrent_links_block {
-  color: #949494;
+  color: #959a9e;
   float: right;
   margin-right: 4px;
 }
@@ -1187,14 +1204,14 @@ pre {
 }
 
 .tooltipster-default {
-  background-color: #1d1c1d;
-  border: 0 solid #1ED4F5;
+  background-color: #131918;
+  border: 0 solid #C7C958;
   border-radius: 2.5px;
   color: #c6c9c9;
 }
 
 .tooltipster-default .tooltipster-content {
-  background-color: #1d1c1d;
+  background-color: #131918;
   color: #c6c9c9;
   font-size: 12px;
   line-height: 1.4;
@@ -1202,14 +1219,14 @@ pre {
 }
 
 .tooltipster-default .tooltipster-content a {
-  background-color: #1d1c1d;
+  background-color: #131918;
   color: #c6c9c9;
   font-weight: 600;
 }
 
 .alertbar,
 .tooltipster-default .tooltipster-content a:hover {
-  color: #1ED4F5;
+  color: #C7C958;
 }
 
 #content .header > h1,
@@ -1300,7 +1317,7 @@ ul.collage_images li a > span {
 
 #userform #settings_sections h2 a,
 .rule_short {
-  color: #1DF6FD;
+  color: #E5EFE9;
 }
 
 .poll li {
@@ -1308,14 +1325,14 @@ ul.collage_images li a > span {
 }
 
 .poll .graph {
-  background-color: #1d157c;
+  background-color: rgba(131, 228, 166, 0.1);
   display: block;
   height: 8px;
   margin-bottom: 12px;
 }
 
 .poll .graph span {
-  background-color: #1ED4F5;
+  background-color: #C7C958;
   display: block;
   float: left;
   height: 8px;
@@ -1362,11 +1379,12 @@ ul.collage_images li a > span {
 /* #2024 style update for
 /* Discog table: for rows 'Albums', 'Compilations', 'Live Albums', etc. */
 #discog_table tr[id^=torrents_] {
-  background-color: #ff4cff;
+  background-color: #1A9F7E;
 }
+
 #discog_table tr[id^=torrents_] :not(a.tooltip.brackets) {
   font-size: 125%;
-  color: #1ED4F5;
+  color: #CCDCCD;
 }
 
 /* #2024 style update for
@@ -1374,7 +1392,7 @@ ul.collage_images li a > span {
 #discog_table .discog strong a,
 #discog_table td.td_info.big_info div.group_info.clear strong a {
   font-size: 115%;
-  color: #1ED4F5;
+  color: #1A9F7E;
 }
 
 /* #2024 style update for
@@ -1392,7 +1410,7 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
 
 #footer {
   width: 100%;
-  color: #949494;
+  color: #959a9e;
   font-synthesis: 11px;
   margin: 32px auto 16px;
 }
@@ -1407,7 +1425,7 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
 }
 
 #discog_table > div.box.center {
-  background-color: #383738;
+  background-color: #252F32;
   padding: 12px;
   text-align: left;
 }
@@ -1430,16 +1448,16 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
 }
 
 #musicbrainz_popup {
-  color: #1d1c1d;
+  color: #131918;
   font-weight: 600;
 }
 
 #musicbrainz_popup a {
-  color: #1d1c1d;
+  color: #131918;
 }
 
 #musicbrainz_popup a:hover {
-  color: #1ED4F5;
+  color: #1A9F7E;
 }
 
 #musicbrainz_popup .brackets {
@@ -1513,7 +1531,7 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
 }
 
 #userform #settings_sections h2 a:hover {
-  color: #fefe78;
+  color: #C3D3C1;
 }
 
 #userform #settings_sections input {
@@ -1525,7 +1543,7 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
 }
 
 #dnulist tr:not(.colhead, .colhead_dark):nth-child(odd) {
-  background-color: #323132;
+  background-color: #093A2E;
 }
 
 #menu > ul a:hover,
@@ -1567,15 +1585,14 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
 
 .search_form {
   margin: 8px 0;
-  /* here */
-  /* #2024b14 only on desktop, not on mobile */
 }
+
+/* #2024b14 only on desktop, not on mobile */
 @media (min-width: 575px) {
   .search_form {
     overflow: hidden;
   }
 }
-
 .search_form div.submit {
   margin: 12px;
   text-align: center;
@@ -1591,20 +1608,20 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
 
 .box table:not(.layout),
 .box2 table:not(.layout) {
-  border: 2px solid #242324;
+  border: 2px solid #202C29;
   margin: 8px 0;
 }
 
 span[style*="color: green"] {
-  color: #4eb44e !important;
+  color: #4fb650 !important;
 }
 
 span[style*="color: red"] {
-  color: #e74e4e !important;
+  color: #e85050 !important;
 }
 
 span[style*="color: blue"] {
-  color: #4e4ee7 !important;
+  color: #4f50e9 !important;
 }
 
 .filelist_table td,
@@ -1622,7 +1639,7 @@ blockquote {
 .reportinfo_table,
 .torrentdetails,
 blockquote {
-  background-color: #383738;
+  background-color: #252F32;
 }
 
 #bookmarks #torrent_table tr:not(.colhead, .colhead_dark) td:nth-child(2) {
@@ -1775,7 +1792,7 @@ body#collage .cats_music {
   }
   #menu > ul > #nav_staff > a:hover {
     background-color: transparent;
-    color: #fefe78;
+    color: #C3D3C1;
   }
   #userinfo_minor::before {
     background: url("https://wally-crunk.github.io/svg/gazelle/chevrons-down.svg") no-repeat;
@@ -1798,7 +1815,7 @@ body#collage .cats_music {
     margin-left: 100px;
   }
   #userinfo_minor {
-    background-color: #A802A8;
+    background-color: #23D1A5;
     border-radius: 0 5px 0 0;
     right: 0;
   }
@@ -1816,10 +1833,10 @@ body#collage .cats_music {
     right: 0;
   }
   #userinfo_minor:hover {
-    background-color: rebeccapurple;
+    background-color: #1A9F7E;
   }
   #userinfo_username:hover {
-    background-color: #f652bb;
+    background-color: #1A9F7E;
   }
   .settings_sidebar {
     margin-left: 8px;
@@ -1829,17 +1846,17 @@ body#collage .cats_music {
   }
 }
 /* END Menu and topbar, desktop only */
-/* #1.6 BEGIN Menu handling */
+/* # BEGIN Menu handling */
 /* horizontal menu */
 /* #2024 change to styled color instead of #fff to match vertical pulldown menu */
 #menu > ul a:hover {
-  color: #1DF6FD;
+  color: #E5EFE9;
 }
 
 /* vertical pulldown menu */
 #userinfo_minor:hover a,
 #userinfo_username:hover a {
-  color: #1DF6FD;
+  color: #E5EFE9;
 }
 
 /* Icon revealed when menu is open */
@@ -1865,7 +1882,7 @@ body#collage .cats_music {
 }
 
 #searchbars .search_form input:focus {
-  background: #242324;
+  background: #202C29;
 }
 
 .sidebar {
@@ -1879,8 +1896,8 @@ body#collage .cats_music {
 }
 
 /* END MENU HANDLING */
-/**/
-/**/
+/* */
+/* */
 /* # 1.7 BEGIN NOTIFICATION BOX */
 /* basic positioning */
 #noty_bottomRight_layout_container {
@@ -1890,7 +1907,7 @@ body#collage .cats_music {
 
 #noty_bottomRight_layout_container > li {
   background: 0 0 !important;
-  border: 2px solid #A802A8 !important;
+  border: 2px solid #23D1A5 !important;
   border-radius: 1px !important;
 }
 
@@ -1907,8 +1924,8 @@ body#collage .cats_music {
 
 /* first row of each box */
 #noty_bottomRight_layout_container .noty_message {
-  background: radial-gradient(circle at top right, #1d157c, #9a41db) !important;
-  color: #1DF6FD !important;
+  background: radial-gradient(circle at top right, #20C098, #0F5B49) !important;
+  color: #E5EFE9 !important;
   font-weight: 700;
   padding: 0 !important;
 }
@@ -1921,13 +1938,14 @@ body#collage .cats_music {
 
 /* second row of each box */
 #noty_bottomRight_layout_container .noty_buttons {
-  background-color: #2b2a2b !important;
+  background-color: #000000 !important;
   border: none !important;
   padding: 8px !important;
 }
 
+/* buttons */
 #noty_bottomRight_layout_container .noty_buttons a {
-  color: #1DF6FD !important;
+  color: #20C098 !important;
   background-color: none;
   border: thin solid transparent; /* prevents button movement */
   border-radius: 14px;
@@ -1936,16 +1954,16 @@ body#collage .cats_music {
 }
 
 #noty_bottomRight_layout_container .noty_buttons a:hover {
-  color: #ffc !important;
-  background-color: #A802A8;
+  color: #0F5B49 !important;
+  background-color: #20C098;
   border-radius: 14px;
-  border: thin solid #1ED4F5;
+  border: thin solid #1A9F7E;
   transition: all 0.15s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 /* END NOTIFICATION BOX */
-/**/
-/**/
+/* */
+/* */
 /* # 1.8 BEGIN SIDEBAR */
 .sidebar .pad ol,
 .sidebar .pad ul {
@@ -1998,8 +2016,8 @@ body#collage .cats_music {
 /* then tweaked a bit. Ideally, before that happens, the whole styling system
 /* should be made to use a CSS preprocessor so that we can have reusable styles
 /*/
-/**/
-/**/
+/* */
+/* */
 /* this query is mostly copied from what used to be above
 /* despite the fact that this exists, there are still many
 /* rules above that are overridden by media queries, rather
@@ -2020,7 +2038,7 @@ body#collage .cats_music {
 /* */
 /* ################################################################################ */
 /* # 3 CHANGES FOR MOBILE SITE
-/* ################################################################################
+/* ################################################################################ */
 /* */
 /* Begin Changes for Mobile Site */
 @media (max-width: 575px) {
@@ -2065,6 +2083,10 @@ body#collage .cats_music {
   }
   .i-am-new li {
     width: 100% !important;
+  }
+  /* staff */
+  #alerts {
+    display: none;
   }
   /* END notifications */
   /* ## 3.3 BEGIN user settings */
@@ -2147,7 +2169,7 @@ body#collage .cats_music {
     content: "Info";
     visibility: visible;
   }
-  /* ghetto :first-of-class */
+  /* kludge for :first-of-class */
   .m_th_right {
     margin-left: auto;
   }
@@ -2222,7 +2244,7 @@ body#collage .cats_music {
     /* On Torrent listings, prevent 'bookmark' and long titles
     /* from overrunning the stats on the right  */
     .
-        margin-right: 40px;
+          margin-right: 40px;
   }
   .torrent .group_info span:first-child {
     order: 10;
@@ -2256,7 +2278,7 @@ body#collage .cats_music {
   .td_seeders.m_td_right::before,
   .td_leechers.m_td_right::before {
     background: left/10px no-repeat url("https://wally-crunk.github.io/svg/gazelle/arrow-loop.svg");
-    color: #fff;
+    color: #CCDCCD;
     content: ":";
     filter: brightness(80%);
     position: absolute;
@@ -2385,19 +2407,20 @@ body#collage .cats_music {
   .collage_table .td_author {
     margin-left: 1rem;
   }
+  /* checkup needed */
   .collage_table .td_info .tags a:hover {
     background: slategray !important;
     color: darkslategray;
   }
-  /* ## 3.11.1 BEGIN tag bubble appearance on mobile */
+  /* ## 3.11.1 collage ~ tag bubble appearance on mobile */
   .collage_table .td_info .tags :not(:empty) {
     box-sizing: border-box;
     display: inline-block;
     font-weight: 400;
     font-size: 0.55rem;
     vertical-align: baseline;
-    color: #fefe78;
-    background: #ff4cff !important;
+    color: #20C098;
+    background: #0F5B49 !important;
     padding: 0.05rem 0.5rem;
     border: none !important;
     border-radius: 1rem;
@@ -2407,12 +2430,10 @@ body#collage .cats_music {
   #top10 .tags {
     width: auto;
   }
-  /* END tag bubble appearance on mobile */
-  /* ## 3.11.2 BEGIN title of collages on mobile */
+  /* ## 3.11.2 collage ~ title of collages on mobile */
   .collage_table .td_info {
     font-size: larger;
   }
-  /* END title of collages on mobile */
   /* END collage table */
   /* ## 3.12 BEGIN requests */
   /* TODO: still show the time the request was filled without taking up too much space */
@@ -2438,8 +2459,8 @@ body#collage .cats_music {
     padding-bottom: 4px;
   }
   /* END requests */
-  /* 3.13 BEGIN forums */
-  /* 3.13.1 BEGIN forum index */
+  /* ## 3.13 BEGIN forums */
+  /* ## 3.13.1 BEGIN forum index */
   .forum_index .last_read {
     float: none !important;
   }
@@ -2469,7 +2490,7 @@ body#collage .cats_music {
     content: "R: ";
   }
   /* END forum index */
-  /* 3.13.2 BEGIN forum table structure */
+  /* ## 3.13.2 BEGIN forum table structure */
   /* this is copied from general tables. We put it here in case that changes
    in ways specific for tabular data */
   .forum_post tbody {
@@ -2485,7 +2506,7 @@ body#collage .cats_music {
     width: 100%;
   }
   /* END forum table structure */
-  /* 3.13.3 BEGIN forum headers */
+  /* ## 3.13.3 BEGIN forum headers */
   /* remove dashes from forum post headers */
   .forum_post tr.colhead_dark {
     color: transparent;
@@ -2494,7 +2515,7 @@ body#collage .cats_music {
   }
   .forum_post tr.colhead_dark span,
   .forum_post tr.colhead_dark strong {
-    color: #c2c2c2;
+    color: #c6c9c9;
   }
   .forum_post tr.colhead_dark div {
     display: inline;
@@ -2532,11 +2553,10 @@ body#collage .cats_music {
   /* END rules */
   /* ## 3.15 reserved */
   /* ## 3.16 Handling for sticky table headers on Mobile */
-  /* */
-  /* Deleted, removed and expurgated */
-  /* ## 3.17 BEGIN site header */
-  /* affectionately known as the hamburger bar on desktop */
-  /* ## 3.17.1 BEGIN Handling to prevent keyboard from opening on iP---e and other mobile devices */
+  /* Deleted and burninated */
+  /* ## 3.17 SITE HEADER AND MENU */
+  /* Affectionately known as the hamburger bar on desktop */
+  /* ## 3.17.1 Delay searchboxes so keyboard doesn't open */
   @keyframes delay-pointer-events {
     0% {
       visibility: hidden;
@@ -2557,7 +2577,10 @@ body#collage .cats_music {
   /* END Handling to prevent..*/
   /* ## 3.17.2 BEGIN MOBILE MENU LAYOUT */
   #header {
-    background: #be46ff;
+    --row-height: 40px;
+  }
+  #header {
+    background: #1A9F7E;
     top: 0;
     height: 0;
     left: 0;
@@ -2574,9 +2597,10 @@ body#collage .cats_music {
     height: clamp(200px, var(--row-height) * 15, 100%);
     opacity: 1;
     transition: all 600ms cubic-bezier(1, 0.01, 0.3, 1.31);
-    border-bottom: groove #be46ff;
-    box-shadow: 0px 50px 70px #1d157c, 0 160px 160px #080808;
+    border-bottom: groove #1A9F7E;
+    box-shadow: 0px 50px 70px #20C098, 0 160px 160px #080808;
   }
+  /* ## 3.17.3 Top Menubar */
   /* pulldown arrow icon for mobile view, top menu */
   #extra1 {
     position: fixed;
@@ -2591,31 +2615,15 @@ body#collage .cats_music {
     z-index: 500;
     pointer-events: none;
   }
-  #logo {
-    height: 2%;
-    left: 0;
-    padding: 0;
-    position: fixed;
-    top: 0;
-    /* #2024 - this is a weird comment and code: */
-    /* it's OVER 9000! */
-    transform: translateY(6000%);
-    width: 20%;
-    z-index: 500;
-  }
-  #logo a {
-    background-image: none;
+  /* topbar for mobile ~ "folder tab" when menu is closed */
+  #extra4 {
+    background: #563E37;
+    border-radius: 0 0 9px 9px;
     display: block;
-    height: 32px;
+    right: 0;
     width: 100%;
   }
-  #extra4,
-  #extra5 {
-    height: 32px;
-    position: fixed;
-    top: 0;
-  }
-  /* site logo in topbar for mobile */
+  /* site logo, on the topbar for mobile */
   #extra5 {
     background-image: url("https://wally-crunk.github.io/svg/orpheus/ops-logo-loop.svg");
     background-position: 0;
@@ -2627,20 +2635,34 @@ body#collage .cats_music {
     width: 32px;
     z-index: 400;
   }
-  #extra4 {
-    background: #be46ff;
-    border-radius: 0 0 9px 9px;
-    display: block;
-    right: 0;
-    width: 100%;
-  }
   #extra4, #extra5 {
     height: 32px;
     position: fixed;
     top: 0;
   }
-  #header {
-    --row-height: 40px;
+  /* ## 3.17.4 Mobile Menu when Open, Setup */
+  /* debugging. remove the nonce words DEBUGGING to see how this works */
+  #debugging #userinfo_major,
+  #debugging #userinfo_major > * {
+    border: thin dotted blue;
+    border-radius: 1rem;
+  }
+  #debugging #userinfo_stats,
+  #debugging #userinfo_stats > * {
+    border: thin dotted pink;
+    border-radius: 1rem;
+  }
+  /* end debugging */
+  /* Setup */
+  #userinfo {
+    position: static;
+  }
+  #userinfo_minor a,
+  #userinfo_username a {
+    display: block;
+    height: 100%;
+    line-height: 50px;
+    text-align: center;
   }
   #header ul:not(#userinfo_major):not(#userinfo_stats) {
     display: flex;
@@ -2654,45 +2676,43 @@ body#collage .cats_music {
   #header ul:not(#userinfo_major):not(#userinfo_stats) a {
     line-height: var(--row-height);
   }
-  #alerts {
+  /* end setup
+
+  /* ## 3.17.5  Menu when open, Row One */
+  /* Right side ~ three items */
+  #userinfo_username > li, #logo {
+    background: radial-gradient(circle at top left, #89644C, #45322E);
+  }
+  #userinfo_username {
+    position: absolute;
+    left: 15%;
+    width: 85% !important;
+    -debug-border: thick solid blue;
+  }
+  #nav_userclass {
     display: none;
   }
-  /* ## 3.17.3 BEGIN searchboxes */
-  #searchbars ul {
-    bottom: 0;
-    height: unset;
-    padding: 0 0 0 6px;
-    position: absolute;
+  #userinfo_username #nav_userinfo a {
+    width: unset;
   }
-  #searchbars li {
+  /* Extreme left, site logo */
+  #logo {
+    position: inherit;
     height: var(--row-height);
+    width: 15%;
+    z-index: 99999999;
+    text-align: center;
+    -debug-background: url("https://placehold.co/20x20/red/black") left bottom no-repeat, url("https://placehold.co/20x20/green/gold") right top no-repeat, url("https://placehold.co/20x20/blue/gold") left top no-repeat, url("https://placehold.co/20x20/yellow/black") right bottom no-repeat;
+    background: radial-gradient(circle at bottom right, #45322E, #89644C);
   }
-  #searchbars li:nth-child(-n+3) .search_form {
-    margin: 6px 6px 3px 0;
+  #logo a {
+    display: inline-block;
+    background: url("https://wally-crunk.github.io/svg/orpheus/ops-logo-loop.svg") center no-repeat;
+    background-size: var(--row-height);
+    height: var(--row-height);
+    width: var(--row-height);
   }
-  #searchbars li:nth-child(n+4) .search_form {
-    margin: 3px 6px 6px 0;
-  }
-  #header #searchbars input {
-    height: calc(var(--row-height) - 9px);
-  }
-  /* END searchboxes */
-  /* 3.17.4 BEGIN userinfo */
-  /* remove the nonce words DEBUGGING to see how this works */
-  #debugging #userinfo_major,
-  #debugging #userinfo_major > * {
-    border: thin dotted blue;
-    border-radius: 1rem;
-  }
-  #debugging #userinfo_stats,
-  #debugging #userinfo_stats > * {
-    border: thin dotted pink;
-    border-radius: 1rem;
-  }
-  /* end debugging */
-  #userinfo {
-    position: static;
-  }
+  /*  ## 3.17.6  Menu when open, Row Two (has subrows) */
   #userinfo_major {
     left: 2vw;
     right: auto;
@@ -2702,20 +2722,20 @@ body#collage .cats_music {
     height: calc(2.4 * var(--row-height));
     flex-direction: column;
     justify-content: space-around;
-    background: #be46ff;
+    background: #563E37;
   }
   #userinfo_stats {
     left: auto;
     right: 2vw;
     width: 60vw;
     margin: auto;
-    color: #D3C0BA;
+    color: #B4825D;
     top: calc(100% - var(--row-height) * 10 - 125px);
     height: calc(2.4 * var(--row-height));
     flex-direction: column;
     justify-content: space-around;
     text-align: right;
-    background: #be46ff;
+    background: #563E37;
   }
   #userinfo_stats a,
   #userinfo_major a {
@@ -2735,44 +2755,43 @@ body#collage .cats_music {
     padding-left: 0.45rem;
     padding-right: 0.45rem;
   }
-  #userinfo_username {
-    background: radial-gradient(circle at top left, #ff4cff, #6e23b3);
-    position: absolute;
-    left: 0;
-    /* #2024 fixed */
-  }
-  #nav_userclass {
-    display: none;
-  }
-  #userinfo_minor {
-    background: radial-gradient(circle at top left, #ff4cff, #6e23b3);
-    bottom: calc(var(--row-height) * 3);
-    position: absolute;
-  }
-  /* S P E C I F I C I T Y */
-  html > body #userinfo_minor a,
-  html > body #userinfo_username a {
-    display: block;
-    height: 100%;
-    line-height: 50px;
-    text-align: center;
-  }
-  #userinfo_username #nav_userinfo a {
-    width: unset;
-  }
-  /* END userinfo */
-  /* ## 3.17.5 BEGIN browse links */
+  /* ## 3.17.7  Menu when open, Row Three */
   #menu ul {
-    /* verify this later #qwerty #2024 */
-    background: radial-gradient(circle at top left, #6e23b3, #ff4cff);
+    background: radial-gradient(circle at top left, #45322E, #89644C);
     bottom: calc(var(--row-height) * 7);
     position: absolute;
   }
   #menu li {
     background: transparent !important;
   }
-  /* END browse links */
-  /* 3.17.6 BEGIN checked */
+  /* END Row Three */
+  /* ## 3.17.8  Menu when open, Row four */
+  #userinfo_minor {
+    background: radial-gradient(circle at top left, #89644C, #45322E);
+    bottom: calc(var(--row-height) * 3);
+    position: absolute;
+  }
+  /* ## 3.17.9   Menu when open, Row five ~ searchboxes */
+  #searchbars ul {
+    bottom: 0;
+    height: unset;
+    padding: 0 0 0 6px;
+    position: absolute;
+  }
+  #searchbars li {
+    height: var(--row-height);
+  }
+  #searchbars li:nth-child(-n+3) .search_form {
+    margin: 6px 6px 3px 0;
+  }
+  #searchbars li:nth-child(n+4) .search_form {
+    margin: 3px 6px 6px 0;
+  }
+  #header #searchbars input {
+    height: calc(var(--row-height) - 9px);
+  }
+  /* END searchboxes */
+  /* ## 3.18 Checkboxes ~ purpose undocumented */
   #extracb1 {
     display: block;
     height: 32px;
@@ -2801,26 +2820,24 @@ body#collage .cats_music {
   }
   /* END checked */
   /* END site header */
-  /* ## 3.18 Torrent search, handling for tag appearance */
-  /* BEGIN tag display for Torrent search form on Mobile, 
-  /* when tags are set to display in profile settings */
+  /* ## 3.19 Torrent search, handling for tag appearance */
+  /* 'Wordbank' of tags, displays on the torrent search form, */
+  /* when tags are set to display in profile settings. */
   #taglist tr.label {
-    position: sticky;
-    height: 2rem;
-    top: 2rem; /* lower on mobile due to the header and pulldown menu */
-    z-index: 999 !important; /* To go under the pulldown menu */
+    height: auto;
+    border: thick solid #20C098; /* $primary-accent-color */
   }
   #taglist tr.label td {
-    background: #030864;
-    color: #1ED4F5;
+    background: #0F5B49;
+    color: #20C098;
     align-content: center;
     text-align: center;
-    border: #1ED4F5;
+    border: #20C098;
     width: 100%;
   }
   #taglist tr.label td::after {
     font-style: italic;
-    content: '— Use "Hide Tags" above or Profile Settings to hide this list of tags.';
+    content: '➤Use "Hide Tags" above or Profile Settings to hide this list of tags.';
   }
   #taglist tr:not(.label) td {
     border: 0.1px solid gray;
@@ -2833,8 +2850,8 @@ body#collage .cats_music {
     text-overflow: ellipsis;
     font-style: italic;
     vertical-align: baseline;
-    color: #fefe78 !important; /*$tag-bubble-background-color;*/
-    background: #ff4cff;
+    color: #20C098 !important; /*$tag-bubble-background-color;*/
+    background: #0F5B49;
     padding: 0.25rem;
     border-radius: 1rem;
     margin-bottom: 0.1rem;
@@ -2843,11 +2860,9 @@ body#collage .cats_music {
   /* END tag display for Torrent search form on Mobile, 
   /* when tags are set to display in profile settings */
 }
-/* ################################################################################
+/* ################################################################################ */
 /* # 4 MISCELLANEOUS
-/* ################################################################################
-
-
+/* ################################################################################ */
 /* ## 4.1 Begin Changes for Mobile, SUPER SMALL window */
 /* compact the Menu in two steps */
 @media (max-width: 575px) and (max-height: 600px) {
@@ -2867,13 +2882,17 @@ body#collage .cats_music {
 }
 /* #wideload */
 /* ## 4.2 tag bubble appearance on widescreen */
-/* Full clickable appearance; more comments in SCSS */
+/* ### 4.2.1 Full clickable appearance */
 /* Applies to Torrent Pages, collage-listing pages, collage-discog pages. */
 .collage_table .td_info .tags :not(:empty),
 #torrent_table .group .tags :not(:empty),
 #discog_table .group .tags :not(:empty),
+#taglist td a,
 #request_table .tags,
 #top10 .tags,
+#artist .sidebar div.box.box_tags ul.stats.nobullet li a,
+#user div.sidebar .box_userinfo_activity ul.stats.nobullet li a,
+#userhistory div.group_info.clear div.tags a,
 table.torrent_table.cats.checkboxes.border.m_table td.td_info.big_info div.group_info.clear div.tags a,
 table.torrent_table.cats.m_table td.td_info.big_info div.group_info.clear div.tags a,
 body#torrents div.box.box_tags li > a:first-child {
@@ -2883,15 +2902,34 @@ body#torrents div.box.box_tags li > a:first-child {
   font-weight: 700;
   font-size: 0.6rem;
   vertical-align: baseline;
-  color: #fefe78;
-  background: #ff4cff;
+  color: #20C098;
+  background: #0F5B49;
   padding: 0 0.5rem;
   border-radius: 1rem;
   margin-bottom: 0.1rem;
   transition: all 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-/* Special non-clickable appearance: Applies to top10 and request_table pages, where tags are not clickable links. */
+/* ### 4.2.2 Hover effect ~ the people have spoken */
+/* Applies only to pages that get full clickable appearance. */
+.collage_table .td_info .tags :not(:empty):hover,
+#torrent_table .group .tags :not(:empty):hover,
+#discog_table .tags :hover,
+#taglist td a:hover,
+#artist .sidebar div.box.box_tags ul.stats.nobullet li a:hover,
+#user div.sidebar .box_userinfo_activity ul.stats.nobullet li a:hover,
+#userhistory div.group_info.clear div.tags :hover,
+table.torrent_table.cats.checkboxes.border.m_table td.td_info.big_info div.group_info.clear div.tags a:hover,
+table.torrent_table.cats.m_table td.td_info.big_info div.group_info.clear div.tags a:hover,
+body#torrents div.box.box_tags li > a:first-child:hover {
+  color: #0F5B49 !important;
+  background: #20C098 !important;
+  transition: all 0.15s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: rgba(0, 0, 0, 0.25) 0 14px 28px, rgba(0, 0, 0, 0.22) 0 10px 10px;
+}
+
+/* ### 4.2.3 Special non-clickable appearance */
+/* Applies to top10 and request_table pages, where tags are not clickable links. */
 #request_table .tags,
 #top10 .tags {
   font-style: italic;
@@ -2899,24 +2937,12 @@ body#torrents div.box.box_tags li > a:first-child {
   margin-inline: 1rem;
 }
 
-/* Hover effect: the people have spoken */
-/* Applies only to pages that get full clickable appearance. */
-.collage_table .td_info .tags :not(:empty):hover,
-#torrent_table .group .tags :not(:empty):hover,
-#discog_table .tags :hover,
-table.torrent_table.cats.checkboxes.border.m_table td.td_info.big_info div.group_info.clear div.tags a:hover,
-table.torrent_table.cats.m_table td.td_info.big_info div.group_info.clear div.tags a:hover,
-body#torrents div.box.box_tags li > a:first-child:hover {
-  color: #ff4cff !important;
-  background: #fefe78 !important;
-  transition: all 0.15s cubic-bezier(0.25, 0.8, 0.25, 1);
-  box-shadow: rgba(0, 0, 0, 0.25) 0 14px 28px, rgba(0, 0, 0, 0.22) 0 10px 10px;
-}
-
+/* ### 4.2.4 Other special cases */
 /* remove commas between tag bubbles:
 /* only needed on torrent and collage-discog pages. */
 #torrent_table .tags,
 #discog_table .tags,
+#userhistory div.group_info.clear div.tags,
 table.torrent_table.cats.checkboxes.border.m_table td.td_info.big_info div.group_info.clear div.tags,
 table.torrent_table.cats.m_table td.td_info.big_info div.group_info.clear div.tags {
   visibility: hidden;
@@ -2943,6 +2969,5 @@ table.torrent_table.cats.m_table td.td_info.big_info div.group_info.clear div.ta
 /* ####### */
 /* # EOF # */
 /* ####### */
-/* Johnson & Thomas in a Testarossa */
 
 /*# sourceMappingURL=style.css.map */

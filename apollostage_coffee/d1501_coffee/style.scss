@@ -1,5 +1,5 @@
 /* APOLLOSTAGE COFFEE THEME */
-/* 2024-05-08 */
+/* 2024-05-08c */
 
 // DEFINE THEME COLORS AND ICONS
 
@@ -27,7 +27,7 @@
   $text14: #D7B18B;
   $text15: #E4C6A6;
   $text16: #EFDAC1;
-  $lemonzest: #fffacd;
+  $text17: #fffacd;
 
 // define theme colors
 
@@ -39,11 +39,12 @@ $secondary-table-background-color: $level01;	// also form field in focus
 $input-background-color: $levelaa; 	            // also table-even-rows
 $form-background-color: $levelbb; 				// also boxes on frontpage
 
-$a-color: $lemonzest;
 $a-hover-color: $text13;
-$base-text-color: $text15;
-$mono-text-color: $text11;
 $input-color: $text14;
+$mono-text-color: $text14;
+$base-text-color: $text15;
+$bold-text-color: $text16;
+$a-color: $text17;
 
 // Ten color gradient:
 
@@ -62,8 +63,8 @@ $userinfo-minor-hover-background-color: $level03;    // VV pulldown menu ~ open
 
 // mobile pulldown menu gradient
 
-$userinfo-background-color-1: $level10;    // mobile pulldown menu gradient 1
-$userinfo-background-color-2: $level02;    // mobile pulldown menu gradient 2
+$userinfo-background-color-1: $level09;    // mobile pulldown menu gradient 1
+$userinfo-background-color-2: $level03;    // mobile pulldown menu gradient 2
 
 // notification gradient
 
