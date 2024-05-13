@@ -136,6 +136,27 @@ $tag-bubble-background-color: $mid-300;
 $tag-bubble-foreground-color: $mid-900; 
 
 $site-logo-lockup: url("https://wally-crunk.github.io/svg/orpheus/ops-logo-lockup-whiteusage.svg");
+
+// Forum icons
+
+$unread-icon: url("https://wally-crunk.github.io/svg/gazelle/document-round#000.svg");
+$unread-locked-icon: url("https://wally-crunk.github.io/svg/gazelle/lock-round#000.svg");
+$unread-sticky-icon: url("https://wally-crunk.github.io/svg/gazelle/pin-round#000.svg");
+$unread-locked-sticky-icon: url("https://wally-crunk.github.io/svg/gazelle/pin-and-lock-round#000.svg");
+
+$read-icon: url("https://wally-crunk.github.io/svg/gazelle/document#000.svg");
+$read-locked-icon: url("https://wally-crunk.github.io/svg/gazelle/lock#000.svg");
+$read-sticky-icon: url("https://wally-crunk.github.io/svg/gazelle/pin#000.svg");
+$read-locked-sticky-icon: url("https://wally-crunk.github.io/svg/gazelle/pin-and-lock#000.svg");
+
+// Header Pulldown Menu (hamburger/chevron icon)
+// not changing, still dark background
+
+// Used on Mobile
+$number-snatches-icon: url("https://wally-crunk.github.io/svg/gazelle/arrow-loop#000.svg");
+$number-seeders-icon: url("https://wally-crunk.github.io/svg/gazelle/arrow-up-round#000.svg");
+$number-leechers-icon: url("https://wally-crunk.github.io/svg/gazelle/arrow-down-round#000.svg");
+
 @import '../apollostage/_base';
 
 // EOF

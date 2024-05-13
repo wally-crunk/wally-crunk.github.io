@@ -664,35 +664,35 @@ table.box2 {
 }
 
 .read {
-  background: url("https://wally-crunk.github.io/svg/gazelle/document.svg") center no-repeat;
+  background: url("https://wally-crunk.github.io/svg/gazelle/document#000.svg") center no-repeat;
 }
 
 .unread {
-  background: url("https://wally-crunk.github.io/svg/gazelle/document-round.svg") center no-repeat;
+  background: url("https://wally-crunk.github.io/svg/gazelle/document-round#000.svg") center no-repeat;
 }
 
 .read_locked {
-  background: url("https://wally-crunk.github.io/svg/gazelle/lock.svg") center no-repeat;
+  background: url("https://wally-crunk.github.io/svg/gazelle/lock#000.svg") center no-repeat;
 }
 
 .unread_locked {
-  background: url("https://wally-crunk.github.io/svg/gazelle/lock-round.svg") center no-repeat;
+  background: url("https://wally-crunk.github.io/svg/gazelle/lock-round#000.svg") center no-repeat;
 }
 
 .read_sticky {
-  background: url("https://wally-crunk.github.io/svg/gazelle/pin.svg") center no-repeat;
+  background: url("https://wally-crunk.github.io/svg/gazelle/pin#000.svg") center no-repeat;
 }
 
 .unread_sticky {
-  background: url("https://wally-crunk.github.io/svg/gazelle/pin-round.svg") center no-repeat;
+  background: url("https://wally-crunk.github.io/svg/gazelle/pin-round#000.svg") center no-repeat;
 }
 
 .read_locked_sticky {
-  background: url("https://wally-crunk.github.io/svg/gazelle/pin-and-lock.svg") center no-repeat;
+  background: url("https://wally-crunk.github.io/svg/gazelle/pin-and-lock#000.svg") center no-repeat;
 }
 
 .unread_locked_sticky {
-  background: url("https://wally-crunk.github.io/svg/gazelle/pin-and-lock-round.svg") center no-repeat;
+  background: url("https://wally-crunk.github.io/svg/gazelle/pin-and-lock-round#000.svg") center no-repeat;
 }
 
 #header,
@@ -2279,7 +2279,7 @@ body#collage .cats_music {
   .td_snatched.m_td_right::before,
   .td_seeders.m_td_right::before,
   .td_leechers.m_td_right::before {
-    background: left/10px no-repeat url("https://wally-crunk.github.io/svg/gazelle/arrow-loop.svg");
+    background: left/10px no-repeat url("https://wally-crunk.github.io/svg/gazelle/arrow-loop#000.svg");
     color: #171942;
     content: ":";
     filter: brightness(80%);
@@ -2289,10 +2289,10 @@ body#collage .cats_music {
     width: 14px;
   }
   .td_seeders.m_td_right::before {
-    background-image: url("https://wally-crunk.github.io/svg/gazelle/arrow-up-round.svg");
+    background-image: url("https://wally-crunk.github.io/svg/gazelle/arrow-up-round#000.svg");
   }
   .td_leechers.m_td_right::before {
-    background-image: url("https://wally-crunk.github.io/svg/gazelle/arrow-down-round.svg");
+    background-image: url("https://wally-crunk.github.io/svg/gazelle/arrow-down-round#000.svg");
   }
   .m_table.checkboxes td:first-child {
     display: block;
