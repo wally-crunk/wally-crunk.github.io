@@ -1929,7 +1929,7 @@ body#collage .cats_music {
 
 /* second row of each box */
 #noty_bottomRight_layout_container .noty_buttons {
-  background-color: #242726 !important;
+  background-color: #000000 !important;
   border: none !important;
   padding: 8px !important;
 }
