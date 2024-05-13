@@ -1030,6 +1030,7 @@ div#flip_view_1 div#similar-artist .name {
 
 #covers .stats {
     margin: 0 8px 8px;
+    overflow: hidden;
 }
 
 #add_cover_div > div:first-child .additional_add_artists {

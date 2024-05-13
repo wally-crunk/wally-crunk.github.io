@@ -2,40 +2,39 @@
 // APOLLOSTAGE THEME 
 // DEFINE THEME COLORS AND ICONS
 
- $black: 	#000000;
- $olive-100: 	#0B1815;
- $olive-200: 	#0F1F1B;
- $olive-300: 	#122622;
- $olive-400: 	#152E27;
- $olive-500: 	#19352D;
- $olive-600: 	#1C3C33;
- $olive-700: 	#20433A;
- $olive-800: 	#234A40;
- $olive-900: 	#265147;
- $olive-1000: 	#2A594D;
- $black: 	#000000;
- $mint-100: 	#093A2E;
- $mint-200: 	#0C4A3B;
- $mint-300: 	#0F5B49;
- $mint-400: 	#126C56;
- $mint-500: 	#157D63;
- $mint-600: 	#188E71;
- $mint-700: 	#1A9F7E;
- $mint-800: 	#1DAF8B;
- $mint-900: 	#20C098;
- $mint-1000: 	#23D1A5;
- $black: 	#000000;
- $spruce-100: 	#C7C958;
- $spruce-200: 	#A1D289;
- $spruce-300: 	#A2D9A0;
- $spruce-400: 	#B0DDBB;
- $spruce-500: 	#BDE0CF;
- $spruce-600: 	#CAE3DB;
- $spruce-700: 	#D4E6E3;
- $spruce-800: 	#DCE9E8;
- $spruce-900: 	#E0ECEB;
- $spruce-1000: 	#E5EFEF;
- $black: 	#000000;
+  $back-100: #131918;
+  $back-200: #161C1B;
+  $back-300: #181F1E;
+  $back-400: #1A2321;
+  $back-500: #1C2624;
+  $back-600: #1E2926;
+  $back-700: #202C29;
+  $back-800: #22302C;
+  $back-900: #24332F;
+  $back-1000: #263632;
+  $blk: #020B09;
+  $mid-100: #093A2E;
+  $mid-200: #0C4A3B;
+  $mid-300: #0F5B49;
+  $mid-400: #126C56;
+  $mid-500: #157D63;
+  $mid-600: #188E71;
+  $mid-700: #1A9F7E;
+  $mid-800: #1DAF8B;
+  $mid-900: #20C098;
+  $mid-1000: #23D1A5;
+  $blk: #0B0B05;
+  $fore-100: #C7C958;
+  $fore-200: #B6C9AD;
+  $fore-300: #BFCEBB;
+  $fore-400: #C3D3C1;
+  $fore-500: #C7D7C7;
+  $fore-600: #CCDCCD;
+  $fore-700: #D3E1D4;
+  $fore-800: #D9E6DB;
+  $fore-900: #DFEAE2;
+  $fore-1000: #E5EFE9;
+  $foo: #000000;
 
 
 // define palette
@@ -61,52 +60,52 @@ $text17: #CDF8FF;
 
 // define theme colors
 
-$base-background-color: $olive-100;
-$form-background-color: $olive-300; 	// also boxes on frontpage
-$table-background-color: $olive-200;	// primarily table-odd-rows
-$input-background-color: $olive-500; 	// also table-even-rows
-$secondary-table-background-color: $olive-700;	// also form field in focus
+$base-background-color: $back-100;
+$form-background-color: $back-300; 	// also boxes on frontpage
+$table-background-color: $back-200;	// primarily table-odd-rows
+$input-background-color: $back-500; 	// also table-even-rows
+$secondary-table-background-color: $back-700;	// also form field in focus
 
-$input-color: $spruce-400;
-$mono-text-color: $spruce-400;
-$base-text-color: $spruce-500;
-$bold-text-color: $spruce-600;
-$a-color: $spruce-1000;
-$a-hover-color: $spruce-400;
+$input-color: $fore-400;
+$mono-text-color: $fore-400;
+$base-text-color: $fore-500;
+$bold-text-color: $fore-600;
+$a-color: $fore-1000;
+$a-hover-color: $fore-400;
 $button-text-color: $levelaa;
 
-$primary-accent-color: $mint-700;	// for portions of headers
-$offset-accent-color: $spruce-100;
+$primary-accent-color: $mid-700;	// for portions of headers
+$offset-accent-color: $fore-100;
 
 // Ten color gradient:
 
 // (L-R Light To Dark Style)
 
-$menu-li-second-child-background-color:	$mint-100; // torrents
-$menu-li-third-child-background-color:	$mint-200; // collages
-$menu-li-fourth-child-background-color:	$mint-300; // requests
-$menu-li-fifth-child-background-color:	$mint-400; // forums
-$menu-li-sixth-child-background-color:	$mint-500; // irc
-$menu-li-seventh-child-background-color:	$mint-600; // top10
-$header-background-color:		$mint-700; // rules, also mobile menu header
-$menu-li-ninth-child-background-color:	$mint-800; // wiki
-$userinfo-username-color:		$mint-900; // username menu ~ closed
-$userinfo-username-hover-background-color:	$mint-700; // username menu ~ open
-$userinfo-minor-color:	$mint-1000; // VV pulldown menu ~ closed
-$userinfo-minor-hover-background-color:	$mint-700; // VV pulldown menu ~ open
+$menu-li-second-child-background-color:	$mid-100; // torrents
+$menu-li-third-child-background-color:	$mid-200; // collages
+$menu-li-fourth-child-background-color:	$mid-300; // requests
+$menu-li-fifth-child-background-color:	$mid-400; // forums
+$menu-li-sixth-child-background-color:	$mid-500; // irc
+$menu-li-seventh-child-background-color:	$mid-600; // top10
+$header-background-color:		$mid-700; // rules, also mobile menu header
+$menu-li-ninth-child-background-color:	$mid-800; // wiki
+$userinfo-username-color:		$mid-900; // username menu ~ closed
+$userinfo-username-hover-background-color:	$mid-700; // username menu ~ open
+$userinfo-minor-color:	$mid-1000; // VV pulldown menu ~ closed
+$userinfo-minor-hover-background-color:	$mid-700; // VV pulldown menu ~ open
 
 // (L-R Dark To Light Style)
 // 1000 to 100
 
 // mobile pulldown menu gradient
 
-$userinfo-background-color-1: $mint-900; // mobile pulldown menu gradient 1
-$userinfo-background-color-2: $mint-300; // mobile pulldown menu gradient 2
+$userinfo-background-color-1: $mid-900; // mobile pulldown menu gradient 1
+$userinfo-background-color-2: $mid-300; // mobile pulldown menu gradient 2
 
 // notification gradient
 
-$gradient-color-1: $mint-900;	// usually works well with 'third-child'
-$gradient-color-2: $mint-300;	// usually works well with 'seventh-child'
+$gradient-color-1: $mid-900;	// usually works well with 'third-child'
+$gradient-color-2: $mid-300;	// usually works well with 'seventh-child'
 $notification-background-color: #000000;
 
 // these are GNDN: goes nowhere, does nothing
@@ -116,9 +115,9 @@ $menu-background-color-2: #008888;		// noop
 
 // formatting colors for page elements
 
-$blockquote-background-color: $mint-100;
-$torrent-background-color: $olive-200;
-$blockquote-border-color: $olive-600;
+$blockquote-background-color: $mid-100;
+$torrent-background-color: $back-200;
+$blockquote-border-color: $back-600;
 $box-background-color: #50505070;
 $box-border-color: #212A2DAA; 
 $input-background-color: #252F32;	
@@ -155,8 +154,8 @@ $accent-color-cats_elearningvideos: mediumpurple;
 
 // These can equal "ninth" and "second"
 // or adjust contrast as desired to emphasize/de-emphaszie
-$tag-bubble-background-color: $mint-300; 
-$tag-bubble-foreground-color: $mint-900; 
+$tag-bubble-background-color: $mid-300; 
+$tag-bubble-foreground-color: $mid-900; 
 
 // Forum icons
 
