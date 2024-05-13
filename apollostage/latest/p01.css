@@ -282,8 +282,8 @@ li:last-child {
 }
 
 blockquote {
-  background-color: #093A2E;
-  border: 1px dashed #1C3C33;
+  background-color: #olive-200;
+  border: 1px dashed #olive-600;
   margin: 12px;
   padding: 12px;
 }
@@ -382,10 +382,10 @@ textarea {
 button,
 input[type=button],
 input[type=submit] {
-  background: linear-gradient(#b8b8b8, #E5EFEF);
+  background: linear-gradient(#E5EFEF, #b8b8b8);
   border: none;
   border-radius: 1.5px;
-  color: #2B302F;
+  color: #252F32;
   cursor: pointer;
   font-weight: 600;
   height: 32px;
@@ -395,7 +395,7 @@ input[type=submit] {
 button:active,
 input[type=button]:active,
 input[type=submit]:active {
-  background: linear-gradient(#E5EFEF, #b8b8b8);
+  background: linear-gradient(#b8b8b8, #E5EFEF);
 }
 
 input[type=email],
@@ -1005,13 +1005,6 @@ div#flip_view_1 div#similar-artist .name {
   width: auto;
 }
 
-/* Artist page ~ ensure wrap after vote buttons */
-.box_artists ul.stats.nobullet li {
-  content: "";
-  display: block;
-  clear: both;
-}
-
 #AddArtists input,
 #AddArtists select {
   margin-bottom: 8px;
@@ -1542,7 +1535,7 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
 }
 
 #dnulist tr:not(.colhead, .colhead_dark):nth-child(odd) {
-  background-color: #093A2E;
+  background-color: #olive-200;
 }
 
 #menu > ul a:hover,
@@ -1944,7 +1937,7 @@ body#collage .cats_music {
 
 /* buttons */
 #noty_bottomRight_layout_container .noty_buttons a {
-  color: #20C098 !important;
+  color: #6CC0B0 !important;
   background-color: none;
   border: thin solid transparent; /* prevents button movement */
   border-radius: 14px;
@@ -1953,8 +1946,8 @@ body#collage .cats_music {
 }
 
 #noty_bottomRight_layout_container .noty_buttons a:hover {
-  color: #0F5B49 !important;
-  background-color: #20C098;
+  color: #0E5645 !important;
+  background-color: #6CC0B0;
   border-radius: 14px;
   border: thin solid #1A9F7E;
   transition: all 0.15s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -2418,8 +2411,8 @@ body#collage .cats_music {
     font-weight: 400;
     font-size: 0.55rem;
     vertical-align: baseline;
-    color: #20C098;
-    background: #0F5B49 !important;
+    color: #6CC0B0;
+    background: #0E5645 !important;
     padding: 0.05rem 0.5rem;
     border: none !important;
     border-radius: 1rem;
@@ -2824,14 +2817,14 @@ body#collage .cats_music {
   /* when tags are set to display in profile settings. */
   #taglist tr.label {
     height: auto;
-    border: thick solid #20C098; /* $primary-accent-color */
+    border: thick solid #6CC0B0; /* $primary-accent-color */
   }
   #taglist tr.label td {
-    background: #0F5B49;
-    color: #20C098;
+    background: #0E5645;
+    color: #6CC0B0;
     align-content: center;
     text-align: center;
-    border: #20C098;
+    border: #6CC0B0;
     width: 100%;
   }
   #taglist tr.label td::after {
@@ -2849,8 +2842,8 @@ body#collage .cats_music {
     text-overflow: ellipsis;
     font-style: italic;
     vertical-align: baseline;
-    color: #20C098 !important; /*$tag-bubble-background-color;*/
-    background: #0F5B49;
+    color: #6CC0B0 !important; /*$tag-bubble-background-color;*/
+    background: #0E5645;
     padding: 0.25rem;
     border-radius: 1rem;
     margin-bottom: 0.1rem;
@@ -2901,8 +2894,8 @@ body#torrents div.box.box_tags li > a:first-child {
   font-weight: 700;
   font-size: 0.6rem;
   vertical-align: baseline;
-  color: #20C098;
-  background: #0F5B49;
+  color: #6CC0B0;
+  background: #0E5645;
   padding: 0 0.5rem;
   border-radius: 1rem;
   margin-bottom: 0.1rem;
@@ -2921,8 +2914,8 @@ body#torrents div.box.box_tags li > a:first-child {
 table.torrent_table.cats.checkboxes.border.m_table td.td_info.big_info div.group_info.clear div.tags a:hover,
 table.torrent_table.cats.m_table td.td_info.big_info div.group_info.clear div.tags a:hover,
 body#torrents div.box.box_tags li > a:first-child:hover {
-  color: #0F5B49 !important;
-  background: #20C098 !important;
+  color: #0E5645 !important;
+  background: #6CC0B0 !important;
   transition: all 0.15s cubic-bezier(0.25, 0.8, 0.25, 1);
   box-shadow: rgba(0, 0, 0, 0.25) 0 14px 28px, rgba(0, 0, 0, 0.22) 0 10px 10px;
 }
@@ -2969,4 +2962,4 @@ table.torrent_table.cats.m_table td.td_info.big_info div.group_info.clear div.ta
 /* # EOF # */
 /* ####### */
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=p01.css.map */
