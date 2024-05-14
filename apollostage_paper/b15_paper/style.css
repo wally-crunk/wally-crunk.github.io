@@ -160,7 +160,7 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-  color: #0FADCF;
+  color: #13ADCF;
 }
 
 h1,
@@ -284,7 +284,7 @@ li:last-child {
 }
 
 blockquote {
-  background-color: #17788E;
+  background-color: #1F788C;
   border: 1px dashed #A7ABAC;
   margin: 12px;
   padding: 12px;
@@ -409,7 +409,7 @@ input[type=search],
 select,
 textarea {
   background: #B5B9BA;
-  border: 1px solid #0FADCF;
+  border: 1px solid #13ADCF;
   color: #727576;
   height: 32px;
   padding: 0 8px;
@@ -421,7 +421,7 @@ input[type=text]:focus,
 input[type=search]:focus,
 select:focus,
 textarea:focus {
-  border: 1px solid #0ABEE5;
+  border: 1px solid #0CBEE5;
   color: #0e58a6;
 }
 
@@ -666,35 +666,35 @@ table.box2 {
 }
 
 .read {
-  background: url("https://wally-crunk.github.io/svg/gazelle/document#000.svg") center no-repeat;
+  background: url("https://wally-crunk.github.io/svg/gazelle/document-000.svg") center no-repeat;
 }
 
 .unread {
-  background: url("https://wally-crunk.github.io/svg/gazelle/document-round#000.svg") center no-repeat;
+  background: url("https://wally-crunk.github.io/svg/gazelle/document-round-000.svg") center no-repeat;
 }
 
 .read_locked {
-  background: url("https://wally-crunk.github.io/svg/gazelle/lock#000.svg") center no-repeat;
+  background: url("https://wally-crunk.github.io/svg/gazelle/lock-000.svg") center no-repeat;
 }
 
 .unread_locked {
-  background: url("https://wally-crunk.github.io/svg/gazelle/lock-round#000.svg") center no-repeat;
+  background: url("https://wally-crunk.github.io/svg/gazelle/lock-round-000.svg") center no-repeat;
 }
 
 .read_sticky {
-  background: url("https://wally-crunk.github.io/svg/gazelle/pin#000.svg") center no-repeat;
+  background: url("https://wally-crunk.github.io/svg/gazelle/pin-000.svg") center no-repeat;
 }
 
 .unread_sticky {
-  background: url("https://wally-crunk.github.io/svg/gazelle/pin-round#000.svg") center no-repeat;
+  background: url("https://wally-crunk.github.io/svg/gazelle/pin-round-000.svg") center no-repeat;
 }
 
 .read_locked_sticky {
-  background: url("https://wally-crunk.github.io/svg/gazelle/pin-and-lock#000.svg") center no-repeat;
+  background: url("https://wally-crunk.github.io/svg/gazelle/pin-and-lock-000.svg") center no-repeat;
 }
 
 .unread_locked_sticky {
-  background: url("https://wally-crunk.github.io/svg/gazelle/pin-and-lock-round#000.svg") center no-repeat;
+  background: url("https://wally-crunk.github.io/svg/gazelle/pin-and-lock-round-000.svg") center no-repeat;
 }
 
 #header,
@@ -835,39 +835,39 @@ table.box2 {
 }
 
 #menu li:nth-child(2) {
-  background-color: #17788E;
+  background-color: #1F788C;
 }
 
 #menu li:nth-child(3) {
-  background-color: #168199;
+  background-color: #1F8297;
 }
 
 #menu li:nth-child(4) {
-  background-color: #1689A4;
+  background-color: #1D8AA2;
 }
 
 #menu li:nth-child(5) {
-  background-color: #1593AF;
+  background-color: #1C94AE;
 }
 
 #menu li:nth-child(6) {
-  background-color: #139BB9;
+  background-color: #199CB9;
 }
 
 #menu li:nth-child(7) {
-  background-color: #11A5C4;
+  background-color: #17A5C4;
 }
 
 #menu li:nth-child(8) {
-  background-color: #0FADCF;
+  background-color: #13ADCF;
 }
 
 #menu li:nth-child(9) {
-  background-color: #0DB6DA;
+  background-color: #10B6DA;
 }
 
 #userinfo_username {
-  background-color: #0ABEE5;
+  background-color: #0CBEE5;
   right: 50px;
 }
 
@@ -882,7 +882,7 @@ table.box2 {
 }
 
 .linkbox > strong {
-  color: #0FADCF;
+  color: #13ADCF;
 }
 
 #footer,
@@ -1352,7 +1352,7 @@ ul.collage_images li a > span {
 /* #2024 style update for
 /* Discog table: for rows 'Albums', 'Compilations', 'Live Albums', etc. */
 #discog_table tr[id^=torrents_] {
-  background-color: #0FADCF;
+  background-color: #13ADCF;
 }
 
 #discog_table tr[id^=torrents_] :not(a.tooltip.brackets) {
@@ -1365,7 +1365,7 @@ ul.collage_images li a > span {
 #discog_table .discog strong a,
 #discog_table td.td_info.big_info div.group_info.clear strong a {
   font-size: 115%;
-  color: #0FADCF;
+  color: #13ADCF;
 }
 
 /* #2024 style update for
@@ -1430,7 +1430,7 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
 }
 
 #musicbrainz_popup a:hover {
-  color: #0FADCF;
+  color: #13ADCF;
 }
 
 #musicbrainz_popup .brackets {
@@ -1828,10 +1828,10 @@ body#collage .cats_music {
     right: 0;
   }
   #userinfo_minor:hover {
-    background-color: #0FADCF;
+    background-color: #13ADCF;
   }
   #userinfo_username:hover {
-    background-color: #0FADCF;
+    background-color: #13ADCF;
   }
   .settings_sidebar {
     margin-left: 8px;
@@ -1919,7 +1919,7 @@ body#collage .cats_music {
 
 /* first row of each box */
 #noty_bottomRight_layout_container .noty_message {
-  background: radial-gradient(circle at top right, #0ABEE5, #1689A4) !important;
+  background: radial-gradient(circle at top right, #0CBEE5, #1D8AA2) !important;
   color: #0e58a6 !important;
   font-weight: 700;
   padding: 0 !important;
@@ -1933,14 +1933,14 @@ body#collage .cats_music {
 
 /* second row of each box */
 #noty_bottomRight_layout_container .noty_buttons {
-  background-color: #000000 !important;
+  background-color: 0 !important;
   border: none !important;
   padding: 8px !important;
 }
 
 /* buttons */
 #noty_bottomRight_layout_container .noty_buttons a {
-  color: #0ABEE5 !important;
+  color: #0CBEE5 !important;
   background-color: none;
   border: thin solid transparent; /* prevents button movement */
   border-radius: 14px;
@@ -1949,10 +1949,10 @@ body#collage .cats_music {
 }
 
 #noty_bottomRight_layout_container .noty_buttons a:hover {
-  color: #1689A4 !important;
-  background-color: #0ABEE5;
+  color: #1D8AA2 !important;
+  background-color: #0CBEE5;
   border-radius: 14px;
-  border: thin solid #0FADCF;
+  border: thin solid #13ADCF;
   transition: all 0.15s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
@@ -2272,7 +2272,7 @@ body#collage .cats_music {
   .td_snatched.m_td_right::before,
   .td_seeders.m_td_right::before,
   .td_leechers.m_td_right::before {
-    background: left/10px no-repeat url("https://wally-crunk.github.io/svg/gazelle/arrow-loop#000.svg");
+    background: left/10px no-repeat url("https://wally-crunk.github.io/svg/gazelle/arrow-loop-000.svg");
     color: #182d43;
     content: ":";
     filter: brightness(80%);
@@ -2282,10 +2282,10 @@ body#collage .cats_music {
     width: 14px;
   }
   .td_seeders.m_td_right::before {
-    background-image: url("https://wally-crunk.github.io/svg/gazelle/arrow-up-round#000.svg");
+    background-image: url("https://wally-crunk.github.io/svg/gazelle/arrow-up-round-000.svg");
   }
   .td_leechers.m_td_right::before {
-    background-image: url("https://wally-crunk.github.io/svg/gazelle/arrow-down-round#000.svg");
+    background-image: url("https://wally-crunk.github.io/svg/gazelle/arrow-down-round-000.svg");
   }
   .m_table.checkboxes td:first-child {
     display: block;
@@ -2414,8 +2414,8 @@ body#collage .cats_music {
     font-weight: 400;
     font-size: 0.55rem;
     vertical-align: baseline;
-    color: #0ABEE5;
-    background: #1689A4 !important;
+    color: #0CBEE5;
+    background: #1D8AA2 !important;
     padding: 0.05rem 0.5rem;
     border: none !important;
     border-radius: 1rem;
@@ -2575,7 +2575,7 @@ body#collage .cats_music {
     --row-height: 40px;
   }
   #header {
-    background: #0FADCF;
+    background: #13ADCF;
     top: 0;
     height: 0;
     left: 0;
@@ -2592,8 +2592,8 @@ body#collage .cats_music {
     height: clamp(200px, var(--row-height) * 15, 100%);
     opacity: 1;
     transition: all 600ms cubic-bezier(1, 0.01, 0.3, 1.31);
-    border-bottom: groove #0FADCF;
-    box-shadow: 0px 50px 70px #0ABEE5, 0 160px 160px #080808;
+    border-bottom: groove #13ADCF;
+    box-shadow: 0px 50px 70px #0CBEE5, 0 160px 160px #080808;
   }
   /* ## 3.17.3 Top Menubar */
   /* pulldown arrow icon for mobile view, top menu */
@@ -2612,7 +2612,7 @@ body#collage .cats_music {
   }
   /* topbar for mobile ~ "folder tab" when menu is closed */
   #extra4 {
-    background: #0FADCF;
+    background: #13ADCF;
     border-radius: 0 0 9px 9px;
     display: block;
     right: 0;
@@ -2676,7 +2676,7 @@ body#collage .cats_music {
   /* ## 3.17.5  Menu when open, Row One */
   /* Right side ~ three items */
   #userinfo_username > li, #logo {
-    background: radial-gradient(circle at top left, #0ABEE5, #1689A4);
+    background: radial-gradient(circle at top left, #0CBEE5, #1D8AA2);
   }
   #userinfo_username {
     position: absolute;
@@ -2697,7 +2697,7 @@ body#collage .cats_music {
     width: 15%;
     z-index: 999;
     text-align: center;
-    background: radial-gradient(circle at top left, #0ABEE5, #1689A4);
+    background: radial-gradient(circle at top left, #0CBEE5, #1D8AA2);
   }
   #logo a {
     display: inline-block;
@@ -2749,7 +2749,7 @@ body#collage .cats_music {
   }
   /* ## 3.17.7  Menu when open, Row Three */
   #menu ul {
-    background: radial-gradient(circle at top left, #0ABEE5, #1689A4);
+    background: radial-gradient(circle at top left, #0CBEE5, #1D8AA2);
     bottom: calc(var(--row-height) * 7);
     position: absolute;
   }
@@ -2759,7 +2759,7 @@ body#collage .cats_music {
   /* END Row Three */
   /* ## 3.17.8  Menu when open, Row four */
   #userinfo_minor {
-    background: radial-gradient(circle at top left, #1689A4, #0ABEE5);
+    background: radial-gradient(circle at top left, #1D8AA2, #0CBEE5);
     bottom: calc(var(--row-height) * 3);
     position: absolute;
   }
@@ -2819,14 +2819,14 @@ body#collage .cats_music {
   /* when tags are set to display in profile settings. */
   #taglist tr.label {
     height: auto;
-    border: thick solid #0ABEE5;
+    border: thick solid #0CBEE5;
   }
   #taglist tr.label td {
-    background: #1689A4;
-    color: #0ABEE5;
+    background: #1D8AA2;
+    color: #0CBEE5;
     align-content: center;
     text-align: center;
-    border: #0ABEE5;
+    border: #0CBEE5;
     width: 100%;
   }
   #taglist tr.label td::after {
@@ -2845,8 +2845,8 @@ body#collage .cats_music {
     text-overflow: ellipsis;
     font-style: italic;
     vertical-align: baseline;
-    color: #0ABEE5 !important; /*$tag-bubble-background-color;*/
-    background: #1689A4;
+    color: #0CBEE5 !important; /*$tag-bubble-background-color;*/
+    background: #1D8AA2;
     padding: 0.25rem;
     border-radius: 1rem;
     margin-bottom: 0.1rem;
@@ -2897,8 +2897,8 @@ body#torrents div.box.box_tags li > a:first-child {
   font-weight: 700;
   font-size: 0.6rem;
   vertical-align: baseline;
-  color: #0ABEE5;
-  background: #1689A4;
+  color: #0CBEE5;
+  background: #1D8AA2;
   padding: 0 0.5rem;
   border-radius: 1rem;
   margin-bottom: 0.1rem;
@@ -2917,8 +2917,8 @@ body#torrents div.box.box_tags li > a:first-child {
 table.torrent_table.cats.checkboxes.border.m_table td.td_info.big_info div.group_info.clear div.tags a:hover,
 table.torrent_table.cats.m_table td.td_info.big_info div.group_info.clear div.tags a:hover,
 body#torrents div.box.box_tags li > a:first-child:hover {
-  color: #1689A4 !important;
-  background: #0ABEE5 !important;
+  color: #1D8AA2 !important;
+  background: #0CBEE5 !important;
   transition: all 0.15s cubic-bezier(0.25, 0.8, 0.25, 1);
   box-shadow: rgba(0, 0, 0, 0.25) 0 14px 28px, rgba(0, 0, 0, 0.22) 0 10px 10px;
 }

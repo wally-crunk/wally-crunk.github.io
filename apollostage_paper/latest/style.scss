@@ -9,7 +9,7 @@
 
 // and override as follows: -- palettte.app was helpful for this
 
-  $apols-paper-start__foo: #000000;
+  $apols-paper-start__foo: -000000;
   $back-100: #EBEFF0;
   $back-200: #DEE2E2;
   $back-300: #D0D4D5;
@@ -20,16 +20,16 @@
   $back-800: #8D9091;
   $back-900: #808384;
   $back-1000: #727576;
-  $foo: #000000;
-  $mid-100: #17788E;
-  $mid-200: #168199;
-  $mid-300: #1689A4;
-  $mid-400: #1593AF;
-  $mid-500: #139BB9;
-  $mid-600: #11A5C4;
-  $mid-700: #0FADCF;
-  $mid-800: #0DB6DA;
-  $mid-900: #0ABEE5;
+  $foo: -000000;
+  $mid-100: #1F788C;
+  $mid-200: #1F8297;
+  $mid-300: #1D8AA2;
+  $mid-400: #1C94AE;
+  $mid-500: #199CB9;
+  $mid-600: #17A5C4;
+  $mid-700: #13ADCF;
+  $mid-800: #10B6DA;
+  $mid-900: #0CBEE5;
   $mid-1000: #07C7F0;
   $foo: #020208;
 
@@ -81,7 +81,7 @@ $userinfo-background-color-2: $mid-300; // mobile pulldown menu gradient 2
 
 $gradient-color-1: $mid-900;	// usually works well with 'third-child'
 $gradient-color-2: $mid-300;	// usually works well with 'seventh-child'
-$notification-background-color: #000000;
+$notification-background-color: -000000;
 
 // these are GNDN: goes nowhere, does nothing
 
@@ -138,23 +138,23 @@ $site-logo-lockup: url("https://wally-crunk.github.io/svg/orpheus/ops-logo-locku
 
 // Forum icons
 
-$unread-icon: url("https://wally-crunk.github.io/svg/gazelle/document-round#000.svg");
-$unread-locked-icon: url("https://wally-crunk.github.io/svg/gazelle/lock-round#000.svg");
-$unread-sticky-icon: url("https://wally-crunk.github.io/svg/gazelle/pin-round#000.svg");
-$unread-locked-sticky-icon: url("https://wally-crunk.github.io/svg/gazelle/pin-and-lock-round#000.svg");
+$unread-icon: url("https://wally-crunk.github.io/svg/gazelle/document-round-000.svg");
+$unread-locked-icon: url("https://wally-crunk.github.io/svg/gazelle/lock-round-000.svg");
+$unread-sticky-icon: url("https://wally-crunk.github.io/svg/gazelle/pin-round-000.svg");
+$unread-locked-sticky-icon: url("https://wally-crunk.github.io/svg/gazelle/pin-and-lock-round-000.svg");
 
-$read-icon: url("https://wally-crunk.github.io/svg/gazelle/document#000.svg");
-$read-locked-icon: url("https://wally-crunk.github.io/svg/gazelle/lock#000.svg");
-$read-sticky-icon: url("https://wally-crunk.github.io/svg/gazelle/pin#000.svg");
-$read-locked-sticky-icon: url("https://wally-crunk.github.io/svg/gazelle/pin-and-lock#000.svg");
+$read-icon: url("https://wally-crunk.github.io/svg/gazelle/document-000.svg");
+$read-locked-icon: url("https://wally-crunk.github.io/svg/gazelle/lock-000.svg");
+$read-sticky-icon: url("https://wally-crunk.github.io/svg/gazelle/pin-000.svg");
+$read-locked-sticky-icon: url("https://wally-crunk.github.io/svg/gazelle/pin-and-lock-000.svg");
 
 // Header Pulldown Menu (hamburger/chevron icon)
 // not changing, still dark background
 
 // Used on Mobile
-$number-snatches-icon: url("https://wally-crunk.github.io/svg/gazelle/arrow-loop#000.svg");
-$number-seeders-icon: url("https://wally-crunk.github.io/svg/gazelle/arrow-up-round#000.svg");
-$number-leechers-icon: url("https://wally-crunk.github.io/svg/gazelle/arrow-down-round#000.svg");
+$number-snatches-icon: url("https://wally-crunk.github.io/svg/gazelle/arrow-loop-000.svg");
+$number-seeders-icon: url("https://wally-crunk.github.io/svg/gazelle/arrow-up-round-000.svg");
+$number-leechers-icon: url("https://wally-crunk.github.io/svg/gazelle/arrow-down-round-000.svg");
 
 @import '../apollostage/_base';
 
