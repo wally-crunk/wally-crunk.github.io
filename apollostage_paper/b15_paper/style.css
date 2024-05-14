@@ -139,7 +139,7 @@ pre, code {
   font-optical-sizing: auto;
   font-variant-ligatures: no-contextual;
   font-weight: 200;
-  color: #242760;
+  color: #182d43;
 }
 
 h1,
@@ -148,7 +148,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #242760;
+  color: #182d43;
   line-height: normal;
   margin: 8px 0;
   max-width: 100%;
@@ -182,12 +182,12 @@ h5 {
 }
 
 a {
-  color: #19209D;
+  color: #0e58a6;
   text-decoration: none;
 }
 
 a:hover {
-  color: #1521CB;
+  color: #1079cc;
 }
 
 a:active,
@@ -251,16 +251,16 @@ textarea:focus {
 }
 
 svg|a {
-  fill: #19209D;
+  fill: #0e58a6;
 }
 
 svg|a:hover {
-  fill: #1521CB;
+  fill: #1079cc;
 }
 
 b,
 strong {
-  color: #242760;
+  color: #182d43;
   font-weight: 600;
 }
 
@@ -292,7 +292,7 @@ blockquote {
 
 ::selection {
   background-color: #07C7F0;
-  color: #242760;
+  color: #182d43;
 }
 
 form input {
@@ -369,7 +369,7 @@ form {
 }
 
 form table td.label {
-  color: #242760;
+  color: #182d43;
   padding-top: 9px;
   font-weight: 600;
   text-align: right;
@@ -389,7 +389,7 @@ input[type=submit] {
   background: linear-gradient(#DEE2E2, #A7ABAC);
   border: none;
   border-radius: 1.5px;
-  color: #242760;
+  color: #182d43;
   cursor: pointer;
   font-weight: 600;
   height: 32px;
@@ -422,7 +422,7 @@ input[type=search]:focus,
 select:focus,
 textarea:focus {
   border: 1px solid #0ABEE5;
-  color: #19209D;
+  color: #0e58a6;
 }
 
 textarea {
@@ -584,7 +584,7 @@ table.box2 {
 /* #2024 note: Many of these appear to be overridden by
  * global.css or auto-complete.css: your mileage may vary. */
 .autocomplete-suggestions {
-  background-color: #19209D;
+  background-color: #0e58a6;
   border: none;
   color: #26282e;
   margin-top: 4px;
@@ -596,7 +596,7 @@ table.box2 {
 }
 
 .autocomplete-suggestions .autocomplete-suggestion.autocomplete-selected {
-  background-color: #1521CB;
+  background-color: #1079cc;
 }
 
 .autocomplete-suggestions .autocomplete-suggestion strong {
@@ -754,7 +754,7 @@ table.box2 {
 #menu > ul a:hover,
 #userinfo_minor:hover a:hover,
 #userinfo_username:hover a:hover {
-  background-color: #1521CB;
+  background-color: #1079cc;
 }
 
 #nav_index {
@@ -1114,18 +1114,18 @@ div#flip_view_1 div#similar-artist .name {
 }
 
 .tags a {
-  color: #242760;
+  color: #182d43;
   font-size: 11px;
 }
 
 .tags a:hover {
-  color: #1521CB;
+  color: #1079cc;
 }
 
 .group_info > span:first-child,
 .group_torrent td:first-child > span,
 .torrent_links_block {
-  color: #242760;
+  color: #182d43;
   float: right;
   margin-right: 4px;
 }
@@ -1290,7 +1290,7 @@ ul.collage_images li a > span {
 
 #userform #settings_sections h2 a,
 .rule_short {
-  color: #19209D;
+  color: #0e58a6;
 }
 
 .poll li {
@@ -1357,7 +1357,7 @@ ul.collage_images li a > span {
 
 #discog_table tr[id^=torrents_] :not(a.tooltip.brackets) {
   font-size: 125%;
-  color: #242760;
+  color: #182d43;
 }
 
 /* #2024 style update for
@@ -1383,7 +1383,7 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
 
 #footer {
   width: 100%;
-  color: #242760;
+  color: #182d43;
   font-synthesis: 11px;
   margin: 32px auto 16px;
 }
@@ -1504,7 +1504,7 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
 }
 
 #userform #settings_sections h2 a:hover {
-  color: #1521CB;
+  color: #1079cc;
 }
 
 #userform #settings_sections input {
@@ -1676,12 +1676,12 @@ blockquote {
   background-color: #EBEFF0;
   border: 0 solid #121321;
   border-radius: 2.5px;
-  color: #242760;
+  color: #182d43;
 }
 
 .tooltipster-default .tooltipster-content {
   background-color: #EBEFF0;
-  color: #242760;
+  color: #182d43;
   font-size: 12px;
   line-height: 1.4;
   padding: 4px 6px;
@@ -1689,7 +1689,7 @@ blockquote {
 
 .tooltipster-default .tooltipster-content a {
   background-color: #EBEFF0;
-  color: #242760;
+  color: #182d43;
   font-weight: 600;
 }
 
@@ -1787,7 +1787,7 @@ body#collage .cats_music {
   }
   #menu > ul > #nav_staff > a:hover {
     background-color: transparent;
-    color: #1521CB;
+    color: #1079cc;
   }
   #userinfo_minor::before {
     background: url("https://wally-crunk.github.io/svg/gazelle/chevrons-down.svg") no-repeat;
@@ -1845,13 +1845,13 @@ body#collage .cats_music {
 /* horizontal menu */
 /* #2024 change to styled color instead of #fff to match vertical pulldown menu */
 #menu > ul a:hover {
-  color: #19209D;
+  color: #0e58a6;
 }
 
 /* vertical pulldown menu */
 #userinfo_minor:hover a,
 #userinfo_username:hover a {
-  color: #19209D;
+  color: #0e58a6;
 }
 
 /* Icon revealed when menu is open */
@@ -1920,7 +1920,7 @@ body#collage .cats_music {
 /* first row of each box */
 #noty_bottomRight_layout_container .noty_message {
   background: radial-gradient(circle at top right, #0ABEE5, #1689A4) !important;
-  color: #19209D !important;
+  color: #0e58a6 !important;
   font-weight: 700;
   padding: 0 !important;
 }
@@ -2273,7 +2273,7 @@ body#collage .cats_music {
   .td_seeders.m_td_right::before,
   .td_leechers.m_td_right::before {
     background: left/10px no-repeat url("https://wally-crunk.github.io/svg/gazelle/arrow-loop#000.svg");
-    color: #242760;
+    color: #182d43;
     content: ":";
     filter: brightness(80%);
     position: absolute;
@@ -2722,7 +2722,7 @@ body#collage .cats_music {
     right: 2vw;
     width: 60vw;
     margin: auto;
-    color: #20257F;
+    color: #114780;
     top: calc(100% - var(--row-height) * 10 - 125px);
     height: calc(2.4 * var(--row-height));
     flex-direction: column;
