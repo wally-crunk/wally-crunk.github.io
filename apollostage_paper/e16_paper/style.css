@@ -2619,7 +2619,7 @@ body#collage .cats_music {
   }
   /* topbar for mobile ~ "folder tab" when menu is closed */
   #extra4 {
-    background: #5097D5;
+    background: #2D83B5;
     border-radius: 0 0 9px 9px;
     display: block;
     right: 0;
@@ -2704,7 +2704,6 @@ body#collage .cats_music {
     width: 15%;
     z-index: 99999999;
     text-align: center;
-    -debug-background: url("https://placehold.co/20x20/red/black") left bottom no-repeat, url("https://placehold.co/20x20/green/gold") right top no-repeat, url("https://placehold.co/20x20/blue/gold") left top no-repeat, url("https://placehold.co/20x20/yellow/black") right bottom no-repeat;
     background: radial-gradient(circle at top left, #1B78A0, #5E9FDF);
   }
   #logo a {
@@ -2724,14 +2723,14 @@ body#collage .cats_music {
     height: calc(2.4 * var(--row-height));
     flex-direction: column;
     justify-content: space-around;
-    background: #1B78A0;
+    background: #5E9FDF;
   }
   #userinfo_stats {
     left: auto;
     right: 2vw;
     width: 60vw;
     margin: auto;
-    color: #B4825D;
+    color: #16184D;
     top: calc(100% - var(--row-height) * 10 - 125px);
     height: calc(2.4 * var(--row-height));
     flex-direction: column;
@@ -2793,6 +2792,8 @@ body#collage .cats_music {
     height: calc(var(--row-height) - 9px);
   }
   /* END searchboxes */
+  /* ## 3.17.10   Close legend at bottom */
+  /* todo */
   /* ## 3.18 Checkboxes ~ purpose undocumented */
   #extracb1 {
     display: block;
