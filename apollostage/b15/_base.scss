@@ -1,6 +1,6 @@
 /* ################################################################################ */
 /* APOLLOSTAGE THEME */
-/* version 2024.05.13 b15
+/* version 2024.05.14 b15
 /* ################################################################################ */
 
 // SASS/SCSS NOTE
@@ -19,7 +19,7 @@
 /* */
 /* */
 
-/*  # 2024-05-16 - Updated by rubric_alert with hawkeye and community feedback. */
+/*  # 2024-05-14 - Updated by rubric_alert with hawkeye and community feedback. */
 /*  # Fix: mobile menu, category stripes;  
 /*  # Feature: Add SVGs, tag bubbles, italic fonts and more;
 /*  # Chore: Organized and documented the SCSS. */
@@ -28,14 +28,16 @@
 // FULL CHANGELOG:
 //
 //   Fix: Fixed the mobile view (media <480px) with big help from hawkeye. Mobile
-//    menu includes an animation, and handling to prevent keyboard from opening 
-//    on iPh--e and other mobile devices.
+//    menu includes an animation, handling to prevent keyboard from opening 
+//    on iPh--e and other mobile devices, and a link to the home page.
 //
 //   Feature: Replaced all PNGs in the stylesheet with SVGs. SVGs are currently to
 //    be loaded from the gazelle edge server (or github repo), not encoded inline.
 //
 //   Feature: For SVGs, there is clear separation of 'gazelle' (universal) SVG
 //    images into one directory, and site-specific SVGs (like the site logo).
+//
+//   Feature: New 'apollostage_paper' light theme.
 //
 //   Fix: Messages with 'pre' were overrunning their box. Fixed with wrap.
 //
@@ -67,6 +69,10 @@
 //    super long: this CSS doesn't have much structure in Desktop view.)
 //
 //   Feature: theme styling for all notification dialogs.
+//
+//   Fix: Album pages, additional artwork delete buttons [x] misplaced.
+//
+//   Fix: Artist pages, related artists voting buttons aligned incorrectly
 //
 //   Chore: Added comments where feasible.
 //   
