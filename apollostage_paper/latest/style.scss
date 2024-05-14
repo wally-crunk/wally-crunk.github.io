@@ -32,17 +32,12 @@
   $mid-900: #0ABEE5;
   $mid-1000: #07C7F0;
   $foo: #020208;
-  $fore-100: #1B2189;
-  $fore-200: #1F2587;
-  $fore-300: #20247C;
-  $fore-400: #202370;
-  $fore-500: #1D2265;
-  $fore-600: #1F225A;
-  $fore-700: #1E204F;
-  $fore-800: #1C1E43;
-  $fore-900: #1A1C38;
-  $fore-1000: #18192D;
-  
+
+  $fore-100: #121321;
+  $fore-300: #181a41;
+  $fore-500: #161A59;
+  $fore-700: #111569;
+  $fore-900: #0A117A;  
 // define theme colors
 
 $base-background-color: $back-100;
@@ -51,13 +46,13 @@ $table-background-color: $back-400;	// primarily table-odd-rows
 $input-background-color: $back-500; 	// also table-even-rows
 $secondary-table-background-color: $back-700;	// also form field in focus
 
-$input-color: $fore-400;
-$mono-text-color: $fore-400;
-$base-text-color: $fore-500;
-$bold-text-color: $fore-600;
-$a-color: $fore-1000;
-$a-hover-color: $fore-400;
-$button-text-color: $fore-800;
+$input-color: $fore-300;
+$mono-text-color: $fore-300;
+$base-text-color: $fore-100;
+$bold-text-color: $fore-300;
+$a-color: $fore-700;
+$a-hover-color: $fore-900;
+$button-text-color: $fore-300;
 
 $primary-accent-color: $mid-700;	// for portions of headers
 $offset-accent-color: $fore-100;
@@ -104,7 +99,7 @@ $input-background-color: $back-500;
 $input-border-color: $mid-700;
 $input-border-color-active: $mid-900;
 $torrent-background-color: $back-700;
-$footer-color: $fore-200;
+$footer-color: $fore-300;
 $input-color: $back-1000;                   
 $button-base-color-1: $back-200; 		// gradient from here to $a-color
 $button-base-color-2: $back-600;
