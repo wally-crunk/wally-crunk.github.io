@@ -2700,7 +2700,7 @@ body#collage .cats_music {
     position: inherit;
     height: var(--row-height);
     width: 15%;
-    z-index: 99999999;
+    z-index: 999;
     text-align: center;
     background: radial-gradient(circle at top left, #1A9F7E, #0F5B49);
   }
@@ -2721,20 +2721,18 @@ body#collage .cats_music {
     height: calc(2.4 * var(--row-height));
     flex-direction: column;
     justify-content: space-around;
-    background: #0F5B49;
   }
   #userinfo_stats {
     left: auto;
     right: 2vw;
     width: 60vw;
     margin: auto;
-    color: #C3D3C1;
+    color: #C7D7C7;
     top: calc(100% - var(--row-height) * 10 - 125px);
     height: calc(2.4 * var(--row-height));
     flex-direction: column;
     justify-content: space-around;
     text-align: right;
-    background: #0F5B49;
   }
   #userinfo_stats a,
   #userinfo_major a {
