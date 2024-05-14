@@ -1,0 +1,166 @@
+/* APOLLOSTAGE COFFEE THEME */
+/* 2024-05-08c */
+
+// DEFINE THEME COLORS AND ICONS
+
+// import basic colors as a backup:
+
+@import '../apollostage/_variables';
+
+// and override as follows: -- palettte.app was helpful for this
+
+  $back-100: #EBEFF0;
+  $back-200: #DEE2E2;
+  $back-300: #D0D4D5;
+  $back-400: #C2C6C7;
+  $back-500: #B5B9BA;
+  $back-600: #A7ABAC;
+  $back-700: #9A9E9F;
+  $back-800: #8D9091;
+  $back-900: #808384;
+  $back-1000: #727576;
+  $foo: #000000;
+  $mid-100: #17788E;
+  $mid-200: #168199;
+  $mid-300: #1689A4;
+  $mid-400: #1593AF;
+  $mid-500: #139BB9;
+  $mid-600: #11A5C4;
+  $mid-700: #0FADCF;
+  $mid-800: #0DB6DA;
+  $mid-900: #0ABEE5;
+  $mid-1000: #07C7F0;
+  $foo: #020208;
+  $fore-100: #1B2189;
+  $fore-200: #151958;
+  $fore-300: #151852;
+  $fore-400: #16184D;
+  $fore-500: #151848;
+  $fore-600: #171942;
+  $fore-700: #17193D;
+  $fore-800: #171938;
+  $fore-900: #171932;
+  $fore-1000: #18192D;
+  
+// define theme colors
+
+$base-background-color: $back-100;
+$form-background-color: $back-200; 	// also boxes on frontpage
+$table-background-color: $back-400;	// primarily table-odd-rows
+$input-background-color: $back-500; 	// also table-even-rows
+$secondary-table-background-color: $back-700;	// also form field in focus
+
+$input-color: $fore-400;
+$mono-text-color: $fore-400;
+$base-text-color: $fore-500;
+$bold-text-color: $fore-600;
+$a-color: $fore-1000;
+$a-hover-color: $fore-400;
+$button-text-color: $fore-800;
+
+$primary-accent-color: $mid-700;	// for portions of headers
+$offset-accent-color: $fore-100;
+
+// Ten color gradient:
+
+$menu-li-second-child-background-color:	$mid-100; // torrents
+$menu-li-third-child-background-color:	$mid-200; // collages
+$menu-li-fourth-child-background-color:	$mid-300; // requests
+$menu-li-fifth-child-background-color:	$mid-400; // forums
+$menu-li-sixth-child-background-color:	$mid-500; // irc
+$menu-li-seventh-child-background-color:	$mid-600; // top10
+$header-background-color:		$mid-700; // rules, also mobile menu header
+$menu-li-ninth-child-background-color:	$mid-800; // wiki
+$userinfo-username-color:		$mid-900; // username menu ~ closed
+$userinfo-username-hover-background-color:	$mid-700; // username menu ~ open
+$userinfo-minor-color:	$mid-1000; // VV pulldown menu ~ closed
+$userinfo-minor-hover-background-color:	$mid-700; // VV pulldown menu ~ open
+
+// mobile pulldown menu gradient
+
+$userinfo-background-color-1: $mid-900; // mobile pulldown menu gradient 1
+$userinfo-background-color-2: $mid-300; // mobile pulldown menu gradient 2
+
+// notification gradient
+
+$gradient-color-1: $mid-900;	// usually works well with 'third-child'
+$gradient-color-2: $mid-300;	// usually works well with 'seventh-child'
+$notification-background-color: #000000;
+
+// these are GNDN: goes nowhere, does nothing
+
+$menu-background-color-1: #880D1E;  // noop
+$menu-background-color-2: #DD2D4A;  // noop
+
+// formatting colors for page elements
+
+$blockquote-background-color: $mid-100;
+$torrent-background-color: $back-200;
+$blockquote-border-color: $back-600;
+$box-background-color: $back-700;
+$box-border-color: $back-900; 
+$input-background-color: $back-500;	 
+$input-border-color: $mid-700;
+$input-border-color-active: $mid-900;
+$torrent-background-color: $back-700;
+$footer-color: $fore-200;
+$input-color: $back-1000;                   
+$button-base-color-1: $back-200; 		// gradient from here to $a-color
+$button-base-color-2: $back-600;
+$ratio-red-color: #a62929;
+$ratio-yellow-color: #e3ba65;
+$ratio-green-color: #3aa63a;
+$selection-background-color: $mid-1000;
+$selection-foreground-color: $bold-text-color; // usually #fff or $bold-text-color
+$poll-background-color: rgb(131 228 166 / 10%);
+
+// overrides these colors when called: for more theme flavor?
+
+$span-green-color: #4eb44e;
+$span-blue-color: #4e4ee7;
+
+// accent color for upload categories (stripes)
+
+$accent-color-cats_music: #fd6659;
+$accent-color-cats_applications: #f02940;
+$accent-color-cats_audiobooks: #a54873;
+$accent-color-cats_comedy: #8b869c;
+$accent-color-cats_comics: #688187;
+$accent-color-cats_ebooks: #578f9d;
+$accent-color-cats_elearningvideos: #793555;
+
+// accent color for tag bubbles
+
+// These can equal "ninth" and "second"
+// or adjust contrast as desired to emphasize/de-emphaszie
+$tag-bubble-background-color: $mid-300; 
+$tag-bubble-foreground-color: $mid-900; 
+
+// Site header ~ need light background version
+
+$site-logo-lockup: url("https://wally-crunk.github.io/svg/orpheus/ops-logo-lockup-whiteusage.svg");
+
+// Forum icons
+
+$unread-icon: url("https://wally-crunk.github.io/svg/gazelle/document-round#000.svg");
+$unread-locked-icon: url("https://wally-crunk.github.io/svg/gazelle/lock-round#000.svg");
+$unread-sticky-icon: url("https://wally-crunk.github.io/svg/gazelle/pin-round#000.svg");
+$unread-locked-sticky-icon: url("https://wally-crunk.github.io/svg/gazelle/pin-and-lock-round#000.svg");
+
+$read-icon: url("https://wally-crunk.github.io/svg/gazelle/document#000.svg");
+$read-locked-icon: url("https://wally-crunk.github.io/svg/gazelle/lock#000.svg");
+$read-sticky-icon: url("https://wally-crunk.github.io/svg/gazelle/pin#000.svg");
+$read-locked-sticky-icon: url("https://wally-crunk.github.io/svg/gazelle/pin-and-lock#000.svg");
+
+// Header Pulldown Menu (hamburger/chevron icon)
+// not changing, still dark background
+
+// Used on Mobile
+$number-snatches-icon: url("https://wally-crunk.github.io/svg/gazelle/arrow-loop#000.svg");
+$number-seeders-icon: url("https://wally-crunk.github.io/svg/gazelle/arrow-up-round#000.svg");
+$number-leechers-icon: url("https://wally-crunk.github.io/svg/gazelle/arrow-down-round#000.svg");
+
+@import '../apollostage/_base';
+
+// EOF
+
