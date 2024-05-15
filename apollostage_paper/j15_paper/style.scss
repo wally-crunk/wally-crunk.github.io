@@ -20,16 +20,16 @@
   $back-900: #808384;
   $back-1000: #727576;
    $foo: #000000;
-  $mid-100: #0D7D97;
-  $mid-200: #0D87A1;
-  $mid-300: #0C8EAB;
-  $mid-400: #0C97B5;
-  $mid-500: #0C9EBE;
-  $mid-600: #0BA7C8;
-  $mid-700: #0AAED2;
-  $mid-800: #09B7DC;
-  $mid-900: #08BEE6;
-  $mid-1000: #07C7F0;
+  $mid-100:  #97A69B;
+  $mid-200:  #90A7A0;
+  $mid-300:  #89A7A7;
+  $mid-400:  #82A3A8;
+  $mid-500:  #7B9CA9;
+  $mid-600:  #7397AA;
+  $mid-700:  #6C96AB;
+  $mid-800:  #6496AC;
+  $mid-900:  #5C97AD;
+  $mid-1000: #5596AE;
     $foo: #020208;
   $fore-100: #121321;
   $fore-300: #182d43;
@@ -53,7 +53,7 @@ $a-color: $fore-700;
 $a-hover-color: $fore-900;
 $button-text-color: $fore-300;
 
-$primary-accent-color: $mid-700;	// for portions of headers
+$primary-accent-color: $fore-300;	// for portions of headers
 $offset-accent-color: $fore-100;
 
 // Ten color gradient:
@@ -159,7 +159,7 @@ $number-leechers-icon: url("https://wally-crunk.github.io/svg/gazelle/arrow-down
 
 /* local overrides for this theme */
 
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wdth,wght@0,87.5,300..800;1,87.5,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wdth,wght@0,87.5,300..800;1,87.5,300..800&display=swap');
 
 body, textarea {
  font-family: "Merriweather Sans", Noto, "Noto Sans", sans-serif;
@@ -172,6 +172,34 @@ body, textarea {
   font-size: 12px;
   line-height: 1.6;
   margin: 0 8px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ {
+    font-family: 'Merriweather', Noto, 'Noto Sans', 'Open Sans', Tahoma, sans-serif;
+    font-weight: 700;
+ }
+
+ul#check:after {
+  content: 'BETA:  Warning!  There were one or more errors in your submission. Check below for error messages.';
+  font-weight: 700;
+  position: absolute;
+  top: calc(4*16px);
+  left: 50vw;
+  transform: translateX(-50%);
+  color: black;
+  border: thick solid orangered;
+  border-radius: .25rem;
+  padding: 2rem 1rem 2rem 48px;
+  background: color-mix(in srgb, lightyellow, transparent 20%);
+  background-image: url('https://wally-crunk.github.io/svg/gazelle/x.svg');
+  background-repeat:no-repeat;
+  background-position: 8px center;
+  background-size: 32px; 
 }
 
 // EOF
