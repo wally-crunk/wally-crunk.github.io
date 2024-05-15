@@ -605,7 +605,7 @@ table.box2 {
 }
 
 .forum_post.forum_unread {
-  border-top: 2px solid #121321;
+  border-top: 2px solid #B6C9AD;
 }
 
 .forum_post .avatar {
@@ -653,7 +653,7 @@ table.box2 {
 
 .last_read ::before {
   content: "➤";
-  color: #121321;
+  color: #B6C9AD;
   display: inline-block;
 }
 
@@ -1306,7 +1306,7 @@ ul.collage_images li a > span {
 }
 
 .poll .graph span {
-  background-color: #121321;
+  background-color: #B6C9AD;
   display: block;
   float: left;
   height: 8px;
@@ -1675,7 +1675,7 @@ blockquote {
 
 .tooltipster-default {
   background-color: #EBEFF0;
-  border: 0 solid #121321;
+  border: 0 solid #B6C9AD;
   border-radius: 2.5px;
   color: #182d43;
 }
@@ -1696,7 +1696,7 @@ blockquote {
 
 .alertbar,
 .tooltipster-default .tooltipster-content a:hover {
-  color: #121321;
+  color: #B6C9AD;
 }
 
 /* # 1.4 BEGIN UPLOAD CATEGORY DECORATION STRIPING */
