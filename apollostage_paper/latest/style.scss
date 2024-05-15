@@ -157,6 +157,10 @@ $number-leechers-icon: url("https://wally-crunk.github.io/svg/gazelle/arrow-down
 
 @import '../apollostage/_base';
 
+/* local overrides for this theme */
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wdth,wght@0,87.5,300..800;1,87.5,300..800&display=swap');
+
 body, textarea {
  font-family: "Merriweather Sans", Noto, "Noto Sans", sans-serif;
   font-optical-sizing: auto;

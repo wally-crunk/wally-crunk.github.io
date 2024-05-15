@@ -90,6 +90,7 @@
 /* ## 0.1 Housekeeping and font loading */
 /* Finally add WOFF and Italic support */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wdth,wght@0,87.5,300..800;1,87.5,300..800&display=swap");
 @namespace url("http://www.w3.org/1999/xhtml");
 @namespace svg url("http://www.w3.org/2000/svg");
 /* END font loading */
@@ -2964,6 +2965,7 @@ table.torrent_table.cats.m_table td.td_info.big_info div.group_info.clear div.ta
 /* ####### */
 /* # EOF # */
 /* ####### */
+/* local overrides for this theme */
 body, textarea {
   font-family: "Merriweather Sans", Noto, "Noto Sans", sans-serif;
   font-optical-sizing: auto;
