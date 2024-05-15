@@ -140,7 +140,7 @@ pre, code {
   font-optical-sizing: auto;
   font-variant-ligatures: no-contextual;
   font-weight: 200;
-  color: #182d43;
+  color: #0F2136;
 }
 
 h1,
@@ -149,7 +149,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #114780;
+  color: #0F2136;
   line-height: normal;
   margin: 8px 0;
   max-width: 100%;
@@ -161,7 +161,7 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-  color: #182d43;
+  color: #0F2136;
 }
 
 h1,
@@ -183,12 +183,12 @@ h5 {
 }
 
 a {
-  color: #0e58a6;
+  color: #13385F;
   text-decoration: none;
 }
 
 a:hover {
-  color: #1079cc;
+  color: #134771;
 }
 
 a:active,
@@ -252,16 +252,16 @@ textarea:focus {
 }
 
 svg|a {
-  fill: #0e58a6;
+  fill: #13385F;
 }
 
 svg|a:hover {
-  fill: #1079cc;
+  fill: #134771;
 }
 
 b,
 strong {
-  color: #114780;
+  color: #0F2136;
   font-weight: 600;
 }
 
@@ -293,7 +293,7 @@ blockquote {
 
 ::selection {
   background-color: #5596AE;
-  color: #114780;
+  color: #0F2136;
 }
 
 form input {
@@ -370,7 +370,7 @@ form {
 }
 
 form table td.label {
-  color: #182d43;
+  color: #0F2136;
   padding-top: 9px;
   font-weight: 600;
   text-align: right;
@@ -390,7 +390,7 @@ input[type=submit] {
   background: linear-gradient(#DEE2E2, #A7ABAC);
   border: none;
   border-radius: 1.5px;
-  color: #182d43;
+  color: #0F2136;
   cursor: pointer;
   font-weight: 600;
   height: 32px;
@@ -423,7 +423,7 @@ input[type=search]:focus,
 select:focus,
 textarea:focus {
   border: 1px solid #5C97AD;
-  color: #0e58a6;
+  color: #13385F;
 }
 
 textarea {
@@ -585,7 +585,7 @@ table.box2 {
 /* #2024 note: Many of these appear to be overridden by
  * global.css or auto-complete.css: your mileage may vary. */
 .autocomplete-suggestions {
-  background-color: #0e58a6;
+  background-color: #13385F;
   border: none;
   color: #26282e;
   margin-top: 4px;
@@ -597,7 +597,7 @@ table.box2 {
 }
 
 .autocomplete-suggestions .autocomplete-suggestion.autocomplete-selected {
-  background-color: #1079cc;
+  background-color: #134771;
 }
 
 .autocomplete-suggestions .autocomplete-suggestion strong {
@@ -605,7 +605,7 @@ table.box2 {
 }
 
 .forum_post.forum_unread {
-  border-top: 2px solid #121321;
+  border-top: 2px solid #112C49;
 }
 
 .forum_post .avatar {
@@ -653,7 +653,7 @@ table.box2 {
 
 .last_read ::before {
   content: "➤";
-  color: #121321;
+  color: #112C49;
   display: inline-block;
 }
 
@@ -755,7 +755,7 @@ table.box2 {
 #menu > ul a:hover,
 #userinfo_minor:hover a:hover,
 #userinfo_username:hover a:hover {
-  background-color: #1079cc;
+  background-color: #134771;
 }
 
 #nav_index {
@@ -883,7 +883,7 @@ table.box2 {
 }
 
 .linkbox > strong {
-  color: #182d43;
+  color: #0F2136;
 }
 
 #footer,
@@ -1115,18 +1115,18 @@ div#flip_view_1 div#similar-artist .name {
 }
 
 .tags a {
-  color: #182d43;
+  color: #0F2136;
   font-size: 11px;
 }
 
 .tags a:hover {
-  color: #1079cc;
+  color: #134771;
 }
 
 .group_info > span:first-child,
 .group_torrent td:first-child > span,
 .torrent_links_block {
-  color: #182d43;
+  color: #0F2136;
   float: right;
   margin-right: 4px;
 }
@@ -1291,7 +1291,7 @@ ul.collage_images li a > span {
 
 #userform #settings_sections h2 a,
 .rule_short {
-  color: #0e58a6;
+  color: #13385F;
 }
 
 .poll li {
@@ -1306,7 +1306,7 @@ ul.collage_images li a > span {
 }
 
 .poll .graph span {
-  background-color: #121321;
+  background-color: #112C49;
   display: block;
   float: left;
   height: 8px;
@@ -1358,7 +1358,7 @@ ul.collage_images li a > span {
 
 #discog_table tr[id^=torrents_] :not(a.tooltip.brackets) {
   font-size: 125%;
-  color: #114780;
+  color: #0F2136;
 }
 
 /* #2024 style update for
@@ -1366,7 +1366,7 @@ ul.collage_images li a > span {
 #discog_table .discog strong a,
 #discog_table td.td_info.big_info div.group_info.clear strong a {
   font-size: 115%;
-  color: #182d43;
+  color: #0F2136;
 }
 
 /* #2024 style update for
@@ -1384,7 +1384,7 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
 
 #footer {
   width: 100%;
-  color: #182d43;
+  color: #0F2136;
   font-synthesis: 11px;
   margin: 32px auto 16px;
 }
@@ -1431,7 +1431,7 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
 }
 
 #musicbrainz_popup a:hover {
-  color: #182d43;
+  color: #0F2136;
 }
 
 #musicbrainz_popup .brackets {
@@ -1505,7 +1505,7 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
 }
 
 #userform #settings_sections h2 a:hover {
-  color: #1079cc;
+  color: #134771;
 }
 
 #userform #settings_sections input {
@@ -1675,14 +1675,14 @@ blockquote {
 
 .tooltipster-default {
   background-color: #EBEFF0;
-  border: 0 solid #121321;
+  border: 0 solid #112C49;
   border-radius: 2.5px;
-  color: #182d43;
+  color: #0F2136;
 }
 
 .tooltipster-default .tooltipster-content {
   background-color: #EBEFF0;
-  color: #182d43;
+  color: #0F2136;
   font-size: 12px;
   line-height: 1.4;
   padding: 4px 6px;
@@ -1690,13 +1690,13 @@ blockquote {
 
 .tooltipster-default .tooltipster-content a {
   background-color: #EBEFF0;
-  color: #182d43;
+  color: #0F2136;
   font-weight: 600;
 }
 
 .alertbar,
 .tooltipster-default .tooltipster-content a:hover {
-  color: #121321;
+  color: #112C49;
 }
 
 /* # 1.4 BEGIN UPLOAD CATEGORY DECORATION STRIPING */
@@ -1788,7 +1788,7 @@ body#collage .cats_music {
   }
   #menu > ul > #nav_staff > a:hover {
     background-color: transparent;
-    color: #1079cc;
+    color: #134771;
   }
   #userinfo_minor::before {
     background: url("https://wally-crunk.github.io/svg/gazelle/chevrons-down.svg") no-repeat;
@@ -1846,13 +1846,13 @@ body#collage .cats_music {
 /* horizontal menu */
 /* #2024 change to styled color instead of #fff to match vertical pulldown menu */
 #menu > ul a:hover {
-  color: #0e58a6;
+  color: #13385F;
 }
 
 /* vertical pulldown menu */
 #userinfo_minor:hover a,
 #userinfo_username:hover a {
-  color: #0e58a6;
+  color: #13385F;
 }
 
 /* Icon revealed when menu is open */
@@ -1921,7 +1921,7 @@ body#collage .cats_music {
 /* first row of each box */
 #noty_bottomRight_layout_container .noty_message {
   background: radial-gradient(circle at top right, #5C97AD, #89A7A7) !important;
-  color: #0e58a6 !important;
+  color: #13385F !important;
   font-weight: 700;
   padding: 0 !important;
 }
@@ -1953,7 +1953,7 @@ body#collage .cats_music {
   color: #89A7A7 !important;
   background-color: #5C97AD;
   border-radius: 14px;
-  border: thin solid #182d43;
+  border: thin solid #0F2136;
   transition: all 0.15s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
@@ -2274,7 +2274,7 @@ body#collage .cats_music {
   .td_seeders.m_td_right::before,
   .td_leechers.m_td_right::before {
     background: left/10px no-repeat url("https://wally-crunk.github.io/svg/gazelle/arrow-loop-000.svg");
-    color: #114780;
+    color: #0F2136;
     content: ":";
     filter: brightness(80%);
     position: absolute;
@@ -2723,7 +2723,7 @@ body#collage .cats_music {
     right: 2vw;
     width: 60vw;
     margin: auto;
-    color: #114780;
+    color: #112C49;
     top: calc(100% - var(--row-height) * 10 - 125px);
     height: calc(2.4 * var(--row-height));
     flex-direction: column;
