@@ -161,7 +161,7 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-  color: #5596AE;
+  color: #182d43;
 }
 
 h1,
@@ -883,7 +883,7 @@ table.box2 {
 }
 
 .linkbox > strong {
-  color: #5596AE;
+  color: #182d43;
 }
 
 #footer,
@@ -1366,7 +1366,7 @@ ul.collage_images li a > span {
 #discog_table .discog strong a,
 #discog_table td.td_info.big_info div.group_info.clear strong a {
   font-size: 115%;
-  color: #5596AE;
+  color: #182d43;
 }
 
 /* #2024 style update for
@@ -1431,7 +1431,7 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
 }
 
 #musicbrainz_popup a:hover {
-  color: #5596AE;
+  color: #182d43;
 }
 
 #musicbrainz_popup .brackets {
@@ -1953,7 +1953,7 @@ body#collage .cats_music {
   color: #89A7A7 !important;
   background-color: #5C97AD;
   border-radius: 14px;
-  border: thin solid #5596AE;
+  border: thin solid #182d43;
   transition: all 0.15s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
