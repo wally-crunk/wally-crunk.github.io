@@ -161,7 +161,7 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-  color: #182d43;
+  color: #B6C9AD;
 }
 
 h1,
@@ -605,7 +605,7 @@ table.box2 {
 }
 
 .forum_post.forum_unread {
-  border-top: 2px solid #B6C9AD;
+  border-top: 2px solid #121321;
 }
 
 .forum_post .avatar {
@@ -653,7 +653,7 @@ table.box2 {
 
 .last_read ::before {
   content: "➤";
-  color: #B6C9AD;
+  color: #121321;
   display: inline-block;
 }
 
@@ -883,7 +883,7 @@ table.box2 {
 }
 
 .linkbox > strong {
-  color: #182d43;
+  color: #B6C9AD;
 }
 
 #footer,
@@ -1306,7 +1306,7 @@ ul.collage_images li a > span {
 }
 
 .poll .graph span {
-  background-color: #B6C9AD;
+  background-color: #121321;
   display: block;
   float: left;
   height: 8px;
@@ -1366,7 +1366,7 @@ ul.collage_images li a > span {
 #discog_table .discog strong a,
 #discog_table td.td_info.big_info div.group_info.clear strong a {
   font-size: 115%;
-  color: #182d43;
+  color: #B6C9AD;
 }
 
 /* #2024 style update for
@@ -1431,7 +1431,7 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
 }
 
 #musicbrainz_popup a:hover {
-  color: #182d43;
+  color: #B6C9AD;
 }
 
 #musicbrainz_popup .brackets {
@@ -1675,7 +1675,7 @@ blockquote {
 
 .tooltipster-default {
   background-color: #EBEFF0;
-  border: 0 solid #B6C9AD;
+  border: 0 solid #121321;
   border-radius: 2.5px;
   color: #182d43;
 }
@@ -1696,7 +1696,7 @@ blockquote {
 
 .alertbar,
 .tooltipster-default .tooltipster-content a:hover {
-  color: #B6C9AD;
+  color: #121321;
 }
 
 /* # 1.4 BEGIN UPLOAD CATEGORY DECORATION STRIPING */
@@ -1953,7 +1953,7 @@ body#collage .cats_music {
   color: #89A7A7 !important;
   background-color: #5C97AD;
   border-radius: 14px;
-  border: thin solid #182d43;
+  border: thin solid #B6C9AD;
   transition: all 0.15s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
