@@ -159,7 +159,7 @@ $number-leechers-icon: url("https://wally-crunk.github.io/svg/gazelle/arrow-down
 
 /* local overrides for this theme */
 
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wdth,wght@0,87.5,300..800;1,87.5,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wdth,wght@0,87.5,300..800;1,87.5,300..800&display=swap');
 
 body, textarea {
  font-family: "Merriweather Sans", Noto, "Noto Sans", sans-serif;
@@ -173,6 +173,15 @@ body, textarea {
   line-height: 1.6;
   margin: 0 8px;
 }
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ {
+    font-family: 'Merriweather', Noto, 'Noto Sans', 'Open Sans', Tahoma, sans-serif;
+    font-weight: 700;
+ }
 // EOF
 
