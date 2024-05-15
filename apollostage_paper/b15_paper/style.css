@@ -149,7 +149,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #182d43;
+  color: #114780;
   line-height: normal;
   margin: 8px 0;
   max-width: 100%;
@@ -161,7 +161,7 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-  color: #B6C9AD;
+  color: #182d43;
 }
 
 h1,
@@ -261,7 +261,7 @@ svg|a:hover {
 
 b,
 strong {
-  color: #182d43;
+  color: #114780;
   font-weight: 600;
 }
 
@@ -293,7 +293,7 @@ blockquote {
 
 ::selection {
   background-color: #5596AE;
-  color: #182d43;
+  color: #114780;
 }
 
 form input {
@@ -883,7 +883,7 @@ table.box2 {
 }
 
 .linkbox > strong {
-  color: #B6C9AD;
+  color: #182d43;
 }
 
 #footer,
@@ -1358,7 +1358,7 @@ ul.collage_images li a > span {
 
 #discog_table tr[id^=torrents_] :not(a.tooltip.brackets) {
   font-size: 125%;
-  color: #182d43;
+  color: #114780;
 }
 
 /* #2024 style update for
@@ -1366,7 +1366,7 @@ ul.collage_images li a > span {
 #discog_table .discog strong a,
 #discog_table td.td_info.big_info div.group_info.clear strong a {
   font-size: 115%;
-  color: #B6C9AD;
+  color: #182d43;
 }
 
 /* #2024 style update for
@@ -1431,7 +1431,7 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
 }
 
 #musicbrainz_popup a:hover {
-  color: #B6C9AD;
+  color: #182d43;
 }
 
 #musicbrainz_popup .brackets {
@@ -1953,7 +1953,7 @@ body#collage .cats_music {
   color: #89A7A7 !important;
   background-color: #5C97AD;
   border-radius: 14px;
-  border: thin solid #B6C9AD;
+  border: thin solid #182d43;
   transition: all 0.15s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
@@ -2274,7 +2274,7 @@ body#collage .cats_music {
   .td_seeders.m_td_right::before,
   .td_leechers.m_td_right::before {
     background: left/10px no-repeat url("https://wally-crunk.github.io/svg/gazelle/arrow-loop-000.svg");
-    color: #182d43;
+    color: #114780;
     content: ":";
     filter: brightness(80%);
     position: absolute;
