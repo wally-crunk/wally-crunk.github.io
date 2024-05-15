@@ -384,7 +384,9 @@ form input {
 table,
 table .rowa:nth-child(even),
 table .rowb:nth-child(even),
-#dnulist tr:not(.colhead, .colhead_dark):nth-child(even) {
+#dnulist tr:not(.colhead, .colhead_dark):nth-child(even)
+#upload tr:nth-child(even) 
+ {
     background-color: $table-background-color;
 }
 
@@ -401,7 +403,9 @@ table .rowb {
 
 table .rowa:nth-child(odd),
 table .rowb:nth-child(odd),
-#dnulist tr:not(.colhead, .colhead_dark):nth-child(odd) {
+#dnulist tr:not(.colhead, .colhead_dark):nth-child(odd)
+#upload tr:nth-child(even) 
+{
     background-color: $input-background-color;
 }
 

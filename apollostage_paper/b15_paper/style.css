@@ -303,7 +303,7 @@ form input {
 table,
 table .rowa:nth-child(even),
 table .rowb:nth-child(even),
-#dnulist tr:not(.colhead, .colhead_dark):nth-child(even) {
+#dnulist tr:not(.colhead, .colhead_dark):nth-child(even) #upload tr:nth-child(even) {
   background-color: #C2C6C7;
 }
 
@@ -320,7 +320,7 @@ table .rowb {
 
 table .rowa:nth-child(odd),
 table .rowb:nth-child(odd),
-#dnulist tr:not(.colhead, .colhead_dark):nth-child(odd) {
+#dnulist tr:not(.colhead, .colhead_dark):nth-child(odd) #upload tr:nth-child(even) {
   background-color: #B5B9BA;
 }
 
@@ -2987,6 +2987,24 @@ h5,
 h6 {
   font-family: "Merriweather", Noto, "Noto Sans", "Open Sans", Tahoma, sans-serif;
   font-weight: 700;
+}
+
+ul#check:after {
+  content: "BETA:  Warning!  There were one or more errors in your submission. Check below for error messages.";
+  font-weight: 700;
+  position: absolute;
+  top: 64px;
+  left: 50vw;
+  transform: translateX(-50%);
+  color: black;
+  border: thick solid orangered;
+  border-radius: 0.25rem;
+  padding: 2rem 1rem 2rem 48px;
+  background: color-mix(in srgb, lightyellow, transparent 20%);
+  background-image: url("https://wally-crunk.github.io/svg/gazelle/x.svg");
+  background-repeat: no-repeat;
+  background-position: 8px center;
+  background-size: 32px;
 }
 
 /*# sourceMappingURL=style.css.map */
