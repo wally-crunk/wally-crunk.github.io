@@ -160,7 +160,7 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-  color: #1ED4F5;
+  color: #1A9F7E;
 }
 
 h1,
@@ -207,7 +207,7 @@ textarea:focus {
 .box .box.pad,
 .main_column .box.pad:not(#reply_box) {
   background-color: rgba(80, 80, 80, 0.4392156863);
-  border: 2px solid rgba(245, 40, 145, 0.6);
+  border: 2px solid #212A2D;
   margin: 8px;
   border-radius: 0.25rem;
 }
@@ -385,7 +385,8 @@ textarea {
 
 button,
 input[type=button],
-input[type=submit] {
+input[type=submit],
+#popup_close {
   background: linear-gradient(#b8b8b8, #E5EFE9);
   border: none;
   border-radius: 1.5px;
@@ -398,7 +399,8 @@ input[type=submit] {
 
 button:active,
 input[type=button]:active,
-input[type=submit]:active {
+input[type=submit]:active,
+#popup_close:active {
   background: linear-gradient(#E5EFE9, #b8b8b8);
 }
 
@@ -409,7 +411,7 @@ input[type=search],
 select,
 textarea {
   background: #383738;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(128, 128, 128, 0.25);
   color: #c2c2c2;
   height: 32px;
   padding: 0 8px;
@@ -421,8 +423,8 @@ input[type=text]:focus,
 input[type=search]:focus,
 select:focus,
 textarea:focus {
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  color: #1DF6FD;
+  border: 1px solid rgba(255, 255, 255, 0.58);
+  color: #e0efef;
 }
 
 textarea {
@@ -478,12 +480,12 @@ span.size10 {
 }
 
 strong.important_text {
-  color: #e74e4e;
+  color: #ee2228;
 }
 
 /* used for anything? */
 strong.important_text_alt {
-  color: #4fb650;
+  color: #22ee28;
 }
 
 .error,
@@ -651,8 +653,8 @@ table.box2 {
 }
 
 .last_read ::before {
-  content: "➤";
-  color: #C7C958;
+  content: "➤"; /* aka ➤ */
+  color: yellow;
   display: inline-block;
 }
 
@@ -859,7 +861,7 @@ table.box2 {
 }
 
 #menu li:nth-child(8) {
-  background-color: #be46ff;
+  background-color: #1A9F7E;
 }
 
 #menu li:nth-child(9) {
@@ -876,13 +878,14 @@ table.box2 {
   overflow: hidden;
 }
 
+/* linkbox appears near the page h1 header and provides outbound links */
 .linkbox br {
   display: block;
   line-height: 4px;
 }
 
 .linkbox > strong {
-  color: #1ED4F5;
+  color: #1A9F7E;
 }
 
 #footer,
@@ -1352,7 +1355,7 @@ ul.collage_images li a > span {
 /* #2024 style update for
 /* Discog table: for rows 'Albums', 'Compilations', 'Live Albums', etc. */
 #discog_table tr[id^=torrents_] {
-  background-color: #be46ff;
+  background-color: #1A9F7E;
 }
 
 #discog_table tr[id^=torrents_] :not(a.tooltip.brackets) {
@@ -1365,7 +1368,7 @@ ul.collage_images li a > span {
 #discog_table .discog strong a,
 #discog_table td.td_info.big_info div.group_info.clear strong a {
   font-size: 115%;
-  color: #1ED4F5;
+  color: #1A9F7E;
 }
 
 /* #2024 style update for
@@ -1420,23 +1423,27 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
   margin-bottom: 8px;
 }
 
+/* begin upload form MusicBrainz popup */
 #musicbrainz_popup {
-  color: #1d1c1d;
+  color: #C3D3C1;
+  background: #0C4A3B;
   font-weight: 600;
 }
 
 #musicbrainz_popup a {
-  color: #1d1c1d;
+  color: #E5EFE9;
 }
 
 #musicbrainz_popup a:hover {
-  color: #1ED4F5;
+  color: #C3D3C1;
 }
 
 #musicbrainz_popup .brackets {
   font-weight: 400;
 }
 
+/*popup close button, see 'button'*/
+/* END upload form MusicBrainz popup */
 #menu > ul,
 #userinfo_username .username,
 .album_votes .favoritecount {
@@ -1676,12 +1683,12 @@ blockquote {
   background-color: #1d1c1d;
   border: 0 solid #C7C958;
   border-radius: 2.5px;
-  color: #D3C0BA;
+  color: #C7D7C7;
 }
 
 .tooltipster-default .tooltipster-content {
   background-color: #1d1c1d;
-  color: #D3C0BA;
+  color: #C7D7C7;
   font-size: 12px;
   line-height: 1.4;
   padding: 4px 6px;
@@ -1689,13 +1696,13 @@ blockquote {
 
 .tooltipster-default .tooltipster-content a {
   background-color: #1d1c1d;
-  color: #D3C0BA;
+  color: #D3E1D4;
   font-weight: 600;
 }
 
 .alertbar,
 .tooltipster-default .tooltipster-content a:hover {
-  color: #C7C958;
+  color: #E5EFE9;
 }
 
 /* # 1.4 BEGIN UPLOAD CATEGORY DECORATION STRIPING */
@@ -1919,7 +1926,7 @@ body#collage .cats_music {
 
 /* first row of each box */
 #noty_bottomRight_layout_container .noty_message {
-  background: radial-gradient(circle at top right, #9a41db, #9a41db) !important;
+  background: radial-gradient(circle at top right, #20C098, #20C098) !important;
   color: #1DF6FD !important;
   font-weight: 700;
   padding: 0 !important;
@@ -1952,7 +1959,7 @@ body#collage .cats_music {
   color: #ff4cff !important;
   background-color: #fefe78;
   border-radius: 14px;
-  border: thin solid #1ED4F5;
+  border: thin solid #20C098;
   transition: all 0.15s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
@@ -2593,7 +2600,7 @@ body#collage .cats_music {
     opacity: 1;
     transition: all 600ms cubic-bezier(1, 0.01, 0.3, 1.31);
     border-bottom: groove #be46ff;
-    box-shadow: 0px 50px 70px #9a41db, 0 160px 160px #080808;
+    box-shadow: 0px 50px 70px #157D63, 0 160px 160px #080808;
   }
   /* ## 3.17.3 Top Menubar */
   /* pulldown arrow icon for mobile view, top menu */
@@ -2722,7 +2729,7 @@ body#collage .cats_music {
     right: 2vw;
     width: 60vw;
     margin: auto;
-    color: #C7D7C7;
+    color: #C6E6EB;
     top: calc(100% - var(--row-height) * 10 - 125px);
     height: calc(2.4 * var(--row-height));
     flex-direction: column;
@@ -2783,8 +2790,9 @@ body#collage .cats_music {
     height: calc(var(--row-height) - 9px);
   }
   /* END searchboxes */
-  /* ## 3.17.10   Close legend at bottom */
-  /* todo */
+  /* ## 3.17.10  Close button & legend at bottom */
+  /* TODO; for now, click outside the menu
+
   /* ## 3.18 Checkboxes ~ purpose undocumented */
   #extracb1 {
     display: block;

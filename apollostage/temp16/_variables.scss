@@ -28,7 +28,7 @@
   $fore-200: #B6C9AD;
   $fore-300: #BFCEBB;
   $fore-400: #C3D3C1;
-  $direct-fore-500: #C7D7C7;
+  $fore-500: #C7D7C7;
   $fore-600: #CCDCCD;
   $fore-700: #D3E1D4;
   $fore-800: #D9E6DB;
@@ -58,104 +58,95 @@ $text15: #c3c6c6; // in sequence, #A5E4D9;
 $text16: #C1EFE7;
 $text17: #CDF8FF;
 
+$direct-accent-offset: $fore-100;
+$direct-accent-primary: $mid-700;  
+
 // define theme colors
 
+$color-accent-border-blockquote: $back-600;
+$color-accent-border-box: #212A2D;
+$color-accent-border-input-active: rgb(255 255 255 / 58%);
+$color-accent-border-input: rgb(128 128 128 / 25%);
+$color-accent-border-tooltipster: $fore-100;
+$color-accent-cats_applications: silver;
+$color-accent-cats_audiobooks: cornflowerblue;
+$color-accent-cats_comedy: deepskyblue;
+$color-accent-cats_comics: gold;
+$color-accent-cats_ebooks: chocolate;
+$color-accent-cats_elearningvideos: mediumpurple;
+$color-accent-cats_music: darkslategray;
+$color-accent-forum-inline-last-read: yellow;
+$color-accent-forum-unread: $fore-100;
 $color-background-base: $back-100;
-$color-background-form: $back-300; 	// also boxes on frontpage
-$color-background-table: $back-200;	// primarily table-odd-rows
-$color-background-input: $back-500; 	// also table-even-rows
-$color-background-table-secondary: $back-700;	// also form field in focus
-
-$color-text-input: $fore-400;	// for pre-populated inputs
-$color-text-mono: $fore-400;
-$color-text-base: $direct-fore-500;
-$color-text-bold: $fore-600;
-$color-text-anchor: $fore-1000;
-$color-text-anchor-hover: $fore-400;
-$color-text-button: $levelaa;
-
-$direct-accent-primary: $mid-700;	// for portions of headers
-$direct-accent-offset: $fore-100;
-
-// Ten color gradient:
-
-// (L-R Light To Dark Style)
-
-$color-obj-menu-2:	$mid-100; // torrents
-$color-obj-menu-3:	$mid-200; // collages
-$color-obj-menu-5:	$mid-300; // requests
-$color-obj-menu-5:	$mid-400; // forums
-$color-obj-menu-6:	$mid-500; // irc
-$color-obj-menu-7:	$mid-600; // top10
-$color-background-header:		$mid-700; // rules, also mobile menu header
-$color-obj-menu-9:	$mid-800; // wiki
-$color-background-menu-username:		$mid-900; // username menu ~ closed
-$color-background-menu-username-hover:	$mid-700; // username menu ~ open
-$color-background-menu-userinfo:	$mid-1000; // VV pulldown menu ~ closed
-$color-background-menu-userinfo-hover:	$mid-700; // VV pulldown menu ~ open
-
-// (L-R Dark To Light Style)
-// 1000 to 100
-
-// mobile pulldown menu gradient
-
+$color-background-blockquote: $mid-100;
+$color-background-box: #50505070;
+$color-background-form: $back-300;   // also boxes on frontpage
+$color-background-header: $mid-700; // rules, also mobile menu header
+$color-background-input: #252F32;  
+$color-background-input: $back-500;   // also table-even-rows
+$color-background-menu-shadow: $mid-500;
+$color-background-menu-userinfo-hover:  $mid-800; // VV pulldown menu ~ open
+$color-background-menu-userinfo:  $mid-1000; // VV pulldown menu ~ closed
+$color-background-menu-username-hover:  $mid-700; // username menu ~ open
+$color-background-menu-username:  $mid-900; // username menu ~ closed
 $color-background-mobilemenu-userinfo-1: $mid-700; // mobile pulldown menu gradient 1
 $color-background-mobilemenu-userinfo-2: $mid-300; // mobile pulldown menu gradient 2
-
-// notification gradient
-
-$color-background-gradient-1: $mid-900;	// usually works well with 'third-child'
-$color-background-gradient-1: $mid-300;	// usually works well with 'seventh-child'
-$color-notification-background: #000000;
-
-// these are GNDN: goes nowhere, does nothing
-
-$menu-background-color-1: #009999;		// noop
-$menu-background-color-2: #008888;		// noop
-
-// formatting colors for page elements
-
-$color-background-blockquote: $mid-100;
-$color-background-torrent: $back-200;
-$color-accent-blockquote: $back-600;
-$color-background-box: #50505070;
-$box-border-color: #212A2DAA; 
-$color-background-input: #252F32;	
-$color-accent-border-active: rgb(255 255 255 / 8%);
-$color-accent-border-active: rgb(255 255 255 / 20%);
+$color-background-notification-gradient-1: $mid-900; // usually works well with 'third-child'
+$color-background-notification-gradient-2: $mid-300; // usually works well with 'seventh-child'
+$color-background-notification: #000000;
+$color-background-poll: rgb(131 228 166 / 10%);
+$color-background-popup: $mid-200;
+$color-background-selection: rgb(105 217 146 / 60%);
+$color-background-table-keyrows: $mid-700;
+$color-background-table-secondary: $back-700;  // also form field in focus
+$color-background-table: $back-200;  // primarily table-odd-rows
 $color-background-torrent: #1F282B;
+$color-background-torrent: $back-200;
+
+$color-text-anchor-hover: $fore-400;
+$color-text-anchor: $fore-1000;
+$color-text-base: $fore-500;
+$color-text-bold: $fore-600;
+$color-text-button: $levelaa;
 $color-text-footer: $fore-200;
+$color-text-heading-anchor: $mid-700;
+$color-text-heading: $fore-600;
+$color-text-important-alt: #22ee28;
+$color-text-important: #ee2228;
+$color-text-input-active: #e0efef;
 $color-text-input: #c6c9c9;
-$color-obj-button-base-1: #b8b8b8;
-$color-obj-button-base-2: $color-text-anchor;
+$color-text-input: $fore-400;  // for pre-populated inputs
+$color-text-linkbox: $mid-700;
+$color-text-mono: $fore-400;
+$color-text-popup-anchor-hover: $fore-400;
+$color-text-popup-anchor: $fore-1000;
+$color-text-popup: $fore-400;
+$color-text-ratio-greenzone: #4fb650;
 $color-text-ratio-redzone: #e85050;
 $color-text-ratio-yellowzone: #e3ba65;
-$color-text-ratio-greenzone: #4fb650;
-$color-background-selection: rgb(105 217 146 / 60%);
 $color-text-selection: $color-text-bold; // usually #fff or $color-text-bold
-$color-background-poll: rgb(131 228 166 / 10%);
+$color-text-span-blue: #4f50e9;   
+$color-text-span-green: #4fb650;   
+$color-text-table-keyrows: $mid-700;
+$color-text-tooltipster: $fore-500; 
+$color-text-tooltipster-anchor: $fore-700; 
+$color-text-tooltipster-anchor-hover: $fore-1000; 
 
-// overrides these colors when called: why?
-
-$color-text-span-green: #4fb650; 	
-$color-text-span-blue: #4f50e9; 	
-
-// accent color for upload categories (stripes)
-
-$accent-color-cats_music: darkslategray;
-$accent-color-cats_applications: silver;
-$accent-color-cats_audiobooks: cornflowerblue;
-$accent-color-cats_comedy: deepskyblue;
-$accent-color-cats_comics: gold;
-$accent-color-cats_ebooks: chocolate;
-$accent-color-cats_elearningvideos: mediumpurple;
-
-// accent color for tag bubbles
-
-// These can equal "ninth" and "second"
-// or adjust contrast as desired to emphasize/de-emphaszie
-$color-obj-tag_bubble-background: $mid-300; 
-$color-obj-tag_bubble-foreground: $mid-900; 
+$color-obj-button-base-1: #b8b8b8;
+$color-obj-button-base-2: $color-text-anchor;
+$color-obj-menu-1:  $back-800; // unused (could be home)
+$color-obj-menu-2:  $mid-100; // torrents
+$color-obj-menu-3:  $mid-200; // collages
+$color-obj-menu-5:  $mid-300; // requests
+$color-obj-menu-5:  $mid-400; // forums
+$color-obj-menu-6:  $mid-500; // irc
+$color-obj-menu-7:  $mid-600; // top10
+$color-obj-menu-8:  $mid-700; // rules
+$color-obj-menu-9:  $mid-800; // wiki
+$color-obj-noty-buttons-hover: $mid-900;
+$color-obj-poll: $fore-100; // poll active part of bargraph
+$color-obj-tag_bubble-background: $mid-300; // These can equal "ninth" and "second"
+$color-obj-tag_bubble-foreground: $mid-900; // These can equal "ninth" and "second"
 
 // Forum icons
 

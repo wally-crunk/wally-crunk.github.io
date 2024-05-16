@@ -231,7 +231,7 @@ h3,
 h4,
 h5,
 h6 {
-    color: $color-text-bold;
+    color: $color-text-heading;
     line-height: normal;
     margin: 8px 0;
     max-width: 100%;
@@ -243,7 +243,7 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-    color: $direct-accent-primary;
+    color: $color-text-heading-anchor;
 }
 
 h1,
@@ -292,7 +292,7 @@ textarea:focus {
 .box .box.pad, 
 .main_column .box.pad:not(#reply_box) {
     background-color: $color-background-box;
-    border: 2px solid $color-background-selection;
+    border: 2px solid $color-accent-border-box;
     margin: 8px;
     border-radius: .25rem;
 }
@@ -370,7 +370,7 @@ li:last-child {
 
 blockquote {
     background-color: $color-background-blockquote;
-    border: 1px dashed $color-accent-blockquote;
+    border: 1px dashed $color-accent-border-blockquote;
     margin: 12px;
     padding: 12px;
 }
@@ -474,7 +474,8 @@ textarea {
 
 button,
 input[type="button"],
-input[type="submit"] {
+input[type="submit"], 
+#popup_close {
     background: linear-gradient($color-obj-button-base-1, $color-obj-button-base-2);
     border: none;
     border-radius: 1.5px;
@@ -487,7 +488,8 @@ input[type="submit"] {
 
 button:active,
 input[type="button"]:active,
-input[type="submit"]:active {
+input[type="submit"]:active,
+#popup_close:active {
     background: linear-gradient($color-obj-button-base-2, $color-obj-button-base-1);
 }
 
@@ -498,7 +500,7 @@ input[type="search"],
 select,
 textarea {
     background: $color-background-input;
-    border: 1px solid $color-accent-border-active;
+    border: 1px solid $color-accent-border-input;
     color: $color-text-input;
     height: 32px;
     padding: 0 8px;
@@ -510,8 +512,8 @@ input[type="text"]:focus,
 input[type="search"]:focus,
 select:focus,
 textarea:focus {
-    border: 1px solid $color-accent-border-active;
-    color: $color-text-anchor;
+    border: 1px solid $color-accent-border-input-active;
+    color: $color-text-input-active;
 }
 
 textarea {
@@ -567,12 +569,12 @@ span.size10 {
 }
 
 strong.important_text {
-    color: $color-text-ratio-redzone;
+    color: $color-text-important;
 }
 
 /* used for anything? */
 strong.important_text_alt {
-    color: $color-text-ratio-greenzone;
+    color: $color-text-important-alt;
 }
 
 .error,
@@ -694,7 +696,7 @@ table.box2 {
 }
 
 .forum_post.forum_unread {
-    border-top: 2px solid $direct-accent-offset;
+    border-top: 2px solid $color-accent-forum-unread;
 }
 
 .forum_post .avatar {
@@ -742,8 +744,8 @@ table.box2 {
 }
 
 .last_read ::before {
-  content: '➤'; 
-  color: $direct-accent-offset;
+  content: '\27A4';  /* aka ➤ */
+  color: $color-accent-forum-inline-last-read;
   display: inline-block;
 }
 
@@ -952,7 +954,7 @@ table.box2 {
 }
 
 #menu li:nth-child(8) {
-    background-color: $color-background-header;
+    background-color: $color-obj-menu-8;
 }
 
 #menu li:nth-child(9) {
@@ -969,13 +971,15 @@ table.box2 {
     overflow: hidden;
 }
 
+/* linkbox appears near the page h1 header and provides outbound links */
+
 .linkbox br {
     display: block;
     line-height: 4px;
 }
 
 .linkbox > strong {
-    color: $direct-accent-primary;
+    color: $color-text-linkbox;
 }
 
 #footer,
@@ -1398,7 +1402,7 @@ ul.collage_images li a > span {
 }
 
 .poll .graph span {
-    background-color: $direct-accent-offset;
+    background-color: $color-obj-poll;
     display: block;
     float: left;
     height: 8px;
@@ -1445,7 +1449,7 @@ ul.collage_images li a > span {
 /* #2024 style update for
 /* Discog table: for rows 'Albums', 'Compilations', 'Live Albums', etc. */
 #discog_table tr[id^=torrents_] {
-    background-color: $color-background-header;
+    background-color: $color-background-table-keyrows;
 }
 #discog_table tr[id^=torrents_] :not(a.tooltip.brackets) {
     font-size: 125%;
@@ -1457,7 +1461,7 @@ ul.collage_images li a > span {
 #discog_table .discog strong a,
 #discog_table td.td_info.big_info div.group_info.clear strong a {
     font-size:115%;
-    color: $direct-accent-primary
+    color: $color-text-table-keyrows;
 }
 
 /* #2024 style update for
@@ -1513,22 +1517,29 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
     margin-bottom: 8px;
 }
 
+/* begin upload form MusicBrainz popup */
+
 #musicbrainz_popup {
-    color: $color-background-base;
+    color: $color-text-popup;
+    background: $color-background-popup;
     font-weight: 600;
 }
 
 #musicbrainz_popup a {
-    color: $color-background-base;
+    color: $color-text-popup-anchor;
 }
 
 #musicbrainz_popup a:hover {
-    color: $direct-accent-primary;
+    color: $color-text-popup-anchor-hover;
 }
 
 #musicbrainz_popup .brackets {
     font-weight: 400;
 }
+
+/*popup close button, see 'button'*/
+
+/* END upload form MusicBrainz popup */
 
 #menu > ul,
 #userinfo_username .username,
@@ -1773,14 +1784,14 @@ blockquote {
 
 .tooltipster-default {
     background-color: $color-background-base;
-    border: 0 solid $direct-accent-offset;
+    border: 0 solid $color-accent-border-tooltipster;
     border-radius: 2.5px;
-    color: $color-text-mono;
+    color: $color-text-tooltipster;
 }
 
 .tooltipster-default .tooltipster-content {
     background-color: $color-background-base;
-    color: $color-text-mono;
+    color: $color-text-tooltipster;
     font-size: 12px;
     line-height: 1.4;
     padding: 4px 6px;
@@ -1788,13 +1799,13 @@ blockquote {
 
 .tooltipster-default .tooltipster-content a {
     background-color: $color-background-base;
-    color: $color-text-mono;
+    color: $color-text-tooltipster-anchor;
     font-weight: 600;
 }
 
 .alertbar,
 .tooltipster-default .tooltipster-content a:hover {
-    color: $direct-accent-offset;
+    color: $color-text-tooltipster-anchor-hover;
 }
 
 
@@ -2043,7 +2054,7 @@ body#collage .cats_music {
 /* first row of each box */
 #noty_bottomRight_layout_container .noty_message {
   background: radial-gradient(circle at top right, 
-    $color-background-gradient-1, $color-background-gradient-1) !important;
+    $color-background-notification-gradient-1, $color-background-notification-gradient-1) !important;
   color: $color-text-anchor !important;
   font-weight: 700;
   padding: 0 !important;
@@ -2057,7 +2068,7 @@ body#collage .cats_music {
 
 /* second row of each box */
 #noty_bottomRight_layout_container .noty_buttons {
-  background-color: $color-notification-background !important;
+  background-color: $color-background-notification !important;
   border: none !important;
   padding: 8px !important;
 }
@@ -2076,7 +2087,7 @@ body#collage .cats_music {
   color: $color-obj-tag_bubble-background !important;
   background-color: $color-obj-tag_bubble-foreground;
   border-radius: 14px;
-  border: thin solid $direct-accent-primary;
+  border: thin solid $color-obj-noty-buttons-hover;
   transition: all 0.15s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
@@ -2864,7 +2875,7 @@ body#collage .cats_music {
            opacity: 1;
            transition: all 600ms cubic-bezier(1, 0.01, 0.3, 1.31);
            border-bottom: groove $color-background-header;
-           box-shadow: 0px 50px 70px $color-background-gradient-1, 0 160px 160px #080808;
+           box-shadow: 0px 50px 70px $color-background-menu-shadow, 0 160px 160px #080808;
     }
 
     /* ## 3.17.3 Top Menubar */
@@ -3017,7 +3028,7 @@ body#collage .cats_music {
         right: 2vw;
         width: 60vw;
         margin: auto;
-        color: $direct-fore-500;
+        color: $color-text-base;
         top: calc(100% - var(--row-height) * 10 - 125px);
         height: calc(2.4 * var(--row-height));
         flex-direction: column;
@@ -3049,7 +3060,8 @@ body#collage .cats_music {
     #menu ul {
         background: radial-gradient(
             circle at top left, 
-            $color-background-mobilemenu-userinfo-1,$color-background-mobilemenu-userinfo-2 );
+            $color-background-mobilemenu-userinfo-1,
+            $color-background-mobilemenu-userinfo-2 );
         bottom: calc(var(--row-height) * 7);
         position: absolute;
     }
@@ -3063,7 +3075,8 @@ body#collage .cats_music {
     #userinfo_minor {
         background: radial-gradient(
             circle at top left, 
-            $color-background-mobilemenu-userinfo-2,$color-background-mobilemenu-userinfo-1 );
+            $color-background-mobilemenu-userinfo-2,
+            $color-background-mobilemenu-userinfo-1 );
         bottom: calc(var(--row-height) * 3);
         position: absolute;
     }
@@ -3090,9 +3103,8 @@ body#collage .cats_music {
     }
     /* END searchboxes */
     
-    /* ## 3.17.10   Close legend at bottom */
-    
-    /* todo */
+    /* ## 3.17.10  Close button & legend at bottom */
+    /* TODO; for now, click outside the menu
   
     /* ## 3.18 Checkboxes ~ purpose undocumented */
     

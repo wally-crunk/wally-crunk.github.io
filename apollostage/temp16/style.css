@@ -206,7 +206,7 @@ textarea:focus {
 .box .box.pad,
 .main_column .box.pad:not(#reply_box) {
   background-color: rgba(80, 80, 80, 0.4392156863);
-  border: 2px solid rgba(105, 217, 146, 0.6);
+  border: 2px solid #212A2D;
   margin: 8px;
   border-radius: 0.25rem;
 }
@@ -319,7 +319,7 @@ table .rowb {
 table .rowa:nth-child(odd),
 table .rowb:nth-child(odd),
 #dnulist tr:not(.colhead, .colhead_dark):nth-child(odd) #upload tr:nth-child(even) {
-  background-color: #252F32;
+  background-color: #1C2624;
 }
 
 table ul.options_list {
@@ -329,7 +329,7 @@ table ul.options_list {
 
 .colhead,
 .colhead_dark {
-  background-color: #252F32;
+  background-color: #1C2624;
   line-height: 18px;
 }
 
@@ -384,7 +384,8 @@ textarea {
 
 button,
 input[type=button],
-input[type=submit] {
+input[type=submit],
+#popup_close {
   background: linear-gradient(#b8b8b8, #E5EFE9);
   border: none;
   border-radius: 1.5px;
@@ -397,7 +398,8 @@ input[type=submit] {
 
 button:active,
 input[type=button]:active,
-input[type=submit]:active {
+input[type=submit]:active,
+#popup_close:active {
   background: linear-gradient(#E5EFE9, #b8b8b8);
 }
 
@@ -407,9 +409,9 @@ input[type=text],
 input[type=search],
 select,
 textarea {
-  background: #252F32;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  color: #c6c9c9;
+  background: #1C2624;
+  border: 1px solid rgba(128, 128, 128, 0.25);
+  color: #C3D3C1;
   height: 32px;
   padding: 0 8px;
 }
@@ -420,8 +422,8 @@ input[type=text]:focus,
 input[type=search]:focus,
 select:focus,
 textarea:focus {
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  color: #E5EFE9;
+  border: 1px solid rgba(255, 255, 255, 0.58);
+  color: #e0efef;
 }
 
 textarea {
@@ -477,12 +479,12 @@ span.size10 {
 }
 
 strong.important_text {
-  color: #e85050;
+  color: #ee2228;
 }
 
 /* used for anything? */
 strong.important_text_alt {
-  color: #4fb650;
+  color: #22ee28;
 }
 
 .error,
@@ -560,7 +562,7 @@ table.box2 {
 }
 
 .head {
-  background-color: #252F32;
+  background-color: #1C2624;
   line-height: 18px;
 }
 
@@ -650,8 +652,8 @@ table.box2 {
 }
 
 .last_read ::before {
-  content: "➤";
-  color: #C7C958;
+  content: "➤"; /* aka ➤ */
+  color: yellow;
   display: inline-block;
 }
 
@@ -810,7 +812,7 @@ table.box2 {
 
 #searchbars > ul {
   align-items: center;
-  background-color: #252F32;
+  background-color: #1C2624;
   display: flex;
   display: -ms-flexbox;
   -ms-flex-align: center;
@@ -875,6 +877,7 @@ table.box2 {
   overflow: hidden;
 }
 
+/* linkbox appears near the page h1 header and provides outbound links */
 .linkbox br {
   display: block;
   line-height: 4px;
@@ -1075,7 +1078,7 @@ div#flip_view_1 div#similar-artist .name {
 }
 
 .torrent_table .group {
-  background-color: #252F32;
+  background-color: #1C2624;
 }
 
 .group_torrent {
@@ -1084,7 +1087,7 @@ div#flip_view_1 div#similar-artist .name {
 
 .group_torrent.edition,
 .torrent {
-  background-color: #1F282B;
+  background-color: #161C1B;
 }
 
 .torrentdetails .linkbox {
@@ -1397,7 +1400,7 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
 }
 
 #discog_table > div.box.center {
-  background-color: #252F32;
+  background-color: #1C2624;
   padding: 12px;
   text-align: left;
 }
@@ -1419,23 +1422,27 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
   margin-bottom: 8px;
 }
 
+/* begin upload form MusicBrainz popup */
 #musicbrainz_popup {
-  color: #131918;
+  color: #C3D3C1;
+  background: #0C4A3B;
   font-weight: 600;
 }
 
 #musicbrainz_popup a {
-  color: #131918;
+  color: #E5EFE9;
 }
 
 #musicbrainz_popup a:hover {
-  color: #1A9F7E;
+  color: #C3D3C1;
 }
 
 #musicbrainz_popup .brackets {
   font-weight: 400;
 }
 
+/*popup close button, see 'button'*/
+/* END upload form MusicBrainz popup */
 #menu > ul,
 #userinfo_username .username,
 .album_votes .favoritecount {
@@ -1603,7 +1610,7 @@ blockquote {
 .reportinfo_table,
 .torrentdetails,
 blockquote {
-  background-color: #252F32;
+  background-color: #1C2624;
 }
 
 #bookmarks #torrent_table tr:not(.colhead, .colhead_dark) td:nth-child(2) {
@@ -1675,12 +1682,12 @@ blockquote {
   background-color: #131918;
   border: 0 solid #C7C958;
   border-radius: 2.5px;
-  color: #C3D3C1;
+  color: #C7D7C7;
 }
 
 .tooltipster-default .tooltipster-content {
   background-color: #131918;
-  color: #C3D3C1;
+  color: #C7D7C7;
   font-size: 12px;
   line-height: 1.4;
   padding: 4px 6px;
@@ -1688,13 +1695,13 @@ blockquote {
 
 .tooltipster-default .tooltipster-content a {
   background-color: #131918;
-  color: #C3D3C1;
+  color: #D3E1D4;
   font-weight: 600;
 }
 
 .alertbar,
 .tooltipster-default .tooltipster-content a:hover {
-  color: #C7C958;
+  color: #E5EFE9;
 }
 
 /* # 1.4 BEGIN UPLOAD CATEGORY DECORATION STRIPING */
@@ -1827,7 +1834,7 @@ body#collage .cats_music {
     right: 0;
   }
   #userinfo_minor:hover {
-    background-color: #1A9F7E;
+    background-color: #1DAF8B;
   }
   #userinfo_username:hover {
     background-color: #1A9F7E;
@@ -1918,7 +1925,7 @@ body#collage .cats_music {
 
 /* first row of each box */
 #noty_bottomRight_layout_container .noty_message {
-  background: radial-gradient(circle at top right, #0F5B49, #0F5B49) !important;
+  background: radial-gradient(circle at top right, #20C098, #20C098) !important;
   color: #E5EFE9 !important;
   font-weight: 700;
   padding: 0 !important;
@@ -1951,7 +1958,7 @@ body#collage .cats_music {
   color: #0F5B49 !important;
   background-color: #20C098;
   border-radius: 14px;
-  border: thin solid #1A9F7E;
+  border: thin solid #20C098;
   transition: all 0.15s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
@@ -2509,7 +2516,7 @@ body#collage .cats_music {
   }
   .forum_post tr.colhead_dark span,
   .forum_post tr.colhead_dark strong {
-    color: #c6c9c9;
+    color: #C3D3C1;
   }
   .forum_post tr.colhead_dark div {
     display: inline;
@@ -2592,7 +2599,7 @@ body#collage .cats_music {
     opacity: 1;
     transition: all 600ms cubic-bezier(1, 0.01, 0.3, 1.31);
     border-bottom: groove #1A9F7E;
-    box-shadow: 0px 50px 70px #0F5B49, 0 160px 160px #080808;
+    box-shadow: 0px 50px 70px #157D63, 0 160px 160px #080808;
   }
   /* ## 3.17.3 Top Menubar */
   /* pulldown arrow icon for mobile view, top menu */
@@ -2782,8 +2789,9 @@ body#collage .cats_music {
     height: calc(var(--row-height) - 9px);
   }
   /* END searchboxes */
-  /* ## 3.17.10   Close legend at bottom */
-  /* todo */
+  /* ## 3.17.10  Close button & legend at bottom */
+  /* TODO; for now, click outside the menu
+
   /* ## 3.18 Checkboxes ~ purpose undocumented */
   #extracb1 {
     display: block;

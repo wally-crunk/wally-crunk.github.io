@@ -142,13 +142,13 @@ $color-text-span-blue: #4f50e9;
 
 // accent color for upload categories (stripes)
 
-$accent-color-cats_music: darkslategray;
-$accent-color-cats_applications: silver;
-$accent-color-cats_audiobooks: cornflowerblue;
-$accent-color-cats_comedy: deepskyblue;
-$accent-color-cats_comics: gold;
-$accent-color-cats_ebooks: chocolate;
-$accent-color-cats_elearningvideos: mediumpurple;
+$color-accent-cats_music: darkslategray;
+$color-accent-cats_applications: silver;
+$color-accent-cats_audiobooks: cornflowerblue;
+$color-accent-cats_comedy: deepskyblue;
+$color-accent-cats_comics: gold;
+$color-accent-cats_ebooks: chocolate;
+$color-accent-cats_elearningvideos: mediumpurple;
 
 // accent color for tag bubbles
 
