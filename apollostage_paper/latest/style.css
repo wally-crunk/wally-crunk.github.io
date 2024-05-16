@@ -1,16 +1,16 @@
 @charset "UTF-8";
-/* APOLLOSTAGE COFFEE THEME */
-/* 2024-05-08c */
+/* APOLLOSTAGE PAPER THEME */
+/* 2024-05-16 */
 /* ################################################################################ */
 /* APOLLOSTAGE THEME */
-/* version 2024.05.14 b15
+/* version 2024.05.16
 /* ################################################################################ */
 /* ################################################################################ */
 /* CHANGELOG */
 /* ################################################################################ */
 /* */
 /* */
-/*  # 2024-05-14 - Updated by rubric_alert with hawkeye and community feedback. */
+/*  # 2024-05-16 - Updated by rubric_alert with hawkeye and community feedback. */
 /*  # Fix: mobile menu, category stripes;  
 /*  # Feature: Add SVGs, tag bubbles, italic fonts and more;
 /*  # Chore: Organized and documented the SCSS. */
@@ -411,7 +411,7 @@ input[type=search],
 select,
 textarea {
   background: #B5B9BA;
-  border: 1px solid #29AF77;
+  border: 1px solid #2C956A;
   color: #727576;
   height: 32px;
   padding: 0 8px;
@@ -845,7 +845,7 @@ table.box2 {
 }
 
 #menu li:nth-child(4) {
-  background-color: #69E2AF;
+  background-color: #4ED59C;
 }
 
 #menu li:nth-child(5) {
@@ -1921,7 +1921,7 @@ body#collage .cats_music {
 
 /* first row of each box */
 #noty_bottomRight_layout_container .noty_message {
-  background: radial-gradient(circle at top right, #2C956A, #69E2AF) !important;
+  background: radial-gradient(circle at top right, #69E2AF, #69E2AF) !important;
   color: #13385F !important;
   font-weight: 700;
   padding: 0 !important;
@@ -2595,7 +2595,7 @@ body#collage .cats_music {
     opacity: 1;
     transition: all 600ms cubic-bezier(1, 0.01, 0.3, 1.31);
     border-bottom: groove #29AF77;
-    box-shadow: 0px 50px 70px #2C956A, 0 160px 160px #080808;
+    box-shadow: 0px 50px 70px #69E2AF, 0 160px 160px #080808;
   }
   /* ## 3.17.3 Top Menubar */
   /* pulldown arrow icon for mobile view, top menu */
@@ -2847,7 +2847,7 @@ body#collage .cats_music {
     text-overflow: ellipsis;
     font-style: italic;
     vertical-align: baseline;
-    color: #2C956A !important; /*$tag-bubble-background-color;*/
+    color: #2C956A !important; /*$color-obj-tag_bubble-background;*/
     background: #69E2AF;
     padding: 0.25rem;
     border-radius: 1rem;
@@ -3009,6 +3009,6 @@ h6 {
   font-weight: 700;
 }
 
-/*0647*/
+/*0849*/
 
 /*# sourceMappingURL=style.css.map */

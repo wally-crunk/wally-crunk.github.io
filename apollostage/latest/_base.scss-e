@@ -1946,7 +1946,7 @@ body#collage .cats_music {
     }
 
     #userinfo_username:hover {
-          background-color: $color-background-menu-username-hover;
+          background-color: $userinfo-username-hover-background-color;
     }
 
     .settings_sidebar {

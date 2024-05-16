@@ -90,7 +90,7 @@ $color-obj-menu-7:	$mid-600; // top10
 $color-background-header:		$mid-700; // rules, also mobile menu header
 $color-obj-menu-9:	$mid-800; // wiki
 $color-background-menu-username:		$mid-900; // username menu ~ closed
-$color-background-menu-username-hover:	$mid-700; // username menu ~ open
+$userinfo-username-hover-background-color:	$mid-700; // username menu ~ open
 $color-background-menu-userinfo:	$mid-1000; // VV pulldown menu ~ closed
 $color-background-menu-userinfo-hover:	$mid-700; // VV pulldown menu ~ open
 
