@@ -185,24 +185,6 @@ h6,
     font-weight: 700;
  }
 
-ul#check:after {
-  content: 'BETA:  Warning!  There were one or more errors in your submission. Check below for error messages.';
-  font-weight: 700;
-  position: absolute;
-  top: calc(4*16px);
-  left: 50vw;
-  transform: translateX(-50%);
-  color: black;
-  border: thick solid orangered;
-  border-radius: .25rem;
-  padding: 2rem 1rem 2rem 48px;
-  background: color-mix(in srgb, lightyellow, transparent 20%);
-  background-image: url('https://wally-crunk.github.io/svg/gazelle/x.svg');
-  background-repeat:no-repeat;
-  background-position: 8px center;
-  background-size: 32px; 
-}
-
 /*0647*/
 // EOF
 
