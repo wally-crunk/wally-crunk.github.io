@@ -150,7 +150,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #CCDCCD;
+  color: #BFEFC7;
   line-height: normal;
   margin: 8px 0;
   max-width: 100%;
@@ -162,7 +162,7 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-  color: #1A9F7E;
+  color: #2AAC41;
 }
 
 h1,
@@ -209,7 +209,7 @@ textarea:focus {
 .box .box.pad,
 .main_column .box.pad:not(#reply_box) {
   background-color: #9A9E9F;
-  border: 2px solid #212A2D;
+  border: 2px solid #28362A;
   margin: 8px;
   border-radius: 0.25rem;
 }
@@ -287,7 +287,7 @@ li:last-child {
 
 blockquote {
   background-color: #70D2AA;
-  border: 1px dashed #1E2926;
+  border: 1px dashed #134D1D;
   margin: 12px;
   padding: 12px;
 }
@@ -413,7 +413,7 @@ input[type=search],
 select,
 textarea {
   background: #B5B9BA;
-  border: 1px solid rgba(128, 128, 128, 0.25);
+  border: 1px solid #071E0B;
   color: #727576;
   height: 32px;
   padding: 0 8px;
@@ -425,8 +425,8 @@ input[type=text]:focus,
 input[type=search]:focus,
 select:focus,
 textarea:focus {
-  border: 1px solid rgba(255, 255, 255, 0.58);
-  color: #e0efef;
+  border: 1px solid #1F7D2F;
+  color: #BFEFC7;
 }
 
 textarea {
@@ -482,12 +482,12 @@ span.size10 {
 }
 
 strong.important_text {
-  color: #ee2228;
+  color: #b71010;
 }
 
 /* used for anything? */
 strong.important_text_alt {
-  color: #22ee28;
+  color: #099909;
 }
 
 .error,
@@ -608,7 +608,7 @@ table.box2 {
 }
 
 .forum_post.forum_unread {
-  border-top: 2px solid #C7C958;
+  border-top: 2px solid #fed100c;
 }
 
 .forum_post .avatar {
@@ -656,7 +656,7 @@ table.box2 {
 
 .last_read ::before {
   content: "➤"; /* aka ➤ */
-  color: yellow;
+  color: #fed100c;
   display: inline-block;
 }
 
@@ -863,7 +863,7 @@ table.box2 {
 }
 
 #menu li:nth-child(8) {
-  background-color: #1A9F7E;
+  background-color: #1F7D2F;
 }
 
 #menu li:nth-child(9) {
@@ -887,7 +887,7 @@ table.box2 {
 }
 
 .linkbox > strong {
-  color: #1A9F7E;
+  color: #DEF7E2;
 }
 
 #footer,
@@ -1310,7 +1310,7 @@ ul.collage_images li a > span {
 }
 
 .poll .graph span {
-  background-color: #C7C958;
+  background-color: #32CB4D;
   display: block;
   float: left;
   height: 8px;
@@ -1357,7 +1357,7 @@ ul.collage_images li a > span {
 /* #2024 style update for
 /* Discog table: for rows 'Albums', 'Compilations', 'Live Albums', etc. */
 #discog_table tr[id^=torrents_] {
-  background-color: #1A9F7E;
+  background-color: #1B6D29;
 }
 
 #discog_table tr[id^=torrents_] :not(a.tooltip.brackets) {
@@ -1370,7 +1370,7 @@ ul.collage_images li a > span {
 #discog_table .discog strong a,
 #discog_table td.td_info.big_info div.group_info.clear strong a {
   font-size: 115%;
-  color: #1A9F7E;
+  color: #175D23;
 }
 
 /* #2024 style update for
@@ -1427,19 +1427,19 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
 
 /* begin upload form MusicBrainz popup */
 #musicbrainz_popup {
-  color: #C3D3C1;
-  background: #0C4A3B;
-  border: #212A2D;
+  color: #AFEBB9;
+  background: #040E05;
+  border: #1F7D2F;
   padding: 1rem;
   font-weight: 600;
 }
 
 #musicbrainz_popup a {
-  color: #E5EFE9;
+  color: #80E090;
 }
 
 #musicbrainz_popup a:hover {
-  color: #C3D3C1;
+  color: #DEF7E2;
 }
 
 #musicbrainz_popup .brackets {
@@ -1689,14 +1689,14 @@ blockquote {
 
 .tooltipster-default {
   background-color: #EBEFF0;
-  border: 0 solid #C7C958;
+  border: 0 solid #1F7D2F;
   border-radius: 2.5px;
-  color: #C7D7C7;
+  color: #175D23;
 }
 
 .tooltipster-default .tooltipster-content {
   background-color: #EBEFF0;
-  color: #C7D7C7;
+  color: #175D23;
   font-size: 12px;
   line-height: 1.4;
   padding: 4px 6px;
@@ -1704,13 +1704,13 @@ blockquote {
 
 .tooltipster-default .tooltipster-content a {
   background-color: #EBEFF0;
-  color: #D3E1D4;
+  color: #50D467;
   font-weight: 600;
 }
 
 .alertbar,
 .tooltipster-default .tooltipster-content a:hover {
-  color: #E5EFE9;
+  color: #BFEFC7;
 }
 
 /* # 1.4 BEGIN UPLOAD CATEGORY DECORATION STRIPING */
@@ -1934,8 +1934,8 @@ body#collage .cats_music {
 
 /* first row of each box */
 #noty_bottomRight_layout_container .noty_message {
-  background: radial-gradient(circle at top right, #20C098, #0F5B49) !important;
-  color: #0A3D30 !important;
+  background: radial-gradient(circle at top right, #134D1D, #269C3B) !important;
+  color: #071E0B !important;
   font-weight: 700;
   padding: 0 !important;
 }
@@ -1948,7 +1948,7 @@ body#collage .cats_music {
 
 /* second row of each box */
 #noty_bottomRight_layout_container .noty_buttons {
-  background-color: #000000 !important;
+  background-color: #000 !important;
   border: none !important;
   padding: 8px !important;
 }
@@ -1967,7 +1967,7 @@ body#collage .cats_music {
   color: #69E2AF !important;
   background-color: #2C956A;
   border-radius: 14px;
-  border: thin solid #20C098;
+  border: thin solid #228C35;
   transition: all 0.15s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
@@ -2608,7 +2608,7 @@ body#collage .cats_music {
     opacity: 1;
     transition: all 600ms cubic-bezier(1, 0.01, 0.3, 1.31);
     border-bottom: groove #29AF77;
-    box-shadow: 0px 50px 70px #157D63, 0 160px 160px #080808;
+    box-shadow: 0px 50px 70px #134D1D, 0 160px 160px #080808;
   }
   /* ## 3.17.3 Top Menubar */
   /* pulldown arrow icon for mobile view, top menu */

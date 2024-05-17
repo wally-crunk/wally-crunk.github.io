@@ -2,73 +2,47 @@
 // APOLLOSTAGE THEME 
 // DEFINE THEME COLORS AND ICONS
 
-  $back-100: #131918;
-  $back-200: #161C1B;
-  $back-300: #181F1E;
-  $back-400: #1A2321;
-  $back-500: #1C2624;
-  $back-600: #1E2926;
-  $back-700: #202C29;
-  $back-800: #22302C;
-  $back-900: #24332F;
-  $back-1000: #263632;
-  $blk: #020B09;
-  $mid-100: #093A2E;
-  $mid-200: #0C4A3B;
-  $mid-300: #0F5B49;
-  $mid-400: #126C56;
-  $mid-500: #157D63;
-  $mid-600: #188E71;
-  $mid-700: #1A9F7E;
-  $mid-800: #1DAF8B;
-  $mid-900: #20C098;
-  $mid-1000: #23D1A5;
-  $blk: #0B0B05;
-  $fore-100: #C7C958;
-  $fore-200: #B6C9AD;
-  $fore-300: #BFCEBB;
-  $fore-400: #C3D3C1;
-  $fore-500: #C7D7C7;
-  $fore-600: #CCDCCD;
-  $fore-700: #D3E1D4;
-  $fore-800: #D9E6DB;
-  $fore-900: #DFEAE2;
-  $fore-1000: #E5EFE9;
-  $foo: #000000;
+  $soil-100: #0B0F0B;
+  $soil-200: #111611;
+  $soil-300: #171E17;
+  $soil-400: #1D261E;
+  $soil-500: #222E24;
+  $soil-600: #28362A;
+  $grass-100: #040E05;
+  $grass-200: #071E0B;
+  $grass-300: #0B2E11;
+  $grass-400: #0F3E17;
+  $grass-500: #134D1D;
+  $grass-600: #175D23;
+  $grass-700: #1B6D29;
+  $grass-800: #1F7D2F;
+  $grass-900: #228C35;
+  $grass-1000: #269C3B;
+  $grass-1100: #2AAC41;
+  $grass-1200: #2EBC47;
+  $grass-1300: #32CB4D;
+  $grass-1400: #40D05A;
+  $grass-1500: #50D467;
+  $grass-1600: #60D875;
+  $grass-1700: #70DC83;
+  $grass-1800: #80E090;
+  $grass-1900: #8FE49E;
+  $grass-2000: #9FE7AC;
+  $grass-2100: #AFEBB9;
+  $grass-2200: #BFEFC7;
+  $grass-2300: #CEF3D5;
+  $grass-2400: #DEF7E2;
+  $grass-2500: #EEFBF0;
 
-
-// define palette
-$levelbb: #242726;
-$levelaa: #2B302F;
-$level01: #0A3D30;
-$level02: #0B4537;
-$level03: #0D4E3E;
-$level04: #0E5645;
-$level05: #105F4C;
-$level06: #116753;
-$level07: #126F5A;
-$level08: #147862;
-$level09: #15806A;
-$level10: #178972;
-$text11: #5EB4A2;
-$text12: #6CC0B0;
-$text13: #7ACBBC;
-$text14: #8AD7C9;
-$text15: #c3c6c6; // in sequence, #A5E4D9;
-$text16: #C1EFE7;
-$text17: #CDF8FF;
-
-$direct-accent-offset: $fore-100;
-$direct-accent-primary: $mid-700;  
 
 // define theme colors
 
-$color-accent-border-blockquote: $back-600;
-$color-accent-border-box: #212A2D;
-$color-accent-border-input-active: rgb(255 255 255 / 58%);
-$color-accent-border-input: rgb(128 128 128 / 25%);
-$color-accent-border-tooltipster: $fore-100;
-$color-accent-border-popup: #212A2D;
+$color-accent-border-blockquote: $grass-500;
+$color-accent-border-box: $soil-600;
+$color-accent-border-input-active: $grass-800;
+$color-accent-border-input: $grass-200;
+$color-accent-border-tooltipster: $grass-800;
+$color-accent-border-popup: $grass-800;
 
 $color-accent-cats_applications: silver;
 $color-accent-cats_audiobooks: cornflowerblue;
@@ -77,79 +51,77 @@ $color-accent-cats_comics: gold;
 $color-accent-cats_ebooks: chocolate;
 $color-accent-cats_elearningvideos: mediumpurple;
 $color-accent-cats_music: darkslategray;
-$color-accent-forum-inline-last-read: yellow;
-$color-accent-forum-unread: $fore-100;
-$color-background-base: $back-100;
-$color-background-blockquote: $mid-100;
-$color-background-box: #50505070;
-$color-background-form: $back-300;   // also boxes on frontpage
-$color-background-header: $mid-700; // rules, also mobile menu header
-$color-background-input: #252F32;  
-$color-background-input: $back-500;   // also table-even-rows
-$color-background-menu-shadow: $mid-500;
-$color-background-menu-userinfo-hover:  $mid-800; // VV pulldown menu ~ open
-$color-background-menu-userinfo:  $mid-1000; // VV pulldown menu ~ closed
-$color-background-menu-username-hover:  $mid-700; // username menu ~ open
-$color-background-menu-username:  $mid-900; // username menu ~ closed
-$color-background-mobilemenu-userinfo-1: $mid-700; // mobile pulldown menu gradient 1
-$color-background-mobilemenu-userinfo-2: $mid-300; // mobile pulldown menu gradient 2
-$color-background-notification-gradient-1: $mid-900; // usually works well with 'third-child'
-$color-background-notification-gradient-2: $mid-300; // usually works well with 'seventh-child'
-$color-background-notification: #000000;
-$color-background-poll: rgb(131 228 166 / 10%);
-$color-background-popup: $mid-200;
-$color-background-selection: rgb(105 217 146 / 60%);
-$color-background-table-keyrows: $mid-700;
-$color-background-table-secondary: $back-700;  // also form field in focus
-$color-background-table: $back-200;  // primarily table-odd-rows
-$color-background-torrent: #1F282B;
-$color-background-torrent: $back-200;
+$color-accent-forum-inline-last-read: #fed100c;
+$color-accent-forum-unread: #fed100c;
+$color-background-base: $soil-100;
+$color-background-blockquote: $soil-400;
+$color-background-box: $soil-500;
+$color-background-form: $soil-500;   // also boxes on frontpage
+$color-background-header: $grass-700; // rules, also mobile menu header
+$color-background-input: $soil-600;   // also table-even-rows
+$color-background-menu-shadow: $grass-500;
+$color-background-poll: $grass-400;
+$color-background-popup: $grass-100;
+$color-background-selection: $grass-1400;
+$color-background-table-keyrows: $grass-700;
+$color-background-table-secondary: $grass-500;  // also form field in focus
+$color-background-table: $grass-300;  // primarily table-odd-rows
+$color-background-torrent: $grass-400;
 
-$color-text-anchor-hover: $fore-400;
-$color-text-anchor: $fore-1000;
-$color-text-base: $fore-500;
-$color-text-bold: $fore-600;
-$color-text-button: $levelaa;
-$color-text-footer: $fore-200;
-$color-text-heading-anchor: $mid-700;
-$color-text-heading: $fore-600;
-$color-text-important-alt: #22ee28;
-$color-text-important: #ee2228;
-$color-text-input-active: #e0efef;
-$color-text-input: #c6c9c9;
-$color-text-input: $fore-400;  // for pre-populated inputs
-$color-text-linkbox: $mid-700;
-$color-text-mono: $fore-400;
-$color-text-notification-words: $level01;
-$color-text-popup-anchor-hover: $fore-400;
-$color-text-popup-anchor: $fore-1000;
-$color-text-popup: $fore-400;
-$color-text-ratio-greenzone: #4fb650;
-$color-text-ratio-redzone: #e85050;
-$color-text-ratio-yellowzone: #e3ba65;
-$color-text-selection: $color-text-bold; // usually #fff or $color-text-bold
-$color-text-span-blue: #4f50e9;   
-$color-text-span-green: #4fb650;   
-$color-text-table-keyrows: $mid-700;
-$color-text-tooltipster: $fore-500; 
-$color-text-tooltipster-anchor: $fore-700; 
-$color-text-tooltipster-anchor-hover: $fore-1000; 
+$color-text-anchor-hover: $grass-1400;
+$color-text-anchor: $grass-1700;
+$color-text-base: $grass-2100;
+$color-text-bold: $grass-2400;
+$color-text-button: $grass-100;
+$color-text-footer: #dadada;
+$color-text-heading-anchor: $grass-1100;
+$color-text-heading: $grass-2200;
+$color-text-important-alt: #099909;
+$color-text-important: #b71010;
+$color-text-input-active: $grass-2200;
+$color-text-input: $grass-1700; // for pre-populated inputs
+$color-text-linkbox: $grass-2400; 
+$color-text-mono: $grass-2200;
+$color-text-notification-words: $grass-200;
+$color-text-popup-anchor-hover: $grass-2400;
+$color-text-popup-anchor: $grass-1800;
+$color-text-popup: $grass-2100;
+$color-text-ratio-greenzone: #099909;
+$color-text-ratio-redzone: #b71010;
+$color-text-ratio-yellowzone: #d8d82d;
+$color-text-selection: $grass-2400; // usually #fff or $color-text-bold
+$color-text-span-blue: hsl(235, 90%, 85%);   
+$color-text-span-green: hsl(145, 90%, 70%);   
+$color-text-table-keyrows: $grass-600;
+$color-text-tooltipster: $grass-600; 
+$color-text-tooltipster-anchor: $grass-1500; 
+$color-text-tooltipster-anchor-hover: $grass-2200; 
 
 $color-obj-button-base-1: #b8b8b8;
-$color-obj-button-base-2: $color-text-anchor;
-$color-obj-menu-1:  $back-800; // unused (could be home)
-$color-obj-menu-2:  $mid-100; // torrents
-$color-obj-menu-3:  $mid-200; // collages
-$color-obj-menu-5:  $mid-300; // requests
-$color-obj-menu-5:  $mid-400; // forums
-$color-obj-menu-6:  $mid-500; // irc
-$color-obj-menu-7:  $mid-600; // top10
-$color-obj-menu-8:  $mid-700; // rules
-$color-obj-menu-9:  $mid-800; // wiki
-$color-obj-noty-buttons-hover: $mid-900;
-$color-obj-poll: $fore-100; // poll active part of bargraph
-$color-obj-tag_bubble-background: $mid-300; // These can equal "ninth" and "second"
-$color-obj-tag_bubble-foreground: $mid-900; // These can equal "ninth" and "second"
+$color-obj-button-base-2: $grass-1700;
+$color-obj-menu-1:  $grass-100; // unused (could be home)
+$color-obj-menu-2:  $grass-200; // torrents
+$color-obj-menu-3:  $grass-300; // collages
+$color-obj-menu-5:  $grass-400; // requests
+$color-obj-menu-5:  $grass-500; // forums
+$color-obj-menu-6:  $grass-600; // irc
+$color-obj-menu-7:  $grass-700; // top10
+$color-obj-menu-8:  $grass-800; // rules
+$color-obj-menu-9:  $grass-900; // wiki
+$color-background-menu-userinfo-hover:  $grass-1000; // VV pulldown menu ~ open
+$color-background-menu-userinfo:  $grass-800; // VV pulldown menu ~ closed
+$color-background-menu-username-hover:  $grass-1100; // username menu ~ open
+$color-background-menu-username:  $grass-900; // username menu ~ closed
+$color-background-mobilemenu-userinfo-1: $grass-400; // mobile pulldown menu gradient 1
+$color-background-mobilemenu-userinfo-2: $grass-800; // mobile pulldown menu gradient 2
+$color-background-notification-gradient-1: $grass-500; // usually works well with 'third-child'
+$color-background-notification-gradient-2: $grass-1000; // usually works well with 'seventh-child'
+$color-background-notification: #000;
+
+$color-obj-noty-buttons-hover: $grass-900;
+$color-obj-poll: $grass-1300; // poll active part of bargraph
+$color-obj-tag_bubble-background: $grass-400; // These can equal "ninth" and "second"
+$color-obj-tag_bubble-foreground: $grass-900; // These can equal "ninth" and "second"
 
 // Forum icons
 
