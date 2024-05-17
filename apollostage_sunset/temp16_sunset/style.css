@@ -1427,6 +1427,8 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
 #musicbrainz_popup {
   color: #C3D3C1;
   background: #0C4A3B;
+  border: #212A2D;
+  padding: 1rem;
   font-weight: 600;
 }
 
@@ -1440,6 +1442,10 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
 
 #musicbrainz_popup .brackets {
   font-weight: 400;
+}
+
+#musicbrainz_popup #popup_close {
+  color: #2B302F;
 }
 
 /*popup close button, see 'button'*/
@@ -1926,8 +1932,8 @@ body#collage .cats_music {
 
 /* first row of each box */
 #noty_bottomRight_layout_container .noty_message {
-  background: radial-gradient(circle at top right, #20C098, #20C098) !important;
-  color: #f4f4f4 !important;
+  background: radial-gradient(circle at top right, #20C098, #0F5B49) !important;
+  color: #0A3D30 !important;
   font-weight: 700;
   padding: 0 !important;
 }
