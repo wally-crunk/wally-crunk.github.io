@@ -411,7 +411,7 @@ select,
 textarea {
   background: #28362A;
   border: 1px solid #071E0B;
-  color: #70DC83;
+  color: #DEF7E2;
   height: 32px;
   padding: 0 8px;
 }
@@ -423,7 +423,7 @@ input[type=search]:focus,
 select:focus,
 textarea:focus {
   border: 1px solid #1F7D2F;
-  color: #BFEFC7;
+  color: #8FE49E;
 }
 
 textarea {
@@ -836,35 +836,35 @@ table.box2 {
 }
 
 #menu li:nth-child(2) {
-  background-color: #071E0B;
+  background-color: #134D1D;
 }
 
 #menu li:nth-child(3) {
-  background-color: #0B2E11;
-}
-
-#menu li:nth-child(4) {
-  background-color: #134D1D;
-}
-
-#menu li:nth-child(5) {
-  background-color: #134D1D;
-}
-
-#menu li:nth-child(6) {
   background-color: #175D23;
 }
 
-#menu li:nth-child(7) {
-  background-color: #1B6D29;
-}
-
-#menu li:nth-child(8) {
+#menu li:nth-child(4) {
   background-color: #1F7D2F;
 }
 
-#menu li:nth-child(9) {
+#menu li:nth-child(5) {
+  background-color: #1F7D2F;
+}
+
+#menu li:nth-child(6) {
   background-color: #228C35;
+}
+
+#menu li:nth-child(7) {
+  background-color: #269C3B;
+}
+
+#menu li:nth-child(8) {
+  background-color: #2AAC41;
+}
+
+#menu li:nth-child(9) {
+  background-color: #2EBC47;
 }
 
 #userinfo_username {
@@ -2522,7 +2522,7 @@ body#collage .cats_music {
   }
   .forum_post tr.colhead_dark span,
   .forum_post tr.colhead_dark strong {
-    color: #70DC83;
+    color: #DEF7E2;
   }
   .forum_post tr.colhead_dark div {
     display: inline;

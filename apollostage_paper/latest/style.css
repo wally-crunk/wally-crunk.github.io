@@ -426,7 +426,7 @@ input[type=search]:focus,
 select:focus,
 textarea:focus {
   border: 1px solid #1F7D2F;
-  color: #BFEFC7;
+  color: #8FE49E;
 }
 
 textarea {
@@ -863,7 +863,7 @@ table.box2 {
 }
 
 #menu li:nth-child(8) {
-  background-color: #1F7D2F;
+  background-color: #2AAC41;
 }
 
 #menu li:nth-child(9) {
