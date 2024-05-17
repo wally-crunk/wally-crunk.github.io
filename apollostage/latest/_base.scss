@@ -1183,7 +1183,7 @@ div#flip_view_1 div#similar-artist .name {
 .group_torrent.edition,
 .torrent {
     background-color: $color-background-torrent;
-}
+}g
 
 .torrentdetails .linkbox {
     margin-bottom: 6px;
@@ -1495,7 +1495,7 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
 }
 
 #discog_table > div.box.center {
-    background-color: $color-background-input;
+    background-color: $color-background-table-discog;
     padding: 12px;
     text-align: left;
 }

@@ -58,20 +58,21 @@ $color-background-blockquote: $soil-400;
 $color-background-box: $soil-500;
 $color-background-form: $soil-500;   // also boxes on frontpage
 $color-background-header: $grass-700; // rules, also mobile menu header
-$color-background-input: $soil-600;   // also table-even-rows
+$color-background-input: $soil-200;   // also table-even-rows
 $color-background-menu-shadow: $grass-500;
 $color-background-poll: $grass-400;
 $color-background-popup: $grass-100;
 $color-background-selection: $grass-1400;
+$color-background-table: $grass-300;  // primarily table-odd-rows
+$color-background-table-discog: $soil-400;
 $color-background-table-keyrows: $grass-700;
 $color-background-table-secondary: $grass-500;  // also form field in focus
-$color-background-table: $grass-300;  // primarily table-odd-rows
 $color-background-torrent: $grass-400;
 
 $color-text-anchor-hover: $grass-1400;
 $color-text-anchor: $grass-1700;
-$color-text-base: $grass-2100;
-$color-text-bold: $grass-2400;
+$color-text-base: $grass-2400;
+$color-text-bold: $grass-2500;
 $color-text-button: $grass-100;
 $color-text-footer: #dadada;
 $color-text-heading-anchor: $grass-1100;
@@ -98,7 +99,7 @@ $color-text-tooltipster-anchor: $grass-1500;
 $color-text-tooltipster-anchor-hover: $grass-2200; 
 
 $color-obj-button-base-1: #b8b8b8;
-$color-obj-button-base-2: $grass-1700;
+$color-obj-button-base-2: $soil-600;
 $color-obj-menu-1:  $grass-400; // unused (could be home)
 $color-obj-menu-2:  $grass-500; // torrents
 $color-obj-menu-3:  $grass-600; // collages

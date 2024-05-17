@@ -260,7 +260,7 @@ svg|a:hover {
 
 b,
 strong {
-  color: #DEF7E2;
+  color: #EEFBF0;
   font-weight: 600;
 }
 
@@ -387,7 +387,7 @@ button,
 input[type=button],
 input[type=submit],
 #popup_close {
-  background: linear-gradient(#b8b8b8, #70DC83);
+  background: linear-gradient(#b8b8b8, #28362A);
   border: none;
   border-radius: 1.5px;
   color: #040E05;
@@ -401,7 +401,7 @@ button:active,
 input[type=button]:active,
 input[type=submit]:active,
 #popup_close:active {
-  background: linear-gradient(#70DC83, #b8b8b8);
+  background: linear-gradient(#28362A, #b8b8b8);
 }
 
 input[type=email],
@@ -1091,7 +1091,7 @@ div#flip_view_1 div#similar-artist .name {
   background-color: #38363d;
 }
 
-.torrentdetails .linkbox {
+g .torrentdetails .linkbox {
   margin-bottom: 6px;
 }
 
@@ -1360,7 +1360,7 @@ ul.collage_images li a > span {
 
 #discog_table tr[id^=torrents_] :not(a.tooltip.brackets) {
   font-size: 125%;
-  color: #DEF7E2;
+  color: #EEFBF0;
 }
 
 /* #2024 style update for
@@ -1401,7 +1401,7 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
 }
 
 #discog_table > div.box.center {
-  background-color: #3f3e46;
+  background-color: #1D261E;
   padding: 12px;
   text-align: left;
 }
@@ -2286,7 +2286,7 @@ body#collage .cats_music {
   .td_seeders.m_td_right::before,
   .td_leechers.m_td_right::before {
     background: left/10px no-repeat url("https://wally-crunk.github.io/svg/gazelle/arrow-loop.svg");
-    color: #DEF7E2;
+    color: #EEFBF0;
     content: ":";
     filter: brightness(80%);
     position: absolute;

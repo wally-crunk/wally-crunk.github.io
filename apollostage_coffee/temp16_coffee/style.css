@@ -388,7 +388,7 @@ button,
 input[type=button],
 input[type=submit],
 #popup_close {
-  background: linear-gradient(#b8b8b8, #70DC83);
+  background: linear-gradient(#b8b8b8, #28362A);
   border: none;
   border-radius: 1.5px;
   color: #040E05;
@@ -402,7 +402,7 @@ button:active,
 input[type=button]:active,
 input[type=submit]:active,
 #popup_close:active {
-  background: linear-gradient(#70DC83, #b8b8b8);
+  background: linear-gradient(#28362A, #b8b8b8);
 }
 
 input[type=email],
@@ -1092,7 +1092,7 @@ div#flip_view_1 div#similar-artist .name {
   background-color: #302C2B;
 }
 
-.torrentdetails .linkbox {
+g .torrentdetails .linkbox {
   margin-bottom: 6px;
 }
 
@@ -1402,7 +1402,7 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
 }
 
 #discog_table > div.box.center {
-  background-color: #302C2B;
+  background-color: #1D261E;
   padding: 12px;
   text-align: left;
 }
