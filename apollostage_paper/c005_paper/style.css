@@ -1,7 +1,6 @@
 @charset "UTF-8";
 /* APOLLOSTAGE PAPER THEME */
 /* 2024-05-22 */
-/* not in use */
 /* ################################################################################ */
 /* APOLLOSTAGE THEME */
 /* version 2024.05.16
@@ -1813,10 +1812,11 @@ body#collage .cats_music {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
+/* when menu pulled down and mouse over an entry */
 #menu > ul a:hover,
 #userinfo_minor:hover a,
 #userinfo_username:hover a {
-  /* color: $color-text-menu-hover; */
+  color: #2B3A36;
 }
 
 /* Icon revealed when menu is open */
