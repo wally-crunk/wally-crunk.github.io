@@ -314,7 +314,7 @@ table .rowa:nth-child(even),
 table .rowb:nth-child(even),
 #dnulist tr:not(.colhead, .colhead_dark):nth-child(even),
 #upload tr:nth-child(even) {
-  background-color: #212B29;
+  background-color: #161D1B;
 }
 
 table {
@@ -327,7 +327,7 @@ table .rowa:nth-child(odd),
 table .rowb:nth-child(odd),
 #dnulist tr:not(.colhead, .colhead_dark):nth-child(odd),
 #upload tr:nth-child(odd) {
-  background-color: #354944;
+  background-color: #212B29;
 }
 
 table ul.options_list {
@@ -335,9 +335,10 @@ table ul.options_list {
   padding: 0;
 }
 
+#content div.thin div.head,
 .colhead,
 .colhead_dark {
-  background-color: #0C4A3B;
+  background-color: #093A2E;
   line-height: 18px;
 }
 
