@@ -373,7 +373,7 @@ td:last-child {
 }
 
 form {
-  background-color: #263330;
+  background-color: #1B2422;
 }
 
 ˜√Ω form table td.label {
@@ -561,7 +561,7 @@ strong.important_text_alt {
 
 .box,
 .box2 {
-  background-color: #263330;
+  background-color: #1B2422;
   margin-bottom: 8px;
   margin-top: 8px;
 }
@@ -882,7 +882,7 @@ div#flip_view_1 div#similar-artist .name {
 }
 
 .group_torrent {
-  background-color: #263330;
+  background-color: #1B2422;
 }
 
 .group_torrent.edition,
@@ -2781,7 +2781,7 @@ body#collage .cats_music {
   }
   #stats_ratio .tooltip {
     /* Provide a local background for the number to appear in color */
-    background-color: #263330;
+    background-color: #1B2422;
     border-radius: 0.45rem;
     padding-left: 0.45rem;
     padding-right: 0.45rem;
