@@ -64,16 +64,16 @@ $color-background-input: $soil-200;   // also table-even-rows
 $color-background-menu-shadow: $grass-500;
 $color-background-poll: $grass-400;
 $color-background-popup: $grass-100;
-$color-background-searchbars: aqua;
-$color-background-searchbars-fields: black;
-$color-background-searchbars-focus: red;
-$color-background-searchbars-surround: #fed100;
+$color-background-searchbars: $soil-300;
+$color-background-searchbars-fields: #crimson;  // should not be used ever
+$color-background-searchbars-field-focus: $soil-500;
+$color-background-searchbars-surround: $soil-200;
 $color-background-selection: $grass-1400;
 $color-background-table: $grass-300;  // primarily table-odd-rows
 $color-background-table-discog: $grass-900;
-$color-background-table-row-th: $grass-1100;
+$color-background-table-row-th: $grass-800;
 $color-background-table-row-odd: $grass-400;
-$color-background-table-row-even: aqua;
+$color-background-table-row-even: $grass-200;
 $color-background-table-keyrows: $grass-700;
 $color-background-table-secondary: $grass-500;  // also form field in focus
 $color-background-table-torrents-group: $soil-600;
@@ -104,6 +104,7 @@ $color-text-ratio-yellowzone: #d8d82d;
 $color-text-selection: $grass-2400; // usually #fff or $color-text-bold
 $color-text-span-blue: hsl(235, 90%, 85%);   
 $color-text-span-green: hsl(145, 90%, 70%);   
+$color-text-span-red: #b71010;
 $color-text-table-discog-titles: $grass-1400;
 $color-text-tooltipster: $grass-600; 
 $color-text-tooltipster-anchor: $grass-1500; 

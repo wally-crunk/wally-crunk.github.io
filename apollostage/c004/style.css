@@ -305,7 +305,7 @@ table {
 table .rowa:nth-child(even),
 table .rowb:nth-child(even),
 #dnulist tr:not(.colhead, .colhead_dark):nth-child(even) #upload tr:nth-child(even) {
-  background-color: aqua;
+  background-color: #071E0B;
 }
 
 table {
@@ -332,7 +332,7 @@ table ul.options_list {
 
 .colhead,
 .colhead_dark {
-  background-color: #2AAC41;
+  background-color: #1F7D2F;
   line-height: 18px;
 }
 
@@ -1877,7 +1877,7 @@ body#collage .cats_music {
 /* ## 1.6.1 SEARCHBARS */
 #searchbars > ul {
   align-items: center;
-  background-color: #fed100;
+  background-color: #111611;
   display: flex;
   display: -ms-flexbox;
   -ms-flex-align: center;
@@ -1896,7 +1896,6 @@ body#collage .cats_music {
 }
 
 #searchbars > ul input {
-  background-color: black;
   width: 100%;
 }
 
@@ -1908,11 +1907,11 @@ body#collage .cats_music {
   border: none;
   border-radius: 2.5px;
   height: 30px;
-  background: aqua;
+  background: #171E17;
 }
 
 #searchbars .search_form input:focus {
-  background: red;
+  background: #222E24;
 }
 
 /* ************************************************ */

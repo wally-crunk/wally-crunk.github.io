@@ -1678,7 +1678,7 @@ span[style*='color: green'] {
 }
 
 span[style*='color: red'] {
-    color: $color-text-ratio-redzone !important;
+    color: $color-text-span-red !important;
 }
 
 span[style*='color: blue'] {
@@ -2024,7 +2024,6 @@ body#collage .cats_music {
 }
 
 #searchbars > ul input {
-    background-color: $color-background-searchbars-fields;
     width: 100%;
 }
 
@@ -2040,7 +2039,7 @@ body#collage .cats_music {
 }
 
 #searchbars .search_form input:focus {
-    background: $color-background-searchbars-focus;
+    background: $color-background-searchbars-field-focus;
     //$color-background-table-secondary;
 }
 
