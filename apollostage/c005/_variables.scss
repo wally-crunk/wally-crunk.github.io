@@ -49,7 +49,7 @@ $color-accent-border-input: $mid-200;
 $color-accent-border-input-active: $mid-800;
 $color-accent-border-tooltipster: $mid-800;
 $color-accent-border-popup: $mid-800;
-$color-accent-border-tablerows: $mid-300;
+$color-accent-border-tablerows: $back-600;
 $color-accent-shadow-menutext: initial;  // provisioned for derivative themes
 
 $color-accent-cats_applications: silver;
@@ -62,7 +62,6 @@ $color-accent-cats_music: darkslategray;
 $color-accent-forum-inline-last-read: #fed100;
 $color-accent-forum-unread: #fed100;
 
-
 $color-background-base: $back-100;
 $color-background-blockquote: $back-300;
 $color-background-box: $back-500;
@@ -73,10 +72,10 @@ $color-background-input-active: $back-300;
 $color-background-menu-shadow: $mid-500; //mobile menu
 $color-background-poll: $mid-400;
 $color-background-popup: $mid-100;
-$color-background-searchbars: $back-600;
+$color-background-searchbars: $back-300;
 $color-background-searchbars-fields: #crimson;  // should not be used ever
 $color-background-searchbars-field-focus: $back-100;
-$color-background-searchbars-surround: $back-700;
+$color-background-searchbars-surround: $back-500;
 $color-background-selection: $mid-800;
 $color-background-selection-menupulldown: rgba(255, 255, 255, 0.2);
 $color-background-table: $back-300;  //  tables/forms without odd-even treatment
@@ -90,7 +89,7 @@ $color-background-table-torrents-group: $back-600;
 $color-background-torrent: $mid-400;
 
 $color-text-anchor-hover: $mid-1000;
-$color-text-menu-hover: $back-600;
+$color-text-menu-hover: $back-600; /* not in use */
 $color-text-anchor: $fore-1000;
 $color-text-base: $fore-700;
 $color-text-bold: $fore-900;

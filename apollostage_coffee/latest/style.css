@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /* APOLLOSTAGE COFFEE THEME */
 /* 2024-05-16 */
+/* not in use */
 /* ################################################################################ */
 /* APOLLOSTAGE THEME */
 /* version 2024.05.16
@@ -309,7 +310,7 @@ table {
 
 table .rowa,
 table .rowb {
-  border-top: 2px solid #0F5B49;
+  border-top: 2px solid #2B3A36;
 }
 
 table .rowa:nth-child(even),
@@ -1846,7 +1847,7 @@ body#collage .cats_music {
 /* ## 1.6.1 SEARCHBARS */
 #searchbars > ul {
   align-items: center;
-  background-color: #30413D;
+  background-color: #263330;
   display: flex;
   display: -ms-flexbox;
   -ms-flex-align: center;
@@ -1876,7 +1877,7 @@ body#collage .cats_music {
   border: none;
   border-radius: 2.5px;
   height: 30px;
-  background: #2B3A36;
+  background: #1B2422;
 }
 
 #searchbars .search_form input:focus {
