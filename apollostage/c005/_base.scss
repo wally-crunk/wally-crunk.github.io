@@ -102,7 +102,10 @@
 /* ## 1.3 Tooltips */
 /* ## 1.4 Upload Category Decoration Striping */
 /* ## 1.5 Header and menu layout */
-/* ## 1.6 Menu Handling */
+/* ## 1.5.1 Menu Handling */
+/* ## 1.6 Headers Below Menu */
+/* ## 1.6.1 Searchbars */
+/* ## 1.6.2 Linkbox */
 /* ## 1.7 Notification Box */
 /* ## 1.8 Sidebar */
 /* # 2 DOCUMENTATION OF MOBILE CLASSES */
@@ -460,7 +463,7 @@ td:last-child {
 form {
     background-color: $color-background-form;
 }
-
+˜√Ω
 form table td.label {
     color: $color-text-footer;
     padding-top: 9px;
@@ -794,196 +797,11 @@ table.box2 {
     background: $icon-message-unread-locked-sticky center no-repeat;
 }
 
-#header,
-#userinfo {
-    position: relative;
-}
-
-#header ul {
-    margin: 0;
-    padding: 0;
-}
-
-#header li {
-    margin: 0;
-}
-@media only screen and (min-width: 575px)  /* var(--phone-screen-size) */ {
-    #logo {
-        box-sizing: content-box;
-        height: 42px;
-        padding: 24px 8px 16px;
-        width: 200px;
-    }
-    
-    /* main logo during desktop view */
-    #logo a {
-        background: $logo-site-lockup right no-repeat;
-     }
-    
-    #logo > a {
-        background-size: 200px;
-        display: block;
-        height: 100%;
-        margin-top: 0;
-    }
-}
-
-#menu > ul {
-    display: flex;
-    display: -ms-flexbox;
-    -ms-flex-flow: row nowrap;
-    flex-flow: row nowrap;
-    font-size: 13px;
-    overflow: hidden;
-    width: calc(100% - 149px);
-}
-
-#menu > ul li {
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
-}
-
-#menu > ul a {
-    display: block;
-    height: 100%;
-    line-height: 50px;
-    text-align: center;
-}
-
-#menu > ul a:hover,
-#userinfo_minor:hover a:hover,
-#userinfo_username:hover a:hover {
-    background-color: $color-text-anchor-hover;
-}
-
-#nav_index {
-    display: none;
-}
-
-#userinfo_minor:hover a,
-#userinfo_username:hover a {
-    display: block;
-}
-
-#userinfo_username #nav_userinfo > a {
-    display: block;
-    font-size: 13px;
-    line-height: 50px;
-    overflow: hidden;
-    text-align: center;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    width: 100px;
-}
-
-.linkbox,
-.linkbox .center {
-    text-align: right;
-}
-
-#userinfo_major > li,
-#userinfo_stats > li,
-.linkbox .brackets {
-    margin-left: 8px;
-}
-
-#userinfo_major,
-#userinfo_stats {
-    display: flex;
-    display: -ms-flexbox;
-    -ms-flex-flow: row nowrap;
-    flex-flow: row nowrap;
-    position: absolute;
-    right: 8px;
-}
-
-#userinfo_major {
-    font-size: 13px;
-    right: 41px;
-    top: -53px;
-}
-
-#userinfo_stats {
-    font-size: 13px;
-    top: -31px;
-}
-
-#menu ul li:not(#nav_staff) a,
-#userinfo a.username {
-    color: $color-text-menu;
-    text-shadow: $color-accent-shadow-menutext;
-}
-
-#menu li:nth-child(2) {
-    background-color: $color-obj-menu-2;
-}
-
-#menu li:nth-child(3) {
-    background-color: $color-obj-menu-3;
-}
-
-#menu li:nth-child(4) {
-    background-color: $color-obj-menu-5;
-}
-
-#menu li:nth-child(5) {
-    background-color: $color-obj-menu-5;
-}
-
-#menu li:nth-child(6) {
-    background-color: $color-obj-menu-6;
-}
-
-#menu li:nth-child(7) {
-    background-color: $color-obj-menu-7;
-}
-
-#menu li:nth-child(8) {
-    background-color: $color-obj-menu-8;
-}
-
-#menu li:nth-child(9) {
-    background-color: $color-obj-menu-9;
-}
-
-#userinfo_username {
-    background-color: $color-background-menu-username;
-    right: 50px;
-}
-
-#menu {
-    border-radius: 5px 5px 0 0;
-    overflow: hidden;
-}
-
-/* linkbox appears near the page h1 header and provides outbound links */
-
-.linkbox br {
-    display: block;
-    line-height: 4px;
-}
-
-.linkbox > strong {
-    color: $color-text-linkbox;
-}
-
 #footer,
 .alertbar {
     text-align: center;
 }
 
-.linkbox .brackets::after,
-.linkbox .brackets::before {
-    display: none;
-}
-
-.thin > .header {
-    display: flex;
-    display: -ms-flexbox;
-    -ms-flex-flow: row wrap;
-    flex-flow: row wrap;
-    width: 100%;
-}
 
 #covers .cover_seperator,
 #noty_bottomRight_layout_container .brackets::after,
@@ -996,14 +814,6 @@ table.box2 {
 .thin > .header h3 {
     -ms-flex: 1 0 auto;
     flex: 1 0 auto;
-}
-
-.thin > .header .linkbox {
-    align-self: flex-end;
-    flex: 1 0 auto;
-    -ms-flex: 1 0 auto;
-    -ms-flex-item-align: end;
-    margin-top: 8px;
 }
 
 #covers .pad,
@@ -1502,36 +1312,6 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
     margin-bottom: 8px;
 }
 
-/* begin upload form MusicBrainz popup */
-
-#musicbrainz_popup {
-    color: $color-text-popup;
-    background: $color-background-popup;
-    border: $color-accent-border-popup;
-    padding: 1rem;
-    font-weight: 600;
-}
-
-#musicbrainz_popup a {
-    color: $color-text-popup-anchor;
-}
-
-#musicbrainz_popup a:hover {
-    color: $color-text-popup-anchor-hover;
-}
-
-#musicbrainz_popup .brackets {
-    font-weight: 400;
-}
-
-#musicbrainz_popup #popup_close {
-    color: $color-text-button;
-}
-
-/*popup close button, see 'button'*/
-
-/* END upload form MusicBrainz popup */
-
 #menu > ul,
 #userinfo_username .username,
 .album_votes .favoritecount {
@@ -1544,6 +1324,7 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
     width: 100% !important;
 }
 
+/* searchbox is not the searchbars */
 #searchbox {
     margin-bottom: 12px;
 }
@@ -1764,7 +1545,11 @@ blockquote {
 
 /* END desktop view, handling of classes */
 
+/* ************************************************ */
+
 /* # 1.2 Reserved [for more organization in the future]
+
+/* ************************************************ */
 
 /* # 1.3 Tooltips */
 
@@ -1799,6 +1584,7 @@ blockquote {
     color: $color-text-tooltipster-anchor-hover;
 }
 
+/* ************************************************ */
 
 /* # 1.4 BEGIN UPLOAD CATEGORY DECORATION STRIPING */
 /* Begin category decorations for torrent-tables on torrent & collage pages */
@@ -1861,8 +1647,181 @@ body#collage .cats_music {
 /* #2024 */
 /* END category decorations for torrent tables on torrent & collage pages */
 
+/* ************************************************ */
+
 /* #1.5 HEADER AND MENU LAYOUT */
 /* MENU AND TOP BAR, DESKTOP ONLY */
+
+.thin > .header .linkbox {
+    align-self: flex-end;
+    flex: 1 0 auto;
+    -ms-flex: 1 0 auto;
+    -ms-flex-item-align: end;
+    margin-top: 8px;
+}
+
+.thin > .header {
+    display: flex;
+    display: -ms-flexbox;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    width: 100%;
+}
+
+#header,
+#userinfo {
+    position: relative;
+}
+
+#header ul {
+    margin: 0;
+    padding: 0;
+}
+
+#header li {
+    margin: 0;
+}
+@media only screen and (min-width: 575px)  /* var(--phone-screen-size) */ {
+    #logo {
+        box-sizing: content-box;
+        height: 42px;
+        padding: 24px 8px 16px;
+        width: 200px;
+    }
+    
+    /* main logo during desktop view */
+    #logo a {
+        background: $logo-site-lockup right no-repeat;
+     }
+    
+    #logo > a {
+        background-size: 200px;
+        display: block;
+        height: 100%;
+        margin-top: 0;
+    }
+}
+
+#menu > ul {
+    display: flex;
+    display: -ms-flexbox;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    font-size: 13px;
+    overflow: hidden;
+    width: calc(100% - 149px);
+}
+
+#menu > ul li {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+}
+
+#menu > ul a {
+    display: block;
+    height: 100%;
+    line-height: 50px;
+    text-align: center;
+}
+
+
+/* suppress menu-button-1 to go home */
+#nav_index {
+    display: none;
+}
+
+#userinfo_minor:hover a,
+#userinfo_username:hover a {
+    display: block;
+}
+
+#userinfo_username #nav_userinfo > a {
+    display: block;
+    font-size: 13px;
+    line-height: 50px;
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100px;
+}
+
+#userinfo_major > li,
+#userinfo_stats > li,
+.linkbox .brackets {
+    margin-left: 8px;
+}
+
+#userinfo_major,
+#userinfo_stats {
+    display: flex;
+    display: -ms-flexbox;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    position: absolute;
+    right: 8px;
+}
+
+#userinfo_major {
+    font-size: 13px;
+    right: 41px;
+    top: -53px;
+}
+
+#userinfo_stats {
+    font-size: 13px;
+    top: -31px;
+}
+
+#menu ul li:not(#nav_staff) a,
+#userinfo a.username {
+    color: $color-text-menu;
+    text-shadow: $color-accent-shadow-menutext;
+}
+
+/* menu li:nth-child(1) = Home button; is suppressed */
+
+#menu li:nth-child(2) {
+    background-color: $color-obj-menu-2;
+}
+
+#menu li:nth-child(3) {
+    background-color: $color-obj-menu-3;
+}
+
+#menu li:nth-child(4) {
+    background-color: $color-obj-menu-4;
+}
+
+#menu li:nth-child(5) {
+    background-color: $color-obj-menu-5;
+}
+
+#menu li:nth-child(6) {
+    background-color: $color-obj-menu-6;
+}
+
+#menu li:nth-child(7) {
+    background-color: $color-obj-menu-7;
+}
+
+#menu li:nth-child(8) {
+    background-color: $color-obj-menu-8;
+}
+
+#menu li:nth-child(9) {
+    background-color: $color-obj-menu-9;
+}
+
+#userinfo_username {
+    background-color: $color-background-menu-username;
+    right: 50px;
+}
+
+#menu {
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+}
 
 @media (min-width: 575px)  /* var(--phone-screen-size) */ {
     .thin:last-child > :not(.two_columns) {
@@ -1961,17 +1920,29 @@ body#collage .cats_music {
 }
 /* END Menu and topbar, desktop only */
 
-/* ## 1.6 Menu handling */
+/* ************************************************ */
+
+/* ## 1.5.1 Menu handling */
 /* horizontal menu */
 /* #2024 change to styled color instead of #fff to match vertical pulldown menu */
-#menu > ul a:hover {
-    color: $color-text-anchor;
+/* menu hover colors */
+
+#menu > ul a:hover, {
+    background-color: $color-background-menu-hover;
 }
 
-/* vertical pulldown menu */
+#userinfo_username:hover a:hover {
+    background-color: $color-background-menu-username-hover;
+}
+
+#userinfo_minor:hover a:hover {
+    background-color: $color-background-menu-userinfo-hover;
+}
+
+#menu > ul a:hover,
 #userinfo_minor:hover a,
 #userinfo_username:hover a {
-    color: $color-text-anchor;
+    color: $color-text-anchor-hover;
 }
 
 /* Icon revealed when menu is open */
@@ -1998,6 +1969,10 @@ body#collage .cats_music {
 }
 
 /* END MENU HANDLING */
+
+/* ************************************************ */
+
+/* ## 1.6 Headers Below Menu */
 
 /* ************************************************ */
 
@@ -2045,8 +2020,28 @@ body#collage .cats_music {
 
 /* ************************************************ */
 
-/* */
-/* */
+/* ## 1.6.2 Linkbox */
+/* linkbox appears near the page h1 header and provides outbound links */
+.linkbox,
+.linkbox .center {
+    text-align: right;
+}
+
+.linkbox br {
+    display: block;
+    line-height: 4px;
+}
+
+.linkbox > strong {
+    color: $color-text-linkbox;
+}
+
+.linkbox .brackets::after,
+.linkbox .brackets::before {
+    display: none;
+}
+
+/* ************************************************ */
 
 /* # 1.7 BEGIN NOTIFICATION BOX */
 
@@ -2140,6 +2135,36 @@ body#collage .cats_music {
 
 /* END SIDEBAR */
 
+/* ************************************************ */
+
+/* # 1.9 Upload form MusicBrainz popup */
+
+#musicbrainz_popup {
+    color: $color-text-popup;
+    background: $color-background-popup;
+    border: $color-accent-border-popup;
+    padding: 1rem;
+    font-weight: 600;
+}
+
+#musicbrainz_popup a {
+    color: $color-text-popup-anchor;
+}
+
+#musicbrainz_popup a:hover {
+    color: $color-text-popup-anchor-hover;
+}
+
+#musicbrainz_popup .brackets {
+    font-weight: 400;
+}
+
+#musicbrainz_popup #popup_close {
+    color: $color-text-button;
+}
+/*popup close button, see 'button'*/
+
+/* END upload form MusicBrainz popup */
 
 
 /* */

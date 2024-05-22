@@ -120,20 +120,21 @@ $color-obj-button-base-2: $back-600;
 $color-obj-menu-1:  $mid-1000; // unused (could be home)
 $color-obj-menu-2:  $mid-100; // torrents
 $color-obj-menu-3:  $mid-200; // collages
-$color-obj-menu-5:  $mid-300; // requests
+$color-obj-menu-4:  $mid-300; // requests
 $color-obj-menu-5:  $mid-400; // forums
 $color-obj-menu-6:  $mid-500; // irc
-$color-obj-menu-7:  $mid-600;  // top10
-$color-obj-menu-8:  $mid-700;  // rules
+$color-obj-menu-7:  $mid-600; // top10
+$color-obj-menu-8:  $mid-700; // rules
 $color-obj-menu-9:  $mid-800; // wiki
-$color-background-menu-userinfo-hover:  $mid-300; // VV pulldown menu ~ open
-$color-background-menu-userinfo:  $mid-900; // VV pulldown menu ~ closed
-$color-background-menu-username-hover:  $mid-400; // username menu ~ open
-$color-background-menu-username:  $mid-1000; // username menu ~ closed
+$color-background-menu-username:  $mid-900; // username menu ~ closed
+$color-background-menu-userinfo:  $mid-1000; // VV pulldown menu ~ closed
+$color-background-menu-hover: $mid-900;
+$color-background-menu-username-hover:  $mid-900; // username menu ~ open
+$color-background-menu-userinfo-hover:  $mid-900; // VV pulldown menu ~ open
 $color-background-mobilemenu-userinfo-1: $mid-400; // mobile pulldown menu gradient 1
 $color-background-mobilemenu-userinfo-2: $mid-900; // mobile pulldown menu gradient 2
-$color-background-notification-gradient-1: $mid-500; // usually works well with 'third-child'
-$color-background-notification-gradient-2: $mid-1000; // usually works well with 'seventh-child'
+$color-background-notification-gradient-1: $mid-1000; // usually works well with 'third-child'
+$color-background-notification-gradient-2: $mid-500; // usually works well with 'seventh-child'
 $color-background-notification: #000;
 
 $color-obj-noty-buttons-hover: $mid-900;
