@@ -61,6 +61,8 @@ $color-accent-cats_elearningvideos: mediumpurple;
 $color-accent-cats_music: darkslategray;
 $color-accent-forum-inline-last-read: #fed100;
 $color-accent-forum-unread: #fed100;
+
+
 $color-background-base: $back-100;
 $color-background-blockquote: $back-300;
 $color-background-box: $back-500;
@@ -75,6 +77,7 @@ $color-background-searchbars-fields: #crimson;  // should not be used ever
 $color-background-searchbars-field-focus: $mid-100;
 $color-background-searchbars-surround: $back-1000;
 $color-background-selection: $mid-800;
+$color-background-selection-menupulldown: rgba(255, 255, 255, 0.2);
 $color-background-table: $mid-300;  // primarily table-odd-rows
 $color-background-table-discog: $yo;
 $color-background-table-row-th: $mid-200;
@@ -92,7 +95,7 @@ $color-text-base: $fore-700;
 $color-text-bold: $fore-900;
 $color-text-button: $back-700;
 $color-text-footer: #dadada;
-$color-text-heading-anchor: $fore-800;
+$color-text-heading-anchor: $fore-500;
 $color-text-heading: $fore-1000;
 $color-text-important-alt: #099909;
 $color-text-important: #b71010;
@@ -130,7 +133,7 @@ $color-obj-menu-8:  $mid-700; // rules
 $color-obj-menu-9:  $mid-800; // wiki
 $color-background-menu-username:  $mid-900; // username menu ~ closed
 $color-background-menu-userinfo:  $mid-1000; // VV pulldown menu ~ closed
-$color-background-menu-hover: $mid-900;
+$color-background-menu-hover: $mid-300;
 $color-background-menu-username-hover:  $mid-900; // username menu ~ open
 $color-background-menu-userinfo-hover:  $mid-900; // VV pulldown menu ~ open
 $color-background-mobilemenu-userinfo-1: $mid-400; // mobile pulldown menu gradient 1

@@ -1804,22 +1804,16 @@ body#collage .cats_music {
 /* horizontal menu */
 /* #2024 change to styled color instead of #fff to match vertical pulldown menu */
 /* menu hover colors */
-#menu > ul a:hover {
-  background-color: #20C098;
-}
-
+#menu > ul a:hover,
+#userinfo_minor:hover a:hover,
 #userinfo_username:hover a:hover {
-  background-color: #308E67;
-}
-
-#userinfo_minor:hover a:hover {
-  background-color: #308E67;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 #menu > ul a:hover,
 #userinfo_minor:hover a,
 #userinfo_username:hover a {
-  color: #2B3A36;
+  /* color: $color-text-menu-hover; */
 }
 
 /* Icon revealed when menu is open */

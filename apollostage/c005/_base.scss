@@ -1927,22 +1927,16 @@ body#collage .cats_music {
 /* #2024 change to styled color instead of #fff to match vertical pulldown menu */
 /* menu hover colors */
 
-#menu > ul a:hover, {
-    background-color: $color-background-menu-hover;
-}
-
+#menu > ul a:hover,
+#userinfo_minor:hover a:hover,
 #userinfo_username:hover a:hover {
-    background-color: $color-background-menu-username-hover;
-}
-
-#userinfo_minor:hover a:hover {
-    background-color: $color-background-menu-userinfo-hover;
+  background-color: $color-background-selection-menupulldown;
 }
 
 #menu > ul a:hover,
 #userinfo_minor:hover a,
 #userinfo_username:hover a {
-    color: $color-text-menu-hover;
+    /* color: $color-text-menu-hover; */
 }
 
 /* Icon revealed when menu is open */
