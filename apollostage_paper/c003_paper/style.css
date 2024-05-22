@@ -91,6 +91,7 @@
 /* ## 0.1 Housekeeping and font loading */
 /* Finally add WOFF and Italic support */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wdth,wght@0,87.5,300..800;1,87.5,300..800&display=swap");
 @namespace url("http://www.w3.org/1999/xhtml");
 @namespace svg url("http://www.w3.org/2000/svg");
 /* END font loading */
@@ -497,7 +498,7 @@ strong.important_text_alt {
 .r02,
 .r03,
 .warning {
-  color: #a62929;
+  color: #660525;
 }
 
 .r04,
@@ -506,7 +507,7 @@ strong.important_text_alt {
 .r07,
 .r08,
 .r09 {
-  color: #e3ba65;
+  color: #C90;
 }
 
 .r10,
@@ -514,7 +515,7 @@ strong.important_text_alt {
 .r50,
 .r99,
 .vote_tag_up {
-  color: #3aa63a;
+  color: #056625;
 }
 
 .small_upvote,
@@ -523,7 +524,7 @@ strong.important_text_alt {
 .vote_artist_up,
 .vote_tag_up {
   font-weight: bolder;
-  color: #3aa63a;
+  color: #056625;
 }
 
 .small_downvote,
@@ -532,7 +533,7 @@ strong.important_text_alt {
 .vote_artist_down,
 .vote_tag_down {
   font-weight: bolder;
-  color: #a62929;
+  color: #660525;
 }
 
 #wrapper {
@@ -838,7 +839,7 @@ table.box2 {
 }
 
 #menu li:nth-child(2) {
-  background-color: yellow;
+  background-color: #134D1D;
 }
 
 #menu li:nth-child(3) {
@@ -1309,7 +1310,7 @@ ul.collage_images li a > span {
 }
 
 .poll .graph span {
-  background-color: #4e4ee7;
+  background-color: #0059D1;
   display: block;
   float: left;
   height: 8px;
@@ -1592,15 +1593,15 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
 }
 
 span[style*="color: green"] {
-  color: #4eb44e !important;
+  color: #00D131 !important;
 }
 
 span[style*="color: red"] {
-  color: #a62929 !important;
+  color: #660525 !important;
 }
 
 span[style*="color: blue"] {
-  color: #4e4ee7 !important;
+  color: #0059D1 !important;
 }
 
 .filelist_table td,
@@ -2999,6 +3000,7 @@ ul#check:after {
 /* ####### */
 /* # EOF # */
 /* ####### */
+/* local overrides for this theme */
 body, textarea {
   font-family: "Merriweather Sans", Noto, "Noto Sans", sans-serif;
   font-optical-sizing: auto;

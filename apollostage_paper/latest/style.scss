@@ -1,5 +1,6 @@
 /* APOLLOSTAGE PAPER THEME */
 /* 2024-05-22 */
+$color-obj-menu-2: crimson; //debuig only
 
 // DEFINE THEME COLORS AND ICONS
 // GOOD VARIABLES BAD FORMAT
@@ -102,12 +103,12 @@ $color-text-notification-words: $back-100;
 $color-text-popup-anchor-hover: $fore-100;
 $color-text-popup-anchor: $fore-800;
 $color-text-popup: $fore-600;
-$color-text-ratio-greenzone: #3aa63a;
-$color-text-ratio-redzone: #a62929;
-$color-text-ratio-yellowzone: #e3ba65;
+$color-text-ratio-greenzone: #056625;
+$color-text-ratio-redzone: #660525;
+$color-text-ratio-yellowzone: #C90;
 $color-text-selection: $color-text-bold; // usually #fff or $color-text-bold
-$color-text-span-blue: #4e4ee7;
-$color-text-span-green: #4eb44e;
+$color-text-span-blue: #0059D1;
+$color-text-span-green: #00D131;
 $color-text-table-discog-titles: $mid-900;
 $color-text-tooltipster: $fore-000;
 $color-text-tooltipster-anchor: $fore-500;
@@ -115,8 +116,8 @@ $color-text-tooltipster-anchor-hover: $fore-800;
 
 $color-obj-button-base-1: $back-200; // gradient from here to $color-text-anchor
 $color-obj-button-base-2: $back-600;
-$color-obj-menu-1: red; // unused (could be home)
-$color-obj-menu-2: yellow; // $mid-100; // torrents
+// $color-obj-menu-1: red; // unused (could be home)
+// $color-obj-menu-2: $mid-100; // torrents
 $color-obj-menu-3: $mid-200; // collages
 $color-obj-menu-4: $mid-300; // collages
 $color-obj-menu-5: $mid-400; // forums
@@ -168,6 +169,10 @@ $icon-number-leechers: url("https://wally-crunk.github.io/svg/gazelle/arrow-down
 
 
 @import '../apollostage/_base';
+
+/* local overrides for this theme */
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wdth,wght@0,87.5,300..800;1,87.5,300..800&display=swap');
 
 body, textarea {
  font-family: "Merriweather Sans", Noto, "Noto Sans", sans-serif;
