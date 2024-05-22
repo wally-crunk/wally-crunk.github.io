@@ -307,7 +307,7 @@ table {
 
 table .rowa,
 table .rowb {
-  border-top: 2px solid #157D63;
+  border-top: 2px solid #0F5B49;
 }
 
 table .rowa:nth-child(even),
@@ -327,7 +327,7 @@ table .rowa:nth-child(odd),
 table .rowb:nth-child(odd),
 #dnulist tr:not(.colhead, .colhead_dark):nth-child(odd),
 #upload tr:nth-child(odd) {
-  background-color: #0C4A3B;
+  background-color: #1E2926;
 }
 
 table ul.options_list {
@@ -1816,7 +1816,7 @@ body#collage .cats_music {
 #menu > ul a:hover,
 #userinfo_minor:hover a,
 #userinfo_username:hover a {
-  color: #23D1A5;
+  color: #1E2926;
 }
 
 /* Icon revealed when menu is open */

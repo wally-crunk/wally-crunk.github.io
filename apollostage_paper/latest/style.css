@@ -310,7 +310,7 @@ table {
 
 table .rowa,
 table .rowb {
-  border-top: 2px solid #C2C6C7;
+  border-top: 2px solid #0F5B49;
 }
 
 table .rowa:nth-child(even),
@@ -1819,7 +1819,7 @@ body#collage .cats_music {
 #menu > ul a:hover,
 #userinfo_minor:hover a,
 #userinfo_username:hover a {
-  color: #2884F0;
+  color: #1E2926;
 }
 
 /* Icon revealed when menu is open */

@@ -394,7 +394,7 @@ table
 
 table .rowa,
 table .rowb {
-    border-top: 2px solid $color-background-table-secondary;
+    border-top: 2px solid $color-accent-border-tablerows;
 }
 
 table .rowa:nth-child(even),
@@ -1942,7 +1942,7 @@ body#collage .cats_music {
 #menu > ul a:hover,
 #userinfo_minor:hover a,
 #userinfo_username:hover a {
-    color: $color-text-anchor-hover;
+    color: $color-text-menu-hover;
 }
 
 /* Icon revealed when menu is open */
