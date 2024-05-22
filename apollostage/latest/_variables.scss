@@ -39,6 +39,7 @@
  $fore-800: #C6D2C8;
  $fore-900: #D5E0D9;
  $fore-1000: #E5EFE9;
+ $fore-1100: #FAFFFC;
 
 
 // define theme colors
@@ -50,6 +51,7 @@ $color-accent-border-input-active: $mid-800;
 $color-accent-border-tooltipster: $mid-800;
 $color-accent-border-popup: $mid-800;
 $color-accent-border-tablerows: $back-600;
+$color-accent-border-tablerows-torrent: $back-600;
 $color-accent-shadow-menutext: initial;  // provisioned for derivative themes
 
 $color-accent-cats_applications: silver;
@@ -102,7 +104,7 @@ $color-text-important: #b71010;
 $color-text-input: $fore-600; // for pre-populated inputs
 $color-text-input-active: $fore-1000;
 $color-text-linkbox: $fore-900; 
-$color-text-menu: $fore-1000;
+$color-text-menu: $fore-1100;
 $color-text-mono: $fore-600;
 $color-text-notification-words: $back-200;
 $color-text-popup-anchor-hover: $mid-1000;

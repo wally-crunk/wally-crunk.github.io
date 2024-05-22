@@ -874,7 +874,7 @@ div#flip_view_1 div#similar-artist .name {
 }
 
 .torrent_table tr:not(.colhead, .colhead_dark) {
-  border-top: 2px solid #C2C6C7;
+  border-top: 2px solid #2B3A36;
 }
 
 .torrent_table tr .number_column:not(:last-child) {
@@ -1675,7 +1675,7 @@ body#collage .cats_music {
 
 #menu ul li:not(#nav_staff) a,
 #userinfo a.username {
-  color: #E5EFE9;
+  color: #FAFFFC;
   text-shadow: initial;
 }
 

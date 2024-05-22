@@ -962,7 +962,7 @@ div#flip_view_1 div#similar-artist .name {
 }
 
 .torrent_table tr:not(.colhead, .colhead_dark) {
-    border-top: 2px solid $color-background-table-secondary;
+    border-top: 2px solid $color-accent-border-tablerows-torrent;
 }
 
 .torrent_table tr .number_column:not(:last-child) {
