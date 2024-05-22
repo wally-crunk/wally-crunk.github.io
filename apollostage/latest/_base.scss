@@ -520,7 +520,7 @@ input[type="search"]:focus,
 select:focus,
 textarea:focus {
     background: $color-background-input-active;
-    border: 2px solid $color-accent-border-input-active;
+    border: 1px solid $color-accent-border-input-active;
     color: $color-text-input-active;
 }
 

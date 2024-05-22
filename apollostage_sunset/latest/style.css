@@ -395,7 +395,7 @@ button,
 input[type=button],
 input[type=submit],
 #popup_close {
-  background: linear-gradient(#b8b8b8, #2B3A36);
+  background: linear-gradient(#b8b8b8, #E5EFE9);
   border: none;
   border-radius: 1.5px;
   color: #30413D;
@@ -409,7 +409,7 @@ button:active,
 input[type=button]:active,
 input[type=submit]:active,
 #popup_close:active {
-  background: linear-gradient(#2B3A36, #b8b8b8);
+  background: linear-gradient(#E5EFE9, #b8b8b8);
 }
 
 input[type=email],
@@ -432,7 +432,7 @@ input[type=search]:focus,
 select:focus,
 textarea:focus {
   background: #1B2422;
-  border: 2px solid #1DAF8B;
+  border: 1px solid #1DAF8B;
   color: #E5EFE9;
 }
 
