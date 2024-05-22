@@ -384,13 +384,17 @@ form input {
     vertical-align: sub;
 }
 
-table,
+table
+ {
+    background-color: $color-background-table;
+}
+
 table .rowa:nth-child(even),
 table .rowb:nth-child(even),
 #dnulist tr:not(.colhead, .colhead_dark):nth-child(even)
 #upload tr:nth-child(even) 
  {
-    background-color: $color-background-table;
+    background-color: $color-background-table-row-even;
 }
 
 table {
@@ -904,31 +908,6 @@ table.box2 {
     top: -31px;
 }
 
-#searchbars > ul {
-    align-items: center;
-    background-color: $color-background-input;
-    display: flex;
-    display: -ms-flexbox;
-    -ms-flex-align: center;
-    height: 50px;
-    padding: 0 9px;
-}
-
-#searchbars > ul li {
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
-    margin-right: 9px;
-}
-
-#searchbars > ul li:last-child {
-    margin-right: 0;
-}
-
-#searchbars > ul input {
-    background-color: $color-background-form;
-    width: 100%;
-}
-
 #menu ul li:not(#nav_staff) a,
 #userinfo a.username {
     color: $color-text-menu;
@@ -1189,7 +1168,7 @@ div#flip_view_1 div#similar-artist .name {
 .group_torrent.edition,
 .torrent {
     background-color: $color-background-torrent;
-}g
+}
 
 .torrentdetails .linkbox {
     margin-bottom: 6px;
@@ -1982,7 +1961,7 @@ body#collage .cats_music {
 }
 /* END Menu and topbar, desktop only */
 
-/* # BEGIN Menu handling */
+/* ## 1.6 Menu handling */
 /* horizontal menu */
 /* #2024 change to styled color instead of #fff to match vertical pulldown menu */
 #menu > ul a:hover {
@@ -2007,19 +1986,6 @@ body#collage .cats_music {
     background-clip: border-box;
 }
 
-#searchbars .search_form {
-    background: 0 0;
-}
-
-#searchbars .search_form input {
-    border: none;
-    border-radius: 2.5px;
-    height: 30px;
-}
-
-#searchbars .search_form input:focus {
-    background: $color-background-table-secondary;
-}
 
 .sidebar {
     order: 5;
@@ -2033,7 +1999,52 @@ body#collage .cats_music {
 
 /* END MENU HANDLING */
 
+/* ************************************************ */
 
+/* ## 1.6.1 SEARCHBARS */
+
+#searchbars > ul {
+    align-items: center;
+    background-color: $color-background-searchbars-surround;
+    display: flex;
+    display: -ms-flexbox;
+    -ms-flex-align: center;
+    height: 50px;
+    padding: 0 9px;
+}
+
+#searchbars > ul li {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    margin-right: 9px;
+}
+
+#searchbars > ul li:last-child {
+    margin-right: 0;
+}
+
+#searchbars > ul input {
+    background-color: $color-background-searchbars-fields;
+    width: 100%;
+}
+
+#searchbars .search_form {
+    background: 0 0;
+}
+
+#searchbars .search_form input {
+    border: none;
+    border-radius: 2.5px;
+    height: 30px;
+    background: $color-background-searchbars;
+}
+
+#searchbars .search_form input:focus {
+    background: $color-background-searchbars-focus;
+    //$color-background-table-secondary;
+}
+
+/* ************************************************ */
 
 /* */
 /* */

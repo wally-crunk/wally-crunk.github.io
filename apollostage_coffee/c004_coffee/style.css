@@ -300,11 +300,14 @@ form input {
   vertical-align: sub;
 }
 
-table,
+table {
+  background-color: #272524;
+}
+
 table .rowa:nth-child(even),
 table .rowb:nth-child(even),
 #dnulist tr:not(.colhead, .colhead_dark):nth-child(even) #upload tr:nth-child(even) {
-  background-color: #272524;
+  background-color: aqua;
 }
 
 table {
@@ -812,31 +815,6 @@ table.box2 {
   top: -31px;
 }
 
-#searchbars > ul {
-  align-items: center;
-  background-color: #302C2B;
-  display: flex;
-  display: -ms-flexbox;
-  -ms-flex-align: center;
-  height: 50px;
-  padding: 0 9px;
-}
-
-#searchbars > ul li {
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  margin-right: 9px;
-}
-
-#searchbars > ul li:last-child {
-  margin-right: 0;
-}
-
-#searchbars > ul input {
-  background-color: #272524;
-  width: 100%;
-}
-
 #menu ul li:not(#nav_staff) a,
 #userinfo a.username {
   color: #fffacd;
@@ -1098,7 +1076,7 @@ div#flip_view_1 div#similar-artist .name {
   background-color: #302C2B;
 }
 
-g .torrentdetails .linkbox {
+.torrentdetails .linkbox {
   margin-bottom: 6px;
 }
 
@@ -1861,7 +1839,7 @@ body#collage .cats_music {
   }
 }
 /* END Menu and topbar, desktop only */
-/* # BEGIN Menu handling */
+/* ## 1.6 Menu handling */
 /* horizontal menu */
 /* #2024 change to styled color instead of #fff to match vertical pulldown menu */
 #menu > ul a:hover {
@@ -1886,20 +1864,6 @@ body#collage .cats_music {
   background-clip: border-box;
 }
 
-#searchbars .search_form {
-  background: 0 0;
-}
-
-#searchbars .search_form input {
-  border: none;
-  border-radius: 2.5px;
-  height: 30px;
-}
-
-#searchbars .search_form input:focus {
-  background: #3D2C29;
-}
-
 .sidebar {
   order: 5;
 }
@@ -1911,6 +1875,49 @@ body#collage .cats_music {
 }
 
 /* END MENU HANDLING */
+/* ************************************************ */
+/* ## 1.6.1 SEARCHBARS */
+#searchbars > ul {
+  align-items: center;
+  background-color: #fed100;
+  display: flex;
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  height: 50px;
+  padding: 0 9px;
+}
+
+#searchbars > ul li {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  margin-right: 9px;
+}
+
+#searchbars > ul li:last-child {
+  margin-right: 0;
+}
+
+#searchbars > ul input {
+  background-color: black;
+  width: 100%;
+}
+
+#searchbars .search_form {
+  background: 0 0;
+}
+
+#searchbars .search_form input {
+  border: none;
+  border-radius: 2.5px;
+  height: 30px;
+  background: aqua;
+}
+
+#searchbars .search_form input:focus {
+  background: red;
+}
+
+/* ************************************************ */
 /* */
 /* */
 /* # 1.7 BEGIN NOTIFICATION BOX */
