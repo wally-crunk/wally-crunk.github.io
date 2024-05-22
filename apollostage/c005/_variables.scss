@@ -45,8 +45,8 @@
 
 $color-accent-border-blockquote: $mid-500;
 $color-accent-border-box: $back-600;
-$color-accent-border-input-active: $mid-800;
 $color-accent-border-input: $mid-200;
+$color-accent-border-input-active: $mid-800;
 $color-accent-border-tooltipster: $mid-800;
 $color-accent-border-popup: $mid-800;
 $color-accent-border-tablerows: $mid-300;
@@ -68,17 +68,18 @@ $color-background-blockquote: $back-300;
 $color-background-box: $back-500;
 $color-background-form: $back-500;   // also boxes on frontpage
 $color-background-header: $mid-700; // rules, also mobile menu header
-$color-background-input: $back-200;   // also table-even-rows
+$color-background-input: $back-200;   
+$color-background-input-active: $back-300;
 $color-background-menu-shadow: $mid-500; //mobile menu
 $color-background-poll: $mid-400;
 $color-background-popup: $mid-100;
 $color-background-searchbars: $back-600;
 $color-background-searchbars-fields: #crimson;  // should not be used ever
-$color-background-searchbars-field-focus: $mid-100;
-$color-background-searchbars-surround: $back-1000;
+$color-background-searchbars-field-focus: $back-100;
+$color-background-searchbars-surround: $back-700;
 $color-background-selection: $mid-800;
 $color-background-selection-menupulldown: rgba(255, 255, 255, 0.2);
-$color-background-table: $mid-300;  // primarily table-odd-rows
+$color-background-table: $back-500;  //  tables/forms without odd-even treatment
 $color-background-table-discog: $yo;
 $color-background-table-row-th: $mid-200;
 $color-background-table-row-odd: $back-800;
@@ -95,12 +96,12 @@ $color-text-base: $fore-700;
 $color-text-bold: $fore-900;
 $color-text-button: $back-700;
 $color-text-footer: #dadada;
-$color-text-heading-anchor: $fore-500;
-$color-text-heading: $fore-1000;
+$color-text-heading-anchor: $mid-700;
+$color-text-heading: $fore-800;
 $color-text-important-alt: #099909;
 $color-text-important: #b71010;
-$color-text-input-active: $fore-1000;
 $color-text-input: $fore-600; // for pre-populated inputs
+$color-text-input-active: $fore-1000;
 $color-text-linkbox: $fore-900; 
 $color-text-menu: $fore-800;
 $color-text-mono: $fore-600;

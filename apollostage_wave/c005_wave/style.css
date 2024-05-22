@@ -151,7 +151,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #E5EFE9;
+  color: #C6D2C8;
   line-height: normal;
   margin: 8px 0;
   max-width: 100%;
@@ -163,7 +163,7 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-  color: #99A598;
+  color: #1A9F7E;
 }
 
 h1,
@@ -431,7 +431,8 @@ input[type=text]:focus,
 input[type=search]:focus,
 select:focus,
 textarea:focus {
-  border: 1px solid #1DAF8B;
+  background: #1B2422;
+  border: 2px solid #1DAF8B;
   color: #E5EFE9;
 }
 
@@ -1843,7 +1844,7 @@ body#collage .cats_music {
 /* ## 1.6.1 SEARCHBARS */
 #searchbars > ul {
   align-items: center;
-  background-color: #3E5751;
+  background-color: #30413D;
   display: flex;
   display: -ms-flexbox;
   -ms-flex-align: center;
@@ -1877,7 +1878,7 @@ body#collage .cats_music {
 }
 
 #searchbars .search_form input:focus {
-  background: #093A2E;
+  background: #111614;
 }
 
 /* ************************************************ */
