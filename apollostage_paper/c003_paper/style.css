@@ -838,6 +838,12 @@ table.box2 {
   width: 100%;
 }
 
+#menu ul li:not(#nav_staff) a,
+#userinfo a.username {
+  color: #DEF7E2;
+  text-shadow: initial;
+}
+
 #menu li:nth-child(2) {
   background-color: #65BC98;
 }

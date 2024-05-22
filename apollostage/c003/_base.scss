@@ -929,6 +929,12 @@ table.box2 {
     width: 100%;
 }
 
+#menu ul li:not(#nav_staff) a,
+#userinfo a.username {
+    color: $color-text-menu;
+    text-shadow: $color-accent-shadow-menutext;
+}
+
 #menu li:nth-child(2) {
     background-color: $color-obj-menu-2;
 }
