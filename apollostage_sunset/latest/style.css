@@ -164,7 +164,7 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-  color: #1A9F7E;
+  color: #20C098;
 }
 
 h1,
@@ -1673,7 +1673,7 @@ body#collage .cats_music {
 
 #menu ul li:not(#nav_staff) a,
 #userinfo a.username {
-  color: #C6D2C8;
+  color: #E5EFE9;
   text-shadow: initial;
 }
 
