@@ -2,6 +2,7 @@
 /* 2024-05-16 */
 
 // DEFINE THEME COLORS AND ICONS
+// GOOD VARIABLES BAD FORMAT
 
 // import basic colors as a backup:
 
@@ -43,96 +44,101 @@ $fore-900: #99C8FF;
 $fore-1000: #CAE3FF;
 
 $gray-300: #727576;
-
-  
+$yellow-300: #e3ba65;
 // define theme colors
 
-$color-background-base: $back-100;
-$color-background-form: $back-200; 	// also boxes on frontpage
-$color-background-table: $back-400;	// primarily table-odd-rows
-$color-background-input: $back-500; 	// also table-even-rows
-$color-background-table-secondary: $back-700;	// also form field in focus
+$color-accent-border-blockquote: $back-1000;
+$color-accent-border-box: $mid-900;
+$color-accent-border-input-active: $fore-800;
+$color-accent-border-input: $back-800;
+$color-accent-border-tooltipster: $back-1000;
+$color-accent-border-popup: $mid-900;
 
-$color-text-input: $gray-300;
-$color-text-mono: $fore-400;
-$color-text-base: $fore-500;
-$color-text-bold: $fore-600;
-$color-text-anchor: $fore-800;
-$color-text-anchor-hover: $fore-900;
-$color-text-button: $fore-400;
-
-$direct-accent-primary: $fore-700;	// for portions of headers
-$direct-accent-offset: $fore-900;
-
-// Ten color gradient:
-
-$color-obj-menu-2:	$mid-100; // torrents
-$color-obj-menu-3:	$mid-200; // collages
-$color-obj-menu-5:	$mid-300; // requests
-$color-obj-menu-5:	$mid-400; // forums
-$color-obj-menu-6:	$mid-500; // irc
-$color-obj-menu-7:	$mid-600; // top10
-$color-background-header:		$mid-700; // rules, also mobile menu header
-$color-obj-menu-9:	$mid-800; // wiki
-$color-background-menu-username:		$mid-900; // username menu ~ closed
-$color-background-menu-username-hover:	$mid-700; // username menu ~ open
-$color-background-menu-userinfo:	$mid-1000; // VV pulldown menu ~ closed
-$color-background-menu-userinfo-hover:	$mid-700; // VV pulldown menu ~ open
-
-// mobile pulldown menu gradient
-
-$color-background-mobilemenu-userinfo-1: $mid-900; // mobile pulldown menu gradient 1
-$color-background-mobilemenu-userinfo-2: $mid-300; // mobile pulldown menu gradient 2
-
-// notification gradient
-
-$color-background-gradient-1: $mid-900;	// usually works well with 'third-child'
-$color-background-gradient-2: $mid-300;	// usually works well with 'seventh-child'
-$color-notification-background: #000000;
-
-// formatting colors for page elements
-
-$color-background-blockquote: $mid-100;
-$color-background-torrent: $back-200;
-$color-accent-blockquote: $back-600;
-$color-background-box: $back-700;
-$box-border-color: $back-900; 
-$color-background-input: $back-500;	 
-$color-accent-border-active: $mid-700;
-$color-accent-border-active: $mid-900;
-$color-background-torrent: $back-700;
-$color-text-footer: $fore-100;
-$color-text-input: $gray-300;                   
-$color-obj-button-base-1: $back-200; 		// gradient from here to $color-text-anchor
-$color-obj-button-base-2: $back-600;
-$color-text-ratio-redzone: #a62929;
-$color-text-ratio-yellowzone: #e3ba65;
-$color-text-ratio-greenzone: #3aa63a;
-$color-background-selection: $mid-1000;
-$color-text-selection: $color-text-bold; // usually #fff or $color-text-bold
-$color-background-poll: rgb(131 228 166 / 10%);
-
-// overrides these colors when called: for more theme flavor?
-
-$color-text-span-green: #4eb44e;
-$color-text-span-blue: #4e4ee7;
-
-// accent color for upload categories (stripes)
-
-$color-accent-cats_music: #fd6659;
 $color-accent-cats_applications: #f02940;
 $color-accent-cats_audiobooks: #a54873;
 $color-accent-cats_comedy: #8b869c;
 $color-accent-cats_comics: #688187;
 $color-accent-cats_ebooks: #578f9d;
 $color-accent-cats_elearningvideos: #793555;
+$color-accent-cats_music: #fd6659;
 
-// accent color for tag bubbles
+$color-accent-forum-inline-last-read: $yellow-300;
+$color-accent-forum-unread: $yellow-300;
 
-// These can equal "ninth" and "second"
-// or adjust contrast as desired to emphasize/de-emphaszie
-$color-obj-tag_bubble-background: $mid-300; 
-$color-obj-tag_bubble-foreground: $mid-900; 
+$color-background-base: $back-100;
+$color-background-blockquote: $back-300;
+$color-background-box: $back-500;
+$color-background-form: $back-200; // also boxes on frontpage
+$color-background-header: $mid-700; // mobile menu tab header
+$color-background-input: $back-400; 
+$color-background-menu-shadow: $back-800;
+$color-background-poll: rgb(131 228 166 / 10%);
+$color-background-popup: $back-500;
+$color-background-selection: $mid-1000;
+$color-background-table: $back-400; // primarily table-odd-rows
+$color-background-table-discog: $back-300;
+$color-background-table-row-th: $back-900;
+$color-background-table-row-odd: $back-500;
+$color-background-table-keyrows: $mid-700;
+$color-background-table-secondary: $back-700; 
+$color-background-table-torrents-group: $back-200;
+$color-background-torrent: $back-700;
+
+$color-text-anchor-hover: $fore-900;
+$color-text-anchor: $fore-800;
+$color-text-base: $fore-500;
+$color-text-bold: $fore-600;
+$color-text-button: $fore-400;
+$color-text-footer: $fore-100;
+$color-text-heading-anchor: $fore-800;
+$color-text-heading: $fore-400;
+$color-text-important-alt: #a54873;
+$color-text-important: #f02940;
+$color-text-input-active: $fore-600;
+$color-text-input: $gray-300; // for pre-populated inputs
+$color-text-linkbox: $fore-100;
+$color-text-mono: $fore-400;
+$color-text-notification-words: $back-100;
+$color-text-popup-anchor-hover: $fore-100;
+$color-text-popup-anchor: $fore-800;
+$color-text-popup: $fore-600;
+$color-text-ratio-greenzone: #3aa63a;
+$color-text-ratio-redzone: #a62929;
+$color-text-ratio-yellowzone: #e3ba65;
+$color-text-selection: $color-text-bold; // usually #fff or $color-text-bold
+$color-text-span-blue: #4e4ee7;
+$color-text-span-green: #4eb44e;
+$color-text-table-discog-titles: $mid-900;
+$color-text-tooltipster: $fore-000;
+$color-text-tooltipster-anchor: $fore-500;
+$color-text-tooltipster-anchor-hover: $fore-800;
+
+$color-obj-button-base-1: $back-200; // gradient from here to $color-text-anchor
+$color-obj-button-base-2: $back-600;
+$color-obj-menu-1: red; // unused (could be home)
+$color-obj-menu-2: $mid-100; // torrents
+$color-obj-menu-3: $mid-200; // collages
+$color-obj-menu-4: $mid-300; // collages
+$color-obj-menu-5: $mid-400; // forums
+$color-obj-menu-6: $mid-500; // irc
+$color-obj-menu-7: $mid-600; // top10
+$color-obj-menu-8: $mid-700; // rules
+$color-obj-menu-9: $mid-800; // wiki
+$color-background-menu-username: $mid-900; // username menu ~ closed
+$color-background-menu-username-hover: $mid-700; // username menu ~ open
+$color-background-menu-userinfo: $mid-1000; // VV pulldown menu ~ closed
+$color-background-menu-userinfo-hover: $mid-700; // VV pulldown menu ~ open
+
+$color-background-mobilemenu-userinfo-1: $mid-900; // mobile pulldown menu gradient 1
+$color-background-mobilemenu-userinfo-2: $mid-300; // mobile pulldown menu gradient 2
+$color-background-notification-gradient-1: $mid-900; // usually works well with 'third-child'
+$color-background-notification-gradient-2: $mid-300; // usually works well with 'seventh-child'
+$color-background-notification: #000000;
+
+$color-obj-poll: $color-text-span-blue; // poll active part of bargraph
+$color-obj-tag_bubble-background: $mid-300; // These can equal "ninth" and "second"
+$color-obj-tag_bubble-foreground: $mid-900; // These can equal "ninth" and "second"
+$color-obj-noty-buttons-hover: $mid-900; // These can equal tag_bubble-foreground
 
 // Site header ~ need light background version
 
@@ -158,11 +164,10 @@ $icon-number-snatches: url("https://wally-crunk.github.io/svg/gazelle/arrow-loop
 $icon-number-seeders: url("https://wally-crunk.github.io/svg/gazelle/arrow-up-round-000.svg");
 $icon-number-leechers: url("https://wally-crunk.github.io/svg/gazelle/arrow-down-round-000.svg");
 
-@import '../apollostage/_base';
+// EOF
 
-/* local overrides for this theme */
 
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wdth,wght@0,87.5,300..800;1,87.5,300..800&display=swap');
+
 
 body, textarea {
  font-family: "Merriweather Sans", Noto, "Noto Sans", sans-serif;

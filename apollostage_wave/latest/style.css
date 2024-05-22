@@ -2975,6 +2975,7 @@ table.torrent_table.cats.m_table td.td_info.big_info div.group_info.clear div.ta
 /* */
 /* */
 /* ## 4.4 BETA -- Upload warnings ## */
+div.upload-error:after,
 ul#check:after {
   content: "BETA:  Warning!  There were one or more errors in your submission. Check below for error messages.";
   font-weight: 700;
