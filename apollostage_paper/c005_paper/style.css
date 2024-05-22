@@ -308,22 +308,22 @@ table {
   background-color: #C2C6C7;
 }
 
+table .rowa,
+table .rowb {
+  border-top: 2px solid #C2C6C7;
+}
+
 table .rowa:nth-child(even),
 table .rowb:nth-child(even),
 #dnulist tr:not(.colhead, .colhead_dark):nth-child(even),
 #upload tr:nth-child(even) {
-  background-color: #0C4A3B;
+  background-color: #093A2E;
 }
 
 table {
   border-collapse: collapse;
   margin: 8px 0;
   width: 100%;
-}
-
-table .rowa,
-table .rowb {
-  border-top: 2px solid #C2C6C7;
 }
 
 table .rowa:nth-child(odd),

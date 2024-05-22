@@ -76,9 +76,9 @@ $color-background-searchbars-surround: $back-300;
 $color-background-selection: $mid-800;
 $color-background-table: $mid-300;  // primarily table-odd-rows
 $color-background-table-discog: $mid-900;
-$color-background-table-row-th: $mid-800;
-$color-background-table-row-odd: $mid-400;
-$color-background-table-row-even: $mid-200;
+$color-background-table-row-th: $mid-400;
+$color-background-table-row-odd: $mid-200;
+$color-background-table-row-even: $mid-100;
 $color-background-table-keyrows: $mid-700;
 $color-background-table-secondary: $mid-500;  // also form field in focus
 $color-background-table-torrents-group: $back-600;
@@ -99,7 +99,7 @@ $color-text-input: $fore-600; // for pre-populated inputs
 $color-text-linkbox: $fore-900; 
 $color-text-menu: $fore-800;
 $color-text-mono: $fore-600;
-$color-text-notification-words: $mid-200;
+$color-text-notification-words: $back-200;
 $color-text-popup-anchor-hover: $mid-1000;
 $color-text-popup-anchor: $fore-1000;
 $color-text-popup: $fore-800;

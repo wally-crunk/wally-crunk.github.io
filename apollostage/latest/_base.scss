@@ -392,6 +392,11 @@ table
     background-color: $color-background-table;
 }
 
+table .rowa,
+table .rowb {
+    border-top: 2px solid $color-background-table-secondary;
+}
+
 table .rowa:nth-child(even),
 table .rowb:nth-child(even),
 #dnulist tr:not(.colhead, .colhead_dark):nth-child(even),
@@ -404,11 +409,6 @@ table {
     border-collapse: collapse;
     margin: 8px 0;
     width: 100%;
-}
-
-table .rowa,
-table .rowb {
-    border-top: 2px solid $color-background-table-secondary;
 }
 
 table .rowa:nth-child(odd),

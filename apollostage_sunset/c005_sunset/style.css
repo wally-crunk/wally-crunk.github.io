@@ -306,11 +306,16 @@ table {
   background-color: #302d34;
 }
 
+table .rowa,
+table .rowb {
+  border-top: 2px solid #29262d;
+}
+
 table .rowa:nth-child(even),
 table .rowb:nth-child(even),
 #dnulist tr:not(.colhead, .colhead_dark):nth-child(even),
 #upload tr:nth-child(even) {
-  background-color: #0C4A3B;
+  background-color: #093A2E;
 }
 
 table {
@@ -319,16 +324,11 @@ table {
   width: 100%;
 }
 
-table .rowa,
-table .rowb {
-  border-top: 2px solid #29262d;
-}
-
 table .rowa:nth-child(odd),
 table .rowb:nth-child(odd),
 #dnulist tr:not(.colhead, .colhead_dark):nth-child(odd),
 #upload tr:nth-child(odd) {
-  background-color: #126C56;
+  background-color: #0C4A3B;
 }
 
 table ul.options_list {
@@ -338,7 +338,7 @@ table ul.options_list {
 
 .colhead,
 .colhead_dark {
-  background-color: #1DAF8B;
+  background-color: #126C56;
   line-height: 18px;
 }
 
@@ -1936,7 +1936,7 @@ body#collage .cats_music {
 /* first row of each box */
 #noty_bottomRight_layout_container .noty_message {
   background: radial-gradient(circle at top right, #23D1A5, #157D63) !important;
-  color: #0C4A3B !important;
+  color: #161C1B !important;
   font-weight: 700;
   padding: 0 !important;
 }
