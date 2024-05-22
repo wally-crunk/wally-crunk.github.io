@@ -316,13 +316,13 @@ table {
 
 table .rowa,
 table .rowb {
-  border-top: 2px solid #9A9E9F;
+  border-top: 2px solid #C2C6C7;
 }
 
 table .rowa:nth-child(odd),
 table .rowb:nth-child(odd),
 #dnulist tr:not(.colhead, .colhead_dark):nth-child(odd) #upload tr:nth-child(odd) {
-  background-color: #B5B9BA;
+  background-color: #EBEFF0;
 }
 
 table ul.options_list {
@@ -332,7 +332,7 @@ table ul.options_list {
 
 .colhead,
 .colhead_dark {
-  background-color: #8D9091;
+  background-color: #B5B9BA;
   line-height: 18px;
 }
 
@@ -1075,11 +1075,11 @@ div#flip_view_1 div#similar-artist .name {
 }
 
 .torrent_table {
-  background-color: #9A9E9F;
+  background-color: #C2C6C7;
 }
 
 .torrent_table tr:not(.colhead, .colhead_dark) {
-  border-top: 2px solid #9A9E9F;
+  border-top: 2px solid #C2C6C7;
 }
 
 .torrent_table tr .number_column:not(:last-child) {
@@ -1096,7 +1096,7 @@ div#flip_view_1 div#similar-artist .name {
 
 .group_torrent.edition,
 .torrent {
-  background-color: #9A9E9F;
+  background-color: crimson;
 }
 
 g .torrentdetails .linkbox {
@@ -1594,7 +1594,7 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
 
 .box table:not(.layout),
 .box2 table:not(.layout) {
-  border: 2px solid #9A9E9F;
+  border: 2px solid #C2C6C7;
   margin: 8px 0;
 }
 
@@ -1898,7 +1898,7 @@ body#collage .cats_music {
 }
 
 #searchbars .search_form input:focus {
-  background: #9A9E9F;
+  background: #C2C6C7;
 }
 
 .sidebar {
