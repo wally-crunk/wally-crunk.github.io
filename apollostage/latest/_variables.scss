@@ -5,16 +5,16 @@
 
 
 //Backs
- $back-100: #131918;
- $back-200: #161C1B;
- $back-300: #181F1E;
- $back-400: #1A2321;
- $back-500: #1C2624;
- $back-600: #1E2926;
- $back-700: #202C29;
- $back-800: #22302C;
- $back-900: #24332F;
- $back-1000: #263632;
+ $back-100: #111614;
+ $back-200: #161D1B;
+ $back-300: #1B2422;
+ $back-400: #212B29;
+ $back-500: #263330;
+ $back-600: #2B3A36;
+ $back-700: #30413D;
+ $back-800: #354944;
+ $back-900: #39504A;
+ $back-1000: #3E5751;
  $yo: #fed100;
 //Mids
  $mid-100: #093A2E;
@@ -70,16 +70,16 @@ $color-background-input: $back-200;   // also table-even-rows
 $color-background-menu-shadow: $mid-500; //mobile menu
 $color-background-poll: $mid-400;
 $color-background-popup: $mid-100;
-$color-background-searchbars: $back-400;
+$color-background-searchbars: $back-600;
 $color-background-searchbars-fields: #crimson;  // should not be used ever
-$color-background-searchbars-field-focus: $back-500;
-$color-background-searchbars-surround: $back-300;
+$color-background-searchbars-field-focus: $mid-100;
+$color-background-searchbars-surround: $back-1000;
 $color-background-selection: $mid-800;
 $color-background-table: $mid-300;  // primarily table-odd-rows
-$color-background-table-discog: $mid-900;
-$color-background-table-row-th: $mid-400;
-$color-background-table-row-odd: $back-600;
-$color-background-table-row-even: $mid-100;
+$color-background-table-discog: $yo;
+$color-background-table-row-th: $mid-200;
+$color-background-table-row-odd: $back-800;
+$color-background-table-row-even: $back-400;
 $color-background-table-keyrows: $mid-700;
 $color-background-table-secondary: $mid-500;  // also form field in focus
 $color-background-table-torrents-group: $back-600;

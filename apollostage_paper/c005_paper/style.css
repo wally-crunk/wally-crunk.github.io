@@ -317,7 +317,7 @@ table .rowa:nth-child(even),
 table .rowb:nth-child(even),
 #dnulist tr:not(.colhead, .colhead_dark):nth-child(even),
 #upload tr:nth-child(even) {
-  background-color: #093A2E;
+  background-color: #212B29;
 }
 
 table {
@@ -1819,7 +1819,7 @@ body#collage .cats_music {
 #menu > ul a:hover,
 #userinfo_minor:hover a,
 #userinfo_username:hover a {
-  color: #1E2926;
+  color: #2B3A36;
 }
 
 /* Icon revealed when menu is open */
@@ -1851,7 +1851,7 @@ body#collage .cats_music {
 /* ## 1.6.1 SEARCHBARS */
 #searchbars > ul {
   align-items: center;
-  background-color: #181F1E;
+  background-color: #3E5751;
   display: flex;
   display: -ms-flexbox;
   -ms-flex-align: center;
@@ -1881,11 +1881,11 @@ body#collage .cats_music {
   border: none;
   border-radius: 2.5px;
   height: 30px;
-  background: #1A2321;
+  background: #2B3A36;
 }
 
 #searchbars .search_form input:focus {
-  background: #1C2624;
+  background: #093A2E;
 }
 
 /* ************************************************ */

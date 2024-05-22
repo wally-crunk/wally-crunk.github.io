@@ -128,7 +128,7 @@ textarea,
 }
 
 body {
-  background-color: #131918;
+  background-color: #111614;
   box-sizing: border-box;
   color: #B6C3B8;
   font-size: 12px;
@@ -208,8 +208,8 @@ textarea:focus {
 /* formatting on .box.pad for the [box] bbcode tag */
 .box .box.pad,
 .main_column .box.pad:not(#reply_box) {
-  background-color: #1C2624;
-  border: 2px solid #1E2926;
+  background-color: #263330;
+  border: 2px solid #2B3A36;
   margin: 8px;
   border-radius: 0.25rem;
 }
@@ -286,7 +286,7 @@ li:last-child {
 }
 
 blockquote {
-  background-color: #181F1E;
+  background-color: #1B2422;
   border: 1px dashed #157D63;
   margin: 12px;
   padding: 12px;
@@ -314,7 +314,7 @@ table .rowa:nth-child(even),
 table .rowb:nth-child(even),
 #dnulist tr:not(.colhead, .colhead_dark):nth-child(even),
 #upload tr:nth-child(even) {
-  background-color: #093A2E;
+  background-color: #212B29;
 }
 
 table {
@@ -327,7 +327,7 @@ table .rowa:nth-child(odd),
 table .rowb:nth-child(odd),
 #dnulist tr:not(.colhead, .colhead_dark):nth-child(odd),
 #upload tr:nth-child(odd) {
-  background-color: #1E2926;
+  background-color: #354944;
 }
 
 table ul.options_list {
@@ -337,7 +337,7 @@ table ul.options_list {
 
 .colhead,
 .colhead_dark {
-  background-color: #126C56;
+  background-color: #0C4A3B;
   line-height: 18px;
 }
 
@@ -372,7 +372,7 @@ td:last-child {
 }
 
 form {
-  background-color: #1C2624;
+  background-color: #263330;
 }
 
 ˜√Ω form table td.label {
@@ -394,10 +394,10 @@ button,
 input[type=button],
 input[type=submit],
 #popup_close {
-  background: linear-gradient(#b8b8b8, #1E2926);
+  background: linear-gradient(#b8b8b8, #2B3A36);
   border: none;
   border-radius: 1.5px;
-  color: #202C29;
+  color: #30413D;
   cursor: pointer;
   font-weight: 600;
   height: 32px;
@@ -408,7 +408,7 @@ button:active,
 input[type=button]:active,
 input[type=submit]:active,
 #popup_close:active {
-  background: linear-gradient(#1E2926, #b8b8b8);
+  background: linear-gradient(#2B3A36, #b8b8b8);
 }
 
 input[type=email],
@@ -417,7 +417,7 @@ input[type=text],
 input[type=search],
 select,
 textarea {
-  background: #161C1B;
+  background: #161D1B;
   border: 1px solid #0C4A3B;
   color: #A7B4A8;
   height: 32px;
@@ -559,7 +559,7 @@ strong.important_text_alt {
 
 .box,
 .box2 {
-  background-color: #1C2624;
+  background-color: #263330;
   margin-bottom: 8px;
   margin-top: 8px;
 }
@@ -570,7 +570,7 @@ table.box2 {
 }
 
 .head {
-  background-color: #161C1B;
+  background-color: #161D1B;
   line-height: 18px;
 }
 
@@ -876,11 +876,11 @@ div#flip_view_1 div#similar-artist .name {
 }
 
 .torrent_table .group {
-  background-color: #161C1B;
+  background-color: #161D1B;
 }
 
 .group_torrent {
-  background-color: #1C2624;
+  background-color: #263330;
 }
 
 .group_torrent.edition,
@@ -1198,7 +1198,7 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
 }
 
 #discog_table > div.box.center {
-  background-color: #20C098;
+  background-color: #fed100;
   padding: 12px;
   text-align: left;
 }
@@ -1388,7 +1388,7 @@ blockquote {
 .reportinfo_table,
 .torrentdetails,
 blockquote {
-  background-color: #181F1E;
+  background-color: #1B2422;
 }
 
 #bookmarks #torrent_table tr:not(.colhead, .colhead_dark) td:nth-child(2) {
@@ -1459,14 +1459,14 @@ blockquote {
 }
 
 .tooltipster-default {
-  background-color: #131918;
+  background-color: #111614;
   border: 0 solid #1DAF8B;
   border-radius: 2.5px;
   color: #188E71;
 }
 
 .tooltipster-default .tooltipster-content {
-  background-color: #131918;
+  background-color: #111614;
   color: #188E71;
   font-size: 12px;
   line-height: 1.4;
@@ -1474,7 +1474,7 @@ blockquote {
 }
 
 .tooltipster-default .tooltipster-content a {
-  background-color: #131918;
+  background-color: #111614;
   color: #1DAF8B;
   font-weight: 600;
 }
@@ -1816,7 +1816,7 @@ body#collage .cats_music {
 #menu > ul a:hover,
 #userinfo_minor:hover a,
 #userinfo_username:hover a {
-  color: #1E2926;
+  color: #2B3A36;
 }
 
 /* Icon revealed when menu is open */
@@ -1848,7 +1848,7 @@ body#collage .cats_music {
 /* ## 1.6.1 SEARCHBARS */
 #searchbars > ul {
   align-items: center;
-  background-color: #181F1E;
+  background-color: #3E5751;
   display: flex;
   display: -ms-flexbox;
   -ms-flex-align: center;
@@ -1878,11 +1878,11 @@ body#collage .cats_music {
   border: none;
   border-radius: 2.5px;
   height: 30px;
-  background: #1A2321;
+  background: #2B3A36;
 }
 
 #searchbars .search_form input:focus {
-  background: #1C2624;
+  background: #093A2E;
 }
 
 /* ************************************************ */
@@ -1935,7 +1935,7 @@ body#collage .cats_music {
 /* first row of each box */
 #noty_bottomRight_layout_container .noty_message {
   background: radial-gradient(circle at top right, #23D1A5, #157D63) !important;
-  color: #161C1B !important;
+  color: #161D1B !important;
   font-weight: 700;
   padding: 0 !important;
 }
@@ -2016,7 +2016,7 @@ body#collage .cats_music {
 }
 
 #musicbrainz_popup #popup_close {
-  color: #202C29;
+  color: #30413D;
 }
 
 /*popup close button, see 'button'*/
@@ -2785,7 +2785,7 @@ body#collage .cats_music {
   }
   #stats_ratio .tooltip {
     /* Provide a local background for the number to appear in color */
-    background-color: #1C2624;
+    background-color: #263330;
     border-radius: 0.45rem;
     padding-left: 0.45rem;
     padding-right: 0.45rem;
