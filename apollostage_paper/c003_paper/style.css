@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* APOLLOSTAGE PAPER THEME */
-/* 2024-05-16 */
+/* 2024-05-22 */
 /* ################################################################################ */
 /* APOLLOSTAGE THEME */
 /* version 2024.05.16
@@ -838,7 +838,7 @@ table.box2 {
 }
 
 #menu li:nth-child(2) {
-  background-color: #6FD0A8;
+  background-color: yellow;
 }
 
 #menu li:nth-child(3) {
