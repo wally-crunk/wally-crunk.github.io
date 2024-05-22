@@ -130,7 +130,7 @@ textarea,
 body {
   background-color: #EBEFF0;
   box-sizing: border-box;
-  color: #144B9F;
+  color: #243026;
   font-size: 12px;
   line-height: 1.6;
   margin: 0 8px;
@@ -141,7 +141,7 @@ pre, code {
   font-optical-sizing: auto;
   font-variant-ligatures: no-contextual;
   font-weight: 200;
-  color: #0D4184;
+  color: #103764;
 }
 
 h1,
@@ -150,7 +150,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #0D4184;
+  color: #103764;
   line-height: normal;
   margin: 8px 0;
   max-width: 100%;
@@ -162,7 +162,7 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-  color: #2884F0;
+  color: #2478DB;
 }
 
 h1,
@@ -184,12 +184,12 @@ h5 {
 }
 
 a {
-  color: #2884F0;
+  color: #144B9F;
   text-decoration: none;
 }
 
 a:hover {
-  color: #99C8FF;
+  color: #2884F0;
 }
 
 a:active,
@@ -253,16 +253,16 @@ textarea:focus {
 }
 
 svg|a {
-  fill: #2884F0;
+  fill: #144B9F;
 }
 
 svg|a:hover {
-  fill: #99C8FF;
+  fill: #2884F0;
 }
 
 b,
 strong {
-  color: #1F58BB;
+  color: #192E47;
   font-weight: 600;
 }
 
@@ -294,7 +294,7 @@ blockquote {
 
 ::selection {
   background-color: #2F8963;
-  color: #1F58BB;
+  color: #192E47;
 }
 
 form input {
@@ -498,7 +498,7 @@ strong.important_text_alt {
 .r02,
 .r03,
 .warning {
-  color: #660525;
+  color: hsl(351.7, 56.7%, 42.5%);
 }
 
 .r04,
@@ -507,7 +507,7 @@ strong.important_text_alt {
 .r07,
 .r08,
 .r09 {
-  color: #C90;
+  color: hsl(48, 73%, 42%);
 }
 
 .r10,
@@ -515,7 +515,7 @@ strong.important_text_alt {
 .r50,
 .r99,
 .vote_tag_up {
-  color: #056625;
+  color: hsl(140, 77%, 48%);
 }
 
 .small_upvote,
@@ -524,7 +524,7 @@ strong.important_text_alt {
 .vote_artist_up,
 .vote_tag_up {
   font-weight: bolder;
-  color: #056625;
+  color: hsl(140, 77%, 48%);
 }
 
 .small_downvote,
@@ -533,7 +533,7 @@ strong.important_text_alt {
 .vote_artist_down,
 .vote_tag_down {
   font-weight: bolder;
-  color: #660525;
+  color: hsl(351.7, 56.7%, 42.5%);
 }
 
 #wrapper {
@@ -588,7 +588,7 @@ table.box2 {
 /* #2024 note: Many of these appear to be overridden by
  * global.css or auto-complete.css: your mileage may vary. */
 .autocomplete-suggestions {
-  background-color: #2884F0;
+  background-color: #144B9F;
   border: none;
   color: #26282e;
   margin-top: 4px;
@@ -600,7 +600,7 @@ table.box2 {
 }
 
 .autocomplete-suggestions .autocomplete-suggestion.autocomplete-selected {
-  background-color: #99C8FF;
+  background-color: #2884F0;
 }
 
 .autocomplete-suggestions .autocomplete-suggestion strong {
@@ -758,7 +758,7 @@ table.box2 {
 #menu > ul a:hover,
 #userinfo_minor:hover a:hover,
 #userinfo_username:hover a:hover {
-  background-color: #99C8FF;
+  background-color: #2884F0;
 }
 
 #nav_index {
@@ -839,7 +839,7 @@ table.box2 {
 }
 
 #menu li:nth-child(2) {
-  background-color: #134D1D;
+  background-color: orange;
 }
 
 #menu li:nth-child(3) {
@@ -941,9 +941,9 @@ table.box2 {
 }
 
 div#flip_view_1 div#similar-artist .name {
-  border: 1px solid #144B9F;
+  border: 1px solid #243026;
   background: rgba(60, 60, 60, 0.7);
-  color: #144B9F;
+  color: #243026;
   margin: 0;
   padding: 0 5px;
 }
@@ -1124,7 +1124,7 @@ g .torrentdetails .linkbox {
 }
 
 .tags a:hover {
-  color: #99C8FF;
+  color: #2884F0;
 }
 
 .group_info > span:first-child,
@@ -1295,7 +1295,7 @@ ul.collage_images li a > span {
 
 #userform #settings_sections h2 a,
 .rule_short {
-  color: #2884F0;
+  color: #144B9F;
 }
 
 .poll li {
@@ -1362,7 +1362,7 @@ ul.collage_images li a > span {
 
 #discog_table tr[id^=torrents_] :not(a.tooltip.brackets) {
   font-size: 125%;
-  color: #1F58BB;
+  color: #192E47;
 }
 
 /* #2024 style update for
@@ -1519,7 +1519,7 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
 }
 
 #userform #settings_sections h2 a:hover {
-  color: #99C8FF;
+  color: #2884F0;
 }
 
 #userform #settings_sections input {
@@ -1597,7 +1597,7 @@ span[style*="color: green"] {
 }
 
 span[style*="color: red"] {
-  color: #660525 !important;
+  color: hsl(351.7, 56.7%, 42.5%) !important;
 }
 
 span[style*="color: blue"] {
@@ -1802,7 +1802,7 @@ body#collage .cats_music {
   }
   #menu > ul > #nav_staff > a:hover {
     background-color: transparent;
-    color: #99C8FF;
+    color: #2884F0;
   }
   #userinfo_minor::before {
     background: url("https://wally-crunk.github.io/svg/gazelle/chevrons-down.svg") no-repeat;
@@ -1860,13 +1860,13 @@ body#collage .cats_music {
 /* horizontal menu */
 /* #2024 change to styled color instead of #fff to match vertical pulldown menu */
 #menu > ul a:hover {
-  color: #2884F0;
+  color: #144B9F;
 }
 
 /* vertical pulldown menu */
 #userinfo_minor:hover a,
 #userinfo_username:hover a {
-  color: #2884F0;
+  color: #144B9F;
 }
 
 /* Icon revealed when menu is open */
@@ -1935,7 +1935,7 @@ body#collage .cats_music {
 /* first row of each box */
 #noty_bottomRight_layout_container .noty_message {
   background: radial-gradient(circle at top right, #2E956B, #5EE3AB) !important;
-  color: #EBEFF0 !important;
+  color: #0E151C !important;
   font-weight: 700;
   padding: 0 !important;
 }
@@ -2288,7 +2288,7 @@ body#collage .cats_music {
   .td_seeders.m_td_right::before,
   .td_leechers.m_td_right::before {
     background: left/10px no-repeat url("https://wally-crunk.github.io/svg/gazelle/arrow-loop-000.svg");
-    color: #1F58BB;
+    color: #192E47;
     content: ":";
     filter: brightness(80%);
     position: absolute;
@@ -2737,7 +2737,7 @@ body#collage .cats_music {
     right: 2vw;
     width: 60vw;
     margin: auto;
-    color: #144B9F;
+    color: #243026;
     top: calc(100% - var(--row-height) * 10 - 125px);
     height: calc(2.4 * var(--row-height));
     flex-direction: column;
