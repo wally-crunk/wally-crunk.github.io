@@ -1237,11 +1237,7 @@ ul.collage_images li a > span {
     max-width: 92%;
 }
 
-#discog_table > div.box.center .brackets::after,
-#discog_table > div.box.center .brackets::before,
-#quickreplytext br:last-child {
-    display: none;
-}
+
 
 /* #2024 style update for
 /* Discog table: for rows 'Albums', 'Compilations', 'Live Albums', etc. */
@@ -1291,6 +1287,8 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
     margin: 0 0 12px;
 }
 
+/* BEGIN box at the top of artists to navigate between Album/Live Album... */
+
 #discog_table > div.box.center {
     background-color: $color-background-table-discog;
     padding: 12px;
@@ -1300,6 +1298,31 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
 #discog_table > div.box.center a {
     margin: 0 8px;
 }
+
+#discog_table > div.box.center .brackets::after,
+#discog_table > div.box.center .brackets::before,
+#quickreplytext br:last-child {
+    display: none;
+}
+
+
+#discog_table > div.box.center {
+  background-color: #baa000;
+  padding: 12px;
+  text-align: left;
+  padding-left: 1.5rem; 
+}
+
+#discog_table > div.box.center:before {
+  color:red !important;
+  font-size: large !important;
+  content: 'Jump to \21E9' !important;
+  display: block;
+  float: left; 
+  padding-inline: 1rem;
+}
+
+/* END box at the top of artists to navigate between Album/Live Album... */
 
 .rule_summary {
     padding: 24px !important;
