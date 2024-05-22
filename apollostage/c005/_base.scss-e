@@ -231,7 +231,7 @@ h3,
 h4,
 h5,
 h6 {
-    color: $color-text-heading;
+    color: $color-text-bold;
     line-height: normal;
     margin: 8px 0;
     max-width: 100%;
@@ -243,7 +243,7 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-    color: $color-text-heading-anchor;
+    color: $direct-accent-primary;
 }
 
 h1,
@@ -292,7 +292,7 @@ textarea:focus {
 .box .box.pad, 
 .main_column .box.pad:not(#reply_box) {
     background-color: $color-background-box;
-    border: 2px solid $color-accent-border-box;
+    border: 2px solid $color-background-selection;
     margin: 8px;
     border-radius: .25rem;
 }
@@ -370,7 +370,7 @@ li:last-child {
 
 blockquote {
     background-color: $color-background-blockquote;
-    border: 1px dashed $color-accent-border-blockquote;
+    border: 1px dashed $color-accent-blockquote;
     margin: 12px;
     padding: 12px;
 }
@@ -384,17 +384,13 @@ form input {
     vertical-align: sub;
 }
 
-table
- {
-    background-color: $color-background-table;
-}
-
+table,
 table .rowa:nth-child(even),
 table .rowb:nth-child(even),
-#dnulist tr:not(.colhead, .colhead_dark):nth-child(even),
+#dnulist tr:not(.colhead, .colhead_dark):nth-child(even)
 #upload tr:nth-child(even) 
  {
-    background-color: $color-background-table-row-even;
+    background-color: $color-background-table;
 }
 
 table {
@@ -410,10 +406,10 @@ table .rowb {
 
 table .rowa:nth-child(odd),
 table .rowb:nth-child(odd),
-#dnulist tr:not(.colhead, .colhead_dark):nth-child(odd),
-#upload tr:nth-child(odd) 
+#dnulist tr:not(.colhead, .colhead_dark):nth-child(odd)
+#upload tr:nth-child(even) 
 {
-    background-color: $color-background-table-row-odd;
+    background-color: $color-background-input;
 }
 
 table ul.options_list {
@@ -423,7 +419,7 @@ table ul.options_list {
 
 .colhead,
 .colhead_dark {
-    background-color: $color-background-table-row-th;
+    background-color: $color-background-input;
     line-height: 18px;
 }
 
@@ -478,8 +474,7 @@ textarea {
 
 button,
 input[type="button"],
-input[type="submit"], 
-#popup_close {
+input[type="submit"] {
     background: linear-gradient($color-obj-button-base-1, $color-obj-button-base-2);
     border: none;
     border-radius: 1.5px;
@@ -492,8 +487,7 @@ input[type="submit"],
 
 button:active,
 input[type="button"]:active,
-input[type="submit"]:active,
-#popup_close:active {
+input[type="submit"]:active {
     background: linear-gradient($color-obj-button-base-2, $color-obj-button-base-1);
 }
 
@@ -504,7 +498,7 @@ input[type="search"],
 select,
 textarea {
     background: $color-background-input;
-    border: 1px solid $color-accent-border-input;
+    border: 1px solid $color-accent-border-active;
     color: $color-text-input;
     height: 32px;
     padding: 0 8px;
@@ -516,8 +510,8 @@ input[type="text"]:focus,
 input[type="search"]:focus,
 select:focus,
 textarea:focus {
-    border: 1px solid $color-accent-border-input-active;
-    color: $color-text-input-active;
+    border: 1px solid $color-accent-border-active;
+    color: $color-text-anchor;
 }
 
 textarea {
@@ -573,12 +567,12 @@ span.size10 {
 }
 
 strong.important_text {
-    color: $color-text-important;
+    color: $color-text-ratio-redzone;
 }
 
 /* used for anything? */
 strong.important_text_alt {
-    color: $color-text-important-alt;
+    color: $color-text-ratio-greenzone;
 }
 
 .error,
@@ -700,7 +694,7 @@ table.box2 {
 }
 
 .forum_post.forum_unread {
-    border-top: 2px solid $color-accent-forum-unread;
+    border-top: 2px solid $direct-accent-offset;
 }
 
 .forum_post .avatar {
@@ -748,8 +742,8 @@ table.box2 {
 }
 
 .last_read ::before {
-  content: '\27A4';  /* aka ➤ */
-  color: $color-accent-forum-inline-last-read;
+  content: '➤'; 
+  color: $direct-accent-offset;
   display: inline-block;
 }
 
@@ -908,10 +902,29 @@ table.box2 {
     top: -31px;
 }
 
-#menu ul li:not(#nav_staff) a,
-#userinfo a.username {
-    color: $color-text-menu;
-    text-shadow: $color-accent-shadow-menutext;
+#searchbars > ul {
+    align-items: center;
+    background-color: $color-background-input;
+    display: flex;
+    display: -ms-flexbox;
+    -ms-flex-align: center;
+    height: 50px;
+    padding: 0 9px;
+}
+
+#searchbars > ul li {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    margin-right: 9px;
+}
+
+#searchbars > ul li:last-child {
+    margin-right: 0;
+}
+
+#searchbars > ul input {
+    background-color: $color-background-form;
+    width: 100%;
 }
 
 #menu li:nth-child(2) {
@@ -939,7 +952,7 @@ table.box2 {
 }
 
 #menu li:nth-child(8) {
-    background-color: $color-obj-menu-8;
+    background-color: $color-background-header;
 }
 
 #menu li:nth-child(9) {
@@ -956,15 +969,13 @@ table.box2 {
     overflow: hidden;
 }
 
-/* linkbox appears near the page h1 header and provides outbound links */
-
 .linkbox br {
     display: block;
     line-height: 4px;
 }
 
 .linkbox > strong {
-    color: $color-text-linkbox;
+    color: $direct-accent-primary;
 }
 
 #footer,
@@ -1387,7 +1398,7 @@ ul.collage_images li a > span {
 }
 
 .poll .graph span {
-    background-color: $color-obj-poll;
+    background-color: $direct-accent-offset;
     display: block;
     float: left;
     height: 8px;
@@ -1434,7 +1445,7 @@ ul.collage_images li a > span {
 /* #2024 style update for
 /* Discog table: for rows 'Albums', 'Compilations', 'Live Albums', etc. */
 #discog_table tr[id^=torrents_] {
-    background-color: $color-background-table-keyrows;
+    background-color: $color-background-header;
 }
 #discog_table tr[id^=torrents_] :not(a.tooltip.brackets) {
     font-size: 125%;
@@ -1446,7 +1457,7 @@ ul.collage_images li a > span {
 #discog_table .discog strong a,
 #discog_table td.td_info.big_info div.group_info.clear strong a {
     font-size:115%;
-    color: $color-text-table-discog-titles;
+    color: $direct-accent-primary
 }
 
 /* #2024 style update for
@@ -1480,7 +1491,7 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
 }
 
 #discog_table > div.box.center {
-    background-color: $color-background-table-discog;
+    background-color: $color-background-input;
     padding: 12px;
     text-align: left;
 }
@@ -1502,35 +1513,22 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
     margin-bottom: 8px;
 }
 
-/* begin upload form MusicBrainz popup */
-
 #musicbrainz_popup {
-    color: $color-text-popup;
-    background: $color-background-popup;
-    border: $color-accent-border-popup;
-    padding: 1rem;
+    color: $color-background-base;
     font-weight: 600;
 }
 
 #musicbrainz_popup a {
-    color: $color-text-popup-anchor;
+    color: $color-background-base;
 }
 
 #musicbrainz_popup a:hover {
-    color: $color-text-popup-anchor-hover;
+    color: $direct-accent-primary;
 }
 
 #musicbrainz_popup .brackets {
     font-weight: 400;
 }
-
-#musicbrainz_popup #popup_close {
-    color: $color-text-button;
-}
-
-/*popup close button, see 'button'*/
-
-/* END upload form MusicBrainz popup */
 
 #menu > ul,
 #userinfo_username .username,
@@ -1678,7 +1676,7 @@ span[style*='color: green'] {
 }
 
 span[style*='color: red'] {
-    color: $color-text-span-red !important;
+    color: $color-text-ratio-redzone !important;
 }
 
 span[style*='color: blue'] {
@@ -1700,7 +1698,7 @@ blockquote {
 .reportinfo_table,
 .torrentdetails,
 blockquote {
-    background-color: $color-background-blockquote;
+    background-color: $color-background-input;
 }
 
 #bookmarks #torrent_table tr:not(.colhead, .colhead_dark) td:nth-child(2) {
@@ -1775,14 +1773,14 @@ blockquote {
 
 .tooltipster-default {
     background-color: $color-background-base;
-    border: 0 solid $color-accent-border-tooltipster;
+    border: 0 solid $direct-accent-offset;
     border-radius: 2.5px;
-    color: $color-text-tooltipster;
+    color: $color-text-mono;
 }
 
 .tooltipster-default .tooltipster-content {
     background-color: $color-background-base;
-    color: $color-text-tooltipster;
+    color: $color-text-mono;
     font-size: 12px;
     line-height: 1.4;
     padding: 4px 6px;
@@ -1790,13 +1788,13 @@ blockquote {
 
 .tooltipster-default .tooltipster-content a {
     background-color: $color-background-base;
-    color: $color-text-tooltipster-anchor;
+    color: $color-text-mono;
     font-weight: 600;
 }
 
 .alertbar,
 .tooltipster-default .tooltipster-content a:hover {
-    color: $color-text-tooltipster-anchor-hover;
+    color: $direct-accent-offset;
 }
 
 
@@ -1948,7 +1946,7 @@ body#collage .cats_music {
     }
 
     #userinfo_username:hover {
-          background-color: $color-background-menu-username-hover;
+          background-color: $userinfo-username-hover-background-color;
     }
 
     .settings_sidebar {
@@ -1961,7 +1959,7 @@ body#collage .cats_music {
 }
 /* END Menu and topbar, desktop only */
 
-/* ## 1.6 Menu handling */
+/* # BEGIN Menu handling */
 /* horizontal menu */
 /* #2024 change to styled color instead of #fff to match vertical pulldown menu */
 #menu > ul a:hover {
@@ -1986,6 +1984,19 @@ body#collage .cats_music {
     background-clip: border-box;
 }
 
+#searchbars .search_form {
+    background: 0 0;
+}
+
+#searchbars .search_form input {
+    border: none;
+    border-radius: 2.5px;
+    height: 30px;
+}
+
+#searchbars .search_form input:focus {
+    background: $color-background-table-secondary;
+}
 
 .sidebar {
     order: 5;
@@ -1999,51 +2010,7 @@ body#collage .cats_music {
 
 /* END MENU HANDLING */
 
-/* ************************************************ */
 
-/* ## 1.6.1 SEARCHBARS */
-
-#searchbars > ul {
-    align-items: center;
-    background-color: $color-background-searchbars-surround;
-    display: flex;
-    display: -ms-flexbox;
-    -ms-flex-align: center;
-    height: 50px;
-    padding: 0 9px;
-}
-
-#searchbars > ul li {
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
-    margin-right: 9px;
-}
-
-#searchbars > ul li:last-child {
-    margin-right: 0;
-}
-
-#searchbars > ul input {
-    width: 100%;
-}
-
-#searchbars .search_form {
-    background: 0 0;
-}
-
-#searchbars .search_form input {
-    border: none;
-    border-radius: 2.5px;
-    height: 30px;
-    background: $color-background-searchbars;
-}
-
-#searchbars .search_form input:focus {
-    background: $color-background-searchbars-field-focus;
-    //$color-background-table-secondary;
-}
-
-/* ************************************************ */
 
 /* */
 /* */
@@ -2076,9 +2043,8 @@ body#collage .cats_music {
 /* first row of each box */
 #noty_bottomRight_layout_container .noty_message {
   background: radial-gradient(circle at top right, 
-    $color-background-notification-gradient-1,
-    $color-background-notification-gradient-2) !important;
-  color: $color-text-notification-words !important;
+    $color-background-gradient-1, $color-background-gradient-1) !important;
+  color: $color-text-anchor !important;
   font-weight: 700;
   padding: 0 !important;
 }
@@ -2091,7 +2057,7 @@ body#collage .cats_music {
 
 /* second row of each box */
 #noty_bottomRight_layout_container .noty_buttons {
-  background-color: $color-background-notification !important;
+  background-color: $color-notification-background !important;
   border: none !important;
   padding: 8px !important;
 }
@@ -2110,7 +2076,7 @@ body#collage .cats_music {
   color: $color-obj-tag_bubble-background !important;
   background-color: $color-obj-tag_bubble-foreground;
   border-radius: 14px;
-  border: thin solid $color-obj-noty-buttons-hover;
+  border: thin solid $direct-accent-primary;
   transition: all 0.15s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
@@ -2898,7 +2864,7 @@ body#collage .cats_music {
            opacity: 1;
            transition: all 600ms cubic-bezier(1, 0.01, 0.3, 1.31);
            border-bottom: groove $color-background-header;
-           box-shadow: 0px 50px 70px $color-background-menu-shadow, 0 160px 160px #080808;
+           box-shadow: 0px 50px 70px $color-background-gradient-1, 0 160px 160px #080808;
     }
 
     /* ## 3.17.3 Top Menubar */
@@ -3051,7 +3017,7 @@ body#collage .cats_music {
         right: 2vw;
         width: 60vw;
         margin: auto;
-        color: $color-text-base;
+        color: $direct-fore-500;
         top: calc(100% - var(--row-height) * 10 - 125px);
         height: calc(2.4 * var(--row-height));
         flex-direction: column;
@@ -3083,8 +3049,7 @@ body#collage .cats_music {
     #menu ul {
         background: radial-gradient(
             circle at top left, 
-            $color-background-mobilemenu-userinfo-1,
-            $color-background-mobilemenu-userinfo-2 );
+            $color-background-mobilemenu-userinfo-1,$color-background-mobilemenu-userinfo-2 );
         bottom: calc(var(--row-height) * 7);
         position: absolute;
     }
@@ -3098,8 +3063,7 @@ body#collage .cats_music {
     #userinfo_minor {
         background: radial-gradient(
             circle at top left, 
-            $color-background-mobilemenu-userinfo-2,
-            $color-background-mobilemenu-userinfo-1 );
+            $color-background-mobilemenu-userinfo-2,$color-background-mobilemenu-userinfo-1 );
         bottom: calc(var(--row-height) * 3);
         position: absolute;
     }
@@ -3126,8 +3090,9 @@ body#collage .cats_music {
     }
     /* END searchboxes */
     
-    /* ## 3.17.10  Close button & legend at bottom */
-    /* TODO; for now, click outside the menu
+    /* ## 3.17.10   Close legend at bottom */
+    
+    /* todo */
   
     /* ## 3.18 Checkboxes ~ purpose undocumented */
     
@@ -3340,7 +3305,6 @@ table.torrent_table.cats.m_table td.td_info.big_info div.group_info.clear div.ta
 
 /* ## 4.4 BETA -- Upload warnings ## */
 
-div.upload-error:after,
 ul#check:after {
   content: 'BETA:  Warning!  There were one or more errors in your submission. Check below for error messages.';
   font-weight: 700;
