@@ -104,8 +104,9 @@
 
 /* ## 0.3 Debugging */
 /* various 'debug' features are avail in this doc */
+#site_time:after,
 li#nav_upload.brackets a:before {
-  content: "1034";
+  content: "1046";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -430,7 +431,7 @@ input[type=search],
 select,
 textarea {
   background: #3f3e46;
-  border: 1px solid #0C4A3B;
+  border: 1px solid rgba(255, 255, 255, 0.08);
   color: #d1d1d1;
   height: 32px;
   padding: 0 8px;
@@ -443,7 +444,7 @@ input[type=search]:focus,
 select:focus,
 textarea:focus {
   background: #1C2422;
-  border: 1px solid #1DAF8B;
+  border: 1px solid rgba(255, 255, 255, 0.25);
   color: #E5EFE9;
 }
 
@@ -1835,7 +1836,7 @@ body#collage .cats_music {
 #menu > ul a:hover,
 #userinfo_minor:hover a:hover,
 #userinfo_username:hover a:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.25);
 }
 
 /* when menu pulled down and mouse over an entry */
