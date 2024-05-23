@@ -105,7 +105,7 @@
 /* ## 0.3 Debugging */
 /* various 'debug' features are avail in this doc */
 li#nav_upload.brackets a:before {
-  content: "1020";
+  content: "1034";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -219,8 +219,8 @@ textarea:focus {
 /* formatting on .box.pad for the [box] bbcode tag */
 .box .box.pad,
 .main_column .box.pad:not(#reply_box) {
-  background-color: #263330;
-  border: 2px solid #30413D;
+  background-color: #273331;
+  border: 2px solid #314141;
   margin: 8px;
   border-radius: 0.25rem;
 }
@@ -298,7 +298,7 @@ li:last-child {
 
 blockquote {
   background-color: #38363d;
-  border: 1px dashed #263330;
+  border: 1px dashed #273331;
   margin: 12px;
   padding: 12px;
 }
@@ -318,7 +318,7 @@ table {
 
 table .rowa,
 table .rowb {
-  border-top: 2px solid #2B3A36;
+  border-top: 2px solid #2C3A39;
 }
 
 table .rowa:nth-child(even),
@@ -338,7 +338,7 @@ table .rowa:nth-child(odd),
 table .rowb:nth-child(odd),
 #dnulist tr:not(.colhead, .colhead_dark):nth-child(odd),
 #upload tr:nth-child(odd) {
-  background-color: #1B2422;
+  background-color: #1C2422;
 }
 
 table ul.options_list {
@@ -349,7 +349,7 @@ table ul.options_list {
 #content div.thin div.head,
 .colhead,
 .colhead_dark {
-  background-color: #263330;
+  background-color: #273331;
   line-height: 18px;
 }
 
@@ -409,7 +409,7 @@ input[type=submit],
   background: linear-gradient(#b8b8b8, #E5EFE9);
   border: none;
   border-radius: 1.5px;
-  color: #30413D;
+  color: #314141;
   cursor: pointer;
   font-weight: 600;
   height: 32px;
@@ -442,7 +442,7 @@ input[type=text]:focus,
 input[type=search]:focus,
 select:focus,
 textarea:focus {
-  background: #1B2422;
+  background: #1C2422;
   border: 1px solid #1DAF8B;
   color: #E5EFE9;
 }
@@ -877,11 +877,11 @@ div#flip_view_1 div#similar-artist .name {
 }
 
 .torrent_table {
-  background-color: #1B2422;
+  background-color: #1C2422;
 }
 
 .torrent_table tr:not(.colhead, .colhead_dark) {
-  border-top: 2px solid #2B3A36;
+  border-top: 2px solid #2C3A39;
 }
 
 .torrent_table tr .number_column:not(:last-child) {
@@ -1842,7 +1842,7 @@ body#collage .cats_music {
 #menu > ul a:hover,
 #userinfo_minor:hover a,
 #userinfo_username:hover a {
-  color: #2B3A36;
+  color: #2C3A39;
 }
 
 /* Icon revealed when menu is open */
@@ -1874,7 +1874,7 @@ body#collage .cats_music {
 /* ## 1.6.1 SEARCHBARS */
 #searchbars > ul {
   align-items: center;
-  background-color: #263330;
+  background-color: #273331;
   display: flex;
   display: -ms-flexbox;
   -ms-flex-align: center;
@@ -1904,7 +1904,7 @@ body#collage .cats_music {
   border: none;
   border-radius: 2.5px;
   height: 30px;
-  background: #1B2422;
+  background: #1C2422;
 }
 
 #searchbars .search_form input:focus {
@@ -2042,7 +2042,7 @@ body#collage .cats_music {
 }
 
 #musicbrainz_popup #popup_close {
-  color: #30413D;
+  color: #314141;
 }
 
 /*popup close button, see 'button'*/
