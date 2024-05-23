@@ -105,7 +105,7 @@
 /* various 'debug' features are avail in this doc */
 #site_time:after,
 li#nav_upload.brackets a:before {
-  content: "1109";
+  content: "1136";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -1204,40 +1204,38 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
   margin: 0 0 12px;
 }
 
-/* BEGIN box at the top of artists to navigate between Album/Live Album... */
+/* BEGIN Navbox on artist page ~ "jump down".. to navigate between Album/Live Album... */
 #discog_table > div.box.center {
   background-color: #0F5B49;
   padding: 12px;
   text-align: left;
+  padding-left: 1.5rem;
 }
 
 #discog_table > div.box.center a {
   margin: 0 8px;
 }
 
-#discog_table > div.box.center .brackets::after,
-#discog_table > div.box.center .brackets::before,
-#quickreplytext br:last-child {
-  display: none;
-}
-
-#discog_table > div.box.center {
-  background-color: #baa000;
-  padding: 12px;
-  text-align: left;
-  padding-left: 1.5rem;
-}
-
 #discog_table > div.box.center:before {
   color: #D5E0D9 !important;
   font-size: large !important;
-  content: "Jump to ⇩" !important;
+  content: "⇩Jump to" !important;
+  font-weight: 600;
   display: block;
   float: left;
   padding-inline: 1rem;
 }
 
-/* END box at the top of artists to navigate between Album/Live Album... */
+#discog_table > div.box.center .brackets::after,
+#discog_table > div.box.center .brackets::before {
+  display: none;
+}
+
+/* END Navbox on artist page ~ "jump down".. to navigate between Album/Live Album... */
+#quickreplytext br:last-child {
+  display: none;
+}
+
 .rule_summary {
   padding: 24px !important;
 }
