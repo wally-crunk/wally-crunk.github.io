@@ -6,7 +6,7 @@
 // ////////////////////////////////////////////////////////////////////////////////
 // SLUG
 
- $debug-slug: "1413"; // must include quots
+ $debug-slug: "1428"; // must include quots
 
 // ////////////////////////////////////////////////////////////////////////////////
 // COLORS
@@ -15,7 +15,7 @@
 // and Token -> Raw value
 
 //Backs
- $back-100: #121616;
+ $back-100:  #121616;
  $back-200:  #181D1D;
  $back-300:  #1D2424;
  $back-400:  #222B2B;
@@ -144,7 +144,7 @@ $color-obj-button-base-1: $ds-neutral-400;
 $color-obj-button-base-2: $fore-900;
 $color-obj-noty-buttons-hover: $mid-900;
 $color-obj-poll: $mid-900; // poll active part of bargraph
-$color-obj-tag_bubble-background: $mid-400; // These can equal "ninth" and "second"
+$color-obj-tag_bubble-background: $mid-300; // These can equal "ninth" and "second"
 $color-obj-tag_bubble-foreground: $mid-900; // These can equal "ninth" and "second"
 
 $color-accent-border-blockquote: $back-500;
