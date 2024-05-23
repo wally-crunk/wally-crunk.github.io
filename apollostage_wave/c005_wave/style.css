@@ -2,7 +2,7 @@
 /* APOLLOSTAGE WAVE THEME */
 /* ################################################################################ */
 /* APOLLOSTAGE THEME */
-/* version 2024.05.16
+/* version 2024.05.23
 /* ################################################################################ */
 /* ################################################################################ */
 /* CHANGELOG */
@@ -106,7 +106,7 @@
 /* various 'debug' features are avail in this doc */
 #site_time:after,
 li#nav_upload.brackets a:before {
-  content: "1146";
+  content: "1346";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -319,7 +319,7 @@ table {
 
 table .rowa,
 table .rowb {
-  border-top: 2px solid #2D393A;
+  border-top: 2px solid rgba(45, 57, 58, 0.3294117647);
 }
 
 table .rowa:nth-child(even),
@@ -882,7 +882,7 @@ div#flip_view_1 div#similar-artist .name {
 }
 
 .torrent_table tr:not(.colhead, .colhead_dark) {
-  border-top: 2px solid #2D393A;
+  border-top: 2px solid rgba(45, 57, 58, 0.5333333333);
 }
 
 .torrent_table tr .number_column:not(:last-child) {
@@ -1222,9 +1222,8 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
   font-size: large !important;
   content: "⇩ Jump to" !important;
   font-weight: 600;
-  display: block;
-  float: left;
-  padding-inline: 1rem;
+  position: relative;
+  left: -20%;
 }
 
 #discog_table > div.box.center .brackets::after,

@@ -6,7 +6,7 @@
 // ////////////////////////////////////////////////////////////////////////////////
 // SLUG
 
- $debug-slug: "1146"; // must include quots
+ $debug-slug: "1346"; // must include quots
 
 // ////////////////////////////////////////////////////////////////////////////////
 // COLORS
@@ -25,7 +25,8 @@
  $back-800:  #384749;
  $back-900:  #3C4D50;
  $back-1000: #405256;
-
+ $back-600-low: #2D393A54;
+ $back-600-mid: #2D393A88;
 //Mids
  $mid-100: #093A2E;
  $mid-200: #0C4A3B;
@@ -152,8 +153,8 @@ $color-accent-border-input: $ds-fx-low;
 $color-accent-border-input-active: $ds-fx-mid;
 $color-accent-border-tooltipster: $mid-800;
 $color-accent-border-popup: $mid-800;
-$color-accent-border-tablerows: $back-600;
-$color-accent-border-tablerows-torrent: $back-600;
+$color-accent-border-tablerows: $back-600-low;
+$color-accent-border-tablerows-torrent: $back-600-mid;
 $color-accent-shadow-menutext: initial; // provisioned for derivative themes
 
 $color-accent-cats_applications: silver;
