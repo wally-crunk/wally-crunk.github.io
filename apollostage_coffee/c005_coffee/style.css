@@ -29,15 +29,19 @@
 /* # 1 DESKTOP VIEW */
 /* ## 1.1 Desktop view, handling of all classes */
 /* ## 1.2 Reserved */
-/* ## 1.3 Tooltips */
-/* ## 1.4 Upload Category Decoration Striping */
-/* ## 1.5 Header and menu layout */
-/* ## 1.5.1 Menu Handling */
-/* ## 1.6 Headers Below Menu */
-/* ## 1.6.1 Searchbars */
-/* ## 1.6.2 Linkbox */
-/* ## 1.7 Notification Box */
-/* ## 1.8 Sidebar */
+/* ## 1.3 Reserved */
+/* ## 1.4 Reserved */
+/* ## 1.5 Discog Pages */
+/* ## 1.6 Tooltips */
+/* ## 1.7 Upload Category Decoration Striping */
+/* ## 1.8 Header and menu layout */
+/* ## 1.8.1 Menu Handling */
+/* ## 1.9 Headers Below Menu */
+/* ## 1.9.1 Searchbars */
+/* ## 1.9.2 Linkbox */
+/* ## 1.10 Notification Box */
+/* ## 1.11 Sidebar */
+/* ## 1.12 Upload form MusicBrainz popup */
 /* # 2 DOCUMENTATION OF MOBILE CLASSES */
 /* # 3 CHANGES FOR MOBILE VIEW */
 /* ## 3.1  Site Layout */
@@ -605,6 +609,13 @@ table.box2 {
   display: table;
 }
 
+/* #2024 fix for 
+/* Sessions table should scroll */
+.box.pad:has(.session_table.border),
+.box.pad .session_table.border {
+  overflow: scroll !important;
+}
+
 /* #2024 note: Many of these appear to be overridden by
  * global.css or auto-complete.css: your mileage may vary. */
 .autocomplete-suggestions {
@@ -1158,38 +1169,6 @@ ul.collage_images li a > span {
   max-width: 92%;
 }
 
-/* #2024 style update for
-/* Discog table: for rows 'Albums', 'Compilations', 'Live Albums', etc. */
-#discog_table tr[id^=torrents_] {
-  background-color: #0F5B49;
-}
-
-#discog_table tr[id^=torrents_] :not(a.tooltip.brackets) strong {
-  font-size: large;
-  color: #EFDAC1;
-}
-
-/* #2024 style update for
-/* Discog table: for names of albums, to help them stand out somewhat */
-#discog_table .discog strong a,
-#discog_table td.td_info.big_info div.group_info.clear strong a {
-  font-size: 115%;
-  color: #20C098;
-}
-
-/* #2024 style update for
-/* Discog table:  for encodings, to get breathing room after the >> character */
-div#discog_table td.td_info:not(span.torrent_links_block) > a {
-  padding-inline-start: 1em;
-}
-
-/* #2024 fix for 
-/* Sessions table should scroll */
-.box.pad:has(.session_table.border),
-.box.pad .session_table.border {
-  overflow: scroll !important;
-}
-
 #footer {
   width: 100%;
   color: #949494;
@@ -1206,33 +1185,6 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
   margin: 0 0 12px;
 }
 
-/* BEGIN Navbox on artist page ~ "jump down".. to navigate between Album/Live Album... */
-#discog_table > div.box.center {
-  background-color: #0F5B49;
-  padding: 12px;
-  text-align: left;
-  padding-left: 10rem;
-}
-
-#discog_table > div.box.center:before {
-  color: #EFDAC1 !important;
-  font-size: large !important;
-  content: "⇩ Jump to" !important;
-  font-weight: 600;
-  position: relative;
-  left: -20%;
-}
-
-#discog_table > div.box.center a {
-  margin: 0 8px;
-}
-
-#discog_table > div.box.center .brackets::after,
-#discog_table > div.box.center .brackets::before {
-  display: none;
-}
-
-/* END Navbox on artist page ~ "jump down".. to navigate between Album/Live Album... */
 #quickreplytext br:last-child {
   display: none;
 }
@@ -1482,7 +1434,65 @@ blockquote {
 /* # 1.2 Reserved [for more organization in the future]
 
 /* ************************************************ */
-/* # 1.3 Tooltips */
+/* # 1.3 Reserved [for more organization in the future]
+
+/* ************************************************ */
+/* # 1.4 Reserved [for more organization in the future]
+
+/* ************************************************ */
+/* # 1.5 Discography Pages
+
+/* Discog table: for rows 'Albums', 'Compilations', 'Live Albums', etc. */
+#discog_table tr[id^=torrents_] {
+  background-color: #0F5B49;
+}
+
+#discog_table tr[id^=torrents_] :not(a.tooltip.brackets) strong {
+  font-size: large;
+  color: #EFDAC1;
+}
+
+/* Discog table: for names of albums, to help them stand out somewhat */
+#discog_table .discog strong a,
+#discog_table td.td_info.big_info div.group_info.clear strong a {
+  font-size: 115%;
+  color: #20C098;
+}
+
+/* Discog table:  for encodings, to get breathing room after the >> character */
+div#discog_table td.td_info:not(span.torrent_links_block) > a {
+  padding-inline-start: 1em;
+}
+
+/* BEGIN Navbox on artist page ~ "jump down".. to navigate between Album/Live Album... */
+#discog_table > div.box.center {
+  background-color: #0F5B49;
+  padding: 12px;
+  text-align: left;
+  padding-left: 11rem;
+}
+
+#discog_table > div.box.center:before {
+  color: #EFDAC1 !important;
+  font-size: large !important;
+  content: "⇩ Jump to" !important;
+  font-weight: 600;
+  position: relative;
+  left: -24%;
+}
+
+#discog_table > div.box.center a {
+  margin: 0 8px;
+}
+
+#discog_table > div.box.center .brackets::after,
+#discog_table > div.box.center .brackets::before {
+  display: none;
+}
+
+/* END Navbox on artist page ~ "jump down".. to navigate between Album/Live Album... */
+/* ************************************************ */
+/* # 1.6 Tooltips */
 .tooltipster-base {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
   width: auto !important;
@@ -1515,7 +1525,7 @@ blockquote {
 }
 
 /* ************************************************ */
-/* # 1.4 BEGIN UPLOAD CATEGORY DECORATION STRIPING */
+/* # 1.7 BEGIN UPLOAD CATEGORY DECORATION STRIPING */
 /* Begin category decorations for torrent-tables on torrent & collage pages */
 /* #2024 bugfix:*/
 /* Apollostage highlights different upload types,
@@ -1577,7 +1587,7 @@ body#collage .cats_music {
 /* #2024 */
 /* END category decorations for torrent tables on torrent & collage pages */
 /* ************************************************ */
-/* #1.5 HEADER AND MENU LAYOUT */
+/* #1.8 HEADER AND MENU LAYOUT */
 /* MENU AND TOP BAR, DESKTOP ONLY */
 .thin > .header .linkbox {
   align-self: flex-end;
@@ -1827,7 +1837,7 @@ body#collage .cats_music {
 }
 /* END Menu and topbar, desktop only */
 /* ************************************************ */
-/* ## 1.5.1 Menu handling */
+/* ## 1.8.1 Menu handling */
 /* horizontal menu */
 /* #2024 change to styled color instead of #fff to match vertical pulldown menu */
 /* menu hover colors */
@@ -1868,9 +1878,9 @@ body#collage .cats_music {
 
 /* END MENU HANDLING */
 /* ************************************************ */
-/* ## 1.6 Headers Below Menu */
+/* ## 1.9 Headers Below Menu */
 /* ************************************************ */
-/* ## 1.6.1 SEARCHBARS */
+/* ## 1.9.1 SEARCHBARS */
 #searchbars > ul {
   align-items: center;
   background-color: #252F32;
@@ -1911,7 +1921,7 @@ body#collage .cats_music {
 }
 
 /* ************************************************ */
-/* ## 1.6.2 Linkbox */
+/* ## 1.9.2 Linkbox */
 /* linkbox appears near the page h1 header and provides outbound links */
 .linkbox,
 .linkbox .center {
@@ -1933,7 +1943,7 @@ body#collage .cats_music {
 }
 
 /* ************************************************ */
-/* # 1.7 BEGIN NOTIFICATION BOX */
+/* # 1.10 BEGIN NOTIFICATION BOX */
 /* basic positioning */
 #noty_bottomRight_layout_container {
   bottom: 24px !important;
@@ -1999,7 +2009,7 @@ body#collage .cats_music {
 /* END NOTIFICATION BOX */
 /* */
 /* */
-/* # 1.8 BEGIN SIDEBAR */
+/* # 1.11 BEGIN SIDEBAR */
 .sidebar .pad ol,
 .sidebar .pad ul {
   margin-bottom: 0;
@@ -2019,7 +2029,7 @@ body#collage .cats_music {
 
 /* END SIDEBAR */
 /* ************************************************ */
-/* # 1.9 Upload form MusicBrainz popup */
+/* # 1.12 Upload form MusicBrainz popup */
 #musicbrainz_popup {
   color: #C6D2C8;
   background: #1D2424;
