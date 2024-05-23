@@ -104,7 +104,7 @@
 /* ## 0.3 Debugging */
 /* various 'debug' features are avail in this doc */
 li#nav_upload.brackets a:before {
-  content: "1019";
+  content: "1020";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -337,7 +337,7 @@ table .rowa:nth-child(odd),
 table .rowb:nth-child(odd),
 #dnulist tr:not(.colhead, .colhead_dark):nth-child(odd),
 #upload tr:nth-child(odd) {
-  background-color: #212B29;
+  background-color: #1B2422;
 }
 
 table ul.options_list {
@@ -348,7 +348,7 @@ table ul.options_list {
 #content div.thin div.head,
 .colhead,
 .colhead_dark {
-  background-color: #39504A;
+  background-color: #263330;
   line-height: 18px;
 }
 
