@@ -105,7 +105,7 @@
 /* various 'debug' features are avail in this doc */
 #site_time:after,
 li#nav_upload.brackets a:before {
-  content: "1046";
+  content: "1051";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -139,7 +139,7 @@ textarea,
 }
 
 body {
-  background-color: #111614;
+  background-color: #121616;
   box-sizing: border-box;
   color: #D5E0D9;
   font-size: 12px;
@@ -219,8 +219,8 @@ textarea:focus {
 /* formatting on .box.pad for the [box] bbcode tag */
 .box .box.pad,
 .main_column .box.pad:not(#reply_box) {
-  background-color: #273331;
-  border: 2px solid #314141;
+  background-color: #283333;
+  border: 2px solid #324041;
   margin: 8px;
   border-radius: 0.25rem;
 }
@@ -297,8 +297,8 @@ li:last-child {
 }
 
 blockquote {
-  background-color: #1C2422;
-  border: 1px dashed #273331;
+  background-color: #1D2424;
+  border: 1px dashed #283333;
   margin: 12px;
   padding: 12px;
 }
@@ -313,19 +313,19 @@ form input {
 }
 
 table {
-  background-color: #161D1B;
+  background-color: #181D1D;
 }
 
 table .rowa,
 table .rowb {
-  border-top: 2px solid #2C3A39;
+  border-top: 2px solid #2D393A;
 }
 
 table .rowa:nth-child(even),
 table .rowb:nth-child(even),
 #dnulist tr:not(.colhead, .colhead_dark):nth-child(even),
 #upload tr:nth-child(even) {
-  background-color: #161D1B;
+  background-color: #181D1D;
 }
 
 table {
@@ -338,7 +338,7 @@ table .rowa:nth-child(odd),
 table .rowb:nth-child(odd),
 #dnulist tr:not(.colhead, .colhead_dark):nth-child(odd),
 #upload tr:nth-child(odd) {
-  background-color: #1C2422;
+  background-color: #1D2424;
 }
 
 table ul.options_list {
@@ -349,7 +349,7 @@ table ul.options_list {
 #content div.thin div.head,
 .colhead,
 .colhead_dark {
-  background-color: #273331;
+  background-color: #283333;
   line-height: 18px;
 }
 
@@ -384,7 +384,7 @@ td:last-child {
 }
 
 form {
-  background-color: #1C2422;
+  background-color: #1D2424;
 }
 
 ˜√Ω form table td.label {
@@ -409,7 +409,7 @@ input[type=submit],
   background: linear-gradient(#b8b8b8, #E5EFE9);
   border: none;
   border-radius: 1.5px;
-  color: #314141;
+  color: #324041;
   cursor: pointer;
   font-weight: 600;
   height: 32px;
@@ -429,7 +429,7 @@ input[type=text],
 input[type=search],
 select,
 textarea {
-  background: #161D1B;
+  background: #181D1D;
   border: 1px solid rgba(255, 255, 255, 0.08);
   color: #A7B4A8;
   height: 32px;
@@ -442,7 +442,7 @@ input[type=text]:focus,
 input[type=search]:focus,
 select:focus,
 textarea:focus {
-  background: #1C2422;
+  background: #1D2424;
   border: 1px solid rgba(255, 255, 255, 0.25);
   color: #E5EFE9;
 }
@@ -572,7 +572,7 @@ strong.important_text_alt {
 
 .box,
 .box2 {
-  background-color: #1C2422;
+  background-color: #1D2424;
   margin-bottom: 8px;
   margin-top: 8px;
 }
@@ -583,7 +583,7 @@ table.box2 {
 }
 
 .head {
-  background-color: #161D1B;
+  background-color: #181D1D;
   line-height: 18px;
 }
 
@@ -877,11 +877,11 @@ div#flip_view_1 div#similar-artist .name {
 }
 
 .torrent_table {
-  background-color: #1C2422;
+  background-color: #1D2424;
 }
 
 .torrent_table tr:not(.colhead, .colhead_dark) {
-  border-top: 2px solid #2C3A39;
+  border-top: 2px solid #2D393A;
 }
 
 .torrent_table tr .number_column:not(:last-child) {
@@ -889,11 +889,11 @@ div#flip_view_1 div#similar-artist .name {
 }
 
 .torrent_table .group {
-  background-color: #161D1B;
+  background-color: #181D1D;
 }
 
 .group_torrent {
-  background-color: #1C2422;
+  background-color: #1D2424;
 }
 
 .group_torrent.edition,
@@ -1419,7 +1419,7 @@ blockquote {
 .reportinfo_table,
 .torrentdetails,
 blockquote {
-  background-color: #1C2422;
+  background-color: #1D2424;
 }
 
 #bookmarks #torrent_table tr:not(.colhead, .colhead_dark) td:nth-child(2) {
@@ -1490,14 +1490,14 @@ blockquote {
 }
 
 .tooltipster-default {
-  background-color: #111614;
+  background-color: #121616;
   border: 0 solid #1DAF8B;
   border-radius: 2.5px;
   color: #188E71;
 }
 
 .tooltipster-default .tooltipster-content {
-  background-color: #111614;
+  background-color: #121616;
   color: #188E71;
   font-size: 12px;
   line-height: 1.4;
@@ -1505,7 +1505,7 @@ blockquote {
 }
 
 .tooltipster-default .tooltipster-content a {
-  background-color: #111614;
+  background-color: #121616;
   color: #1DAF8B;
   font-weight: 600;
 }
@@ -1842,7 +1842,7 @@ body#collage .cats_music {
 #menu > ul a:hover,
 #userinfo_minor:hover a,
 #userinfo_username:hover a {
-  color: #2C3A39;
+  color: #2D393A;
 }
 
 /* Icon revealed when menu is open */
@@ -1874,7 +1874,7 @@ body#collage .cats_music {
 /* ## 1.6.1 SEARCHBARS */
 #searchbars > ul {
   align-items: center;
-  background-color: #273331;
+  background-color: #283333;
   display: flex;
   display: -ms-flexbox;
   -ms-flex-align: center;
@@ -1904,11 +1904,11 @@ body#collage .cats_music {
   border: none;
   border-radius: 2.5px;
   height: 30px;
-  background: #1C2422;
+  background: #1D2424;
 }
 
 #searchbars .search_form input:focus {
-  background: #111614;
+  background: #121616;
 }
 
 /* ************************************************ */
@@ -2042,7 +2042,7 @@ body#collage .cats_music {
 }
 
 #musicbrainz_popup #popup_close {
-  color: #314141;
+  color: #324041;
 }
 
 /*popup close button, see 'button'*/
@@ -2811,7 +2811,7 @@ body#collage .cats_music {
   }
   #stats_ratio .tooltip {
     /* Provide a local background for the number to appear in color */
-    background-color: #1C2422;
+    background-color: #1D2424;
     border-radius: 0.45rem;
     padding-left: 0.45rem;
     padding-right: 0.45rem;
