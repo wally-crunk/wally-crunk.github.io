@@ -46,23 +46,23 @@ $color-text-mono: #D3C0BA;
 
 // Ten color gradient:
 
-$color-obj-menu-2: $federal-blue;   // torrents
-$color-obj-menu-3: $midnight-blue;   // collages
-$color-obj-menu-5: $tekhelet;       // requests
-$color-obj-menu-5: $grape;           // forums
-$color-obj-menu-6: $french-violet;   // irc
-$color-obj-menu-7: $veronica;      // top10
-$color-background-header: $phlox;                        // rules, also mobile menu header
-$color-obj-menu-9: $fuchsia;         // wiki
-$color-background-menu-username: $deepmagenta;                  // username menu ~ closed
-$color-background-menu-username-hover: $magentapink; // username menu ~ open
-$color-background-menu-userinfo: $darkmagenta;                     // VV pulldown menu ~ closed
-$color-background-menu-userinfo-hover: rebeccapurple;   // VV pulldown menu ~ open
+$color-menu-2: $federal-blue;   // torrents
+$color-menu-3: $midnight-blue;   // collages
+$color-menu-5: $tekhelet;       // requests
+$color-menu-5: $grape;           // forums
+$color-menu-6: $french-violet;   // irc
+$color-menu-7: $veronica;      // top10
+$color-mobilemenu-closed: $phlox;                        // rules, also mobile menu header
+$color-menu-9: $fuchsia;         // wiki
+$color-menu-username: $deepmagenta;                  // username menu ~ closed
+$color-menu-username-hover: $magentapink; // username menu ~ open
+$color-menu-userinfo: $darkmagenta;                     // VV pulldown menu ~ closed
+$color-menu-userinfo-hover: rebeccapurple;   // VV pulldown menu ~ open
 
 // mobile pulldown menu gradient
 
-$color-background-mobilemenu-userinfo-1: $fuchsia;    // mobile pulldown menu gradient 1
-$color-background-mobilemenu-userinfo-2: $grape;    // mobile pulldown menu gradient 2
+$color-mobilemenu-userinfo-1: $fuchsia;    // mobile pulldown menu gradient 1
+$color-mobilemenu-userinfo-2: $grape;    // mobile pulldown menu gradient 2
 
 // notification gradient
 
@@ -83,7 +83,7 @@ $color-text-footer: #949494;
 $color-text-input: #c2c2c2;
 $color-text-ratio-redzone: #e74e4e;
 $color-text-ratio-yellowzone: #e1b661;
-$color-background-selection: rgb(245 40 145 / 60%);
+$color-accent-selection-background: rgb(245 40 145 / 60%);
 $color-background-poll: $midnight-blue;
 
 // overrides these colors when called: for more theme flavor?

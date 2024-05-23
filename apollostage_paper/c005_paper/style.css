@@ -1221,7 +1221,7 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
 }
 
 #discog_table > div.box.center:before {
-  color: red !important;
+  color: #192E47 !important;
   font-size: large !important;
   content: "Jump to ⇩" !important;
   display: block;

@@ -1897,7 +1897,7 @@ body#collage .cats_music {
     }
 
     #userinfo_minor::before {
-          background: $menu-closed-state-icon no-repeat;
+          background: $icon-menu-closed-state no-repeat;
           filter: brightness(200%);  /*force white */
           background-size: 28px;
           background-position: center;

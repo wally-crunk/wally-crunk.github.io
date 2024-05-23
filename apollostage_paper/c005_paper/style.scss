@@ -74,12 +74,12 @@ $color-background-base: $back-100;
 $color-background-blockquote: $back-300;
 $color-background-box: $back-500;
 $color-background-form: $back-200; // also boxes on frontpage
-$color-background-header: $mid-700; // mobile menu tab header
+$color-mobilemenu-closed: $mid-700; // mobile menu tab header
 $color-background-input: $back-400; 
-$color-background-menu-shadow: $back-800;
+$color-mobilemenu-shadow: $back-800;
 $color-background-poll: rgb(131 228 166 / 10%);
 $color-background-popup: $back-500;
-$color-background-selection: $mid-1000;
+$color-accent-selection-background: $mid-1000;
 $color-background-table: $back-400; // primarily table-odd-rows
 $color-background-table-discog: $back-300;
 $color-background-table-row-th: $back-500;
@@ -110,7 +110,7 @@ $color-text-popup: $fore-600;
 $color-text-ratio-greenzone: hsl(140, 77%, 42%);
 $color-text-ratio-redzone: hsl(351.7,56.7%,42.5%);
 $color-text-ratio-yellowzone: hsl(48,73%,42%);
-$color-text-selection: $color-text-bold; // usually #fff or $color-text-bold
+$color-accent-selection-text: $color-text-bold; // usually #fff or $color-text-bold
 $color-text-span-blue: #0059D1;
 $color-text-span-green: #00D131;
 $color-text-table-discog-titles: $mid-700;
@@ -120,22 +120,22 @@ $color-text-tooltipster-anchor-hover: $fore-800;
 
 $color-obj-button-base-1: $back-200; // gradient from here to $color-text-anchor
 $color-obj-button-base-2: $back-600;
-// $color-obj-menu-1: red; // unused (could be home)
-$color-obj-menu-2: $mid-100; // torrents
-$color-obj-menu-3: $mid-200; // collages
-$color-obj-menu-4: $mid-300; // collages
-$color-obj-menu-5: $mid-400; // forums
-$color-obj-menu-6: $mid-500; // irc
-$color-obj-menu-7: $mid-600; // top10
-$color-obj-menu-8: $mid-700; // rules
-$color-obj-menu-9: $mid-800; // wiki
-$color-background-menu-username: $mid-900; // username menu ~ closed
-$color-background-menu-username-hover: $mid-700; // username menu ~ open
-$color-background-menu-userinfo: $mid-1000; // VV pulldown menu ~ closed
-$color-background-menu-userinfo-hover: $mid-700; // VV pulldown menu ~ open
+// $color-menu-1: red; // unused (could be home)
+$color-menu-2: $mid-100; // torrents
+$color-menu-3: $mid-200; // collages
+$color-menu-4: $mid-300; // collages
+$color-menu-5: $mid-400; // forums
+$color-menu-6: $mid-500; // irc
+$color-menu-7: $mid-600; // top10
+$color-menu-8: $mid-700; // rules
+$color-menu-9: $mid-800; // wiki
+$color-menu-username: $mid-900; // username menu ~ closed
+$color-menu-username-hover: $mid-700; // username menu ~ open
+$color-menu-userinfo: $mid-1000; // VV pulldown menu ~ closed
+$color-menu-userinfo-hover: $mid-700; // VV pulldown menu ~ open
 
-$color-background-mobilemenu-userinfo-1: $mid-900; // mobile pulldown menu gradient 1
-$color-background-mobilemenu-userinfo-2: $mid-300; // mobile pulldown menu gradient 2
+$color-mobilemenu-userinfo-1: $mid-900; // mobile pulldown menu gradient 1
+$color-mobilemenu-userinfo-2: $mid-300; // mobile pulldown menu gradient 2
 $color-background-notification-gradient-1: $mid-900; // usually works well with 'third-child'
 $color-background-notification-gradient-2: $mid-300; // usually works well with 'seventh-child'
 $color-background-notification: #000000;

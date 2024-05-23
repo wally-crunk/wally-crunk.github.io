@@ -81,26 +81,26 @@ $direct-accent-offset: $fore-100;
 
 // (L-R Light To Dark Style)
 
-$color-obj-menu-2:	$mid-100; // torrents
-$color-obj-menu-3:	$mid-200; // collages
-$color-obj-menu-5:	$mid-300; // requests
-$color-obj-menu-5:	$mid-400; // forums
-$color-obj-menu-6:	$mid-500; // irc
-$color-obj-menu-7:	$mid-600; // top10
-$color-background-header:		$mid-700; // rules, also mobile menu header
-$color-obj-menu-9:	$mid-800; // wiki
-$color-background-menu-username:		$mid-900; // username menu ~ closed
+$color-menu-2:	$mid-100; // torrents
+$color-menu-3:	$mid-200; // collages
+$color-menu-5:	$mid-300; // requests
+$color-menu-5:	$mid-400; // forums
+$color-menu-6:	$mid-500; // irc
+$color-menu-7:	$mid-600; // top10
+$color-mobilemenu-closed:		$mid-700; // rules, also mobile menu header
+$color-menu-9:	$mid-800; // wiki
+$color-menu-username:		$mid-900; // username menu ~ closed
 $userinfo-username-hover-background-color:	$mid-700; // username menu ~ open
-$color-background-menu-userinfo:	$mid-1000; // VV pulldown menu ~ closed
-$color-background-menu-userinfo-hover:	$mid-700; // VV pulldown menu ~ open
+$color-menu-userinfo:	$mid-1000; // VV pulldown menu ~ closed
+$color-menu-userinfo-hover:	$mid-700; // VV pulldown menu ~ open
 
 // (L-R Dark To Light Style)
 // 1000 to 100
 
 // mobile pulldown menu gradient
 
-$color-background-mobilemenu-userinfo-1: $mid-700; // mobile pulldown menu gradient 1
-$color-background-mobilemenu-userinfo-2: $mid-300; // mobile pulldown menu gradient 2
+$color-mobilemenu-userinfo-1: $mid-700; // mobile pulldown menu gradient 1
+$color-mobilemenu-userinfo-2: $mid-300; // mobile pulldown menu gradient 2
 
 // notification gradient
 
@@ -131,8 +131,8 @@ $color-obj-button-base-2: $color-text-anchor;
 $color-text-ratio-redzone: #e85050;
 $color-text-ratio-yellowzone: #e3ba65;
 $color-text-ratio-greenzone: #4fb650;
-$color-background-selection: rgb(105 217 146 / 60%);
-$color-text-selection: $color-text-bold; // usually #fff or $color-text-bold
+$color-accent-selection-background: rgb(105 217 146 / 60%);
+$color-accent-selection-text: $color-text-bold; // usually #fff or $color-text-bold
 $color-background-poll: rgb(131 228 166 / 10%);
 
 // overrides these colors when called: why?
@@ -172,7 +172,7 @@ $icon-message-read-locked-sticky: url("https://wally-crunk.github.io/svg/gazelle
 // Header Pulldown Menu (hamburger/chevron icon)
 
 $icon-menu-open-state: url("https://wally-crunk.github.io/svg/gazelle/menu.svg");
-$menu-closed-state-icon: url("https://wally-crunk.github.io/svg/gazelle/chevrons-down.svg");
+$icon-menu-closed-state: url("https://wally-crunk.github.io/svg/gazelle/chevrons-down.svg");
 $icon-menu-pulldown-mobile: url("https://wally-crunk.github.io/svg/gazelle/chevrons-down.svg");
 
 // Used in Header

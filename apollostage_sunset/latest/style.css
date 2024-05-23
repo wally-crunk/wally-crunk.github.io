@@ -210,7 +210,7 @@ textarea:focus {
 .box .box.pad,
 .main_column .box.pad:not(#reply_box) {
   background-color: #263330;
-  border: 2px solid #2B3A36;
+  border: 2px solid #30413D;
   margin: 8px;
   border-radius: 0.25rem;
 }
@@ -288,7 +288,7 @@ li:last-child {
 
 blockquote {
   background-color: #38363d;
-  border: 1px dashed #157D63;
+  border: 1px dashed #263330;
   margin: 12px;
   padding: 12px;
 }
@@ -1219,7 +1219,7 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
 }
 
 #discog_table > div.box.center:before {
-  color: red !important;
+  color: #D5E0D9 !important;
   font-size: large !important;
   content: "Jump to ⇩" !important;
   display: block;
