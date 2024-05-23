@@ -105,7 +105,7 @@
 /* various 'debug' features are avail in this doc */
 #site_time:after,
 li#nav_upload.brackets a:before {
-  content: "1056";
+  content: "1059";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -387,11 +387,11 @@ form {
   background-color: #1D2424;
 }
 
-˜√Ω form table td.label {
+form table td.label {
   color: #dcdfe4;
   padding-top: 9px;
   font-weight: 600;
-  text-align: right;
+  text-align: left;
   width: 180px;
 }
 

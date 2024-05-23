@@ -476,12 +476,11 @@ td:last-child {
 form {
     background-color: $color-background-form;
 }
-˜√Ω
 form table td.label {
     color: $color-text-footer;
     padding-top: 9px;
     font-weight: 600;
-    text-align: right;
+    text-align: left;   //#2024
     width: 180px;
 }
 
