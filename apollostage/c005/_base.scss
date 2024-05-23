@@ -195,6 +195,14 @@
     box-sizing: inherit;
 }
 
+li#nav_upload.brackets a:before {
+  content: $debug-slug;
+  border: thin solid orangered; border-radius: .5rem;
+  color: orangered; 
+  padding: 0.05rem 0.5rem;
+  margin: 0rem 0.5rem; 
+}
+
 body,
 button,
 h1,
@@ -958,7 +966,7 @@ div#flip_view_1 div#similar-artist .name {
 }
 
 .torrent_table {
-    background-color: $color-background-table-secondary;
+    background-color: $color-background-table-torrenttable;
 }
 
 .torrent_table tr:not(.colhead, .colhead_dark) {
@@ -2036,7 +2044,6 @@ body#collage .cats_music {
 
 #searchbars .search_form input:focus {
     background: $color-background-searchbars-field-focus;
-    //$color-background-table-secondary;
 }
 
 /* ************************************************ */
