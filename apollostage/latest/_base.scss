@@ -1255,8 +1255,8 @@ ul.collage_images li a > span {
 #discog_table tr[id^=torrents_] {
     background-color: $color-background-table-keyrows;
 }
-#discog_table tr[id^=torrents_] :not(a.tooltip.brackets) {
-    font-size: 125%;
+#discog_table tr[id^=torrents_] :not(a.tooltip.brackets) strong{
+    font-size: large;
     color: $color-text-bold;
 }
 
@@ -1304,7 +1304,7 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
     background-color: $color-background-table-discog;
     padding: 12px;
     text-align: left;
-    padding-left: 1.5rem; 
+    padding-left: 1rem; 
 }
 
 #discog_table > div.box.center a {
@@ -1314,7 +1314,7 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
 #discog_table > div.box.center:before {
   color:$color-text-bold !important;
   font-size: large !important;
-  content: '\21E9 Jump to' !important;
+  content: '\21E9  Jump to' !important;
   font-weight: 600;
   display: block;
   float: left; 
