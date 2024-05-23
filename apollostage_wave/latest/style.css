@@ -106,7 +106,7 @@
 /* various 'debug' features are avail in this doc */
 #site_time:after,
 li#nav_upload.brackets a:before {
-  content: "1346";
+  content: "1351";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -1210,11 +1210,7 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
   background-color: #0F5B49;
   padding: 12px;
   text-align: left;
-  padding-left: 1rem;
-}
-
-#discog_table > div.box.center a {
-  margin: 0 8px;
+  padding-left: 10rem;
 }
 
 #discog_table > div.box.center:before {
@@ -1224,6 +1220,10 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
   font-weight: 600;
   position: relative;
   left: -20%;
+}
+
+#discog_table > div.box.center a {
+  margin: 0 8px;
 }
 
 #discog_table > div.box.center .brackets::after,
