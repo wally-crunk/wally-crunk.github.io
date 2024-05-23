@@ -111,7 +111,7 @@
 /* various 'debug' features are avail in this doc */
 #site_time:after,
 li#nav_upload.brackets a:before {
-  content: "1435";
+  content: "1445";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -329,6 +329,7 @@ table .rowb {
 
 table .rowa:nth-child(even),
 table .rowb:nth-child(even),
+#top10 tr.torrent.row.b,
 #dnulist tr:not(.colhead, .colhead_dark):nth-child(even),
 #upload tr:nth-child(even) {
   background-color: #181D1D;
@@ -342,6 +343,7 @@ table {
 
 table .rowa:nth-child(odd),
 table .rowb:nth-child(odd),
+#top10 tr.torrent.row.a,
 #dnulist tr:not(.colhead, .colhead_dark):nth-child(odd),
 #upload tr:nth-child(odd) {
   background-color: #1D2424;
