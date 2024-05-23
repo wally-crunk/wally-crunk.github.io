@@ -106,7 +106,7 @@
 /* various 'debug' features are avail in this doc */
 #site_time:after,
 li#nav_upload.brackets a:before {
-  content: "1051";
+  content: "1054";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -443,7 +443,7 @@ input[type=text]:focus,
 input[type=search]:focus,
 select:focus,
 textarea:focus {
-  background: #1D2424;
+  background: #283333;
   border: 1px solid rgba(255, 255, 255, 0.25);
   color: #E5EFE9;
 }
@@ -2024,7 +2024,7 @@ body#collage .cats_music {
 /* # 1.9 Upload form MusicBrainz popup */
 #musicbrainz_popup {
   color: #C6D2C8;
-  background: #093A2E;
+  background: #1D2424;
   border: #1DAF8B;
   padding: 1rem;
   font-weight: 600;
