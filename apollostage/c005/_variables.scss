@@ -6,7 +6,7 @@
 // ////////////////////////////////////////////////////////////////////////////////
 // SLUG
 
- $debug-slug: "1428"; // must include quots
+ $debug-slug: "1435"; // must include quots
 
 // ////////////////////////////////////////////////////////////////////////////////
 // COLORS
@@ -80,7 +80,7 @@ $color-background-table-row-th: $back-500;
 $color-background-table-row-odd: $back-300;
 $color-background-table-row-even: $back-200;
 $color-background-table-keyrows: $mid-300; // navigation row ~ "jump up to.."
-$color-background-table-secondary: $mid-500; // also form field in focus
+$color-background-table-secondary: orangered; // no longer used
 $color-background-table-torrenttable: $back-300; // also form field in focus
 $color-background-table-torrents-group: $back-600;
 $color-background-torrent: $mid-200; // edition in group-list
@@ -95,7 +95,7 @@ $color-text-heading-anchor: $mid-900;
 $color-text-heading: $fore-700;
 $color-text-important-alt: $ds-green;
 $color-text-important: $ds-red;
-$color-text-input: $fore-500; // for pre-populated inputs
+$color-text-input: $fore-600; // for pre-populated inputs
 $color-text-input-active: $fore-900;
 $color-text-linkbox: $fore-800;
 $color-text-menu: $fore-1000;
@@ -153,6 +153,7 @@ $color-accent-border-input: $ds-fx-low;
 $color-accent-border-input-active: $ds-fx-mid;
 $color-accent-border-tooltipster: $mid-800;
 $color-accent-border-popup: $mid-800;
+$color-accent-border-tableouter: $back-600-mid;
 $color-accent-border-tablerows: $back-600-low;
 $color-accent-border-tablerows-torrent: $back-600-mid;
 $color-accent-shadow-menutext: initial; // provisioned for derivative themes

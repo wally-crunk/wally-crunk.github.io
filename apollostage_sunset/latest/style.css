@@ -110,7 +110,7 @@
 /* various 'debug' features are avail in this doc */
 #site_time:after,
 li#nav_upload.brackets a:before {
-  content: "1428";
+  content: "1435";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -1338,7 +1338,7 @@ ul.collage_images li a > span {
 
 .box table:not(.layout),
 .box2 table:not(.layout) {
-  border: 2px solid #29262d;
+  border: 2px solid rgba(45, 57, 58, 0.5333333333);
   margin: 8px 0;
 }
 

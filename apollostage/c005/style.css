@@ -109,7 +109,7 @@
 /* various 'debug' features are avail in this doc */
 #site_time:after,
 li#nav_upload.brackets a:before {
-  content: "1428";
+  content: "1435";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -435,7 +435,7 @@ select,
 textarea {
   background: #1D2424;
   border: 1px solid rgba(255, 255, 255, 0.08);
-  color: #A7B4A8;
+  color: #B6C3B8;
   height: 32px;
   padding: 0 8px;
 }
@@ -1337,7 +1337,7 @@ ul.collage_images li a > span {
 
 .box table:not(.layout),
 .box2 table:not(.layout) {
-  border: 2px solid #157D63;
+  border: 2px solid rgba(45, 57, 58, 0.5333333333);
   margin: 8px 0;
 }
 
@@ -2586,7 +2586,7 @@ body#collage .cats_music {
   }
   .forum_post tr.colhead_dark span,
   .forum_post tr.colhead_dark strong {
-    color: #A7B4A8;
+    color: #B6C3B8;
   }
   .forum_post tr.colhead_dark div {
     display: inline;
