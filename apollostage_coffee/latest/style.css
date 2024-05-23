@@ -106,8 +106,8 @@
 /* ## 0.3 Debugging */
 /* various 'debug' features are avail in this doc */
 li#nav_upload.brackets a:before {
-  content: "1014";
-  border: thin dotted orangered;
+  content: "1019";
+  border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
   padding: 0.03rem 0.5rem;
@@ -1961,8 +1961,8 @@ body#collage .cats_music {
 
 /* first row of each box */
 #noty_bottomRight_layout_container .noty_message {
-  background: radial-gradient(circle at top right, #23D1A5, #157D63) !important;
-  color: #161D1B !important;
+  background: radial-gradient(circle at top right, #23D1A5, #126C56) !important;
+  color: #FAFFFC !important;
   font-weight: 700;
   padding: 0 !important;
 }

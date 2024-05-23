@@ -6,7 +6,7 @@
 // ////////////////////////////////////////////////////////////////////////////////
 // SLUG
 
- $debug-slug: "1014"; // must include quots
+ $debug-slug: "1019"; // must include quots
 
 // ////////////////////////////////////////////////////////////////////////////////
 // COLORS
@@ -98,7 +98,7 @@ $color-text-linkbox: $fore-800;
 $color-text-menu: $fore-1000;
 $color-text-menu-hover: $back-600;
 $color-text-mono: $fore-500;
-$color-text-notification-words: $back-200;
+$color-text-notification-words: $fore-1000;
 $color-text-popup-anchor-hover: $mid-1000;
 $color-text-popup-anchor: $fore-900;
 $color-text-popup: $fore-700;
@@ -134,7 +134,7 @@ $color-mobilemenu-closed: $mid-700; // rules, also mobile menu header
 $color-mobilemenu-shadow: $mid-500; //mobile menu
 
 $color-background-notification-gradient-1: $mid-1000; // usually works well with 'third-child'
-$color-background-notification-gradient-2: $mid-500; // usually works well with 'seventh-child'
+$color-background-notification-gradient-2: $mid-400; // usually works well with 'seventh-child'
 $color-background-notification: #000;
 
 $color-obj-button-base-1: $ds-neutral-400;
