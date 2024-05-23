@@ -111,7 +111,7 @@
 /* various 'debug' features are avail in this doc */
 #site_time:after,
 li#nav_upload.brackets a:before {
-  content: "1445";
+  content: "1643";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
