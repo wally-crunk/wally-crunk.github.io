@@ -1980,11 +1980,11 @@ body#collage .cats_music {
 /* ## 1.8.1 Menu handling */
 /* horizontal menu */
 /* #2024 change to styled color instead of #fff to match vertical pulldown menu */
-/* menu hover colors */
 
+/* menu hover colors */
 #menu > ul a:hover,
 #userinfo_minor:hover a:hover,
-#userinfo_username:hover a:hover
+#userinfo_username:hover a:hover,
 #userinfo_minor:hover::before {
   background-color: $color-menu-fx-selection;
 }
@@ -3482,8 +3482,7 @@ ul#check:after {
 
 /*# sourceMappingURL=styles.css.map */
 
-/* $debug-slug */
-// $debug-slug 
+// tracer only
 debug { debug: $debug-slug }
 
 /* ####### */

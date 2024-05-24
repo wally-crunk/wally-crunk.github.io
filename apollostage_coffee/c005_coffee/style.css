@@ -114,7 +114,7 @@
 /* various 'debug' features are avail in this doc */
 #site_time:after,
 li#nav_upload.brackets a:before {
-  content: "0649";
+  content: "0653";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -1854,7 +1854,8 @@ body#collage .cats_music {
 /* menu hover colors */
 #menu > ul a:hover,
 #userinfo_minor:hover a:hover,
-#userinfo_username:hover a:hover #userinfo_minor:hover::before {
+#userinfo_username:hover a:hover,
+#userinfo_minor:hover::before {
   background-color: rgba(255, 255, 255, 0.25);
 }
 
@@ -3109,9 +3110,8 @@ ul#check:after {
 }
 
 
-/* $debug-slug */
 debug {
-  debug: "0649";
+  debug: "0653";
 }
 
 /* ####### */
