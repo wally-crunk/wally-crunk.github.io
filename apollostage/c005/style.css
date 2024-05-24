@@ -109,7 +109,7 @@
 /* various 'debug' features are avail in this doc */
 #site_time:after,
 li#nav_upload.brackets a:before {
-  content: "2046";
+  content: "2059";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -224,7 +224,7 @@ textarea:focus {
 .box .box.pad,
 .main_column .box.pad:not(#reply_box) {
   background-color: #252F32;
-  border: 2px solid #324041;
+  border: 2px solid #3C4D50;
   margin: 8px;
   border-radius: 0.25rem;
 }
@@ -301,8 +301,8 @@ li:last-child {
 }
 
 blockquote {
-  background-color: #1D2424;
-  border: 1px dashed #252F32;
+  background-color: #222B2B;
+  border: 1px dashed #3C4D50;
   margin: 12px;
   padding: 12px;
 }
@@ -1370,7 +1370,7 @@ blockquote {
 .reportinfo_table,
 .torrentdetails,
 blockquote {
-  background-color: #1D2424;
+  background-color: #222B2B;
 }
 
 #bookmarks #torrent_table tr:not(.colhead, .colhead_dark) td:nth-child(2) {
@@ -1860,7 +1860,7 @@ body#collage .cats_music {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-image: url("https://wally-crunk.github.io/svg/gazelle/menu.svg");
+  background-image: url("https://wally-crunk.github.io/svg/gazelle/menu-000.svg");
   background-size: 30px;
   background-origin: padding-box;
   background-clip: border-box;
