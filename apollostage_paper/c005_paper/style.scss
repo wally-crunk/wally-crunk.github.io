@@ -1,11 +1,21 @@
 /* APOLLOSTAGE PAPER THEME */
-/* 2024-05-22 */
+/* 2024-05-24 */
 
 // DEFINE THEME COLORS AND ICONS
-// GOOD VARIABLES BAD FORMAT
+
+/// ////////////////////////////////////////////////////////////////////////////////
+// SLUG
+
+ $debug-slug: "0950"; // must include quots
 
 // import basic colors as a backup:
 @import '../apollostage/_variables';
+
+// ////////////////////////////////////////////////////////////////////////////////
+// COLORS
+
+// PhysicalLayout -> token
+// and Token -> Raw value
 
 // and override as follows: -- palettte.app was helpful for this
 $bob-100: #EBEFF0;
@@ -46,107 +56,169 @@ $fran-1000: #CAE3FF;
 $gray-300: #727576;
 $yellow-300: #e3ba65;
 
-// define theme colors
+// Backs
+$back-100: #EBEFF0;
+$back-200: #DEE2E2;
+$back-300: #D0D4D5;
+$back-400: #C2C6C7;
+$back-500: #B5B9BA;
+$back-600: #A7ABAC;
+$back-700: #9A9E9F;
+$back-800: #8D9091;
+$back-900: #808384;
+$back-1000: #727576;
 
-$color-accent-border-blockquote: $back-1000;
-$color-accent-border-box: $mid-900;
-$color-accent-border-input-active: $fore-800;
-$color-accent-border-input: $back-800;
-$color-accent-border-tooltipster: $back-1000;
-$color-accent-border-popup: $mid-900;
+//Mids
+$mid-100: #65BC98;
+$mid-200: #55AE88;
+$mid-300: #4BA67F;
+$mid-400: #429E77;
+$mid-500: #3B9972;
+$mid-600: #35956D;
+$mid-700: #308E67;
+$mid-800: #2A8760;
+$mid-900: #247D59;
+$mid-1000: #1D714D;
 
-$color-accent-cats_applications: #f02940;
-$color-accent-cats_audiobooks: #a54873;
-$color-accent-cats_comedy: #8b869c;
-$color-accent-cats_comics: #688187;
-$color-accent-cats_ebooks: #578f9d;
-$color-accent-cats_elearningvideos: #793555;
-$color-accent-cats_music: #fd6659;
-$color-accent-forum-inline-last-read: $yellow-300;
-$color-accent-forum-unread: $yellow-300;
+//Fores
+$fore-100: #CAE3FF;
+$fore-200: #78A9E3;
+$fore-300: #3E7DC6;
+$fore-400: #1C60B0;
+$fore-500: #0F3F94;
+$fore-600: #103C7F;
+$fore-700: #153866;
+$fore-800: #162E49;
+$fore-900: #17212E;
+$fore-1000: #0D1012;
 
-$color-accent-selection-background: $mid-1000;
-$color-accent-selection-text: $color-text-bold; // usually #fff or $color-text-bold
+//Direct-Specialty
+
+ $ds-neutral-300: #979a9c;
+ $ds-neutral-400: #7f807f;
+ $ds-neutral-500: #5d6670;
+ $ds-neutral-000: #000;
+ $ds-red: #a41610;
+ $ds-green: #11890e;
+ $ds-yellow: #c9a612;
+ $ds-fx-low: rgba(0,0,0, 0.15);
+ $ds-fx-mid: rgba(0,0,0, 0.25);
+
+// DEFINE FROM LOGICAL LAYOUT TO TOKENS
 
 $color-background-base: $back-100;
-$color-background-blockquote: $back-300;
+$color-background-blockquote: $back-400;
 $color-background-box: $back-500;
 $color-background-form: $back-200; // also boxes on frontpage
-$color-mobilemenu-closed: $mid-700; // mobile menu tab header
-$color-background-input: $back-400; 
+$color-background-input: $back-400;
+$color-background-input-active: $back-500;
 $color-background-poll: $back-500;
-$color-background-popup: $back-500;
-$color-background-table: $back-400; // primarily table-odd-rows
-$color-background-table-discog: $back-300;
+$color-background-popup: $back-300; // upload musicbrainz info
+$color-background-popup-warning: $ds-yellow;
+$color-background-searchbars: $back-300;
+$color-background-searchbars-field-focus: $back-100;
+$color-background-searchbars-surround: $back-500;
+$color-background-table: $back-200; // tables/forms without odd-even treatment
+$color-background-table-discog: $mid-300; // navigation row ~ "jump down to.."
 $color-background-table-row-th: $back-500;
-$color-background-table-row-odd: $back-100;
-$color-background-table-keyrows: $mid-700;
-$color-background-table-secondary: $back-400; // also frame of top searchboxes
-$color-background-table-torrents-group: $back-100;
-$color-background-torrent: crimson;
+$color-background-table-row-odd: $back-300;
+$color-background-table-row-even: $back-200;
+$color-background-table-keyrows: $mid-300; // navigation row ~ "jump up to.."
+$color-background-table-secondary: orangered; // no longer used
+$color-background-table-torrenttable: $back-300; // also form field in focus
+$color-background-table-torrents-group: $back-600;
+$color-background-torrent: $mid-200; // edition in group-list
 
-$color-text-anchor-hover: $fore-800;
-$color-text-anchor: $fore-500;
-$color-text-base: $gary-1500;
-$color-text-bold: $fore-100;
-$color-text-button: $fore-400;
-$color-text-footer: $fore-100;
-$color-text-heading-anchor: $fore-700;
-$color-text-heading: $fore-100;
-$color-text-important-alt: #a54873;
-$color-text-important: #f02940;
-$color-text-input-active: $fore-600;
-$color-text-input: $gary-1300; // for pre-populated inputs
-$color-text-linkbox: $fore-100;
-$color-text-mono: $fore-300;
-$color-text-notification-words: $fore-100;
-$color-text-popup-anchor-hover: $fore-100;
-$color-text-popup-anchor: $fore-800;
-$color-text-popup: $fore-600;
-$color-text-ratio-greenzone: hsl(140, 77%, 42%);
-$color-text-ratio-redzone: hsl(351.7,56.7%,42.5%);
-$color-text-ratio-yellowzone: hsl(48,73%,42%);
-$color-text-span-blue: #0059D1;
-$color-text-span-green: #00D131;
-$color-text-table-discog-titles: $mid-700;
-$color-text-tooltipster: $fore-100;
-$color-text-tooltipster-anchor: $fore-500;
-$color-text-tooltipster-anchor-hover: $fore-800;
+$color-text-anchor-hover: $mid-1000;
+$color-text-anchor: $fore-1000;
+$color-text-base: $fore-700;
+$color-text-bold: $fore-800;
+$color-text-button: $back-700;
+$color-text-footer: $ds-neutral-300;
+$color-text-heading-anchor: $mid-900;
+$color-text-heading: $fore-700;
+$color-text-important-alt: $ds-green;
+$color-text-important: $ds-red;
+$color-text-input: $fore-600; // for pre-populated inputs
+$color-text-input-active: $fore-900;
+$color-text-linkbox: $mid-800; // links in linkbox
+$color-text-menu: $fore-1000;
+$color-text-menu-hover: $back-600; // during pulldown
+$color-text-mono: $fore-500;
+$color-text-notification-words: $fore-1000;
+$color-text-popup-anchor-hover: $mid-1000;
+$color-text-popup-anchor: $fore-900;
+$color-text-popup: $fore-700;
+$color-text-ratio-greenzone: $ds-green;
+$color-text-ratio-redzone: $ds-red;
+$color-text-ratio-yellowzone: $ds-yellow;
+$color-text-span-blue: hsl(235, 90%, 85%);
+$color-text-span-green: hsl(145, 90%, 70%);
+$color-text-span-red: $ds-red;
+$color-text-table-discog-titles: $mid-900;
+$color-text-tooltipster: $mid-600;
+$color-text-tooltipster-anchor: $mid-800;
+$color-text-tooltipster-anchor-hover: $mid-1000;
 
-// There are 12 menu colors
-// $color-menu-1: red; // unused (could be home)
+$color-menu-1: $mid-1000; // unused (could be home)
 $color-menu-2: $mid-100; // torrents
 $color-menu-3: $mid-200; // collages
-$color-menu-4: $mid-300; // collages
+$color-menu-4: $mid-300; // requests
 $color-menu-5: $mid-400; // forums
 $color-menu-6: $mid-500; // irc
 $color-menu-7: $mid-600; // top10
 $color-menu-8: $mid-700; // rules
 $color-menu-9: $mid-800; // wiki
 $color-menu-username: $mid-900; // username menu ~ closed
-$color-menu-username-hover: $mid-700; // username menu ~ open
 $color-menu-userinfo: $mid-1000; // VV pulldown menu ~ closed
-$color-menu-userinfo-hover: $mid-700; // VV pulldown menu ~ open
-$color-mobilemenu-userinfo-1: $mid-900; // mobile pulldown menu gradient 1
-$color-mobilemenu-userinfo-2: $mid-300; // mobile pulldown menu gradient 2
-$color-mobilemenu-shadow: $back-800;
+$color-menu-hover: $mid-300;
+$color-menu-username-hover: $mid-900; // username menu ~ open
+$color-menu-userinfo-hover: $mid-900; // VV pulldown menu ~ open
+$color-menu-fx-selection: $ds-fx-mid;
+$color-mobilemenu-userinfo-1: $mid-400; // mobile pulldown menu gradient 1
+$color-mobilemenu-userinfo-2: $mid-900; // mobile pulldown menu gradient 2
+$color-mobilemenu-closed: $mid-700; // rules, also mobile menu header
+$color-mobilemenu-shadow: $mid-500; //mobile menu
 
-$color-background-notification-gradient-1: $mid-900; // usually works well with 'third-child'
-$color-background-notification-gradient-2: $mid-300; // usually works well with 'seventh-child'
-$color-background-notification: #000000;
+$color-background-notification-gradient-1: $mid-1000; // menu low/high suggested
+$color-background-notification-gradient-2: $mid-400;  // menu high/low suggested
+$color-background-notification: $ds-neutral-000;
 
-$color-obj-button-base-1: $back-200; // gradient from here to $color-text-anchor
-$color-obj-button-base-2: $back-600;
-$color-obj-poll: $color-text-span-blue; // poll active part of bargraph
-$color-obj-tag_bubble-background: $mid-300; // These can equal "ninth" and "second"
-$color-obj-tag_bubble-foreground: $mid-900; // These can equal "ninth" and "second"
-$color-obj-noty-buttons-hover: $mid-900; // These can equal tag_bubble-foreground
+$color-obj-button-base-1: $ds-neutral-400;
+$color-obj-button-base-2: $fore-900;
+$color-obj-noty-buttons-hover: $mid-900;
+$color-obj-poll: $mid-900; // poll active part of bargraph
 
-// Site header ~ need light background version
+$color-obj-tag_bubble-background: $mid-200; // menu-2 suggested
+$color-obj-tag_bubble-foreground: $mid-900; // menu-9 suggested
+$color-obj-tag_bubble_snatched-background: $back-600;
 
-$logo-site-lockup: url("https://wally-crunk.github.io/svg/orpheus/ops-logo-lockup-whiteusage.svg");
+$color-accent-border-blockquote: $back-900; // Dotted
+$color-accent-border-box: $back-900;
+$color-accent-border-input: $ds-fx-low;
+$color-accent-border-input-active: $ds-fx-mid;
+$color-accent-border-tooltipster: $mid-800;
+$color-accent-border-popup: $mid-800;
+$color-accent-border-tableouter: $back-600-mid;
+$color-accent-border-tablerows: $back-600-low;
+$color-accent-border-tablerows-torrent: $back-600-mid;
+$color-accent-shadow-menutext: initial; // provisioned for derivative themes
 
-// Forum icons
+$color-accent-cats_applications: silver;
+$color-accent-cats_audiobooks: cornflowerblue;
+$color-accent-cats_comedy: deepskyblue;
+$color-accent-cats_comics: gold;
+$color-accent-cats_ebooks: chocolate;
+$color-accent-cats_elearningvideos: mediumpurple;
+$color-accent-cats_music: darkslategray;
+$color-accent-forum-inline-last-read: #fed100;
+$color-accent-forum-unread: #fed100;
+
+$color-accent-selection-background: $mid-800;
+$color-accent-selection-text: $fore-700; // usually #fff or $color-text-bold
+
+// ////////////////////////////////////////////////////////////////////////////////
+// ICONS
 
 $icon-message-unread: url("https://wally-crunk.github.io/svg/gazelle/document-round-000.svg");
 $icon-message-unread-locked: url("https://wally-crunk.github.io/svg/gazelle/lock-round-000.svg");
