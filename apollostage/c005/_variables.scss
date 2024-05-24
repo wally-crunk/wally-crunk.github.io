@@ -65,8 +65,9 @@
  $ds-yellow: #f4f480;
  $ds-fx-low: rgba(255, 255, 255, 0.08);
  $ds-fx-mid: rgba(255, 255, 255, 0.25);
- $ds-gray-62: hsl(115, 7%, 62%);
- $ds-gray-92: hsl(144, 24%, 92%);
+ $ds-gray-05: hsl(178, 2.5%, 05%);  
+ $ds-gray-62: hsl(181, 3.5%, 62%);  
+ $ds-gray-92: hsl(183, 4.0%, 92%);
 
 // DEFINE FROM LOGICAL LAYOUT TO TOKENS
 
@@ -97,7 +98,7 @@ $color-text-anchor-hover: $mid-1000;
 $color-text-anchor: $fore-1000;
 $color-text-base: $fore-700;
 $color-text-bold: $fore-800;
-$color-text-button: $back-700;
+$color-text-button: $ds-gray-05;
 $color-text-footer: $ds-neutral-300;
 $color-text-heading-anchor: $mid-900;
 $color-text-heading: $fore-700;
