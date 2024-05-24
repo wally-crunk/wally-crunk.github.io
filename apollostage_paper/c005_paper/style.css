@@ -114,7 +114,7 @@
 /* ## 0.3 Debugging */
 /* various 'debug' features are avail in this doc */
 li#nav_upload.brackets a:before {
-  content: "1023 1643";
+  content: "1023 1645";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -123,7 +123,7 @@ li#nav_upload.brackets a:before {
 }
 
 #footer p:last-of-type:after {
-  content: "ApolloStage 1023 Paper 1643";
+  content: "ApolloStage 1023 Paper 1645";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -430,7 +430,7 @@ button,
 input[type=button],
 input[type=submit],
 #popup_close {
-  background: linear-gradient(hsl(115, 7%, 62%), hsl(144, 24%, 92%));
+  background: linear-gradient(hsl(180, 6%, 88%), hsl(192, 3%, 66%));
   border: none;
   border-radius: 1.5px;
   color: #9A9E9F;
@@ -444,7 +444,7 @@ button:active,
 input[type=button]:active,
 input[type=submit]:active,
 #popup_close:active {
-  background: linear-gradient(hsl(144, 24%, 92%), hsl(115, 7%, 62%));
+  background: linear-gradient(hsl(192, 3%, 66%), hsl(180, 6%, 88%));
 }
 
 input[type=email],
@@ -3152,7 +3152,7 @@ debug {
   debug_1: "ApolloStage";
   debug_2: "1023";
   debug_3: "Paper";
-  debug_4: "1643";
+  debug_4: "1645";
 }
 
 /*# sourceMappingURL=style.css.map */

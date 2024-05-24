@@ -9,7 +9,7 @@
 
 // must be after import.
 $debug-deriv: "Paper";
-$debug-deriv-slug: "1643";
+$debug-deriv-slug: "1645";
 
 // ////////////////////////////////////////////////////////////////////////////////
 // COLORS
@@ -103,8 +103,8 @@ $fore-1000: #0D1012;
  $ds-yellow: #c9a612;
  $ds-fx-low: rgba(0,0,0, 0.15);
  $ds-fx-mid: rgba(0,0,0, 0.25);
- $ds-gray-62: hsl(115, 7%, 62%);
- $ds-gray-92: hsl(144, 24%, 92%);
+ $ds-gray-88: hsl(180, 6%, 88%);
+ $ds-gray-66: hsl(192, 3%, 66%);
  
 // DEFINE FROM LOGICAL LAYOUT TO TOKENS
 
@@ -186,8 +186,8 @@ $color-background-notification-gradient-1: $mid-1000; // menu low/high suggested
 $color-background-notification-gradient-2: $mid-400;  // menu high/low suggested
 $color-background-notification: $ds-neutral-000;
 
-$color-obj-button-base-1: $ds-gray-62; // truColor
-$color-obj-button-base-2: $ds-gray-92;
+$color-obj-button-base-1: $ds-gray-88; 
+$color-obj-button-base-2: $ds-gray-66;
 $color-obj-noty-buttons-hover: $mid-900;
 $color-obj-poll: $mid-900; // poll active part of bargraph
 
