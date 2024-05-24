@@ -1007,8 +1007,10 @@ div#flip_view_1 div#similar-artist .name {
     background-color: $color-background-form;
 }
 
-.group_torrent.edition,
-.torrent {
+/* #2024fix */
+/* Edition stripe appears only when preceded by a Group */
+/* So, appears in Torrents.php but not 'snatches, downloads,' etc. */
+group ~ .group_torrent.edition {
     background-color: $color-background-torrent;
 }
 
@@ -3399,36 +3401,24 @@ table.torrent_table.cats.m_table td.td_info.big_info div.group_info.clear div.ta
 /* ### 4.2.5 Snatched torrent indicators (BETA)*/
 
 /* the following must be after 4.2.4 invisibility */
+
 tr.snatched_group div.tags:before {
   content: 'snatched group';
   font-style: italic;
   visibility: visible;
-  box-sizing: border-box;
-  display: inline-block;
   font-weight: 200;
-  font-size: 0.6rem;
-  vertical-align: baseline;
-  color: gray;
-  background: black;
-  padding: 0 0.5rem;
-  border-radius: 1rem;
-  margin-bottom: 0.1rem;
+  background: $color-obj-tag_bubble_snatched-background;
+  /* other attributes are inherited from bubbles above. */
 }
 
+
 tr.snatched_torrent div.tags:before {
-  content: 'snatched torrent';
+  content: "snatched torrent";
   font-style: italic;
   visibility: visible;
-  box-sizing: border-box;
-  display: inline-block;
   font-weight: 200;
-  font-size: 0.6rem;
-  vertical-align: baseline;
-  color: gray;
-  background: black;
-  padding: 0 0.5rem;
-  border-radius: 1rem;
-  margin-bottom: 0.1rem; 
+  background: $color-obj-tag_bubble_snatched-background;
+  /* other attributes are inherited from bubbles above. */
 }
 
 /* ## 4.3 i-devices telephone number prevention */

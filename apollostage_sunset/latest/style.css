@@ -113,7 +113,7 @@
 /* various 'debug' features are avail in this doc */
 #site_time:after,
 li#nav_upload.brackets a:before {
-  content: "0558";
+  content: "0616";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -917,8 +917,10 @@ div#flip_view_1 div#similar-artist .name {
   background-color: #302d34;
 }
 
-.group_torrent.edition,
-.torrent {
+/* #2024fix */
+/* Edition stripe appears only when preceded by a Group */
+/* So, appears in Torrents.php but not 'snatches, downloads,' etc. */
+group ~ .group_torrent.edition {
   background-color: #38363d;
 }
 
@@ -3033,32 +3035,18 @@ tr.snatched_group div.tags:before {
   content: "snatched group";
   font-style: italic;
   visibility: visible;
-  box-sizing: border-box;
-  display: inline-block;
   font-weight: 200;
-  font-size: 0.6rem;
-  vertical-align: baseline;
-  color: gray;
-  background: black;
-  padding: 0 0.5rem;
-  border-radius: 1rem;
-  margin-bottom: 0.1rem;
+  background: #2D393A;
+  /* other attributes are inherited from bubbles above. */
 }
 
 tr.snatched_torrent div.tags:before {
   content: "snatched torrent";
   font-style: italic;
   visibility: visible;
-  box-sizing: border-box;
-  display: inline-block;
   font-weight: 200;
-  font-size: 0.6rem;
-  vertical-align: baseline;
-  color: gray;
-  background: black;
-  padding: 0 0.5rem;
-  border-radius: 1rem;
-  margin-bottom: 0.1rem;
+  background: #2D393A;
+  /* other attributes are inherited from bubbles above. */
 }
 
 /* ## 4.3 i-devices telephone number prevention */

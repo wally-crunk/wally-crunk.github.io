@@ -6,7 +6,7 @@
 // ////////////////////////////////////////////////////////////////////////////////
 // SLUG
 
- $debug-slug: "0558"; // must include quots
+ $debug-slug: "0616"; // must include quots
 
 // ////////////////////////////////////////////////////////////////////////////////
 // COLORS
@@ -52,16 +52,18 @@
  $fore-1000: #FDFFFD;
 
 //Direct-Specialty
+
  $ds-neutral-300: #dcdfe4;
  $ds-neutral-400: #b8b8b8;
  $ds-neutral-500: #8591a2;
+ $ds-neutral-000: #000;
  $ds-red: #b71010;
  $ds-green: #099909;
  $ds-yellow: #f4f480;
  $ds-fx-low: rgba(255, 255, 255, 0.08);
  $ds-fx-mid: rgba(255, 255, 255, 0.25);
 
-// DEFINE PHYSICAL LAYOUT TO TOKENS
+// DEFINE FROM LOGICAL LAYOUT TO TOKENS
 
 $color-background-base: $back-100;
 $color-background-blockquote: $back-400;
@@ -84,7 +86,7 @@ $color-background-table-keyrows: $mid-300; // navigation row ~ "jump up to.."
 $color-background-table-secondary: orangered; // no longer used
 $color-background-table-torrenttable: $back-300; // also form field in focus
 $color-background-table-torrents-group: $back-600;
-$color-background-torrent: $mid-100; // edition in group-list
+$color-background-torrent: $mid-200; // edition in group-list
 
 $color-text-anchor-hover: $mid-1000;
 $color-text-anchor: $fore-1000;
@@ -137,18 +139,19 @@ $color-mobilemenu-userinfo-2: $mid-900; // mobile pulldown menu gradient 2
 $color-mobilemenu-closed: $mid-700; // rules, also mobile menu header
 $color-mobilemenu-shadow: $mid-500; //mobile menu
 
-$color-background-notification-gradient-1: $mid-1000; // usually works well with 'third-child'
-$color-background-notification-gradient-2: $mid-400; // usually works well with 'seventh-child'
-$color-background-notification: #000;
+$color-background-notification-gradient-1: $mid-1000; // menu low/high suggested
+$color-background-notification-gradient-2: $mid-400;  // menu high/low suggested
+$color-background-notification: $ds-neutral-000;
 
 $color-obj-button-base-1: $ds-neutral-400;
 $color-obj-button-base-2: $fore-900;
 $color-obj-noty-buttons-hover: $mid-900;
 $color-obj-poll: $mid-900; // poll active part of bargraph
 
-// bubbles. These can equal "menu-2" and "menu-9"; not $color-background-torrent
-$color-obj-tag_bubble-background: $mid-200;
-$color-obj-tag_bubble-foreground: $mid-900;
+
+$color-obj-tag_bubble-background: $mid-200; // menu-2 suggested
+$color-obj-tag_bubble-foreground: $mid-900; // menu-9 suggested
+$color-obj-tag_bubble_snatched-background: $back-600;
 
 $color-accent-border-blockquote: $back-900; // Dotted
 $color-accent-border-box: $back-900;
