@@ -6,7 +6,7 @@
 // ////////////////////////////////////////////////////////////////////////////////
 // SLUG
 
- $debug-slug: "1351"; // must include quots
+ $debug-slug: "2046"; // must include quots
 
 // ////////////////////////////////////////////////////////////////////////////////
 // COLORS
@@ -15,7 +15,7 @@
 // and Token -> Raw value
 
 //Backs
- $back-100: #121616;
+ $back-100:  #121616;
  $back-200:  #181D1D;
  $back-300:  #1D2424;
  $back-400:  #222B2B;
@@ -49,7 +49,7 @@
  $fore-700: #C6D2C8;
  $fore-800: #D5E0D9;
  $fore-900: #E5EFE9;
- $fore-1000: #FAFFFC;
+ $fore-1000: #FDFFFD;
 
 //Direct-Specialty
  $ds-neutral-300: #dcdfe4;
@@ -57,7 +57,7 @@
  $ds-neutral-500: #8591a2;
  $ds-red: #b71010;
  $ds-green: #099909;
- $ds-yellow: #d8d82d;
+ $ds-yellow: #f4f480;
  $ds-fx-low: rgba(255, 255, 255, 0.08);
  $ds-fx-mid: rgba(255, 255, 255, 0.25);
 
@@ -66,11 +66,12 @@
 $color-background-base: $back-100;
 $color-background-blockquote: $back-300;
 $color-background-box: $back-500;
-$color-background-form: $back-300; // also boxes on frontpage
-$color-background-input: $back-300;
+$color-background-form: $back-200; // also boxes on frontpage
+$color-background-input: $back-400;
 $color-background-input-active: $back-500;
 $color-background-poll: $back-500;
-$color-background-popup: $back-300;
+$color-background-popup: $back-300; // upload musicbrainz info
+$color-background-popup-warning: $ds-yellow;
 $color-background-searchbars: $back-300;
 $color-background-searchbars-field-focus: $back-100;
 $color-background-searchbars-surround: $back-500;
@@ -80,14 +81,14 @@ $color-background-table-row-th: $back-500;
 $color-background-table-row-odd: $back-300;
 $color-background-table-row-even: $back-200;
 $color-background-table-keyrows: $mid-300; // navigation row ~ "jump up to.."
-$color-background-table-secondary: $mid-500; // also form field in focus
+$color-background-table-secondary: orangered; // no longer used
 $color-background-table-torrenttable: $back-300; // also form field in focus
 $color-background-table-torrents-group: $back-600;
 $color-background-torrent: $mid-200; // edition in group-list
 
 $color-text-anchor-hover: $mid-1000;
-$color-text-anchor: $fore-900;
-$color-text-base: $fore-800;
+$color-text-anchor: $fore-1000;
+$color-text-base: $fore-700;
 $color-text-bold: $fore-800;
 $color-text-button: $back-700;
 $color-text-footer: $ds-neutral-300;
@@ -95,9 +96,9 @@ $color-text-heading-anchor: $mid-900;
 $color-text-heading: $fore-700;
 $color-text-important-alt: $ds-green;
 $color-text-important: $ds-red;
-$color-text-input: $fore-500; // for pre-populated inputs
+$color-text-input: $fore-600; // for pre-populated inputs
 $color-text-input-active: $fore-900;
-$color-text-linkbox: $fore-800;
+$color-text-linkbox: $mid-800; // links in linkbox
 $color-text-menu: $fore-1000;
 $color-text-menu-hover: $back-600;
 $color-text-mono: $fore-500;
@@ -144,7 +145,7 @@ $color-obj-button-base-1: $ds-neutral-400;
 $color-obj-button-base-2: $fore-900;
 $color-obj-noty-buttons-hover: $mid-900;
 $color-obj-poll: $mid-900; // poll active part of bargraph
-$color-obj-tag_bubble-background: $mid-400; // These can equal "ninth" and "second"
+$color-obj-tag_bubble-background: $mid-200; // These can equal "ninth" and "second"
 $color-obj-tag_bubble-foreground: $mid-900; // These can equal "ninth" and "second"
 
 $color-accent-border-blockquote: $back-500;
@@ -153,6 +154,7 @@ $color-accent-border-input: $ds-fx-low;
 $color-accent-border-input-active: $ds-fx-mid;
 $color-accent-border-tooltipster: $mid-800;
 $color-accent-border-popup: $mid-800;
+$color-accent-border-tableouter: $back-600-mid;
 $color-accent-border-tablerows: $back-600-low;
 $color-accent-border-tablerows-torrent: $back-600-mid;
 $color-accent-shadow-menutext: initial; // provisioned for derivative themes

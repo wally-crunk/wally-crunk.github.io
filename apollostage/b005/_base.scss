@@ -415,6 +415,7 @@ table .rowb {
 
 table .rowa:nth-child(even),
 table .rowb:nth-child(even),
+#top10 tr.torrent.row.b,
 #dnulist tr:not(.colhead, .colhead_dark):nth-child(even),
 #upload tr:nth-child(even) 
  {
@@ -429,6 +430,7 @@ table {
 
 table .rowa:nth-child(odd),
 table .rowb:nth-child(odd),
+#top10 tr.torrent.row.a,
 #dnulist tr:not(.colhead, .colhead_dark):nth-child(odd),
 #upload tr:nth-child(odd) 
 {
@@ -1433,7 +1435,7 @@ ul.collage_images li a > span {
 
 .box table:not(.layout),
 .box2 table:not(.layout) {
-    border: 2px solid $color-background-table-secondary;
+    border: 2px solid $color-accent-border-tableouter;
     margin: 8px 0;
 }
 
@@ -3406,7 +3408,7 @@ table.torrent_table.cats.m_table td.td_info.big_info div.group_info.clear div.ta
 
 div.upload-error:after,
 ul#check:after {
-  content: 'BETA:  Warning!  There were one or more errors in your submission. Check below for error messages.';
+  content: 'Warning!  There were one or more errors in your submission. Check below for error messages.';
   font-weight: 700;
   position: absolute;
   top: calc(4*16px);
@@ -3416,7 +3418,7 @@ ul#check:after {
   border: thick solid orangered;
   border-radius: .25rem;
   padding: 2rem 1rem 2rem 48px;
-  background: color-mix(in srgb, lightyellow, transparent 20%);
+  background: color-mix(in srgb, $color-background-popup-warning, transparent 15%);
   background-image: url('https://wally-crunk.github.io/svg/gazelle/x.svg');
   background-repeat:no-repeat;
   background-position: 8px center;

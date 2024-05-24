@@ -6,7 +6,7 @@
 // ////////////////////////////////////////////////////////////////////////////////
 // SLUG
 
- $debug-slug: "2027"; // must include quots
+ $debug-slug: "2046"; // must include quots
 
 // ////////////////////////////////////////////////////////////////////////////////
 // COLORS
@@ -57,7 +57,7 @@
  $ds-neutral-500: #8591a2;
  $ds-red: #b71010;
  $ds-green: #099909;
- $ds-yellow: #d8d82d;
+ $ds-yellow: #f4f480;
  $ds-fx-low: rgba(255, 255, 255, 0.08);
  $ds-fx-mid: rgba(255, 255, 255, 0.25);
 
@@ -70,7 +70,8 @@ $color-background-form: $back-200; // also boxes on frontpage
 $color-background-input: $back-400;
 $color-background-input-active: $back-500;
 $color-background-poll: $back-500;
-$color-background-popup: $back-300;
+$color-background-popup: $back-300; // upload musicbrainz info
+$color-background-popup-warning: $ds-yellow;
 $color-background-searchbars: $back-300;
 $color-background-searchbars-field-focus: $back-100;
 $color-background-searchbars-surround: $back-500;

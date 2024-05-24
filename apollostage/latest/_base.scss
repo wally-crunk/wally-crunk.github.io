@@ -3408,7 +3408,7 @@ table.torrent_table.cats.m_table td.td_info.big_info div.group_info.clear div.ta
 
 div.upload-error:after,
 ul#check:after {
-  content: 'BETA:  Warning!  There were one or more errors in your submission. Check below for error messages.';
+  content: 'Warning!  There were one or more errors in your submission. Check below for error messages.';
   font-weight: 700;
   position: absolute;
   top: calc(4*16px);
@@ -3418,7 +3418,7 @@ ul#check:after {
   border: thick solid orangered;
   border-radius: .25rem;
   padding: 2rem 1rem 2rem 48px;
-  background: color-mix(in srgb, lightyellow, transparent 20%);
+  background: color-mix(in srgb, $color-background-popup-warning, transparent 15%);
   background-image: url('https://wally-crunk.github.io/svg/gazelle/x.svg');
   background-repeat:no-repeat;
   background-position: 8px center;
