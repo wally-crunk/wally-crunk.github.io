@@ -5,51 +5,47 @@
 // GOOD VARIABLES BAD FORMAT
 
 // import basic colors as a backup:
-
 @import '../apollostage/_variables';
 
 // and override as follows: -- palettte.app was helpful for this
-
-$back-100: #EBEFF0;
-$back-200: #DEE2E2;
-$back-300: #D0D4D5;
-$back-400: #C2C6C7;
-$back-500: #B5B9BA;
-$back-600: #A7ABAC;
-$back-700: #9A9E9F;
-$back-800: #8D9091;
-$back-900: #808384;
-$back-1000: #727576;
-$grey-1100: #727676;
-$grey-1200: #5C6464;
-$grey-1300: #475350;
-$grey-1400: #35423B;
-$grey-1500: #243026;
-
-$mid-100: #65BC98;
-$mid-200: #55AE88;
-$mid-300: #4BA67F;
-$mid-400: #429E77;
-$mid-500: #3B9972;
-$mid-600: #35956D;
-$mid-700: #308E67;
-$mid-800: #2A8760;
-$mid-900: #247D59;
-$mid-1000: #1D714D;
-
-$fore-000: #0E151C;
-$fore-100: #192E47;
-$fore-300: #103764;
-$fore-400: #0D4184;
-$fore-500: #144B9F;
-$fore-600: #1F58BB;
-$fore-700: #2478DB;
-$fore-800: #2884F0;
-$fore-900: #99C8FF;
-$fore-1000: #CAE3FF;
-
+$bob-100: #EBEFF0;
+$bob-200: #DEE2E2;
+$bob-300: #D0D4D5;
+$bob-400: #C2C6C7;
+$bob-500: #B5B9BA;
+$bob-600: #A7ABAC;
+$bob-700: #9A9E9F;
+$bob-800: #8D9091;
+$bob-900: #808384;
+$bob-1000: #727576;
+$gary-1100: #727676;
+$gary-1200: #5C6464;
+$gary-1300: #475350;
+$gary-1400: #35423B;
+$gary-1500: #243026;
+$mike-100: #65BC98;
+$mike-200: #55AE88;
+$mike-300: #4BA67F;
+$mike-400: #429E77;
+$mike-500: #3B9972;
+$mike-600: #35956D;
+$mike-700: #308E67;
+$mike-800: #2A8760;
+$mike-900: #247D59;
+$mike-1000: #1D714D;
+$fran-000: #0E151C;
+$fran-100: #192E47;
+$fran-300: #103764;
+$fran-400: #0D4184;
+$fran-500: #144B9F;
+$fran-600: #1F58BB;
+$fran-700: #2478DB;
+$fran-800: #2884F0;
+$fran-900: #99C8FF;
+$fran-1000: #CAE3FF;
 $gray-300: #727576;
 $yellow-300: #e3ba65;
+
 // define theme colors
 
 $color-accent-border-blockquote: $back-1000;
@@ -66,9 +62,11 @@ $color-accent-cats_comics: #688187;
 $color-accent-cats_ebooks: #578f9d;
 $color-accent-cats_elearningvideos: #793555;
 $color-accent-cats_music: #fd6659;
-
 $color-accent-forum-inline-last-read: $yellow-300;
 $color-accent-forum-unread: $yellow-300;
+
+$color-accent-selection-background: $mid-1000;
+$color-accent-selection-text: $color-text-bold; // usually #fff or $color-text-bold
 
 $color-background-base: $back-100;
 $color-background-blockquote: $back-300;
@@ -76,10 +74,8 @@ $color-background-box: $back-500;
 $color-background-form: $back-200; // also boxes on frontpage
 $color-mobilemenu-closed: $mid-700; // mobile menu tab header
 $color-background-input: $back-400; 
-$color-mobilemenu-shadow: $back-800;
-$color-background-poll: rgb(131 228 166 / 10%);
+$color-background-poll: $back-500;
 $color-background-popup: $back-500;
-$color-accent-selection-background: $mid-1000;
 $color-background-table: $back-400; // primarily table-odd-rows
 $color-background-table-discog: $back-300;
 $color-background-table-row-th: $back-500;
@@ -91,7 +87,7 @@ $color-background-torrent: crimson;
 
 $color-text-anchor-hover: $fore-800;
 $color-text-anchor: $fore-500;
-$color-text-base: $grey-1500;
+$color-text-base: $gary-1500;
 $color-text-bold: $fore-100;
 $color-text-button: $fore-400;
 $color-text-footer: $fore-100;
@@ -100,7 +96,7 @@ $color-text-heading: $fore-100;
 $color-text-important-alt: #a54873;
 $color-text-important: #f02940;
 $color-text-input-active: $fore-600;
-$color-text-input: $gray-300; // for pre-populated inputs
+$color-text-input: $gary-1300; // for pre-populated inputs
 $color-text-linkbox: $fore-100;
 $color-text-mono: $fore-300;
 $color-text-notification-words: $fore-000;
@@ -110,7 +106,6 @@ $color-text-popup: $fore-600;
 $color-text-ratio-greenzone: hsl(140, 77%, 42%);
 $color-text-ratio-redzone: hsl(351.7,56.7%,42.5%);
 $color-text-ratio-yellowzone: hsl(48,73%,42%);
-$color-accent-selection-text: $color-text-bold; // usually #fff or $color-text-bold
 $color-text-span-blue: #0059D1;
 $color-text-span-green: #00D131;
 $color-text-table-discog-titles: $mid-700;
@@ -118,8 +113,7 @@ $color-text-tooltipster: $fore-000;
 $color-text-tooltipster-anchor: $fore-500;
 $color-text-tooltipster-anchor-hover: $fore-800;
 
-$color-obj-button-base-1: $back-200; // gradient from here to $color-text-anchor
-$color-obj-button-base-2: $back-600;
+// There are 12 menu colors
 // $color-menu-1: red; // unused (could be home)
 $color-menu-2: $mid-100; // torrents
 $color-menu-3: $mid-200; // collages
@@ -133,13 +127,16 @@ $color-menu-username: $mid-900; // username menu ~ closed
 $color-menu-username-hover: $mid-700; // username menu ~ open
 $color-menu-userinfo: $mid-1000; // VV pulldown menu ~ closed
 $color-menu-userinfo-hover: $mid-700; // VV pulldown menu ~ open
-
 $color-mobilemenu-userinfo-1: $mid-900; // mobile pulldown menu gradient 1
 $color-mobilemenu-userinfo-2: $mid-300; // mobile pulldown menu gradient 2
+$color-mobilemenu-shadow: $back-800;
+
 $color-background-notification-gradient-1: $mid-900; // usually works well with 'third-child'
 $color-background-notification-gradient-2: $mid-300; // usually works well with 'seventh-child'
 $color-background-notification: #000000;
 
+$color-obj-button-base-1: $back-200; // gradient from here to $color-text-anchor
+$color-obj-button-base-2: $back-600;
 $color-obj-poll: $color-text-span-blue; // poll active part of bargraph
 $color-obj-tag_bubble-background: $mid-300; // These can equal "ninth" and "second"
 $color-obj-tag_bubble-foreground: $mid-900; // These can equal "ninth" and "second"
