@@ -33,8 +33,8 @@
 /* ## 1.8 Header and menu layout */
 /* ## 1.8.1 Menu Handling */
 /* ## 1.9 Headers Below Menu */
-/* ## 1.9.1 Searchbars */
-/* ## 1.9.2 Linkbox */
+/* ### 1.9.1 Searchbars */
+/* ### 1.9.2 Linkbox */
 /* ## 1.10 Notification Box */
 /* ## 1.11 Sidebar */
 /* ## 1.12 Upload form MusicBrainz popup */
@@ -49,37 +49,42 @@
 /* ## 3.7  Table Bodies */
 /* ## 3.8  Right-Aligned Numerical Stats */
 /* ## 3.9  Torrent Table */
-/* ## 3.9.1  Expanded Torrent Group */
-/* ## 3.9.2  top10 */
+/* ### 3.9.1  Expanded Torrent Group */
+/* ### 3.9.2  top10 */
 /* ## 3.10  Invite Table */
 /* ## 3.11  Collage Table */
 /* ## 3.11.1 Collage ~ Tag Bubble Appearance on Mobile */
 /* ## 3.11.2 Collage ~ Title of Collages on Mobile */
 /* ## 3.12  Requests */
 /* ## 3.13  Forums */
-/* ## 3.13.1  Forum Index */
-/* ## 3.13.2  Forum Table Structure */
-/* ## 3.13.3  Forum Headers */
+/* ### 3.13.1  Forum Index */
+/* ### 3.13.2  Forum Table Structure */
+/* ### 3.13.3  Forum Headers */
 /* ## 3.14  Rules */
 /* ## 3.15 Reserved */
 /* ## 3.16 Handling for Sticky Table Headers on Mobile */
 /* ## 3.17 Site Header and Menu */
-/* ## 3.17.1  Delay Searchboxes So Keyboard Doesn't Open */
-/* ## 3.17.2  Mobile Menu Layout */
-/* ## 3.17.3  Top Menubar */
-/* ## 3.17.4  Mobile Menu When Open, Setup */
-/* ## 3.17.5  Menu When Open, Row One */
-/* ## 3.17.6  Menu When Open, Row Two (Has Subrows) */
-/* ## 3.17.7  Menu When Open, Row Three */
-/* ## 3.17.8  Menu When Open, Row Four */
-/* ## 3.17.9  Menu When Open, Row Five ~ Searchboxes */
+/* ### 3.17.1  Delay Searchboxes So Keyboard Doesn't Open */
+/* ### 3.17.2  Mobile Menu Layout */
+/* ### 3.17.3  Top Menubar */
+/* ### 3.17.4  Mobile Menu When Open, Setup */
+/* ### 3.17.5  Menu When Open, Row One */
+/* ### 3.17.6  Menu When Open, Row Two (Has Subrows) */
+/* ### 3.17.7  Menu When Open, Row Three */
+/* ### 3.17.8  Menu When Open, Row Four */
+/* ### 3.17.9  Menu When Open, Row Five ~ Searchboxes */
 /* ## 3.18 Checkboxes ~ Purpose Undocumented */
 /* ## 3.19 Torrent Search, Handling for Tag Appearance */
 /* # 4 MISCELLANEOUS
 /* ## 4.1 Changes for Mobile, Super Small Window */
 /* ## 4.2 Tag Bubble Appearance on Widescreen #Wideload */
+/* ### 4.2.1  Full clickable appearance */
+/* ### 4.2.2  Hover effect */
+/* ### 4.2.3  Non-clickable appearance */
+/* ### 4.2.4  Other special cases
+/* ### 4.2.5  Snatched torrent indicators (BETA)
 /* ## 4.3 I-Devices Telephone Number Prevention */
-/* ## 4.4 BETA ~ Upload warnings */
+/* ## 4.4 Upload warnings (BETA)*/
 /* */
 /* */
 /* ######################################################################## */
@@ -107,7 +112,7 @@
 /* various 'debug' features are avail in this doc */
 #site_time:after,
 li#nav_upload.brackets a:before {
-  content: "0525";
+  content: "0558";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -1481,8 +1486,8 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
   font-size: large !important;
   content: "⇩ Jump to" !important;
   font-weight: 600;
-  position: relative;
-  left: -24%;
+  position: absolute;
+  left: 4%;
 }
 
 #discog_table > div.box.center a {
@@ -2978,8 +2983,8 @@ body#torrents div.box.box_tags li > a:first-child {
   transition: all 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-/* ### 4.2.2 Hover effect ~ the people have spoken */
-/* Applies only to pages that get full clickable appearance. */
+/* ### 4.2.2 Hover effect */
+/* The people have spoken. Applies only to pages with clickable tags. */
 .collage_table .td_info .tags :not(:empty):hover,
 #torrent_table .group .tags :not(:empty):hover,
 #discog_table .tags :hover,
@@ -2996,7 +3001,7 @@ body#torrents div.box.box_tags li > a:first-child:hover {
   box-shadow: rgba(0, 0, 0, 0.25) 0 14px 28px, rgba(0, 0, 0, 0.22) 0 10px 10px;
 }
 
-/* ### 4.2.3 Special non-clickable appearance */
+/* ### 4.2.3 Non-clickable appearance */
 /* Applies to top10 and request_table pages, where tags are not clickable links. */
 #request_table .tags,
 #top10 .tags {
@@ -3019,6 +3024,40 @@ table.torrent_table.cats.m_table td.td_info.big_info div.group_info.clear div.ta
 /* This should not be necessary... */
 .tags a {
   visibility: visible;
+}
+
+/* ### 4.2.5 Snatched torrent indicators (BETA)*/
+/* the following must be after 4.2.4 invisibility */
+tr.snatched_group div.tags:before {
+  content: "snatched group";
+  font-style: italic;
+  visibility: visible;
+  box-sizing: border-box;
+  display: inline-block;
+  font-weight: 200;
+  font-size: 0.6rem;
+  vertical-align: baseline;
+  color: gray;
+  background: black;
+  padding: 0 0.5rem;
+  border-radius: 1rem;
+  margin-bottom: 0.1rem;
+}
+
+tr.snatched_torrent div.tags:before {
+  content: "snatched torrent";
+  font-style: italic;
+  visibility: visible;
+  box-sizing: border-box;
+  display: inline-block;
+  font-weight: 200;
+  font-size: 0.6rem;
+  vertical-align: baseline;
+  color: gray;
+  background: black;
+  padding: 0 0.5rem;
+  border-radius: 1rem;
+  margin-bottom: 0.1rem;
 }
 
 /* ## 4.3 i-devices telephone number prevention */
