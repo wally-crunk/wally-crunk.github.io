@@ -114,7 +114,7 @@
 /* ## 0.3 Debugging */
 /* various 'debug' features are avail in this doc */
 li#nav_upload.brackets a:before {
-  content: "1023 1023";
+  content: "1023 1043";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -123,7 +123,7 @@ li#nav_upload.brackets a:before {
 }
 
 #footer p:last-of-type:after {
-  content: "ApolloStage 1023 Paper 1023";
+  content: "ApolloStage 1023 Paper 1043";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -159,7 +159,7 @@ textarea,
 body {
   background-color: #EBEFF0;
   box-sizing: border-box;
-  color: #153866;
+  color: #123058;
   font-size: 12px;
   line-height: 1.6;
   margin: 0 8px;
@@ -170,7 +170,7 @@ pre, code {
   font-optical-sizing: auto;
   font-variant-ligatures: no-contextual;
   font-weight: 200;
-  color: #0F3F94;
+  color: #0C3376;
 }
 
 h1,
@@ -179,7 +179,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #153866;
+  color: #123058;
   line-height: normal;
   margin: 8px 0;
   max-width: 100%;
@@ -323,7 +323,7 @@ blockquote {
 
 ::selection {
   background-color: #2A8760;
-  color: #153866;
+  color: #123058;
 }
 
 form input {
@@ -455,7 +455,7 @@ select,
 textarea {
   background: #C2C6C7;
   border: 1px solid rgba(0, 0, 0, 0.15);
-  color: #103C7F;
+  color: #0D3167;
   height: 32px;
   padding: 0 8px;
 }
@@ -780,9 +780,9 @@ table.box2 {
 }
 
 div#flip_view_1 div#similar-artist .name {
-  border: 1px solid #153866;
+  border: 1px solid #123058;
   background: rgba(60, 60, 60, 0.7);
-  color: #153866;
+  color: #123058;
   margin: 0;
   padding: 0 5px;
 }
@@ -1872,7 +1872,7 @@ body#collage .cats_music {
 #menu > ul a:hover,
 #userinfo_minor:hover a,
 #userinfo_username:hover a {
-  color: #A7ABAC;
+  color: #D0D4D5;
 }
 
 /* Icon revealed when menu is open */
@@ -2046,7 +2046,7 @@ body#collage .cats_music {
 /* END SIDEBAR */
 /* # 1.12 Upload form MusicBrainz popup */
 #musicbrainz_popup {
-  color: #153866;
+  color: #123058;
   background: #D0D4D5;
   border: #2A8760;
   padding: 1rem;
@@ -2603,7 +2603,7 @@ body#collage .cats_music {
   }
   .forum_post tr.colhead_dark span,
   .forum_post tr.colhead_dark strong {
-    color: #103C7F;
+    color: #0D3167;
   }
   .forum_post tr.colhead_dark div {
     display: inline;
@@ -2815,7 +2815,7 @@ body#collage .cats_music {
     right: 2vw;
     width: 60vw;
     margin: auto;
-    color: #153866;
+    color: #123058;
     top: calc(100% - var(--row-height) * 10 - 125px);
     height: calc(2.4 * var(--row-height));
     flex-direction: column;
@@ -3152,7 +3152,7 @@ debug {
   debug_1: "ApolloStage";
   debug_2: "1023";
   debug_3: "Paper";
-  debug_4: "1023";
+  debug_4: "1043";
 }
 
 /*# sourceMappingURL=style.css.map */

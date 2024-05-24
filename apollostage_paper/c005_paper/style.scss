@@ -9,7 +9,7 @@
 
 // must be after import.
 $debug-deriv: "Paper";
-$debug-deriv-slug: "1023";
+$debug-deriv-slug: "1043";
 
 // ////////////////////////////////////////////////////////////////////////////////
 // COLORS
@@ -81,13 +81,13 @@ $mid-900: #247D59;
 $mid-1000: #1D714D;
 
 //Fores
-$fore-100: #CAE3FF;
-$fore-200: #78A9E3;
-$fore-300: #3E7DC6;
-$fore-400: #1C60B0;
-$fore-500: #0F3F94;
-$fore-600: #103C7F;
-$fore-700: #153866;
+$fore-100: #8E9FB3;
+$fore-200: #577AA4;
+$fore-300: #2E5D95;
+$fore-400: #174A86;
+$fore-500: #0C3376;
+$fore-600: #0D3167;
+$fore-700: #123058;
 $fore-800: #162E49;
 $fore-900: #17212E;
 $fore-1000: #0D1012;
@@ -143,7 +143,7 @@ $color-text-input: $fore-600; // for pre-populated inputs
 $color-text-input-active: $fore-900;
 $color-text-linkbox: $mid-800; // links in linkbox
 $color-text-menu: $fore-1000;
-$color-text-menu-hover: $back-600; // during pulldown
+$color-text-menu-hover: $back-300; // during pulldown
 $color-text-mono: $fore-500;
 $color-text-notification-words: $fore-1000;
 $color-text-popup-anchor-hover: $mid-1000;
