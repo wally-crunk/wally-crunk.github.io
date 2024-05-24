@@ -3399,26 +3399,31 @@ table.torrent_table.cats.m_table td.td_info.big_info div.group_info.clear div.ta
 }
 
 /* ### 4.2.5 Snatched torrent indicators (BETA)*/
-
 /* the following must be after 4.2.4 invisibility */
 
 tr.snatched_group div.tags:before {
-  content: 'snatched group';
-  font-style: italic;
-  visibility: visible;
-  font-weight: 200;
-  background: $color-obj-tag_bubble_snatched-background;
-  /* other attributes are inherited from bubbles above. */
+  content: "snatched group";
+  /* plus formatting below */
 }
-
-
 tr.snatched_torrent div.tags:before {
   content: "snatched torrent";
-  font-style: italic;
+  /* plus formatting below */
+}
+
+tr.snatched_group div.tags:before, 
+tr.snatched_torrent div.tags:before {
   visibility: visible;
+  background: #2D393A;
+  border-radius: 1rem;
+  box-sizing: border-box;
+  display: inline-block;
+  font-size: 0.6rem;
+  font-style: italic;
   font-weight: 200;
-  background: $color-obj-tag_bubble_snatched-background;
-  /* other attributes are inherited from bubbles above. */
+  margin-bottom: 0.1rem;
+  padding: 0 0.5rem;
+  padding: 0rem 0.5rem;
+  vertical-align: baseline;
 }
 
 /* ## 4.3 i-devices telephone number prevention */
@@ -3435,7 +3440,7 @@ tr.snatched_torrent div.tags:before {
 /* */
 /* */
 
-/* ## 4.4 BETA -- Upload warnings ## */
+/* ## 4.4 Upload warnings ## */
 
 div.upload-error:after,
 ul#check:after {
@@ -3457,6 +3462,10 @@ ul#check:after {
 }
 
 /*# sourceMappingURL=styles.css.map */
+
+/* $debug-slug */
+// $debug-slug 
+debug { debug: $debug-slug }
 
 /* ####### */
 /* # EOF # */

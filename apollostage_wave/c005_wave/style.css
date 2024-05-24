@@ -113,7 +113,7 @@
 /* various 'debug' features are avail in this doc */
 #site_time:after,
 li#nav_upload.brackets a:before {
-  content: "0616";
+  content: "0625";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -3033,20 +3033,28 @@ table.torrent_table.cats.m_table td.td_info.big_info div.group_info.clear div.ta
 /* the following must be after 4.2.4 invisibility */
 tr.snatched_group div.tags:before {
   content: "snatched group";
-  font-style: italic;
-  visibility: visible;
-  font-weight: 200;
-  background: #2D393A;
-  /* other attributes are inherited from bubbles above. */
+  /* plus formatting below */
 }
 
 tr.snatched_torrent div.tags:before {
   content: "snatched torrent";
-  font-style: italic;
+  /* plus formatting below */
+}
+
+tr.snatched_group div.tags:before,
+tr.snatched_torrent div.tags:before {
   visibility: visible;
-  font-weight: 200;
   background: #2D393A;
-  /* other attributes are inherited from bubbles above. */
+  border-radius: 1rem;
+  box-sizing: border-box;
+  display: inline-block;
+  font-size: 0.6rem;
+  font-style: italic;
+  font-weight: 200;
+  margin-bottom: 0.1rem;
+  padding: 0 0.5rem;
+  padding: 0rem 0.5rem;
+  vertical-align: baseline;
 }
 
 /* ## 4.3 i-devices telephone number prevention */
@@ -3061,7 +3069,7 @@ tr.snatched_torrent div.tags:before {
 
 /* */
 /* */
-/* ## 4.4 BETA -- Upload warnings ## */
+/* ## 4.4 Upload warnings ## */
 div.upload-error:after,
 ul#check:after {
   content: "Warning!  There were one or more errors in your submission. Check below for error messages.";
@@ -3081,6 +3089,11 @@ ul#check:after {
   background-size: 32px;
 }
 
+
+/* $debug-slug */
+debug {
+  debug: "0625";
+}
 
 /* ####### */
 /* # EOF # */
