@@ -1,12 +1,11 @@
 /* APOLLOSTAGE PAPER THEME */
 /* 2024-05-24 */
 
-// DEFINE THEME COLORS AND ICONS
-
 /// ////////////////////////////////////////////////////////////////////////////////
 // SLUG
 
- $debug-derivative: "0957"; // must include quots
+$debug-deriv: "Paper";
+$debug-deriv-slug: "1017";
 
 // import basic colors as a backup:
 @import '../apollostage/_variables';
@@ -277,20 +276,10 @@ h6,
 
 // tracer only
 debug { 
-    debug: $debug-slug; 
-    debug_derivative: $debug-derivative;
-}
-
-/* ## 0.3 Debugging */
-/* various 'debug' features are avail in this doc */
-#site_time:before, 
-li#nav_upload.brackets a:before {
-  content: $debug-derivative;
-  border: thin solid orangered; 
-  border-radius: 1rem; 
-  color: orangered; 
-  padding: 0.03rem 0.5rem;
-  margin: 0rem 0.5rem; 
+    debug_1: $debug-identity;
+    debug_2: $debug-slug;
+    debug_3: $debug-deriv;
+    debug_4: $debug-deriv-slug;
 }
 
 // EOF

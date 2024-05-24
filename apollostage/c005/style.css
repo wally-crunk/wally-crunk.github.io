@@ -110,9 +110,9 @@
 
 /* ## 0.3 Debugging */
 /* various 'debug' features are avail in this doc */
-#site_time:after,
+#footer p:last-of-type:after,
 li#nav_upload.brackets a:before {
-  content: "0653";
+  content: "ApolloStage" "1015" "" "";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -3109,7 +3109,7 @@ ul#check:after {
 
 
 debug {
-  debug: "0653";
+  debug: "1015";
 }
 
 /* ####### */
