@@ -1008,8 +1008,10 @@ div#flip_view_1 div#similar-artist .name {
 }
 
 /* #2024fix */
-/* Edition stripe appears only when preceded by a Group */
-/* So, appears in Torrents.php but not 'snatches, downloads,' etc. */
+/* Edition stripe appears on (1) individual album pages; */
+/* And (2) torrent/search listings when preceded by a Group */
+/* So not personal 'snatches, downloads,' etc. */
+#torrents #torrent_details .group_torrent td.edition_info,
 group ~ .group_torrent.edition {
     background-color: $color-background-torrent;
 }
@@ -3413,7 +3415,7 @@ tr.snatched_torrent div.tags:before {
 tr.snatched_group div.tags:before, 
 tr.snatched_torrent div.tags:before {
   visibility: visible;
-  background: #2D393A;
+  background: $back-600;
   border-radius: 1rem;
   box-sizing: border-box;
   display: inline-block;
@@ -3424,6 +3426,23 @@ tr.snatched_torrent div.tags:before {
   padding: 0 0.5rem;
   padding: 0rem 0.5rem;
   vertical-align: baseline;
+}
+
+/* album pages */
+#torrent_details.snatched .group_torrent.snatched_torrent .torrent_label.tooltip.tl_snatched 
+{ 
+  background: $back-600;
+  border-radius: 1rem;
+  box-sizing: border-box;
+  display: inline-block;
+  font-size: 0.6rem;
+  font-style: italic;
+  font-weight: 400;
+  margin-bottom: 0.1rem;
+  margin-inline: 0.5rem;
+  padding: 0 0.5rem;
+  padding: 0rem 0.5rem;
+  vertical-align: baseline; 
 }
 
 /* ## 4.3 i-devices telephone number prevention */
