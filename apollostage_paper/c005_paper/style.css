@@ -114,7 +114,7 @@
 /* ## 0.3 Debugging */
 /* various 'debug' features are avail in this doc */
 li#nav_upload.brackets a:before {
-  content: "1023 1645";
+  content: "1023 1705";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -123,7 +123,7 @@ li#nav_upload.brackets a:before {
 }
 
 #footer p:last-of-type:after {
-  content: "ApolloStage 1023 Paper 1645";
+  content: "ApolloStage 1023 Paper 1705";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -3152,7 +3152,7 @@ debug {
   debug_1: "ApolloStage";
   debug_2: "1023";
   debug_3: "Paper";
-  debug_4: "1645";
+  debug_4: "1705";
 }
 
 /*# sourceMappingURL=style.css.map */
