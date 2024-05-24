@@ -6,7 +6,7 @@
 /// ////////////////////////////////////////////////////////////////////////////////
 // SLUG
 
- $debug-slug: "0950"; // must include quots
+ $debug-slug: "0957"; // must include quots
 
 // import basic colors as a backup:
 @import '../apollostage/_variables';
@@ -266,6 +266,10 @@ h6,
     font-family: 'Merriweather', Noto, 'Noto Sans', 'Open Sans', Tahoma, sans-serif;
     font-weight: 700;
  }
+
+
+// tracer only
+debug { debug: $debug-slug }
 
 // EOF
 // ////////////////////////////////////////////////////////////////////////////////
