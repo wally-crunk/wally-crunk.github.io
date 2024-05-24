@@ -6,7 +6,7 @@
 // ////////////////////////////////////////////////////////////////////////////////
 // SLUG
 
- $debug-slug: "2059"; // must include quots
+ $debug-slug: "0525"; // must include quots
 
 // ////////////////////////////////////////////////////////////////////////////////
 // COLORS
@@ -84,7 +84,7 @@ $color-background-table-keyrows: $mid-300; // navigation row ~ "jump up to.."
 $color-background-table-secondary: orangered; // no longer used
 $color-background-table-torrenttable: $back-300; // also form field in focus
 $color-background-table-torrents-group: $back-600;
-$color-background-torrent: $mid-200; // edition in group-list
+$color-background-torrent: $mid-100; // edition in group-list
 
 $color-text-anchor-hover: $mid-1000;
 $color-text-anchor: $fore-1000;
@@ -145,8 +145,10 @@ $color-obj-button-base-1: $ds-neutral-400;
 $color-obj-button-base-2: $fore-900;
 $color-obj-noty-buttons-hover: $mid-900;
 $color-obj-poll: $mid-900; // poll active part of bargraph
-$color-obj-tag_bubble-background: $mid-200; // These can equal "ninth" and "second"
-$color-obj-tag_bubble-foreground: $mid-900; // These can equal "ninth" and "second"
+
+// bubbles. These can equal "menu-2" and "menu-9"; not $color-background-torrent
+$color-obj-tag_bubble-background: $mid-200;
+$color-obj-tag_bubble-foreground: $mid-900;
 
 $color-accent-border-blockquote: $back-900; // Dotted
 $color-accent-border-box: $back-900;
