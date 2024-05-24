@@ -9,7 +9,7 @@
 
 // must be after import.
 $debug-deriv: "Paper";
-$debug-deriv-slug: "1705";
+$debug-deriv-slug: "1718";
 
 // ////////////////////////////////////////////////////////////////////////////////
 // COLORS
@@ -103,6 +103,7 @@ $fore-1000: #0D1012;
  $ds-yellow: #c9a612;
  $ds-fx-low: rgba(0,0,0, 0.15);
  $ds-fx-mid: rgba(0,0,0, 0.25);
+ $ds-gray-06: hsl(180, 3%, 6%)
  $ds-gray-88: hsl(180, 6%, 88%);
  $ds-gray-66: hsl(192, 3%, 66%);
  
@@ -135,7 +136,7 @@ $color-text-anchor-hover: $fore-200;
 $color-text-anchor: $fore-1000;
 $color-text-base: $fore-700;
 $color-text-bold: $fore-800;
-$color-text-button: $back-700;  //xx checkme
+$color-text-button: $ds-gray-06;  //xx checkme
 $color-text-footer: $ds-neutral-300;
 $color-text-heading-anchor: $fore-300; //x
 $color-text-heading: $fore-700;
