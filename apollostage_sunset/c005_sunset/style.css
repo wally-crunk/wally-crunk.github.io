@@ -428,7 +428,7 @@ button,
 input[type=button],
 input[type=submit],
 #popup_close {
-  background: linear-gradient(#b8b8b8, #E5EFE9);
+  background: linear-gradient(hsl(115, 7%, 62%), hsl(144, 24%, 92%));
   border: none;
   border-radius: 1.5px;
   color: #324041;
@@ -442,7 +442,7 @@ button:active,
 input[type=button]:active,
 input[type=submit]:active,
 #popup_close:active {
-  background: linear-gradient(#E5EFE9, #b8b8b8);
+  background: linear-gradient(hsl(144, 24%, 92%), hsl(115, 7%, 62%));
 }
 
 input[type=email],

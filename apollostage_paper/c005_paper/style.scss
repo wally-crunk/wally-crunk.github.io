@@ -103,7 +103,9 @@ $fore-1000: #0D1012;
  $ds-yellow: #c9a612;
  $ds-fx-low: rgba(0,0,0, 0.15);
  $ds-fx-mid: rgba(0,0,0, 0.25);
-
+ $ds-gray-62: hsl(115, 7%, 62%);
+ $ds-gray-92: hsl(144, 24%, 92%);
+ 
 // DEFINE FROM LOGICAL LAYOUT TO TOKENS
 
 $color-background-base: $back-100;
@@ -133,7 +135,7 @@ $color-text-anchor-hover: $fore-200;
 $color-text-anchor: $fore-1000;
 $color-text-base: $fore-700;
 $color-text-bold: $fore-800;
-$color-text-button: $back-700;
+$color-text-button: $back-700;  //xx checkme
 $color-text-footer: $ds-neutral-300;
 $color-text-heading-anchor: $fore-300; //x
 $color-text-heading: $fore-700;
@@ -141,7 +143,7 @@ $color-text-important-alt: $ds-green;
 $color-text-important: $ds-red;
 $color-text-input: $fore-600; // for pre-populated inputs
 $color-text-input-active: $fore-900;
-$color-text-linkbox: $mid-800; // links in linkbox
+$color-text-linkbox: $color-text-heading-anchor; // links in linkbox
 $color-text-menu: $fore-1000;
 $color-text-menu-hover: $back-300; // during pulldown
 $color-text-mono: $fore-500;
@@ -152,8 +154,8 @@ $color-text-popup: $fore-700;
 $color-text-ratio-greenzone: $ds-green;
 $color-text-ratio-redzone: $ds-red;
 $color-text-ratio-yellowzone: $ds-yellow;
-$color-text-span-blue: hsl(235, 90%, 85%);
-$color-text-span-green: hsl(145, 90%, 70%);
+$color-text-span-blue: hsl(235, 90%, 55%); //x lower
+$color-text-span-green: hsl(145, 90%, 40%); //x lower
 $color-text-span-red: $ds-red;
 $color-text-table-discog-titles: $fore-300;
 $color-text-tooltipster: $fore-400;
@@ -184,8 +186,8 @@ $color-background-notification-gradient-1: $mid-1000; // menu low/high suggested
 $color-background-notification-gradient-2: $mid-400;  // menu high/low suggested
 $color-background-notification: $ds-neutral-000;
 
-$color-obj-button-base-1: $ds-neutral-500; // x truColor
-$color-obj-button-base-2: $ds-neutral-300;
+$color-obj-button-base-1: $ds-gray-62; // truColor
+$color-obj-button-base-2: $ds-gray-92;
 $color-obj-noty-buttons-hover: $mid-900;
 $color-obj-poll: $mid-900; // poll active part of bargraph
 

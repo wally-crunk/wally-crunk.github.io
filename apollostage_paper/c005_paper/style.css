@@ -430,7 +430,7 @@ button,
 input[type=button],
 input[type=submit],
 #popup_close {
-  background: linear-gradient(#5d6670, #979a9c);
+  background: linear-gradient(hsl(115, 7%, 62%), hsl(144, 24%, 92%));
   border: none;
   border-radius: 1.5px;
   color: #9A9E9F;
@@ -444,7 +444,7 @@ button:active,
 input[type=button]:active,
 input[type=submit]:active,
 #popup_close:active {
-  background: linear-gradient(#979a9c, #5d6670);
+  background: linear-gradient(hsl(144, 24%, 92%), hsl(115, 7%, 62%));
 }
 
 input[type=email],
@@ -1366,7 +1366,7 @@ ul.collage_images li a > span {
 }
 
 span[style*="color: green"] {
-  color: hsl(145, 90%, 70%) !important;
+  color: hsl(145, 90%, 40%) !important;
 }
 
 span[style*="color: red"] {
@@ -1374,7 +1374,7 @@ span[style*="color: red"] {
 }
 
 span[style*="color: blue"] {
-  color: hsl(235, 90%, 85%) !important;
+  color: hsl(235, 90%, 55%) !important;
 }
 
 .filelist_table td,
@@ -1951,7 +1951,7 @@ body#collage .cats_music {
 }
 
 .linkbox > strong {
-  color: #2A8760;
+  color: #2E5D95;
 }
 
 .linkbox .brackets::after,
