@@ -109,7 +109,7 @@
 /* various 'debug' features are avail in this doc */
 #site_time:after,
 li#nav_upload.brackets a:before {
-  content: "1643";
+  content: "2020";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -199,7 +199,7 @@ h5 {
 }
 
 a {
-  color: #FAFFFC;
+  color: #1DAF8B;
   text-decoration: none;
 }
 
@@ -268,7 +268,7 @@ textarea:focus {
 }
 
 svg|a {
-  fill: #FAFFFC;
+  fill: #1DAF8B;
 }
 
 svg|a:hover {
@@ -390,7 +390,7 @@ td:last-child {
 }
 
 form {
-  background-color: #1D2424;
+  background-color: #181D1D;
 }
 
 form table td.label {
@@ -435,7 +435,7 @@ input[type=text],
 input[type=search],
 select,
 textarea {
-  background: #1D2424;
+  background: #222B2B;
   border: 1px solid rgba(255, 255, 255, 0.08);
   color: #B6C3B8;
   height: 32px;
@@ -578,7 +578,7 @@ strong.important_text_alt {
 
 .box,
 .box2 {
-  background-color: #1D2424;
+  background-color: #181D1D;
   margin-bottom: 8px;
   margin-top: 8px;
 }
@@ -589,7 +589,7 @@ table.box2 {
 }
 
 .head {
-  background-color: #1D2424;
+  background-color: #222B2B;
   line-height: 18px;
 }
 
@@ -619,7 +619,7 @@ table.box2 {
 /* #2024 note: Many of these appear to be overridden by
  * global.css or auto-complete.css: your mileage may vary. */
 .autocomplete-suggestions {
-  background-color: #FAFFFC;
+  background-color: #1DAF8B;
   border: none;
   color: #26282e;
   margin-top: 4px;
@@ -902,11 +902,11 @@ div#flip_view_1 div#similar-artist .name {
 }
 
 .torrent_table .group {
-  background-color: #1D2424;
+  background-color: #222B2B;
 }
 
 .group_torrent {
-  background-color: #1D2424;
+  background-color: #181D1D;
 }
 
 .group_torrent.edition,
@@ -1116,7 +1116,7 @@ ul.collage_images li a > span {
 
 #userform #settings_sections h2 a,
 .rule_short {
-  color: #FAFFFC;
+  color: #1DAF8B;
 }
 
 .poll li {
@@ -1934,7 +1934,7 @@ body#collage .cats_music {
 }
 
 .linkbox > strong {
-  color: #D5E0D9;
+  color: #1DAF8B;
 }
 
 .linkbox .brackets::after,
@@ -1999,7 +1999,7 @@ body#collage .cats_music {
 }
 
 #noty_bottomRight_layout_container .noty_buttons a:hover {
-  color: #0F5B49 !important;
+  color: #0C4A3B !important;
   background-color: #20C098;
   border-radius: 14px;
   border: thin solid #20C098;
@@ -2493,7 +2493,7 @@ body#collage .cats_music {
     font-size: 0.55rem;
     vertical-align: baseline;
     color: #20C098;
-    background: #0F5B49 !important;
+    background: #0C4A3B !important;
     padding: 0.05rem 0.5rem;
     border: none !important;
     border-radius: 1rem;
@@ -2820,7 +2820,7 @@ body#collage .cats_music {
   }
   #stats_ratio .tooltip {
     /* Provide a local background for the number to appear in color */
-    background-color: #1D2424;
+    background-color: #181D1D;
     border-radius: 0.45rem;
     padding-left: 0.45rem;
     padding-right: 0.45rem;
@@ -2901,7 +2901,7 @@ body#collage .cats_music {
     border: thick solid #20C098;
   }
   #taglist tr.label td {
-    background: #0F5B49;
+    background: #0C4A3B;
     color: #20C098;
     align-content: center;
     text-align: center;
@@ -2925,7 +2925,7 @@ body#collage .cats_music {
     font-style: italic;
     vertical-align: baseline;
     color: #20C098 !important; /*$color-obj-tag_bubble-background;*/
-    background: #0F5B49;
+    background: #0C4A3B;
     padding: 0.25rem;
     border-radius: 1rem;
     margin-bottom: 0.1rem;
@@ -2977,7 +2977,7 @@ body#torrents div.box.box_tags li > a:first-child {
   font-size: 0.6rem;
   vertical-align: baseline;
   color: #20C098;
-  background: #0F5B49;
+  background: #0C4A3B;
   padding: 0 0.5rem;
   border-radius: 1rem;
   margin-bottom: 0.1rem;
@@ -2996,7 +2996,7 @@ body#torrents div.box.box_tags li > a:first-child {
 table.torrent_table.cats.checkboxes.border.m_table td.td_info.big_info div.group_info.clear div.tags a:hover,
 table.torrent_table.cats.m_table td.td_info.big_info div.group_info.clear div.tags a:hover,
 body#torrents div.box.box_tags li > a:first-child:hover {
-  color: #0F5B49 !important;
+  color: #0C4A3B !important;
   background: #20C098 !important;
   transition: all 0.15s cubic-bezier(0.25, 0.8, 0.25, 1);
   box-shadow: rgba(0, 0, 0, 0.25) 0 14px 28px, rgba(0, 0, 0, 0.22) 0 10px 10px;

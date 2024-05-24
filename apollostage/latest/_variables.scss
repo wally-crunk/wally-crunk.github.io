@@ -6,7 +6,7 @@
 // ////////////////////////////////////////////////////////////////////////////////
 // SLUG
 
- $debug-slug: "1643"; // must include quots
+ $debug-slug: "2020"; // must include quots
 
 // ////////////////////////////////////////////////////////////////////////////////
 // COLORS
@@ -66,8 +66,8 @@
 $color-background-base: $back-100;
 $color-background-blockquote: $back-300;
 $color-background-box: $back-500;
-$color-background-form: $back-300; // also boxes on frontpage
-$color-background-input: $back-300;
+$color-background-form: $back-200; // also boxes on frontpage
+$color-background-input: $back-400;
 $color-background-input-active: $back-500;
 $color-background-poll: $back-500;
 $color-background-popup: $back-300;
@@ -86,7 +86,7 @@ $color-background-table-torrents-group: $back-600;
 $color-background-torrent: $mid-200; // edition in group-list
 
 $color-text-anchor-hover: $mid-1000;
-$color-text-anchor: $fore-1000;
+$color-text-anchor: $mid-800;
 $color-text-base: $fore-700;
 $color-text-bold: $fore-800;
 $color-text-button: $back-700;
@@ -97,7 +97,7 @@ $color-text-important-alt: $ds-green;
 $color-text-important: $ds-red;
 $color-text-input: $fore-600; // for pre-populated inputs
 $color-text-input-active: $fore-900;
-$color-text-linkbox: $fore-800;
+$color-text-linkbox: $mid-800; // links in linkbox
 $color-text-menu: $fore-1000;
 $color-text-menu-hover: $back-600;
 $color-text-mono: $fore-500;
@@ -144,7 +144,7 @@ $color-obj-button-base-1: $ds-neutral-400;
 $color-obj-button-base-2: $fore-900;
 $color-obj-noty-buttons-hover: $mid-900;
 $color-obj-poll: $mid-900; // poll active part of bargraph
-$color-obj-tag_bubble-background: $mid-300; // These can equal "ninth" and "second"
+$color-obj-tag_bubble-background: $mid-200; // These can equal "ninth" and "second"
 $color-obj-tag_bubble-foreground: $mid-900; // These can equal "ninth" and "second"
 
 $color-accent-border-blockquote: $back-500;
