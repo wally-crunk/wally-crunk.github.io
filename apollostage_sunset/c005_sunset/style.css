@@ -110,7 +110,7 @@
 /* various 'debug' features are avail in this doc */
 #site_time:after,
 li#nav_upload.brackets a:before {
-  content: "2020";
+  content: "2027";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -1710,7 +1710,7 @@ body#collage .cats_music {
 
 #menu ul li:not(#nav_staff) a,
 #userinfo a.username {
-  color: #FAFFFC;
+  color: #FDFFFD;
   text-shadow: initial;
 }
 
@@ -1971,7 +1971,7 @@ body#collage .cats_music {
 /* first row of each box */
 #noty_bottomRight_layout_container .noty_message {
   background: radial-gradient(circle at top right, #23D1A5, #126C56) !important;
-  color: #FAFFFC !important;
+  color: #FDFFFD !important;
   font-weight: 700;
   padding: 0 !important;
 }

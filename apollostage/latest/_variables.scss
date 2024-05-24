@@ -6,7 +6,7 @@
 // ////////////////////////////////////////////////////////////////////////////////
 // SLUG
 
- $debug-slug: "2020"; // must include quots
+ $debug-slug: "2027"; // must include quots
 
 // ////////////////////////////////////////////////////////////////////////////////
 // COLORS
@@ -49,7 +49,7 @@
  $fore-700: #C6D2C8;
  $fore-800: #D5E0D9;
  $fore-900: #E5EFE9;
- $fore-1000: #FAFFFC;
+ $fore-1000: #FDFFFD;
 
 //Direct-Specialty
  $ds-neutral-300: #dcdfe4;
@@ -86,7 +86,7 @@ $color-background-table-torrents-group: $back-600;
 $color-background-torrent: $mid-200; // edition in group-list
 
 $color-text-anchor-hover: $mid-1000;
-$color-text-anchor: $mid-800;
+$color-text-anchor: $fore-1000;
 $color-text-base: $fore-700;
 $color-text-bold: $fore-800;
 $color-text-button: $back-700;

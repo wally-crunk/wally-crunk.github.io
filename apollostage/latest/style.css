@@ -109,7 +109,7 @@
 /* various 'debug' features are avail in this doc */
 #site_time:after,
 li#nav_upload.brackets a:before {
-  content: "2020";
+  content: "2027";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -199,7 +199,7 @@ h5 {
 }
 
 a {
-  color: #1DAF8B;
+  color: #FDFFFD;
   text-decoration: none;
 }
 
@@ -268,7 +268,7 @@ textarea:focus {
 }
 
 svg|a {
-  fill: #1DAF8B;
+  fill: #FDFFFD;
 }
 
 svg|a:hover {
@@ -619,7 +619,7 @@ table.box2 {
 /* #2024 note: Many of these appear to be overridden by
  * global.css or auto-complete.css: your mileage may vary. */
 .autocomplete-suggestions {
-  background-color: #1DAF8B;
+  background-color: #FDFFFD;
   border: none;
   color: #26282e;
   margin-top: 4px;
@@ -1116,7 +1116,7 @@ ul.collage_images li a > span {
 
 #userform #settings_sections h2 a,
 .rule_short {
-  color: #1DAF8B;
+  color: #FDFFFD;
 }
 
 .poll li {
@@ -1709,7 +1709,7 @@ body#collage .cats_music {
 
 #menu ul li:not(#nav_staff) a,
 #userinfo a.username {
-  color: #FAFFFC;
+  color: #FDFFFD;
   text-shadow: initial;
 }
 
@@ -1970,7 +1970,7 @@ body#collage .cats_music {
 /* first row of each box */
 #noty_bottomRight_layout_container .noty_message {
   background: radial-gradient(circle at top right, #23D1A5, #126C56) !important;
-  color: #FAFFFC !important;
+  color: #FDFFFD !important;
   font-weight: 700;
   padding: 0 !important;
 }
