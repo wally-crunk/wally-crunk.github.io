@@ -9,7 +9,7 @@
 
 // must be after import.
 $debug-deriv: "Paper";
-$debug-deriv-slug: "1728";
+$debug-deriv-slug: "dev01.1750";
 
 // ////////////////////////////////////////////////////////////////////////////////
 // COLORS
@@ -55,6 +55,18 @@ $fran-900: #99C8FF;
 $fran-1000: #CAE3FF;
 $gray-300: #727576;
 $yellow-300: #e3ba65;
+
+// Backs
+$back-100: #EBEFF0;
+$back-200: #DEE2E2;
+$back-300: #D0D4D5;
+$back-400: #C2C6C7;
+$back-500: #B5B9BA;
+$back-600: #A7ABAC;
+$back-700: #9A9E9F;
+$back-800: #8D9091;
+$back-900: #808384;
+$back-1000: #727576;
 
 // Backs
 $back-100: #EBEFF0;
@@ -146,7 +158,7 @@ $color-text-input: $fore-600; // for pre-populated inputs
 $color-text-input-active: $fore-900;
 $color-text-linkbox: $color-text-heading-anchor; // links in linkbox
 $color-text-menu: $fore-1000;
-$color-text-menu-hover: $back-300; // during pulldown
+$color-text-menu-hover: $ds-gray-05; // during pulldown
 $color-text-mono: $fore-500;
 $color-text-notification-words: $fore-1000;
 $color-text-popup-anchor-hover: $mid-1000;
