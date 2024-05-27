@@ -113,7 +113,7 @@
 /* ## 0.3 Debugging */
 /* various 'debug' features are avail in this doc */
 li#nav_upload.brackets a:before {
-  content: "1004 1004";
+  content: "1854 1854";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -122,7 +122,7 @@ li#nav_upload.brackets a:before {
 }
 
 #footer p:last-of-type:after {
-  content: "ApolloStage 1004 coffee 1004";
+  content: "ApolloStage 1854 coffee 1854";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -3140,7 +3140,7 @@ ul#check.nobullet > * {
 
 
 debug {
-  debug: "1004";
+  debug: "1854";
 }
 
 /* ####### */
