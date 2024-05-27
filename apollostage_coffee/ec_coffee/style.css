@@ -156,7 +156,7 @@ textarea,
 }
 
 body {
-  background-color: #1D1C1D;
+  background-color: #1d1c1c;
   box-sizing: border-box;
   color: #D1B89E;
   font-size: 12px;
@@ -236,7 +236,7 @@ textarea:focus {
 /* formatting on .box.pad for the [box] bbcode tag */
 .box .box.pad,
 .main_column .box.pad:not(#reply_box) {
-  background-color: #433D3B;
+  background-color: #322e2c;
   border: 2px solid #3C4D50;
   margin: 8px;
   border-radius: 0.25rem;
@@ -314,7 +314,7 @@ li:last-child {
 }
 
 blockquote {
-  background-color: #393534;
+  background-color: #2d2928;
   border: 1px dashed #3C4D50;
   margin: 12px;
   padding: 12px;
@@ -330,7 +330,7 @@ form input {
 }
 
 table {
-  background-color: #272524;
+  background-color: #222020;
 }
 
 table .rowa,
@@ -346,7 +346,7 @@ table .rowb:nth-child(even),
 #dnulist tr:not(.colhead, .colhead_dark):nth-child(even),
 #upload tr:nth-child(even),
 #inbox .message_table tr.a {
-  background-color: #272524;
+  background-color: #222020;
 }
 
 table {
@@ -361,7 +361,7 @@ table .rowb:nth-child(odd),
 #dnulist tr:not(.colhead, .colhead_dark):nth-child(odd),
 #upload tr:nth-child(odd),
 #inbox .message_table tr.b {
-  background-color: #302C2B;
+  background-color: #272423;
 }
 
 table ul.options_list {
@@ -372,7 +372,7 @@ table ul.options_list {
 #content div.thin div.head,
 .colhead,
 .colhead_dark {
-  background-color: #433D3B;
+  background-color: #322e2c;
   line-height: 18px;
 }
 
@@ -407,7 +407,7 @@ td:last-child {
 }
 
 form {
-  background-color: #272524;
+  background-color: #222020;
 }
 
 form table td.label {
@@ -452,7 +452,7 @@ input[type=text],
 input[type=search],
 select,
 textarea {
-  background: #393534;
+  background: #2d2928;
   border: 1px solid rgba(255, 255, 255, 0.08);
   color: #C2A285;
   height: 32px;
@@ -465,7 +465,7 @@ input[type=text]:focus,
 input[type=search]:focus,
 select:focus,
 textarea:focus {
-  background: #433D3B;
+  background: #322e2c;
   border: 1px solid rgba(255, 255, 255, 0.25);
   color: #EFE3D5;
 }
@@ -595,7 +595,7 @@ strong.important_text_alt {
 
 .box,
 .box2 {
-  background-color: #272524;
+  background-color: #222020;
   margin-bottom: 8px;
   margin-top: 8px;
 }
@@ -606,7 +606,7 @@ table.box2 {
 }
 
 .head {
-  background-color: #393534;
+  background-color: #2d2928;
   line-height: 18px;
 }
 
@@ -907,7 +907,7 @@ div#flip_view_1 div#similar-artist .name {
 }
 
 .torrent_table {
-  background-color: #302C2B;
+  background-color: #272423;
 }
 
 .torrent_table tr:not(.colhead, .colhead_dark) {
@@ -919,11 +919,11 @@ div#flip_view_1 div#similar-artist .name {
 }
 
 .torrent_table .group {
-  background-color: #393534;
+  background-color: #2d2928;
 }
 
 .group_torrent {
-  background-color: #272524;
+  background-color: #222020;
 }
 
 /* #2024fix */
@@ -1145,7 +1145,7 @@ ul.collage_images li a > span {
 }
 
 .poll .graph {
-  background-color: #433D3B;
+  background-color: #322e2c;
   display: block;
   height: 8px;
   margin-bottom: 12px;
@@ -1391,7 +1391,7 @@ blockquote {
 .reportinfo_table,
 .torrentdetails,
 blockquote {
-  background-color: #393534;
+  background-color: #2d2928;
 }
 
 #bookmarks #torrent_table tr:not(.colhead, .colhead_dark) td:nth-child(2) {
@@ -1521,14 +1521,14 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
 }
 
 .tooltipster-default {
-  background-color: #1D1C1D;
+  background-color: #1d1c1c;
   border: 0 solid #785746;
   border-radius: 2.5px;
   color: #674A3F;
 }
 
 .tooltipster-default .tooltipster-content {
-  background-color: #1D1C1D;
+  background-color: #1d1c1c;
   color: #674A3F;
   font-size: 12px;
   line-height: 1.4;
@@ -1536,7 +1536,7 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
 }
 
 .tooltipster-default .tooltipster-content a {
-  background-color: #1D1C1D;
+  background-color: #1d1c1c;
   color: #785746;
   font-weight: 600;
 }
@@ -1871,7 +1871,7 @@ body#collage .cats_music {
 #menu > ul a:hover,
 #userinfo_minor:hover a,
 #userinfo_username:hover a {
-  color: #302C2B;
+  color: #272423;
 }
 
 /* Icon revealed when menu is open */
@@ -1900,7 +1900,7 @@ body#collage .cats_music {
 /* ## 1.9.1 Searchbars */
 #searchbars > ul {
   align-items: center;
-  background-color: #433D3B;
+  background-color: #322e2c;
   display: flex;
   display: -ms-flexbox;
   -ms-flex-align: center;
@@ -1930,11 +1930,11 @@ body#collage .cats_music {
   border: none;
   border-radius: 2.5px;
   height: 30px;
-  background: #302C2B;
+  background: #272423;
 }
 
 #searchbars .search_form input:focus {
-  background: #1D1C1D;
+  background: #1d1c1c;
 }
 
 /* ## 1.9.2 Linkbox */
@@ -2834,7 +2834,7 @@ body#collage .cats_music {
   }
   #stats_ratio .tooltip {
     /* Provide a local background for the number to appear in color */
-    background-color: #272524;
+    background-color: #222020;
     border-radius: 0.45rem;
     padding-left: 0.45rem;
     padding-right: 0.45rem;
@@ -3056,7 +3056,7 @@ tr.snatched_torrent div.tags:before {
 tr.snatched_group div.tags:before,
 tr.snatched_torrent div.tags:before {
   visibility: visible;
-  background: #4C4443;
+  background: #3e3837;
   border-radius: 1rem;
   box-sizing: border-box;
   display: inline-block;
@@ -3071,7 +3071,7 @@ tr.snatched_torrent div.tags:before {
 
 /* album pages */
 #torrent_details.snatched .group_torrent.snatched_torrent .torrent_label.tooltip.tl_snatched {
-  background: #4C4443;
+  background: #3e3837;
   border-radius: 1rem;
   box-sizing: border-box;
   display: inline-block;
