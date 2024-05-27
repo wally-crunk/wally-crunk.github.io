@@ -112,7 +112,7 @@
 /* ## 0.3 Debugging */
 /* various 'debug' features are avail in this doc */
 li#nav_upload.brackets a:before {
-  content: "1854 ";
+  content: "1854 1911";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -121,7 +121,7 @@ li#nav_upload.brackets a:before {
 }
 
 #footer p:last-of-type:after {
-  content: "ApolloStage 1854  ";
+  content: "ApolloStage 1854 coffee 1911";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -155,9 +155,9 @@ textarea,
 }
 
 body {
-  background-color: #211f25;
+  background-color: #211F25;
   box-sizing: border-box;
-  color: #C4BBC1;
+  color: #CDB6C5;
   font-size: 12px;
   line-height: 1.6;
   margin: 0 8px;
@@ -168,7 +168,7 @@ pre, code {
   font-optical-sizing: auto;
   font-variant-ligatures: no-contextual;
   font-weight: 200;
-  color: #CFB0B0;
+  color: #A595AF;
 }
 
 h1,
@@ -177,7 +177,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #C6D2C8;
+  color: #CDB6C5;
   line-height: normal;
   margin: 8px 0;
   max-width: 100%;
@@ -189,7 +189,7 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-  color: #20C098;
+  color: #99A598;
 }
 
 h1,
@@ -211,12 +211,12 @@ h5 {
 }
 
 a {
-  color: #f4f4f4;
+  color: #F9ECEC;
   text-decoration: none;
 }
 
 a:hover {
-  color: #fad5cd;
+  color: #D19689;
 }
 
 a:active,
@@ -235,7 +235,7 @@ textarea:focus {
 /* formatting on .box.pad for the [box] bbcode tag */
 .box .box.pad,
 .main_column .box.pad:not(#reply_box) {
-  background-color: #252F32;
+  background-color: #502C36;
   border: 2px solid #3C4D50;
   margin: 8px;
   border-radius: 0.25rem;
@@ -280,16 +280,16 @@ textarea:focus {
 }
 
 svg|a {
-  fill: #f4f4f4;
+  fill: #F9ECEC;
 }
 
 svg|a:hover {
-  fill: #fad5cd;
+  fill: #D19689;
 }
 
 b,
 strong {
-  color: #D5E0D9;
+  color: #DBC8D5;
   font-weight: 600;
 }
 
@@ -313,15 +313,15 @@ li:last-child {
 }
 
 blockquote {
-  background-color: #38363d;
+  background-color: #461C36;
   border: 1px dashed #3C4D50;
   margin: 12px;
   padding: 12px;
 }
 
 ::selection {
-  background-color: rgba(217, 130, 111, 0.6);
-  color: #C6D2C8;
+  background-color: #AB4E39;
+  color: #CDB6C5;
 }
 
 form input {
@@ -329,7 +329,7 @@ form input {
 }
 
 table {
-  background-color: #302d34;
+  background-color: #2A1D30;
 }
 
 table .rowa,
@@ -345,7 +345,7 @@ table .rowb:nth-child(even),
 #dnulist tr:not(.colhead, .colhead_dark):nth-child(even),
 #upload tr:nth-child(even),
 #inbox .message_table tr.a {
-  background-color: #181D1D;
+  background-color: #2A1D30;
 }
 
 table {
@@ -360,7 +360,7 @@ table .rowb:nth-child(odd),
 #dnulist tr:not(.colhead, .colhead_dark):nth-child(odd),
 #upload tr:nth-child(odd),
 #inbox .message_table tr.b {
-  background-color: #1D2424;
+  background-color: #3B123A;
 }
 
 table ul.options_list {
@@ -371,7 +371,7 @@ table ul.options_list {
 #content div.thin div.head,
 .colhead,
 .colhead_dark {
-  background-color: #252F32;
+  background-color: #502C36;
   line-height: 18px;
 }
 
@@ -406,7 +406,7 @@ td:last-child {
 }
 
 form {
-  background-color: #302d34;
+  background-color: #2A1D30;
 }
 
 form table td.label {
@@ -451,9 +451,9 @@ input[type=text],
 input[type=search],
 select,
 textarea {
-  background: #3f3e46;
+  background: #461C36;
   border: 1px solid rgba(255, 255, 255, 0.08);
-  color: #d1d1d1;
+  color: #BCA5BE;
   height: 32px;
   padding: 0 8px;
 }
@@ -464,9 +464,9 @@ input[type=text]:focus,
 input[type=search]:focus,
 select:focus,
 textarea:focus {
-  background: #252F32;
+  background: #502C36;
   border: 1px solid rgba(255, 255, 255, 0.25);
-  color: #E5EFE9;
+  color: #DADDEA;
 }
 
 textarea {
@@ -538,7 +538,7 @@ strong.important_text_alt {
 .r02,
 .r03,
 .warning {
-  color: #ed5454;
+  color: #b71010;
 }
 
 .r04,
@@ -547,7 +547,7 @@ strong.important_text_alt {
 .r07,
 .r08,
 .r09 {
-  color: #e8be69;
+  color: #F9E340;
 }
 
 .r10,
@@ -573,7 +573,7 @@ strong.important_text_alt {
 .vote_artist_down,
 .vote_tag_down {
   font-weight: bolder;
-  color: #ed5454;
+  color: #b71010;
 }
 
 #wrapper {
@@ -594,7 +594,7 @@ strong.important_text_alt {
 
 .box,
 .box2 {
-  background-color: #302d34;
+  background-color: #2A1D30;
   margin-bottom: 8px;
   margin-top: 8px;
 }
@@ -605,7 +605,7 @@ table.box2 {
 }
 
 .head {
-  background-color: #3f3e46;
+  background-color: #461C36;
   line-height: 18px;
 }
 
@@ -635,7 +635,7 @@ table.box2 {
 /* #2024 note: Many of these appear to be overridden by
  * global.css or auto-complete.css: your mileage may vary. */
 .autocomplete-suggestions {
-  background-color: #f4f4f4;
+  background-color: #F9ECEC;
   border: none;
   color: #26282e;
   margin-top: 4px;
@@ -647,7 +647,7 @@ table.box2 {
 }
 
 .autocomplete-suggestions .autocomplete-suggestion.autocomplete-selected {
-  background-color: #fad5cd;
+  background-color: #D19689;
 }
 
 .autocomplete-suggestions .autocomplete-suggestion strong {
@@ -655,7 +655,7 @@ table.box2 {
 }
 
 .forum_post.forum_unread {
-  border-top: 2px solid #fed100;
+  border-top: 2px solid #862759;
 }
 
 .forum_post .avatar {
@@ -703,7 +703,7 @@ table.box2 {
 
 .last_read ::before {
   content: "➤"; /* aka ➤ */
-  color: #fed100;
+  color: #862759;
   display: inline-block;
 }
 
@@ -778,9 +778,9 @@ table.box2 {
 }
 
 div#flip_view_1 div#similar-artist .name {
-  border: 1px solid #C4BBC1;
+  border: 1px solid #CDB6C5;
   background: rgba(60, 60, 60, 0.7);
-  color: #C4BBC1;
+  color: #CDB6C5;
   margin: 0;
   padding: 0 5px;
 }
@@ -906,7 +906,7 @@ div#flip_view_1 div#similar-artist .name {
 }
 
 .torrent_table {
-  background-color: #1D2424;
+  background-color: #3B123A;
 }
 
 .torrent_table tr:not(.colhead, .colhead_dark) {
@@ -918,11 +918,11 @@ div#flip_view_1 div#similar-artist .name {
 }
 
 .torrent_table .group {
-  background-color: #3f3e46;
+  background-color: #461C36;
 }
 
 .group_torrent {
-  background-color: #302d34;
+  background-color: #2A1D30;
 }
 
 /* #2024fix */
@@ -931,7 +931,7 @@ div#flip_view_1 div#similar-artist .name {
 /* So not personal 'snatches, downloads,' etc. */
 #torrents #torrent_details .group_torrent td.edition_info,
 group ~ .group_torrent.edition {
-  background-color: #38363d;
+  background-color: #3B2828;
 }
 
 .torrentdetails .linkbox {
@@ -965,7 +965,7 @@ group ~ .group_torrent.edition {
 }
 
 .tags a:hover {
-  color: #fad5cd;
+  color: #D19689;
 }
 
 .group_info > span:first-child,
@@ -1136,7 +1136,7 @@ ul.collage_images li a > span {
 
 #userform #settings_sections h2 a,
 .rule_short {
-  color: #f4f4f4;
+  color: #F9ECEC;
 }
 
 .poll li {
@@ -1144,14 +1144,14 @@ ul.collage_images li a > span {
 }
 
 .poll .graph {
-  background-color: rgba(230, 159, 144, 0.1);
+  background-color: #502C36;
   display: block;
   height: 8px;
   margin-bottom: 12px;
 }
 
 .poll .graph span {
-  background-color: #20C098;
+  background-color: #BE6A57;
   display: block;
   float: left;
   height: 8px;
@@ -1290,7 +1290,7 @@ ul.collage_images li a > span {
 }
 
 #userform #settings_sections h2 a:hover {
-  color: #fad5cd;
+  color: #D19689;
 }
 
 #userform #settings_sections input {
@@ -1364,7 +1364,7 @@ ul.collage_images li a > span {
 }
 
 span[style*="color: green"] {
-  color: #7ac792 !important;
+  color: hsl(145, 90%, 70%) !important;
 }
 
 span[style*="color: red"] {
@@ -1372,7 +1372,7 @@ span[style*="color: red"] {
 }
 
 span[style*="color: blue"] {
-  color: #5454ed !important;
+  color: hsl(235, 90%, 85%) !important;
 }
 
 .filelist_table td,
@@ -1390,7 +1390,7 @@ blockquote {
 .reportinfo_table,
 .torrentdetails,
 blockquote {
-  background-color: #38363d;
+  background-color: #461C36;
 }
 
 #bookmarks #torrent_table tr:not(.colhead, .colhead_dark) td:nth-child(2) {
@@ -1466,19 +1466,19 @@ blockquote {
 
 /* Discog table: for rows 'Albums', 'Compilations', 'Live Albums', etc. */
 #discog_table tr[id^=torrents_] {
-  background-color: #0F5B49;
+  background-color: #4D2429;
 }
 
 #discog_table tr[id^=torrents_] :not(a.tooltip.brackets) strong {
   font-size: large;
-  color: #D5E0D9;
+  color: #DBC8D5;
 }
 
 /* Discog table: for names of albums, to help them stand out somewhat */
 #discog_table .discog strong a,
 #discog_table td.td_info.big_info div.group_info.clear strong a {
   font-size: 115%;
-  color: #20C098;
+  color: #BE6A57;
 }
 
 /* Discog table:  for encodings, to get breathing room after the >> character */
@@ -1488,14 +1488,14 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
 
 /* BEGIN Navbox on artist page ~ "jump down".. to navigate between Album/Live Album... */
 #discog_table > div.box.center {
-  background-color: #0F5B49;
+  background-color: #4D2429;
   padding: 12px;
   text-align: left;
   padding-left: 11rem;
 }
 
 #discog_table > div.box.center:before {
-  color: #D5E0D9 !important;
+  color: #DBC8D5 !important;
   font-size: large !important;
   content: "⇩ Jump to" !important;
   font-weight: 600;
@@ -1520,29 +1520,29 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
 }
 
 .tooltipster-default {
-  background-color: #211f25;
-  border: 0 solid #1DAF8B;
+  background-color: #211F25;
+  border: 0 solid #AB4E39;
   border-radius: 2.5px;
-  color: #188E71;
+  color: #862759;
 }
 
 .tooltipster-default .tooltipster-content {
-  background-color: #211f25;
-  color: #188E71;
+  background-color: #211F25;
+  color: #862759;
   font-size: 12px;
   line-height: 1.4;
   padding: 4px 6px;
 }
 
 .tooltipster-default .tooltipster-content a {
-  background-color: #211f25;
-  color: #1DAF8B;
+  background-color: #211F25;
+  color: #AB4E39;
   font-weight: 600;
 }
 
 .alertbar,
 .tooltipster-default .tooltipster-content a:hover {
-  color: #23D1A5;
+  color: #D19689;
 }
 
 /* # 1.7 BEGIN UPLOAD CATEGORY DECORATION STRIPING */
@@ -1728,7 +1728,7 @@ body#collage .cats_music {
 
 #menu ul li:not(#nav_staff) a,
 #userinfo a.username {
-  color: #FDFFFD;
+  color: #F9ECEC;
   text-shadow: initial;
 }
 
@@ -1742,7 +1742,7 @@ body#collage .cats_music {
 }
 
 #menu li:nth-child(4) {
-  background-color: #0F5B49;
+  background-color: #fe8691;
 }
 
 #menu li:nth-child(5) {
@@ -1758,7 +1758,7 @@ body#collage .cats_music {
 }
 
 #menu li:nth-child(8) {
-  background-color: #1A9F7E;
+  background-color: #ab718d;
 }
 
 #menu li:nth-child(9) {
@@ -1801,7 +1801,7 @@ body#collage .cats_music {
   }
   #menu > ul > #nav_staff > a:hover {
     background-color: transparent;
-    color: #fad5cd;
+    color: #D19689;
   }
   #userinfo_minor::before {
     background: url("https://wally-crunk.github.io/svg/gazelle/chevrons-down.svg") no-repeat;
@@ -1842,10 +1842,10 @@ body#collage .cats_music {
     right: 0;
   }
   #userinfo_minor:hover {
-    background-color: #7d809e;
+    background-color: #6c6584;
   }
   #userinfo_username:hover {
-    background-color: #89849d;
+    background-color: #6c6584;
   }
   .settings_sidebar {
     margin-left: 8px;
@@ -1870,7 +1870,7 @@ body#collage .cats_music {
 #menu > ul a:hover,
 #userinfo_minor:hover a,
 #userinfo_username:hover a {
-  color: #1D2424;
+  color: #CDB6C5;
 }
 
 /* Icon revealed when menu is open */
@@ -1899,7 +1899,7 @@ body#collage .cats_music {
 /* ## 1.9.1 Searchbars */
 #searchbars > ul {
   align-items: center;
-  background-color: #252F32;
+  background-color: #502C36;
   display: flex;
   display: -ms-flexbox;
   -ms-flex-align: center;
@@ -1929,11 +1929,11 @@ body#collage .cats_music {
   border: none;
   border-radius: 2.5px;
   height: 30px;
-  background: #1D2424;
+  background: #3B123A;
 }
 
 #searchbars .search_form input:focus {
-  background: #121616;
+  background: #211F25;
 }
 
 /* ## 1.9.2 Linkbox */
@@ -1949,7 +1949,7 @@ body#collage .cats_music {
 }
 
 .linkbox > strong {
-  color: #1DAF8B;
+  color: #AB4E39;
 }
 
 .linkbox .brackets::after,
@@ -1983,8 +1983,8 @@ body#collage .cats_music {
 
 /* first row of each box */
 #noty_bottomRight_layout_container .noty_message {
-  background: radial-gradient(circle at top right, #23D1A5, #126C56) !important;
-  color: #FDFFFD !important;
+  background: radial-gradient(circle at top right, #D19689, #602031) !important;
+  color: #F9ECEC !important;
   font-weight: 700;
   padding: 0 !important;
 }
@@ -2004,7 +2004,7 @@ body#collage .cats_music {
 
 /* buttons */
 #noty_bottomRight_layout_container .noty_buttons a {
-  color: #ffb0a0 !important;
+  color: #BE6A57 !important;
   background-color: none;
   border: thin solid transparent; /* prevents button movement */
   border-radius: 14px;
@@ -2013,10 +2013,10 @@ body#collage .cats_music {
 }
 
 #noty_bottomRight_layout_container .noty_buttons a:hover {
-  color: #8d6a87 !important;
-  background-color: #ffb0a0;
+  color: #3B2828 !important;
+  background-color: #BE6A57;
   border-radius: 14px;
-  border: thin solid #20C098;
+  border: thin solid #BE6A57;
   transition: all 0.15s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
@@ -2044,19 +2044,19 @@ body#collage .cats_music {
 /* END SIDEBAR */
 /* # 1.12 Upload form MusicBrainz popup */
 #musicbrainz_popup {
-  color: #C6D2C8;
+  color: #CDB6C5;
   background: #1D2424;
-  border: #1DAF8B;
+  border: #AB4E39;
   padding: 1rem;
   font-weight: 600;
 }
 
 #musicbrainz_popup a {
-  color: #E5EFE9;
+  color: #DADDEA;
 }
 
 #musicbrainz_popup a:hover {
-  color: #23D1A5;
+  color: #D19689;
 }
 
 #musicbrainz_popup .brackets {
@@ -2364,7 +2364,7 @@ body#collage .cats_music {
   .td_seeders.m_td_right::before,
   .td_leechers.m_td_right::before {
     background: left/10px no-repeat url("https://wally-crunk.github.io/svg/gazelle/arrow-loop.svg");
-    color: #D5E0D9;
+    color: #DBC8D5;
     content: ":";
     filter: brightness(80%);
     position: absolute;
@@ -2505,8 +2505,8 @@ body#collage .cats_music {
     font-weight: 400;
     font-size: 0.55rem;
     vertical-align: baseline;
-    color: #ffb0a0;
-    background: #8d6a87 !important;
+    color: #BE6A57;
+    background: #3B2828 !important;
     padding: 0.05rem 0.5rem;
     border: none !important;
     border-radius: 1rem;
@@ -2601,7 +2601,7 @@ body#collage .cats_music {
   }
   .forum_post tr.colhead_dark span,
   .forum_post tr.colhead_dark strong {
-    color: #d1d1d1;
+    color: #BCA5BE;
   }
   .forum_post tr.colhead_dark div {
     display: inline;
@@ -2684,7 +2684,7 @@ body#collage .cats_music {
     opacity: 1;
     transition: all 600ms cubic-bezier(1, 0.01, 0.3, 1.31);
     border-bottom: groove #ab718d;
-    box-shadow: 0px 50px 70px #157D63, 0 160px 160px #080808;
+    box-shadow: 0px 50px 70px #da7c92, 0 160px 160px #080808;
   }
   /* ## 3.17.3 Top Menubar */
   /* pulldown arrow icon for mobile view, top menu */
@@ -2767,7 +2767,7 @@ body#collage .cats_music {
   /* ## 3.17.5  Menu when open, Row One */
   /* Right side ~ three items */
   #userinfo_username > li, #logo {
-    background: radial-gradient(circle at top left, #875e80, #ef959c);
+    background: radial-gradient(circle at top left, #f07c8e, #6c6584);
   }
   #userinfo_username {
     position: absolute;
@@ -2788,7 +2788,7 @@ body#collage .cats_music {
     width: 15%;
     z-index: 999;
     text-align: center;
-    background: radial-gradient(circle at top left, #875e80, #ef959c);
+    background: radial-gradient(circle at top left, #f07c8e, #6c6584);
   }
   #logo a {
     display: inline-block;
@@ -2813,7 +2813,7 @@ body#collage .cats_music {
     right: 2vw;
     width: 60vw;
     margin: auto;
-    color: #C4BBC1;
+    color: #CDB6C5;
     top: calc(100% - var(--row-height) * 10 - 125px);
     height: calc(2.4 * var(--row-height));
     flex-direction: column;
@@ -2833,14 +2833,14 @@ body#collage .cats_music {
   }
   #stats_ratio .tooltip {
     /* Provide a local background for the number to appear in color */
-    background-color: #302d34;
+    background-color: #2A1D30;
     border-radius: 0.45rem;
     padding-left: 0.45rem;
     padding-right: 0.45rem;
   }
   /* ## 3.17.7  Menu when open, Row Three */
   #menu ul {
-    background: radial-gradient(circle at top left, #875e80, #ef959c);
+    background: radial-gradient(circle at top left, #f07c8e, #6c6584);
     bottom: calc(var(--row-height) * 7);
     position: absolute;
   }
@@ -2850,7 +2850,7 @@ body#collage .cats_music {
   /* END Row Three */
   /* ## 3.17.8  Menu when open, Row four */
   #userinfo_minor {
-    background: radial-gradient(circle at top left, #ef959c, #875e80);
+    background: radial-gradient(circle at top left, #6c6584, #f07c8e);
     bottom: calc(var(--row-height) * 3);
     position: absolute;
   }
@@ -2911,14 +2911,14 @@ body#collage .cats_music {
   /* when tags are set to display in profile settings. */
   #taglist tr.label {
     height: auto;
-    border: thick solid #ffb0a0;
+    border: thick solid #BE6A57;
   }
   #taglist tr.label td {
-    background: #8d6a87;
-    color: #ffb0a0;
+    background: #3B2828;
+    color: #BE6A57;
     align-content: center;
     text-align: center;
-    border: #ffb0a0;
+    border: #BE6A57;
     width: 100%;
   }
   #taglist tr.label td::after {
@@ -2937,8 +2937,8 @@ body#collage .cats_music {
     text-overflow: ellipsis;
     font-style: italic;
     vertical-align: baseline;
-    color: #ffb0a0 !important; /*$color-obj-tag_bubble-background;*/
-    background: #8d6a87;
+    color: #BE6A57 !important; /*$color-obj-tag_bubble-background;*/
+    background: #3B2828;
     padding: 0.25rem;
     border-radius: 1rem;
     margin-bottom: 0.1rem;
@@ -2989,8 +2989,8 @@ body#torrents div.box.box_tags li > a:first-child {
   font-weight: 700;
   font-size: 0.6rem;
   vertical-align: baseline;
-  color: #ffb0a0;
-  background: #8d6a87;
+  color: #BE6A57;
+  background: #3B2828;
   padding: 0 0.5rem;
   border-radius: 1rem;
   margin-bottom: 0.1rem;
@@ -3009,8 +3009,8 @@ body#torrents div.box.box_tags li > a:first-child {
 table.torrent_table.cats.checkboxes.border.m_table td.td_info.big_info div.group_info.clear div.tags a:hover,
 table.torrent_table.cats.m_table td.td_info.big_info div.group_info.clear div.tags a:hover,
 body#torrents div.box.box_tags li > a:first-child:hover {
-  color: #8d6a87 !important;
-  background: #ffb0a0 !important;
+  color: #3B2828 !important;
+  background: #BE6A57 !important;
   transition: all 0.15s cubic-bezier(0.25, 0.8, 0.25, 1);
   box-shadow: rgba(0, 0, 0, 0.25) 0 14px 28px, rgba(0, 0, 0, 0.22) 0 10px 10px;
 }
@@ -3055,7 +3055,7 @@ tr.snatched_torrent div.tags:before {
 tr.snatched_group div.tags:before,
 tr.snatched_torrent div.tags:before {
   visibility: visible;
-  background: #2D393A;
+  background: #5B3939;
   border-radius: 1rem;
   box-sizing: border-box;
   display: inline-block;
@@ -3070,7 +3070,7 @@ tr.snatched_torrent div.tags:before {
 
 /* album pages */
 #torrent_details.snatched .group_torrent.snatched_torrent .torrent_label.tooltip.tl_snatched {
-  background: #2D393A;
+  background: #5B3939;
   border-radius: 1rem;
   box-sizing: border-box;
   display: inline-block;
