@@ -112,7 +112,7 @@
 /* ## 0.3 Debugging */
 /* various 'debug' features are avail in this doc */
 li#nav_upload.brackets a:before {
-  content: "1854 1952";
+  content: "1854 1955";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -121,7 +121,7 @@ li#nav_upload.brackets a:before {
 }
 
 #footer p:last-of-type:after {
-  content: "ApolloStage 1854 coffee 1952";
+  content: "ApolloStage 1854 coffee 1955";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -235,7 +235,7 @@ textarea:focus {
 /* formatting on .box.pad for the [box] bbcode tag */
 .box .box.pad,
 .main_column .box.pad:not(#reply_box) {
-  background-color: #502C36;
+  background-color: #422B32;
   border: 2px solid #3C4D50;
   margin: 8px;
   border-radius: 0.25rem;
@@ -313,7 +313,7 @@ li:last-child {
 }
 
 blockquote {
-  background-color: #46273A;
+  background-color: #3B2934;
   border: 1px dashed #3C4D50;
   margin: 12px;
   padding: 12px;
@@ -329,7 +329,7 @@ form input {
 }
 
 table {
-  background-color: #2B2230;
+  background-color: #29232C;
 }
 
 table .rowa,
@@ -345,7 +345,7 @@ table .rowb:nth-child(even),
 #dnulist tr:not(.colhead, .colhead_dark):nth-child(even),
 #upload tr:nth-child(even),
 #inbox .message_table tr.a {
-  background-color: #2B2230;
+  background-color: #29232C;
 }
 
 table {
@@ -360,7 +360,7 @@ table .rowb:nth-child(odd),
 #dnulist tr:not(.colhead, .colhead_dark):nth-child(odd),
 #upload tr:nth-child(odd),
 #inbox .message_table tr.b {
-  background-color: #362336;
+  background-color: #342633;
 }
 
 table ul.options_list {
@@ -371,7 +371,7 @@ table ul.options_list {
 #content div.thin div.head,
 .colhead,
 .colhead_dark {
-  background-color: #502C36;
+  background-color: #422B32;
   line-height: 18px;
 }
 
@@ -406,7 +406,7 @@ td:last-child {
 }
 
 form {
-  background-color: #2B2230;
+  background-color: #29232C;
 }
 
 form table td.label {
@@ -451,7 +451,7 @@ input[type=text],
 input[type=search],
 select,
 textarea {
-  background: #46273A;
+  background: #3B2934;
   border: 1px solid rgba(255, 255, 255, 0.08);
   color: #BCA5BE;
   height: 32px;
@@ -464,7 +464,7 @@ input[type=text]:focus,
 input[type=search]:focus,
 select:focus,
 textarea:focus {
-  background: #502C36;
+  background: #422B32;
   border: 1px solid rgba(255, 255, 255, 0.25);
   color: #DADDEA;
 }
@@ -594,7 +594,7 @@ strong.important_text_alt {
 
 .box,
 .box2 {
-  background-color: #2B2230;
+  background-color: #29232C;
   margin-bottom: 8px;
   margin-top: 8px;
 }
@@ -605,7 +605,7 @@ table.box2 {
 }
 
 .head {
-  background-color: #46273A;
+  background-color: #3B2934;
   line-height: 18px;
 }
 
@@ -906,7 +906,7 @@ div#flip_view_1 div#similar-artist .name {
 }
 
 .torrent_table {
-  background-color: #362336;
+  background-color: #342633;
 }
 
 .torrent_table tr:not(.colhead, .colhead_dark) {
@@ -918,11 +918,11 @@ div#flip_view_1 div#similar-artist .name {
 }
 
 .torrent_table .group {
-  background-color: #46273A;
+  background-color: #3B2934;
 }
 
 .group_torrent {
-  background-color: #2B2230;
+  background-color: #29232C;
 }
 
 /* #2024fix */
@@ -1144,7 +1144,7 @@ ul.collage_images li a > span {
 }
 
 .poll .graph {
-  background-color: #502C36;
+  background-color: #422B32;
   display: block;
   height: 8px;
   margin-bottom: 12px;
@@ -1390,7 +1390,7 @@ blockquote {
 .reportinfo_table,
 .torrentdetails,
 blockquote {
-  background-color: #46273A;
+  background-color: #3B2934;
 }
 
 #bookmarks #torrent_table tr:not(.colhead, .colhead_dark) td:nth-child(2) {
@@ -1899,7 +1899,7 @@ body#collage .cats_music {
 /* ## 1.9.1 Searchbars */
 #searchbars > ul {
   align-items: center;
-  background-color: #502C36;
+  background-color: #422B32;
   display: flex;
   display: -ms-flexbox;
   -ms-flex-align: center;
@@ -1929,7 +1929,7 @@ body#collage .cats_music {
   border: none;
   border-radius: 2.5px;
   height: 30px;
-  background: #362336;
+  background: #342633;
 }
 
 #searchbars .search_form input:focus {
@@ -2833,7 +2833,7 @@ body#collage .cats_music {
   }
   #stats_ratio .tooltip {
     /* Provide a local background for the number to appear in color */
-    background-color: #2B2230;
+    background-color: #29232C;
     border-radius: 0.45rem;
     padding-left: 0.45rem;
     padding-right: 0.45rem;
@@ -3055,7 +3055,7 @@ tr.snatched_torrent div.tags:before {
 tr.snatched_group div.tags:before,
 tr.snatched_torrent div.tags:before {
   visibility: visible;
-  background: #5B3939;
+  background: #492E2E;
   border-radius: 1rem;
   box-sizing: border-box;
   display: inline-block;
@@ -3070,7 +3070,7 @@ tr.snatched_torrent div.tags:before {
 
 /* album pages */
 #torrent_details.snatched .group_torrent.snatched_torrent .torrent_label.tooltip.tl_snatched {
-  background: #5B3939;
+  background: #492E2E;
   border-radius: 1rem;
   box-sizing: border-box;
   display: inline-block;
