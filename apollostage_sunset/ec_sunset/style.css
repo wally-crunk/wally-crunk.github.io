@@ -112,7 +112,7 @@
 /* ## 0.3 Debugging */
 /* various 'debug' features are avail in this doc */
 li#nav_upload.brackets a:before {
-  content: "1854 1911";
+  content: "1854 1952";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -121,7 +121,7 @@ li#nav_upload.brackets a:before {
 }
 
 #footer p:last-of-type:after {
-  content: "ApolloStage 1854 coffee 1911";
+  content: "ApolloStage 1854 coffee 1952";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -313,7 +313,7 @@ li:last-child {
 }
 
 blockquote {
-  background-color: #461C36;
+  background-color: #46273A;
   border: 1px dashed #3C4D50;
   margin: 12px;
   padding: 12px;
@@ -329,7 +329,7 @@ form input {
 }
 
 table {
-  background-color: #2A1D30;
+  background-color: #2B2230;
 }
 
 table .rowa,
@@ -345,7 +345,7 @@ table .rowb:nth-child(even),
 #dnulist tr:not(.colhead, .colhead_dark):nth-child(even),
 #upload tr:nth-child(even),
 #inbox .message_table tr.a {
-  background-color: #2A1D30;
+  background-color: #2B2230;
 }
 
 table {
@@ -360,7 +360,7 @@ table .rowb:nth-child(odd),
 #dnulist tr:not(.colhead, .colhead_dark):nth-child(odd),
 #upload tr:nth-child(odd),
 #inbox .message_table tr.b {
-  background-color: #3B123A;
+  background-color: #362336;
 }
 
 table ul.options_list {
@@ -406,7 +406,7 @@ td:last-child {
 }
 
 form {
-  background-color: #2A1D30;
+  background-color: #2B2230;
 }
 
 form table td.label {
@@ -451,7 +451,7 @@ input[type=text],
 input[type=search],
 select,
 textarea {
-  background: #461C36;
+  background: #46273A;
   border: 1px solid rgba(255, 255, 255, 0.08);
   color: #BCA5BE;
   height: 32px;
@@ -594,7 +594,7 @@ strong.important_text_alt {
 
 .box,
 .box2 {
-  background-color: #2A1D30;
+  background-color: #2B2230;
   margin-bottom: 8px;
   margin-top: 8px;
 }
@@ -605,7 +605,7 @@ table.box2 {
 }
 
 .head {
-  background-color: #461C36;
+  background-color: #46273A;
   line-height: 18px;
 }
 
@@ -906,7 +906,7 @@ div#flip_view_1 div#similar-artist .name {
 }
 
 .torrent_table {
-  background-color: #3B123A;
+  background-color: #362336;
 }
 
 .torrent_table tr:not(.colhead, .colhead_dark) {
@@ -918,11 +918,11 @@ div#flip_view_1 div#similar-artist .name {
 }
 
 .torrent_table .group {
-  background-color: #461C36;
+  background-color: #46273A;
 }
 
 .group_torrent {
-  background-color: #2A1D30;
+  background-color: #2B2230;
 }
 
 /* #2024fix */
@@ -1390,7 +1390,7 @@ blockquote {
 .reportinfo_table,
 .torrentdetails,
 blockquote {
-  background-color: #461C36;
+  background-color: #46273A;
 }
 
 #bookmarks #torrent_table tr:not(.colhead, .colhead_dark) td:nth-child(2) {
@@ -1929,7 +1929,7 @@ body#collage .cats_music {
   border: none;
   border-radius: 2.5px;
   height: 30px;
-  background: #3B123A;
+  background: #362336;
 }
 
 #searchbars .search_form input:focus {
@@ -2833,7 +2833,7 @@ body#collage .cats_music {
   }
   #stats_ratio .tooltip {
     /* Provide a local background for the number to appear in color */
-    background-color: #2A1D30;
+    background-color: #2B2230;
     border-radius: 0.45rem;
     padding-left: 0.45rem;
     padding-right: 0.45rem;
