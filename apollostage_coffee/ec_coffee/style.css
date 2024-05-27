@@ -113,7 +113,7 @@
 /* ## 0.3 Debugging */
 /* various 'debug' features are avail in this doc */
 li#nav_upload.brackets a:before {
-  content: "1854 1904";
+  content: "1854 1911";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -122,7 +122,7 @@ li#nav_upload.brackets a:before {
 }
 
 #footer p:last-of-type:after {
-  content: "ApolloStage 1854 coffee 1904";
+  content: "ApolloStage 1854 coffee 1911";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -656,7 +656,7 @@ table.box2 {
 }
 
 .forum_post.forum_unread {
-  border-top: 2px solid #fed100;
+  border-top: 2px solid #C98258;
 }
 
 .forum_post .avatar {
@@ -704,7 +704,7 @@ table.box2 {
 
 .last_read ::before {
   content: "➤"; /* aka ➤ */
-  color: #fed100;
+  color: #C98258;
   display: inline-block;
 }
 
@@ -1871,7 +1871,7 @@ body#collage .cats_music {
 #menu > ul a:hover,
 #userinfo_minor:hover a,
 #userinfo_username:hover a {
-  color: #272423;
+  color: #D1B89E;
 }
 
 /* Icon revealed when menu is open */

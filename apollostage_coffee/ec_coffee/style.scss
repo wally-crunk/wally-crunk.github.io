@@ -12,7 +12,7 @@
  $debug-identity: "ApolloStage"; // must include quots
  $debug-slug: "1854"; // must include quots
  $debug-deriv: "coffee";
- $debug-deriv-slug: "1904";
+ $debug-deriv-slug: "1911";
   
 // ////////////////////////////////////////////////////////////////////////////////
 // COLORS
@@ -60,6 +60,7 @@ $fore-900:  #EFE3D5;
 $fore-1000: #FFFCF6;
 
  
+$ds-rawsienna: #C98258;
 
 // DEFINE FROM LOGICAL LAYOUT TO TOKENS
 
@@ -119,7 +120,7 @@ $color-text-input: $fore-600; // for pre-populated inputs
 $color-text-input-active: $fore-900;
 $color-text-linkbox: $midtone-800; // links in linkbox
 $color-text-menu: $fore-1000;
-$color-text-menu-hover: $back-300; // during pulldown
+$color-text-menu-hover: $fore-700; // during pulldown // changed
 $color-text-mono: $fore-500;
 $color-text-notification-words: $fore-1000;
 $color-text-popup-anchor-hover: $midtone-1000;
@@ -167,8 +168,8 @@ $color-accent-cats_comics: gold;
 $color-accent-cats_ebooks: chocolate;
 $color-accent-cats_elearningvideos: mediumpurple;
 $color-accent-cats_music: darkslategray;
-$color-accent-forum-inline-last-read: #fed100;
-$color-accent-forum-unread: #fed100;
+$color-accent-forum-inline-last-read: $ds-rawsienna; // changed
+$color-accent-forum-unread: $ds-rawsienna; // changed
 
 $color-accent-selection-background: $midtone-800;
 $color-accent-selection-text: $fore-700; // usually #fff or $color-text-bold
