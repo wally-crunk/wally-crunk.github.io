@@ -112,7 +112,7 @@
 /* ## 0.3 Debugging */
 /* various 'debug' features are avail in this doc */
 li#nav_upload.brackets a:before {
-  content: "1854 0851";
+  content: "1854 0859";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -121,7 +121,7 @@ li#nav_upload.brackets a:before {
 }
 
 #footer p:last-of-type:after {
-  content: "ApolloStage 1854 sunset 0851";
+  content: "ApolloStage 1854 sunset 0859";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
