@@ -112,7 +112,7 @@
 /* ## 0.3 Debugging */
 /* various 'debug' features are avail in this doc */
 li#nav_upload.brackets a:before {
-  content: "1854 0859";
+  content: "1854 0901";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -121,7 +121,7 @@ li#nav_upload.brackets a:before {
 }
 
 #footer p:last-of-type:after {
-  content: "ApolloStage 1854 sunset 0859";
+  content: "ApolloStage 1854 sunset 0901";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -216,7 +216,7 @@ a {
 }
 
 a:hover {
-  color: #5C6086;
+  color: #757AAB;
 }
 
 a:active,
@@ -284,7 +284,7 @@ svg|a {
 }
 
 svg|a:hover {
-  fill: #5C6086;
+  fill: #757AAB;
 }
 
 b,
@@ -320,7 +320,7 @@ blockquote {
 }
 
 ::selection {
-  background-color: #8D6A87;
+  background-color: #D19DC8;
   color: #CDB6C5;
 }
 
@@ -647,7 +647,7 @@ table.box2 {
 }
 
 .autocomplete-suggestions .autocomplete-suggestion.autocomplete-selected {
-  background-color: #5C6086;
+  background-color: #757AAB;
 }
 
 .autocomplete-suggestions .autocomplete-suggestion strong {
@@ -965,7 +965,7 @@ group ~ .group_torrent.edition {
 }
 
 .tags a:hover {
-  color: #5C6086;
+  color: #757AAB;
 }
 
 .group_info > span:first-child,
@@ -1151,7 +1151,7 @@ ul.collage_images li a > span {
 }
 
 .poll .graph span {
-  background-color: #6C6584;
+  background-color: #A196C4;
   display: block;
   float: left;
   height: 8px;
@@ -1290,7 +1290,7 @@ ul.collage_images li a > span {
 }
 
 #userform #settings_sections h2 a:hover {
-  color: #5C6086;
+  color: #757AAB;
 }
 
 #userform #settings_sections input {
@@ -1478,7 +1478,7 @@ blockquote {
 #discog_table .discog strong a,
 #discog_table td.td_info.big_info div.group_info.clear strong a {
   font-size: 115%;
-  color: #6C6584;
+  color: #A196C4;
 }
 
 /* Discog table:  for encodings, to get breathing room after the >> character */
@@ -1522,14 +1522,14 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
 
 .tooltipster-default {
   background-color: #19181A;
-  border: 0 solid #8D6A87;
+  border: 0 solid #D19DC8;
   border-radius: 2.5px;
-  color: #C47891;
+  color: #EB90AE;
 }
 
 .tooltipster-default .tooltipster-content {
   background-color: #19181A;
-  color: #C47891;
+  color: #EB90AE;
   font-size: 12px;
   line-height: 1.4;
   padding: 4px 6px;
@@ -1537,13 +1537,13 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
 
 .tooltipster-default .tooltipster-content a {
   background-color: #19181A;
-  color: #8D6A87;
+  color: #D19DC8;
   font-weight: 600;
 }
 
 .alertbar,
 .tooltipster-default .tooltipster-content a:hover {
-  color: #5C6086;
+  color: #757AAB;
 }
 
 /* # 1.7 BEGIN UPLOAD CATEGORY DECORATION STRIPING */
@@ -1802,7 +1802,7 @@ body#collage .cats_music {
   }
   #menu > ul > #nav_staff > a:hover {
     background-color: transparent;
-    color: #5C6086;
+    color: #757AAB;
   }
   #userinfo_minor::before {
     background: url("https://wally-crunk.github.io/svg/gazelle/chevrons-down.svg") no-repeat;
@@ -1950,7 +1950,7 @@ body#collage .cats_music {
 }
 
 .linkbox > strong {
-  color: #8D6A87;
+  color: #D19DC8;
 }
 
 .linkbox .brackets::after,
@@ -2005,7 +2005,7 @@ body#collage .cats_music {
 
 /* buttons */
 #noty_bottomRight_layout_container .noty_buttons a {
-  color: #6C6584 !important;
+  color: #A196C4 !important;
   background-color: none;
   border: thin solid transparent; /* prevents button movement */
   border-radius: 14px;
@@ -2015,9 +2015,9 @@ body#collage .cats_music {
 
 #noty_bottomRight_layout_container .noty_buttons a:hover {
   color: #7B4848 !important;
-  background-color: #6C6584;
+  background-color: #A196C4;
   border-radius: 14px;
-  border: thin solid #6C6584;
+  border: thin solid #A196C4;
   transition: all 0.15s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
@@ -2047,7 +2047,7 @@ body#collage .cats_music {
 #musicbrainz_popup {
   color: #CDB6C5;
   background: #1D2424;
-  border: #8D6A87;
+  border: #D19DC8;
   padding: 1rem;
   font-weight: 600;
 }
@@ -2057,7 +2057,7 @@ body#collage .cats_music {
 }
 
 #musicbrainz_popup a:hover {
-  color: #5C6086;
+  color: #757AAB;
 }
 
 #musicbrainz_popup .brackets {
@@ -2506,7 +2506,7 @@ body#collage .cats_music {
     font-weight: 400;
     font-size: 0.55rem;
     vertical-align: baseline;
-    color: #6C6584;
+    color: #A196C4;
     background: #7B4848 !important;
     padding: 0.05rem 0.5rem;
     border: none !important;
@@ -2912,14 +2912,14 @@ body#collage .cats_music {
   /* when tags are set to display in profile settings. */
   #taglist tr.label {
     height: auto;
-    border: thick solid #6C6584;
+    border: thick solid #A196C4;
   }
   #taglist tr.label td {
     background: #7B4848;
-    color: #6C6584;
+    color: #A196C4;
     align-content: center;
     text-align: center;
-    border: #6C6584;
+    border: #A196C4;
     width: 100%;
   }
   #taglist tr.label td::after {
@@ -2938,7 +2938,7 @@ body#collage .cats_music {
     text-overflow: ellipsis;
     font-style: italic;
     vertical-align: baseline;
-    color: #6C6584 !important; /*$color-obj-tag_bubble-background;*/
+    color: #A196C4 !important; /*$color-obj-tag_bubble-background;*/
     background: #7B4848;
     padding: 0.25rem;
     border-radius: 1rem;
@@ -2990,7 +2990,7 @@ body#torrents div.box.box_tags li > a:first-child {
   font-weight: 700;
   font-size: 0.6rem;
   vertical-align: baseline;
-  color: #6C6584;
+  color: #A196C4;
   background: #7B4848;
   padding: 0 0.5rem;
   border-radius: 1rem;
@@ -3011,7 +3011,7 @@ table.torrent_table.cats.checkboxes.border.m_table td.td_info.big_info div.group
 table.torrent_table.cats.m_table td.td_info.big_info div.group_info.clear div.tags a:hover,
 body#torrents div.box.box_tags li > a:first-child:hover {
   color: #7B4848 !important;
-  background: #6C6584 !important;
+  background: #A196C4 !important;
   transition: all 0.15s cubic-bezier(0.25, 0.8, 0.25, 1);
   box-shadow: rgba(0, 0, 0, 0.25) 0 14px 28px, rgba(0, 0, 0, 0.22) 0 10px 10px;
 }
