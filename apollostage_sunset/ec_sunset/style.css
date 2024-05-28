@@ -112,7 +112,7 @@
 /* ## 0.3 Debugging */
 /* various 'debug' features are avail in this doc */
 li#nav_upload.brackets a:before {
-  content: "1854 2033";
+  content: "1854 0607";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -121,7 +121,7 @@ li#nav_upload.brackets a:before {
 }
 
 #footer p:last-of-type:after {
-  content: "ApolloStage 1854 sunset 2033";
+  content: "ApolloStage 1854 sunset 0607";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -211,7 +211,7 @@ h5 {
 }
 
 a {
-  color: #F9ECEC;
+  color: #ffb0a0;
   text-decoration: none;
 }
 
@@ -280,7 +280,7 @@ textarea:focus {
 }
 
 svg|a {
-  fill: #F9ECEC;
+  fill: #ffb0a0;
 }
 
 svg|a:hover {
@@ -635,7 +635,7 @@ table.box2 {
 /* #2024 note: Many of these appear to be overridden by
  * global.css or auto-complete.css: your mileage may vary. */
 .autocomplete-suggestions {
-  background-color: #F9ECEC;
+  background-color: #ffb0a0;
   border: none;
   color: #26282e;
   margin-top: 4px;
@@ -655,7 +655,7 @@ table.box2 {
 }
 
 .forum_post.forum_unread {
-  border-top: 2px solid #862759;
+  border-top: 2px solid #b43477;
 }
 
 .forum_post .avatar {
@@ -703,7 +703,7 @@ table.box2 {
 
 .last_read ::before {
   content: "➤"; /* aka ➤ */
-  color: #862759;
+  color: #b43477;
   display: inline-block;
 }
 
@@ -1136,7 +1136,7 @@ ul.collage_images li a > span {
 
 #userform #settings_sections h2 a,
 .rule_short {
-  color: #F9ECEC;
+  color: #ffb0a0;
 }
 
 .poll li {
@@ -1728,7 +1728,7 @@ body#collage .cats_music {
 
 #menu ul li:not(#nav_staff) a,
 #userinfo a.username {
-  color: #F9ECEC;
+  color: #ffb0a0;
   text-shadow: initial;
 }
 
@@ -1984,7 +1984,7 @@ body#collage .cats_music {
 /* first row of each box */
 #noty_bottomRight_layout_container .noty_message {
   background: radial-gradient(circle at top right, #ff9e98, #c47891) !important;
-  color: #F9ECEC !important;
+  color: #ffb0a0 !important;
   font-weight: 700;
   padding: 0 !important;
 }
