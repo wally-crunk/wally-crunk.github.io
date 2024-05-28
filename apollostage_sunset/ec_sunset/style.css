@@ -112,7 +112,7 @@
 /* ## 0.3 Debugging */
 /* various 'debug' features are avail in this doc */
 li#nav_upload.brackets a:before {
-  content: "1854 2030";
+  content: "1854 2033";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -121,7 +121,7 @@ li#nav_upload.brackets a:before {
 }
 
 #footer p:last-of-type:after {
-  content: "ApolloStage 1854 sunset 2030";
+  content: "ApolloStage 1854 sunset 2033";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -1983,7 +1983,7 @@ body#collage .cats_music {
 
 /* first row of each box */
 #noty_bottomRight_layout_container .noty_message {
-  background: radial-gradient(circle at top right, #D19689, #602031) !important;
+  background: radial-gradient(circle at top right, #ff9e98, #c47891) !important;
   color: #F9ECEC !important;
   font-weight: 700;
   padding: 0 !important;
@@ -2767,7 +2767,7 @@ body#collage .cats_music {
   /* ## 3.17.5  Menu when open, Row One */
   /* Right side ~ three items */
   #userinfo_username > li, #logo {
-    background: radial-gradient(circle at top left, #f07c8e, #6c6584);
+    background: radial-gradient(circle at top left, #fe8691, #c47891);
   }
   #userinfo_username {
     position: absolute;
@@ -2788,7 +2788,7 @@ body#collage .cats_music {
     width: 15%;
     z-index: 999;
     text-align: center;
-    background: radial-gradient(circle at top left, #f07c8e, #6c6584);
+    background: radial-gradient(circle at top left, #fe8691, #c47891);
   }
   #logo a {
     display: inline-block;
@@ -2840,7 +2840,7 @@ body#collage .cats_music {
   }
   /* ## 3.17.7  Menu when open, Row Three */
   #menu ul {
-    background: radial-gradient(circle at top left, #f07c8e, #6c6584);
+    background: radial-gradient(circle at top left, #fe8691, #c47891);
     bottom: calc(var(--row-height) * 7);
     position: absolute;
   }
@@ -2850,7 +2850,7 @@ body#collage .cats_music {
   /* END Row Three */
   /* ## 3.17.8  Menu when open, Row four */
   #userinfo_minor {
-    background: radial-gradient(circle at top left, #6c6584, #f07c8e);
+    background: radial-gradient(circle at top left, #c47891, #fe8691);
     bottom: calc(var(--row-height) * 3);
     position: absolute;
   }

@@ -11,7 +11,7 @@
  $debug-identity: "ApolloStage"; // must include quots
  $debug-slug: "1854"; // must include quots
  $debug-deriv: "sunset";
- $debug-deriv-slug: "2030";
+ $debug-deriv-slug: "2033";
   
 // ////////////////////////////////////////////////////////////////////////////////
 // COLORS
@@ -100,8 +100,8 @@ $color-menu-hover: $menutheme-300;
 $color-menu-username-hover: $menutheme-900; // username menu ~ open
 $color-menu-userinfo-hover: $menutheme-900; // VV pulldown menu ~ open
 $color-menu-fx-selection: $ds-fx-menutheme;
-$color-mobilemenu-userinfo-1: $menutheme-400; // mobile pulldown menu gradient 1
-$color-mobilemenu-userinfo-2: $menutheme-900; // mobile pulldown menu gradient 2
+$color-mobilemenu-userinfo-1: $menutheme-300; // mobile pulldown menu gradient 1
+$color-mobilemenu-userinfo-2: $menutheme-600; // mobile pulldown menu gradient 2
 $color-mobilemenu-closed: $menutheme-700; // rules, also mobile menu header
 $color-mobilemenu-shadow: $menutheme-500; //mobile menu
 
@@ -136,8 +136,8 @@ $color-text-tooltipster: $midtone-600;
 $color-text-tooltipster-anchor: $midtone-800;
 $color-text-tooltipster-anchor-hover: $midtone-1000;
 
-$color-background-notification-gradient-1: $midtone-1000; // menu low/high suggested
-$color-background-notification-gradient-2: $midtone-400;  // menu high/low suggested
+$color-background-notification-gradient-1: $menutheme-200; // menu low/high suggested // changed
+$color-background-notification-gradient-2: $menutheme-600;  // menu high/low suggested // changed
 $color-background-notification: $ds-neutral-000;
 
 $color-obj-button-base-1: $ds-gray-62; 
