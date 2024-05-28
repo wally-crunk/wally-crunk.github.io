@@ -112,7 +112,7 @@
 /* ## 0.3 Debugging */
 /* various 'debug' features are avail in this doc */
 li#nav_upload.brackets a:before {
-  content: "1854 0650";
+  content: "1854 0851";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -121,7 +121,7 @@ li#nav_upload.brackets a:before {
 }
 
 #footer p:last-of-type:after {
-  content: "ApolloStage 1854 sunset 0650";
+  content: "ApolloStage 1854 sunset 0851";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -216,7 +216,7 @@ a {
 }
 
 a:hover {
-  color: #D19689;
+  color: #5c6086;
 }
 
 a:active,
@@ -284,7 +284,7 @@ svg|a {
 }
 
 svg|a:hover {
-  fill: #D19689;
+  fill: #5c6086;
 }
 
 b,
@@ -320,7 +320,7 @@ blockquote {
 }
 
 ::selection {
-  background-color: #AB4E39;
+  background-color: #8d6a87;
   color: #CDB6C5;
 }
 
@@ -647,7 +647,7 @@ table.box2 {
 }
 
 .autocomplete-suggestions .autocomplete-suggestion.autocomplete-selected {
-  background-color: #D19689;
+  background-color: #5c6086;
 }
 
 .autocomplete-suggestions .autocomplete-suggestion strong {
@@ -965,7 +965,7 @@ group ~ .group_torrent.edition {
 }
 
 .tags a:hover {
-  color: #D19689;
+  color: #5c6086;
 }
 
 .group_info > span:first-child,
@@ -1151,7 +1151,7 @@ ul.collage_images li a > span {
 }
 
 .poll .graph span {
-  background-color: #BE6A57;
+  background-color: #6c6584;
   display: block;
   float: left;
   height: 8px;
@@ -1290,7 +1290,7 @@ ul.collage_images li a > span {
 }
 
 #userform #settings_sections h2 a:hover {
-  color: #D19689;
+  color: #5c6086;
 }
 
 #userform #settings_sections input {
@@ -1478,7 +1478,7 @@ blockquote {
 #discog_table .discog strong a,
 #discog_table td.td_info.big_info div.group_info.clear strong a {
   font-size: 115%;
-  color: #BE6A57;
+  color: #6c6584;
 }
 
 /* Discog table:  for encodings, to get breathing room after the >> character */
@@ -1501,6 +1501,7 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
   font-weight: 600;
   position: absolute;
   margin-left: -9rem;
+  margin-top: -0.25rem;
 }
 
 #discog_table > div.box.center a {
@@ -1521,14 +1522,14 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
 
 .tooltipster-default {
   background-color: #19181A;
-  border: 0 solid #AB4E39;
+  border: 0 solid #8d6a87;
   border-radius: 2.5px;
-  color: #862759;
+  color: #c47891;
 }
 
 .tooltipster-default .tooltipster-content {
   background-color: #19181A;
-  color: #862759;
+  color: #c47891;
   font-size: 12px;
   line-height: 1.4;
   padding: 4px 6px;
@@ -1536,13 +1537,13 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
 
 .tooltipster-default .tooltipster-content a {
   background-color: #19181A;
-  color: #AB4E39;
+  color: #8d6a87;
   font-weight: 600;
 }
 
 .alertbar,
 .tooltipster-default .tooltipster-content a:hover {
-  color: #D19689;
+  color: #5c6086;
 }
 
 /* # 1.7 BEGIN UPLOAD CATEGORY DECORATION STRIPING */
@@ -1801,7 +1802,7 @@ body#collage .cats_music {
   }
   #menu > ul > #nav_staff > a:hover {
     background-color: transparent;
-    color: #D19689;
+    color: #5c6086;
   }
   #userinfo_minor::before {
     background: url("https://wally-crunk.github.io/svg/gazelle/chevrons-down.svg") no-repeat;
@@ -1949,7 +1950,7 @@ body#collage .cats_music {
 }
 
 .linkbox > strong {
-  color: #AB4E39;
+  color: #8d6a87;
 }
 
 .linkbox .brackets::after,
@@ -1978,7 +1979,7 @@ body#collage .cats_music {
 
 #noty_bottomRight_layout_container:hover {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  transform: translateY(-5px);
+  transform: translateY(-3.5px);
 }
 
 /* first row of each box */
@@ -2004,7 +2005,7 @@ body#collage .cats_music {
 
 /* buttons */
 #noty_bottomRight_layout_container .noty_buttons a {
-  color: #BE6A57 !important;
+  color: #6c6584 !important;
   background-color: none;
   border: thin solid transparent; /* prevents button movement */
   border-radius: 14px;
@@ -2014,9 +2015,9 @@ body#collage .cats_music {
 
 #noty_bottomRight_layout_container .noty_buttons a:hover {
   color: #3B2828 !important;
-  background-color: #BE6A57;
+  background-color: #6c6584;
   border-radius: 14px;
-  border: thin solid #BE6A57;
+  border: thin solid #6c6584;
   transition: all 0.15s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
@@ -2046,7 +2047,7 @@ body#collage .cats_music {
 #musicbrainz_popup {
   color: #CDB6C5;
   background: #1D2424;
-  border: #AB4E39;
+  border: #8d6a87;
   padding: 1rem;
   font-weight: 600;
 }
@@ -2056,7 +2057,7 @@ body#collage .cats_music {
 }
 
 #musicbrainz_popup a:hover {
-  color: #D19689;
+  color: #5c6086;
 }
 
 #musicbrainz_popup .brackets {
@@ -2505,7 +2506,7 @@ body#collage .cats_music {
     font-weight: 400;
     font-size: 0.55rem;
     vertical-align: baseline;
-    color: #BE6A57;
+    color: #6c6584;
     background: #3B2828 !important;
     padding: 0.05rem 0.5rem;
     border: none !important;
@@ -2911,14 +2912,14 @@ body#collage .cats_music {
   /* when tags are set to display in profile settings. */
   #taglist tr.label {
     height: auto;
-    border: thick solid #BE6A57;
+    border: thick solid #6c6584;
   }
   #taglist tr.label td {
     background: #3B2828;
-    color: #BE6A57;
+    color: #6c6584;
     align-content: center;
     text-align: center;
-    border: #BE6A57;
+    border: #6c6584;
     width: 100%;
   }
   #taglist tr.label td::after {
@@ -2937,7 +2938,7 @@ body#collage .cats_music {
     text-overflow: ellipsis;
     font-style: italic;
     vertical-align: baseline;
-    color: #BE6A57 !important; /*$color-obj-tag_bubble-background;*/
+    color: #6c6584 !important; /*$color-obj-tag_bubble-background;*/
     background: #3B2828;
     padding: 0.25rem;
     border-radius: 1rem;
@@ -2989,7 +2990,7 @@ body#torrents div.box.box_tags li > a:first-child {
   font-weight: 700;
   font-size: 0.6rem;
   vertical-align: baseline;
-  color: #BE6A57;
+  color: #6c6584;
   background: #3B2828;
   padding: 0 0.5rem;
   border-radius: 1rem;
@@ -3010,7 +3011,7 @@ table.torrent_table.cats.checkboxes.border.m_table td.td_info.big_info div.group
 table.torrent_table.cats.m_table td.td_info.big_info div.group_info.clear div.tags a:hover,
 body#torrents div.box.box_tags li > a:first-child:hover {
   color: #3B2828 !important;
-  background: #BE6A57 !important;
+  background: #6c6584 !important;
   transition: all 0.15s cubic-bezier(0.25, 0.8, 0.25, 1);
   box-shadow: rgba(0, 0, 0, 0.25) 0 14px 28px, rgba(0, 0, 0, 0.22) 0 10px 10px;
 }

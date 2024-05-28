@@ -11,7 +11,7 @@
  $debug-identity: "ApolloStage"; // must include quots
  $debug-slug: "1854"; // must include quots
  $debug-deriv: "sunset";
- $debug-deriv-slug: "0650";
+ $debug-deriv-slug: "0851";
   
 // ////////////////////////////////////////////////////////////////////////////////
 // COLORS
@@ -44,16 +44,26 @@ $fore-700: #CDB6C5;
 $fore-800: #DBC8D5;
 $fore-900: #DADDEA;
 $fore-1000: #F9ECEC; //#e69f90; //#F9ECEC; 
+// 
+// $midtone-200: #3B2828;
+// $midtone-300: #4D2429;
+// $midtone-400: #602031;
+// $midtone-500: #731C3E;
+// $midtone-600: #862759;
+// $midtone-700: #993A24;
+// $midtone-800: #AB4E39;
+// $midtone-900: #BE6A57;
+// $midtone-1000:#D19689;
 
 $midtone-200: #3B2828;
 $midtone-300: #4D2429;
-$midtone-400: #602031;
-$midtone-500: #731C3E;
-$midtone-600: #862759;
-$midtone-700: #993A24;
-$midtone-800: #AB4E39;
-$midtone-900: #BE6A57;
-$midtone-1000:#D19689;
+$midtone-400: #f07c8e;
+$midtone-500: #da7c92;
+$midtone-600: #c47891;
+$midtone-700: #ab718d;
+$midtone-800: #8d6a87;
+$midtone-900: #6c6584;
+$midtone-1000: #5c6086;
 
 $ds-fiji: #b43477;
 $ds-bali: #9c4366;

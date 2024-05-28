@@ -1600,6 +1600,7 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
   font-weight: 600;
   position: absolute;
   margin-left: -9rem;
+  margin-top: -0.25rem;
 }
 
 #discog_table > div.box.center a {
@@ -2125,7 +2126,7 @@ body#collage .cats_music {
 
 #noty_bottomRight_layout_container:hover {
   box-shadow: $ds-shadow-raised-hover;
-  transform: translateY(-5px);
+  transform: translateY(-3.5px);
 }
 
 /* first row of each box */
