@@ -112,7 +112,7 @@
 /* ## 0.3 Debugging */
 /* various 'debug' features are avail in this doc */
 li#nav_upload.brackets a:before {
-  content: "1854 0612";
+  content: "1854 0648";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -121,7 +121,7 @@ li#nav_upload.brackets a:before {
 }
 
 #footer p:last-of-type:after {
-  content: "ApolloStage 1854 sunset 0612";
+  content: "ApolloStage 1854 sunset 0648";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -211,7 +211,7 @@ h5 {
 }
 
 a {
-  color: #ffb0a0;
+  color: #F9ECEC;
   text-decoration: none;
 }
 
@@ -280,7 +280,7 @@ textarea:focus {
 }
 
 svg|a {
-  fill: #ffb0a0;
+  fill: #F9ECEC;
 }
 
 svg|a:hover {
@@ -635,7 +635,7 @@ table.box2 {
 /* #2024 note: Many of these appear to be overridden by
  * global.css or auto-complete.css: your mileage may vary. */
 .autocomplete-suggestions {
-  background-color: #ffb0a0;
+  background-color: #F9ECEC;
   border: none;
   color: #26282e;
   margin-top: 4px;
@@ -1136,7 +1136,7 @@ ul.collage_images li a > span {
 
 #userform #settings_sections h2 a,
 .rule_short {
-  color: #ffb0a0;
+  color: #F9ECEC;
 }
 
 .poll li {
@@ -1728,7 +1728,7 @@ body#collage .cats_music {
 
 #menu ul li:not(#nav_staff) a,
 #userinfo a.username {
-  color: #ffb0a0;
+  color: #000;
   text-shadow: initial;
 }
 
@@ -1984,7 +1984,7 @@ body#collage .cats_music {
 /* first row of each box */
 #noty_bottomRight_layout_container .noty_message {
   background: radial-gradient(circle at top right, #ff9e98, #c47891) !important;
-  color: #ffb0a0 !important;
+  color: #000 !important;
   font-weight: 700;
   padding: 0 !important;
 }

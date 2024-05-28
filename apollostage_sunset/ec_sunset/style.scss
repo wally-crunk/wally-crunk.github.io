@@ -11,7 +11,7 @@
  $debug-identity: "ApolloStage"; // must include quots
  $debug-slug: "1854"; // must include quots
  $debug-deriv: "sunset";
- $debug-deriv-slug: "0612";
+ $debug-deriv-slug: "0648";
   
 // ////////////////////////////////////////////////////////////////////////////////
 // COLORS
@@ -43,7 +43,7 @@ $fore-600: #BCA5BE;
 $fore-700: #CDB6C5;
 $fore-800: #DBC8D5;
 $fore-900: #DADDEA;
-$fore-1000: #ffb0a0; //#e69f90; //#F9ECEC; 
+$fore-1000: #F9ECEC; //#e69f90; //#F9ECEC; 
 
 $midtone-200: #3B2828;
 $midtone-300: #4D2429;
@@ -58,7 +58,7 @@ $midtone-1000:#D19689;
 $ds-fiji: #b43477;
 $ds-bali: #9c4366;
 $ds-neutral-300: #a4a4a4;
-
+$ds-black: #000;
 
 //// Standard...
 
@@ -119,10 +119,10 @@ $color-text-important: $ds-red;
 $color-text-input: $fore-600; // for pre-populated inputs
 $color-text-input-active: $fore-900;
 $color-text-linkbox: $midtone-800; // links in linkbox
-$color-text-menu: $fore-1000;
+$color-text-menu: $ds-black; // changed
 $color-text-menu-hover: $fore-700; // during pulldown // changed
 $color-text-mono: $fore-500;
-$color-text-notification-words: $fore-1000;
+$color-text-notification-words: $ds-black; // changed
 $color-text-popup-anchor-hover: $midtone-1000;
 $color-text-popup-anchor: $fore-900;
 $color-text-popup: $fore-700;
