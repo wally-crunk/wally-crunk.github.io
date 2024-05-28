@@ -216,7 +216,7 @@ a {
 }
 
 a:hover {
-  color: #5c6086;
+  color: #5C6086;
 }
 
 a:active,
@@ -284,7 +284,7 @@ svg|a {
 }
 
 svg|a:hover {
-  fill: #5c6086;
+  fill: #5C6086;
 }
 
 b,
@@ -320,7 +320,7 @@ blockquote {
 }
 
 ::selection {
-  background-color: #8d6a87;
+  background-color: #8D6A87;
   color: #CDB6C5;
 }
 
@@ -647,7 +647,7 @@ table.box2 {
 }
 
 .autocomplete-suggestions .autocomplete-suggestion.autocomplete-selected {
-  background-color: #5c6086;
+  background-color: #5C6086;
 }
 
 .autocomplete-suggestions .autocomplete-suggestion strong {
@@ -931,7 +931,7 @@ div#flip_view_1 div#similar-artist .name {
 /* So not personal 'snatches, downloads,' etc. */
 #torrents #torrent_details .group_torrent td.edition_info,
 group ~ .group_torrent.edition {
-  background-color: #3B2828;
+  background-color: #7B4848;
 }
 
 .torrentdetails .linkbox {
@@ -965,7 +965,7 @@ group ~ .group_torrent.edition {
 }
 
 .tags a:hover {
-  color: #5c6086;
+  color: #5C6086;
 }
 
 .group_info > span:first-child,
@@ -1151,7 +1151,7 @@ ul.collage_images li a > span {
 }
 
 .poll .graph span {
-  background-color: #6c6584;
+  background-color: #6C6584;
   display: block;
   float: left;
   height: 8px;
@@ -1290,7 +1290,7 @@ ul.collage_images li a > span {
 }
 
 #userform #settings_sections h2 a:hover {
-  color: #5c6086;
+  color: #5C6086;
 }
 
 #userform #settings_sections input {
@@ -1466,7 +1466,7 @@ blockquote {
 
 /* Discog table: for rows 'Albums', 'Compilations', 'Live Albums', etc. */
 #discog_table tr[id^=torrents_] {
-  background-color: #4D2429;
+  background-color: #84464A;
 }
 
 #discog_table tr[id^=torrents_] :not(a.tooltip.brackets) strong {
@@ -1478,7 +1478,7 @@ blockquote {
 #discog_table .discog strong a,
 #discog_table td.td_info.big_info div.group_info.clear strong a {
   font-size: 115%;
-  color: #6c6584;
+  color: #6C6584;
 }
 
 /* Discog table:  for encodings, to get breathing room after the >> character */
@@ -1488,7 +1488,7 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
 
 /* BEGIN Navbox on artist page ~ "jump down".. to navigate between Album/Live Album... */
 #discog_table > div.box.center {
-  background-color: #4D2429;
+  background-color: #84464A;
   padding: 12px;
   text-align: left;
   padding-left: 11rem;
@@ -1522,14 +1522,14 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
 
 .tooltipster-default {
   background-color: #19181A;
-  border: 0 solid #8d6a87;
+  border: 0 solid #8D6A87;
   border-radius: 2.5px;
-  color: #c47891;
+  color: #C47891;
 }
 
 .tooltipster-default .tooltipster-content {
   background-color: #19181A;
-  color: #c47891;
+  color: #C47891;
   font-size: 12px;
   line-height: 1.4;
   padding: 4px 6px;
@@ -1537,13 +1537,13 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
 
 .tooltipster-default .tooltipster-content a {
   background-color: #19181A;
-  color: #8d6a87;
+  color: #8D6A87;
   font-weight: 600;
 }
 
 .alertbar,
 .tooltipster-default .tooltipster-content a:hover {
-  color: #5c6086;
+  color: #5C6086;
 }
 
 /* # 1.7 BEGIN UPLOAD CATEGORY DECORATION STRIPING */
@@ -1802,7 +1802,7 @@ body#collage .cats_music {
   }
   #menu > ul > #nav_staff > a:hover {
     background-color: transparent;
-    color: #5c6086;
+    color: #5C6086;
   }
   #userinfo_minor::before {
     background: url("https://wally-crunk.github.io/svg/gazelle/chevrons-down.svg") no-repeat;
@@ -1950,7 +1950,7 @@ body#collage .cats_music {
 }
 
 .linkbox > strong {
-  color: #8d6a87;
+  color: #8D6A87;
 }
 
 .linkbox .brackets::after,
@@ -2005,7 +2005,7 @@ body#collage .cats_music {
 
 /* buttons */
 #noty_bottomRight_layout_container .noty_buttons a {
-  color: #6c6584 !important;
+  color: #6C6584 !important;
   background-color: none;
   border: thin solid transparent; /* prevents button movement */
   border-radius: 14px;
@@ -2014,10 +2014,10 @@ body#collage .cats_music {
 }
 
 #noty_bottomRight_layout_container .noty_buttons a:hover {
-  color: #3B2828 !important;
-  background-color: #6c6584;
+  color: #7B4848 !important;
+  background-color: #6C6584;
   border-radius: 14px;
-  border: thin solid #6c6584;
+  border: thin solid #6C6584;
   transition: all 0.15s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
@@ -2047,7 +2047,7 @@ body#collage .cats_music {
 #musicbrainz_popup {
   color: #CDB6C5;
   background: #1D2424;
-  border: #8d6a87;
+  border: #8D6A87;
   padding: 1rem;
   font-weight: 600;
 }
@@ -2057,7 +2057,7 @@ body#collage .cats_music {
 }
 
 #musicbrainz_popup a:hover {
-  color: #5c6086;
+  color: #5C6086;
 }
 
 #musicbrainz_popup .brackets {
@@ -2506,8 +2506,8 @@ body#collage .cats_music {
     font-weight: 400;
     font-size: 0.55rem;
     vertical-align: baseline;
-    color: #6c6584;
-    background: #3B2828 !important;
+    color: #6C6584;
+    background: #7B4848 !important;
     padding: 0.05rem 0.5rem;
     border: none !important;
     border-radius: 1rem;
@@ -2912,14 +2912,14 @@ body#collage .cats_music {
   /* when tags are set to display in profile settings. */
   #taglist tr.label {
     height: auto;
-    border: thick solid #6c6584;
+    border: thick solid #6C6584;
   }
   #taglist tr.label td {
-    background: #3B2828;
-    color: #6c6584;
+    background: #7B4848;
+    color: #6C6584;
     align-content: center;
     text-align: center;
-    border: #6c6584;
+    border: #6C6584;
     width: 100%;
   }
   #taglist tr.label td::after {
@@ -2938,8 +2938,8 @@ body#collage .cats_music {
     text-overflow: ellipsis;
     font-style: italic;
     vertical-align: baseline;
-    color: #6c6584 !important; /*$color-obj-tag_bubble-background;*/
-    background: #3B2828;
+    color: #6C6584 !important; /*$color-obj-tag_bubble-background;*/
+    background: #7B4848;
     padding: 0.25rem;
     border-radius: 1rem;
     margin-bottom: 0.1rem;
@@ -2990,8 +2990,8 @@ body#torrents div.box.box_tags li > a:first-child {
   font-weight: 700;
   font-size: 0.6rem;
   vertical-align: baseline;
-  color: #6c6584;
-  background: #3B2828;
+  color: #6C6584;
+  background: #7B4848;
   padding: 0 0.5rem;
   border-radius: 1rem;
   margin-bottom: 0.1rem;
@@ -3010,8 +3010,8 @@ body#torrents div.box.box_tags li > a:first-child {
 table.torrent_table.cats.checkboxes.border.m_table td.td_info.big_info div.group_info.clear div.tags a:hover,
 table.torrent_table.cats.m_table td.td_info.big_info div.group_info.clear div.tags a:hover,
 body#torrents div.box.box_tags li > a:first-child:hover {
-  color: #3B2828 !important;
-  background: #6c6584 !important;
+  color: #7B4848 !important;
+  background: #6C6584 !important;
   transition: all 0.15s cubic-bezier(0.25, 0.8, 0.25, 1);
   box-shadow: rgba(0, 0, 0, 0.25) 0 14px 28px, rgba(0, 0, 0, 0.22) 0 10px 10px;
 }

@@ -44,34 +44,25 @@ $fore-700: #CDB6C5;
 $fore-800: #DBC8D5;
 $fore-900: #DADDEA;
 $fore-1000: #F9ECEC; //#e69f90; //#F9ECEC; 
-// 
-// $midtone-200: #3B2828;
-// $midtone-300: #4D2429;
-// $midtone-400: #602031;
-// $midtone-500: #731C3E;
-// $midtone-600: #862759;
-// $midtone-700: #993A24;
-// $midtone-800: #AB4E39;
-// $midtone-900: #BE6A57;
-// $midtone-1000:#D19689;
 
-$midtone-200: #3B2828;
-$midtone-300: #4D2429;
-$midtone-400: #f07c8e;
-$midtone-500: #da7c92;
-$midtone-600: #c47891;
-$midtone-700: #ab718d;
-$midtone-800: #8d6a87;
-$midtone-900: #6c6584;
-$midtone-1000: #5c6086;
+// midtones ~ reduced brightness <400 for background accents
+$midtone-100: #674242; //unused
+$midtone-200: #7B4848;
+$midtone-300: #84464A;
+$midtone-400: #D97081;
+$midtone-500: #DA7C92;
+$midtone-600: #C47891;
+$midtone-700: #AB718D;
+$midtone-800: #8D6A87;
+$midtone-900: #6C6584;
+$midtone-1000:#5C6086;
 
 $ds-fiji: #b43477;
 $ds-bali: #9c4366;
 $ds-neutral-300: #a4a4a4;
 $ds-black: #000;
 
-//// Standard...
-
+// // Standard except where marked:
 // DEFINE FROM LOGICAL LAYOUT TO TOKENS
 
 $color-background-base: $back-100;
@@ -88,7 +79,6 @@ $color-background-table: $back-200; // tables/forms without odd-even treatment
 $color-background-table-row-th: $back-500;
 $color-background-table-row-odd: $back-300;
 $color-background-table-row-even: $back-200;
-$color-background-table-secondary: orangered; // no longer used
 $color-background-table-torrenttable: $back-300; // also form field in focus
 $color-background-table-torrents-group: $back-600;
 
@@ -96,25 +86,25 @@ $color-background-torrent: $midtone-200; // edition in group-list
 $color-background-table-discog: $midtone-300; // navigation row ~ "jump down to.."
 $color-background-table-keyrows: $midtone-300; // navigation row ~ "jump up to.."
 
-$color-menu-1: $menutheme-1000; // unused (could be home)
-$color-menu-2: $menutheme-100; // torrents
-$color-menu-3: $menutheme-200; // collages
-$color-menu-4: $menutheme-300; // requests
-$color-menu-5: $menutheme-400; // forums
-$color-menu-6: $menutheme-500; // irc
-$color-menu-7: $menutheme-600; // top10
-$color-menu-8: $menutheme-700; // rules
-$color-menu-9: $menutheme-800; // wiki
-$color-menu-username: $menutheme-900; // username menu ~ closed
-$color-menu-userinfo: $menutheme-1000; // VV pulldown menu ~ closed
+$color-menu-1: $menutheme-1000; 
+$color-menu-2: $menutheme-100; 
+$color-menu-3: $menutheme-200; 
+$color-menu-4: $menutheme-300; 
+$color-menu-5: $menutheme-400; 
+$color-menu-6: $menutheme-500; 
+$color-menu-7: $menutheme-600; 
+$color-menu-8: $menutheme-700; 
+$color-menu-9: $menutheme-800; 
+$color-menu-username: $menutheme-900; 
+$color-menu-userinfo: $menutheme-1000; 
 $color-menu-hover: $menutheme-300;
-$color-menu-username-hover: $menutheme-900; // username menu ~ open
-$color-menu-userinfo-hover: $menutheme-900; // VV pulldown menu ~ open
+$color-menu-username-hover: $menutheme-900; 
+$color-menu-userinfo-hover: $menutheme-900; 
 $color-menu-fx-selection: $ds-fx-menutheme;
-$color-mobilemenu-userinfo-1: $menutheme-300; // mobile pulldown menu gradient 1
-$color-mobilemenu-userinfo-2: $menutheme-600; // mobile pulldown menu gradient 2
-$color-mobilemenu-closed: $menutheme-700; // rules, also mobile menu header
-$color-mobilemenu-shadow: $menutheme-500; //mobile menu
+$color-mobilemenu-userinfo-1: $menutheme-300; 
+$color-mobilemenu-userinfo-2: $menutheme-600; 
+$color-mobilemenu-closed: $menutheme-700; 
+$color-mobilemenu-shadow: $menutheme-500; 
 
 $color-text-anchor-hover: $midtone-1000;
 $color-text-anchor: $fore-1000;
@@ -122,7 +112,7 @@ $color-text-base: $fore-700;
 $color-text-bold: $fore-800;
 $color-text-button: $ds-gray-05;
 $color-text-footer: $ds-neutral-300;
-$color-text-heading-anchor: $fore-400; //uniqueue
+$color-text-heading-anchor: $fore-400; // changed
 $color-text-heading: $fore-700;
 $color-text-important-alt: $ds-green;
 $color-text-important: $ds-red;
