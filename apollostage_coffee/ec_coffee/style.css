@@ -718,35 +718,35 @@ table.box2 {
 }
 
 .read {
-  background: url("https://wally-crunk.github.io/svg/gazelle/document.svg") center no-repeat;
+  background: url("https://edge.opsfet.ch/svg/std/document.svg") center no-repeat;
 }
 
 .unread {
-  background: url("https://wally-crunk.github.io/svg/gazelle/document-round.svg") center no-repeat;
+  background: url("https://edge.opsfet.ch/svg/std/document-round.svg") center no-repeat;
 }
 
 .read_locked {
-  background: url("https://wally-crunk.github.io/svg/gazelle/lock.svg") center no-repeat;
+  background: url("https://edge.opsfet.ch/svg/std/lock.svg") center no-repeat;
 }
 
 .unread_locked {
-  background: url("https://wally-crunk.github.io/svg/gazelle/lock-round.svg") center no-repeat;
+  background: url("https://edge.opsfet.ch/svg/std/lock-round.svg") center no-repeat;
 }
 
 .read_sticky {
-  background: url("https://wally-crunk.github.io/svg/gazelle/pin.svg") center no-repeat;
+  background: url("https://edge.opsfet.ch/svg/std/pin.svg") center no-repeat;
 }
 
 .unread_sticky {
-  background: url("https://wally-crunk.github.io/svg/gazelle/pin-round.svg") center no-repeat;
+  background: url("https://edge.opsfet.ch/svg/std/pin-round.svg") center no-repeat;
 }
 
 .read_locked_sticky {
-  background: url("https://wally-crunk.github.io/svg/gazelle/pin-and-lock.svg") center no-repeat;
+  background: url("https://edge.opsfet.ch/svg/std/pin-and-lock.svg") center no-repeat;
 }
 
 .unread_locked_sticky {
-  background: url("https://wally-crunk.github.io/svg/gazelle/pin-and-lock-round.svg") center no-repeat;
+  background: url("https://edge.opsfet.ch/svg/std/pin-and-lock-round.svg") center no-repeat;
 }
 
 #footer,
@@ -1649,7 +1649,7 @@ body#collage .cats_music {
   }
   /* main logo during desktop view */
   #logo a {
-    background: url("https://wally-crunk.github.io/svg/orpheus/ops-logo-lockup.svg") right no-repeat;
+    background: url("https://edge.opsfet.ch/svg/site/ops-logo-lockup.svg") right no-repeat;
   }
   #logo > a {
     background-size: 200px;
@@ -1806,7 +1806,7 @@ body#collage .cats_music {
     color: #89644C;
   }
   #userinfo_minor::before {
-    background: url("https://wally-crunk.github.io/svg/gazelle/chevrons-down.svg") no-repeat;
+    background: url("https://edge.opsfet.ch/svg/std/chevrons-down.svg") no-repeat;
     filter: brightness(200%); /*force white */
     background-size: 28px;
     background-position: center;
@@ -1880,7 +1880,7 @@ body#collage .cats_music {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-image: url("https://wally-crunk.github.io/svg/gazelle/menu-000.svg");
+  background-image: url("https://edge.opsfet.ch/svg/std/menu-000.svg");
   background-size: 30px;
   background-origin: padding-box;
   background-clip: border-box;
@@ -2365,7 +2365,7 @@ body#collage .cats_music {
   .td_snatched.m_td_right::before,
   .td_seeders.m_td_right::before,
   .td_leechers.m_td_right::before {
-    background: left/10px no-repeat url("https://wally-crunk.github.io/svg/gazelle/arrow-loop.svg");
+    background: left/10px no-repeat url("https://edge.opsfet.ch/svg/std/arrow-loop.svg");
     color: #E0CDB8;
     content: ":";
     filter: brightness(80%);
@@ -2375,10 +2375,10 @@ body#collage .cats_music {
     width: 14px;
   }
   .td_seeders.m_td_right::before {
-    background-image: url("https://wally-crunk.github.io/svg/gazelle/arrow-up-round.svg");
+    background-image: url("https://edge.opsfet.ch/svg/std/arrow-up-round.svg");
   }
   .td_leechers.m_td_right::before {
-    background-image: url("https://wally-crunk.github.io/svg/gazelle/arrow-down-round.svg");
+    background-image: url("https://edge.opsfet.ch/svg/std/arrow-down-round.svg");
   }
   .m_table.checkboxes td:first-child {
     display: block;
@@ -2698,7 +2698,7 @@ body#collage .cats_music {
     opacity: 1 !important;
     width: 25px;
     height: 25px;
-    background-image: url("https://wally-crunk.github.io/svg/gazelle/chevrons-down.svg");
+    background-image: url("https://edge.opsfet.ch/svg/std/chevrons-down.svg");
     background-size: contain;
     z-index: 500;
     pointer-events: none;

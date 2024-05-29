@@ -1807,7 +1807,7 @@ body#collage .cats_music {
     color: #577AA4;
   }
   #userinfo_minor::before {
-    background: url("https://wally-crunk.github.io/svg/gazelle/chevrons-down.svg") no-repeat;
+    background: url("https://edge.opsfet.ch/svg/std/chevrons-down.svg") no-repeat;
     filter: brightness(200%); /*force white */
     background-size: 28px;
     background-position: center;
@@ -1881,7 +1881,7 @@ body#collage .cats_music {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-image: url("https://wally-crunk.github.io/svg/gazelle/menu-000.svg");
+  background-image: url("https://edge.opsfet.ch/svg/std/menu-000.svg");
   background-size: 30px;
   background-origin: padding-box;
   background-clip: border-box;
@@ -2699,7 +2699,7 @@ body#collage .cats_music {
     opacity: 1 !important;
     width: 25px;
     height: 25px;
-    background-image: url("https://wally-crunk.github.io/svg/gazelle/chevrons-down.svg");
+    background-image: url("https://edge.opsfet.ch/svg/std/chevrons-down.svg");
     background-size: contain;
     z-index: 500;
     pointer-events: none;
