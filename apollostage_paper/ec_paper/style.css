@@ -114,7 +114,7 @@
 /* ## 0.3 Debugging */
 /* various 'debug' features are avail in this doc */
 li#nav_upload.brackets a:before {
-  content: "1854 dev01.1750";
+  content: "0529.07 dev01.1750";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -123,7 +123,7 @@ li#nav_upload.brackets a:before {
 }
 
 #footer p:last-of-type:after {
-  content: "ApolloStage 1854 Paper dev01.1750";
+  content: "ApolloStage 0529.07 Paper dev01.1750";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -3142,7 +3142,7 @@ ul#check.nobullet > * {
 
 
 debug {
-  debug: "1854";
+  debug: "0529.07";
 }
 
 /* ####### */
@@ -3172,7 +3172,7 @@ h6 {
 
 debug {
   debug_1: "ApolloStage";
-  debug_2: "1854";
+  debug_2: "0529.07";
   debug_3: "Paper";
   debug_4: "dev01.1750";
 }
