@@ -208,6 +208,8 @@ $ds-shadow-raised-hover:  0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0
 // ////////////////////////////////////////////////////////////////////////////////
 // ICONS
 
+$icon-path-standard: "https://edge.opsfet.ch/svg/std";
+
 // Forum icons
 
 $icon-message-unread: url("https://edge.opsfet.ch/svg/std/document-round.svg");
@@ -228,8 +230,8 @@ $icon-menu-pulldown-mobile: url("https://edge.opsfet.ch/svg/std/chevrons-down.sv
 
 // Used in Header
 
-$logo-site-lockup: url("https://edge.opsfet.ch/svg/site/ops-logo-lockup.svg");
-$logo-site-square: url("https://edge.opsfet.ch/svg/site/ops-logo-loop.svg");
+$logo-site-lockup: url("https://wally-crunk.github.io/svg/orpheus/ops-logo-lockup.svg");
+$logo-site-square: url("https://wally-crunk.github.io/svg/orpheus/ops-logo-loop.svg");
 
 // Used on Mobile
 $icon-number-snatches: url("https://edge.opsfet.ch/svg/std/arrow-loop.svg");
