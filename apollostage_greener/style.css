@@ -113,7 +113,7 @@
 /* ## 0.3 Debugging Tools */
 /* various 'debug' features are avail in this doc elsewhere */
 li#nav_upload.brackets a:before {
-  content: "b16 1330";
+  content: "b16 1356";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -122,7 +122,7 @@ li#nav_upload.brackets a:before {
 }
 
 #footer p:last-of-type:after {
-  content: "ApolloStage b16 main 1330";
+  content: "ApolloStage b16 main 1356";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
