@@ -234,6 +234,7 @@ $color-accent-selection-text: $fore-700; // usually #fff or $color-text-bold
 // ////////////////////////////////////////////////////////////////////////////////
 // ICONS
 
+// changing to #000 black version
 $icon-message-unread: url("https://wally-crunk.github.io/svg/gazelle/document-round-000.svg");
 $icon-message-unread-locked: url("https://wally-crunk.github.io/svg/gazelle/lock-round-000.svg");
 $icon-message-unread-sticky: url("https://wally-crunk.github.io/svg/gazelle/pin-round-000.svg");
@@ -247,14 +248,13 @@ $icon-message-read-locked-sticky: url("https://wally-crunk.github.io/svg/gazelle
 // Header Pulldown Menu (hamburger/chevron icon)
 // not changing, still dark background
 
-
 // Used in Header
-
-$logo-site-lockup: url("https://wally-crunk.github.io/svg/orpheus/ops-logo-lockup-whiteusage.svg");
-$logo-site-square: url("https://wally-crunk.github.io/svg/orpheus/ops-logo-loop-whiteusage.svg");
-
+// changing to light mode version
+$logo-site-lockup: url("https://wally-crunk.github.io/svg/orpheus/ops-logo-lockup-lightmode.svg");
+$logo-site-square: url("https://wally-crunk.github.io/svg/orpheus/ops-logo-loop-lightmode.svg");
 
 // Used on Mobile
+// changing to #000 black version
 $icon-number-snatches: url("https://wally-crunk.github.io/svg/gazelle/arrow-loop-000.svg");
 $icon-number-seeders: url("https://wally-crunk.github.io/svg/gazelle/arrow-up-round-000.svg");
 $icon-number-leechers: url("https://wally-crunk.github.io/svg/gazelle/arrow-down-round-000.svg");

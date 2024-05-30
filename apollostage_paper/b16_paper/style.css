@@ -1634,7 +1634,7 @@ body#collage .cats_music {
   }
   /* main logo during desktop view */
   #logo a {
-    background: url("https://wally-crunk.github.io/svg/orpheus/ops-logo-lockup-whiteusage.svg") right no-repeat;
+    background: url("https://wally-crunk.github.io/svg/orpheus/ops-logo-lockup-lightmode.svg") right no-repeat;
   }
   #logo > a {
     background-size: 200px;
