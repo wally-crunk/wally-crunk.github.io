@@ -115,7 +115,7 @@
 /* ## 0.3 Debugging Tools */
 /* various 'debug' features are avail in this doc elsewhere */
 li#nav_upload.brackets a:before {
-  content: "b16a 0530-0849";
+  content: "b16 0930";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -124,7 +124,7 @@ li#nav_upload.brackets a:before {
 }
 
 #footer p:last-of-type:after {
-  content: "ApolloStage b16a coffee 0530-0849";
+  content: "ApolloStage b16 coffee 0930";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -3143,7 +3143,7 @@ ul#check.nobullet > * {
 
 
 debug {
-  debug: "b16a";
+  debug: "b16";
 }
 
 /* ####### */
