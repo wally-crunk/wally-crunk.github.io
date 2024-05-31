@@ -9,7 +9,7 @@
 
 // debug slugs: must be after import.
 $debug-deriv: "Paper";
-$debug-deriv-slug: "1330";
+$debug-deriv-slug: "0531.1727";
 
 // ////////////////////////////////////////////////////////////////////////////////
 // COLORS
@@ -68,18 +68,6 @@ $back-800: #8D9091;
 $back-900: #808384;
 $back-1000: #727576;
 
-// Backs
-$back-100: #EBEFF0;
-$back-200: #DEE2E2;
-$back-300: #D0D4D5;
-$back-400: #C2C6C7;
-$back-500: #B5B9BA;
-$back-600: #A7ABAC;
-$back-700: #9A9E9F;
-$back-800: #8D9091;
-$back-900: #808384;
-$back-1000: #727576;
-
 //Mids
 $mid-100: #65BC98;
 $mid-200: #55AE88;
@@ -92,6 +80,18 @@ $mid-800: #2A8760;
 $mid-900: #247D59;
 $mid-1000: #1D714D;
 
+//Menutheme ~ for base apollostage, same as mids
+ $menutheme-100: #003D2D; 
+ $menutheme-200: #004B38;
+ $menutheme-300: #005943;
+ $menutheme-400: #00674E;
+ $menutheme-500: #00745A;
+ $menutheme-600: #008265;
+ $menutheme-700: #008D6D;
+ $menutheme-800: #009777;
+ $menutheme-900: #00A280;
+ $menutheme-1000: #00AD89;
+
 //Fores
 $fore-100: #8E9FB3;
 $fore-200: #577AA4;
@@ -102,7 +102,7 @@ $fore-600: #0D3167;
 $fore-700: #123058;
 $fore-800: #162E49;
 $fore-900: #17212E;
-$fore-1000: #0D1012;
+$fore-1000: #0E0F0F;
 
 //Direct-Specialty
 
@@ -174,15 +174,15 @@ $color-text-tooltipster: $fore-400;
 $color-text-tooltipster-anchor: $fore-900;
 $color-text-tooltipster-anchor-hover: $fore-200;
 
-$color-menu-1: $mid-1000; // unused (could be home)
-$color-menu-2: $mid-100; // torrents
-$color-menu-3: $mid-200; // collages
-$color-menu-4: $mid-300; // requests
-$color-menu-5: $mid-400; // forums
-$color-menu-6: $mid-500; // irc
-$color-menu-7: $mid-600; // top10
-$color-menu-8: $mid-700; // rules
-$color-menu-9: $mid-800; // wiki
+$color-menu-1: $menutheme-1000; // unused (could be home)
+$color-menu-2: $menutheme-100; // torrents
+$color-menu-3: $menutheme-200; // collages
+$color-menu-4: $menutheme-300; // requests
+$color-menu-5: $menutheme-400; // forums
+$color-menu-6: $menutheme-500; // irc
+$color-menu-7: $menutheme-600; // top10
+$color-menu-8: $menutheme-700; // rules
+$color-menu-9: $menutheme-800; // wiki
 $color-menu-username: $mid-900; // username menu ~ closed
 $color-menu-userinfo: $mid-1000; // VV pulldown menu ~ closed
 $color-menu-hover: $mid-300;

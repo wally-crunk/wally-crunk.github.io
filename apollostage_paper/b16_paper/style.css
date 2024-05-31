@@ -116,7 +116,7 @@
 /* ## 0.3 Debugging Tools */
 /* various 'debug' features are avail in this doc elsewhere */
 li#nav_upload.brackets a:before {
-  content: "b16 1330";
+  content: "b16 0531.1727";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -125,7 +125,7 @@ li#nav_upload.brackets a:before {
 }
 
 #footer p:last-of-type:after {
-  content: "ApolloStage b16 Paper 1330";
+  content: "ApolloStage b16 Paper 0531.1727";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -215,7 +215,7 @@ h5 {
 }
 
 a {
-  color: #0D1012;
+  color: #0E0F0F;
   text-decoration: none;
 }
 
@@ -284,7 +284,7 @@ textarea:focus {
 }
 
 svg|a {
-  fill: #0D1012;
+  fill: #0E0F0F;
 }
 
 svg|a:hover {
@@ -639,7 +639,7 @@ table.box2 {
 /* #2024 note: Many of these appear to be overridden by
  * global.css or auto-complete.css: your mileage may vary. */
 .autocomplete-suggestions {
-  background-color: #0D1012;
+  background-color: #0E0F0F;
   border: none;
   color: #26282e;
   margin-top: 4px;
@@ -1140,7 +1140,7 @@ ul.collage_images li a > span {
 
 #userform #settings_sections h2 a,
 .rule_short {
-  color: #0D1012;
+  color: #0E0F0F;
 }
 
 .poll li {
@@ -1733,41 +1733,41 @@ body#collage .cats_music {
 
 #menu ul li:not(#nav_staff) a,
 #userinfo a.username {
-  color: #0D1012;
+  color: #0E0F0F;
   text-shadow: initial;
 }
 
 /* menu li:nth-child(1) = Home button; is suppressed */
 #menu li:nth-child(2) {
-  background-color: #65BC98;
+  background-color: #003D2D;
 }
 
 #menu li:nth-child(3) {
-  background-color: #55AE88;
+  background-color: #004B38;
 }
 
 #menu li:nth-child(4) {
-  background-color: #4BA67F;
+  background-color: #005943;
 }
 
 #menu li:nth-child(5) {
-  background-color: #429E77;
+  background-color: #00674E;
 }
 
 #menu li:nth-child(6) {
-  background-color: #3B9972;
+  background-color: #00745A;
 }
 
 #menu li:nth-child(7) {
-  background-color: #35956D;
+  background-color: #008265;
 }
 
 #menu li:nth-child(8) {
-  background-color: #308E67;
+  background-color: #008D6D;
 }
 
 #menu li:nth-child(9) {
-  background-color: #2A8760;
+  background-color: #009777;
 }
 
 #userinfo_username {
@@ -1989,7 +1989,7 @@ body#collage .cats_music {
 /* first row of each box */
 #noty_bottomRight_layout_container .noty_message {
   background: radial-gradient(circle at top right, #1D714D, #429E77) !important;
-  color: #0D1012 !important;
+  color: #0E0F0F !important;
   font-weight: 700;
   padding: 0 !important;
 }
@@ -3176,7 +3176,7 @@ debug {
   debug_1: "ApolloStage";
   debug_2: "b16";
   debug_3: "Paper";
-  debug_4: "1330";
+  debug_4: "0531.1727";
 }
 
 /*# sourceMappingURL=style.css.map */

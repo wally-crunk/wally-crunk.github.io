@@ -703,7 +703,7 @@ table.box2 {
 }
 
 .last_read ::before {
-  content: "➤"; /* aka ➤ */
+  content: "â¤"; /* aka â¤ */
   color: #fed100;
   display: inline-block;
 }
@@ -1001,11 +1001,11 @@ group ~ .group_torrent.edition {
 }
 
 .show_torrents > a::after {
-  content: "▶";
+  content: "â¶";
 }
 
 .hide_torrents > a::after {
-  content: "▼";
+  content: "â¼";
 }
 
 .group_torrent .edition_info {
@@ -1498,7 +1498,7 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
 #discog_table > div.box.center:before {
   color: #D5E0D9 !important;
   font-size: large !important;
-  content: "⇩ Jump to" !important;
+  content: "â© Jump to" !important;
   font-weight: 600;
   position: absolute;
   margin-left: -9rem;
@@ -1783,7 +1783,7 @@ body#collage .cats_music {
   }
   #nav_donate .tooltip::after {
     color: red;
-    content: "❤️️";
+    content: "â¤ï¸ï¸";
     font-size: 75%;
     vertical-align: top;
   }
@@ -2426,7 +2426,7 @@ body#collage .cats_music {
   }
   table#discog_table.torrent_table.grouping.cats.m_table .number_column.td_size.nobr::before,
   table#torrent_table.torrent_table.grouping.cats.m_table td.number_column.td_size.nobr::before {
-    content: "📁";
+    content: "ð";
   }
   /* END special treatment of Sizes */
   /* ## 3.9.2 BEGIN top10 */
@@ -2925,7 +2925,7 @@ body#collage .cats_music {
   }
   #taglist tr.label td::after {
     font-style: italic;
-    content: '➤Use "Hide Tags" above or Profile Settings to hide this list of tags.';
+    content: 'â¤Use "Hide Tags" above or Profile Settings to hide this list of tags.';
     border: dotted;
   }
   #taglist tr:not(.label) td {
