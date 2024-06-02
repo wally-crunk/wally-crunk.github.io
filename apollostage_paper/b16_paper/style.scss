@@ -9,7 +9,7 @@
 
 // debug slugs: must be after import.
 $debug-deriv: "Paper";
-$debug-deriv-slug: "0602.0308";
+$debug-deriv-slug: "0602.1400";
 
 // ////////////////////////////////////////////////////////////////////////////////
 // COLORS
@@ -116,6 +116,7 @@ $fore-1000: #0E0F0F;
  $ds-fx-low: rgba(0,0,0, 0.15);
  $ds-fx-mid: rgba(0,0,0, 0.25);
  $ds-gray-05: hsl(178, 100%, 5.1%);
+ $ds-gray-13: hsl(180, 11%, 13%); //goes nowhere does nothing; 
  $ds-gray-52: hsl(181, 3.5%, 52%);  
  $ds-gray-72: hsl(183, 4.0%, 72%);
  $ds-gray-99: hsl(120, 100%, 99.6%);
@@ -175,7 +176,7 @@ $color-text-tooltipster: $fore-400;
 $color-text-tooltipster-anchor: $fore-900;
 $color-text-tooltipster-anchor-hover: $fore-200;
 
-$color-menu-1: $menutheme-1000; // unused (could be home)
+$color-menu-1: orangered; // unused (could be home)
 $color-menu-2: $menutheme-100; // torrents
 $color-menu-3: $menutheme-200; // collages
 $color-menu-4: $menutheme-300; // requests
@@ -184,14 +185,14 @@ $color-menu-6: $menutheme-500; // irc
 $color-menu-7: $menutheme-600; // top10
 $color-menu-8: $menutheme-700; // rules
 $color-menu-9: $menutheme-800; // wiki
-$color-menu-username: $mid-900; // username menu ~ closed
-$color-menu-userinfo: $mid-1000; // VV pulldown menu ~ closed
-$color-menu-hover: $mid-300;
-$color-menu-username-hover: $mid-900; // username menu ~ open
-$color-menu-userinfo-hover: $mid-900; // VV pulldown menu ~ open
-$color-menu-fx-selection: $ds-fx-mid;
-$color-mobilemenu-userinfo-1: $mid-400; // mobile pulldown menu gradient 1
-$color-mobilemenu-userinfo-2: $mid-900; // mobile pulldown menu gradient 2
+$color-menu-username: $menutheme-900; // username menu ~ closed
+$color-menu-userinfo: $menutheme-1000; // VV pulldown menu ~ closed
+$color-menu-hover: $menutheme-300;
+$color-menu-username-hover: $menutheme-900; // username menu ~ open
+$color-menu-userinfo-hover: $menutheme-900; // VV pulldown menu ~ open
+$color-menu-fx-selection: $ds-fx-menutheme;
+$color-mobilemenu-userinfo-1: $menutheme-400; // mobile pulldown menu gradient 1
+$color-mobilemenu-userinfo-2: $menutheme-900; // mobile pulldown menu gradient 2
 $color-mobilemenu-closed: $mid-700; // rules, also mobile menu header
 $color-mobilemenu-shadow: $mid-500; //mobile menu
 
