@@ -115,7 +115,7 @@
 /* ## 0.3 Debugging Tools */
 /* various 'debug' features are avail in this doc elsewhere */
 li#nav_upload.brackets a:before {
-  content: "b16 0602.0316";
+  content: "b16 0602.0326";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -124,7 +124,7 @@ li#nav_upload.brackets a:before {
 }
 
 #footer p:last-of-type:after {
-  content: "ApolloStage b16 coffee 0602.0316";
+  content: "ApolloStage b16 coffee 0602.0326";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -1882,7 +1882,7 @@ body#collage .cats_music {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-image: url("https://wally-crunk.github.io/svg/std/menu-000.svg");
+  background-image: url("https://wally-crunk.github.io/svg/std/menu-ccc.svg");
   background-size: 30px;
   background-origin: padding-box;
   background-clip: border-box;
