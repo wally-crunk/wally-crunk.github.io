@@ -1649,7 +1649,7 @@ body#collage .cats_music {
   }
   /* main logo during desktop view */
   #logo a {
-    background: url("https://wally-crunk.github.io/svg/orpheus/ops-logo-lockup-darkmode-ccc.svg") right no-repeat;
+    background: url("https://wally-crunk.github.io/svg/orpheus/ops-logo-lockup-darkmode.svg") right no-repeat;
   }
   #logo > a {
     background-size: 200px;
@@ -1880,7 +1880,7 @@ body#collage .cats_music {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-image: url("https://wally-crunk.github.io/svg/std/menu-000-ccc.svg");
+  background-image: url("https://wally-crunk.github.io/svg/std/menu-000.svg");
   background-size: 30px;
   background-origin: padding-box;
   background-clip: border-box;
