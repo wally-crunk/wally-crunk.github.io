@@ -1988,7 +1988,7 @@ body#collage .cats_music {
 
 /* first row of each box */
 #noty_bottomRight_layout_container .noty_message {
-  background: radial-gradient(circle at top right, #1D714D, #429E77) !important;
+  background: radial-gradient(circle at top right, #1D714D, #308E67) !important;
   color: #0E0F0F !important;
   font-weight: 700;
   padding: 0 !important;
