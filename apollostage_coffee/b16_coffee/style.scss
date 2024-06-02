@@ -9,7 +9,7 @@
 
 // debug slugs: must be after import.
 $debug-deriv: "coffee";
-$debug-deriv-slug: "0930";
+$debug-deriv-slug: "0602.0308";
   
 // ////////////////////////////////////////////////////////////////////////////////
 // COLORS
@@ -23,16 +23,17 @@ $back-400:  #2d2928;
 $back-500:  #322e2c;
 $back-600:  #3e3837;
 
-$menutheme-1000: #3D2C29;
-$menutheme-900: #45322E;
-$menutheme-800: #4E3833;
-$menutheme-700: #563E37;
-$menutheme-600: #5F443B;
-$menutheme-500: #674A3F;
-$menutheme-400: #6F5042;
-$menutheme-300: #785746;
+//coffee runs from lighter to darker 
+$menutheme-100: #89644C;
 $menutheme-200: #805D49;
-$menutheme-100:  #89644C;
+$menutheme-300: #785746;
+$menutheme-400: #6F5042;
+$menutheme-500: #674A3F;
+$menutheme-600: #5F443B;
+$menutheme-700: #563E37;
+$menutheme-800: #4E3833;
+$menutheme-900: #45322E;
+$menutheme-1000: #3D2C29;
 
 $midtone-100: #3D2C29;
 $midtone-200: #45322E;
@@ -140,11 +141,10 @@ $color-background-notification: $ds-neutral-000;
 
 $color-obj-button-base-1: $ds-gray-62; 
 $color-obj-button-base-2: $ds-gray-92;
-$color-obj-noty-buttons-hover: $midtone-900;
 $color-obj-poll: $midtone-900; // poll active part of bargraph
 
-$color-obj-tag_bubble-background: $midtone-200; // menu-2 suggested
-$color-obj-tag_bubble-foreground: $midtone-900; // menu-9 suggested
+$color-obj-tag_bubble-background: $midtone-700; // changed
+$color-obj-tag_bubble-foreground: $fore-700; // changed 
 $color-obj-tag_bubble_snatched-background: $back-600;
 
 $color-accent-border-blockquote: $back-900; // Dotted

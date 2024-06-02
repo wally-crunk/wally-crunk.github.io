@@ -115,7 +115,7 @@
 /* ## 0.3 Debugging Tools */
 /* various 'debug' features are avail in this doc elsewhere */
 li#nav_upload.brackets a:before {
-  content: "b16 0930";
+  content: "b16 0602.0308";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -124,7 +124,7 @@ li#nav_upload.brackets a:before {
 }
 
 #footer p:last-of-type:after {
-  content: "ApolloStage b16 coffee 0930";
+  content: "ApolloStage b16 coffee 0602.0308";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -720,35 +720,35 @@ table.box2 {
 }
 
 .read {
-  background: url("https://edge.opsfet.ch/svg/std/document.svg") center no-repeat;
+  background: url("https://wally-crunk.github.io/svg/std/document.svg") center no-repeat;
 }
 
 .unread {
-  background: url("https://edge.opsfet.ch/svg/std/document-round.svg") center no-repeat;
+  background: url("https://wally-crunk.github.io/svg/std/document-round.svg") center no-repeat;
 }
 
 .read_locked {
-  background: url("https://edge.opsfet.ch/svg/std/lock.svg") center no-repeat;
+  background: url("https://wally-crunk.github.io/svg/std/lock.svg") center no-repeat;
 }
 
 .unread_locked {
-  background: url("https://edge.opsfet.ch/svg/std/lock-round.svg") center no-repeat;
+  background: url("https://wally-crunk.github.io/svg/std/lock-round.svg") center no-repeat;
 }
 
 .read_sticky {
-  background: url("https://edge.opsfet.ch/svg/std/pin.svg") center no-repeat;
+  background: url("https://wally-crunk.github.io/svg/std/pin.svg") center no-repeat;
 }
 
 .unread_sticky {
-  background: url("https://edge.opsfet.ch/svg/std/pin-round.svg") center no-repeat;
+  background: url("https://wally-crunk.github.io/svg/std/pin-round.svg") center no-repeat;
 }
 
 .read_locked_sticky {
-  background: url("https://edge.opsfet.ch/svg/std/pin-and-lock.svg") center no-repeat;
+  background: url("https://wally-crunk.github.io/svg/std/pin-and-lock.svg") center no-repeat;
 }
 
 .unread_locked_sticky {
-  background: url("https://edge.opsfet.ch/svg/std/pin-and-lock-round.svg") center no-repeat;
+  background: url("https://wally-crunk.github.io/svg/std/pin-and-lock-round.svg") center no-repeat;
 }
 
 #footer,
@@ -1808,7 +1808,7 @@ body#collage .cats_music {
     color: #89644C;
   }
   #userinfo_minor::before {
-    background: url("https://edge.opsfet.ch/svg/std/chevrons-down.svg") no-repeat;
+    background: url("https://wally-crunk.github.io/svg/std/chevrons-down.svg") no-repeat;
     filter: brightness(200%); /*force white */
     background-size: 28px;
     background-position: center;
@@ -1882,7 +1882,7 @@ body#collage .cats_music {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-image: url("https://edge.opsfet.ch/svg/std/menu-000.svg");
+  background-image: url("https://wally-crunk.github.io/svg/std/menu-000.svg");
   background-size: 30px;
   background-origin: padding-box;
   background-clip: border-box;
@@ -2008,8 +2008,8 @@ body#collage .cats_music {
 
 /* buttons */
 #noty_bottomRight_layout_container .noty_buttons a {
-  color: #805D49 !important;
   background-color: none;
+  color: #D1B89E !important;
   border: thin solid transparent; /* prevents button movement */
   border-radius: 14px;
   padding: 0 6px;
@@ -2017,10 +2017,10 @@ body#collage .cats_music {
 }
 
 #noty_bottomRight_layout_container .noty_buttons a:hover {
-  color: #45322E !important;
-  background-color: #805D49;
+  background-color: #D1B89E;
+  color: #6F5042 !important;
+  border: thin solid #6F5042;
   border-radius: 14px;
-  border: thin solid #805D49;
   transition: all 0.15s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
@@ -2367,7 +2367,7 @@ body#collage .cats_music {
   .td_snatched.m_td_right::before,
   .td_seeders.m_td_right::before,
   .td_leechers.m_td_right::before {
-    background: left/10px no-repeat url("https://edge.opsfet.ch/svg/std/arrow-loop.svg");
+    background: left/10px no-repeat url("https://wally-crunk.github.io/svg/std/arrow-loop.svg");
     color: #E0CDB8;
     content: ":";
     filter: brightness(80%);
@@ -2377,10 +2377,10 @@ body#collage .cats_music {
     width: 14px;
   }
   .td_seeders.m_td_right::before {
-    background-image: url("https://edge.opsfet.ch/svg/std/arrow-up-round.svg");
+    background-image: url("https://wally-crunk.github.io/svg/std/arrow-up-round.svg");
   }
   .td_leechers.m_td_right::before {
-    background-image: url("https://edge.opsfet.ch/svg/std/arrow-down-round.svg");
+    background-image: url("https://wally-crunk.github.io/svg/std/arrow-down-round.svg");
   }
   .m_table.checkboxes td:first-child {
     display: block;
@@ -2509,8 +2509,8 @@ body#collage .cats_music {
     font-weight: 400;
     font-size: 0.55rem;
     vertical-align: baseline;
-    color: #805D49;
-    background: #45322E !important;
+    color: #D1B89E;
+    background: #6F5042 !important;
     padding: 0.05rem 0.5rem;
     border: none !important;
     border-radius: 1rem;
@@ -2700,7 +2700,7 @@ body#collage .cats_music {
     opacity: 1 !important;
     width: 25px;
     height: 25px;
-    background-image: url("https://edge.opsfet.ch/svg/std/chevrons-down.svg");
+    background-image: url("https://wally-crunk.github.io/svg/std/chevrons-down.svg");
     background-size: contain;
     z-index: 500;
     pointer-events: none;
@@ -2915,14 +2915,14 @@ body#collage .cats_music {
   /* when tags are set to display in profile settings. */
   #taglist tr.label {
     height: auto;
-    border: thick solid #805D49;
+    border: thick solid #D1B89E;
   }
   #taglist tr.label td {
-    background: #45322E;
-    color: #805D49;
+    background: #6F5042;
+    color: #D1B89E;
     align-content: center;
     text-align: center;
-    border: #805D49;
+    border: #D1B89E;
     width: 100%;
   }
   #taglist tr.label td::after {
@@ -2941,8 +2941,8 @@ body#collage .cats_music {
     text-overflow: ellipsis;
     font-style: italic;
     vertical-align: baseline;
-    color: #805D49 !important; /*$color-obj-tag_bubble-background;*/
-    background: #45322E;
+    color: #D1B89E !important; /*$color-obj-tag_bubble-background;*/
+    background: #6F5042;
     padding: 0.25rem;
     border-radius: 1rem;
     margin-bottom: 0.1rem;
@@ -2993,8 +2993,8 @@ body#torrents div.box.box_tags li > a:first-child {
   font-weight: 700;
   font-size: 0.6rem;
   vertical-align: baseline;
-  color: #805D49;
-  background: #45322E;
+  color: #D1B89E;
+  background: #6F5042;
   padding: 0 0.5rem;
   border-radius: 1rem;
   margin-bottom: 0.1rem;
@@ -3013,8 +3013,8 @@ body#torrents div.box.box_tags li > a:first-child {
 table.torrent_table.cats.checkboxes.border.m_table td.td_info.big_info div.group_info.clear div.tags a:hover,
 table.torrent_table.cats.m_table td.td_info.big_info div.group_info.clear div.tags a:hover,
 body#torrents div.box.box_tags li > a:first-child:hover {
-  color: #45322E !important;
-  background: #805D49 !important;
+  color: #6F5042 !important;
+  background: #D1B89E !important;
   transition: all 0.15s cubic-bezier(0.25, 0.8, 0.25, 1);
   box-shadow: rgba(0, 0, 0, 0.25) 0 14px 28px, rgba(0, 0, 0, 0.22) 0 10px 10px;
 }

@@ -2160,8 +2160,8 @@ body#collage .cats_music {
 
 /* buttons */
 #noty_bottomRight_layout_container .noty_buttons a {
-  color: $color-obj-tag_bubble-foreground !important;
   background-color: none;
+  color: $color-obj-tag_bubble-foreground !important;
   border: thin solid transparent; /* prevents button movement */
   border-radius: 14px;
   padding: 0 6px;
@@ -2169,10 +2169,10 @@ body#collage .cats_music {
 }
 
 #noty_bottomRight_layout_container .noty_buttons a:hover {
-  color: $color-obj-tag_bubble-background !important;
   background-color: $color-obj-tag_bubble-foreground;
+  color: $color-obj-tag_bubble-background !important;
+  border: thin solid $color-obj-tag_bubble-background;
   border-radius: 14px;
-  border: thin solid $color-obj-noty-buttons-hover;
   transition: all 0.15s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 

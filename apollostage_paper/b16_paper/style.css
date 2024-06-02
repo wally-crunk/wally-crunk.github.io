@@ -116,7 +116,7 @@
 /* ## 0.3 Debugging Tools */
 /* various 'debug' features are avail in this doc elsewhere */
 li#nav_upload.brackets a:before {
-  content: "b16 0601.0721";
+  content: "b16 0602.0308";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -125,7 +125,7 @@ li#nav_upload.brackets a:before {
 }
 
 #footer p:last-of-type:after {
-  content: "ApolloStage b16 Paper 0601.0721";
+  content: "ApolloStage b16 Paper 0602.0308";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -721,35 +721,35 @@ table.box2 {
 }
 
 .read {
-  background: url("https://wally-crunk.github.io/svg/gazelle/document-000.svg") center no-repeat;
+  background: url("https://wally-crunk.github.io/svg/std/document-000.svg") center no-repeat;
 }
 
 .unread {
-  background: url("https://wally-crunk.github.io/svg/gazelle/document-round-000.svg") center no-repeat;
+  background: url("https://wally-crunk.github.io/svg/std/document-round-000.svg") center no-repeat;
 }
 
 .read_locked {
-  background: url("https://wally-crunk.github.io/svg/gazelle/lock-000.svg") center no-repeat;
+  background: url("https://wally-crunk.github.io/svg/std/lock-000.svg") center no-repeat;
 }
 
 .unread_locked {
-  background: url("https://wally-crunk.github.io/svg/gazelle/lock-round-000.svg") center no-repeat;
+  background: url("https://wally-crunk.github.io/svg/std/lock-round-000.svg") center no-repeat;
 }
 
 .read_sticky {
-  background: url("https://wally-crunk.github.io/svg/gazelle/pin-000.svg") center no-repeat;
+  background: url("https://wally-crunk.github.io/svg/std/pin-000.svg") center no-repeat;
 }
 
 .unread_sticky {
-  background: url("https://wally-crunk.github.io/svg/gazelle/pin-round-000.svg") center no-repeat;
+  background: url("https://wally-crunk.github.io/svg/std/pin-round-000.svg") center no-repeat;
 }
 
 .read_locked_sticky {
-  background: url("https://wally-crunk.github.io/svg/gazelle/pin-and-lock-000.svg") center no-repeat;
+  background: url("https://wally-crunk.github.io/svg/std/pin-and-lock-000.svg") center no-repeat;
 }
 
 .unread_locked_sticky {
-  background: url("https://wally-crunk.github.io/svg/gazelle/pin-and-lock-round-000.svg") center no-repeat;
+  background: url("https://wally-crunk.github.io/svg/std/pin-and-lock-round-000.svg") center no-repeat;
 }
 
 #footer,
@@ -1652,7 +1652,7 @@ body#collage .cats_music {
   }
   /* main logo during desktop view */
   #logo a {
-    background: url("https://wally-crunk.github.io/svg/orpheus/ops-logo-lockup-lightmode.svg") right no-repeat;
+    background: url("https://wally-crunk.github.io/svg/site/ops-logo-lockup-lightmode.svg") right no-repeat;
   }
   #logo > a {
     background-size: 200px;
@@ -1809,7 +1809,7 @@ body#collage .cats_music {
     color: #577AA4;
   }
   #userinfo_minor::before {
-    background: url("https://edge.opsfet.ch/svg/std/chevrons-down.svg") no-repeat;
+    background: url("https://wally-crunk.github.io/svg/std/chevrons-down.svg") no-repeat;
     filter: brightness(200%); /*force white */
     background-size: 28px;
     background-position: center;
@@ -1883,7 +1883,7 @@ body#collage .cats_music {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-image: url("https://edge.opsfet.ch/svg/std/menu-000.svg");
+  background-image: url("https://wally-crunk.github.io/svg/std/menu-000.svg");
   background-size: 30px;
   background-origin: padding-box;
   background-clip: border-box;
@@ -2009,8 +2009,8 @@ body#collage .cats_music {
 
 /* buttons */
 #noty_bottomRight_layout_container .noty_buttons a {
-  color: #247D59 !important;
   background-color: none;
+  color: #247D59 !important;
   border: thin solid transparent; /* prevents button movement */
   border-radius: 14px;
   padding: 0 6px;
@@ -2018,10 +2018,10 @@ body#collage .cats_music {
 }
 
 #noty_bottomRight_layout_container .noty_buttons a:hover {
-  color: #55AE88 !important;
   background-color: #247D59;
+  color: #55AE88 !important;
+  border: thin solid #55AE88;
   border-radius: 14px;
-  border: thin solid #247D59;
   transition: all 0.15s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
@@ -2368,7 +2368,7 @@ body#collage .cats_music {
   .td_snatched.m_td_right::before,
   .td_seeders.m_td_right::before,
   .td_leechers.m_td_right::before {
-    background: left/10px no-repeat url("https://wally-crunk.github.io/svg/gazelle/arrow-loop-000.svg");
+    background: left/10px no-repeat url("https://wally-crunk.github.io/svg/std/arrow-loop-000.svg");
     color: #162E49;
     content: ":";
     filter: brightness(80%);
@@ -2378,10 +2378,10 @@ body#collage .cats_music {
     width: 14px;
   }
   .td_seeders.m_td_right::before {
-    background-image: url("https://wally-crunk.github.io/svg/gazelle/arrow-up-round-000.svg");
+    background-image: url("https://wally-crunk.github.io/svg/std/arrow-up-round-000.svg");
   }
   .td_leechers.m_td_right::before {
-    background-image: url("https://wally-crunk.github.io/svg/gazelle/arrow-down-round-000.svg");
+    background-image: url("https://wally-crunk.github.io/svg/std/arrow-down-round-000.svg");
   }
   .m_table.checkboxes td:first-child {
     display: block;
@@ -2701,7 +2701,7 @@ body#collage .cats_music {
     opacity: 1 !important;
     width: 25px;
     height: 25px;
-    background-image: url("https://edge.opsfet.ch/svg/std/chevrons-down.svg");
+    background-image: url("https://wally-crunk.github.io/svg/std/chevrons-down.svg");
     background-size: contain;
     z-index: 500;
     pointer-events: none;
@@ -3176,7 +3176,7 @@ debug {
   debug_1: "ApolloStage";
   debug_2: "b16";
   debug_3: "Paper";
-  debug_4: "0601.0721";
+  debug_4: "0602.0308";
 }
 
 /*# sourceMappingURL=style.css.map */
