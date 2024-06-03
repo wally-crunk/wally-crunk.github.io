@@ -9,7 +9,7 @@
  $debug-identity: "ApolloStage"; // must include quots
  $debug-slug: "b16"; // must include quots
  $debug-deriv: "main"; // blank for main
- $debug-deriv-slug: "0603.2000";
+ $debug-deriv-slug: "0603.2215";
  
 // ////////////////////////////////////////////////////////////////////////////////
 // COLORS
@@ -240,8 +240,8 @@ $icon-number-seeders: url("https://wally-crunk.github.io/svg/std/arrow-up-round-
 $icon-number-leechers: url("https://wally-crunk.github.io/svg/std/arrow-down-round-ccc.svg");
 
 // Used on alerts
-$icon-alert: url("https://wally-crunk.github.io/styles/apollostage/images/notification-bell-m.svg");
-$icon-warning: url("https://wally-crunk.github.io/styles/apollostage/images/harp-000.svg"); // or X
+$icon-notification: url("https://wally-crunk.github.io/styles/apollostage/images/notification-bell-m.svg");
+$icon-warning: url("https://wally-crunk.github.io/styles/apollostage/images/orpheus-harp-000.svg"); // or X
 
 // EOF
 // ////////////////////////////////////////////////////////////////////////////////

@@ -9,7 +9,7 @@
 
 // debug slugs: must be after import.
 $debug-deriv: "Paper";
-$debug-deriv-slug: "0602.1400";
+$debug-deriv-slug: "0602.1422";
 
 // ////////////////////////////////////////////////////////////////////////////////
 // COLORS
@@ -92,6 +92,8 @@ $mid-1000: #1D714D;
  $menutheme-900: #00A280;
  $menutheme-1000: #00AD89;
 
+
+
 //Fores
 $fore-100: #8E9FB3;
 $fore-200: #577AA4;
@@ -103,6 +105,32 @@ $fore-700: #123058;
 $fore-800: #162E49;
 $fore-900: #17212E;
 $fore-1000: #0E0F0F;
+
+//Neutrals (Ink)
+$neutral-000: #FFFFFF
+$neutral-100: #F7F8F9
+$neutral-200: #F1F2F4
+$neutral-300: #DCDFE4
+$neutral-400: #B3B9C4
+$neutral-500: #8590A2
+$neutral-600: #758195
+$neutral-700: #626F86
+$neutral-800: #44546F
+$neutral-900: #2C3E5D
+$neutral-1000: #172B4D
+$neutral-1100: #091E42
+
+//Blues
+$blue-#E9F2FF
+$blue-#CCE0FF
+$blue-#85B8FF
+$blue-#579DFF
+$blue-#388BFF
+$blue-#1D7AFC
+$blue-#0C66E4
+$blue-#0055CC
+$blue-#09326C
+$blue-#1C2B41
 
 //Direct-Specialty
 
@@ -145,26 +173,26 @@ $color-background-table-torrenttable: $back-300; // also form field in focus
 $color-background-table-torrents-group: $back-600;
 $color-background-torrent: $mid-200; // edition in group-list
 
-$color-text-anchor-hover: $fore-200;
-$color-text-anchor: $fore-1000;
-$color-text-base: $fore-700;
-$color-text-bold: $fore-800;
+$color-text-anchor-hover: $blue-800;
+$color-text-anchor: $blue-700;
+$color-text-base: $neutral-1000;
+$color-text-bold: $neutral-1100;
 $color-text-button: $ds-gray-05;  //xx checkme
 $color-text-footer: $ds-neutral-300;
-$color-text-heading-anchor: $fore-300; //x
+$color-text-heading-anchor: $blue-700; //x
 $color-text-heading: $fore-700;
 $color-text-important-alt: $ds-green;
 $color-text-important: $ds-red;
 $color-text-input: $fore-600; // for pre-populated inputs
 $color-text-input-active: $fore-900;
-$color-text-linkbox: $color-text-heading-anchor; // links in linkbox
+$color-text-linkbox: $blue-900; // links in linkbox
 $color-text-menu: $ds-gray-99; // new
 $color-text-menu-hover: $ds-gray-05; //new // during pulldown
 $color-text-mono: $fore-500;
-$color-text-notification-words: $fore-1000;
-$color-text-popup-anchor-hover: $mid-1000;
-$color-text-popup-anchor: $fore-900;
-$color-text-popup: $fore-700;
+$color-text-notification-words: $neutral-1000;
+$color-text-popup-anchor-hover: $blue-800;
+$color-text-popup-anchor: $blue-700;
+$color-text-popup: $neutral-1000;
 $color-text-ratio-greenzone: $ds-green;
 $color-text-ratio-redzone: $ds-red;
 $color-text-ratio-yellowzone: $ds-yellow;

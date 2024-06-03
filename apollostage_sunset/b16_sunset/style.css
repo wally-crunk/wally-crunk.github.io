@@ -2,7 +2,7 @@
 /* APOLLOSTAGE SUNSET THEME */
 /* ######################################################################## */
 /* APOLLOSTAGE THEME */
-/* version 2024.05.30
+/* version 2024.06.03
 /* ######################################################################## */
 /* ######################################################################## */
 /* CHANGELOG */
@@ -87,7 +87,9 @@
 /* ### 4.2.4  Other special cases
 /* ### 4.2.5  Snatched torrent indicators (BETA)
 /* ## 4.3 I-Devices Telephone Number Prevention */
-/* ## 4.4 Upload warnings (BETA)*/
+/* ## 4.4 Pop-up Warnings and Alerts ## */
+/* ### 4.4.1 Upload warnings ## */
+/* ### 4.4.2 Alertbar */
 /* */
 /* */
 /* ######################################################################## */
@@ -3099,7 +3101,9 @@ tr.snatched_torrent div.tags:before {
 
 /* */
 /* */
-/* ## 4.4 Upload warnings ## */
+/* ## 4.4 Pop-up Warnings and Alerts ## */
+/* #### see also 1.10 Notifications */
+/* ### 4.4.1 Upload warnings ## */
 div.upload-error:after,
 ul#check:after {
   content: "Warning!  There were one or more errors in your submission. Check below for error messages.";
@@ -3114,7 +3118,7 @@ ul#check:after {
   border-radius: 0.25rem;
   padding: 1rem 1rem 1rem 48px;
   background: hsl(183, 2.5%, 92%);
-  background-image: url("https://wally-crunk.github.io/styles/apollostage/images/harp-000.svg");
+  background-image: url("https://wally-crunk.github.io/styles/apollostage/images/orpheus-harp-000.svg");
   background-repeat: no-repeat;
   background-position: 8px center;
   background-size: 32px;
@@ -3126,7 +3130,7 @@ ul#check.nobullet > * {
   border: thick solid #daa520;
   padding: 1rem 1rem 1rem 48px;
   background: hsl(183, 2.5%, 92%);
-  background-image: url("https://wally-crunk.github.io/styles/apollostage/images/harp-000.svg");
+  background-image: url("https://wally-crunk.github.io/styles/apollostage/images/orpheus-harp-000.svg");
   background-repeat: no-repeat;
   background-position: 8px center;
   background-size: 32px;
@@ -3140,6 +3144,10 @@ ul#check.nobullet > * {
   font-weight: 700;
 }
 
+/* */
+/* */
+/* ### 4.4.2 Alertbar */
+/* ## alertbar occurs when User Settings: Notifications: "Traditional" is selected. */
 .alertbar {
   border: thick solid #157D63;
   padding: 1rem 1rem 1rem 48px;
@@ -3153,10 +3161,10 @@ ul#check.nobullet > * {
   font-weight: 700;
 }
 
-
 debug {
   debug: "b16";
 }
+
 
 /* ####### */
 /* # EOF # */

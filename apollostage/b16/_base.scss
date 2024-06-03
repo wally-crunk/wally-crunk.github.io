@@ -1,6 +1,6 @@
 /* ######################################################################## */
 /* APOLLOSTAGE THEME */
-/* version 2024.05.30
+/* version 2024.06.03
 /* ######################################################################## */
 
 // SASS/SCSS NOTE
@@ -162,7 +162,9 @@
 /* ### 4.2.4  Other special cases
 /* ### 4.2.5  Snatched torrent indicators (BETA)
 /* ## 4.3 I-Devices Telephone Number Prevention */
-/* ## 4.4 Upload warnings (BETA)*/
+/* ## 4.4 Pop-up Warnings and Alerts ## */
+/* ### 4.4.1 Upload warnings ## */
+/* ### 4.4.2 Alertbar */
 
 /* */
 /* */
@@ -3475,7 +3477,10 @@ tr.snatched_torrent div.tags:before {
 /* */
 /* */
 
-/* ## 4.4 Upload warnings ## */
+/* ## 4.4 Pop-up Warnings and Alerts ## */
+/* #### see also 1.10 Notifications */
+
+/* ### 4.4.1 Upload warnings ## */
 
 div.upload-error:after,
 ul#check:after {
@@ -3519,26 +3524,32 @@ ul#check.nobullet > *
   font-weight: 700;
 }
 
+/* */
+/* */
+
+/* ### 4.4.2 Alertbar */
+
+/* ## alertbar occurs when User Settings: Notifications: "Traditional" is selected. */
+
 .alertbar {
   border: thick solid $color-accent-border-alert;
   padding: 1rem 1rem 1rem 48px;
   background: $color-background-alert;
-  background-image: $icon-alert;
+  background-image: $icon-notification;
   background-repeat: no-repeat;
   background-position: 8px center;
   background-size: 32px;
   color: $color-text-alert !important;
   font-size: 12px;
   font-weight: 700;
-
 }
 
-/*# sourceMappingURL=styles.css.map */
+// debugging ~ assist only
 
-// tracer only
 debug { debug: $debug-slug }
+
+/*# sourceMappingURL=styles.css.map */
 
 /* ####### */
 /* # EOF # */
 /* ####### */
-
