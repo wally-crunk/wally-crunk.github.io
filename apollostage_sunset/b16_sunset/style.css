@@ -3140,6 +3140,19 @@ ul#check.nobullet > * {
   font-weight: 700;
 }
 
+.alertbar {
+  border: thick solid #157D63;
+  padding: 1rem 1rem 1rem 48px;
+  background: hsl(183, 2.5%, 92%);
+  background-image: url("https://wally-crunk.github.io/styles/apollostage/images/notification-bell.svg");
+  background-repeat: no-repeat;
+  background-position: 8px center;
+  background-size: 32px;
+  color: #000 !important;
+  font-size: 12px;
+  font-weight: 700;
+}
+
 
 debug {
   debug: "b16";
