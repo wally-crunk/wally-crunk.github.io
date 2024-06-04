@@ -195,7 +195,7 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-  color: -#0055CC;
+  color: #0055CC;
 }
 
 h1,
@@ -217,12 +217,12 @@ h5 {
 }
 
 a {
-  color: -#0055CC;
+  color: #0055CC;
   text-decoration: none;
 }
 
 a:hover {
-  color: -#09326C;
+  color: #09326C;
 }
 
 a:active,
@@ -286,11 +286,11 @@ textarea:focus {
 }
 
 svg|a {
-  fill: -#0055CC;
+  fill: #0055CC;
 }
 
 svg|a:hover {
-  fill: -#09326C;
+  fill: #09326C;
 }
 
 b,
@@ -641,7 +641,7 @@ table.box2 {
 /* #2024 note: Many of these appear to be overridden by
  * global.css or auto-complete.css: your mileage may vary. */
 .autocomplete-suggestions {
-  background-color: -#0055CC;
+  background-color: #0055CC;
   border: none;
   color: #26282e;
   margin-top: 4px;
@@ -653,7 +653,7 @@ table.box2 {
 }
 
 .autocomplete-suggestions .autocomplete-suggestion.autocomplete-selected {
-  background-color: -#09326C;
+  background-color: #09326C;
 }
 
 .autocomplete-suggestions .autocomplete-suggestion strong {
@@ -971,7 +971,7 @@ group ~ .group_torrent.edition {
 }
 
 .tags a:hover {
-  color: -#09326C;
+  color: #09326C;
 }
 
 .group_info > span:first-child,
@@ -1142,7 +1142,7 @@ ul.collage_images li a > span {
 
 #userform #settings_sections h2 a,
 .rule_short {
-  color: -#0055CC;
+  color: #0055CC;
 }
 
 .poll li {
@@ -1296,7 +1296,7 @@ ul.collage_images li a > span {
 }
 
 #userform #settings_sections h2 a:hover {
-  color: -#09326C;
+  color: #09326C;
 }
 
 #userform #settings_sections input {
@@ -1808,7 +1808,7 @@ body#collage .cats_music {
   }
   #menu > ul > #nav_staff > a:hover {
     background-color: transparent;
-    color: -#09326C;
+    color: #09326C;
   }
   #userinfo_minor::before {
     background: url("https://wally-crunk.github.io/svg/std/chevrons-down-ccc.svg") no-repeat;
@@ -1956,7 +1956,7 @@ body#collage .cats_music {
 }
 
 .linkbox > strong {
-  color: -#1C2B41;
+  color: #1C2B41;
 }
 
 .linkbox .brackets::after,
@@ -2059,11 +2059,11 @@ body#collage .cats_music {
 }
 
 #musicbrainz_popup a {
-  color: -#0055CC;
+  color: #0055CC;
 }
 
 #musicbrainz_popup a:hover {
-  color: -#09326C;
+  color: #09326C;
 }
 
 #musicbrainz_popup .brackets {
