@@ -118,7 +118,7 @@
 /* ## 0.3 Debugging Tools */
 /* various 'debug' features are avail in this doc elsewhere */
 li#nav_upload.brackets a:before {
-  content: "b16 0602.1422";
+  content: "b16 0603.0215";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -127,7 +127,7 @@ li#nav_upload.brackets a:before {
 }
 
 #footer p:last-of-type:after {
-  content: "ApolloStage b16 Paper 0602.1422";
+  content: "ApolloStage b16 Paper 0603.0215";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -1370,7 +1370,7 @@ ul.collage_images li a > span {
 }
 
 span[style*="color: green"] {
-  color: hsl(145, 90%, 40%) !important;
+  color: hsl(145, 90%, 35%) !important;
 }
 
 span[style*="color: red"] {
@@ -3197,7 +3197,7 @@ debug {
   debug_1: "ApolloStage";
   debug_2: "b16";
   debug_3: "Paper";
-  debug_4: "0602.1422";
+  debug_4: "0603.0215";
 }
 
 /*# sourceMappingURL=style.css.map */
