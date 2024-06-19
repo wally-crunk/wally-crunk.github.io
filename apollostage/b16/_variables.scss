@@ -7,7 +7,7 @@
 // SLUG
 
  $debug-identity: "ApolloStage"; // must include quots
- $debug-slug: "b16 [0619-0324]"; // must include quots
+ $debug-slug: "b16 [0619-0336]"; // must include quots
  $debug-deriv: "main"; // blank for main
  $debug-deriv-slug: ""; // blank for main
  
@@ -43,7 +43,9 @@
  $midtone-900: #20C098;
  $midtone-1000: #23D1A5;
  
-//Menutheme ~ for base apollostage, same as mids
+//Menutheme
+//can be same as "midtone" above.
+
  $menutheme-100: #003D2D; 
  $menutheme-200: #004B38;
  $menutheme-300: #005943;
@@ -108,7 +110,7 @@ $color-background-torrent: $midtone-200; // edition in group-list
 $color-background-table-discog: $midtone-300; // navigation row ~ "jump down to.."
 $color-background-table-keyrows: $midtone-300; // navigation row ~ "jump up to.."
 
-$color-menu-1: orangered; // unused (could be home)
+$color-menu-1: orangered; // UNUSED (could be home)
 $color-menu-2: $menutheme-100; // torrents
 $color-menu-3: $menutheme-200; // collages
 $color-menu-4: $menutheme-300; // requests
@@ -200,8 +202,8 @@ $color-accent-cats_comics: gold;
 $color-accent-cats_ebooks: chocolate;
 $color-accent-cats_elearningvideos: mediumpurple;
 $color-accent-cats_music: darkslategray;
-$color-accent-forum-inline-last-read: #fed100;
-$color-accent-forum-unread: #fed100;
+$color-accent-forum-inline-last-read: #fed100; // arrow ➤
+$color-accent-forum-unread: #fed100; 
 
 $color-accent-selection-background: $midtone-800;
 $color-accent-selection-text: $fore-700; // usually #fff or $color-text-bold

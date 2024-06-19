@@ -8,7 +8,7 @@
 /* ######################################################################## */
 /* */
 /* */
-/*  # 2024-05-30 - Updated by rubric_alert with hawkeye and community feedback. */
+/*  # 2024-06-30 - Updated with community feedback. */
 /*  # Fix: mobile menu, category stripes;  
 /*  # Feature: Add SVGs, tag bubbles, italic fonts and more;
 /*  # Feature: Added new light mode theme;
@@ -115,7 +115,7 @@
 /* ## 0.3 Debugging Tools */
 /* various 'debug' features are avail in this doc elsewhere */
 li#nav_upload.brackets a:before {
-  content: "b16 [0619-0324] ";
+  content: "b16 [0619-0336] ";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -124,7 +124,7 @@ li#nav_upload.brackets a:before {
 }
 
 #footer p:last-of-type:after {
-  content: "ApolloStage b16 [0619-0324] main ";
+  content: "ApolloStage b16 [0619-0336] main ";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -3166,7 +3166,7 @@ ul#check.nobullet > * {
 }
 
 debug {
-  debug: "b16 [0619-0324]";
+  debug: "b16 [0619-0336]";
 }
 
 
