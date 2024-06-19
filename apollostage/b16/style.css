@@ -115,7 +115,7 @@
 /* ## 0.3 Debugging Tools */
 /* various 'debug' features are avail in this doc elsewhere */
 li#nav_upload.brackets a:before {
-  content: "b16 [0619-1400] ";
+  content: "b16 [0619-1444] ";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -124,7 +124,7 @@ li#nav_upload.brackets a:before {
 }
 
 #footer p:last-of-type:after {
-  content: "ApolloStage b16 [0619-1400] main ";
+  content: "ApolloStage b16 [0619-1444] main ";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -3166,7 +3166,7 @@ ul#check.nobullet > * {
 }
 
 debug {
-  debug: "b16 [0619-1400]";
+  debug: "b16 [0619-1444]";
 }
 
 

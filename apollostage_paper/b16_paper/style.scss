@@ -9,7 +9,7 @@
 
 // debug slugs: must be after import.
 $debug-deriv: "Paper";
-$debug-deriv-slug: "[0619-1436]";
+$debug-deriv-slug: "[0619-1430]";
 
 // ////////////////////////////////////////////////////////////////////////////////
 // COLORS
@@ -235,12 +235,6 @@ $color-obj-tag_bubble-background: $mid-200; // menu-2 suggested
 $color-obj-tag_bubble-foreground: $mid-900; // menu-9 suggested
 $color-obj-tag_bubble_snatched-background: $back-600;
 
-// alerts (light mode style)
-$color-accent-border-alert: $midtone-500;
-$color-background-alert: $ds-gray-92;
-$color-text-alert: $ds-black;
-$color-anchor-alert: $ds-gray-05;
-
 $color-accent-border-blockquote: $back-900; // Dotted
 $color-accent-border-box: $back-900;
 $color-accent-border-input: $ds-fx-low;
@@ -264,6 +258,12 @@ $color-accent-forum-unread: $ds-yellow;
 
 $color-accent-selection-background: $mid-800;
 $color-accent-selection-text: $fore-700; // usually #fff or $color-text-bold
+
+// alerts (light mode style)
+$color-accent-border-alert: $midtone-500;
+$color-background-alert: $ds-gray-92;
+$color-text-alert: $ds-black;
+$color-anchor-alert: $ds-gray-05;
 
 // ////////////////////////////////////////////////////////////////////////////////
 // ICONS
