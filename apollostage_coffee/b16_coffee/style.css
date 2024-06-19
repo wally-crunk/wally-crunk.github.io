@@ -3162,6 +3162,10 @@ ul#check.nobullet > * {
   font-weight: 700;
 }
 
+.alertbar a {
+  color: hsl(178, 2.5%, 5%) !important;
+}
+
 debug {
   debug: "b16";
 }

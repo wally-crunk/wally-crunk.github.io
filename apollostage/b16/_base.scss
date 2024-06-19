@@ -3543,6 +3543,9 @@ ul#check.nobullet > *
   font-size: 12px;
   font-weight: 700;
 }
+.alertbar a {
+  color: $color-anchor-alert !important;
+}
 
 // debugging ~ assist only
 
