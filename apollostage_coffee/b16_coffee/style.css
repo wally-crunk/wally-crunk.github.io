@@ -117,7 +117,7 @@
 /* ## 0.3 Debugging Tools */
 /* various 'debug' features are avail in this doc elsewhere */
 li#nav_upload.brackets a:before {
-  content: "b16 [0619-0336] 0602.0326";
+  content: "b16 [0619-1400] [0619-1411]";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -126,7 +126,7 @@ li#nav_upload.brackets a:before {
 }
 
 #footer p:last-of-type:after {
-  content: "ApolloStage b16 [0619-0336] coffee 0602.0326";
+  content: "ApolloStage b16 [0619-1400] coffee [0619-1411]";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -3151,24 +3151,24 @@ ul#check.nobullet > * {
 /* ### 4.4.2 Alertbar */
 /* ## alertbar occurs when User Settings: Notifications: "Traditional" is selected. */
 .alertbar {
-  border: thick solid #157D63;
+  border: thick solid #5F443B;
   padding: 1rem 1rem 1rem 48px;
-  background: hsl(183, 2.5%, 92%);
+  background: #3D2C29;
   background-image: url("https://wally-crunk.github.io/styles/apollostage/images/notification-bell-m.svg");
   background-repeat: no-repeat;
   background-position: 8px center;
   background-size: 32px;
-  color: #000 !important;
+  color: #D1B89E !important;
   font-size: 12px;
   font-weight: 700;
 }
 
 .alertbar a {
-  color: hsl(178, 2.5%, 5%) !important;
+  color: #FFFCF6 !important;
 }
 
 debug {
-  debug: "b16 [0619-0336]";
+  debug: "b16 [0619-1400]";
 }
 
 

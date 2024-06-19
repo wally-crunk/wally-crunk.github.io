@@ -7,7 +7,7 @@
 // SLUG
 
  $debug-identity: "ApolloStage"; // must include quots
- $debug-slug: "b16 [0619-0336]"; // must include quots
+ $debug-slug: "b16 [0619-1400]"; // must include quots
  $debug-deriv: "main"; // blank for main
  $debug-deriv-slug: ""; // blank for main
  
@@ -181,9 +181,9 @@ $color-background-error: $ds-gray-92;
 $color-text-error: $ds-black;
 
 $color-accent-border-alert: $midtone-500;
-$color-background-alert: $ds-gray-92;
-$color-text-alert: $ds-black;
-$color-anchor-alert: $ds-gray-05;
+$color-background-alert: $midtone-100;
+$color-text-alert: $fore-700;
+$color-anchor-alert: $fore-1000;
 
 $color-accent-border-blockquote: $back-900; // Dotted
 $color-accent-border-box: $back-900;

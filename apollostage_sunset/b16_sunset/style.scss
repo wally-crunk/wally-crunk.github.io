@@ -10,7 +10,7 @@
 
 // debug slugs: must be after import.
 $debug-deriv: "Sunset";
-$debug-deriv-slug: "0602.0308";
+$debug-deriv-slug: "[0619-1411]";
 
   
 // ////////////////////////////////////////////////////////////////////////////////
@@ -149,6 +149,12 @@ $color-obj-poll: $midtone-900; // poll active part of bargraph
 $color-obj-tag_bubble-background: $midtone-200; // menu-2 suggested
 $color-obj-tag_bubble-foreground: $midtone-900; // menu-9 suggested
 $color-obj-tag_bubble_snatched-background: $back-600;
+
+// alerts
+$color-accent-border-alert: $midtone-500;
+$color-background-alert: $midtone-100;
+$color-text-alert: $fore-700;
+$color-anchor-alert: $fore-1000;
 
 $color-accent-border-blockquote: $back-900; // Dotted
 $color-accent-border-box: $back-900;

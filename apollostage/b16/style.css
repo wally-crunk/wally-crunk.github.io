@@ -115,7 +115,7 @@
 /* ## 0.3 Debugging Tools */
 /* various 'debug' features are avail in this doc elsewhere */
 li#nav_upload.brackets a:before {
-  content: "b16 [0619-0336] ";
+  content: "b16 [0619-1400] ";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -124,7 +124,7 @@ li#nav_upload.brackets a:before {
 }
 
 #footer p:last-of-type:after {
-  content: "ApolloStage b16 [0619-0336] main ";
+  content: "ApolloStage b16 [0619-1400] main ";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -3151,22 +3151,22 @@ ul#check.nobullet > * {
 .alertbar {
   border: thick solid #157D63;
   padding: 1rem 1rem 1rem 48px;
-  background: hsl(183, 2.5%, 92%);
+  background: #093A2E;
   background-image: url("https://wally-crunk.github.io/styles/apollostage/images/notification-bell-m.svg");
   background-repeat: no-repeat;
   background-position: 8px center;
   background-size: 32px;
-  color: #000 !important;
+  color: #C6D2C8 !important;
   font-size: 12px;
   font-weight: 700;
 }
 
 .alertbar a {
-  color: hsl(178, 2.5%, 5%) !important;
+  color: #FDFFFD !important;
 }
 
 debug {
-  debug: "b16 [0619-0336]";
+  debug: "b16 [0619-1400]";
 }
 
 

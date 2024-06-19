@@ -9,7 +9,7 @@
 
 // debug slugs: must be after import.
 $debug-deriv: "coffee";
-$debug-deriv-slug: "0602.0326";
+$debug-deriv-slug: "[0619-1411]";
   
 // ////////////////////////////////////////////////////////////////////////////////
 // COLORS
@@ -146,6 +146,12 @@ $color-obj-poll: $midtone-900; // poll active part of bargraph
 $color-obj-tag_bubble-background: $midtone-700; // changed
 $color-obj-tag_bubble-foreground: $fore-600; // changed 
 $color-obj-tag_bubble_snatched-background: $back-600;
+
+// alerts
+$color-accent-border-alert: $midtone-500;
+$color-background-alert: $midtone-100;
+$color-text-alert: $fore-700;
+$color-anchor-alert: $fore-1000;
 
 $color-accent-border-blockquote: $back-900; // Dotted
 $color-accent-border-box: $back-900;
