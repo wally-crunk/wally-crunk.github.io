@@ -117,7 +117,7 @@
 /* ## 0.3 Debugging Tools */
 /* various 'debug' features are avail in this doc elsewhere */
 li#nav_upload.brackets a:before {
-  content: "b16 [0619-1400] [0619-1430]";
+  content: "b16 [0619-1400] [0619-1436]";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -126,7 +126,7 @@ li#nav_upload.brackets a:before {
 }
 
 #footer p:last-of-type:after {
-  content: "ApolloStage b16 [0619-1400] coffee [0619-1430]";
+  content: "ApolloStage b16 [0619-1400] coffee [0619-1436]";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -3154,7 +3154,7 @@ ul#check.nobullet > * {
   border: thick solid #5F443B;
   padding: 1rem 1rem 1rem 48px;
   background: #3D2C29;
-  background-image: url("https://wally-crunk.github.io/styles/apollostage/images/notification-bell-cccxeee.svg");
+  background-image: url("https://wally-crunk.github.io/styles/apollostage/images/notification-bell-333xccc.svg");
   background-repeat: no-repeat;
   background-position: 8px center;
   background-size: 32px;
