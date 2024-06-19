@@ -9,7 +9,7 @@
 
 // debug slugs: must be after import.
 $debug-deriv: "Paper";
-$debug-deriv-slug: "[0619-1430]";
+$debug-deriv-slug: "[0619-1444]";
 
 // ////////////////////////////////////////////////////////////////////////////////
 // COLORS
@@ -257,7 +257,7 @@ $color-accent-forum-inline-last-read: $ds-yellow;
 $color-accent-forum-unread: $ds-yellow;
 
 $color-accent-selection-background: $mid-800;
-$color-accent-selection-text: $fore-700; // usually #fff or $color-text-bold
+$color-accent-selection-text: #fff; // usually #fff or $color-text-bold
 
 // alerts (light mode style)
 $color-accent-border-alert: $midtone-500;
