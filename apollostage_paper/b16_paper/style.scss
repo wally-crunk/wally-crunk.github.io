@@ -9,7 +9,7 @@
 
 // debug slugs: must be after import.
 $debug-deriv: "Paper";
-$debug-deriv-slug: "[0619-1415]";
+$debug-deriv-slug: "[0619-1430]";
 
 // ////////////////////////////////////////////////////////////////////////////////
 // COLORS
@@ -278,6 +278,8 @@ $icon-message-read: url("https://wally-crunk.github.io/svg/std/document-000.svg"
 $icon-message-read-locked: url("https://wally-crunk.github.io/svg/std/lock-000.svg");
 $icon-message-read-sticky: url("https://wally-crunk.github.io/svg/std/pin-000.svg");
 $icon-message-read-locked-sticky: url("https://wally-crunk.github.io/svg/std/pin-and-lock-000.svg");
+
+$icon-notification: url("https://wally-crunk.github.io/styles/apollostage/images/notification-bell-000xeee.svg");
 
 // Header Pulldown Menu (hamburger/chevron icon)
 // not changing, still dark background
