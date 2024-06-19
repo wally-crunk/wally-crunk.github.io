@@ -2,7 +2,7 @@
 /* APOLLOSTAGE SUNSET THEME */
 /* ######################################################################## */
 /* APOLLOSTAGE THEME */
-/* version 2024.06.03
+/* version 2024.06.18
 /* ######################################################################## */
 /* ######################################################################## */
 /* CHANGELOG */
@@ -116,7 +116,7 @@
 /* ## 0.3 Debugging Tools */
 /* various 'debug' features are avail in this doc elsewhere */
 li#nav_upload.brackets a:before {
-  content: "b16-0618-2313 0602.0308";
+  content: "b16 [0619-0324] 0602.0308";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -125,7 +125,7 @@ li#nav_upload.brackets a:before {
 }
 
 #footer p:last-of-type:after {
-  content: "ApolloStage b16-0618-2313 Sunset 0602.0308";
+  content: "ApolloStage b16 [0619-0324] Sunset 0602.0308";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -1992,11 +1992,12 @@ body#collage .cats_music {
   color: #000 !important;
   font-weight: 700;
   padding: 0 !important;
+  line-height: 2.2rem !important;
 }
 
 /* first row words */
 #noty_bottomRight_layout_container .noty_message .noty_text {
-  line-height: 34px;
+  line-height: 1.04rem;
   padding: 0 8px;
 }
 
@@ -3166,7 +3167,7 @@ ul#check.nobullet > * {
 }
 
 debug {
-  debug: "b16-0618-2313";
+  debug: "b16 [0619-0324]";
 }
 
 

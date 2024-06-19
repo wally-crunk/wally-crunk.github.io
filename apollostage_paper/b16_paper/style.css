@@ -3,7 +3,7 @@
 /* 2024-05-24 */
 /* ######################################################################## */
 /* APOLLOSTAGE THEME */
-/* version 2024.06.03
+/* version 2024.06.18
 /* ######################################################################## */
 /* ######################################################################## */
 /* CHANGELOG */
@@ -118,7 +118,7 @@
 /* ## 0.3 Debugging Tools */
 /* various 'debug' features are avail in this doc elsewhere */
 li#nav_upload.brackets a:before {
-  content: "b16-0618-2313 0603.0215";
+  content: "b16 [0619-0324] 0603.0215";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -127,7 +127,7 @@ li#nav_upload.brackets a:before {
 }
 
 #footer p:last-of-type:after {
-  content: "ApolloStage b16-0618-2313 Paper 0603.0215";
+  content: "ApolloStage b16 [0619-0324] Paper 0603.0215";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -1994,11 +1994,12 @@ body#collage .cats_music {
   color: #172B4D !important;
   font-weight: 700;
   padding: 0 !important;
+  line-height: 2.2rem !important;
 }
 
 /* first row words */
 #noty_bottomRight_layout_container .noty_message .noty_text {
-  line-height: 34px;
+  line-height: 1.04rem;
   padding: 0 8px;
 }
 
@@ -3168,7 +3169,7 @@ ul#check.nobullet > * {
 }
 
 debug {
-  debug: "b16-0618-2313";
+  debug: "b16 [0619-0324]";
 }
 
 
@@ -3199,7 +3200,7 @@ h6 {
 
 debug {
   debug_1: "ApolloStage";
-  debug_2: "b16-0618-2313";
+  debug_2: "b16 [0619-0324]";
   debug_3: "Paper";
   debug_4: "0603.0215";
 }

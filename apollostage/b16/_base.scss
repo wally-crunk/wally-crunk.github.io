@@ -1,6 +1,6 @@
 /* ######################################################################## */
 /* APOLLOSTAGE THEME */
-/* version 2024.06.03
+/* version 2024.06.18
 /* ######################################################################## */
 
 // SASS/SCSS NOTE
@@ -2145,11 +2145,12 @@ body#collage .cats_music {
   color: $color-text-notification-words !important;
   font-weight: 700;
   padding: 0 !important;
+  line-height: 2.2rem !important; // done here to override site html
 }
 
 /* first row words */
 #noty_bottomRight_layout_container .noty_message .noty_text {
-  line-height: 34px;
+  line-height: 1.04rem;  // only needed on 2-line announcements
   padding: 0 8px;
 }
 
