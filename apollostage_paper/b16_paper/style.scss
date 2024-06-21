@@ -9,7 +9,7 @@
 
 // debug slugs: must be after import.
 $debug-deriv: "Paper";
-$debug-deriv-slug: "[0619-1444]";
+$debug-deriv-slug: "[0621]";
 
 // ////////////////////////////////////////////////////////////////////////////////
 // COLORS
@@ -184,7 +184,7 @@ $color-text-important-alt: $ds-green;
 $color-text-important: $ds-red;
 $color-text-input: $fore-600; // for pre-populated inputs
 $color-text-input-active: $fore-900;
-$color-text-linkbox: $blue-900; // links in linkbox
+$color-text-linkbox: $blue-700; // links in linkbox
 $color-text-menu: $ds-gray-99; // new
 $color-text-menu-hover: $ds-gray-05; //new // during pulldown
 $color-text-mono: $fore-500;
@@ -294,6 +294,13 @@ $logo-site-square: url("https://wally-crunk.github.io/svg/site/ops-logo-loop-lig
 $icon-number-snatches: url("https://wally-crunk.github.io/svg/std/arrow-loop-000.svg");
 $icon-number-seeders: url("https://wally-crunk.github.io/svg/std/arrow-up-round-000.svg");
 $icon-number-leechers: url("https://wally-crunk.github.io/svg/std/arrow-down-round-000.svg");
+
+// // standard: 
+// $icon-notification: url("https://wally-crunk.github.io/svg/std/notification-bell-000.svg");
+// $icon-warning: url("https://wally-crunk.github.io/svg/std/x-000.svg")
+// // Orpheus specific:
+$icon-notification: url("https://wally-crunk.github.io/svg/site/ops-icon-harp-000.svg");
+$icon-warning: url("https://wally-crunk.github.io/svg/site/ops-icon-triangle-000.svg"); // or X
 
 // EOF
 

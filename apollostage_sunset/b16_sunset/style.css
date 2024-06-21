@@ -116,7 +116,7 @@
 /* ## 0.3 Debugging Tools */
 /* various 'debug' features are avail in this doc elsewhere */
 li#nav_upload.brackets a:before {
-  content: "b16 [0619-1444] [0619-1444]";
+  content: "b16 [0621] [0619-1444]";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -125,7 +125,7 @@ li#nav_upload.brackets a:before {
 }
 
 #footer p:last-of-type:after {
-  content: "ApolloStage b16 [0619-1444] Sunset [0619-1444]";
+  content: "ApolloStage b16 [0621] Sunset [0619-1444]";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -660,6 +660,12 @@ table.box2 {
 
 .forum_post.forum_unread {
   border-top: 2px solid #b43477;
+}
+
+.forum_post.wrap_overflow.box.vertical_margin td.body {
+  border: thin dotted gold;
+  word-break: break-all;
+  hyphens: none;
 }
 
 .forum_post .avatar {
@@ -3105,7 +3111,7 @@ tr.snatched_torrent div.tags:before {
 /* ## 4.4 Pop-up Warnings and Alerts ## */
 /* #### see also 1.10 Notifications */
 /* ### 4.4.1 Upload warnings ## */
-div.upload-error:after,
+.upload-error:after,
 ul#check:after {
   content: "Warning!  There were one or more errors in your submission. Check below for error messages.";
   font-weight: 700;
@@ -3119,7 +3125,7 @@ ul#check:after {
   border-radius: 0.25rem;
   padding: 1rem 1rem 1rem 48px;
   background: hsl(183, 2.5%, 92%);
-  background-image: url("https://wally-crunk.github.io/styles/apollostage/images/orpheus-harp-000.svg");
+  background-image: url("https://wally-crunk.github.io/svg/site/ops-icon-triangle-ccc.svg");
   background-repeat: no-repeat;
   background-position: 8px center;
   background-size: 32px;
@@ -3131,7 +3137,7 @@ ul#check.nobullet > * {
   border: thick solid #daa520;
   padding: 1rem 1rem 1rem 48px;
   background: hsl(183, 2.5%, 92%);
-  background-image: url("https://wally-crunk.github.io/styles/apollostage/images/orpheus-harp-000.svg");
+  background-image: url("https://wally-crunk.github.io/svg/site/ops-icon-triangle-ccc.svg");
   background-repeat: no-repeat;
   background-position: 8px center;
   background-size: 32px;
@@ -3145,6 +3151,9 @@ ul#check.nobullet > * {
   font-weight: 700;
 }
 
+/* Fix for post-upload 'Warning' (no private/source flag):
+/* the easily missed 'click here' warning shall be highlighted */
+/* CSS not yet available */
 /* */
 /* */
 /* ### 4.4.2 Alertbar */
@@ -3153,7 +3162,7 @@ ul#check.nobullet > * {
   border: thick solid #F78DA6;
   padding: 1rem 1rem 1rem 48px;
   background: #674242;
-  background-image: url("https://wally-crunk.github.io/styles/apollostage/images/notification-bell-333xccc.svg");
+  background-image: url("https://wally-crunk.github.io/svg/site/ops-icon-harp-ccc.svg");
   background-repeat: no-repeat;
   background-position: 8px center;
   background-size: 32px;
@@ -3167,7 +3176,7 @@ ul#check.nobullet > * {
 }
 
 debug {
-  debug: "b16 [0619-1444]";
+  debug: "b16 [0621]";
 }
 
 
