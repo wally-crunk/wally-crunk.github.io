@@ -115,7 +115,7 @@
 /* ## 0.3 Debugging Tools */
 /* various 'debug' features are avail in this doc elsewhere */
 li#nav_upload.brackets a:before {
-  content: "b16 [0621] ";
+  content: "b16 [0622] ";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -124,7 +124,7 @@ li#nav_upload.brackets a:before {
 }
 
 #footer p:last-of-type:after {
-  content: "ApolloStage b16 [0621] main ";
+  content: "ApolloStage b16 [0622] main ";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -661,11 +661,7 @@ table.box2 {
   border-top: 2px solid #fed100;
 }
 
-.forum_post.wrap_overflow.box.vertical_margin td.body {
-  border: thin dotted gold;
-  word-break: break-all;
-  hyphens: none;
-}
+.forum_post.wrap_overflow.box.vertical_margin td.body { /*foobar*/ }
 
 .forum_post .avatar {
   padding: 0;
@@ -3124,7 +3120,7 @@ ul#check:after {
   border-radius: 0.25rem;
   padding: 1rem 1rem 1rem 48px;
   background: hsl(183, 2.5%, 92%);
-  background-image: url("https://wally-crunk.github.io/svg/site/ops-icon-triangle-ccc.svg");
+  background-image: url("https://wally-crunk.github.io/svg/site/ops-icon-triangle-000.svg");
   background-repeat: no-repeat;
   background-position: 8px center;
   background-size: 32px;
@@ -3136,7 +3132,7 @@ ul#check.nobullet > * {
   border: thick solid #daa520;
   padding: 1rem 1rem 1rem 48px;
   background: hsl(183, 2.5%, 92%);
-  background-image: url("https://wally-crunk.github.io/svg/site/ops-icon-triangle-ccc.svg");
+  background-image: url("https://wally-crunk.github.io/svg/site/ops-icon-triangle-000.svg");
   background-repeat: no-repeat;
   background-position: 8px center;
   background-size: 32px;
@@ -3175,7 +3171,7 @@ ul#check.nobullet > * {
 }
 
 debug {
-  debug: "b16 [0621]";
+  debug: "b16 [0622]";
 }
 
 

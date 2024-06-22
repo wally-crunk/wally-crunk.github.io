@@ -118,7 +118,7 @@
 /* ## 0.3 Debugging Tools */
 /* various 'debug' features are avail in this doc elsewhere */
 li#nav_upload.brackets a:before {
-  content: "b16 [0621] [0621]";
+  content: "b16 [0622] [0621]";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -127,7 +127,7 @@ li#nav_upload.brackets a:before {
 }
 
 #footer p:last-of-type:after {
-  content: "ApolloStage b16 [0621] Paper [0621]";
+  content: "ApolloStage b16 [0622] Paper [0621]";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -664,11 +664,7 @@ table.box2 {
   border-top: 2px solid #c9a612;
 }
 
-.forum_post.wrap_overflow.box.vertical_margin td.body {
-  border: thin dotted gold;
-  word-break: break-all;
-  hyphens: none;
-}
+.forum_post.wrap_overflow.box.vertical_margin td.body { /*foobar*/ }
 
 .forum_post .avatar {
   padding: 0;
@@ -3178,7 +3174,7 @@ ul#check.nobullet > * {
 }
 
 debug {
-  debug: "b16 [0621]";
+  debug: "b16 [0622]";
 }
 
 
@@ -3209,7 +3205,7 @@ h6 {
 
 debug {
   debug_1: "ApolloStage";
-  debug_2: "b16 [0621]";
+  debug_2: "b16 [0622]";
   debug_3: "Paper";
   debug_4: "[0621]";
 }

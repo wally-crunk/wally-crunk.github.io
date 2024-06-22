@@ -757,9 +757,7 @@ table.box2 {
 }
 
 .forum_post.wrap_overflow.box.vertical_margin td.body 
-{ border: thin dotted gold;
-  word-break: break-all;
-  hyphens: none;
+{ /*foobar*/;
 }
 
 .forum_post .avatar {
