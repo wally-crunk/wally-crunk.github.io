@@ -3182,7 +3182,7 @@ ul#check.nobullet > * {
 /* ## 6.1 Debugging Tools */
 /* various 'debug' features are avail in this doc elsewhere */
 li#nav_upload.brackets a:before {
-  content: "b16 [0623.18] [0621]";
+  content: "b16 [0623.21] [0623.23]";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -3191,7 +3191,7 @@ li#nav_upload.brackets a:before {
 }
 
 #footer p:last-of-type:after {
-  content: "ApolloStage b16 [0623.18] Paper [0621]";
+  content: "ApolloStage b16 [0623.21] Paper [0623.23]";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -3201,7 +3201,7 @@ li#nav_upload.brackets a:before {
 
 /* ## 6.2 hello viewers of source */
 debug {
-  debug: "b16 [0623.18]";
+  debug: "b16 [0623.21]";
 }
 
 
@@ -3232,9 +3232,9 @@ h6 {
 
 debug {
   debug_1: "ApolloStage";
-  debug_2: "b16 [0623.18]";
+  debug_2: "b16 [0623.21]";
   debug_3: "Paper";
-  debug_4: "[0621]";
+  debug_4: "[0623.23]";
 }
 
 /*# sourceMappingURL=style.css.map */
