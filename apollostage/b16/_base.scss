@@ -166,6 +166,7 @@
 /* ### 4.17.7  Menu When Open, Row Three */
 /* ### 4.17.8  Menu When Open, Row Four */
 /* ### 4.17.9  Menu When Open, Row Five ~ Searchboxes */
+/* ### 4.17.10  Alerts */
 /* ## 4.18 Checkboxes ~ Purpose Undocumented */
 /* ## 4.19 Torrent Search, Handling for Tag Appearance */
 
@@ -2600,10 +2601,6 @@ ul#check.nobullet > *
           width: 100% !important;
     }
 
-    /* staff */
-    #alerts {
-        display: none;
-    }
     /* END notifications */
 
     /* ## 4.3 BEGIN user settings */
@@ -3463,10 +3460,37 @@ ul#check.nobullet > *
     /* ## 4.17.10  Alerts */
     /* Alertbar is part of the #header, so this is the least-worst place to put it. */
     
-    #alerts {
+    /* position alert inside the mobile pulldown menu */
+    #alerts > .alertbar 
+    {     
+          border: thick solid gold !important;
+          position: absolute;
+          top: calc(var(--row-height) * 1);
+          left: 2vw;
+          width: 96%;
+          height: calc(var(--row-height) * 3.5 * .5);    
+          z-index: 0;
+     }
+    
+    /* position the text */
+    .alertbar > *
+    {
+       margin: 0;
+       position: absolute;
+       top: 50%;
+       transform: translateY(-50%);
+       left: 15%;
     }
-
-  
+    
+    /* on mobile, suppress any non-alertbar alerts (if any) */ 
+    #alerts > :not(.alertbar)
+    {
+      display: none;
+    }
+   
+    /* ** */
+    /* ** */    
+    
     /* ## 4.18 Checkboxes ~ purpose undocumented */
     
     #extracb1 {
