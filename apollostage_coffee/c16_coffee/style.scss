@@ -14,6 +14,8 @@ $debug-deriv-slug: "[0619-1444]";
 // ////////////////////////////////////////////////////////////////////////////////
 // COLORS
 
+// physical_layout -> token, and token -> raw value.
+
 //Backs -- 100-600 are used
 
 $back-100:  #1d1c1c;
@@ -23,7 +25,19 @@ $back-400:  #2d2928;
 $back-500:  #322e2c;
 $back-600:  #3e3837;
 
-//coffee runs from lighter to darker 
+//midtones
+$midtone-100: #3D2C29;
+$midtone-200: #45322E;
+$midtone-300: #4E3833;
+$midtone-400: #563E37;
+$midtone-500: #5F443B;
+$midtone-600: #674A3F;
+$midtone-700: #6F5042;
+$midtone-800: #785746;
+$midtone-900: #805D49;
+$midtone-1000: #89644C;
+
+//coffee theme runs runs from lighter to darker, for style reasons
 $menutheme-100: #89644C;
 $menutheme-200: #805D49;
 $menutheme-300: #785746;
@@ -35,20 +49,7 @@ $menutheme-800: #4E3833;
 $menutheme-900: #45322E;
 $menutheme-1000: #3D2C29;
 
-$midtone-100: #3D2C29;
-$midtone-200: #45322E;
-$midtone-300: #4E3833;
-$midtone-400: #563E37;
-$midtone-500: #5F443B;
-$midtone-600: #674A3F;
-$midtone-700: #6F5042;
-$midtone-800: #785746;
-$midtone-900: #805D49;
-$midtone-1000:  #89644C;
-
-
-//Fores -- 400-1000 are used
-
+//Foregrounds -- 400-1000 are used
 $fore-400:  #A47A5A;
 $fore-500:  #B38D6F;
 $fore-600:  #C2A285;
@@ -57,7 +58,7 @@ $fore-800:  #E0CDB8;
 $fore-900:  #EFE3D5;
 $fore-1000: #FFFCF6;
 
- 
+//direct-specialty 
 $ds-rawsienna: #C98258;
 
 // DEFINE FROM LOGICAL LAYOUT TO TOKENS
@@ -135,10 +136,6 @@ $color-text-tooltipster: $midtone-600;
 $color-text-tooltipster-anchor: $midtone-800;
 $color-text-tooltipster-anchor-hover: $midtone-1000;
 
-$color-background-notification-gradient-1: $midtone-400; // menu low/high suggested
-$color-background-notification-gradient-2: $midtone-1000;  // menu high/low suggested
-$color-background-notification: $ds-neutral-000;
-
 $color-obj-button-base-1: $ds-gray-62; 
 $color-obj-button-base-2: $ds-gray-92;
 $color-obj-poll: $midtone-900; // poll active part of bargraph
@@ -170,6 +167,11 @@ $color-accent-forum-unread: $ds-rawsienna; // changed
 
 $color-accent-selection-background: $midtone-800;
 $color-accent-selection-text: $fore-700; // usually #fff or $color-text-bold
+
+// popup notifications
+$color-background-notification-gradient-1: $midtone-400; // menu low/high suggested
+$color-background-notification-gradient-2: $midtone-1000;  // menu high/low suggested
+$color-background-notification: $ds-neutral-000;
 
 // alerts
 $color-accent-border-alert: $midtone-500;
