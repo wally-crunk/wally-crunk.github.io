@@ -157,7 +157,7 @@
 /* ## 4.15 Reserved */
 /* ## 4.16 Handling for Sticky Table Headers on Mobile */
 /* ## 4.17 Site Header and Menu */
-/* ### 4.17.1  Delay Searchboxes So Keyboard Doesn't Open */
+/* ### 4.17.1  Mobile Menu Setup  */
 /* ### 4.17.2  Mobile Menu Layout */
 /* ### 4.17.3  Top Menubar */
 /* ### 4.17.4  Mobile Menu When Open, Setup */
@@ -220,7 +220,6 @@
 * {
     box-sizing: inherit;
 }
-
 
 body,
 button,
@@ -2486,6 +2485,7 @@ ul#check.nobullet > *
 /* ######################################################################## */
 /* */
 /* */
+/* */
 /* Documentation of mobile classes:
 /* GENERAL:
 /* .m_hidden: display: none on mobile
@@ -2788,9 +2788,8 @@ ul#check.nobullet > *
     .torrent .group_info {
           word-break: inherit;
           
-          /* #2024b11
           /* On Torrent listings, prevent 'bookmark' and long titles
-          /* from overrunning the stats on the right  */.
+          /* from overrunning the stats on the right */
           margin-right: 40px;   
     }
 
@@ -3175,11 +3174,17 @@ ul#check.nobullet > *
     /* ## 4.16 Handling for sticky table headers on Mobile */
     /* Deleted and burninated */
     
-    /* ## 4.17 SITE HEADER AND MENU */
-    /* Affectionately known as the hamburger bar on desktop */
-
-    /* ## 4.17.1 Delay searchboxes so keyboard doesn't open */
-
+    /* ** */
+    /* ** */
+    
+    /* ## 4.17 SITE HEADER AND MOBILE MENU */
+    /* ## 4.17.1 Mobile Menu When Closed, Setup */
+    
+    #header {
+        --row-height: 40px;
+    }
+    
+    /* Delay searchboxes so keyboard doesn't open */
     @keyframes delay-pointer-events {
           0% {
               visibility: hidden;
@@ -3198,16 +3203,9 @@ ul#check.nobullet > *
      #nav_useredit, 
      #nav_logout  {
             animation: delay-pointer-events 2000ms linear;
-     }
-
-    /* END Handling to prevent..*/
-    
-    /* ## 4.17.2 BEGIN MOBILE MENU LAYOUT */
-    
-    #header {
-        --row-height: 40px;
     }
      
+    
     #header {
           background: $color-mobilemenu-closed;
           top: 0;
@@ -3222,8 +3220,9 @@ ul#check.nobullet > *
           opacity: 0;
     }
     
-    // when debugging, remove hover to force the menu open //
-    /* menu opens on hover #2024 */
+    /* ## 4.17.2 Mobile Menu opens on hover */
+    
+    // Developers: when debugging, remove hover to force the menu open //
     #header:hover {
            height: clamp(200px, calc(var(--row-height)*15), 100%);
            opacity: 1;
@@ -3232,9 +3231,9 @@ ul#check.nobullet > *
            box-shadow: 0px 50px 70px $color-mobilemenu-shadow, 0 160px 160px #080808;
     }
 
-    /* ## 4.17.3 Top Menubar */
+    /* ## 4.17.3 Top Menubar for Mobile */
 
-    /* pulldown arrow icon for mobile view, top menu */
+    /* topbar for mobile ~ pulldown arrow icon */
     #extra1{ 
             position: fixed;
             top: 5px;
@@ -3258,7 +3257,7 @@ ul#check.nobullet > *
         width: 100%;
     }
 
-    /* site logo, on the topbar for mobile */
+    /* topbar for mobile ~ site logo, upper left */
     #extra5 {
         background-image: url("https://wally-crunk.github.io/svg/orpheus/ops-logo-loop.svg");
         background-position: 0;
@@ -3293,7 +3292,7 @@ ul#check.nobullet > *
     /* end debugging */
 
     /* Setup */  
-     #userinfo {
+    #userinfo {
         position: static;
     }
     
@@ -3320,29 +3319,8 @@ ul#check.nobullet > *
     /* end setup
     
     /* ## 4.17.5  Menu when open, Row One */
-
-    /* Right side ~ three items */
     
-    #userinfo_username > li, #logo {
-        background: radial-gradient(
-            circle at top left, 
-            $color-mobilemenu-userinfo-1,$color-mobilemenu-userinfo-2 );
-            }
-        
-    #userinfo_username {
-        position: absolute;
-        left: 15%;
-        width: 85% !important;
-        -debug-border: thick solid blue;
-    }
-    #nav_userclass {
-        display: none;
-    }
-    #userinfo_username #nav_userinfo a {
-        width: unset;
-    }
-    
-    /* Extreme left, site logo */
+    /* Left side ~ site logo */
     
     #logo {
         position: inherit;
@@ -3363,6 +3341,27 @@ ul#check.nobullet > *
         
     }
  
+    /* Right side ~ three items */
+    
+    #userinfo_username > li, #logo {
+        background: radial-gradient(circle at top left, 
+            $color-mobilemenu-userinfo-1,$color-mobilemenu-userinfo-2 );
+    }
+        
+    #userinfo_username {
+        position: absolute;
+        left: 15%;
+        width: 85% !important;
+        -debug-border: thick solid blue;
+    }
+    
+    #nav_userclass {
+        display: none;
+    }
+    
+    #userinfo_username #nav_userinfo a {
+        width: unset;
+    }
     
     /*  ## 4.17.6  Menu when open, Row Two (has subrows) */
     
@@ -3375,8 +3374,8 @@ ul#check.nobullet > *
         height: calc(2.4 * var(--row-height));
         flex-direction: column;
         justify-content: space-around;
-
     }
+    
     #userinfo_stats {
         left: auto;
         right: 2vw;
@@ -3388,19 +3387,22 @@ ul#check.nobullet > *
         flex-direction: column;
         justify-content: space-around;
         text-align: right;
-
     }
+    
     #userinfo_stats a,
     #userinfo_major a {
         text-decoration-line: underline;
         text-decoration-style: dashed;
     }
+    
     #userinfo_stats span {
         white-space: nowrap;
     }
+    
     #stats_ratio {
         /* No need to force a color here, but this is where you could. */
     }
+    
     #stats_ratio .tooltip {
         /* Provide a local background for the number to appear in color */
         background-color: $color-background-form;
@@ -3409,7 +3411,7 @@ ul#check.nobullet > *
         padding-right: 0.45rem;
     }
 
-    /* ## 4.17.7  Menu when open, Row Three */
+    /* ## 4.17.7  Menu when open, Row Three [torrents..] */
     
     #menu ul {
         background: radial-gradient(
@@ -3424,18 +3426,16 @@ ul#check.nobullet > *
     }
     /* END Row Three */
     
-    /* ## 4.17.8  Menu when open, Row four */
+    /* ## 4.17.8  Menu when open, Row Four [inbox..] */
     
     #userinfo_minor {
-        background: radial-gradient(
-            circle at top left, 
-            $color-mobilemenu-userinfo-2,
-            $color-mobilemenu-userinfo-1 );
+        background: radial-gradient(circle at top left, 
+            $color-mobilemenu-userinfo-2,$color-mobilemenu-userinfo-1 );
         bottom: calc(var(--row-height) * 3);
         position: absolute;
     }
         
-    /* ## 4.17.9   Menu when open, Row five ~ searchboxes */
+    /* ## 4.17.9   Menu when open, Row Five ~ searchboxes */
     
     #searchbars ul {
         bottom: 0;
@@ -3457,37 +3457,28 @@ ul#check.nobullet > *
     }
     /* END searchboxes */
     
-    /* ## 4.17.10  Alerts */
-    /* Alertbar is part of the #header, so this is the least-worst place to put it. */
+    /* ## 4.17.10 Alerts */
     
-    /* position alert inside the mobile pulldown menu */
-    #alerts > .alertbar 
-    {     
-          border: thick solid gold !important;
-          position: absolute;
-          top: calc(var(--row-height) * 1);
-          left: 2vw;
-          width: 96%;
-          height: calc(var(--row-height) * 3.5 * .5);    
-          z-index: 0;
-     }
+    /* Alertbar is part of the #header, which is designed to collapse on mobile. */
+    /* This is the least-worst position, avoids unwanted clicks */
     
-    /* position the text */
-    .alertbar > *
-    {
-       margin: 0;
-       position: absolute;
-       top: 50%;
-       transform: translateY(-50%);
-       left: 15%;
+    #alerts > .alertbar {
+      display: inline-block;
+      position: absolute;
+      margin: 0;
+      top: 0;
+      left: 2%;
+      width: 96%;
+      height: 3rem;
+      z-index: 99999;
+      opacity: 1 !important;
     }
     
-    /* on mobile, suppress any non-alertbar alerts (if any) */ 
-    #alerts > :not(.alertbar)
-    {
+    /* on mobile, suppress any other non-alertbar alerts (if any) */
+    #alerts > :not(.alertbar) {
       display: none;
     }
-   
+    
     /* ** */
     /* ** */    
     
@@ -3519,12 +3510,13 @@ ul#check.nobullet > *
     #extracb1:checked ~ #extra3 {
         transform: translateY(-5px) rotate(-45deg);
     }
+    
     /* END checked */
     /* END site header */
     
     /* ## 4.19 Torrent search, handling for tag appearance */
 
-    /* 'Wordbank' of tags, displays on the torrent search form, */
+    /* On the torrent search form, a 'Word bank' of tags is shown, */
     /* when tags are set to display in profile settings. */
     
     #taglist tr.label {
@@ -3557,7 +3549,7 @@ ul#check.nobullet > *
           overflow: hidden;  text-overflow: ellipsis;
           font-style: italic; 
           vertical-align: baseline;
-          color: $color-obj-tag_bubble-foreground !important; /*$color-obj-tag_bubble-background;*/
+          color: $color-obj-tag_bubble-foreground !important; 
           background: $color-obj-tag_bubble-background; 
           padding: 0.25rem ;
           border-radius: 1rem;
@@ -3569,8 +3561,9 @@ ul#check.nobullet > *
     /* when tags are set to display in profile settings */
 }
 
-/********* */
-
+/* ######################################################################## */
+/* # 5 CHANGES FOR MOBILE, SUPER SHORT VIEW */
+/* ######################################################################## */
 
 /* ## 5.1 Begin Changes for Mobile, SUPER SMALL window */
 /* compact the Menu in two steps */
@@ -3592,7 +3585,9 @@ ul#check.nobullet > *
   }
 } 
 
+/* ######################################################################## */
 /* # 6 CLOSING */
+/* ######################################################################## */
 
 /* ## 6.1 Debugging Tools */
 /* various 'debug' features are avail in this doc elsewhere */
@@ -3617,7 +3612,7 @@ li#nav_upload.brackets a:before {
 
 /* ## 6.2 hello viewers of source */
 
-debug { debug: $debug-slug }
+debug_nonce { debug_nonce: $debug-slug }
 
 /*# sourceMappingURL=styles.css.map */
 
