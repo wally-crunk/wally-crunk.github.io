@@ -78,7 +78,7 @@
 /* ## 4.15 Reserved */
 /* ## 4.16 Handling for Sticky Table Headers on Mobile */
 /* ## 4.17 Site Header and Menu */
-/* ### 4.17.1  Delay Searchboxes So Keyboard Doesn't Open */
+/* ### 4.17.1  Mobile Menu Setup  */
 /* ### 4.17.2  Mobile Menu Layout */
 /* ### 4.17.3  Top Menubar */
 /* ### 4.17.4  Mobile Menu When Open, Setup */
@@ -2268,6 +2268,7 @@ ul#check.nobullet > * {
 /* ######################################################################## */
 /* */
 /* */
+/* */
 /* Documentation of mobile classes:
 /* GENERAL:
 /* .m_hidden: display: none on mobile
@@ -2514,11 +2515,9 @@ ul#check.nobullet > * {
   .group .group_info,
   .torrent .group_info {
     word-break: inherit;
-    /* #2024b11
     /* On Torrent listings, prevent 'bookmark' and long titles
-    /* from overrunning the stats on the right  */
-    .
-          margin-right: 40px;
+    /* from overrunning the stats on the right */
+    margin-right: 40px;
   }
   .torrent .group_info span:first-child {
     order: 10;
@@ -2828,9 +2827,14 @@ ul#check.nobullet > * {
   /* ## 4.15 reserved */
   /* ## 4.16 Handling for sticky table headers on Mobile */
   /* Deleted and burninated */
-  /* ## 4.17 SITE HEADER AND MENU */
-  /* Affectionately known as the hamburger bar on desktop */
-  /* ## 4.17.1 Delay searchboxes so keyboard doesn't open */
+  /* ** */
+  /* ** */
+  /* ## 4.17 SITE HEADER AND MOBILE MENU */
+  /* ## 4.17.1 Mobile Menu When Closed, Setup */
+  #header {
+    --row-height: 40px;
+  }
+  /* Delay searchboxes so keyboard doesn't open */
   @keyframes delay-pointer-events {
     0% {
       visibility: hidden;
@@ -2848,11 +2852,6 @@ ul#check.nobullet > * {
   #nav_logout {
     animation: delay-pointer-events 2000ms linear;
   }
-  /* END Handling to prevent..*/
-  /* ## 4.17.2 BEGIN MOBILE MENU LAYOUT */
-  #header {
-    --row-height: 40px;
-  }
   #header {
     background: #ab718d;
     top: 0;
@@ -2866,7 +2865,7 @@ ul#check.nobullet > * {
     padding-bottom: 32px;
     opacity: 0;
   }
-  /* menu opens on hover #2024 */
+  /* ## 4.17.2 Mobile Menu opens on hover */
   #header:hover {
     height: clamp(200px, var(--row-height) * 15, 100%);
     opacity: 1;
@@ -2874,8 +2873,8 @@ ul#check.nobullet > * {
     border-bottom: groove #ab718d;
     box-shadow: 0px 50px 70px #da7c92, 0 160px 160px #080808;
   }
-  /* ## 4.17.3 Top Menubar */
-  /* pulldown arrow icon for mobile view, top menu */
+  /* ## 4.17.3 Top Menubar for Mobile */
+  /* topbar for mobile ~ pulldown arrow icon */
   #extra1 {
     position: fixed;
     top: 5px;
@@ -2897,7 +2896,7 @@ ul#check.nobullet > * {
     right: 0;
     width: 100%;
   }
-  /* site logo, on the topbar for mobile */
+  /* topbar for mobile ~ site logo, upper left */
   #extra5 {
     background-image: url("https://wally-crunk.github.io/svg/orpheus/ops-logo-loop.svg");
     background-position: 0;
@@ -2953,6 +2952,22 @@ ul#check.nobullet > * {
   /* end setup
 
   /* ## 4.17.5  Menu when open, Row One */
+  /* Left side ~ site logo */
+  #logo {
+    position: inherit;
+    height: var(--row-height);
+    width: 15%;
+    z-index: 999;
+    text-align: center;
+    background: radial-gradient(circle at top left, #fe8691, #c47891);
+  }
+  #logo a {
+    display: inline-block;
+    background: url("https://wally-crunk.github.io/svg/orpheus/ops-logo-loop.svg") center no-repeat;
+    background-size: var(--row-height);
+    height: var(--row-height);
+    width: var(--row-height);
+  }
   /* Right side ~ three items */
   #userinfo_username > li, #logo {
     background: radial-gradient(circle at top left, #fe8691, #c47891);
@@ -2968,22 +2983,6 @@ ul#check.nobullet > * {
   }
   #userinfo_username #nav_userinfo a {
     width: unset;
-  }
-  /* Extreme left, site logo */
-  #logo {
-    position: inherit;
-    height: var(--row-height);
-    width: 15%;
-    z-index: 999;
-    text-align: center;
-    background: radial-gradient(circle at top left, #fe8691, #c47891);
-  }
-  #logo a {
-    display: inline-block;
-    background: url("https://wally-crunk.github.io/svg/orpheus/ops-logo-loop.svg") center no-repeat;
-    background-size: var(--row-height);
-    height: var(--row-height);
-    width: var(--row-height);
   }
   /*  ## 4.17.6  Menu when open, Row Two (has subrows) */
   #userinfo_major {
@@ -3026,7 +3025,7 @@ ul#check.nobullet > * {
     padding-left: 0.45rem;
     padding-right: 0.45rem;
   }
-  /* ## 4.17.7  Menu when open, Row Three */
+  /* ## 4.17.7  Menu when open, Row Three [torrents..] */
   #menu ul {
     background: radial-gradient(circle at top left, #fe8691, #c47891);
     bottom: calc(var(--row-height) * 7);
@@ -3036,13 +3035,13 @@ ul#check.nobullet > * {
     background: transparent !important;
   }
   /* END Row Three */
-  /* ## 4.17.8  Menu when open, Row four */
+  /* ## 4.17.8  Menu when open, Row Four [inbox..] */
   #userinfo_minor {
     background: radial-gradient(circle at top left, #c47891, #fe8691);
     bottom: calc(var(--row-height) * 3);
     position: absolute;
   }
-  /* ## 4.17.9   Menu when open, Row five ~ searchboxes */
+  /* ## 4.17.9   Menu when open, Row Five ~ searchboxes */
   #searchbars ul {
     bottom: 0;
     height: unset;
@@ -3066,21 +3065,12 @@ ul#check.nobullet > * {
   /* Alertbar is part of the #header, so this is the least-worst place to put it. */
   /* position alert inside the mobile pulldown menu */
   #alerts > .alertbar {
-    border: thick solid gold !important;
+    border: thick solid #F78DA6 !important;
     position: absolute;
     top: calc(var(--row-height) * 1);
     left: 2vw;
     width: 96%;
-    height: calc(var(--row-height) * 3.5 * 0.5);
     z-index: 0;
-  }
-  /* position the text */
-  .alertbar > * {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 15%;
   }
   /* on mobile, suppress any non-alertbar alerts (if any) */
   #alerts > :not(.alertbar) {
@@ -3118,7 +3108,7 @@ ul#check.nobullet > * {
   /* END checked */
   /* END site header */
   /* ## 4.19 Torrent search, handling for tag appearance */
-  /* 'Wordbank' of tags, displays on the torrent search form, */
+  /* On the torrent search form, a 'Word bank' of tags is shown, */
   /* when tags are set to display in profile settings. */
   #taglist tr.label {
     height: auto;
@@ -3148,7 +3138,7 @@ ul#check.nobullet > * {
     text-overflow: ellipsis;
     font-style: italic;
     vertical-align: baseline;
-    color: #A196C4 !important; /*$color-obj-tag_bubble-background;*/
+    color: #A196C4 !important;
     background: #7B4848;
     padding: 0.25rem;
     border-radius: 1rem;
@@ -3158,7 +3148,9 @@ ul#check.nobullet > * {
   /* END tag display for Torrent search form on Mobile, 
   /* when tags are set to display in profile settings */
 }
-/********* */
+/* ######################################################################## */
+/* # 5 CHANGES FOR MOBILE, SUPER SHORT VIEW */
+/* ######################################################################## */
 /* ## 5.1 Begin Changes for Mobile, SUPER SMALL window */
 /* compact the Menu in two steps */
 @media (max-width: 575px) and (max-height: 600px) {
@@ -3176,11 +3168,13 @@ ul#check.nobullet > * {
     display: none;
   }
 }
+/* ######################################################################## */
 /* # 6 CLOSING */
+/* ######################################################################## */
 /* ## 6.1 Debugging Tools */
 /* various 'debug' features are avail in this doc elsewhere */
 li#nav_upload.brackets a:before {
-  content: "b16 [0623.18] [0619-1444]";
+  content: "b16 [0624.1351] [0623.23]";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -3189,7 +3183,7 @@ li#nav_upload.brackets a:before {
 }
 
 #footer p:last-of-type:after {
-  content: "ApolloStage b16 [0623.18] Sunset [0619-1444]";
+  content: "ApolloStage b16 [0624.1351] Sunset [0623.23]";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -3198,8 +3192,8 @@ li#nav_upload.brackets a:before {
 }
 
 /* ## 6.2 hello viewers of source */
-debug {
-  debug: "b16 [0623.18]";
+debug_nonce {
+  debug_nonce: "b16 [0624.1351]";
 }
 
 
