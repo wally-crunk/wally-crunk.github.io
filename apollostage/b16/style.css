@@ -3176,7 +3176,7 @@ ul#check.nobullet > * {
 /* ## 6.1 Debugging Tools */
 /* various 'debug' features are avail in this doc elsewhere */
 li#nav_upload.brackets a:before {
-  content: "b16 [0624.1351] ";
+  content: "b16 [0624.1625] ";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -3185,7 +3185,7 @@ li#nav_upload.brackets a:before {
 }
 
 #footer p:last-of-type:after {
-  content: "ApolloStage b16 [0624.1351] main ";
+  content: "ApolloStage b16 [0624.1625] main ";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -3195,7 +3195,7 @@ li#nav_upload.brackets a:before {
 
 /* ## 6.2 hello viewers of source */
 debug_nonce {
-  debug_nonce: "b16 [0624.1351]";
+  debug_nonce: "b16 [0624.1625]";
 }
 
 
