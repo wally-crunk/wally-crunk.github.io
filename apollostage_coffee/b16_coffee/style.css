@@ -3064,22 +3064,32 @@ ul#check.nobullet > * {
   /* END searchboxes */
   /* ## 4.17.10 Alerts */
   /* Alertbar is part of the #header, which is designed to collapse on mobile. */
-  /* This is the least-worst position, avoids unwanted clicks */
-  #alerts > .alertbar {
-    display: inline-block;
-    position: absolute;
-    margin: 0;
-    top: 0;
-    left: 2%;
-    width: 96%;
-    height: 3rem;
-    z-index: 99999;
-    opacity: 1 !important;
-  }
-  /* on mobile, suppress any other non-alertbar alerts (if any) */
-  #alerts > :not(.alertbar) {
+  /* This is the least-worst position, avoids unwanted clicks when closed */
+  /* However, it blocks the 'settings' button until notifs are cleared. */
+  /* TODO: Find a better way.  Meantime, UNCOMMENT the block below to turn on. */
+  #alerts {
     display: none;
   }
+  /* ==== */
+  /*
+  /*  #alerts > .alertbar {
+  /*    display: inline-block;
+  /*    position: absolute;
+  /*    margin: 0;
+  /*    top: 0;
+  /*    left: 2%;
+  /*    width: 96%;
+  /*    height: auto;
+  /*    z-index: 99999;
+  /*    opacity: 1 !important;
+  /*    }
+  /* on mobile, suppress any other non-alertbar alerts (if any) */
+  /*
+  /*  #alerts > :not(.alertbar) {
+  /*    display: none;
+  /*    }
+  /*
+  /* ==== */
   /* ** */
   /* ** */
   /* ## 4.18 Checkboxes ~ purpose undocumented */
@@ -3178,7 +3188,7 @@ ul#check.nobullet > * {
 /* ## 6.1 Debugging Tools */
 /* various 'debug' features are avail in this doc elsewhere */
 li#nav_upload.brackets a:before {
-  content: "b16 [0624.1625] [0623.23]";
+  content: "b16 [0624.1740] [23]";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -3187,7 +3197,7 @@ li#nav_upload.brackets a:before {
 }
 
 #footer p:last-of-type:after {
-  content: "ApolloStage b16 [0624.1625] coffee [0623.23]";
+  content: "ApolloStage b16 [0624.1740] coffee [23]";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -3197,7 +3207,7 @@ li#nav_upload.brackets a:before {
 
 /* ## 6.2 hello viewers of source */
 debug_nonce {
-  debug_nonce: "b16 [0624.1625]";
+  debug_nonce: "b16 [0624.1740]";
 }
 
 

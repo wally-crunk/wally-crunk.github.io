@@ -3460,25 +3460,33 @@ ul#check.nobullet > *
     /* ## 4.17.10 Alerts */
     
     /* Alertbar is part of the #header, which is designed to collapse on mobile. */
-    /* This is the least-worst position, avoids unwanted clicks */
-    
-    #alerts > .alertbar {
-      display: inline-block;
-      position: absolute;
-      margin: 0;
-      top: 0;
-      left: 2%;
-      width: 96%;
-      height: 3rem;
-      z-index: 99999;
-      opacity: 1 !important;
-    }
-    
+    /* This is the least-worst position, avoids unwanted clicks when closed */
+    /* However, it blocks the 'settings' button until notifs are cleared. */
+    /* TODO: Find a better way.  Meantime, UNCOMMENT the block below to turn on. */
+
+    #alerts {display:none}
+
+    /* ==== */
+    /*
+    /*  #alerts > .alertbar {
+    /*    display: inline-block;
+    /*    position: absolute;
+    /*    margin: 0;
+    /*    top: 0;
+    /*    left: 2%;
+    /*    width: 96%;
+    /*    height: auto;
+    /*    z-index: 99999;
+    /*    opacity: 1 !important;
+    /*    }
     /* on mobile, suppress any other non-alertbar alerts (if any) */
-    #alerts > :not(.alertbar) {
-      display: none;
-    }
-    
+    /*
+    /*  #alerts > :not(.alertbar) {
+    /*    display: none;
+    /*    }
+    /*
+    /* ==== */
+
     /* ** */
     /* ** */    
     
