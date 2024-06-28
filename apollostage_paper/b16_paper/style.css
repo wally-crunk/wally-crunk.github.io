@@ -3190,7 +3190,7 @@ ul#check.nobullet > * {
 /* ## 6.1 Debugging Tools */
 /* various 'debug' features are avail in this doc elsewhere */
 li#nav_upload.brackets a:before {
-  content: "assets17 [0628.13] [23]";
+  content: "b16 [0628] rc [23]";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -3199,7 +3199,7 @@ li#nav_upload.brackets a:before {
 }
 
 #footer p:last-of-type:after {
-  content: "ApolloStage assets17 [0628.13] Paper [23]";
+  content: "ApolloStage b16 [0628] rc Paper [23]";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -3209,7 +3209,7 @@ li#nav_upload.brackets a:before {
 
 /* ## 6.2 hello viewers of source */
 debug_nonce {
-  debug_nonce: "assets17 [0628.13]";
+  debug_nonce: "b16 [0628] rc";
 }
 
 
@@ -3240,7 +3240,7 @@ h6 {
 
 debug {
   debug_1: "ApolloStage";
-  debug_2: "assets17 [0628.13]";
+  debug_2: "b16 [0628] rc";
   debug_3: "Paper";
   debug_4: "[23]";
 }
