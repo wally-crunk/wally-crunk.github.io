@@ -196,7 +196,10 @@
 
 /* Font loading */
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+// Deployers: in production, /public/static is root.
+
+@import url('/styles/apollostage/fonts/fontcall.css');
+
 @namespace url("http://www.w3.org/1999/xhtml");
 @namespace svg url("http://www.w3.org/2000/svg");
 
@@ -205,7 +208,8 @@
 /* ## 0.2 Global variables */
 
 * {
-  /* recordkeeping only.  browsers do not allow vars in the CSS @media rule. */
+  /* For future use. Now, for recordkeeping only.  
+  /* In 2024, browsers do not allow vars in the CSS @media rule. */
   --phone-screen-size: 575px; 
 }
     
@@ -234,7 +238,7 @@ select,
 textarea,
 .tooltipster-default .tooltipster-content
  {
-    font-family: 'Open Sans', Noto, 'Noto Sans', Helvetica, Arial, Tahoma, "Microsoft Yahei", sans-serif;
+    font-family: 'Open Sans', Noto, 'Noto Sans', "Microsoft Yahei", sans-serif;
  }
 
 body {

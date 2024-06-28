@@ -107,14 +107,15 @@
 /* */
 /* ## 0.1 Housekeeping and font loading */
 /* Font loading */
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wdth,wght@0,87.5,300..800;1,87.5,300..800&display=swap");
+@import url("/styles/apollostage/fonts/fontcall.css");
+@import url("/styles/apollostage_paper/fonts/fontcall.css");
 @namespace url("http://www.w3.org/1999/xhtml");
 @namespace svg url("http://www.w3.org/2000/svg");
 /* END font loading */
 /* ## 0.2 Global variables */
 * {
-  /* recordkeeping only.  browsers do not allow vars in the CSS @media rule. */
+  /* For future use. Now, for recordkeeping only.  
+  /* In 2024, browsers do not allow vars in the CSS @media rule. */
   --phone-screen-size: 575px;
 }
 
@@ -140,7 +141,7 @@ input,
 select,
 textarea,
 .tooltipster-default .tooltipster-content {
-  font-family: "Open Sans", Noto, "Noto Sans", Helvetica, Arial, Tahoma, "Microsoft Yahei", sans-serif;
+  font-family: "Open Sans", Noto, "Noto Sans", "Microsoft Yahei", sans-serif;
 }
 
 body {
@@ -708,35 +709,35 @@ table.box2 {
 }
 
 .read {
-  background: url("https://wally-crunk.github.io/svg/std/document-000.svg") center no-repeat;
+  background: url("/svg/std/document-000.svg") center no-repeat;
 }
 
 .unread {
-  background: url("https://wally-crunk.github.io/svg/std/document-round-000.svg") center no-repeat;
+  background: url("/svg/std/document-round-000.svg") center no-repeat;
 }
 
 .read_locked {
-  background: url("https://wally-crunk.github.io/svg/std/lock-000.svg") center no-repeat;
+  background: url("/svg/std/lock-000.svg") center no-repeat;
 }
 
 .unread_locked {
-  background: url("https://wally-crunk.github.io/svg/std/lock-round-000.svg") center no-repeat;
+  background: url("/svg/std/lock-round-000.svg") center no-repeat;
 }
 
 .read_sticky {
-  background: url("https://wally-crunk.github.io/svg/std/pin-000.svg") center no-repeat;
+  background: url("/svg/std/pin-000.svg") center no-repeat;
 }
 
 .unread_sticky {
-  background: url("https://wally-crunk.github.io/svg/std/pin-round-000.svg") center no-repeat;
+  background: url("/svg/std/pin-round-000.svg") center no-repeat;
 }
 
 .read_locked_sticky {
-  background: url("https://wally-crunk.github.io/svg/std/pin-and-lock-000.svg") center no-repeat;
+  background: url("/svg/std/pin-and-lock-000.svg") center no-repeat;
 }
 
 .unread_locked_sticky {
-  background: url("https://wally-crunk.github.io/svg/std/pin-and-lock-round-000.svg") center no-repeat;
+  background: url("/svg/std/pin-and-lock-round-000.svg") center no-repeat;
 }
 
 #footer,
@@ -1639,7 +1640,7 @@ body#collage .cats_music {
   }
   /* main logo during desktop view */
   #logo a {
-    background: url("https://wally-crunk.github.io/svg/site/ops-logo-lockup-lightmode.svg") right no-repeat;
+    background: url("/svg/site/ops-logo-lockup-lightmode.svg") right no-repeat;
   }
   #logo > a {
     background-size: 200px;
@@ -1796,7 +1797,7 @@ body#collage .cats_music {
     color: #09326C;
   }
   #userinfo_minor::before {
-    background: url("https://wally-crunk.github.io/svg/std/chevrons-down-ccc.svg") no-repeat;
+    background: url("/svg/std/chevrons-down-ccc.svg") no-repeat;
     filter: brightness(200%); /*force white */
     background-size: 28px;
     background-position: center;
@@ -1870,7 +1871,7 @@ body#collage .cats_music {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-image: url("https://wally-crunk.github.io/svg/std/menu-000.svg");
+  background-image: url("/svg/std/menu-000.svg");
   background-size: 30px;
   background-origin: padding-box;
   background-clip: border-box;
@@ -2213,7 +2214,7 @@ ul#check:after {
   border-radius: 0.25rem;
   padding: 1rem 1rem 1rem 48px;
   background: hsl(183, 2.5%, 92%);
-  background-image: url("https://wally-crunk.github.io/svg/site/ops-icon-triangle-000.svg");
+  background-image: url("/svg/site/ops-icon-triangle-000.svg");
   background-repeat: no-repeat;
   background-position: 8px center;
   background-size: 32px;
@@ -2225,7 +2226,7 @@ ul#check.nobullet > * {
   border: thick solid #daa520;
   padding: 1rem 1rem 1rem 48px;
   background: hsl(183, 2.5%, 92%);
-  background-image: url("https://wally-crunk.github.io/svg/site/ops-icon-triangle-000.svg");
+  background-image: url("/svg/site/ops-icon-triangle-000.svg");
   background-repeat: no-repeat;
   background-position: 8px center;
   background-size: 32px;
@@ -2250,7 +2251,7 @@ ul#check.nobullet > * {
   border: thick solid #157D63;
   padding: 1rem 1rem 1rem 48px;
   background: hsl(183, 2.5%, 92%);
-  background-image: url("https://wally-crunk.github.io/svg/site/ops-icon-harp-000.svg");
+  background-image: url("/svg/site/ops-icon-harp-000.svg");
   background-repeat: no-repeat;
   background-position: 8px center;
   background-size: 32px;
@@ -2552,7 +2553,7 @@ ul#check.nobullet > * {
   .td_snatched.m_td_right::before,
   .td_seeders.m_td_right::before,
   .td_leechers.m_td_right::before {
-    background: left/10px no-repeat url("https://wally-crunk.github.io/svg/std/arrow-loop-000.svg");
+    background: left/10px no-repeat url("/svg/std/arrow-loop-000.svg");
     color: #091E42;
     content: ":";
     filter: brightness(80%);
@@ -2562,10 +2563,10 @@ ul#check.nobullet > * {
     width: 14px;
   }
   .td_seeders.m_td_right::before {
-    background-image: url("https://wally-crunk.github.io/svg/std/arrow-up-round-000.svg");
+    background-image: url("/svg/std/arrow-up-round-000.svg");
   }
   .td_leechers.m_td_right::before {
-    background-image: url("https://wally-crunk.github.io/svg/std/arrow-down-round-000.svg");
+    background-image: url("/svg/std/arrow-down-round-000.svg");
   }
   .m_table.checkboxes td:first-child {
     display: block;
@@ -2885,7 +2886,7 @@ ul#check.nobullet > * {
     opacity: 1 !important;
     width: 25px;
     height: 25px;
-    background-image: url("https://wally-crunk.github.io/svg/std/chevrons-down-ccc.svg");
+    background-image: url("/svg/std/chevrons-down-ccc.svg");
     background-size: contain;
     z-index: 500;
     pointer-events: none;
@@ -3189,7 +3190,7 @@ ul#check.nobullet > * {
 /* ## 6.1 Debugging Tools */
 /* various 'debug' features are avail in this doc elsewhere */
 li#nav_upload.brackets a:before {
-  content: "b16 [0624.1740] [0623.23]";
+  content: "assets17 [0628.13] [23]";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -3198,7 +3199,7 @@ li#nav_upload.brackets a:before {
 }
 
 #footer p:last-of-type:after {
-  content: "ApolloStage b16 [0624.1740] Paper [0623.23]";
+  content: "ApolloStage assets17 [0628.13] Paper [23]";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -3208,7 +3209,7 @@ li#nav_upload.brackets a:before {
 
 /* ## 6.2 hello viewers of source */
 debug_nonce {
-  debug_nonce: "b16 [0624.1740]";
+  debug_nonce: "assets17 [0628.13]";
 }
 
 
@@ -3217,7 +3218,7 @@ debug_nonce {
 /* ####### */
 /* local overrides for this theme */
 body, textarea {
-  font-family: "Merriweather Sans", Noto, "Noto Sans", sans-serif;
+  font-family: "Merriweather Sans", Noto, "Noto Sans", "Microsoft Yahei", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   font-weight: 320;
@@ -3239,9 +3240,9 @@ h6 {
 
 debug {
   debug_1: "ApolloStage";
-  debug_2: "b16 [0624.1740]";
+  debug_2: "assets17 [0628.13]";
   debug_3: "Paper";
-  debug_4: "[0623.23]";
+  debug_4: "[23]";
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -105,13 +105,14 @@
 /* */
 /* ## 0.1 Housekeeping and font loading */
 /* Font loading */
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+@import url("/styles/apollostage/fonts/fontcall.css");
 @namespace url("http://www.w3.org/1999/xhtml");
 @namespace svg url("http://www.w3.org/2000/svg");
 /* END font loading */
 /* ## 0.2 Global variables */
 * {
-  /* recordkeeping only.  browsers do not allow vars in the CSS @media rule. */
+  /* For future use. Now, for recordkeeping only.  
+  /* In 2024, browsers do not allow vars in the CSS @media rule. */
   --phone-screen-size: 575px;
 }
 
@@ -137,7 +138,7 @@ input,
 select,
 textarea,
 .tooltipster-default .tooltipster-content {
-  font-family: "Open Sans", Noto, "Noto Sans", Helvetica, Arial, Tahoma, "Microsoft Yahei", sans-serif;
+  font-family: "Open Sans", Noto, "Noto Sans", "Microsoft Yahei", sans-serif;
 }
 
 body {
@@ -705,35 +706,35 @@ table.box2 {
 }
 
 .read {
-  background: url("https://wally-crunk.github.io/svg/std/document-ccc.svg") center no-repeat;
+  background: url("/svg/std/document-ccc.svg") center no-repeat;
 }
 
 .unread {
-  background: url("https://wally-crunk.github.io/svg/std/document-round-ccc.svg") center no-repeat;
+  background: url("/svg/std/document-round-ccc.svg") center no-repeat;
 }
 
 .read_locked {
-  background: url("https://wally-crunk.github.io/svg/std/lock-ccc.svg") center no-repeat;
+  background: url("/svg/std/lock-ccc.svg") center no-repeat;
 }
 
 .unread_locked {
-  background: url("https://wally-crunk.github.io/svg/std/lock-round-ccc.svg") center no-repeat;
+  background: url("/svg/std/lock-round-ccc.svg") center no-repeat;
 }
 
 .read_sticky {
-  background: url("https://wally-crunk.github.io/svg/std/pin-ccc.svg") center no-repeat;
+  background: url("/svg/std/pin-ccc.svg") center no-repeat;
 }
 
 .unread_sticky {
-  background: url("https://wally-crunk.github.io/svg/std/pin-round-ccc.svg") center no-repeat;
+  background: url("/svg/std/pin-round-ccc.svg") center no-repeat;
 }
 
 .read_locked_sticky {
-  background: url("https://wally-crunk.github.io/svg/std/pin-and-lock-ccc.svg") center no-repeat;
+  background: url("/svg/std/pin-and-lock-ccc.svg") center no-repeat;
 }
 
 .unread_locked_sticky {
-  background: url("https://wally-crunk.github.io/svg/std/pin-and-lock-round-ccc.svg") center no-repeat;
+  background: url("/svg/std/pin-and-lock-round-ccc.svg") center no-repeat;
 }
 
 #footer,
@@ -1636,7 +1637,7 @@ body#collage .cats_music {
   }
   /* main logo during desktop view */
   #logo a {
-    background: url("https://wally-crunk.github.io/svg/orpheus/ops-logo-lockup-darkmode.svg") right no-repeat;
+    background: url("/svg/orpheus/ops-logo-lockup-darkmode.svg") right no-repeat;
   }
   #logo > a {
     background-size: 200px;
@@ -1793,7 +1794,7 @@ body#collage .cats_music {
     color: #23D1A5;
   }
   #userinfo_minor::before {
-    background: url("https://wally-crunk.github.io/svg/std/chevrons-down-ccc.svg") no-repeat;
+    background: url("/svg/std/chevrons-down-ccc.svg") no-repeat;
     filter: brightness(200%); /*force white */
     background-size: 28px;
     background-position: center;
@@ -1867,7 +1868,7 @@ body#collage .cats_music {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-image: url("https://wally-crunk.github.io/svg/std/menu-000.svg");
+  background-image: url("/svg/std/menu-000.svg");
   background-size: 30px;
   background-origin: padding-box;
   background-clip: border-box;
@@ -2210,7 +2211,7 @@ ul#check:after {
   border-radius: 0.25rem;
   padding: 1rem 1rem 1rem 48px;
   background: hsl(183, 2.5%, 92%);
-  background-image: url("https://wally-crunk.github.io/svg/site/ops-icon-triangle-000.svg");
+  background-image: url("/svg/site/ops-icon-triangle-000.svg");
   background-repeat: no-repeat;
   background-position: 8px center;
   background-size: 32px;
@@ -2222,7 +2223,7 @@ ul#check.nobullet > * {
   border: thick solid #daa520;
   padding: 1rem 1rem 1rem 48px;
   background: hsl(183, 2.5%, 92%);
-  background-image: url("https://wally-crunk.github.io/svg/site/ops-icon-triangle-000.svg");
+  background-image: url("/svg/site/ops-icon-triangle-000.svg");
   background-repeat: no-repeat;
   background-position: 8px center;
   background-size: 32px;
@@ -2247,7 +2248,7 @@ ul#check.nobullet > * {
   border: thick solid #157D63;
   padding: 1rem 1rem 1rem 48px;
   background: #093A2E;
-  background-image: url("https://wally-crunk.github.io/svg/site/ops-icon-harp-ccc.svg");
+  background-image: url("/svg/site/ops-icon-harp-ccc.svg");
   background-repeat: no-repeat;
   background-position: 8px center;
   background-size: 32px;
@@ -2549,7 +2550,7 @@ ul#check.nobullet > * {
   .td_snatched.m_td_right::before,
   .td_seeders.m_td_right::before,
   .td_leechers.m_td_right::before {
-    background: left/10px no-repeat url("https://wally-crunk.github.io/svg/std/arrow-loop-ccc.svg");
+    background: left/10px no-repeat url("/svg/std/arrow-loop-ccc.svg");
     color: #D5E0D9;
     content: ":";
     filter: brightness(80%);
@@ -2559,10 +2560,10 @@ ul#check.nobullet > * {
     width: 14px;
   }
   .td_seeders.m_td_right::before {
-    background-image: url("https://wally-crunk.github.io/svg/std/arrow-up-round-ccc.svg");
+    background-image: url("/svg/std/arrow-up-round-ccc.svg");
   }
   .td_leechers.m_td_right::before {
-    background-image: url("https://wally-crunk.github.io/svg/std/arrow-down-round-ccc.svg");
+    background-image: url("/svg/std/arrow-down-round-ccc.svg");
   }
   .m_table.checkboxes td:first-child {
     display: block;
@@ -2882,7 +2883,7 @@ ul#check.nobullet > * {
     opacity: 1 !important;
     width: 25px;
     height: 25px;
-    background-image: url("https://wally-crunk.github.io/svg/std/chevrons-down-ccc.svg");
+    background-image: url("/svg/std/chevrons-down-ccc.svg");
     background-size: contain;
     z-index: 500;
     pointer-events: none;
@@ -3186,7 +3187,7 @@ ul#check.nobullet > * {
 /* ## 6.1 Debugging Tools */
 /* various 'debug' features are avail in this doc elsewhere */
 li#nav_upload.brackets a:before {
-  content: "b16 [0624.1740] ";
+  content: "assets17 [0628.13] ";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -3195,7 +3196,7 @@ li#nav_upload.brackets a:before {
 }
 
 #footer p:last-of-type:after {
-  content: "ApolloStage b16 [0624.1740] main ";
+  content: "ApolloStage assets17 [0628.13]  ";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -3205,7 +3206,7 @@ li#nav_upload.brackets a:before {
 
 /* ## 6.2 hello viewers of source */
 debug_nonce {
-  debug_nonce: "b16 [0624.1740]";
+  debug_nonce: "assets17 [0628.13]";
 }
 
 
