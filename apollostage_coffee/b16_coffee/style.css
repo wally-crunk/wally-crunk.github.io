@@ -3,7 +3,7 @@
 /* 2024-06-29 */
 /* ######################################################################## */
 /* APOLLOSTAGE THEME */
-/* version 2024.06.23
+/* version 2024.06.29
 /* ######################################################################## */
 /* ######################################################################## */
 /* CHANGELOG */
@@ -3189,7 +3189,7 @@ ul#check.nobullet > * {
 /* ## 6.1 Debugging Tools */
 /* various 'debug' features are avail in this doc elsewhere */
 li#nav_upload.brackets a:before {
-  content: "b16 [0628] rc [23]";
+  content: "b16 [rc2] [23]";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -3198,7 +3198,7 @@ li#nav_upload.brackets a:before {
 }
 
 #footer p:last-of-type:after {
-  content: "ApolloStage b16 [0628] rc coffee [23]";
+  content: "ApolloStage b16 [rc2] coffee [23]";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -3208,7 +3208,7 @@ li#nav_upload.brackets a:before {
 
 /* ## 6.2 hello viewers of source */
 debug_nonce {
-  debug_nonce: "b16 [0628] rc";
+  debug_nonce: "b16 [rc2]";
 }
 
 
