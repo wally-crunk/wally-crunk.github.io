@@ -2124,14 +2124,15 @@ body#torrents div.box.box_tags li > a:first-child:hover {
 }
 
 /* ### 2.2.4 Other special cases */
-/* remove commas between tag bubbles:
+/* remove visibility of commas between tag bubbles. */
 /* only needed on torrent and collage-discog pages. */
+/* per popular request, commas are helpful for copy & paste, make them invisible. */
 #torrent_table .tags,
 #discog_table .tags,
 #userhistory div.group_info.clear div.tags,
 table.torrent_table.cats.checkboxes.border.m_table td.td_info.big_info div.group_info.clear div.tags,
 table.torrent_table.cats.m_table td.td_info.big_info div.group_info.clear div.tags {
-  visibility: hidden;
+  opacity: 0.1;
 }
 
 /* This should not be necessary... */
@@ -3190,7 +3191,7 @@ ul#check.nobullet > * {
 /* ## 6.1 Debugging Tools */
 /* various 'debug' features are avail in this doc elsewhere */
 li#nav_upload.brackets a:before {
-  content: "b16 [rc2] [23]";
+  content: "b16 [rc3] [23]";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -3199,7 +3200,7 @@ li#nav_upload.brackets a:before {
 }
 
 #footer p:last-of-type:after {
-  content: "ApolloStage b16 [rc2] Paper [23]";
+  content: "ApolloStage b16 [rc3] Paper [23]";
   border: thin solid orangered;
   border-radius: 1rem;
   color: orangered;
@@ -3209,7 +3210,7 @@ li#nav_upload.brackets a:before {
 
 /* ## 6.2 hello viewers of source */
 debug_nonce {
-  debug_nonce: "b16 [rc2]";
+  debug_nonce: "b16 [rc3]";
 }
 
 
@@ -3240,7 +3241,7 @@ h6 {
 
 debug {
   debug_1: "ApolloStage";
-  debug_2: "b16 [rc2]";
+  debug_2: "b16 [rc3]";
   debug_3: "Paper";
   debug_4: "[23]";
 }

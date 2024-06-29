@@ -2318,8 +2318,9 @@ body#torrents div.box.box_tags li > a:first-child:hover {
 }
 
 /* ### 2.2.4 Other special cases */
-/* remove commas between tag bubbles:
+/* remove visibility of commas between tag bubbles. */
 /* only needed on torrent and collage-discog pages. */
+/* per popular request, commas are helpful for copy & paste, make them invisible. */
 #torrent_table .tags,
 #discog_table .tags,
 #userhistory div.group_info.clear div.tags,
@@ -2327,7 +2328,7 @@ body#torrents div.box.box_tags li > a:first-child:hover {
 table.torrent_table.cats.checkboxes.border.m_table td.td_info.big_info div.group_info.clear div.tags,
 /* This monstrosity is for torrents.php?type=uploaded */
 table.torrent_table.cats.m_table td.td_info.big_info div.group_info.clear div.tags {
-  visibility: hidden;
+  opacity: 0.1;
 }
 
 /* This should not be necessary... */
