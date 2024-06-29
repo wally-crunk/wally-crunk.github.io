@@ -30,7 +30,7 @@ $fore-600: #BCA5BE;
 $fore-700: #CDB6C5;
 $fore-800: #DBC8D5;
 $fore-900: #DADDEA;
-$fore-1000: #F9ECEC; //#e69f90; //#F9ECEC; 
+$fore-1000: #F9ECEC; 
 
 // midtones ~ reduced brightness 
 // <400 for background accents
@@ -63,6 +63,7 @@ $ds-fiji: #b43477;
 $ds-bali: #9c4366;
 $ds-neutral-300: #a4a4a4;
 $ds-black: #000;
+$ds-menu-white: #fff8f8;
 
 // // Standard except where marked:
 // DEFINE FROM LOGICAL LAYOUT TO TOKENS
@@ -121,7 +122,7 @@ $color-text-important: $ds-red;
 $color-text-input: $fore-600; // for pre-populated inputs
 $color-text-input-active: $fore-900;
 $color-text-linkbox: $midtone-800; // links in linkbox
-$color-text-menu: $ds-black; // changed
+$color-text-menu: $ds-menu-white; // changed
 $color-text-menu-hover: $fore-700; // during pulldown // changed
 $color-text-mono: $fore-500;
 $color-text-notification-words: $ds-black; // changed
