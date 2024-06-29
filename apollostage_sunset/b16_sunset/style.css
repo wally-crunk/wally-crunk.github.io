@@ -2131,7 +2131,7 @@ body#torrents div.box.box_tags li > a:first-child:hover {
 #userhistory div.group_info.clear div.tags,
 table.torrent_table.cats.checkboxes.border.m_table td.td_info.big_info div.group_info.clear div.tags,
 table.torrent_table.cats.m_table td.td_info.big_info div.group_info.clear div.tags {
-  opacity: 0.1;
+  visibility: hidden; /* foo */
 }
 
 /* This should not be necessary... */
