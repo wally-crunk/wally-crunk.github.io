@@ -2123,20 +2123,15 @@ body#torrents div.box.box_tags li > a:first-child:hover {
 }
 
 /* ### 2.2.4 Other special cases */
-/* remove visibility of commas between tag bubbles. */
+/* commas between tags: currently (2024), gazelle provides this inconsistently. */
 /* only needed on torrent and collage-discog pages. */
-/* per popular request, commas are helpful for copy & paste, make them invisible. */
 #torrent_table .tags,
 #discog_table .tags,
 #userhistory div.group_info.clear div.tags,
 table.torrent_table.cats.checkboxes.border.m_table td.td_info.big_info div.group_info.clear div.tags,
 table.torrent_table.cats.m_table td.td_info.big_info div.group_info.clear div.tags {
-  visibility: hidden; /* foo */
-}
-
-/* This should not be necessary... */
-.tags a {
-  visibility: visible;
+  /* use alpha, not invisibility, to preserve copy & paste ability */
+  color: rgba(0, 0, 0, 0.1);
 }
 
 /* ### 2.2.5 Snatched torrent indicators (BETA)*/
