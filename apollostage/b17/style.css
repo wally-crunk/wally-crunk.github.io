@@ -3185,7 +3185,7 @@ ul#check.nobullet > * {
 /* ## 6.1 Debugging Tools */
 /* various 'debug' features are avail in this doc elsewhere */
 #footer p:last-of-type:after {
-  content: "Apollostage build24.06";
+  content: "| Apollostage build 24.06";
 }
 
 

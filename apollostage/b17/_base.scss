@@ -3613,7 +3613,7 @@ ul#check.nobullet > *
 /* various 'debug' features are avail in this doc elsewhere */
 
 #footer p:last-of-type:after {
-  content: 'Apollostage build' + $build-slug;
+  content: '| Apollostage build ' + $build-slug;
 }
 
 /*# sourceMappingURL=styles.css.map */
