@@ -2335,8 +2335,8 @@ tr.snatched_torrent div.tags:before {
 tr.snatched_group div.tags:before, 
 tr.snatched_torrent div.tags:before {
   visibility: visible;
-  background: $back-600;
-  color: $midtone-600;
+  background:  $color-obj-tag_bubble_snatched-background;
+  color: $color-obj-tag_bubble_snatched-foreground;
   border-radius: 1rem;
   box-sizing: border-box;
   display: inline-block;
