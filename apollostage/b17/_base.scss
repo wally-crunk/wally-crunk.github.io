@@ -2336,6 +2336,7 @@ tr.snatched_group div.tags:before,
 tr.snatched_torrent div.tags:before {
   visibility: visible;
   background: $back-600;
+  color: $midtone-600;
   border-radius: 1rem;
   box-sizing: border-box;
   display: inline-block;
@@ -3613,7 +3614,7 @@ ul#check.nobullet > *
 /* various 'debug' features are avail in this doc elsewhere */
 
 #footer p:last-of-type:after {
-  content: '| Apollostage build ' + $build-slug;
+  content: ' | Apollostage build ' + $build-slug;
 }
 
 /*# sourceMappingURL=styles.css.map */
