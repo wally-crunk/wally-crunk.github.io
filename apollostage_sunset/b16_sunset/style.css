@@ -2862,6 +2862,9 @@ ul#check.nobullet > * {
     padding-bottom: 32px;
     opacity: 0;
   }
+  #header a {
+    color: #fff8f8;
+  }
   /* ## 4.17.2 Mobile Menu opens on hover */
   #header:hover {
     height: clamp(200px, var(--row-height) * 15, 100%);
