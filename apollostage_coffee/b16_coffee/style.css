@@ -2143,6 +2143,7 @@ tr.snatched_group div.tags:before,
 tr.snatched_torrent div.tags:before {
   visibility: visible;
   background: #3e3837;
+  color: #E0CDB8;
   border-radius: 1rem;
   box-sizing: border-box;
   display: inline-block;
