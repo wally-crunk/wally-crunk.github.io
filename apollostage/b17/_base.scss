@@ -208,6 +208,15 @@
 // As of 2024, browsers do not allow vars in the CSS @media selector.
 // --phone-screen-size: 575px; 
     
+    $z-lightbox: 1000;
+    $z-upload-error-popups: 900;
+    $z-mobilemenu-whenopen-logo: 999;
+    $z-mobilemenu-closed: 1000;
+    $z-mobilemenu_closed-tab: 400;
+    $z-mobilemenu_closed-tab-icons: 500;
+    $z-desktop-menu-open: 800;
+    $z-desktop-menu-closed: 900;
+    
 /* */
 
 /* ######################################################################## */
@@ -1250,6 +1259,8 @@ ul.collage_images li a > span {
     height: 8px;
 }
 
+$z-lightbox: 1000;
+
 .lightbox {
     align-items: center;
     background-color: rgb(0 0 0 / 32%);
@@ -1268,7 +1279,7 @@ ul.collage_images li a > span {
     right: 0;
     top: 0;
     user-select: none;
-    z-index: 1000;
+    z-index: $z-lightbox;
 }
 
 .lightbox.hidden {
@@ -1953,15 +1964,17 @@ body#collage .cats_music {
           right: 0;
     }
 
+    $z-desktop-menu-closed:900;
+    $z-desktop-menu-open: 800;
     #userinfo_minor,
     #userinfo_username {
           position: absolute;
-          z-index: 900;
+          z-index: $z-desktop-menu-closed;
     }
 
     #userinfo_minor:hover,
     #userinfo_username:hover {
-          z-index: 800;
+          z-index: $z-desktop-menu-open;
     }
 
     #userinfo_username:hover {
@@ -2380,6 +2393,7 @@ tr.snatched_torrent div.tags:before {
 /* ### 2.4.1 Upload warnings ## */
 
 /* display a popup when any upload warning occurs inline on the page*/
+$z-upload-error-popups: 900;
 .upload-error:after,
 ul#check:after {
   content: "Warning!  There were one or more errors in your submission. Check below for error messages.";
@@ -2388,7 +2402,7 @@ ul#check:after {
   top: 64px;
   left: 50vw;
   transform: translateX(-50%);
-  z-index: 900;
+  z-index: $z-upload-error-popups;
   color: black;
   border: thick solid $color-accent-border-error;
   border-radius: 0.25rem;
@@ -3213,6 +3227,7 @@ ul#check.nobullet > *
             animation: delay-pointer-events 2000ms linear;
     }
      
+    $z-mobilemenu-closed: 1000;
     
     #header {
           background: $color-mobilemenu-closed;
@@ -3223,7 +3238,7 @@ ul#check.nobullet > *
           transform: translateY(0);
           transition: 200ms;
           width: 100%;
-          z-index: 1000;
+          z-index: $z-mobilemenu-closed;
           padding-bottom: 32px;
           opacity: 0;
     }
@@ -3244,6 +3259,7 @@ ul#check.nobullet > *
     /* ## 4.17.3 Top Menubar for Mobile */
 
     /* topbar for mobile ~ pulldown arrow icon */
+    $z-mobilemenu_closed-tab-icons: 500;
     #extra1{ 
             position: fixed;
             top: 5px;
@@ -3254,10 +3270,12 @@ ul#check.nobullet > *
             height: 25px;
             background-image: $icon-menu-pulldown-mobile;
             background-size: contain;
-            z-index:500;
+            z-index: $z-mobilemenu_closed-tab-icons;
             pointer-events: none;
     }
 
+    $z-mobilemenu_closed-tab: 400;
+    
     /* topbar for mobile ~ "folder tab" when menu is closed */
     #extra4 {
         background: $color-mobilemenu-closed;
@@ -3265,11 +3283,12 @@ ul#check.nobullet > *
         display: block;
         right: 0;
         width: 100%;
+        z-index: $z-mobilemenu_closed-tab;
     }
 
     /* topbar for mobile ~ site logo, upper left */
     #extra5 {
-        background-image: url("https://wally-crunk.github.io/svg/orpheus/ops-logo-loop.svg");
+        background-image: url($logo-site-square);
         background-position: 0;
         background-size: auto 24px;
         background-repeat: no-repeat;
@@ -3277,7 +3296,7 @@ ul#check.nobullet > *
         pointer-events: none;
         transform: translateZ(0);
         width: 32px;
-        z-index: 400;
+        z-index: $z-mobilemenu_closed-tab-icons;
     }
 
     #extra4, #extra5 {
@@ -3332,10 +3351,11 @@ ul#check.nobullet > *
     
     /* Left side ~ site logo */
     
+    $z-mobilemenu-whenopen-logo: 999;
     #logo {
         position: inherit;
         height: var(--row-height); width:15%;
-        z-index:999;
+        z-index: $z-mobilemenu-whenopen-logo;
         text-align:center;
 
         background: radial-gradient(
@@ -3345,7 +3365,7 @@ ul#check.nobullet > *
     
     #logo a {
         display: inline-block;
-        background: url("https://wally-crunk.github.io/svg/orpheus/ops-logo-loop.svg") center no-repeat;
+        background: url($logo-site-square) center no-repeat;
         background-size: var(--row-height);
         height: var(--row-height); width:var(--row-height);
         
@@ -3514,7 +3534,7 @@ ul#check.nobullet > *
         right: 0;
         top: 0;
         width: 50vw;
-        z-index: 999;
+        z-index: 999; 
     }
     #extracb1:checked ~ #wrapper #header {
         transform: translateY(120%);

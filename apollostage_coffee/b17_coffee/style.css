@@ -2895,10 +2895,11 @@ ul#check.nobullet > * {
     display: block;
     right: 0;
     width: 100%;
+    z-index: 400;
   }
   /* topbar for mobile ~ site logo, upper left */
   #extra5 {
-    background-image: url("https://wally-crunk.github.io/svg/orpheus/ops-logo-loop.svg");
+    background-image: url(url("/svg/orpheus/ops-logo-loop-darkmode.svg"));
     background-position: 0;
     background-size: auto 24px;
     background-repeat: no-repeat;
@@ -2906,7 +2907,7 @@ ul#check.nobullet > * {
     pointer-events: none;
     transform: translateZ(0);
     width: 32px;
-    z-index: 400;
+    z-index: 500;
   }
   #extra4, #extra5 {
     height: 32px;
@@ -2963,7 +2964,7 @@ ul#check.nobullet > * {
   }
   #logo a {
     display: inline-block;
-    background: url("https://wally-crunk.github.io/svg/orpheus/ops-logo-loop.svg") center no-repeat;
+    background: url(url("/svg/orpheus/ops-logo-loop-darkmode.svg")) center no-repeat;
     background-size: var(--row-height);
     height: var(--row-height);
     width: var(--row-height);
