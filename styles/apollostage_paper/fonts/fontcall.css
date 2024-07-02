@@ -117,28 +117,28 @@
   font-style: italic;
   font-weight: 300;
   font-display: swap;
-  src: url('/styles/apollostage/fonts/source/Merriweather-LightItalic.ttf') format('truetype');
+  src: url('/styles/apollostage/fonts/source/Merriweather/static/Merriweather-LightItalic.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Merriweather';
   font-style: italic;
   font-weight: 400;
   font-display: swap;
-  src: url('/styles/apollostage/fonts/source/Merriweather-Italic.ttf') format('truetype');
+  src: url('/styles/apollostage/fonts/source/Merriweather/static/Merriweather-Italic.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Merriweather';
   font-style: italic;
   font-weight: 700;
   font-display: swap;
-  src: url('/styles/apollostage/fonts/source/Merriweather-BoldItalic.ttf') format('truetype');
+  src: url('/styles/apollostage/fonts/source/Merriweather/static/Merriweather-BoldItalic.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Merriweather';
   font-style: italic;
   font-weight: 900;
   font-display: swap;
-  src: url('/styles/apollostage/fonts/source/Merriweather-BlackItalic.ttf') format('truetype');
+  src: url('/styles/apollostage/fonts/source/Merriweather/static/Merriweather-BlackItalic.ttf') format('truetype');
 }
 
 
@@ -147,28 +147,28 @@
   font-style: italic;
   font-weight: 300;
   font-display: swap;
-  src: url('/styles/apollostage/fonts/source/Merriweather-Light.ttf') format('truetype');
+  src: url('/styles/apollostage/fonts/source/Merriweather/static/Merriweather-Light.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Merriweather';
   font-style: italic;
   font-weight: 400;
   font-display: swap;
-  src: url('/styles/apollostage/fonts/source/Merriweather-Regular.ttf') format('truetype');
+  src: url('/styles/apollostage/fonts/source/Merriweather/static/Merriweather-Regular.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Merriweather';
   font-style: italic;
   font-weight: 700;
   font-display: swap;
-  src: url('/styles/apollostage/fonts/source/Merriweather-Bold.ttf') format('truetype');
+  src: url('/styles/apollostage/fonts/source/Merriweather/static/Merriweather-Bold.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Merriweather';
   font-style: italic;
   font-weight: 900;
   font-display: swap;
-  src: url('/styles/apollostage/fonts/source/Merriweather-Black.ttf') format('truetype');
+  src: url('/styles/apollostage/fonts/source/Merriweather/static/Merriweather-Black.ttf') format('truetype');
 }
 
 
@@ -177,42 +177,42 @@
   font-style: italic;
   font-weight: 300;
   font-display: swap;
-  src: url('/styles/apollostage/fonts/source/MerriweatherSans-LightItalic.ttf') format('truetype');
+  src: url('/styles/apollostage/fonts/source/Merriweather/static/MerriweatherSans-LightItalic.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Merriweather Sans';
   font-style: italic;
   font-weight: 400;
   font-display: swap;
-  src: url('/styles/apollostage/fonts/source/MerriweatherSans-Italic.ttf') format('truetype');
+  src: url('/styles/apollostage/fonts/source/Merriweather/static/MerriweatherSans-Italic.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Merriweather Sans';
   font-style: italic;
   font-weight: 500;
   font-display: swap;
-  src: url('/styles/apollostage/fonts/source/MerriweatherSans-MediumItalic.ttf') format('truetype');
+  src: url('/styles/apollostage/fonts/source/Merriweather/static/MerriweatherSans-MediumItalic.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Merriweather Sans';
   font-style: italic;
   font-weight: 600;
   font-display: swap;
-  src: url('/styles/apollostage/fonts/source/MerriweatherSans-SemiboldItalic.ttf') format('truetype');
+  src: url('/styles/apollostage/fonts/source/Merriweather/static/MerriweatherSans-SemiboldItalic.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Merriweather Sans';
   font-style: italic;
   font-weight: 700;
   font-display: swap;
-  src: url('/styles/apollostage/fonts/source/MerriweatherSans-BoldItalic.ttf') format('truetype');
+  src: url('/styles/apollostage/fonts/source/Merriweather/static/MerriweatherSans-BoldItalic.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Merriweather Sans';
   font-style: italic;
   font-weight: 800;
   font-display: swap;
-  src: url('/styles/apollostage/fonts/source/MerriweatherSans-ExtraBoldItalic.ttf') format('truetype');
+  src: url('/styles/apollostage/fonts/source/Merriweather/static/MerriweatherSans-ExtraBoldItalic.ttf') format('truetype');
 }
 
 
@@ -222,41 +222,41 @@
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: url('/styles/apollostage/fonts/source/MerriweatherSans-Light.ttf') format('truetype');
+  src: url('/styles/apollostage/fonts/source/Merriweather/static/MerriweatherSans-Light.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Merriweather Sans';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('/styles/apollostage/fonts/source/MerriweatherSans-Regular.ttf') format('truetype');
+  src: url('/styles/apollostage/fonts/source/Merriweather/static/MerriweatherSans-Regular.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Merriweather Sans';
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url('/styles/apollostage/fonts/source/MerriweatherSans-Medium.ttf') format('truetype');
+  src: url('/styles/apollostage/fonts/source/Merriweather/static/MerriweatherSans-Medium.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Merriweather Sans';
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url('/styles/apollostage/fonts/source/MerriweatherSans-Semibold.ttf') format('truetype');
+  src: url('/styles/apollostage/fonts/source/Merriweather/static/MerriweatherSans-Semibold.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Merriweather Sans';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url('/styles/apollostage/fonts/source/MerriweatherSans-Bold.ttf') format('truetype');
+  src: url('/styles/apollostage/fonts/source/Merriweather/static/MerriweatherSans-Bold.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Merriweather Sans';
   font-style: normal;
   font-weight: 800;
   font-display: swap;
-  src: url('/styles/apollostage/fonts/source/MerriweatherSans-ExtraBold.ttf') format('truetype');
+  src: url('/styles/apollostage/fonts/source/Merriweather/static/MerriweatherSans-ExtraBold.ttf') format('truetype');
 }
 
