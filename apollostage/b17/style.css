@@ -2962,7 +2962,7 @@ ul#check.nobullet > * {
   }
   #logo a {
     display: inline-block;
-    background: url(url("/svg/orpheus/ops-logo-loop-darkmode.svg")) center no-repeat;
+    background: url("/svg/orpheus/ops-logo-loop-darkmode.svg") center no-repeat;
     background-size: var(--row-height);
     height: var(--row-height);
     width: var(--row-height);
@@ -3168,8 +3168,8 @@ ul#check.nobullet > * {
 /* # 5 CHANGES FOR MOBILE, SUPER SHORT VIEW */
 /* ######################################################################## */
 /* ## 5.1 Begin Changes for Mobile, SUPER SMALL window */
-/* compact the Menu in two steps */
-@media (max-width: 575px) and (max-height: 600px) {
+/* compact the Menu responsively in two steps */
+@media (max-width: 575px) and (max-height: 575px) {
   #header {
     --row-height: 35px;
   }

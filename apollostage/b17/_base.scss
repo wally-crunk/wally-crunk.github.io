@@ -205,9 +205,7 @@
 
 /* ## 0.2 Global variables */
 
-// As of 2024, browsers do not allow vars in the CSS @media selector.
-// --phone-screen-size: 575px; 
-    
+    $phone-screen-size: 575px;     
     $z-lightbox: 1000;
     $z-upload-error-popups: 900;
     $z-mobilemenu-whenopen-logo: 999;
@@ -1445,7 +1443,7 @@ $z-lightbox: 1000;
 }
 
 /* only on desktop, not on mobile */
-@media (min-width: 575px)  {
+@media (min-width: $phone-screen-size)  {
     .search_form {
         overflow: hidden;
     }
@@ -1759,7 +1757,7 @@ body#collage .cats_music {
 #header li {
     margin: 0;
 }
-@media only screen and (min-width: 575px)  /* var(--phone-screen-size) */ {
+@media only screen and (min-width: $phone-screen-size) {
     #logo {
         box-sizing: content-box;
         height: 42px;
@@ -1901,7 +1899,7 @@ body#collage .cats_music {
     overflow: hidden;
 }
 
-@media (min-width: 575px)  /* var(--phone-screen-size) */ {
+@media (min-width: $phone-screen-size)  {
     .thin:last-child > :not(.two_columns) {
           margin: 4px;
     }
@@ -2518,7 +2516,7 @@ ul#check.nobullet > *
 /* than being put here like they should be
 /*/
 
-@media only screen and (max-width: 575px) /* var(--phone-screen-size) */ {
+@media only screen and (max-width: $phone-screen-size) {
     /* For mobile phones: */
     #inbox input[type="submit"] {
           font-size: 10px;
@@ -2540,7 +2538,7 @@ ul#check.nobullet > *
 
 /* Begin Changes for Mobile Site */
 
-@media (max-width: 575px)  /* var(--phone-screen-size) */ {
+@media (max-width: $phone-screen-size) {
     .m_hidden {
           display: none !important;
     }
@@ -3365,7 +3363,7 @@ ul#check.nobullet > *
     
     #logo a {
         display: inline-block;
-        background: url($logo-site-square) center no-repeat;
+        background: $logo-site-square center no-repeat;
         background-size: var(--row-height);
         height: var(--row-height); width:var(--row-height);
         
@@ -3609,15 +3607,15 @@ ul#check.nobullet > *
 /* ######################################################################## */
 
 /* ## 5.1 Begin Changes for Mobile, SUPER SMALL window */
-/* compact the Menu in two steps */
+/* compact the Menu responsively in two steps */
 
-@media (max-width: 575px)  /* var(--phone-screen-size) */ and (max-height: 600px) {
+@media (max-width: $phone-screen-size) and (max-height: $phone-screen-size) {
   #header {
     --row-height: 35px;
   }
 }
 
-@media (max-width: 575px)  /* var(--phone-screen-size) */ and (max-height: 510px) {
+@media (max-width: $phone-screen-size) and (max-height: 510px) {
   #userinfo_major,
   #userinfo_major > * {
     display:none;
