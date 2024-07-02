@@ -1851,7 +1851,7 @@ body#collage .cats_music {
 #menu > ul a:hover,
 #userinfo_minor:hover a,
 #userinfo_username:hover a {
-  color: hsl(178, 100%, 5.1%);
+  color: hsl(120, 100%, 99.6%);
 }
 
 /* Icon revealed when menu is open */
