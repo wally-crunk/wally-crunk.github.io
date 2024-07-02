@@ -2958,7 +2958,6 @@ ul#check.nobullet > * {
     position: inherit;
     height: var(--row-height);
     width: 15%;
-    z-index: 999;
     text-align: center;
     background: radial-gradient(circle at top left, #fe8691, #c47891);
   }

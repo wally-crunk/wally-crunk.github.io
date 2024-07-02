@@ -208,7 +208,6 @@
     $phone-screen-size: 575px;     
     $z-lightbox: 1000;
     $z-upload-error-popups: 900;
-    $z-mobilemenu-whenopen-logo: 999;
     $z-mobilemenu-closed: 1000;
     $z-mobilemenu_closed-tab: 400;
     $z-mobilemenu_closed-tab-icons: 500;
@@ -3349,13 +3348,12 @@ ul#check.nobullet > *
     
     /* Left side ~ site logo */
     
-    $z-mobilemenu-whenopen-logo: 999;
     #logo {
         position: inherit;
-        height: var(--row-height); width:15%;
-        z-index: $z-mobilemenu-whenopen-logo;
+        height: var(--row-height); 
+        width:15%;
         text-align:center;
-
+        // better without z-index
         background: radial-gradient(
             circle at top left, 
             $color-mobilemenu-userinfo-1,$color-mobilemenu-userinfo-2 );
