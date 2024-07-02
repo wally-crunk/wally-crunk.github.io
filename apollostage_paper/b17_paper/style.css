@@ -445,7 +445,7 @@ input[type=search]:focus,
 select:focus,
 textarea:focus {
   background: #B5B9BA;
-  border: 1px solid rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(0, 0, 0, 0.225);
   color: #17212E;
 }
 
@@ -1225,7 +1225,7 @@ ul.collage_images li a > span {
 }
 
 #inbox .unreadpm {
-  background: rgba(0, 0, 0, 0.3);
+  background: hsla(215, 90%, 56%, 0.3);
 }
 
 #wiki .navigation_list {
