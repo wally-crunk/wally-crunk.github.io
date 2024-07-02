@@ -145,7 +145,7 @@ $color-text-input: $fore-600; // for pre-populated inputs
 $color-text-input-active: $fore-900;
 $color-text-linkbox: $blue-700; // links in linkbox
 $color-text-menu: $ds-gray-99; // new
-$color-text-menu-hover: $ds-gray-05; //new // during pulldown
+$color-text-menu-hover: $ds-gray-99; //new // during pulldown
 $color-text-mono: $fore-500;
 $color-text-notification-words: $neutral-1000;
 $color-text-popup-anchor-hover: $blue-800;
@@ -269,7 +269,7 @@ $icon-warning: url("/svg/site/ops-icon-triangle-000.svg"); // or X
 
 /* local overrides for this theme */
 
-@import url('/styles/apollostage_paper/fonts/fontcall.css');
+@import url('/styles/apollostage_paper/fonts/fontcall_local_paper.css');
 
 body, textarea {
  font-family: "Merriweather Sans", Noto, "Noto Sans", "Microsoft Yahei", 	sans-serif;

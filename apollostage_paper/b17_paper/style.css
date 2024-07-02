@@ -103,8 +103,8 @@
 /* */
 /* ## 0.1 Housekeeping and font loading */
 /* Font loading */
-@import url("/styles/apollostage/fonts/fontcall.css");
-@import url("/styles/apollostage_paper/fonts/fontcall.css");
+@import url("/styles/apollostage/fonts/fontcall_local_reg.css");
+@import url("/styles/apollostage_paper/fonts/fontcall_local_paper.css");
 @namespace url("http://www.w3.org/1999/xhtml");
 @namespace svg url("http://www.w3.org/2000/svg");
 /* END font loading */
@@ -1851,7 +1851,7 @@ body#collage .cats_music {
 #menu > ul a:hover,
 #userinfo_minor:hover a,
 #userinfo_username:hover a {
-  color: hsl(178, 100%, 5.1%);
+  color: hsl(120, 100%, 99.6%);
 }
 
 /* Icon revealed when menu is open */

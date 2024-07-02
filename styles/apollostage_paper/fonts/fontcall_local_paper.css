@@ -1,0 +1,262 @@
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: italic;
+  font-weight: 100;
+  font-display: swap;
+  src: url('/styles/apollostage/fonts/source/JetBrains_Mono/static/JetBrainsMono-ThinItalic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: italic;
+  font-weight: 200;
+  font-display: swap;
+  src: url('/styles/apollostage/fonts/source/JetBrains_Mono/static/JetBrainsMono-ExtraLightItalic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url('/styles/apollostage/fonts/source/JetBrains_Mono/static/JetBrainsMono-LightItalic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/styles/apollostage/fonts/source/JetBrains_Mono/static/JetBrainsMono-Italic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/styles/apollostage/fonts/source/JetBrains_Mono/static/JetBrainsMono-MediumItalic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/styles/apollostage/fonts/source/JetBrains_Mono/static/JetBrainsMono-SemiBoldItalic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/styles/apollostage/fonts/source/JetBrains_Mono/static/JetBrainsMono-BoldItalic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: url('/styles/apollostage/fonts/source/JetBrains_Mono/static/JetBrainsMono-ExtraBoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url('/styles/apollostage/fonts/source/JetBrains_Mono/static/JetBrainsMono-Thin.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url('/styles/apollostage/fonts/source/JetBrains_Mono/static/JetBrainsMono-ExtraLight.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('/styles/apollostage/fonts/source/JetBrains_Mono/static/JetBrainsMono-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/styles/apollostage/fonts/source/JetBrains_Mono/static/JetBrainsMono-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/styles/apollostage/fonts/source/JetBrains_Mono/static/JetBrainsMono-Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/styles/apollostage/fonts/source/JetBrains_Mono/static/JetBrainsMono-SemiBold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/styles/apollostage/fonts/source/JetBrains_Mono/static/JetBrainsMono-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url('/styles/apollostage/fonts/source/JetBrains_Mono/static/JetBrainsMono-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url('/styles/apollostage/fonts/source/Merriweather/static/Merriweather-LightItalic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Merriweather';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/styles/apollostage/fonts/source/Merriweather/static/Merriweather-Italic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Merriweather';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/styles/apollostage/fonts/source/Merriweather/static/Merriweather-BoldItalic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Merriweather';
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+  src: url('/styles/apollostage/fonts/source/Merriweather/static/Merriweather-BlackItalic.ttf') format('truetype');
+}
+
+
+@font-face {
+  font-family: 'Merriweather';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url('/styles/apollostage/fonts/source/Merriweather/static/Merriweather-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Merriweather';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/styles/apollostage/fonts/source/Merriweather/static/Merriweather-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Merriweather';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/styles/apollostage/fonts/source/Merriweather/static/Merriweather-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Merriweather';
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+  src: url('/styles/apollostage/fonts/source/Merriweather/static/Merriweather-Black.ttf') format('truetype');
+}
+
+
+@font-face {
+  font-family: 'Merriweather Sans';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url('/styles/apollostage/fonts/source/Merriweather/static/MerriweatherSans-LightItalic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Merriweather Sans';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/styles/apollostage/fonts/source/Merriweather/static/MerriweatherSans-Italic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Merriweather Sans';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/styles/apollostage/fonts/source/Merriweather/static/MerriweatherSans-MediumItalic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Merriweather Sans';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/styles/apollostage/fonts/source/Merriweather/static/MerriweatherSans-SemiboldItalic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Merriweather Sans';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/styles/apollostage/fonts/source/Merriweather/static/MerriweatherSans-BoldItalic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Merriweather Sans';
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: url('/styles/apollostage/fonts/source/Merriweather/static/MerriweatherSans-ExtraBoldItalic.ttf') format('truetype');
+}
+
+
+
+@font-face {
+  font-family: 'Merriweather Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('/styles/apollostage/fonts/source/Merriweather/static/MerriweatherSans-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Merriweather Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/styles/apollostage/fonts/source/Merriweather/static/MerriweatherSans-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Merriweather Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/styles/apollostage/fonts/source/Merriweather/static/MerriweatherSans-Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Merriweather Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/styles/apollostage/fonts/source/Merriweather/static/MerriweatherSans-Semibold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Merriweather Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/styles/apollostage/fonts/source/Merriweather/static/MerriweatherSans-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Merriweather Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url('/styles/apollostage/fonts/source/Merriweather/static/MerriweatherSans-ExtraBold.ttf') format('truetype');
+}
+
