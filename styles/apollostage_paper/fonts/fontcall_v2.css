@@ -1,0 +1,144 @@
+/* fontcall_v2.css
+/* for apollostage_paper incremental fonts;
+/* this is meant to be incremental to the baseline apollostage fontcall. 
+
+@font-face {
+  font-family: 'Merriweather';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url('ttf/Merriweather/Merriweather-300-italic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Merriweather';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('ttf/Merriweather/Merriweather-400-italic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Merriweather';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url('ttf/Merriweather/Merriweather-700-italic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Merriweather';
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+  src: url('ttf/Merriweather/Merriweather-900-italic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('ttf/Merriweather/Merriweather-300-regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('ttf/Merriweather/Merriweather-400-regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('ttf/Merriweather/Merriweather-700-regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url('ttf/Merriweather/Merriweather-900-regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Merriweather Sans';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url('ttf/MerriweatherSans/MerriweatherSans-300-italic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Merriweather Sans';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('ttf/MerriweatherSans/MerriweatherSans-400-italic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Merriweather Sans';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url('ttf/MerriweatherSans/MerriweatherSans-500-italic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Merriweather Sans';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url('ttf/MerriweatherSans/MerriweatherSans-600-italic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Merriweather Sans';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url('ttf/MerriweatherSans/MerriweatherSans-700-italic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Merriweather Sans';
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: url('ttf/MerriweatherSans/MerriweatherSans-800-italic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Merriweather Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('ttf/MerriweatherSans/MerriweatherSans-300-regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Merriweather Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('ttf/MerriweatherSans/MerriweatherSans-400-regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Merriweather Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('ttf/MerriweatherSans/MerriweatherSans-500-regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Merriweather Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('ttf/MerriweatherSans/MerriweatherSans-600-regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Merriweather Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('ttf/MerriweatherSans/MerriweatherSans-700-regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Merriweather Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url('ttf/MerriweatherSans/MerriweatherSans-800-regular.ttf') format('truetype');
+}

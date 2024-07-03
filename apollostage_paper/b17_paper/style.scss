@@ -8,7 +8,7 @@
 @import '../apollostage/_variables';
 
 // debug slugs: must be after import.
-$build-slug: "paper 24.06";
+$build-slug: $build-slug + " " + "paper 24.06";
 
 // ////////////////////////////////////////////////////////////////////////////////
 // COLORS
@@ -98,7 +98,8 @@ $blue-900: #1C2B41;
  $ds-green: #11890e;
  $ds-yellow: #c9a612;
  $ds-fx-low: rgba(0,0,0, 0.15);
- $ds-fx-mid: rgba(0,0,0, 0.25);
+ $ds-fx-mid: rgba(0,0,0, 0.225);
+ $ds-fx-blue: hsla(215, 90%, 56%, .3);
  $ds-gray-05: hsl(178, 100%, 5.1%);
  $ds-gray-13: hsl(180, 11%, 13%); //goes nowhere does nothing; 
  $ds-gray-52: hsl(181, 3.5%, 52%);  
@@ -128,6 +129,7 @@ $color-background-table-keyrows: $mid-300; // navigation row ~ "jump up to.."
 $color-background-table-torrenttable: $back-300; // also form field in focus
 $color-background-table-torrents-group: $back-600;
 $color-background-torrent: $mid-200; // edition in group-list
+$color-background-fx-unread: $ds-fx-blue;
 
 $color-text-anchor-hover: $blue-800;
 $color-text-anchor: $blue-700;
@@ -143,7 +145,7 @@ $color-text-input: $fore-600; // for pre-populated inputs
 $color-text-input-active: $fore-900;
 $color-text-linkbox: $blue-700; // links in linkbox
 $color-text-menu: $ds-gray-99; // new
-$color-text-menu-hover: $ds-gray-05; //new // during pulldown
+$color-text-menu-hover: $ds-gray-99; //new // during pulldown
 $color-text-mono: $fore-500;
 $color-text-notification-words: $neutral-1000;
 $color-text-popup-anchor-hover: $blue-800;
@@ -245,6 +247,7 @@ $icon-notification: url("/styles/apollostage/images/notification-bell-000xeee.sv
 
 // Used in Header
 // changing to light mode version
+// // Orpheus specific:
 $logo-site-lockup: url("/svg/site/ops-logo-lockup-lightmode.svg");
 $logo-site-square: url("/svg/site/ops-logo-loop-lightmode.svg");
 
@@ -257,9 +260,9 @@ $icon-number-leechers: url("/svg/std/arrow-down-round-000.svg");
 // // standard: 
 // $icon-notification: url("/svg/std/notification-bell-000.svg");
 // $icon-warning: url("/svg/std/x-000.svg")
-// // Orpheus specific:
+// // Orpheus specific; other deployments, use the above.
 $icon-notification: url("/svg/site/ops-icon-harp-000.svg");
-$icon-warning: url("/svg/site/ops-icon-triangle-000.svg"); // or X
+$icon-warning: url("/svg/site/ops-icon-triangle-000.svg"); 
 
 // EOF
 
@@ -267,7 +270,8 @@ $icon-warning: url("/svg/site/ops-icon-triangle-000.svg"); // or X
 
 /* local overrides for this theme */
 
-@import url('/styles/apollostage_paper/fonts/fontcall.css');
+// For this derivative, incremental fonts to the baseline theme.
+@import url('/styles/apollostage_paper/fonts/fontcall_v2.css');
 
 body, textarea {
  font-family: "Merriweather Sans", Noto, "Noto Sans", "Microsoft Yahei", 	sans-serif;
