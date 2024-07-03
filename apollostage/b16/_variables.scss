@@ -1,12 +1,10 @@
-//
 // APOLLOSTAGE THEME
 // DEFINE THEME COLORS AND ICONS
-// NEW FORMAT
 
 // ////////////////////////////////////////////////////////////////////////////////
 // SLUG
 
- $build-slug: "24.06"; // must include quots
+ $build-slug: "2407"; // must include quotes
  
 // ////////////////////////////////////////////////////////////////////////////////
 // COLORS
@@ -100,6 +98,7 @@ $color-background-table-row-odd: $back-300;
 $color-background-table-row-even: $back-200;
 $color-background-table-torrenttable: $back-300; // also form field in focus
 $color-background-table-torrents-group: $back-600;
+$color-background-fx-unread: $ds-fx-mid;
 
 $color-background-torrent: $midtone-200; // edition in group-list
 $color-background-table-discog: $midtone-300; // navigation row ~ "jump down to.."
@@ -139,7 +138,7 @@ $color-text-input: $fore-600; // for pre-populated inputs
 $color-text-input-active: $fore-900;
 $color-text-linkbox: $midtone-800; // links in linkbox
 $color-text-menu: $fore-1000;
-$color-text-menu-hover: $back-300; // during pulldown
+$color-text-menu-hover: $color-text-menu; // during pulldown
 $color-text-mono: $fore-500;
 $color-text-notification-words: $fore-1000;
 $color-text-ratio-greenzone: $ds-green;
@@ -230,6 +229,7 @@ $icon-menu-closed-state: url("/svg/std/chevrons-down-ccc.svg");
 $icon-menu-pulldown-mobile: url("/svg/std/chevrons-down-ccc.svg");
 
 // Used in Header
+// Orpheus specific.  Other deployments, provide your own.
 $logo-site-lockup: url("/svg/orpheus/ops-logo-lockup-darkmode.svg");
 $logo-site-square: url("/svg/orpheus/ops-logo-loop-darkmode.svg");
 
@@ -243,9 +243,9 @@ $icon-number-leechers: url("/svg/std/arrow-down-round-ccc.svg");
 // // standard: 
 // $icon-notification: url("/svg/std/notification-bell-333xccc.svg");
 // $icon-warning: url("/svg/std/x-c33.svg")
-// // Orpheus specific:
+// // Orpheus specific; other deployments, use the above.
 $icon-notification: url("/svg/site/ops-icon-harp-ccc.svg");
-$icon-warning: url("/svg/site/ops-icon-triangle-000.svg"); // or X
+$icon-warning: url("/svg/site/ops-icon-triangle-000.svg"); 
 
 // EOF
 // ////////////////////////////////////////////////////////////////////////////////

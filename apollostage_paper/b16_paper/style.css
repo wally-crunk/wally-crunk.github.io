@@ -1,22 +1,18 @@
 @charset "UTF-8";
 /* APOLLOSTAGE PAPER THEME */
-/* 2024-06-29 */
-/* ######################################################################## */
-/* APOLLOSTAGE THEME */
-/* version 2024-06-30
-/* ######################################################################## */
+/* 2024-07-03 */
+/* */
+/* */
 /* ######################################################################## */
 /* CHANGELOG */
 /* ######################################################################## */
-/* */
-/* */
-/*  # 2024-06-30 - Updated with community feedback. */
+/*  # 2024-07-03 - Updated with community feedback. */
 /*  # Fix: mobile menu, category stripes;  
 /*  # Feature: Add SVGs, tag bubbles, italic fonts and more;
 /*  # Feature: Added new light mode theme;
+/*  # Feature: Fonts hosted locally;
 /*  # Chore: Organized and documented the SCSS. */
 /*  For full changelog: see uncompiled SASS file. */
-/*   Original version by burtoo and contributors.  */
 /* */
 /* */
 /* ######################################################################## */
@@ -103,8 +99,7 @@
 /* */
 /* ## 0.1 Housekeeping and font loading */
 /* Font loading */
-@import url("/styles/apollostage/fonts/fontcall.css");
-@import url("/styles/apollostage_paper/fonts/fontcall.css");
+@import url("/styles/apollostage/fonts/fontcall_v2.css");
 @namespace url("http://www.w3.org/1999/xhtml");
 @namespace svg url("http://www.w3.org/2000/svg");
 /* END font loading */
@@ -445,7 +440,7 @@ input[type=search]:focus,
 select:focus,
 textarea:focus {
   background: #B5B9BA;
-  border: 1px solid rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(0, 0, 0, 0.225);
   color: #17212E;
 }
 
@@ -1225,7 +1220,7 @@ ul.collage_images li a > span {
 }
 
 #inbox .unreadpm {
-  background: rgba(255, 255, 255, 0.25);
+  background: hsla(215, 90%, 56%, 0.3);
 }
 
 #wiki .navigation_list {
@@ -1851,7 +1846,7 @@ body#collage .cats_music {
 #menu > ul a:hover,
 #userinfo_minor:hover a,
 #userinfo_username:hover a {
-  color: hsl(178, 100%, 5.1%);
+  color: hsl(120, 100%, 99.6%);
 }
 
 /* Icon revealed when menu is open */
@@ -2896,10 +2891,11 @@ ul#check.nobullet > * {
     display: block;
     right: 0;
     width: 100%;
+    z-index: 400;
   }
   /* topbar for mobile ~ site logo, upper left */
   #extra5 {
-    background-image: url("https://wally-crunk.github.io/svg/orpheus/ops-logo-loop.svg");
+    background-image: url("/svg/site/ops-logo-loop-lightmode.svg");
     background-position: 0;
     background-size: auto 24px;
     background-repeat: no-repeat;
@@ -2907,7 +2903,7 @@ ul#check.nobullet > * {
     pointer-events: none;
     transform: translateZ(0);
     width: 32px;
-    z-index: 400;
+    z-index: 500;
   }
   #extra4, #extra5 {
     height: 32px;
@@ -2958,13 +2954,12 @@ ul#check.nobullet > * {
     position: inherit;
     height: var(--row-height);
     width: 15%;
-    z-index: 999;
     text-align: center;
     background: radial-gradient(circle at top left, #00674E, #00A280);
   }
   #logo a {
     display: inline-block;
-    background: url("https://wally-crunk.github.io/svg/orpheus/ops-logo-loop.svg") center no-repeat;
+    background: url("/svg/site/ops-logo-loop-lightmode.svg") center no-repeat;
     background-size: var(--row-height);
     height: var(--row-height);
     width: var(--row-height);
@@ -3170,8 +3165,8 @@ ul#check.nobullet > * {
 /* # 5 CHANGES FOR MOBILE, SUPER SHORT VIEW */
 /* ######################################################################## */
 /* ## 5.1 Begin Changes for Mobile, SUPER SMALL window */
-/* compact the Menu in two steps */
-@media (max-width: 575px) and (max-height: 600px) {
+/* compact the Menu responsively in two steps */
+@media (max-width: 575px) and (max-height: 575px) {
   #header {
     --row-height: 35px;
   }
@@ -3192,16 +3187,509 @@ ul#check.nobullet > * {
 /* ## 6.1 Debugging Tools */
 /* various 'debug' features are avail in this doc elsewhere */
 #footer p:last-of-type:after {
-  content: " | Apollostage build paper 24.06";
+  content: " | Apollostage build 2407 paper 2407";
 }
 
 
-/* ####### */
-/* # EOF # */
-/* ####### */
-/* local overrides for this theme */
+/* ######################################################################## */
+/* # End of Section */
+/* ######################################################################## */
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: italic;
+  font-weight: 100;
+  font-display: swap;
+  src: url("/styles/apollostage/fonts/ttf/JetBrainsMono/JetBrainsMono-100-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: italic;
+  font-weight: 200;
+  font-display: swap;
+  src: url("/styles/apollostage/fonts/ttf/JetBrainsMono/JetBrainsMono-200-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/styles/apollostage/fonts/ttf/JetBrainsMono/JetBrainsMono-300-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/styles/apollostage/fonts/ttf/JetBrainsMono/JetBrainsMono-400-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/styles/apollostage/fonts/ttf/JetBrainsMono/JetBrainsMono-500-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/styles/apollostage/fonts/ttf/JetBrainsMono/JetBrainsMono-600-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/styles/apollostage/fonts/ttf/JetBrainsMono/JetBrainsMono-700-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/styles/apollostage/fonts/ttf/JetBrainsMono/JetBrainsMono-800-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url("/styles/apollostage/fonts/ttf/JetBrainsMono/JetBrainsMono-100.ttf") format("truetype");
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url("/styles/apollostage/fonts/ttf/JetBrainsMono/JetBrainsMono-200.ttf") format("truetype");
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/styles/apollostage/fonts/ttf/JetBrainsMono/JetBrainsMono-300.ttf") format("truetype");
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/styles/apollostage/fonts/ttf/JetBrainsMono/JetBrainsMono-400.ttf") format("truetype");
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/styles/apollostage/fonts/ttf/JetBrainsMono/JetBrainsMono-500.ttf") format("truetype");
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/styles/apollostage/fonts/ttf/JetBrainsMono/JetBrainsMono-600.ttf") format("truetype");
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/styles/apollostage/fonts/ttf/JetBrainsMono/JetBrainsMono-700.ttf") format("truetype");
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/styles/apollostage/fonts/ttf/JetBrainsMono/JetBrainsMono-800.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 300;
+  font-stretch: normal;
+  font-display: swap;
+  src: url("/styles/apollostage/fonts/ttf/OpenSans/OpenSans-300-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: swap;
+  src: url("/styles/apollostage/fonts/ttf/OpenSans/OpenSans-400-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 500;
+  font-stretch: normal;
+  font-display: swap;
+  src: url("/styles/apollostage/fonts/ttf/OpenSans/OpenSans-500-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 600;
+  font-stretch: normal;
+  font-display: swap;
+  src: url("/styles/apollostage/fonts/ttf/OpenSans/OpenSans-600-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 700;
+  font-stretch: normal;
+  font-display: swap;
+  src: url("/styles/apollostage/fonts/ttf/OpenSans/OpenSans-700-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 800;
+  font-stretch: normal;
+  font-display: swap;
+  src: url("/styles/apollostage/fonts/ttf/OpenSans/OpenSans-800-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: normal;
+  font-display: swap;
+  src: url("/styles/apollostage/fonts/ttf/OpenSans/OpenSans-300.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: swap;
+  src: url("/styles/apollostage/fonts/ttf/OpenSans/OpenSans-400.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: normal;
+  font-display: swap;
+  src: url("/styles/apollostage/fonts/ttf/OpenSans/OpenSans-500.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: normal;
+  font-display: swap;
+  src: url("/styles/apollostage/fonts/ttf/OpenSans/OpenSans-600.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+  font-display: swap;
+  src: url("/styles/apollostage/fonts/ttf/OpenSans/OpenSans-700.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-stretch: normal;
+  font-display: swap;
+  src: url("/styles/apollostage/fonts/ttf/OpenSans/OpenSans-800.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Noto Sans";
+  font-style: italic;
+  font-weight: 100;
+  font-stretch: normal;
+  font-display: swap;
+  src: url("/styles/apollostage/fonts/ttf/NotoSans/NotoSans-100-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Noto Sans";
+  font-style: italic;
+  font-weight: 200;
+  font-stretch: normal;
+  font-display: swap;
+  src: url("/styles/apollostage/fonts/ttf/NotoSans/NotoSans-200-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Noto Sans";
+  font-style: italic;
+  font-weight: 300;
+  font-stretch: normal;
+  font-display: swap;
+  src: url("/styles/apollostage/fonts/ttf/NotoSans/NotoSans-300-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Noto Sans";
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: swap;
+  src: url("/styles/apollostage/fonts/ttf/NotoSans/NotoSans-400-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Noto Sans";
+  font-style: italic;
+  font-weight: 500;
+  font-stretch: normal;
+  font-display: swap;
+  src: url("/styles/apollostage/fonts/ttf/NotoSans/NotoSans-500-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Noto Sans";
+  font-style: italic;
+  font-weight: 600;
+  font-stretch: normal;
+  font-display: swap;
+  src: url("/styles/apollostage/fonts/ttf/NotoSans/NotoSans-600-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Noto Sans";
+  font-style: italic;
+  font-weight: 700;
+  font-stretch: normal;
+  font-display: swap;
+  src: url("/styles/apollostage/fonts/ttf/NotoSans/NotoSans-700-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Noto Sans";
+  font-style: italic;
+  font-weight: 800;
+  font-stretch: normal;
+  font-display: swap;
+  src: url("/styles/apollostage/fonts/ttf/NotoSans/NotoSans-800-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Noto Sans";
+  font-style: italic;
+  font-weight: 900;
+  font-stretch: normal;
+  font-display: swap;
+  src: url("/styles/apollostage/fonts/ttf/NotoSans/NotoSans-900-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 100;
+  font-stretch: normal;
+  font-display: swap;
+  src: url("/styles/apollostage/fonts/ttf/NotoSans/NotoSans-100.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 200;
+  font-stretch: normal;
+  font-display: swap;
+  src: url("/styles/apollostage/fonts/ttf/NotoSans/NotoSans-200.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: normal;
+  font-display: swap;
+  src: url("/styles/apollostage/fonts/ttf/NotoSans/NotoSans-300.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: swap;
+  src: url("/styles/apollostage/fonts/ttf/NotoSans/NotoSans-400.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: normal;
+  font-display: swap;
+  src: url("/styles/apollostage/fonts/ttf/NotoSans/NotoSans-500.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: normal;
+  font-display: swap;
+  src: url("/styles/apollostage/fonts/ttf/NotoSans/NotoSans-600.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+  font-display: swap;
+  src: url("/styles/apollostage/fonts/ttf/NotoSans/NotoSans-700.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-stretch: normal;
+  font-display: swap;
+  src: url("/styles/apollostage/fonts/ttf/NotoSans/NotoSans-800.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 900;
+  font-stretch: normal;
+  font-display: swap;
+  src: url("/styles/apollostage/fonts/ttf/NotoSans/NotoSans-900.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Merriweather";
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/styles/apollostage_paper/fonts/ttf/Merriweather/Merriweather-300-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Merriweather";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/styles/apollostage_paper/fonts/ttf/Merriweather/Merriweather-400-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Merriweather";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/styles/apollostage_paper/fonts/ttf/Merriweather/Merriweather-700-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Merriweather";
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+  src: url("/styles/apollostage_paper/fonts/ttf/Merriweather/Merriweather-900-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/styles/apollostage_paper/fonts/ttf/Merriweather/Merriweather-300.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/styles/apollostage_paper/fonts/ttf/Merriweather/Merriweather-400.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/styles/apollostage_paper/fonts/ttf/Merriweather/Merriweather-700.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("/styles/apollostage_paper/fonts/ttf/Merriweather/Merriweather-900.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Merriweather Sans";
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/styles/apollostage_paper/fonts/ttf/MerriweatherSans/MerriweatherSans-300-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Merriweather Sans";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/styles/apollostage_paper/fonts/ttf/MerriweatherSans/MerriweatherSans-400-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Merriweather Sans";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/styles/apollostage_paper/fonts/ttf/MerriweatherSans/MerriweatherSans-500-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Merriweather Sans";
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/styles/apollostage_paper/fonts/ttf/MerriweatherSans/MerriweatherSans-600-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Merriweather Sans";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/styles/apollostage_paper/fonts/ttf/MerriweatherSans/MerriweatherSans-700-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Merriweather Sans";
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/styles/apollostage_paper/fonts/ttf/MerriweatherSans/MerriweatherSans-800-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Merriweather Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/styles/apollostage_paper/fonts/ttf/MerriweatherSans/MerriweatherSans-300.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Merriweather Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/styles/apollostage_paper/fonts/ttf/MerriweatherSans/MerriweatherSans-400.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Merriweather Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/styles/apollostage_paper/fonts/ttf/MerriweatherSans/MerriweatherSans-500.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Merriweather Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/styles/apollostage_paper/fonts/ttf/MerriweatherSans/MerriweatherSans-600.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Merriweather Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/styles/apollostage_paper/fonts/ttf/MerriweatherSans/MerriweatherSans-700.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Merriweather Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/styles/apollostage_paper/fonts/ttf/MerriweatherSans/MerriweatherSans-800.ttf") format("truetype");
+}
+/* ****************************** */
+/* Local overrides for this theme */
 body, textarea {
-  font-family: "Merriweather Sans", Noto, "Noto Sans", "Microsoft Yahei", sans-serif;
+  font-family: "Merriweather Sans", "Noto Sans", "Microsoft Yahei", Tahoma, sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   font-weight: 320;
@@ -3217,7 +3705,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Merriweather", Noto, "Noto Sans", "Open Sans", Tahoma, sans-serif;
+  font-family: "Merriweather", "Noto Sans", "Open Sans", Tahoma, sans-serif;
   font-weight: 700;
 }
 
