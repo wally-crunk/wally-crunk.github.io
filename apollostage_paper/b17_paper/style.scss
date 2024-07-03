@@ -1,14 +1,14 @@
 /* APOLLOSTAGE PAPER THEME */
-/* 2024-06-29 */
+/* 2024-07-03 */
 
 /// ////////////////////////////////////////////////////////////////////////////////
 // SLUG
 
 // import basic colors as a backup:
 @import '../apollostage/_variables';
-
 // debug slugs: must be after import.
-$build-slug: $build-slug + " " + "paper 24.07";
+$build-slug: $build-slug + " " + "paper 2407";
+// and override as follows:
 
 // ////////////////////////////////////////////////////////////////////////////////
 // COLORS

@@ -1,16 +1,14 @@
 /* APOLLOSTAGE SUNSET THEME */
-/* 2024-06-29 */
+/* 2024-07-03 */
 
 // ////////////////////////////////////////////////////////////////////////////////
 // SLUG/SETUP
 
 // import basic colors as a backup:
 @import '../apollostage/_variables';
-
-// and override as follows:
-
 // debug slugs: must be after import.
-$build-slug: $build-slug + " " + "sunset 24.07";
+$build-slug: $build-slug + " " + "sunset 2407";
+// and override as follows:
   
 // ////////////////////////////////////////////////////////////////////////////////
 // COLORS

@@ -1,20 +1,20 @@
 @charset "UTF-8";
 /* ######################################################################## */
 /* APOLLOSTAGE THEME */
-/* version 2024-06-30
+/* version 2024-07-03
 /* ######################################################################## */
+/* */
+/* */
 /* ######################################################################## */
 /* CHANGELOG */
 /* ######################################################################## */
-/* */
-/* */
-/*  # 2024-06-30 - Updated with community feedback. */
+/*  # 2024-07-03 - Updated with community feedback. */
 /*  # Fix: mobile menu, category stripes;  
 /*  # Feature: Add SVGs, tag bubbles, italic fonts and more;
 /*  # Feature: Added new light mode theme;
+/*  # Feature: Fonts hosted locally;
 /*  # Chore: Organized and documented the SCSS. */
 /*  For full changelog: see uncompiled SASS file. */
-/*   Original version by burtoo and contributors.  */
 /* */
 /* */
 /* ######################################################################## */
@@ -3189,13 +3189,13 @@ ul#check.nobullet > * {
 /* ## 6.1 Debugging Tools */
 /* various 'debug' features are avail in this doc elsewhere */
 #footer p:last-of-type:after {
-  content: " | Apollostage build 2024-07-03b";
+  content: " | Apollostage build 2407";
 }
 
 
-/* ####### */
-/* # EOF # */
-/* ####### */
+/* ######################################################################## */
+/* # End of Section */
+/* ######################################################################## */
 @font-face {
   font-family: "JetBrains Mono";
   font-style: italic;
@@ -3410,7 +3410,7 @@ ul#check.nobullet > * {
   font-weight: 100;
   font-stretch: normal;
   font-display: swap;
-  src: url("/styles/apollostage/fonts/ttf/NotoSans/NotoSans-100-italic.ttf") format("truetype");
+  src: url("/styles/apollostage/fonts/ttf/NotoSans/NotoSans-100-Italic.ttf") format("truetype");
 }
 @font-face {
   font-family: "Noto Sans";
@@ -3418,7 +3418,7 @@ ul#check.nobullet > * {
   font-weight: 200;
   font-stretch: normal;
   font-display: swap;
-  src: url("/styles/apollostage/fonts/ttf/NotoSans/NotoSans-200-italic.ttf") format("truetype");
+  src: url("/styles/apollostage/fonts/ttf/NotoSans/NotoSans-200-Italic.ttf") format("truetype");
 }
 @font-face {
   font-family: "Noto Sans";
@@ -3426,7 +3426,7 @@ ul#check.nobullet > * {
   font-weight: 300;
   font-stretch: normal;
   font-display: swap;
-  src: url("/styles/apollostage/fonts/ttf/NotoSans/NotoSans-300-italic.ttf") format("truetype");
+  src: url("/styles/apollostage/fonts/ttf/NotoSans/NotoSans-300-Italic.ttf") format("truetype");
 }
 @font-face {
   font-family: "Noto Sans";
@@ -3434,7 +3434,7 @@ ul#check.nobullet > * {
   font-weight: 400;
   font-stretch: normal;
   font-display: swap;
-  src: url("/styles/apollostage/fonts/ttf/NotoSans/NotoSans-400-italic.ttf") format("truetype");
+  src: url("/styles/apollostage/fonts/ttf/NotoSans/NotoSans-400-Italic.ttf") format("truetype");
 }
 @font-face {
   font-family: "Noto Sans";
@@ -3442,7 +3442,7 @@ ul#check.nobullet > * {
   font-weight: 500;
   font-stretch: normal;
   font-display: swap;
-  src: url("/styles/apollostage/fonts/ttf/NotoSans/NotoSans-500-italic.ttf") format("truetype");
+  src: url("/styles/apollostage/fonts/ttf/NotoSans/NotoSans-500-Italic.ttf") format("truetype");
 }
 @font-face {
   font-family: "Noto Sans";
@@ -3450,7 +3450,7 @@ ul#check.nobullet > * {
   font-weight: 600;
   font-stretch: normal;
   font-display: swap;
-  src: url("/styles/apollostage/fonts/ttf/NotoSans/NotoSans-600-italic.ttf") format("truetype");
+  src: url("/styles/apollostage/fonts/ttf/NotoSans/NotoSans-600-Italic.ttf") format("truetype");
 }
 @font-face {
   font-family: "Noto Sans";
@@ -3458,7 +3458,7 @@ ul#check.nobullet > * {
   font-weight: 700;
   font-stretch: normal;
   font-display: swap;
-  src: url("/styles/apollostage/fonts/ttf/NotoSans/NotoSans-700-italic.ttf") format("truetype");
+  src: url("/styles/apollostage/fonts/ttf/NotoSans/NotoSans-700-Italic.ttf") format("truetype");
 }
 @font-face {
   font-family: "Noto Sans";
@@ -3466,7 +3466,7 @@ ul#check.nobullet > * {
   font-weight: 800;
   font-stretch: normal;
   font-display: swap;
-  src: url("/styles/apollostage/fonts/ttf/NotoSans/NotoSans-800-italic.ttf") format("truetype");
+  src: url("/styles/apollostage/fonts/ttf/NotoSans/NotoSans-800-Italic.ttf") format("truetype");
 }
 @font-face {
   font-family: "Noto Sans";
@@ -3474,7 +3474,7 @@ ul#check.nobullet > * {
   font-weight: 900;
   font-stretch: normal;
   font-display: swap;
-  src: url("/styles/apollostage/fonts/ttf/NotoSans/NotoSans-900-italic.ttf") format("truetype");
+  src: url("/styles/apollostage/fonts/ttf/NotoSans/NotoSans-900-Italic.ttf") format("truetype");
 }
 @font-face {
   font-family: "Noto Sans";
@@ -3482,7 +3482,7 @@ ul#check.nobullet > * {
   font-weight: 100;
   font-stretch: normal;
   font-display: swap;
-  src: url("/styles/apollostage/fonts/ttf/NotoSans/NotoSans-100-regular.ttf") format("truetype");
+  src: url("/styles/apollostage/fonts/ttf/NotoSans/NotoSans-100.ttf") format("truetype");
 }
 @font-face {
   font-family: "Noto Sans";
@@ -3490,7 +3490,7 @@ ul#check.nobullet > * {
   font-weight: 200;
   font-stretch: normal;
   font-display: swap;
-  src: url("/styles/apollostage/fonts/ttf/NotoSans/NotoSans-200-regular.ttf") format("truetype");
+  src: url("/styles/apollostage/fonts/ttf/NotoSans/NotoSans-200.ttf") format("truetype");
 }
 @font-face {
   font-family: "Noto Sans";
@@ -3498,7 +3498,7 @@ ul#check.nobullet > * {
   font-weight: 300;
   font-stretch: normal;
   font-display: swap;
-  src: url("/styles/apollostage/fonts/ttf/NotoSans/NotoSans-300-regular.ttf") format("truetype");
+  src: url("/styles/apollostage/fonts/ttf/NotoSans/NotoSans-300.ttf") format("truetype");
 }
 @font-face {
   font-family: "Noto Sans";
@@ -3506,7 +3506,7 @@ ul#check.nobullet > * {
   font-weight: 400;
   font-stretch: normal;
   font-display: swap;
-  src: url("/styles/apollostage/fonts/ttf/NotoSans/NotoSans-400-regular.ttf") format("truetype");
+  src: url("/styles/apollostage/fonts/ttf/NotoSans/NotoSans-400.ttf") format("truetype");
 }
 @font-face {
   font-family: "Noto Sans";
@@ -3514,7 +3514,7 @@ ul#check.nobullet > * {
   font-weight: 500;
   font-stretch: normal;
   font-display: swap;
-  src: url("/styles/apollostage/fonts/ttf/NotoSans/NotoSans-500-regular.ttf") format("truetype");
+  src: url("/styles/apollostage/fonts/ttf/NotoSans/NotoSans-500.ttf") format("truetype");
 }
 @font-face {
   font-family: "Noto Sans";
@@ -3522,7 +3522,7 @@ ul#check.nobullet > * {
   font-weight: 600;
   font-stretch: normal;
   font-display: swap;
-  src: url("/styles/apollostage/fonts/ttf/NotoSans/NotoSans-600-regular.ttf") format("truetype");
+  src: url("/styles/apollostage/fonts/ttf/NotoSans/NotoSans-600.ttf") format("truetype");
 }
 @font-face {
   font-family: "Noto Sans";
@@ -3530,7 +3530,7 @@ ul#check.nobullet > * {
   font-weight: 700;
   font-stretch: normal;
   font-display: swap;
-  src: url("/styles/apollostage/fonts/ttf/NotoSans/NotoSans-700-regular.ttf") format("truetype");
+  src: url("/styles/apollostage/fonts/ttf/NotoSans/NotoSans-700.ttf") format("truetype");
 }
 @font-face {
   font-family: "Noto Sans";
@@ -3538,7 +3538,7 @@ ul#check.nobullet > * {
   font-weight: 800;
   font-stretch: normal;
   font-display: swap;
-  src: url("/styles/apollostage/fonts/ttf/NotoSans/NotoSans-800-regular.ttf") format("truetype");
+  src: url("/styles/apollostage/fonts/ttf/NotoSans/NotoSans-800.ttf") format("truetype");
 }
 @font-face {
   font-family: "Noto Sans";
@@ -3546,7 +3546,11 @@ ul#check.nobullet > * {
   font-weight: 900;
   font-stretch: normal;
   font-display: swap;
-  src: url("/styles/apollostage/fonts/ttf/NotoSans/NotoSans-900-regular.ttf") format("truetype");
+  src: url("/styles/apollostage/fonts/ttf/NotoSans/NotoSans-900.ttf") format("truetype");
 }
+/* ** */
+/* ######################################################################## */
+/* # End of File */
+/* ######################################################################## */
 
 /*# sourceMappingURL=style.css.map */
