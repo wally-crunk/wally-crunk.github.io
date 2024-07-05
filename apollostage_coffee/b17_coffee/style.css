@@ -1,102 +1,100 @@
 @charset "UTF-8";
 /* APOLLOSTAGE COFFEE THEME */
 /* 2024-07-03 */
-/* */
-/* */
-/* ######################################################################## */
-/* CHANGELOG */
-/* ######################################################################## */
-/*  # 2024-07-03 - Updated with community feedback. */
-/*  # Fix: mobile menu, category stripes;  
-/*  # Feature: Add SVGs, tag bubbles, italic fonts and more;
-/*  # Feature: Added new light mode theme;
-/*  # Feature: Fonts hosted locally;
-/*  # Chore: Organized and documented the SCSS. */
-/*  For full changelog: see uncompiled SASS file. */
-/* */
-/* */
-/* ######################################################################## */
-/* TABLE OF CONTENTS */
-/* ######################################################################## */
-/* # 0 GENERAL SETUP */
-/* ## 0.1 Housekeeping and font loading */
-/* ## 0.2 Global variables */
-/* ## 0.3 Debugging tools */
-/* # 1 DESKTOP VIEW */
-/* ## 1.1 Desktop view, handling of all classes */
-/* ## 1.2 Reserved */
-/* ## 1.3 Reserved */
-/* ## 1.4 Reserved */
-/* ## 1.5 Discog Pages */
-/* ## 1.6 Tooltips */
-/* ## 1.7 Upload Category Decoration Striping */
-/* ## 1.8 Header and menu layout */
-/* ## 1.8.1 Menu Handling */
-/* ## 1.9 Headers Below Menu */
-/* ### 1.9.1 Searchbars */
-/* ### 1.9.2 Linkbox */
-/* ## 1.10 Notification Box */
-/* ## 1.11 Sidebar */
-/* ## 1.12 Upload form MusicBrainz popup */
-/* # 2 MISCELLANEOUS
-/* ## 2.2 Tag Bubble Appearance on Widescreen #Wideload */
-/* ### 2.2.1  Full clickable appearance */
-/* ### 2.2.2  Hover effect */
-/* ### 2.2.3  Non-clickable appearance */
-/* ### 2.2.4  Other special cases
-/* ### 2.2.5  Snatched torrent indicators (BETA)
-/* ## 2.3 Reserved */
-/* ## 2.4 Pop-up Warnings and Alerts ## */
-/* ### 2.4.1 Upload warnings ## */
-/* ### 2.4.2 Alertbar */
-/* # 3 DOCUMENTATION OF MOBILE CLASSES */
-/* # 4 CHANGES FOR MOBILE VIEW */
-/* ## 4.1  Site Layout */
-/* ## 4.2  Notifications */
-/* ## 4.3  User Settings */
-/* ## 4.4  Forms */
-/* ## 4.5  General Tables */
-/* ## 4.6  Table Headers */
-/* ## 4.7  Table Bodies */
-/* ## 4.8  Right-Aligned Numerical Stats */
-/* ## 4.9  Torrent Table */
-/* ### 4.9.1  Expanded Torrent Group */
-/* ### 4.9.2  top10 */
-/* ## 4.10  Invite Table */
-/* ## 4.11  Collage Table */
-/* ## 4.11.1 Collage ~ Tag Bubble Appearance on Mobile */
-/* ## 4.11.2 Collage ~ Title of Collages on Mobile */
-/* ## 4.12  Requests */
-/* ## 4.13  Forums */
-/* ### 4.13.1  Forum Index */
-/* ### 4.13.2  Forum Table Structure */
-/* ### 4.13.3  Forum Headers */
-/* ## 4.14  Rules */
-/* ## 4.15 Reserved */
-/* ## 4.16 Handling for Sticky Table Headers on Mobile */
-/* ## 4.17 Site Header and Menu */
-/* ### 4.17.1  Mobile Menu Setup  */
-/* ### 4.17.2  Mobile Menu Layout */
-/* ### 4.17.3  Top Menubar */
-/* ### 4.17.4  Mobile Menu When Open, Setup */
-/* ### 4.17.5  Menu When Open, Row One */
-/* ### 4.17.6  Menu When Open, Row Two (Has Subrows) */
-/* ### 4.17.7  Menu When Open, Row Three */
-/* ### 4.17.8  Menu When Open, Row Four */
-/* ### 4.17.9  Menu When Open, Row Five ~ Searchboxes */
-/* ### 4.17.10  Alerts */
-/* ## 4.18 Checkboxes ~ Purpose Undocumented */
-/* ## 4.19 Torrent Search, Handling for Tag Appearance */
-/* # 5 CHANGES FOR MOBILE, SUPER SHORT VIEW */
-/* ## 5.1 Changes for Mobile, Super Small Window */
-/* # 6 CLOSING */
-/* */
-/* */
-/* ######################################################################## */
+/*
+   ########################################################################
+   CHANGELOG
+   ########################################################################
+*/
+/*  # 2024-07-03 - Updated with community feedback.
+    # Fix: mobile menu, category stripes;
+    # Feature: Add SVGs, tag bubbles, italic fonts and more;
+    # Feature: Added new light mode theme;
+    # Feature: Fonts hosted locally;
+    # Chore: Organized and documented the SCSS.
+    For full changelog: see uncompiled SASS file. */
+/*
+########################################################################
+    TABLE OF CONTENTS
+######################################################################## */
 /* # 0 GENERAL SETUP
-/* ######################################################################## */
-/* */
-/* */
+   ## 0.1 Housekeeping and font loading
+   ## 0.2 Global variables
+   ## 0.3 Debugging tools */
+/* # 1 DESKTOP VIEW
+   ## 1.1 Desktop view, handling of all classes
+   ## 1.2 Reserved
+   ## 1.3 Reserved
+   ## 1.4 Reserved
+   ## 1.5 Discog Pages
+   ## 1.6 Tooltips
+   ## 1.7 Upload Category Decoration Striping
+   ## 1.8 Header and menu layout
+   ## 1.8.1 Menu Handling
+   ## 1.9 Headers Below Menu
+   ### 1.9.1 Searchbars
+   ### 1.9.2 Linkbox
+   ## 1.10 Notification Box
+   ## 1.11 Sidebar
+   ## 1.12 Upload form MusicBrainz popup */
+/* # 2 MISCELLANEOUS
+   ## 2.2 Tag Bubble Appearance on Widescreen #Wideload
+   ### 2.2.1  Full clickable appearance
+   ### 2.2.2  Hover effect
+   ### 2.2.3  Non-clickable appearance
+   ### 2.2.4  Other special cases
+   ### 2.2.5  Snatched torrent indicators (BETA)
+   ## 2.3 Reserved
+   ## 2.4 Pop-up Warnings and Alerts ##
+   ### 2.4.1 Upload warnings ##
+   ### 2.4.2 Alertbar */
+/* # 3 DOCUMENTATION OF MOBILE CLASSES */
+/* # 4 CHANGES FOR MOBILE VIEW
+   ## 4.1  Site Layout
+   ## 4.2  Notifications
+   ## 4.3  User Settings
+   ## 4.4  Forms
+   ## 4.5  General Tables
+   ## 4.6  Table Headers
+   ## 4.7  Table Bodies
+   ## 4.8  Right-Aligned Numerical Stats
+   ## 4.9  Torrent Table
+   ### 4.9.1  Expanded Torrent Group
+   ### 4.9.2  top10
+   ## 4.10  Invite Table
+   ## 4.11  Collage Table
+   ## 4.11.1 Collage Setup
+   ## 4.11.2 Collage ~ Tag Bubble Appearance on Mobile
+   ## 4.11.3 Collage ~ Title of Collages on Mobile
+   ## 4.12  Requests
+   ## 4.13  Forums
+   ### 4.13.1  Forum Index
+   ### 4.13.2  Forum Table Structure
+   ### 4.13.3  Forum Headers
+   ## 4.14  Rules
+   ## 4.15 Reserved
+   ## 4.16 Handling for Sticky Table Headers on Mobile
+   ## 4.17 Site Header and Menu
+   ### 4.17.1  Mobile Menu Setup
+   ### 4.17.2  Mobile Menu Layout
+   ### 4.17.3  Top Menubar
+   ### 4.17.4  Mobile Menu When Open, Setup
+   ### 4.17.5  Menu When Open, Row One
+   ### 4.17.6  Menu When Open, Row Two (Has Subrows)
+   ### 4.17.7  Menu When Open, Row Three
+   ### 4.17.8  Menu When Open, Row Four
+   ### 4.17.9  Menu When Open, Row Five ~ Searchboxes
+   ### 4.17.10  Alerts
+   ## 4.18 Checkboxes ~ Purpose Undocumented
+   ## 4.19 Torrent Search, Handling for Tag Appearance */
+/* # 5 CHANGES FOR MOBILE, SUPER SHORT VIEW
+   ## 5.1 Changes for Mobile, Super Small Window */
+/* # 6 CLOSING */
+/*
+########################################################################
+# 0 GENERAL SETUP
+########################################################################
+*/
 /* ## 0.1 Housekeeping and font loading */
 /* Font loading */
 @import url("/styles/apollostage/fonts/fontcall_v2.css");
@@ -104,11 +102,11 @@
 @namespace svg url("http://www.w3.org/2000/svg");
 /* END font loading */
 /* ## 0.2 Global variables */
-/* */
-/* ######################################################################## */
-/* # 1 DESKTOP VIEW */
-/* ######################################################################## */
-/* */
+/*
+########################################################################
+# 1 DESKTOP VIEW
+########################################################################
+*/
 /* ## 1.1 BEGIN desktop view, handling of classes */
 * {
   box-sizing: inherit;
@@ -138,7 +136,8 @@ body {
   margin: 0 8px;
 }
 
-pre, code {
+pre,
+code {
   font-family: "JetBrains Mono", "Cascadia Code", Consolas, "Ubuntu Mono", Monaco, monospace;
   font-optical-sizing: auto;
   font-variant-ligatures: no-contextual;
@@ -211,7 +210,7 @@ textarea:focus {
 .box .box.pad,
 .main_column .box.pad:not(#reply_box) {
   background-color: #322e2c;
-  border: 2px solid #3C4D50;
+  border: 2px solid #3c4d50;
   margin: 8px;
   border-radius: 0.25rem;
 }
@@ -289,7 +288,7 @@ li:last-child {
 
 blockquote {
   background-color: #2d2928;
-  border: 1px dashed #3C4D50;
+  border: 1px dashed #3c4d50;
   margin: 12px;
   padding: 12px;
 }
@@ -522,7 +521,7 @@ strong.important_text_alt {
 .r07,
 .r08,
 .r09 {
-  color: #F9E340;
+  color: #f9e340;
 }
 
 .r10,
@@ -632,7 +631,9 @@ table.box2 {
   border-top: 2px solid #C98258;
 }
 
-.forum_post.wrap_overflow.box.vertical_margin td.body { /*foobar*/ }
+.forum_post.wrap_overflow.box.vertical_margin td.body {
+  /* non-functional */
+}
 
 .forum_post .avatar {
   padding: 0;
@@ -653,7 +654,8 @@ table.box2 {
   max-width: 100%;
 }
 
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+/* #2024; new forced-color standard now available */
+@media screen and (forced-colors: active) {
   .forum_post .body img {
     max-width: 720px;
   }
@@ -678,7 +680,7 @@ table.box2 {
 }
 
 .last_read ::before {
-  content: "➤"; /* aka ➤ */
+  content: "➤"; /* aka \27A4 */
   color: #C98258;
   display: inline-block;
 }
@@ -693,35 +695,35 @@ table.box2 {
 }
 
 .read {
-  background: url("/svg/std/document-ccc.svg") center no-repeat;
+  background: url("/svg/std/document.svg") center no-repeat;
 }
 
 .unread {
-  background: url("/svg/std/document-round-ccc.svg") center no-repeat;
+  background: url("/svg/std/document-round.svg") center no-repeat;
 }
 
 .read_locked {
-  background: url("/svg/std/lock-ccc.svg") center no-repeat;
+  background: url("/svg/std/lock.svg") center no-repeat;
 }
 
 .unread_locked {
-  background: url("/svg/std/lock-round-ccc.svg") center no-repeat;
+  background: url("/svg/std/lock-round.svg") center no-repeat;
 }
 
 .read_sticky {
-  background: url("/svg/std/pin-ccc.svg") center no-repeat;
+  background: url("/svg/std/pin.svg") center no-repeat;
 }
 
 .unread_sticky {
-  background: url("/svg/std/pin-round-ccc.svg") center no-repeat;
+  background: url("/svg/std/pin-round.svg") center no-repeat;
 }
 
 .read_locked_sticky {
-  background: url("/svg/std/pin-and-lock-ccc.svg") center no-repeat;
+  background: url("/svg/std/pin-and-lock.svg") center no-repeat;
 }
 
 .unread_locked_sticky {
-  background: url("/svg/std/pin-and-lock-round-ccc.svg") center no-repeat;
+  background: url("/svg/std/pin-and-lock-round.svg") center no-repeat;
 }
 
 #footer,
@@ -901,12 +903,12 @@ div#flip_view_1 div#similar-artist .name {
   background-color: #222020;
 }
 
-/* Edition stripe appears on 
-/* (1) individual album pages, */
-/* (2) torrent/search listings when preceded by a Group */
-/* but NOT personal 'snatches, downloads,..' pages. */
+/* Edition stripe appears on
+ (1) individual album pages,
+ (2) torrent/search listings when preceded by a Group
+ but NOT personal 'snatches, downloads,..' pages. */
 #torrents #torrent_details .group_torrent td.edition_info,
-group ~ .group_torrent.edition {
+.group ~ .group_torrent.edition {
   background-color: #45322E;
 }
 
@@ -976,11 +978,11 @@ group ~ .group_torrent.edition {
 }
 
 .show_torrents > a::after {
-  content: "▶";
+  content: "▶"; /* \25b6 */
 }
 
 .hide_torrents > a::after {
-  content: "▼";
+  content: "▼"; /* \25bc */
 }
 
 .group_torrent .edition_info {
@@ -1015,7 +1017,8 @@ group ~ .group_torrent.edition {
   padding: 0;
 }
 
-/* #2024 bugfix for messages with 'pre' that overrun the width of their message box. */
+/*  #2024 bugfix for messages with 'pre' that overrun
+    the width of their message box. */
 pre {
   white-space: pre-wrap;
 }
@@ -1398,11 +1401,11 @@ blockquote {
   margin-right: 4px;
 }
 
-/* */
-/* We want vertical flex unless there's a sidebar. However, CSS has no parent selectors.
-/* So, instead, we set width: 100% on everything, which is basically the same as column
-/* flex, and then just override that to be default if there is a sidebar.
-/* */
+/*
+ We want vertical flex unless there's a sidebar. However, CSS has no parent selectors.
+ So, instead, we set width: 100% on everything, which is basically the same as column
+ flex, and then just override that to be default if there is a sidebar.
+ */
 .thin:not(.linkbox) > :not(.two_columns) {
   width: 100%;
 }
@@ -1468,7 +1471,7 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
   padding-left: 11rem;
 }
 
-#discog_table > div.box.center:before {
+#discog_table > div.box.center::before {
   color: #E0CDB8 !important;
   font-size: large !important;
   content: "⇩ Jump to" !important;
@@ -1522,8 +1525,8 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
 }
 
 /* ************************************************ */
-/* # 1.7 BEGIN UPLOAD CATEGORY DECORATION STRIPING */
-/* Begin category decorations for torrent-tables on torrent & collage pages */
+/* # 1.7 BEGIN UPLOAD CATEGORY DECORATION STRIPING
+   Begin category decorations for torrent-tables on torrent & collage pages */
 /* Apollostage highlights different upload types,
 /* using not an icon but a small color-coded rectangle (done using a border).
 /* The line (border-right:) can be replaced by an image or other (content:) as needed. */
@@ -1538,7 +1541,7 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
   height: 80px;
 }
 
-/* collages do not include Images in their table rows, so they 
+/* collages do not include Images in their table rows, so they
 /* need much less height. */
 body#collage .cats_applications,
 body#collage .cats_audiobooks,
@@ -1552,7 +1555,7 @@ body#collage .cats_music {
 
 .cats_music {
   /* Memo: If you desire NO decoration on music uploads,
-  /* turn this off. */
+    /* turn this off. */
   border-right: thin solid darkslategray;
 }
 
@@ -1582,8 +1585,8 @@ body#collage .cats_music {
 
 /* END category decorations for torrent tables on torrent & collage pages */
 /* ************************************************ */
-/* #1.8 HEADER AND MENU LAYOUT */
-/* MENU AND TOP BAR, DESKTOP ONLY */
+/* #1.8 HEADER AND MENU LAYOUT
+   MENU AND TOP BAR, DESKTOP ONLY */
 .thin > .header .linkbox {
   align-self: flex-end;
   flex: 1 0 auto;
@@ -1623,7 +1626,7 @@ body#collage .cats_music {
   }
   /* main logo during desktop view */
   #logo a {
-    background: url("/svg/orpheus/ops-logo-lockup-darkmode.svg") right no-repeat;
+    background: url("/svg/site/ops-logo-lockup-darkmode.svg") right no-repeat;
   }
   #logo > a {
     background-size: 200px;
@@ -1757,8 +1760,7 @@ body#collage .cats_music {
   }
   #nav_donate .tooltip::after {
     color: red;
-    content: "❤️️";
-    font-size: 75%;
+    content: "❤️"; /* \2764\FE0F */
     vertical-align: top;
   }
   #nav_staff {
@@ -1780,8 +1782,8 @@ body#collage .cats_music {
     color: #89644C;
   }
   #userinfo_minor::before {
-    background: url("/svg/std/chevrons-down-ccc.svg") no-repeat;
-    filter: brightness(200%); /*force white */
+    background: url("/svg/std/chevrons-down.svg") no-repeat;
+    filter: brightness(200%); /* force white */
     background-size: 28px;
     background-position: center;
     display: block;
@@ -1832,8 +1834,8 @@ body#collage .cats_music {
 }
 /* END Menu and topbar, desktop only */
 /* ************************************************ */
-/* ## 1.8.1 Menu handling */
-/* horizontal menu */
+/* ## 1.8.1 Menu handling
+   horizontal menu */
 /* menu hover colors */
 #menu > ul a:hover,
 #userinfo_minor:hover a:hover,
@@ -1915,8 +1917,8 @@ body#collage .cats_music {
 }
 
 /* ************************************************ */
-/* ## 1.9.2 Linkbox */
-/* linkbox appears near the page h1 header and provides outbound links */
+/* ## 1.9.2 Linkbox
+   linkbox appears near the page h1 header and provides outbound links */
 .linkbox,
 .linkbox .center {
   text-align: right;
@@ -2026,7 +2028,7 @@ body#collage .cats_music {
 /* # 1.12 Upload form MusicBrainz popup */
 #musicbrainz_popup {
   color: #D1B89E;
-  background: #1D2424;
+  background: #272423;
   border: #785746;
   padding: 1rem;
   font-weight: 600;
@@ -2048,16 +2050,16 @@ body#collage .cats_music {
   color: hsl(178, 2.5%, 5%);
 }
 
-/*popup close button, see 'button'*/
+/* popup close button, see 'button' */
 /* END upload form MusicBrainz popup */
-/* ######################################################################## */
-/* # 2 MISCELLANEOUS
+/* ########################################################################
+   # 2 MISCELLANEOUS
 /* ######################################################################## */
 /* ## 2.1 Reserved for future use */
 /* ************************************************ */
 /* ## 2.2 Tag bubble appearance on widescreen */
-/* ### 2.2.1 Full clickable appearance */
-/* Applies to Torrent Pages, collage-listing pages, collage-discog pages. */
+/* ### 2.2.1 Full clickable appearance
+   Applies to Torrent Pages, collage-listing pages, collage-discog pages. */
 .collage_table .td_info .tags :not(:empty),
 #torrent_table .group .tags :not(:empty),
 #discog_table .group .tags :not(:empty),
@@ -2084,8 +2086,8 @@ body#torrents div.box.box_tags li > a:first-child {
   transition: all 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-/* ### 2.2.2 Hover effect */
-/* The people have spoken. Applies only to pages with clickable tags. */
+/* ### 2.2.2 Hover effect
+   The people have spoken. Applies only to pages with clickable tags. */
 .collage_table .td_info .tags :not(:empty):hover,
 #torrent_table .group .tags :not(:empty):hover,
 #discog_table .tags :hover,
@@ -2102,8 +2104,8 @@ body#torrents div.box.box_tags li > a:first-child:hover {
   box-shadow: rgba(0, 0, 0, 0.25) 0 14px 28px, rgba(0, 0, 0, 0.22) 0 10px 10px;
 }
 
-/* ### 2.2.3 Non-clickable appearance */
-/* Applies to top10 and request_table pages, where tags are not clickable links. */
+/* ### 2.2.3 Non-clickable appearance
+   Applies to top10 and request_table pages, where tags are not clickable links. */
 #request_table .tags,
 #top10 .tags {
   font-style: italic;
@@ -2111,9 +2113,9 @@ body#torrents div.box.box_tags li > a:first-child:hover {
   margin-inline: 1rem;
 }
 
-/* ### 2.2.4 Other special cases */
-/* commas between tags: currently (2024), gazelle provides this inconsistently. */
-/* only needed on torrent and collage-discog pages. */
+/* ### 2.2.4 Other special cases
+   commas between tags: currently (2024), gazelle provides this inconsistently.
+   only needed on torrent and collage-discog pages. */
 #torrent_table .tags,
 #discog_table .tags,
 #userhistory div.group_info.clear div.tags,
@@ -2123,20 +2125,20 @@ table.torrent_table.cats.m_table td.td_info.big_info div.group_info.clear div.ta
   color: rgba(0, 0, 0, 0.1);
 }
 
-/* ### 2.2.5 Snatched torrent indicators (BETA)*/
-/* the following must be after 2.2.4 invisibility */
-tr.snatched_group div.tags:before {
+/* ### 2.2.5 Snatched torrent indicators (BETA)
+   the following must be after 2.2.4 invisibility */
+tr.snatched_group div.tags::before {
   content: "snatched group";
   /* plus formatting below */
 }
 
-tr.snatched_torrent div.tags:before {
+tr.snatched_torrent div.tags::before {
   content: "snatched torrent";
   /* plus formatting below */
 }
 
-tr.snatched_group div.tags:before,
-tr.snatched_torrent div.tags:before {
+tr.snatched_group div.tags::before,
+tr.snatched_torrent div.tags::before {
   visibility: visible;
   background: #3e3837;
   color: #E0CDB8;
@@ -2148,7 +2150,6 @@ tr.snatched_torrent div.tags:before {
   font-weight: 200;
   margin-bottom: 0.1rem;
   padding: 0 0.5rem;
-  padding: 0rem 0.5rem;
   vertical-align: baseline;
 }
 
@@ -2164,21 +2165,20 @@ tr.snatched_torrent div.tags:before {
   margin-bottom: 0.1rem;
   margin-inline: 0.5rem;
   padding: 0 0.5rem;
-  padding: 0rem 0.5rem;
   vertical-align: baseline;
 }
 
-/* */
-/* ************************************************ */
+/* ==
+   ************************************************ */
 /* ## 2.3 Reserved
 
 /* ************************************************ */
-/* ## 2.4 Pop-up Warnings and Alerts ## */
-/* #### see also 1.10 Notifications */
+/* ## 2.4 Pop-up Warnings and Alerts ##
+   #### see also 1.10 Notifications */
 /* ### 2.4.1 Upload warnings ## */
-/* display a popup when any upload warning occurs inline on the page*/
-.upload-error:after,
-ul#check:after {
+/* display a popup when any upload warning occurs inline on the page */
+.upload-error::after,
+ul#check::after {
   content: "Warning!  There were one or more errors in your submission. Check below for error messages.";
   font-weight: 700;
   position: absolute;
@@ -2191,11 +2191,11 @@ ul#check:after {
   border-radius: 0.25rem;
   padding: 1rem 1rem 1rem 48px;
   background: hsl(183, 2.5%, 92%);
-  background-image: url("/svg/site/ops-icon-triangle-000.svg");
+  background-image: url("/svg/site/ops-icon-triangle.svg");
   background-repeat: no-repeat;
   background-position: 8px center;
   background-size: 32px;
-  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.55), 0 7px 7px rgba(0, 0, 0, 0.52), 0px -5px 9px rgba(0, 0, 0, 0.32);
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.55), 0 7px 7px rgba(0, 0, 0, 0.52), 0 -5px 9px rgba(0, 0, 0, 0.32);
 }
 
 .upload-error,
@@ -2203,7 +2203,7 @@ ul#check.nobullet > * {
   border: thick solid #daa520;
   padding: 1rem 1rem 1rem 48px;
   background: hsl(183, 2.5%, 92%);
-  background-image: url("/svg/site/ops-icon-triangle-000.svg");
+  background-image: url("/svg/site/ops-icon-triangle.svg");
   background-repeat: no-repeat;
   background-position: 8px center;
   background-size: 32px;
@@ -2217,18 +2217,19 @@ ul#check.nobullet > * {
   font-weight: 700;
 }
 
-/* Fix for post-upload 'Warning' (no private/source flag):
-/* the easily missed 'click here' warning shall be highlighted */
-/* CSS not yet available */
-/* */
-/* */
-/* ### 2.4.2 Alertbar */
+/*
+   Fix for post-upload 'Warning' (no private/source flag):
+   the easily missed 'click here' warning shall be highlighted,
+   once CSS is available.  CSS not yet available.
+*/
+/*
+### 2.4.2 Alertbar */
 /* ## alertbar occurs when User Settings: Notifications: "Traditional" is selected. */
 .alertbar {
   border: thick solid #5F443B;
   padding: 1rem 1rem 1rem 48px;
   background: #3D2C29;
-  background-image: url("/svg/site/ops-icon-harp-ccc.svg");
+  background-image: url("/svg/site/ops-icon-harp.svg");
   background-repeat: no-repeat;
   background-position: 8px center;
   background-size: 32px;
@@ -2241,47 +2242,44 @@ ul#check.nobullet > * {
   color: #FFFCF6 !important;
 }
 
-/* */
-/* */
-/* ######################################################################## */
-/* # 3 DOCUMENTATION OF MOBILE CLASSES */
-/* ######################################################################## */
-/* */
-/* */
-/* */
-/* Documentation of mobile classes:
-/* GENERAL:
-/* .m_hidden: display: none on mobile
-/* TABLES:
-/* .m_table: table which will be mobilized
-/* .m_th_left: which table header should be preserved on the left. It will be replaced with the word "Info". Only 1
-/* .m_th_left_collapsable: extra padding applied to align right of the collapse button
-/* .m_th_right: table headers that will be "floated" to the right. Max of 3
-/* .m_td_left: will be left-aligned, and expanded vertically. Mainly for collapse button
-/* .m_td_right: tables cells which will be put on the right with absolute positioning, to correspond with .m_th_right headers. Max of 3
+/* ########################################################################
+   # 3 DOCUMENTATION OF MOBILE CLASSES
+   ########################################################################
+*/
 /*
-/* forum posts, although they share some of the styles, do not actually use
-/* these classes, because:
-/* - they are not tabular data, so for semantics
-/* - they should not be compact the same way as a table
-/* - they have much more uniform HTML across different places (comments and
-/* "real" forum), so classes to simplify CSS aren't necessary
-/*/
-/* Portrait phones, and sometimes landscape
-/* TODO: currently, responsive is optimized for either desktop or portrait phone
-/* We need to handle landscape phones as well
+Documentation of mobile classes:
+  GENERAL:
+  .m_hidden: display: none on mobile
+  TABLES:
+  .m_table: table which will be mobilized
+  .m_th_left: which table header should be preserved on the left. It will be replaced with the word "Info". Only 1
+  .m_th_left_collapsable: extra padding applied to align right of the collapse button
+  .m_th_right: table headers that will be "floated" to the right. Max of 3
+  .m_td_left: will be left-aligned, and expanded vertically. Mainly for collapse button
+  .m_td_right: tables cells which will be put on the right with absolute positioning, to correspond with .m_th_right headers. Max of 3
+
+  forum posts, although they share some of the styles, do not actually use
+  these classes, because:
+  - they are not tabular data, so for semantics
+  - they should not be compact the same way as a table
+  - they have much more uniform HTML across different places (comments and
+  "real" forum), so classes to simplify CSS aren't necessary
+ */
 /*
-/* this stuff can *probably* be mostly copy-pasted into other stylesheets
-/* then tweaked a bit. Ideally, before that happens, the whole styling system
-/* should be made to use a CSS preprocessor so that we can have reusable styles
-/*/
-/* */
-/* */
-/* this query is mostly copied from what used to be above
-/* despite the fact that this exists, there are still many
-/* rules above that are overridden by media queries, rather
-/* than being put here like they should be
-/*/
+ Portrait phones, and sometimes landscape
+ TODO: currently, responsive is optimized for either desktop or portrait phone
+ We need to handle landscape phones as well
+
+ this stuff can *probably* be mostly copy-pasted into other stylesheets
+ then tweaked a bit. Ideally, before that happens, the whole styling system
+ should be made to use a CSS preprocessor so that we can have reusable styles
+*/
+/*
+ this query is mostly copied from what used to be above
+ despite the fact that this exists, there are still many
+ rules above that are overridden by media queries, rather
+ than being put here like they should be
+*/
 @media only screen and (max-width: 575px) {
   /* For mobile phones: */
   #inbox input[type=submit] {
@@ -2293,12 +2291,11 @@ ul#check.nobullet > * {
     padding: 4px;
   }
 }
-/* */
-/* */
-/* ######################################################################## */
-/* # 4 CHANGES FOR MOBILE SITE
-/* ######################################################################## */
-/* */
+/*
+########################################################################
+# 4 CHANGES FOR MOBILE SITE
+########################################################################
+*/
 /* Begin Changes for Mobile Site */
 @media (max-width: 575px) {
   .m_hidden {
@@ -2503,7 +2500,7 @@ ul#check.nobullet > * {
   .torrent .group_info {
     word-break: inherit;
     /* On Torrent listings, prevent 'bookmark' and long titles
-    /* from overrunning the stats on the right */
+          /* from overrunning the stats on the right */
     margin-right: 40px;
   }
   .torrent .group_info span:first-child {
@@ -2537,7 +2534,7 @@ ul#check.nobullet > * {
   .td_snatched.m_td_right::before,
   .td_seeders.m_td_right::before,
   .td_leechers.m_td_right::before {
-    background: left/10px no-repeat url("/svg/std/arrow-loop-ccc.svg");
+    background: left/10px no-repeat url("/svg/std/arrow-loop.svg");
     color: #E0CDB8;
     content: ":";
     filter: brightness(80%);
@@ -2547,10 +2544,10 @@ ul#check.nobullet > * {
     width: 14px;
   }
   .td_seeders.m_td_right::before {
-    background-image: url("/svg/std/arrow-up-round-ccc.svg");
+    background-image: url("/svg/std/arrow-up-round.svg");
   }
   .td_leechers.m_td_right::before {
-    background-image: url("/svg/std/arrow-down-round-ccc.svg");
+    background-image: url("/svg/std/arrow-down-round.svg");
   }
   .m_table.checkboxes td:first-child {
     display: block;
@@ -2561,10 +2558,11 @@ ul#check.nobullet > * {
     flex-direction: column;
     padding: 5px 0 0 22px;
   }
-  /* it would be nice to use flex for all group_torrents, but we can't de display:flex
-   * on any old table cell. It only works here because our trs aren't using the normal
-   * table display anyways.
-   */
+  /*
+   it would be nice to use flex for all group_torrents, but we can't de display:flex
+   on any old table cell. It only works here because our trs aren't using the normal
+   table display anyways.
+     */
   .torrent_table .group_torrent:not(.edition) td:first-child {
     display: flex;
     /* for those ones with a million buttons */
@@ -2589,8 +2587,9 @@ ul#check.nobullet > * {
   }
   /* END expanded torrent group */
   /* BEGIN special treatment of Sizes */
-  /* On Collage-discog and Bookmark pages, sizes need to be forced left */
-  /* Apologies for being ultra-specific here, but don't want any side-effects */
+  /*
+   On Collage-discog and Bookmark pages, sizes need to be forced left
+   Apologies for being ultra-specific here, but don't want any side-effects */
   table#discog_table.torrent_table.grouping.cats.m_table .number_column.td_size.nobr,
   table#torrent_table.torrent_table.grouping.cats.m_table td.number_column.td_size.nobr {
     text-align: left;
@@ -2631,6 +2630,7 @@ ul#check.nobullet > * {
   /* END invite table */
   /* ************************************************ */
   /* ## 4.11 BEGIN collage table */
+  /* ## 4.11.1 collage setup */
   table.m_table.collage_table tr:not(.colhead):not(.colhead) {
     display: flex;
     flex-direction: column;
@@ -2674,7 +2674,7 @@ ul#check.nobullet > * {
     background: slategray !important;
     color: darkslategray;
   }
-  /* ## 4.11.1 collage ~ tag bubble appearance on mobile */
+  /* ## 4.11.2 collage ~ tag bubble appearance on mobile */
   .collage_table .td_info .tags :not(:empty) {
     box-sizing: border-box;
     display: inline-block;
@@ -2692,7 +2692,7 @@ ul#check.nobullet > * {
   #top10 .tags {
     width: auto;
   }
-  /* ## 4.11.2 collage ~ title of collages on mobile */
+  /* ## 4.11.3 collage ~ title of collages on mobile */
   .collage_table .td_info {
     font-size: larger;
   }
@@ -2756,7 +2756,7 @@ ul#check.nobullet > * {
   /* END forum index */
   /* ## 4.13.2 BEGIN forum table structure */
   /* this is copied from general tables. We put it here in case that changes
-   in ways specific for tabular data */
+     in ways specific for tabular data */
   .forum_post tbody {
     align-items: stretch;
     display: flex;
@@ -2867,7 +2867,7 @@ ul#check.nobullet > * {
     opacity: 1;
     transition: all 600ms cubic-bezier(1, 0.01, 0.3, 1.31);
     border-bottom: groove #563E37;
-    box-shadow: 0px 50px 70px #674A3F, 0 160px 160px #080808;
+    box-shadow: 0 50px 70px #674A3F, 0 160px 160px #080808;
   }
   /* ## 4.17.3 Top Menubar for Mobile */
   /* topbar for mobile ~ pulldown arrow icon */
@@ -2879,7 +2879,7 @@ ul#check.nobullet > * {
     opacity: 1 !important;
     width: 25px;
     height: 25px;
-    background-image: url("/svg/std/chevrons-down-ccc.svg");
+    background-image: url("/svg/std/chevrons-down.svg");
     background-size: contain;
     z-index: 500;
     pointer-events: none;
@@ -2895,7 +2895,7 @@ ul#check.nobullet > * {
   }
   /* topbar for mobile ~ site logo, upper left */
   #extra5 {
-    background-image: url("/svg/orpheus/ops-logo-loop-darkmode.svg");
+    background-image: url("/svg/site/ops-logo-loop-darkmode.svg");
     background-position: 0;
     background-size: auto 24px;
     background-repeat: no-repeat;
@@ -2905,7 +2905,8 @@ ul#check.nobullet > * {
     width: 32px;
     z-index: 500;
   }
-  #extra4, #extra5 {
+  #extra4,
+  #extra5 {
     height: 32px;
     position: fixed;
     top: 0;
@@ -2948,7 +2949,7 @@ ul#check.nobullet > * {
   }
   /* end setup
 
-  /* ## 4.17.5  Menu when open, Row One */
+    /* ## 4.17.5  Menu when open, Row One */
   /* Left side ~ site logo */
   #logo {
     position: inherit;
@@ -2959,13 +2960,14 @@ ul#check.nobullet > * {
   }
   #logo a {
     display: inline-block;
-    background: url("/svg/orpheus/ops-logo-loop-darkmode.svg") center no-repeat;
+    background: url("/svg/site/ops-logo-loop-darkmode.svg") center no-repeat;
     background-size: var(--row-height);
     height: var(--row-height);
     width: var(--row-height);
   }
   /* Right side ~ three items */
-  #userinfo_username > li, #logo {
+  #userinfo_username > li,
+  #logo {
     background: radial-gradient(circle at top left, #6F5042, #45322E);
   }
   #userinfo_username {
@@ -3067,28 +3069,28 @@ ul#check.nobullet > * {
   /*      Why isn't Alertbar hover disabled when the menu is closed? */
   /*     Possible solution: move hoverbar to the 1st row of menu. /*
   /*     However, it blocks the 'settings' button until notifs are cleared. */
-  /*     TODO: Find a better way.  
+  /*     TODO: Find a better way.
   /*  Meantime, #fearless users: UNCOMMENT the block below to turn ON alertbar on mobile. */
   /* ==== */
   /*
-  /*  #alerts > .alertbar {
-  /*    display: inline-block;
-  /*    position: absolute;
-  /*    margin: 0;
-  /*    top: 0;
-  /*    left: 2%;
-  /*    width: 96%;
-  /*    height: auto;
-  /*    z-index: 99999;
-  /*    opacity: 1 !important;
-  /*    }
-  /*
-  /*  /* on mobile, suppress any other non-alertbar alerts (if any) */
+    /*  #alerts > .alertbar {
+    /*    display: inline-block;
+    /*    position: absolute;
+    /*    margin: 0;
+    /*    top: 0;
+    /*    left: 2%;
+    /*    width: 96%;
+    /*    height: auto;
+    /*    z-index: 99999;
+    /*    opacity: 1 !important;
+    /*    }
+    /*
+    /*  /* on mobile, suppress any other non-alertbar alerts (if any) */
   /*  #alerts > :not(.alertbar) {
-  /*    display: none;
-  /*    }
-  /*
-  /* ==== */
+    /*    display: none;
+    /*    }
+    /*
+    /* ==== */
   /* ************************************************ */
   /* ## 4.18 Checkboxes ~ purpose undocumented */
   #extracb1 {
@@ -3137,7 +3139,7 @@ ul#check.nobullet > * {
   }
   #taglist tr.label td::after {
     font-style: italic;
-    content: '➤Use "Hide Tags" above or Profile Settings to hide this list of tags.';
+    content: '➤ Use "Hide Tags" above or Profile Settings to hide this list of tags.'; /* \27A4 */
     border: dotted;
   }
   #taglist tr:not(.label) td {
@@ -3158,14 +3160,14 @@ ul#check.nobullet > * {
     margin-bottom: 0.1rem;
     transition: all 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
   }
-  /* END tag display for Torrent search form on Mobile, 
-  /* when tags are set to display in profile settings */
+  /* END tag display for Torrent search form on Mobile,
+     when tags are set to display in profile settings */
 }
-/* ######################################################################## */
-/* # 5 CHANGES FOR MOBILE, SUPER SHORT VIEW */
-/* ######################################################################## */
-/* ## 5.1 Begin Changes for Mobile, SUPER SMALL window */
-/* compact the Menu responsively in two steps */
+/* ########################################################################
+   # 5 CHANGES FOR MOBILE, SUPER SHORT VIEW
+   ######################################################################## */
+/* ## 5.1 Begin Changes for Mobile, SUPER SMALL window
+   compact the Menu responsively in two steps */
 @media (max-width: 575px) and (max-height: 575px) {
   #header {
     --row-height: 35px;
@@ -3181,19 +3183,18 @@ ul#check.nobullet > * {
     display: none;
   }
 }
-/* ######################################################################## */
-/* # 6 CLOSING */
-/* ######################################################################## */
-/* ## 6.1 Debugging Tools */
-/* various 'debug' features are avail in this doc elsewhere */
-#footer p:last-of-type:after {
+/* ########################################################################
+   # 6 CLOSING
+   ######################################################################## */
+/* ## 6.1 Debugging Tools
+   various 'debug' features are avail in this doc elsewhere */
+#footer p:last-of-type::after {
   content: " | Apollostage build 2407 coffee 2407";
 }
 
-
-/* ######################################################################## */
-/* # End of Section */
-/* ######################################################################## */
+/* ########################################################################
+   # End of Section
+   ######################################################################## */
 @font-face {
   font-family: "JetBrains Mono";
   font-style: italic;
