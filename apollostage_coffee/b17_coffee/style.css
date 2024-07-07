@@ -722,8 +722,7 @@ table.box2 {
   background: url("/svg/std/pin-and-lock-round-ccc.svg") center no-repeat;
 }
 
-#footer,
-.alertbar {
+#footer {
   text-align: center;
 }
 
@@ -1102,11 +1101,6 @@ ul.collage_images li a > span {
   height: 100%;
   position: absolute;
   width: 100%;
-}
-
-.alertbar {
-  font-size: 16px;
-  margin-top: 8px;
 }
 
 #userform #settings_sections h2 a,
@@ -1515,7 +1509,6 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
   font-weight: 600;
 }
 
-.alertbar,
 .tooltipster-default .tooltipster-content a:hover {
   color: #89644C;
 }
@@ -2231,8 +2224,10 @@ ul#check.nobullet > * {
   background-position: 8px center;
   background-size: 32px;
   color: #D1B89E !important;
-  font-size: 12px;
   font-weight: 700;
+  font-size: 16px;
+  margin-top: 8px;
+  text-align: center;
 }
 
 .alertbar a {
