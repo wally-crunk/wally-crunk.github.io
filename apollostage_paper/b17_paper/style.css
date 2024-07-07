@@ -3186,7 +3186,7 @@ Documentation of mobile classes:
 /* ## 6.1 Debugging Tools
    various 'debug' features are avail in this doc elsewhere */
 #footer p:last-of-type::after {
-  content: " | Apollostage build 2407 paper 2407";
+  content: " | Apollostage build 240707 paper 240707";
 }
 
 /* ########################################################################
