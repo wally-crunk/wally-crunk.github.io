@@ -121,6 +121,9 @@ $color-text-menu: $fore-1000;
 $color-text-menu-hover: $fore-700; // during pulldown // changed
 $color-text-mono: $fore-500;
 $color-text-notification-words: $fore-1000;
+$color-text-popup-anchor-hover: $midtone-1000;
+$color-text-popup-anchor: $fore-900;
+$color-text-popup: $fore-700;
 $color-text-ratio-greenzone: $ds-green;
 $color-text-ratio-redzone: $ds-red;
 $color-text-ratio-yellowzone: $ds-yellow;
@@ -146,6 +149,7 @@ $color-accent-border-box: $back-900;
 $color-accent-border-input: $ds-fx-low;
 $color-accent-border-input-active: $ds-fx-mid;
 $color-accent-border-tooltipster: $midtone-800;
+$color-accent-border-popup: $midtone-800;
 $color-accent-border-tableouter: $back-600-mid;
 $color-accent-border-tablerows: $back-600-low;
 $color-accent-border-tablerows-torrent: $back-600-mid;
@@ -157,37 +161,28 @@ $color-accent-cats_comedy: deepskyblue;
 $color-accent-cats_comics: gold;
 $color-accent-cats_ebooks: chocolate;
 $color-accent-cats_elearningvideos: mediumpurple;
-$color-accent-cats_music: $midtone-200; // changed
+$color-accent-cats_music: darkslategray;
 $color-accent-forum-inline-last-read: $ds-rawsienna; // changed
 $color-accent-forum-unread: $ds-rawsienna; // changed
 
 $color-accent-selection-background: $midtone-800;
 $color-accent-selection-text: $fore-700; // usually #fff or $color-text-bold
 
-// popup notifications (used for profile:notifications)
+// popup notifications
 $color-background-notification-gradient-1: $midtone-400; // menu low/high suggested
 $color-background-notification-gradient-2: $midtone-1000;  // menu high/low suggested
 $color-background-notification: $ds-neutral-000;
 
-// alerts (used for #alertbar)
+// alerts
 $color-accent-border-alert: $midtone-500;
 $color-background-alert: $midtone-100;
 $color-text-alert: $fore-700;
 $color-anchor-alert: $fore-1000;
 
-// popup dialog (used for upload:#musicbrainz_popup)
-$color-background-popup: $back-300; 
-$color-text-popup-anchor-hover: $midtone-1000;
-$color-text-popup-anchor: $fore-900;
-$color-text-popup: $fore-700;
-$color-accent-border-popup: $midtone-800;
-
-// shadow filters
 $ds-shadow-heavy: 0 10px 18px rgba(0, 0, 0, 0.55), 0 7px 7px rgba(0, 0, 0, 0.52), 0 -5px 9px rgba(0, 0, 0, 0.32);
 $ds-shadow-raised:  0 10px 18px rgba(0, 0, 0, 0.25), 0 7px 7px rgba(0, 0, 0, 0.22);
 $ds-shadow-raised-hover:  0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 
-// other
 $icon-menu-open-state: url("/svg/std/menu-ccc.svg"); // change to lighter version
 
 @import '../apollostage/_base';

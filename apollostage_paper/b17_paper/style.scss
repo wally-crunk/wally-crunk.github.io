@@ -220,8 +220,7 @@ $color-background-notification-gradient-1: $mid-1000; // menu low/high suggested
 $color-background-notification-gradient-2: $mid-700;  // menu high/low suggested
 $color-background-notification: #fff;
 
-// alerts (used for #alertbar)
-// (light mode style)
+// alerts (light mode style)
 $color-accent-border-alert: $midtone-500;
 $color-background-alert: $ds-gray-92;
 $color-text-alert: $ds-black;
@@ -230,27 +229,18 @@ $color-anchor-alert: $ds-gray-05;
 // ////////////////////////////////////////////////////////////////////////////////
 // ICONS
 
-// direct specify color filters:
-$ds-filter-000d1a: invert(6%) sepia(40%) saturate(1864%) hue-rotate(173deg) brightness(96%) contrast(107%);
-
 // changing to #000 black version
-$icon-message-unread: url("/svg/std/document-round-ccc.svg");
-$icon-message-unread-filter: $ds-filter-000d1a;
-$icon-message-unread-locked: url("/svg/std/lock-round-ccc.svg");
-$icon-message-unread-locked-filter: $ds-filter-000d1a;
-$icon-message-unread-sticky: url("/svg/std/pin-round-ccc.svg");
-$icon-message-unread-sticky-filter: $ds-filter-000d1a;
-$icon-message-unread-locked-sticky: url("/svg/std/pin-and-lock-round-ccc.svg");
-$icon-message-unread-locked-sticky-filter: $ds-filter-000d1a;
+$icon-message-unread: url("/svg/std/document-round-000.svg");
+$icon-message-unread-locked: url("/svg/std/lock-round-000.svg");
+$icon-message-unread-sticky: url("/svg/std/pin-round-000.svg");
+$icon-message-unread-locked-sticky: url("/svg/std/pin-and-lock-round-000.svg");
 
-$icon-message-read: url("/svg/std/document-ccc.svg");
-$icon-message-read-filter: $ds-filter-000d1a;
-$icon-message-read-sticky: url("/svg/std/pin-ccc.svg");
-$icon-message-read-sticky-filter: $ds-filter-000d1a;
-$icon-message-read-locked: url("/svg/std/lock-ccc.svg");
-$icon-message-read-locked-filter: $ds-filter-000d1a;
-$icon-message-read-locked-sticky: url("/svg/std/pin-and-lock-ccc.svg");
-$icon-message-read-locked-sticky-filter: $ds-filter-000d1a;
+$icon-message-read: url("/svg/std/document-000.svg");
+$icon-message-read-locked: url("/svg/std/lock-000.svg");
+$icon-message-read-sticky: url("/svg/std/pin-000.svg");
+$icon-message-read-locked-sticky: url("/svg/std/pin-and-lock-000.svg");
+
+$icon-notification: url("/styles/apollostage/images/notification-bell-000xeee.svg");
 
 // Header Pulldown Menu (hamburger/chevron icon)
 // not changing, still dark background
@@ -262,27 +252,17 @@ $logo-site-lockup: url("/svg/site/ops-logo-lockup-lightmode.svg");
 $logo-site-square: url("/svg/site/ops-logo-loop-lightmode.svg");
 
 // Used on Mobile
-// changing to light mode version
-$icon-number-snatches: url("/svg/std/arrow-loop.svg");
-$icon-number-snatches-filter: $ds-filter-000d1a;
-$icon-number-seeders: url("/svg/std/arrow-up-round.svg");
-$icon-number-seeders-filter: $ds-filter-000d1a;
-$icon-number-leechers: url("/svg/std/arrow-down-round.svg");
-$icon-number-leechers-filter: $ds-filter-000d1a;
+// changing to #000 black version
+$icon-number-snatches: url("/svg/std/arrow-loop-000.svg");
+$icon-number-seeders: url("/svg/std/arrow-up-round-000.svg");
+$icon-number-leechers: url("/svg/std/arrow-down-round-000.svg");
 
-// Used on alerts
-
-//  // standard:
-//  $icon-notification: url("/svg/std/notification-bell.svg");
-//  $icon-notification-filter: // color as desired;
-//  $icon-warning: url("/svg/std/x.svg");
-//  $icon-warning-filter: // color as desired;
-
-//  // Orpheus specific; other deployments, use the above.
-$icon-notification: url("/svg/site/ops-icon-harp.svg");
-$icon-notification-filter:  $ds-filter-c6d2c8;
-$icon-warning: url("/svg/site/ops-icon-triangle.svg");
-$icon-notification-filter:  $ds-filter-000d1a;
+// // standard:
+// $icon-notification: url("/svg/std/notification-bell-000.svg");
+// $icon-warning: url("/svg/std/x-000.svg")
+// // Orpheus specific; other deployments, use the above.
+$icon-notification: url("/svg/site/ops-icon-harp-000.svg");
+$icon-warning: url("/svg/site/ops-icon-triangle-000.svg");
 
 @import '../apollostage/_base';
 @import '../apollostage/_fonts_base';
@@ -297,7 +277,7 @@ $icon-notification-filter:  $ds-filter-000d1a;
 
 body,
 textarea {
-  font-family: "Merriweather Sans", "Noto Sans", "Microsoft Yahei", Tahoma, sans-serif;
+  font-family: "Bitter", "Noto Sans", "Microsoft Yahei", Tahoma, sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   font-weight: 320;
@@ -313,7 +293,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Merriweather', 'Noto Sans', 'Open Sans', Tahoma, sans-serif;
+  font-family: "Bitter", "Noto Sans", "Open Sans", Tahoma, sans-serif;
   font-weight: 700;
 }
 

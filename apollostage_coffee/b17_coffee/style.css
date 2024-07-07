@@ -8,10 +8,10 @@
 */
 /*  # 2024-07-03 - Updated with community feedback.
     # Fix: mobile menu, category stripes;
-    # Feature: Add SVGs, tag bubbles, italic fonts and more;
-    # Feature: Added new light mode theme;
-    # Feature: Fonts hosted locally;
-    # Chore: Organized and documented the SCSS.
+/*  # Feature: Add SVGs, tag bubbles, italic fonts and more;
+/*  # Feature: Added new light mode theme;
+/*  # Feature: Fonts hosted locally;
+/*  # Chore: Organized and documented the SCSS.
     For full changelog: see uncompiled SASS file. */
 /*
 ########################################################################
@@ -96,11 +96,8 @@
 ########################################################################
 */
 /* ## 0.1 Housekeeping and font loading */
-/* Font loading */
-@import url("/styles/apollostage/fonts/fontcall_v2.css");
 @namespace url("http://www.w3.org/1999/xhtml");
 @namespace svg url("http://www.w3.org/2000/svg");
-/* END font loading */
 /* ## 0.2 Global variables */
 /*
 ########################################################################
@@ -124,7 +121,7 @@ input,
 select,
 textarea,
 .tooltipster-default .tooltipster-content {
-  font-family: "Open Sans", Noto, "Noto Sans", "Microsoft Yahei", sans-serif;
+  font-family: "Noto Sans", "Microsoft Yahei", sans-serif;
 }
 
 body {
@@ -141,7 +138,7 @@ code {
   font-family: "JetBrains Mono", "Cascadia Code", Consolas, "Ubuntu Mono", Monaco, monospace;
   font-optical-sizing: auto;
   font-variant-ligatures: no-contextual;
-  font-weight: 200;
+  font-weight: 300;
   color: #B38D6F;
 }
 
@@ -181,7 +178,7 @@ h4 {
 h4,
 h5 {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 a {
@@ -654,8 +651,7 @@ table.box2 {
   max-width: 100%;
 }
 
-/* #2024; new forced-color standard now available */
-@media screen and (forced-colors: active) {
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   .forum_post .body img {
     max-width: 720px;
   }
@@ -680,7 +676,7 @@ table.box2 {
 }
 
 .last_read ::before {
-  content: "➤"; /* aka \27A4 */
+  content: "➤"; /* aka ➤ */
   color: #C98258;
   display: inline-block;
 }
@@ -695,35 +691,35 @@ table.box2 {
 }
 
 .read {
-  background: url("/svg/std/document.svg") center no-repeat;
+  background: url("/svg/std/document-ccc.svg") center no-repeat;
 }
 
 .unread {
-  background: url("/svg/std/document-round.svg") center no-repeat;
+  background: url("/svg/std/document-round-ccc.svg") center no-repeat;
 }
 
 .read_locked {
-  background: url("/svg/std/lock.svg") center no-repeat;
+  background: url("/svg/std/lock-ccc.svg") center no-repeat;
 }
 
 .unread_locked {
-  background: url("/svg/std/lock-round.svg") center no-repeat;
+  background: url("/svg/std/lock-round-ccc.svg") center no-repeat;
 }
 
 .read_sticky {
-  background: url("/svg/std/pin.svg") center no-repeat;
+  background: url("/svg/std/pin-ccc.svg") center no-repeat;
 }
 
 .unread_sticky {
-  background: url("/svg/std/pin-round.svg") center no-repeat;
+  background: url("/svg/std/pin-round-ccc.svg") center no-repeat;
 }
 
 .read_locked_sticky {
-  background: url("/svg/std/pin-and-lock.svg") center no-repeat;
+  background: url("/svg/std/pin-and-lock-ccc.svg") center no-repeat;
 }
 
 .unread_locked_sticky {
-  background: url("/svg/std/pin-and-lock-round.svg") center no-repeat;
+  background: url("/svg/std/pin-and-lock-round-ccc.svg") center no-repeat;
 }
 
 #footer,
@@ -978,11 +974,11 @@ div#flip_view_1 div#similar-artist .name {
 }
 
 .show_torrents > a::after {
-  content: "▶"; /* \25b6 */
+  content: "▶";
 }
 
 .hide_torrents > a::after {
-  content: "▼"; /* \25bc */
+  content: "▼";
 }
 
 .group_torrent .edition_info {
@@ -1626,7 +1622,7 @@ body#collage .cats_music {
   }
   /* main logo during desktop view */
   #logo a {
-    background: url("/svg/site/ops-logo-lockup-darkmode.svg") right no-repeat;
+    background: url("/svg/orpheus/ops-logo-lockup-darkmode.svg") right no-repeat;
   }
   #logo > a {
     background-size: 200px;
@@ -1760,7 +1756,8 @@ body#collage .cats_music {
   }
   #nav_donate .tooltip::after {
     color: red;
-    content: "❤️"; /* \2764\FE0F */
+    content: "❤️️";
+    font-size: 75%;
     vertical-align: top;
   }
   #nav_staff {
@@ -1782,7 +1779,7 @@ body#collage .cats_music {
     color: #89644C;
   }
   #userinfo_minor::before {
-    background: url("/svg/std/chevrons-down.svg") no-repeat;
+    background: url("/svg/std/chevrons-down-ccc.svg") no-repeat;
     filter: brightness(200%); /* force white */
     background-size: 28px;
     background-position: center;
@@ -2028,7 +2025,7 @@ body#collage .cats_music {
 /* # 1.12 Upload form MusicBrainz popup */
 #musicbrainz_popup {
   color: #D1B89E;
-  background: #272423;
+  background: #1d2424;
   border: #785746;
   padding: 1rem;
   font-weight: 600;
@@ -2191,7 +2188,7 @@ ul#check::after {
   border-radius: 0.25rem;
   padding: 1rem 1rem 1rem 48px;
   background: hsl(183, 2.5%, 92%);
-  background-image: url("/svg/site/ops-icon-triangle.svg");
+  background-image: url("/svg/site/ops-icon-triangle-000.svg");
   background-repeat: no-repeat;
   background-position: 8px center;
   background-size: 32px;
@@ -2203,7 +2200,7 @@ ul#check.nobullet > * {
   border: thick solid #daa520;
   padding: 1rem 1rem 1rem 48px;
   background: hsl(183, 2.5%, 92%);
-  background-image: url("/svg/site/ops-icon-triangle.svg");
+  background-image: url("/svg/site/ops-icon-triangle-000.svg");
   background-repeat: no-repeat;
   background-position: 8px center;
   background-size: 32px;
@@ -2229,7 +2226,7 @@ ul#check.nobullet > * {
   border: thick solid #5F443B;
   padding: 1rem 1rem 1rem 48px;
   background: #3D2C29;
-  background-image: url("/svg/site/ops-icon-harp.svg");
+  background-image: url("/svg/site/ops-icon-harp-ccc.svg");
   background-repeat: no-repeat;
   background-position: 8px center;
   background-size: 32px;
@@ -2534,7 +2531,7 @@ Documentation of mobile classes:
   .td_snatched.m_td_right::before,
   .td_seeders.m_td_right::before,
   .td_leechers.m_td_right::before {
-    background: left/10px no-repeat url("/svg/std/arrow-loop.svg");
+    background: left/10px no-repeat url("/svg/std/arrow-loop-ccc.svg");
     color: #E0CDB8;
     content: ":";
     filter: brightness(80%);
@@ -2544,10 +2541,10 @@ Documentation of mobile classes:
     width: 14px;
   }
   .td_seeders.m_td_right::before {
-    background-image: url("/svg/std/arrow-up-round.svg");
+    background-image: url("/svg/std/arrow-up-round-ccc.svg");
   }
   .td_leechers.m_td_right::before {
-    background-image: url("/svg/std/arrow-down-round.svg");
+    background-image: url("/svg/std/arrow-down-round-ccc.svg");
   }
   .m_table.checkboxes td:first-child {
     display: block;
@@ -2879,7 +2876,7 @@ Documentation of mobile classes:
     opacity: 1 !important;
     width: 25px;
     height: 25px;
-    background-image: url("/svg/std/chevrons-down.svg");
+    background-image: url("/svg/std/chevrons-down-ccc.svg");
     background-size: contain;
     z-index: 500;
     pointer-events: none;
@@ -2895,7 +2892,7 @@ Documentation of mobile classes:
   }
   /* topbar for mobile ~ site logo, upper left */
   #extra5 {
-    background-image: url("/svg/site/ops-logo-loop-darkmode.svg");
+    background-image: url("/svg/orpheus/ops-logo-loop-darkmode.svg");
     background-position: 0;
     background-size: auto 24px;
     background-repeat: no-repeat;
@@ -2960,7 +2957,7 @@ Documentation of mobile classes:
   }
   #logo a {
     display: inline-block;
-    background: url("/svg/site/ops-logo-loop-darkmode.svg") center no-repeat;
+    background: url("/svg/orpheus/ops-logo-loop-darkmode.svg") center no-repeat;
     background-size: var(--row-height);
     height: var(--row-height);
     width: var(--row-height);
@@ -3139,7 +3136,7 @@ Documentation of mobile classes:
   }
   #taglist tr.label td::after {
     font-style: italic;
-    content: '➤ Use "Hide Tags" above or Profile Settings to hide this list of tags.'; /* \27A4 */
+    content: '➤Use "Hide Tags" above or Profile Settings to hide this list of tags.';
     border: dotted;
   }
   #taglist tr:not(.label) td {
@@ -3161,7 +3158,7 @@ Documentation of mobile classes:
     transition: all 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
   }
   /* END tag display for Torrent search form on Mobile,
-     when tags are set to display in profile settings */
+    /* when tags are set to display in profile settings */
 }
 /* ########################################################################
    # 5 CHANGES FOR MOBILE, SUPER SHORT VIEW
@@ -3306,102 +3303,6 @@ Documentation of mobile classes:
   font-weight: 800;
   font-display: swap;
   src: url("/styles/apollostage/fonts/ttf/JetBrainsMono/JetBrainsMono-800.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Open Sans";
-  font-style: italic;
-  font-weight: 300;
-  font-stretch: normal;
-  font-display: swap;
-  src: url("/styles/apollostage/fonts/ttf/OpenSans/OpenSans-300-Italic.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Open Sans";
-  font-style: italic;
-  font-weight: 400;
-  font-stretch: normal;
-  font-display: swap;
-  src: url("/styles/apollostage/fonts/ttf/OpenSans/OpenSans-400-Italic.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Open Sans";
-  font-style: italic;
-  font-weight: 500;
-  font-stretch: normal;
-  font-display: swap;
-  src: url("/styles/apollostage/fonts/ttf/OpenSans/OpenSans-500-Italic.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Open Sans";
-  font-style: italic;
-  font-weight: 600;
-  font-stretch: normal;
-  font-display: swap;
-  src: url("/styles/apollostage/fonts/ttf/OpenSans/OpenSans-600-Italic.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Open Sans";
-  font-style: italic;
-  font-weight: 700;
-  font-stretch: normal;
-  font-display: swap;
-  src: url("/styles/apollostage/fonts/ttf/OpenSans/OpenSans-700-Italic.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Open Sans";
-  font-style: italic;
-  font-weight: 800;
-  font-stretch: normal;
-  font-display: swap;
-  src: url("/styles/apollostage/fonts/ttf/OpenSans/OpenSans-800-Italic.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 300;
-  font-stretch: normal;
-  font-display: swap;
-  src: url("/styles/apollostage/fonts/ttf/OpenSans/OpenSans-300.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-stretch: normal;
-  font-display: swap;
-  src: url("/styles/apollostage/fonts/ttf/OpenSans/OpenSans-400.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 500;
-  font-stretch: normal;
-  font-display: swap;
-  src: url("/styles/apollostage/fonts/ttf/OpenSans/OpenSans-500.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 600;
-  font-stretch: normal;
-  font-display: swap;
-  src: url("/styles/apollostage/fonts/ttf/OpenSans/OpenSans-600.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-stretch: normal;
-  font-display: swap;
-  src: url("/styles/apollostage/fonts/ttf/OpenSans/OpenSans-700.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 800;
-  font-stretch: normal;
-  font-display: swap;
-  src: url("/styles/apollostage/fonts/ttf/OpenSans/OpenSans-800.ttf") format("truetype");
 }
 @font-face {
   font-family: "Noto Sans";
