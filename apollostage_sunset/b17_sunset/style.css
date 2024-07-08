@@ -295,10 +295,6 @@ blockquote {
   color: #fff;
 }
 
-form input {
-  vertical-align: sub;
-}
-
 table {
   background-color: #2A242C;
 }
@@ -1426,7 +1422,19 @@ blockquote {
 /* # 1.3 Reserved [for more organization in the future]
 
 /* ************************************************ */
-/* # 1.4 Reserved [for more organization in the future]
+/* # 1.4 Sortable items */
+#sortable {
+  width: unset !important;
+}
+
+#sortable li {
+  word-break: break-all;
+}
+
+/* checkboxes */
+form input {
+  vertical-align: sub;
+}
 
 /* ************************************************ */
 /* # 1.5 Discography Pages
@@ -1846,7 +1854,7 @@ body#collage .cats_music {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-image: url("/svg/std/menu-000.svg");
+  background-image: url("/svg/std/menu-ccc.svg");
   background-size: 30px;
   background-origin: padding-box;
   background-clip: border-box;

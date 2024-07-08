@@ -187,6 +187,7 @@
 /* ## 0.1 Housekeeping and font loading */
 
 @charset "UTF-8";
+
 @namespace url("http://www.w3.org/1999/xhtml");
 @namespace svg url("http://www.w3.org/2000/svg");
 
@@ -406,10 +407,6 @@ blockquote {
 ::selection {
   background-color: $color-accent-selection-background;
   color: $color-accent-selection-text;
-}
-
-form input {
-  vertical-align: sub;
 }
 
 table {
@@ -1229,8 +1226,6 @@ ul.collage_images li a > span {
   width: 100%;
 }
 
-
-
 #userform #settings_sections h2 a,
 .rule_short {
   color: $color-text-anchor;
@@ -1560,7 +1555,19 @@ blockquote {
 
 /* ************************************************ */
 
-/* # 1.4 Reserved [for more organization in the future]
+/* # 1.4 Sortable items */
+
+#sortable {
+  width: unset !important;
+}
+#sortable li {
+  word-break: break-all;
+}
+
+/* checkboxes */
+form input {
+  vertical-align: sub;
+}
 
 /* ************************************************ */
 
@@ -2455,7 +2462,7 @@ ul#check.nobullet > * {
   font-size: 16px;
   margin-top: 8px;
   text-align: center;
-} 
+}
 
 .alertbar a {
   color: $color-anchor-alert !important;
