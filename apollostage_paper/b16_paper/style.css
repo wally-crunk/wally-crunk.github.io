@@ -291,12 +291,8 @@ blockquote {
 }
 
 ::selection {
-  background-color: #2A8760;
+  background-color: #005943;
   color: #fff;
-}
-
-form input {
-  vertical-align: sub;
 }
 
 table {
@@ -904,7 +900,7 @@ div#flip_view_1 div#similar-artist .name {
  but NOT personal 'snatches, downloads,..' pages. */
 #torrents #torrent_details .group_torrent td.edition_info,
 .group ~ .group_torrent.edition {
-  background-color: #55AE88;
+  background-color: #00A280;
 }
 
 .torrentdetails .linkbox {
@@ -1120,7 +1116,7 @@ ul.collage_images li a > span {
 }
 
 .poll .graph span {
-  background-color: #247D59;
+  background-color: #004B38;
   display: block;
   float: left;
   height: 8px;
@@ -1426,14 +1422,26 @@ blockquote {
 /* # 1.3 Reserved [for more organization in the future]
 
 /* ************************************************ */
-/* # 1.4 Reserved [for more organization in the future]
+/* # 1.4 Sortable items */
+#sortable {
+  width: unset !important;
+}
+
+#sortable li {
+  word-break: break-all;
+}
+
+/* checkboxes */
+form input {
+  vertical-align: sub;
+}
 
 /* ************************************************ */
 /* # 1.5 Discography Pages
 
 /* Discog table: for rows 'Albums', 'Compilations', 'Live Albums', etc. */
 #discog_table tr[id^=torrents_] {
-  background-color: #4BA67F;
+  background-color: #009777;
 }
 
 #discog_table tr[id^=torrents_] :not(a.tooltip.brackets) strong {
@@ -1455,7 +1463,7 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
 
 /* BEGIN Navbox on artist page ~ "jump down".. to navigate between Album/Live Album... */
 #discog_table > div.box.center {
-  background-color: #4BA67F;
+  background-color: #009777;
   padding: 12px;
   text-align: left;
   padding-left: 11rem;
@@ -1490,7 +1498,7 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
 
 .tooltipster-default {
   background-color: #EBEFF0;
-  border: 0 solid #2A8760;
+  border: 0 solid #005943;
   border-radius: 2.5px;
   color: #174A86;
 }
@@ -1846,7 +1854,7 @@ body#collage .cats_music {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-image: url("/svg/std/menu-000.svg");
+  background-image: url("/svg/std/menu-ccc.svg");
   background-size: 30px;
   background-origin: padding-box;
   background-clip: border-box;
@@ -1955,8 +1963,8 @@ body#collage .cats_music {
 
 /* first row of each box */
 #noty_bottomRight_layout_container .noty_message {
-  background: radial-gradient(circle at top right, #1D714D, #308E67) !important;
-  color: #172B4D !important;
+  background: radial-gradient(circle at top right, #003D2D, #008265) !important;
+  color: #fff !important;
   font-weight: 700;
   padding: 0 !important;
   line-height: 2.2rem !important;
@@ -1978,7 +1986,7 @@ body#collage .cats_music {
 /* buttons */
 #noty_bottomRight_layout_container .noty_buttons a {
   background-color: none;
-  color: #247D59 !important;
+  color: #004B38 !important;
   border: thin solid transparent; /* prevents button movement */
   border-radius: 14px;
   padding: 0 6px;
@@ -1986,9 +1994,9 @@ body#collage .cats_music {
 }
 
 #noty_bottomRight_layout_container .noty_buttons a:hover {
-  background-color: #247D59;
-  color: #55AE88 !important;
-  border: thin solid #55AE88;
+  background-color: #004B38;
+  color: #00A280 !important;
+  border: thin solid #00A280;
   border-radius: 14px;
   transition: all 0.15s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
@@ -2019,7 +2027,7 @@ body#collage .cats_music {
 #musicbrainz_popup {
   color: #172B4D;
   background: #D0D4D5;
-  border: #2A8760;
+  border: #005943;
   padding: 1rem;
   font-weight: 600;
 }
@@ -2068,8 +2076,8 @@ body#torrents div.box.box_tags li > a:first-child {
   font-weight: 700;
   font-size: 0.6rem;
   vertical-align: baseline;
-  color: #247D59;
-  background: #55AE88;
+  color: #004B38;
+  background: #00A280;
   padding: 0 0.5rem;
   border-radius: 1rem;
   margin-bottom: 0.1rem;
@@ -2088,8 +2096,8 @@ body#torrents div.box.box_tags li > a:first-child {
 table.torrent_table.cats.checkboxes.border.m_table td.td_info.big_info div.group_info.clear div.tags a:hover,
 table.torrent_table.cats.m_table td.td_info.big_info div.group_info.clear div.tags a:hover,
 body#torrents div.box.box_tags li > a:first-child:hover {
-  color: #55AE88 !important;
-  background: #247D59 !important;
+  color: #00A280 !important;
+  background: #004B38 !important;
   transition: all 0.15s cubic-bezier(0.25, 0.8, 0.25, 1);
   box-shadow: rgba(0, 0, 0, 0.25) 0 14px 28px, rgba(0, 0, 0, 0.22) 0 10px 10px;
 }
@@ -2673,8 +2681,8 @@ Documentation of mobile classes:
     font-weight: 400;
     font-size: 0.55rem;
     vertical-align: baseline;
-    color: #247D59;
-    background: #55AE88 !important;
+    color: #004B38;
+    background: #00A280 !important;
     padding: 0.05rem 0.5rem;
     border: none !important;
     border-radius: 1rem;
@@ -2838,7 +2846,7 @@ Documentation of mobile classes:
     animation: delay-pointer-events 2000ms linear;
   }
   #header {
-    background: #308E67;
+    background: #00674E;
     top: 0;
     height: 0;
     left: 0;
@@ -2858,8 +2866,8 @@ Documentation of mobile classes:
     height: clamp(200px, var(--row-height) * 15, 100%);
     opacity: 1;
     transition: all 600ms cubic-bezier(1, 0.01, 0.3, 1.31);
-    border-bottom: groove #308E67;
-    box-shadow: 0 50px 70px #3B9972, 0 160px 160px #080808;
+    border-bottom: groove #00674E;
+    box-shadow: 0 50px 70px #008265, 0 160px 160px #080808;
   }
   /* ## 4.17.3 Top Menubar for Mobile */
   /* topbar for mobile ~ pulldown arrow icon */
@@ -2878,7 +2886,7 @@ Documentation of mobile classes:
   }
   /* topbar for mobile ~ "folder tab" when menu is closed */
   #extra4 {
-    background: #308E67;
+    background: #00674E;
     border-radius: 0 0 9px 9px;
     display: block;
     right: 0;
@@ -3119,14 +3127,14 @@ Documentation of mobile classes:
   /* when tags are set to display in profile settings. */
   #taglist tr.label {
     height: auto;
-    border: thick solid #247D59;
+    border: thick solid #004B38;
   }
   #taglist tr.label td {
-    background: #55AE88;
-    color: #247D59;
+    background: #00A280;
+    color: #004B38;
     align-content: center;
     text-align: center;
-    border: #247D59;
+    border: #004B38;
     width: 100%;
   }
   #taglist tr.label td::after {
@@ -3145,8 +3153,8 @@ Documentation of mobile classes:
     text-overflow: ellipsis;
     font-style: italic;
     vertical-align: baseline;
-    color: #247D59 !important;
-    background: #55AE88;
+    color: #004B38 !important;
+    background: #00A280;
     padding: 0.25rem;
     border-radius: 1rem;
     margin-bottom: 0.1rem;

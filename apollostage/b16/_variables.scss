@@ -140,7 +140,6 @@ $color-text-linkbox: $midtone-800; // links in linkbox
 $color-text-menu: $fore-1000;
 $color-text-menu-hover: $color-text-menu; // during pulldown
 $color-text-mono: $fore-500;
-$color-text-notification-words: $fore-1000;
 $color-text-ratio-greenzone: $ds-green;
 $color-text-ratio-redzone: $ds-red;
 $color-text-ratio-yellowzone: $ds-yellow;
@@ -152,9 +151,11 @@ $color-text-tooltipster: $midtone-600;
 $color-text-tooltipster-anchor: $midtone-800;
 $color-text-tooltipster-anchor-hover: $midtone-1000;
 
+// popup notifications
 $color-background-notification-gradient-1: $midtone-1000; // menu low/high suggested
 $color-background-notification-gradient-2: $midtone-400; // menu high/low suggested
 $color-background-notification: $ds-neutral-000;
+$color-text-notification-words: $fore-1000;
 
 $color-background-popup: $back-300; // upload musicbrainz info
 $color-text-popup-anchor-hover: $midtone-1000;
@@ -231,7 +232,7 @@ $icon-message-read-sticky: url("/svg/std/pin-ccc.svg");
 $icon-message-read-locked-sticky: url("/svg/std/pin-and-lock-ccc.svg");
 
 // Header Pulldown Menu (hamburger/chevron icon)
-$icon-menu-open-state: url("/svg/std/menu-000.svg");
+$icon-menu-open-state: url("/svg/std/menu-ccc.svg");
 $icon-menu-closed-state: url("/svg/std/chevrons-down-ccc.svg");
 $icon-menu-pulldown-mobile: url("/svg/std/chevrons-down-ccc.svg");
 
