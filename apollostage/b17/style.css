@@ -2433,11 +2433,6 @@ Documentation of mobile classes:
   .m_th_left_collapsable {
     padding-left: 34px;
   }
-  .m_th_left::before {
-    color: white;
-    content: "Info";
-    visibility: visible;
-  }
   /* kludge for :first-of-class */
   .m_th_right {
     margin-left: auto;
@@ -2453,7 +2448,6 @@ Documentation of mobile classes:
   /* Instead of using "Info" rows, We want to preserve Rows
     that show  Upload types: album', 'live album', 'compilation', etc. */
   body#artist div#discog_table .m_table tr.colhead_dark td.m_th_left {
-    font-size: larger;
     visibility: visible;
   }
   body#artist div#discog_table .m_table tr.colhead_dark td.m_th_left a {

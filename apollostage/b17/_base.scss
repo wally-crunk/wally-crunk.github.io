@@ -2702,11 +2702,6 @@ Documentation of mobile classes:
     padding-left: 34px;
   }
 
-  .m_th_left::before {
-    color: white;
-    content: "Info";
-    visibility: visible;
-  }
 
   /* kludge for :first-of-class */
   .m_th_right {
@@ -2728,7 +2723,6 @@ Documentation of mobile classes:
     that show  Upload types: album', 'live album', 'compilation', etc. */
 
   body#artist div#discog_table .m_table tr.colhead_dark td.m_th_left {
-    font-size: larger;
     visibility: visible;
   }
 
