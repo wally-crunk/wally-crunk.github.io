@@ -1440,7 +1440,7 @@ blockquote {
 
 /* checkboxes */
 form input {
-  vertical-align: sub;
+  vertical-align: center;
 }
 
 /* ************************************************ */
