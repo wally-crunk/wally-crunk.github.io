@@ -101,6 +101,7 @@
 @namespace url("http://www.w3.org/1999/xhtml");
 @namespace svg url("http://www.w3.org/2000/svg");
 /* ## 0.2 Global variables */
+/* CSS compiler will leave this section blank. */
 /*
 ########################################################################
 # 1 DESKTOP VIEW
@@ -1427,10 +1428,16 @@ blockquote {
 /* # 1.4 Sortable items */
 #sortable {
   width: unset !important;
+  cursor: move;
 }
 
 #sortable li {
   word-break: break-all;
+  cursor: move;
+}
+
+#sortable label {
+  cursor: move;
 }
 
 /* checkboxes */
@@ -2299,12 +2306,16 @@ Documentation of mobile classes:
 # 4 CHANGES FOR MOBILE SITE
 ########################################################################
 */
-/* Begin Changes for Mobile Site */
+/* ## 4.1 BEGIN site changes */
 @media (max-width: 575px) {
   .m_hidden {
     display: none !important;
   }
-  /* override from earlier, it makes shit weird */
+  /* intra-page links shouldn't hide behind the sticky top tab */
+  * {
+    scroll-margin-top: 32px;
+  }
+  /* override from earlier, avoids weird */
   td:first-child {
     padding-left: 6px;
   }
@@ -2312,7 +2323,6 @@ Documentation of mobile classes:
   #inbox .body img {
     max-width: 100% !important;
   }
-  /* ## 4.1 BEGIN site layout */
   #wrapper {
     padding-top: 36px;
   }
