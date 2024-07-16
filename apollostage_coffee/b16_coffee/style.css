@@ -1,12 +1,12 @@
 @charset "UTF-8";
 /* APOLLOSTAGE COFFEE THEME */
-/* 2024-07-03 */
+/* 2024-07-16 */
 /*
    ########################################################################
    CHANGELOG
    ########################################################################
 */
-/*  # 2024-07-11 - Updated with community feedback.
+/*  # 2024-07-16 - Updated with community feedback.
     # Fix: mobile menu, category stripes;
 /*  # Feature: Add SVGs, tag bubbles, italic fonts and more;
 /*  # Feature: Added new light mode theme;
@@ -1973,21 +1973,19 @@ body#collage .cats_music {
   background: radial-gradient(circle at top right, #563E37, #89644C) !important;
   color: #FFFCF6 !important;
   font-weight: 700;
-  padding: 0 !important;
-  line-height: 2.2rem !important;
+  padding: 0.8rem !important;
 }
 
 /* first row words */
 #noty_bottomRight_layout_container .noty_message .noty_text {
-  line-height: 1.04rem;
-  padding: 0 8px;
+  line-height: 1.1rem !important;
 }
 
 /* second row of each box */
 #noty_bottomRight_layout_container .noty_buttons {
   background-color: #000 !important;
   border: none !important;
-  padding: 8px !important;
+  padding: 0.6rem !important;
 }
 
 /* buttons */
@@ -3218,7 +3216,7 @@ Documentation of mobile classes:
 /* ## 6.1 Debugging Tools
    various 'debug' features are avail in this doc elsewhere */
 #footer p:last-of-type::after {
-  content: " | Apollostage build 240711 coffee 2407";
+  content: " | Apollostage build 240716 coffee";
 }
 
 /* ########################################################################
