@@ -1,5 +1,5 @@
 // _base.scss for Apollostage
-// 2024-07-03
+// 2024-07-16
 //
 // SASS/SCSS NOTE
 // This is one of four files for the main ApolloStage theme:
@@ -17,7 +17,7 @@
    ########################################################################
 */
 
-/*  # 2024-07-03 - Updated with community feedback.
+/*  # 2024-07-16 - Updated with community feedback.
     # Fix: mobile menu, category stripes;
 /*  # Feature: Add SVGs, tag bubbles, italic fonts and more;
 /*  # Feature: Added new light mode theme;
@@ -193,6 +193,8 @@
 
 /* ## 0.2 Global variables */
 
+/* CSS compiler will leave this section blank. */
+
 $phone-screen-size: 575px;
 $z-lightbox: 1000;
 $z-upload-error-popups: 900;
@@ -201,6 +203,7 @@ $z-mobilemenu_closed-tab: 400;
 $z-mobilemenu_closed-tab-icons: 500;
 $z-desktop-menu-open: 800;
 $z-desktop-menu-closed: 900;
+$height-mobilemenu_closed-tab: 32px;
 $wrapper-max-width: 1020px;
 
 /*
@@ -1559,14 +1562,19 @@ blockquote {
 
 #sortable {
   width: unset !important;
+  cursor: move;
 }
 #sortable li {
   word-break: break-all;
+  cursor: move;
+}
+#sortable label {
+  cursor: move;
 }
 
 /* checkboxes */
 form input {
-  vertical-align: sub;
+  vertical-align: center;
 }
 
 /* ************************************************ */
@@ -2144,21 +2152,19 @@ body#collage .cats_music {
     ) !important;
   color: $color-text-notification-words !important;
   font-weight: 700;
-  padding: 0 !important;
-  line-height: 2.2rem !important; // done here to override site html
+  padding: 0.8rem !important; //overriding site html
 }
 
 /* first row words */
 #noty_bottomRight_layout_container .noty_message .noty_text {
-  line-height: 1.04rem; // only needed on 2-line announcements
-  padding: 0 8px;
+  line-height: 1.1rem !important; // only needed on 2-line announcements
 }
 
 /* second row of each box */
 #noty_bottomRight_layout_container .noty_buttons {
   background-color: $color-background-notification !important;
   border: none !important;
-  padding: 8px !important;
+  padding: 0.6rem !important;
 }
 
 /* buttons */
@@ -2253,6 +2259,8 @@ body#collage .cats_music {
 #taglist td a,
 #request_table .tags,
 #top10 .tags,
+#better .tags,
+#user #requests .tags a,
 /* Artist page, sidebar, tags box */
 #artist .sidebar div.box.box_tags ul.stats.nobullet li a,
 /* User profile page, sidebar, for non-paranoid */
@@ -2285,6 +2293,7 @@ body#torrents div.box.box_tags li > a:first-child {
 #torrent_table .group .tags :not(:empty):hover,
 #discog_table .tags :hover,
 #taglist td a:hover,
+#user #requests .tags a:hover,
 /*  Artist page, sidebar, tags box */
 #artist .sidebar div.box.box_tags ul.stats.nobullet li a:hover,
 /* User profile page, sidebar, for non-paranoid */
@@ -2308,7 +2317,8 @@ body#torrents div.box.box_tags li > a:first-child:hover {
 /* ### 2.2.3 Non-clickable appearance
    Applies to top10 and request_table pages, where tags are not clickable links. */
 #request_table .tags,
-#top10 .tags {
+#top10 .tags,
+#better .tags {
   font-style: italic;
   font-weight: normal;
   margin-inline: 1rem;
@@ -2530,14 +2540,19 @@ Documentation of mobile classes:
 ########################################################################
 */
 
-/* Begin Changes for Mobile Site */
+/* ## 4.1 BEGIN site changes */
 
 @media (max-width: $phone-screen-size) {
   .m_hidden {
     display: none !important;
   }
 
-  /* override from earlier, it makes shit weird */
+  /* intra-page links shouldn't hide behind the sticky top tab */
+  * {
+    scroll-margin-top: $height-mobilemenu_closed-tab;
+  }
+
+  /* override from earlier, avoids weird */
   td:first-child {
     padding-left: 6px;
   }
@@ -2546,8 +2561,6 @@ Documentation of mobile classes:
   #inbox .body img {
     max-width: 100% !important;
   }
-
-  /* ## 4.1 BEGIN site layout */
 
   #wrapper {
     padding-top: 36px;
@@ -2701,7 +2714,6 @@ Documentation of mobile classes:
   .m_th_left_collapsable {
     padding-left: 34px;
   }
-
 
   /* kludge for :first-of-class */
   .m_th_right {
@@ -3316,7 +3328,7 @@ Documentation of mobile classes:
 
   #extra4,
   #extra5 {
-    height: 32px;
+    height: $height-mobilemenu_closed-tab;
     position: fixed;
     top: 0;
   }

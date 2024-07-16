@@ -1,12 +1,12 @@
 @charset "UTF-8";
 /* APOLLOSTAGE COFFEE THEME */
-/* 2024-07-03 */
+/* 2024-07-16 */
 /*
    ########################################################################
    CHANGELOG
    ########################################################################
 */
-/*  # 2024-07-03 - Updated with community feedback.
+/*  # 2024-07-16 - Updated with community feedback.
     # Fix: mobile menu, category stripes;
 /*  # Feature: Add SVGs, tag bubbles, italic fonts and more;
 /*  # Feature: Added new light mode theme;
@@ -99,6 +99,7 @@
 @namespace url("http://www.w3.org/1999/xhtml");
 @namespace svg url("http://www.w3.org/2000/svg");
 /* ## 0.2 Global variables */
+/* CSS compiler will leave this section blank. */
 /*
 ########################################################################
 # 1 DESKTOP VIEW
@@ -1425,15 +1426,21 @@ blockquote {
 /* # 1.4 Sortable items */
 #sortable {
   width: unset !important;
+  cursor: move;
 }
 
 #sortable li {
   word-break: break-all;
+  cursor: move;
+}
+
+#sortable label {
+  cursor: move;
 }
 
 /* checkboxes */
 form input {
-  vertical-align: sub;
+  vertical-align: center;
 }
 
 /* ************************************************ */
@@ -1966,21 +1973,19 @@ body#collage .cats_music {
   background: radial-gradient(circle at top right, #563E37, #89644C) !important;
   color: #FFFCF6 !important;
   font-weight: 700;
-  padding: 0 !important;
-  line-height: 2.2rem !important;
+  padding: 0.8rem !important;
 }
 
 /* first row words */
 #noty_bottomRight_layout_container .noty_message .noty_text {
-  line-height: 1.04rem;
-  padding: 0 8px;
+  line-height: 1.1rem !important;
 }
 
 /* second row of each box */
 #noty_bottomRight_layout_container .noty_buttons {
   background-color: #000 !important;
   border: none !important;
-  padding: 8px !important;
+  padding: 0.6rem !important;
 }
 
 /* buttons */
@@ -2064,6 +2069,8 @@ body#collage .cats_music {
 #taglist td a,
 #request_table .tags,
 #top10 .tags,
+#better .tags,
+#user #requests .tags a,
 #artist .sidebar div.box.box_tags ul.stats.nobullet li a,
 #user div.sidebar .box_userinfo_activity ul.stats.nobullet li a,
 #userhistory div.group_info.clear div.tags a,
@@ -2090,6 +2097,7 @@ body#torrents div.box.box_tags li > a:first-child {
 #torrent_table .group .tags :not(:empty):hover,
 #discog_table .tags :hover,
 #taglist td a:hover,
+#user #requests .tags a:hover,
 #artist .sidebar div.box.box_tags ul.stats.nobullet li a:hover,
 #user div.sidebar .box_userinfo_activity ul.stats.nobullet li a:hover,
 #userhistory div.group_info.clear div.tags :hover,
@@ -2105,7 +2113,8 @@ body#torrents div.box.box_tags li > a:first-child:hover {
 /* ### 2.2.3 Non-clickable appearance
    Applies to top10 and request_table pages, where tags are not clickable links. */
 #request_table .tags,
-#top10 .tags {
+#top10 .tags,
+#better .tags {
   font-style: italic;
   font-weight: normal;
   margin-inline: 1rem;
@@ -2297,12 +2306,16 @@ Documentation of mobile classes:
 # 4 CHANGES FOR MOBILE SITE
 ########################################################################
 */
-/* Begin Changes for Mobile Site */
+/* ## 4.1 BEGIN site changes */
 @media (max-width: 575px) {
   .m_hidden {
     display: none !important;
   }
-  /* override from earlier, it makes shit weird */
+  /* intra-page links shouldn't hide behind the sticky top tab */
+  * {
+    scroll-margin-top: 32px;
+  }
+  /* override from earlier, avoids weird */
   td:first-child {
     padding-left: 6px;
   }
@@ -2310,7 +2323,6 @@ Documentation of mobile classes:
   #inbox .body img {
     max-width: 100% !important;
   }
-  /* ## 4.1 BEGIN site layout */
   #wrapper {
     padding-top: 36px;
   }
@@ -3204,7 +3216,7 @@ Documentation of mobile classes:
 /* ## 6.1 Debugging Tools
    various 'debug' features are avail in this doc elsewhere */
 #footer p:last-of-type::after {
-  content: " | Apollostage build 240708 coffee 2407";
+  content: " | Apollostage build 240716 coffee";
 }
 
 /* ########################################################################
