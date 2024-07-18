@@ -614,7 +614,8 @@ table.box2 {
 }
 
 .autocomplete-suggestions .autocomplete-suggestion.autocomplete-selected {
-  background-color: #757AAB;
+  background-color: rgba(217, 130, 111, 0.6);
+  color: #fff;
 }
 
 .autocomplete-suggestions .autocomplete-suggestion strong {
