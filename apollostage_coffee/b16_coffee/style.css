@@ -1,12 +1,12 @@
 @charset "UTF-8";
 /* APOLLOSTAGE COFFEE THEME */
-/* 2024-07-16 */
+/* 2024-07-19 */
 /*
    ########################################################################
    CHANGELOG
    ########################################################################
 */
-/*  # 2024-07-16 - Updated with community feedback.
+/*  # 2024-07-19 - Updated with community feedback.
     # Fix: mobile menu, category stripes;
 /*  # Feature: Add SVGs, tag bubbles, italic fonts and more;
 /*  # Feature: Added new light mode theme;
@@ -18,7 +18,7 @@
     TABLE OF CONTENTS
 ######################################################################## */
 /* # 0 GENERAL SETUP
-   ## 0.1 Housekeeping and font loading
+   ## 0.1 Housekeeping
    ## 0.2 Global variables
    ## 0.3 Debugging tools */
 /* # 1 DESKTOP VIEW
@@ -43,11 +43,11 @@
    ### 2.2.2  Hover effect
    ### 2.2.3  Non-clickable appearance
    ### 2.2.4  Other special cases
-   ### 2.2.5  Snatched torrent indicators (BETA)
+   ### 2.2.5  Snatched torrent indicators
    ## 2.3 Reserved
    ## 2.4 Pop-up Warnings and Alerts ##
    ### 2.4.1 Upload warnings ##
-   ### 2.4.2 Alertbar */
+   ### 2.4.2 Alertbar and Alerts on Desktop */
 /* # 3 DOCUMENTATION OF MOBILE CLASSES */
 /* # 4 CHANGES FOR MOBILE VIEW
    ## 4.1  Site Layout
@@ -84,7 +84,7 @@
    ### 4.17.7  Menu When Open, Row Three
    ### 4.17.8  Menu When Open, Row Four
    ### 4.17.9  Menu When Open, Row Five ~ Searchboxes
-   ### 4.17.10  Alerts
+   ### 4.17.10  Alertbar and Alerts on Mobile
    ## 4.18 Checkboxes ~ Purpose Undocumented
    ## 4.19 Torrent Search, Handling for Tag Appearance */
 /* # 5 CHANGES FOR MOBILE, SUPER SHORT VIEW
@@ -95,7 +95,7 @@
 # 0 GENERAL SETUP
 ########################################################################
 */
-/* ## 0.1 Housekeeping and font loading */
+/* ## 0.1 Housekeeping */
 @namespace url("http://www.w3.org/1999/xhtml");
 @namespace svg url("http://www.w3.org/2000/svg");
 /* ## 0.2 Global variables */
@@ -1974,7 +1974,7 @@ body#collage .cats_music {
   background: radial-gradient(circle at top right, #563E37, #89644C) !important;
   color: #FFFCF6 !important;
   font-weight: 700;
-  padding: 0.8rem !important;
+  padding: 0.6rem !important;
 }
 
 /* first row words */
@@ -1986,7 +1986,7 @@ body#collage .cats_music {
 #noty_bottomRight_layout_container .noty_buttons {
   background-color: #000 !important;
   border: none !important;
-  padding: 0.6rem !important;
+  padding: 0.4rem !important;
 }
 
 /* buttons */
@@ -2133,7 +2133,7 @@ table.torrent_table.cats.m_table td.td_info.big_info div.group_info.clear div.ta
   color: rgba(0, 0, 0, 0.1);
 }
 
-/* ### 2.2.5 Snatched torrent indicators (BETA)
+/* ### 2.2.5 Snatched torrent indicators 
    the following must be after 2.2.4 invisibility */
 tr.snatched_group div.tags::before {
   content: "snatched group";
@@ -3087,38 +3087,48 @@ Documentation of mobile classes:
     height: calc(var(--row-height) - 9px);
   }
   /* END searchboxes */
-  /* ## 4.17.10 Alerts */
+  /* ## 4.17.10 Alertbar and Alerts on Mobile*/
   /*  Alertbar is part of the DIV #header, which is designed to collapse on mobile. */
   #alerts {
     display: none;
   }
-  /*     PROBLEM: if we allow it to be visible as part of the rolldown menu, */
-  /*      wherever it's located, its links activate the 'open when hover'. */
-  /*      Why isn't Alertbar hover disabled when the menu is closed? */
-  /*     Possible solution: move hoverbar to the 1st row of menu. /*
-  /*     However, it blocks the 'settings' button until notifs are cleared. */
+  /*    TODO: Alertbar alerts are not visible on Mobile. 
+  /*    
+  /*    DETAILS: Per site code, #alerts and .alertbar are delivered in the 'header'
+  /*      group, which we restyle to be a pulldown menu.
+  /*      If we turn on .alertbar and position it inside the pulldown menu,
+  /*      for example hovering over row 2 (the statistics block), or 
+  /*      below the menu in the 'shadow' area, — then when the menu is closed,
+  /*      hovering over the invisible .alertbar position shouldn't do anything, 
+  /*      but it opens the menu, which is unacceptable.
+  /*      Why isn't Alertbar hover disabled when the menu is closed? 
+  /*     Possible solution: move hoverbar to the 1st row of menu and float (z-height)
+  /*      over what's ordinarily there.  That solution is not chosen because
+  /*      in the first row, it blocks the 'settings' button until notifs are cleared. 
   /*     TODO: Find a better way.
-  /*  Meantime, #fearless users: UNCOMMENT the block below to turn ON alertbar on mobile. */
-  /* ==== */
+  /*  Meantime, fearless users: UNCOMMENT the block below 
+  /*  to turn ON alertbar on mobile. Codeblock below requires debugging.
+
+  /* =========== */
   /*
-    /*  #alerts > .alertbar {
-    /*    display: inline-block;
-    /*    position: absolute;
-    /*    margin: 0;
-    /*    top: 0;
-    /*    left: 2%;
-    /*    width: 96%;
-    /*    height: auto;
-    /*    z-index: 99999;
-    /*    opacity: 1 !important;
-    /*    }
-    /*
-    /*  /* on mobile, suppress any other non-alertbar alerts (if any) */
+  /*  #alerts > .alertbar {
+  /*    display: inline-block;
+  /*    position: absolute;
+  /*    margin: 0;
+  /*    top: 0;
+  /*    left: 2%;
+  /*    width: 96%;
+  /*    height: auto;
+  /*    z-index: 99999;
+  /*    opacity: 1 !important;
+  /*    }
+  /*
+  /*  /* on mobile, suppress any other non-alertbar alerts (if any) */
   /*  #alerts > :not(.alertbar) {
-    /*    display: none;
-    /*    }
-    /*
-    /* ==== */
+  /*    display: none;
+  /*    }
+  /*
+  /* =========== */
   /* ************************************************ */
   /* ## 4.18 Checkboxes ~ purpose undocumented */
   #extracb1 {
@@ -3167,7 +3177,7 @@ Documentation of mobile classes:
   }
   #taglist tr.label td::after {
     font-style: italic;
-    content: '➤Use "Hide Tags" above or Profile Settings to hide this list of tags.';
+    content: '➤ Use "Hide Tags" above or Profile Settings to hide this list of tags.';
     border: dotted;
   }
   #taglist tr:not(.label) td {
@@ -3217,7 +3227,7 @@ Documentation of mobile classes:
 /* ## 6.1 Debugging Tools
    various 'debug' features are avail in this doc elsewhere */
 #footer p:last-of-type::after {
-  content: " | Apollostage build 240716 coffee";
+  content: " | Apollostage build 240719 coffee";
 }
 
 /* ########################################################################
