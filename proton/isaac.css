@@ -1,0 +1,447 @@
+/* ################################################################################ */
+/* ### PROTON II DEVELOPMENT THEME ### */
+/* ################################################################################ */
+
+/* ################################################################################ */
+/* 0 QUALITY OF LIFE */
+/* ################################################################################ */
+
+@namespace "http://www.w3.org/1999/xhtml";
+@namespace svg "http://www.w3.org/2000/svg";
+
+@import url('https://rsms.me/inter/inter.css');
+
+:root {
+  font-family: Inter, sans-serif;
+  font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+}
+
+@supports (font-variation-settings: normal) {
+  :root { font-family: InterVariable, sans-serif; }
+}
+
+body {
+  background: #ccc;
+  font-size: 0.7em;
+  margin-bottom: 0;
+  box-sizing: border-box;
+}
+
+/* ### 11 DEVELOPER ### */
+
+#wrapper {
+  display: flex;
+  flex-flow: column wrap;
+}
+#wrapper { border: thick solid steelblue; }
+#header { border: thick solid skyblue; }
+#content { border: thick solid green; }
+#footer { border: thick solid brown; }
+
+/* ### 50 STRUCTURE ### */
+
+body#user div#wrapper div#content div.thin {
+  display: flex;
+  flex-flow: column;
+}
+
+body#user div#wrapper div#content div.thin div.header {
+  position: unset;
+  border: thick solid brown;
+  max-width: 100vw;
+}
+
+body#user div#wrapper div#content div.thin div.sidebar * {
+  position: unset;
+}
+
+html body#user div#wrapper div#content div.thin form#userform.edit_form {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+body#user div#wrapper div#content div.thin div.sidebar {
+  position: unset;
+  order: 4;
+  border: thick solid gray;
+  max-width: 12vw;
+}
+body#user div#wrapper div#content div.thin div.main_column {
+  position: unset;
+  order: 6;
+  border: thick solid purple;
+  max-width: 70vw;
+  overflow: hidden;
+}
+
+/* ################################################################################ */
+/* 1000 HEADERBOX ITEM SETUP */
+/* ################################################################################ */
+
+input,
+select,
+textarea {
+  font-family: Inter, Tahoma, Arial, sans-serif;
+  font-size: 1em;
+  border: 1px solid #9c9c9c;
+}
+
+textarea {
+  width: 500px !important;
+  height: 100px;
+}
+
+input,
+textarea {
+  color: #999999;
+  padding: 3px;
+  /*   background: white url("images/inputbg.png") top left repeat-x; */
+}
+
+input[type=file] {
+  padding: 1px 3px;
+}
+
+select {
+  padding: 1px;
+}
+
+#inbox #content h2 {
+  padding: 20px !important;
+}
+
+input:focus,
+textarea:focus {
+  border: 1px solid #575757;
+  color: #575757;
+  border-radius: 11px;
+}
+
+#searchbars input {
+  height: 17px;
+  width: 131px;
+  border: 1px solid #cccccc;
+  border-radius: 11px;
+}
+
+#searchbars input:focus {
+  border: 1px solid #575757;
+  color: #575757;
+  border-radius: 11px;
+}
+
+input[type=submit],
+input[type=button] {
+  background-color: #f4f4f4;
+  background-image: none;
+  border-top: 1px solid #cdcdcd;
+  border-left: 1px solid #cdcdcd;
+  border-bottom: 1px solid #999999;
+  border-right: 1px solid #999999;
+  font-weight: bold;
+}
+
+input[type=submit]:active,
+input[type=button]:active {
+  color: #007dc7 !important;
+}
+
+input[value="Upload torrent"],
+input[value="Upload torrents"] {
+  margin: 15px 0 0 0;
+  background-color: #007dc7;
+  color: white;
+  font-size: 15px;
+  border-top: 1px solid #63afdd;
+  border-left: 1px solid #63afdd;
+  border-bottom: 1px solid #005488;
+  border-right: 1px solid #005488;
+}
+
+input[value="Upload torrent"],
+input[value="Upload torrents"]:active {
+  color: #f4f4f4 !important;
+}
+
+/* ################################################################################ */
+/* 1020 HEADER BOX SETUP */
+/* ################################################################################ */
+
+#header {
+  padding: 0;
+}
+
+#menu {
+  border-right: thin solid gray;
+  margin-right: 0.5rem;
+}
+
+ul#userinfo_minor {
+  list-style: none;
+  border-top: thin solid gray;
+  margin-right: 0.5rem;
+  padding: 0;
+}
+
+#header ul a {
+  display: inline-block;
+  padding: 1px 2px;
+}
+
+#menu ul li,
+ul#userinfo_minor li {
+  float: left;
+  display: block;
+  width: 74px;
+}
+
+ul#userinfo_minor li {
+  width: 95px;
+}
+
+ul#userinfo_username,
+ul#userinfo_major,
+ul#userinfo_stats {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul#userinfo_username li,
+ul#userinfo_major li,
+ul#userinfo_stats li {
+  display: inline;
+  font-weight: bold;
+}
+
+ul#userinfo_username li a {
+  color: steelblue;
+  overflow: hidden;
+}
+
+ul#userinfo_username li a:hover {
+  background-color: #575757;
+  color: #e6e6e6;
+}
+
+ul#userinfo_username li a.username {
+  color: #575757;
+  max-width: 70px;
+  text-overflow: ellipsis;
+}
+
+ul#userinfo_username li a.username:hover {
+  background-color: #007dc6;
+  color: #e6e6e6;
+}
+
+ul#userinfo_major li a {
+  color: #575757;
+}
+
+ul#userinfo_major li a:hover {
+  background-color: #575757;
+  color: #e6e6e6;
+}
+
+ul#userinfo_stats li {
+  font-weight: normal;
+  color: #575757;
+}
+
+ul#userinfo_stats li a {
+  font-weight: normal;
+  color: #575757;
+}
+
+.alertbar {
+  font-weight: normal;
+  background-color: #007dc6;
+  padding: 3px 5px;
+}
+
+.alertbar a {
+  color: white;
+  font-weight: bold;
+}
+
+.alertbar:hover {
+  background-color: #0070b7;
+}
+
+.alertbar:first-of-type {
+  padding-top: 4px;
+}
+
+.alertbar:last-of-type {
+  padding-bottom: 4px;
+}
+
+ul#userinfo_stats li span.stat {
+  color: #007dc6;
+  margin-right: 2px;
+}
+
+ul#userinfo_minor a {
+  color: #575757;
+}
+
+ul#userinfo_minor a:hover {
+  background-color: #575757;
+  color: #e6e6e6;
+}
+
+#menu a:hover {
+  background-color: #007dc6;
+  color: #e6e6e6;
+}
+
+#index #nav_index a,
+#collage #nav_collages a,
+#forums #nav_forums a,
+#chat #nav_irc a,
+#rules #nav_rules a,
+#staff #nav_staff a,
+#torrents #nav_torrents a,
+#requests #nav_requests a,
+#top10 #nav_top10 a,
+#wiki #nav_wiki a {
+  font-weight: bold;
+}
+
+#alerts,
+#menu ul,
+ul#userinfo_major,
+ul#userinfo_minor,
+ul#userinfo_stats,
+ul#userinfo_username {
+  position: unset;
+  display: unset;
+}
+
+/* ################################################################################ */
+/* 1030 HEADER BOX LAYOUT */
+/* ################################################################################ */
+
+#header {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+  min-width: 600px;
+  /*   position: absolute; */
+  top: 0;
+  left: 0;
+}
+
+#header {
+  background: hsl(208, 90%, 97%);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 1rem;
+}
+
+/* BIG ITEMS */
+#logo {
+  order: 1;
+  flex: 12%;
+}
+
+#menu {
+  order: 2;
+  flex: 17%;
+}
+
+#userinfo {
+  order: 3;
+  flex: 50%;
+}
+
+#alerts { order: 4; }
+#searchbars { order: 5; }
+
+/* COLUMN I LOGO */
+#logo {
+  box-sizing: content-box;
+  padding: 0;
+  border-right: thin solid gray;
+  margin-right: 0.5rem;
+}
+#logo > a {
+  background: url("https://wally-crunk.github.io/svg/orpheus/ops-logo-loop-lightmode.svg") center no-repeat;
+  background-size: 100px;
+  display: block;
+  filter: invert(25%) sepia(78%) saturate(99%) hue-rotate(149deg) brightness(87%) contrast(125%);
+  height: 100%;
+  width: 100%;
+}
+
+/* COLUMN III USERINFO */
+
+#userinfo {
+  display: flex;
+  flex-flow: column;
+}
+
+#userinfo #userinfo_username {
+  order: 1;
+  display: inline-block;
+  width: 100%;
+}
+
+#userinfo #userinfo_minor {
+  order: 2;
+  display: inline-block;
+  width: 100%;
+  padding-top: 1rem;
+}
+
+#userinfo #userinfo_major {
+  order: 3;
+  display: inline-block;
+  width: 100%;
+  padding-top: 0.5rem;
+}
+
+#userinfo #userinfo_stats {
+  order: 4;
+  display: inline-block;
+  width: 100%;
+  padding-top: 0.5rem;
+}
+
+/* PART 5 SEARCHBARS */
+
+#searchbars {
+  padding-top: 0.15rem;
+}
+
+#searchbars > ul {
+  align-items: center;
+  display: flex;
+  margin: 0;
+  padding: 0.25rem 0.25rem 0.25rem 0.25rem;
+}
+
+#searchbars > ul li {
+  display: inline;
+  flex: 1 1 auto;
+  margin-right: 9px;
+}
+
+#searchbars > ul input {
+  width: 100%;
+}
+
+#searchbars .search_form {
+  background: 0 0;
+}
+
+#searchbars .search_form input {
+  border: thin solid lightgray;
+  border-radius: 0.7rem;
+  background: unset;
+  box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.15);
+  transition: 300ms ease-in-out;
+}
+
+/* ### EOF ### */
