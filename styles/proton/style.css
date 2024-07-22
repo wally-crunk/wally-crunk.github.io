@@ -1882,13 +1882,14 @@ textarea:focus {
   height: 17px;
   width: 131px;
   border: 1px solid #cccccc;
-  border-radius: 11px;
+  border-radius: 1rem;
+  padding-left: .6rem;
 }
 
 #searchbars input:focus {
   border: 1px solid #575757;
   color: #575757;
-  border-radius: 11px;
+  border-radius: 1rem;
 }
 
 input[type=submit],
@@ -2223,15 +2224,18 @@ ul#userinfo_username {
 #searchbars > ul li {
   display: inline;
   flex: 1 1 auto;
-  margin-right: 9px;
 }
+
+#searchbars ul > *:not(:last-child) {
+    margin-right: 1rem;
+} 
 
 #searchbars > ul input {
   width: 100%;
 }
 
 #searchbars .search_form {
-  background: 0 0;
+  background: 0 0; /*sets initial values for all */
 }
 
 #searchbars .search_form input {
@@ -2241,6 +2245,65 @@ ul#userinfo_username {
   box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.15);
   transition: 300ms ease-in-out;
 }
+
+
+/* ################################################################################
+   7200 Upload Warnings
+   ################################################################################ */
+
+/* display a popup when any upload warning occurs inline on the page */
+
+.upload-error::after,
+ul#check::after {
+  content: "Warning!  There were one or more errors in your submission. Check below for error messages.";
+  font-weight: 700;
+  position: absolute;
+  top: 64px;
+  left: 50vw;
+  transform: translateX(-50%);
+  z-index: 50; 
+/*   $z-upload-error-popups; */
+  color: black;
+  border: thick solid crimson;
+/*     $color-accent-border-error; */
+  border-radius: 0.25rem;
+  padding: 1rem 1rem 1rem 48px;
+  background: #fed100;
+/*     $color-background-error; */
+  background-image: url("https://wally-crunk.github.io/svg/std/x-c33.svg")
+/*     $icon-warning; */
+  background-repeat: no-repeat;
+  background-position: 8px center;
+  background-size: 32px;
+  box-shadow:
+    0 10px 18px rgba(0, 0, 0, 0.55),
+    0 7px 7px rgba(0, 0, 0, 0.52),
+    0 -5px 9px rgba(0, 0, 0, 0.32);
+}
+
+.upload-error,
+ul#check.nobullet > * {
+  border: thick solid crimson;
+/*     $color-accent-border-error; */
+  padding: 1rem 1rem 1rem 48px;
+  background: #fed100;
+/*     $color-background-error; */
+  background-image: url("https://wally-crunk.github.io/svg/std/x-c33.svg")
+/*     $icon-warning; */
+  background-repeat: no-repeat;
+  background-position: 8px center;
+  background-size: 32px;
+}
+
+.upload-error,
+ul#check.nobullet *,
+ul#check.nobullet > * {
+  color: $color-text-error !important;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+
 
 /* ################################################################################
    8000 FOOTER
