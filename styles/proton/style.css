@@ -2381,7 +2381,7 @@ ul#check.nobullet > * {
 }
 
 #footer p:last-of-type::after {
-  content: " | Proton build 355";
+  content: " | Proton build 1708";
 }
 
 /* ### EOF ### */
