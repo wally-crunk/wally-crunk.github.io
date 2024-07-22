@@ -17,4 +17,4 @@ git add --all --verbose || { echo "git add failed." >&2; exit 1; }
 git commit -m "updaterrr ~ $comment_words" --verbose || { echo "git commit failed." >&2; exit 1; }
 git push -u origin main --verbose || { echo "git push failed." >&2; exit 1; }
 
-echo "Complete."
+echo "Complete ➜ https://github.com/wally-crunk/wally-crunk.github.io/actions"
