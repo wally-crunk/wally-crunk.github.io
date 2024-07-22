@@ -182,7 +182,6 @@ input[value="Upload torrents"]:active {
 
 ul#userinfo_minor {
   list-style: none;
-  border-top: thin solid gray;
   margin-right: 0.5rem;
   padding: 0;
 }
@@ -258,29 +257,6 @@ ul#userinfo_stats li a {
   color: #575757;
 }
 
-.alertbar {
-  font-weight: normal;
-  background-color: #007dc6;
-  padding: 3px 5px;
-}
-
-.alertbar a {
-  color: white;
-  font-weight: bold;
-}
-
-.alertbar:hover {
-  background-color: #0070b7;
-}
-
-.alertbar:first-of-type {
-  padding-top: 4px;
-}
-
-.alertbar:last-of-type {
-  padding-bottom: 4px;
-}
-
 ul#userinfo_stats li span.stat {
   color: #007dc6;
   margin-right: 2px;
@@ -313,16 +289,6 @@ ul#userinfo_minor a:hover {
   font-weight: bold;
 }
 
-#alerts,
-#menu ul,
-ul#userinfo_major,
-ul#userinfo_minor,
-ul#userinfo_stats,
-ul#userinfo_username {
-  position: unset;
-  display: unset;
-}
-
 /* ################################################################################
    1030 HEADER BOX LAYOUT
    ################################################################################ */
@@ -344,6 +310,16 @@ ul#userinfo_username {
   padding: 1rem;
 }
 
+#alerts,
+#menu ul,
+ul#userinfo_major,
+ul#userinfo_minor,
+ul#userinfo_stats,
+ul#userinfo_username {
+  position: unset;
+  display: unset;
+}
+
 /* BIG ITEMS */
 #logo {
   order: 1;
@@ -357,13 +333,14 @@ ul#userinfo_username {
 
 #userinfo {
   order: 3;
-  flex: 50%;
+  flex: 60%;
 }
 
-#alerts { order: 4; }
-#searchbars { order: 5; }
+#alerts { order: 4; flex: 100%}
+#searchbars { order: 5; flex:100%}
 
 /* COLUMN I LOGO */
+
 #logo {
   box-sizing: content-box;
   padding: 0;
@@ -379,38 +356,91 @@ ul#userinfo_username {
   width: 100%;
 }
 
+/* COLUMN II MENU */
+
 /* COLUMN III USERINFO */
 
 #userinfo {
   display: flex;
   flex-flow: column;
+  width: 100%;
 }
 
 #userinfo #userinfo_username {
   order: 1;
-  display: inline-block;
-  width: 100%;
-}
-
-#userinfo #userinfo_minor {
-  order: 2;
-  display: inline-block;
-  width: 100%;
-  padding-top: 1rem;
-}
-
-#userinfo #userinfo_major {
-  order: 3;
-  display: inline-block;
-  width: 100%;
-  padding-top: 0.5rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  align-items: baseline;
 }
 
 #userinfo #userinfo_stats {
+  order: 2;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  align-items: baseline;
+  padding-top: 0.1rem;
+}
+
+#userinfo #userinfo_minor {
+  order: 3;
+  display: inline-block;
+  padding-top: 0.1rem;
+}
+
+#userinfo #userinfo_major {
   order: 4;
   display: inline-block;
   width: 100%;
-  padding-top: 0.5rem;
+  padding-top: 0.1rem;
+}
+
+/* PART 4 ALERTS */
+
+#alerts {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+
+}
+
+.alertbar {
+  font-weight: normal;
+  background-color: steelblue;
+  padding: 0.5rem 2rem 0rem 3rem;
+  margin-top: .3rem;
+  margin-right: auto;
+  background-image: url('https://wally-crunk.github.io/svg/site/ops-icon-harp-ccc.svg');
+  background-size: 1.3rem;
+  background-repeat: no-repeat;
+  background-position: 1rem center;
+  transition: all 0.175s ease;
+  border-radius: 1rem;
+}
+
+.alertbar a {
+  color: white;
+  font-weight: bold;
+  text-decoration-line: none;
+}
+
+.alertbar:hover {
+  background-color: skyblue;
+  transition-timing-function: ease-in-out;
+  transition: all 0.175s ease;
+  a {color:black}
+  background-image: url('https://wally-crunk.github.io/svg/site/ops-icon-harp-000.svg');
+}
+
+.alertbar:first-of-type {
+  padding-top: 4px;
+}
+
+.alertbar:last-of-type {
+  padding-bottom: 4px;
 }
 
 /* PART 5 SEARCHBARS */
