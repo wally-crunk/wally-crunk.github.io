@@ -33,6 +33,8 @@ body {
 	#footer { border: thick solid brown; }
 	#sidebar { border: thick solid gray; }
 	div.main_column { border: thick solid purple; }
+	div.sidebar.settings_sidebar {border:thick solid limegreen;}
+
  */
 
 /* ################################################################################
@@ -127,12 +129,6 @@ textarea {
   height: 100px;
 }
 
-input,
-textarea {
-  color: #999;
-  padding: 3px;
-  background: #fff url(images/inputbg.png) 0 0 repeat-x;
-}
 
 input[type=file] {
   padding: 1px 3px;
@@ -398,6 +394,18 @@ td.r00 {
 .poll .graph .right_poll {
   width: 11px;
   background: url(images/poll_right.png) 0 0 no-repeat;
+}
+
+/* ################################################################################
+   0540 settings sidebar
+   ################################################################################ */
+
+div.sidebar.settings_sidebar div#settings_sections li h2 {
+  font-size: unset;
+}
+
+div.sidebar.settings_sidebar {
+  margin-right: 2rem;
 }
 
 /* ################################################################################
@@ -951,7 +959,25 @@ tr.torrent .bookmark > a::after {
 }
 
 /* ################################################################################
-   0720 Not organized past here
+   0720 User settings ~ sortable
+   ################################################################################ */
+
+#sortable .sortable_item:hover {
+  background-color: #f0f0f0;
+  border: thin solid black;
+  box-sizing: border-box;
+}
+
+#sortable .sortable_item:hover > * {
+  cursor: move;
+}
+
+#user #sortable {
+  width: 50%;
+}
+
+/* ################################################################################
+   0730 Not organized past here
    ################################################################################ */
 
 #blog .box .head,
@@ -1289,14 +1315,6 @@ h3 {
 
 .user_options .options_list {
   padding: 0;
-}
-
-#sortable .sortable_item:hover {
-  background-color: #f0f0f0;
-}
-
-#user #sortable {
-  width: 40%;
 }
 
 #user .layout.recent tr:not(.colhead) td {
@@ -1854,8 +1872,8 @@ textarea {
 
 input,
 textarea {
-  color: #999999;
-  padding: 3px;
+  color: #777;
+  padding: .2rem .2rem .2rem .5rem;
   /*   background: white url("images/inputbg.png") top left repeat-x; */
 }
 
@@ -1883,7 +1901,7 @@ textarea:focus {
   width: 131px;
   border: 1px solid #cccccc;
   border-radius: 1rem;
-  padding-left: .6rem;
+  padding-left: 0.6rem;
 }
 
 #searchbars input:focus {
@@ -2178,10 +2196,10 @@ ul#userinfo_username {
   padding: 0.5rem 2rem 0 3rem;
   margin-top: 0.3rem;
   margin-right: auto;
-  background-image: url('https://wally-crunk.github.io/svg/site/ops-icon-harp-ccc.svg');
-  background-size: 1.3rem;
+  background-image: url('https://wally-crunk.github.io/svg/std/notification-bell-000xeee.svg');
+  background-size: 1.2rem;
   background-repeat: no-repeat;
-  background-position: 1rem center;
+  background-position: 1.2rem center;
   transition: all 0.175s ease;
   border-radius: 1rem;
 }
@@ -2196,8 +2214,6 @@ ul#userinfo_username {
   background-color: skyblue;
   transition: all 0.175s ease;
   a { color: black; }
-
-  background-image: url('https://wally-crunk.github.io/svg/site/ops-icon-harp-000.svg');
 }
 
 .alertbar:first-of-type {
@@ -2227,15 +2243,15 @@ ul#userinfo_username {
 }
 
 #searchbars ul > *:not(:last-child) {
-    margin-right: 1rem;
-} 
+  margin-right: 1rem;
+}
 
 #searchbars > ul input {
   width: 100%;
 }
 
 #searchbars .search_form {
-  background: 0 0; /*sets initial values for all */
+  background: 0 0; /* sets initial values for all */
 }
 
 #searchbars .search_form input {
@@ -2245,7 +2261,6 @@ ul#userinfo_username {
   box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.15);
   transition: 300ms ease-in-out;
 }
-
 
 /* ################################################################################
    7200 Upload Warnings
@@ -2261,17 +2276,17 @@ ul#check::after {
   top: 64px;
   left: 50vw;
   transform: translateX(-50%);
-  z-index: 50; 
-/*   $z-upload-error-popups; */
+  z-index: 50;
+  /*   $z-upload-error-popups; */
   color: black;
   border: thick solid crimson;
-/*     $color-accent-border-error; */
+  /*     $color-accent-border-error; */
   border-radius: 0.25rem;
-  padding: 1rem 1rem 1rem 48px;
+  padding: 2rem 2rem 2rem 3rem;
   background: #fed100;
-/*     $color-background-error; */
-  background-image: url("https://wally-crunk.github.io/svg/std/x-c33.svg")
-/*     $icon-warning; */
+  /*     $color-background-error; */
+  background-image: url("/styles/proton/images/warning-swe.svg");
+  /*     $icon-warning; */
   background-repeat: no-repeat;
   background-position: 8px center;
   background-size: 32px;
@@ -2284,12 +2299,12 @@ ul#check::after {
 .upload-error,
 ul#check.nobullet > * {
   border: thick solid crimson;
-/*     $color-accent-border-error; */
+  /*     $color-accent-border-error; */
   padding: 1rem 1rem 1rem 48px;
   background: #fed100;
-/*     $color-background-error; */
-  background-image: url("https://wally-crunk.github.io/svg/std/x-c33.svg")
-/*     $icon-warning; */
+  /*     $color-background-error; */
+  background-image: url("/styles/proton/images/warning-swe.svg");
+  /*     $icon-warning; */
   background-repeat: no-repeat;
   background-position: 8px center;
   background-size: 32px;
@@ -2302,8 +2317,6 @@ ul#check.nobullet > * {
   font-size: 12px;
   font-weight: 700;
 }
-
-
 
 /* ################################################################################
    8000 FOOTER
@@ -2365,6 +2378,10 @@ ul#check.nobullet > * {
 
 #footer br {
   display: none;
+}
+
+#footer p:last-of-type::after {
+  content: " | Proton build 355";
 }
 
 /* ### EOF ### */
