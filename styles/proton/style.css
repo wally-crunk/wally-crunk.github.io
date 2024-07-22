@@ -33,8 +33,6 @@ body {
 	#footer { border: thick solid brown; }
 	#sidebar { border: thick solid gray; }
 	div.main_column { border: thick solid purple; }
-	div.sidebar.settings_sidebar {border:thick solid limegreen;}
-
  */
 
 /* ################################################################################
@@ -401,20 +399,6 @@ td.r00 {
   width: 11px;
   background: url(images/poll_right.png) 0 0 no-repeat;
 }
-
-
-/* ################################################################################
-   0540 settings sidebar
-   ################################################################################ */
-
-div.sidebar.settings_sidebar div#settings_sections li h2 {
-  font-size: unset
-  }
-
-div.sidebar.settings_sidebar {
-  margin-right: 2rem;
-  }
-
 
 /* ################################################################################
    0550 page items
@@ -966,27 +950,8 @@ tr.torrent .bookmark > a::after {
   padding: 10px 0;
 }
 
-
 /* ################################################################################
-   0720 User settings ~ sortable
-   ################################################################################ */
-
-#sortable .sortable_item:hover {
-  background-color: #f0f0f0;
-  border: thin solid black;
-  box-sizing: border-box;
-}
-
-#sortable .sortable_item:hover > * {
-  cursor: move;
-}
-
-#user #sortable {
-  width: 50%;
-}
-
-/* ################################################################################
-   0730 Not organized past here
+   0720 Not organized past here
    ################################################################################ */
 
 #blog .box .head,
@@ -1326,6 +1291,13 @@ h3 {
   padding: 0;
 }
 
+#sortable .sortable_item:hover {
+  background-color: #f0f0f0;
+}
+
+#user #sortable {
+  width: 40%;
+}
 
 #user .layout.recent tr:not(.colhead) td {
   padding: 0;
@@ -2295,10 +2267,10 @@ ul#check::after {
   border: thick solid crimson;
 /*     $color-accent-border-error; */
   border-radius: 0.25rem;
-  padding: 2rem 2rem 2rem 3rem;
+  padding: 1rem 1rem 1rem 48px;
   background: #fed100;
 /*     $color-background-error; */
-  background-image: url("/styles/proton/images/warning-swe.svg");
+  background-image: url("https://wally-crunk.github.io/svg/std/x-c33.svg")
 /*     $icon-warning; */
   background-repeat: no-repeat;
   background-position: 8px center;
@@ -2316,7 +2288,7 @@ ul#check.nobullet > * {
   padding: 1rem 1rem 1rem 48px;
   background: #fed100;
 /*     $color-background-error; */
-  background-image: url("/styles/proton/images/warning-swe.svg");
+  background-image: url("https://wally-crunk.github.io/svg/std/x-c33.svg")
 /*     $icon-warning; */
   background-repeat: no-repeat;
   background-position: 8px center;
@@ -2393,10 +2365,6 @@ ul#check.nobullet > * {
 
 #footer br {
   display: none;
-}
-
-#footer p:last-of-type::after {
-  content: " | Proton build 355";
 }
 
 /* ### EOF ### */
