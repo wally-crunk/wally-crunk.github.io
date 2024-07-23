@@ -60,7 +60,7 @@ body {
   position: relative;
   border: 1px solid #b5b5b5;
   background-clip: padding-box;
-  -webkit-background-clip: border-box;
+
 }
 
 #content .header h2,
@@ -1184,11 +1184,8 @@ ul#userinfo_minor::after {
 
 #content,
 #footer,
-#menu ul,
-div.sidebar,
-ul#userinfo_minor {
-  display: inline-block;
-  display: block;
+div.sidebar {
+  display: flex;
 }
 
 ul.collage_images img {
@@ -2132,7 +2129,7 @@ ul#userinfo_username {
 }
 
 #logo > a {
-  background: url("https://wally-crunk.github.io/svg/orpheus/ops-logo-loop-lightmode.svg") center no-repeat;
+  background: url("https://wally-crunk.github.io/svg/site/ops-logo-loop-lightmode.svg") center no-repeat;
   background-size: 100px;
   display: block;
   filter: invert(25%) sepia(78%) saturate(99%) hue-rotate(149deg) brightness(87%) contrast(125%);
@@ -2262,6 +2259,25 @@ ul#userinfo_username {
   transition: 300ms ease-in-out;
 }
 
+
+/* ################################################################################
+   1100 Content Flex
+   ################################################################################ */
+
+#content {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+#content > .linkbox { 
+  background-color: skyblue;
+  border-radius: 1.5rem 1.5rem 0 0;
+  margin: 0 0 1rem 0; padding: 1.2rem;
+  width: 40%;
+}
+
+
+
 /* ################################################################################
    7200 Upload Warnings
    ################################################################################ */
@@ -2381,7 +2397,7 @@ ul#check.nobullet > * {
 }
 
 #footer p:last-of-type::after {
-  content: " | Proton build 1708";
+  content: " | Proton build 1131";
 }
 
 /* ### EOF ### */
