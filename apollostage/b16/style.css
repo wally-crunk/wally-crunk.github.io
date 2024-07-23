@@ -651,7 +651,7 @@ table.box2 {
   max-width: 100%;
 }
 
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+@media screen {
   .forum_post .body img {
     max-width: 720px;
   }
@@ -676,7 +676,7 @@ table.box2 {
 }
 
 .last_read ::before {
-  content: "➤"; /* aka ➤ */
+  content: "➤";
   color: #fed100;
   display: inline-block;
 }
@@ -735,7 +735,6 @@ table.box2 {
 .thin > .header h1,
 .thin > .header h2,
 .thin > .header h3 {
-  -ms-flex: 1 0 auto;
   flex: 1 0 auto;
 }
 
@@ -803,9 +802,7 @@ div#flip_view_1 div#similar-artist .name {
 .box_addtag form,
 .box_search form,
 .box_zipdownload form {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
 }
 
@@ -819,7 +816,6 @@ div#flip_view_1 div#similar-artist .name {
 .box_search select,
 .box_zipdownload input[type=text],
 .box_zipdownload select {
-  -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   margin-right: 8px;
   width: auto;
@@ -1132,11 +1128,7 @@ ul.collage_images li a > span {
   bottom: 0;
   cursor: pointer;
   display: flex;
-  display: -ms-flexbox;
-  -ms-flex-align: center;
-  -ms-flex-flow: row nowrap;
   flex-flow: row nowrap;
-  -ms-flex-pack: center;
   justify-content: center;
   left: 0;
   margin: auto;
@@ -1273,9 +1265,7 @@ ul.collage_images li a > span {
 }
 
 #torrents .filter_torrents .ft_submit {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-flow: row nowrap;
   flex-flow: row nowrap;
 }
 
@@ -1284,7 +1274,6 @@ ul.collage_images li a > span {
 }
 
 #torrents .filter_torrents .ft_submit span {
-  -ms-flex-order: 2;
   order: 2;
 }
 
@@ -1349,8 +1338,6 @@ span[style*="color: blue"] {
 .torrentdetails,
 .wrap_overflow,
 blockquote {
-  -webkit-hyphens: unset;
-  -ms-hyphens: unset;
   hyphens: unset;
   word-wrap: unset;
 }
@@ -1597,15 +1584,11 @@ body#collage .cats_music {
 .thin > .header .linkbox {
   align-self: flex-end;
   flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
-  -ms-flex-item-align: end;
   margin-top: 8px;
 }
 
 .thin > .header {
   display: flex;
-  display: -ms-flexbox;
-  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
   width: 100%;
 }
@@ -1644,8 +1627,6 @@ body#collage .cats_music {
 }
 #menu > ul {
   display: flex;
-  display: -ms-flexbox;
-  -ms-flex-flow: row nowrap;
   flex-flow: row nowrap;
   font-size: 13px;
   overflow: hidden;
@@ -1653,7 +1634,6 @@ body#collage .cats_music {
 }
 
 #menu > ul li {
-  -ms-flex: 1 1 auto;
   flex: 1 1 auto;
 }
 
@@ -1694,8 +1674,6 @@ body#collage .cats_music {
 #userinfo_major,
 #userinfo_stats {
   display: flex;
-  display: -ms-flexbox;
-  -ms-flex-flow: row nowrap;
   flex-flow: row nowrap;
   position: absolute;
   right: 8px;
@@ -1767,7 +1745,7 @@ body#collage .cats_music {
   }
   #nav_donate .tooltip::after {
     color: red;
-    content: "❤️️";
+    content: "❤️";
     font-size: 75%;
     vertical-align: top;
   }
@@ -1889,14 +1867,11 @@ body#collage .cats_music {
   align-items: center;
   background-color: #252f32;
   display: flex;
-  display: -ms-flexbox;
-  -ms-flex-align: center;
   height: 50px;
   padding: 0 9px;
 }
 
 #searchbars > ul li {
-  -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   margin-right: 9px;
 }
@@ -2135,7 +2110,7 @@ table.torrent_table.cats.m_table td.td_info.big_info div.group_info.clear div.ta
   color: rgba(0, 0, 0, 0.1);
 }
 
-/* ### 2.2.5 Snatched torrent indicators 
+/* ### 2.2.5 Snatched torrent indicators
    the following must be after 2.2.4 invisibility */
 tr.snatched_group div.tags::before {
   content: "snatched group";
@@ -2627,7 +2602,7 @@ Documentation of mobile classes:
   }
   table#discog_table.torrent_table.grouping.cats.m_table .number_column.td_size.nobr::before,
   table#torrent_table.torrent_table.grouping.cats.m_table td.number_column.td_size.nobr::before {
-    content: "📁";
+    content: "📁 ";
   }
   /* END special treatment of Sizes */
   /* ## 4.9.2 BEGIN top10 */
@@ -3089,26 +3064,26 @@ Documentation of mobile classes:
     height: calc(var(--row-height) - 9px);
   }
   /* END searchboxes */
-  /* ## 4.17.10 Alertbar and Alerts on Mobile*/
+  /* ## 4.17.10 Alertbar and Alerts on Mobile */
   /*  Alertbar is part of the DIV #header, which is designed to collapse on mobile. */
   #alerts {
     display: none;
   }
-  /*    TODO: Alertbar alerts are not visible on Mobile. 
-  /*    
+  /*    TODO: Alertbar alerts are not visible on Mobile.
+  /*
   /*    DETAILS: Per site code, #alerts and .alertbar are delivered in the 'header'
   /*      group, which we restyle to be a pulldown menu.
   /*      If we turn on .alertbar and position it inside the pulldown menu,
-  /*      for example hovering over row 2 (the statistics block), or 
+  /*      for example hovering over row 2 (the statistics block), or
   /*      below the menu in the 'shadow' area, — then when the menu is closed,
-  /*      hovering over the invisible .alertbar position shouldn't do anything, 
+  /*      hovering over the invisible .alertbar position shouldn't do anything,
   /*      but it opens the menu, which is unacceptable.
-  /*      Why isn't Alertbar hover disabled when the menu is closed? 
+  /*      Why isn't Alertbar hover disabled when the menu is closed?
   /*     Possible solution: move hoverbar to the 1st row of menu and float (z-height)
   /*      over what's ordinarily there.  That solution is not chosen because
-  /*      in the first row, it blocks the 'settings' button until notifs are cleared. 
+  /*      in the first row, it blocks the 'settings' button until notifs are cleared.
   /*     TODO: Find a better way.
-  /*  Meantime, fearless users: UNCOMMENT the block below 
+  /*  Meantime, fearless users: UNCOMMENT the block below
   /*  to turn ON alertbar on mobile. Codeblock below requires debugging.
 
   /* =========== */
@@ -3229,7 +3204,7 @@ Documentation of mobile classes:
 /* ## 6.1 Debugging Tools
    various 'debug' features are avail in this doc elsewhere */
 #footer p:last-of-type::after {
-  content: " | Apollostage build 240719";
+  content: " | Apollostage build 2407";
 }
 
 /* ########################################################################
