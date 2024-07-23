@@ -1871,7 +1871,7 @@ input,
 textarea {
   color: #777;
   padding: .2rem .2rem .2rem .5rem;
-  /*   background: white url("images/inputbg.png") top left repeat-x; */
+  /*   background: white url("https://wally-crunk.github.io/styles/proton/images/inputbg.png") top left repeat-x; */
 }
 
 input[type=file] {
@@ -2093,7 +2093,10 @@ ul#userinfo_username {
   display: unset;
 }
 
-/* BIG ITEMS */
+/* ################################################################################
+   1031 big items
+   ################################################################################ */
+   
 #logo {
   order: 1;
   flex: 12%;
@@ -2119,7 +2122,9 @@ ul#userinfo_username {
   flex: 100%;
 }
 
-/* COLUMN I LOGO */
+/* ################################################################################
+   1032 column i logo 
+   ################################################################################ */
 
 #logo {
   box-sizing: content-box;
@@ -2137,9 +2142,14 @@ ul#userinfo_username {
   width: 100%;
 }
 
-/* COLUMN II MENU */
+/* ################################################################################
+   1033 column ii menu
+   ################################################################################ */
 
-/* COLUMN III USERINFO */
+
+/* ################################################################################
+   1034 column iii userinfo
+   ################################################################################ */
 
 #userinfo {
   display: flex;
@@ -2179,7 +2189,9 @@ ul#userinfo_username {
   padding-top: 0.1rem;
 }
 
-/* PART 4 ALERTS */
+/* ################################################################################
+   1035 part iv alertbar alerts
+   ################################################################################ */
 
 #alerts {
   display: flex;
@@ -2221,7 +2233,9 @@ ul#userinfo_username {
   padding-bottom: 4px;
 }
 
-/* PART 5 SEARCHBARS */
+/* ################################################################################
+   1036 part v searchbars
+   ################################################################################ */
 
 #searchbars {
   padding-top: 0.15rem;
@@ -2277,6 +2291,15 @@ ul#userinfo_username {
 }
 
 
+/* ################################################################################
+   1130 Sidebar flex
+   ################################################################################ */
+
+#content .sidebar {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
 
 /* ################################################################################
    7200 Upload Warnings
@@ -2301,7 +2324,7 @@ ul#check::after {
   padding: 2rem 2rem 2rem 3rem;
   background: #fed100;
   /*     $color-background-error; */
-  background-image: url("/styles/proton/images/warning-swe.svg");
+  background-image: url("https://wally-crunk.github.io/styles/proton/images/warning-swe.svg");
   /*     $icon-warning; */
   background-repeat: no-repeat;
   background-position: 8px center;
@@ -2319,7 +2342,7 @@ ul#check.nobullet > * {
   padding: 1rem 1rem 1rem 48px;
   background: #fed100;
   /*     $color-background-error; */
-  background-image: url("/styles/proton/images/warning-swe.svg");
+  background-image: url("https://wally-crunk.github.io/styles/proton/images/warning-swe.svg");
   /*     $icon-warning; */
   background-repeat: no-repeat;
   background-position: 8px center;
