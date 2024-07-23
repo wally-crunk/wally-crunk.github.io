@@ -2,7 +2,7 @@
    0000 NEW PROTON
    ################################################################################ */
 
-@import url('https://rsms.me/inter/inter.css');
+@import url('font_call.css');
 
 @namespace "http://www.w3.org/1999/xhtml";
 @namespace svg "http://www.w3.org/2000/svg";
@@ -15,12 +15,7 @@
 @supports (font-variation-settings: normal) {
   :root { font-family: InterVariable, sans-serif; }
 }
-body {
-  background: #ccc;
-  font-size: 0.7em;
-  margin-bottom: 0;
-  box-sizing: border-box;
-}
+
 
 /* ################################################################################
    0070 DEVELOPER
@@ -45,63 +40,16 @@ body {
    0101 basic structure
    ################################################################################ */
 
+body {
+  background: #ccc;
+  font-size: 0.7em;
+  margin-bottom: 0;
+  box-sizing: border-box;
+}
+
 #wrapper {
   width: 1000px;
   margin: 0 auto;
-}
-
-#content {
-  padding: 20px;
-  margin: 38px 0 0;
-  background-color: #fff;
-  color: #575757;
-  border-radius: 11px;
-  z-index: 2;
-  position: relative;
-  border: 1px solid #b5b5b5;
-  background-clip: padding-box;
-
-}
-
-#content .header h2,
-#content > .thin > .header:first-of-type > h3:first-of-type,
-#content > .thin > h2:first-child {
-  background-color: #f0f0f0;
-  margin: 20px -20px -1px !important;
-  padding: 20px;
-  border-top-left-radius: 11px;
-  border-top-right-radius: 11px;
-  border-bottom: 1px solid #c6c6c6;
-  position: relative;
-  z-index: 3;
-}
-
-#content .header:first-child h2,
-#content > .thin > .header:first-of-type > h3:first-of-type,
-#content > .thin > h2:first-child {
-  margin-top: -20px !important;
-}
-
-#content > .thin > .header:first-of-type > h3:first-of-type {
-  width: 100% !important;
-}
-
-body:not(#requests):not(#friends) .box table:not(#vanityhouse) {
-  margin: 0;
-  background-color: #fff;
-}
-
-body:not(#requests):not(#friends) .box h2 {
-  background: none;
-  margin: 0;
-  padding: 0;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-  position: static;
-  border-bottom: 0;
-}
-.hide {
-  display: none;
 }
 
 .main_column {
@@ -112,6 +60,22 @@ body:not(#requests):not(#friends) .box h2 {
   float: right;
   width: 250px;
 }
+
+.hide {
+  display: none;
+}
+
+
+body:not(#requests):not(#friends) .box h2 {
+  background: none;
+  margin: 0;
+  padding: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  position: static;
+  border-bottom: 0;
+}
+
 /* ################################################################################
    0400 forms
    ################################################################################ */
@@ -504,8 +468,9 @@ table {
   display: none;
 }
 
-.sidebar br {
-  line-height: 1px;
+body:not(#requests):not(#friends) .box table:not(#vanityhouse) {
+  margin: 0;
+  background-color: #fff;
 }
 
 #inbox .vertical_space:not(#preview) {
@@ -2290,6 +2255,46 @@ ul#userinfo_username {
   width: 40%;
 }
 
+/* ################################################################################
+   1101 Content parameters
+   ################################################################################ */
+
+#content {
+  padding: 20px;
+  margin: 38px 0 0;
+  background-color: #fff;
+  color: #575757;
+  border-radius: 11px;
+  z-index: 2;
+  position: relative;
+  border: 1px solid #b5b5b5;
+  background-clip: padding-box;
+
+}
+
+#content .header h2,
+#content > .thin > .header:first-of-type > h3:first-of-type,
+#content > .thin > h2:first-child {
+  background-color: #f0f0f0;
+  margin: 20px -20px -1px !important;
+  padding: 20px;
+  border-top-left-radius: 11px;
+  border-top-right-radius: 11px;
+  border-bottom: 1px solid #c6c6c6;
+  position: relative;
+  z-index: 3;
+}
+
+#content .header:first-child h2,
+#content > .thin > .header:first-of-type > h3:first-of-type,
+#content > .thin > h2:first-child {
+  margin-top: -20px !important;
+}
+
+#content > .thin > .header:first-of-type > h3:first-of-type {
+  width: 100% !important;
+}
+
 
 /* ################################################################################
    1130 Sidebar flex
@@ -2298,6 +2303,15 @@ ul#userinfo_username {
 #content .sidebar {
   display: flex;
   flex-flow: column nowrap;
+}
+
+/* ################################################################################
+   1130 Sidebar parameters
+   ################################################################################ */
+
+
+.sidebar br {
+  line-height: 1px;
 }
 
 
