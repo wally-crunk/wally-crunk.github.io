@@ -173,9 +173,6 @@ p {
   padding: 10px !important;
 }
 
-#inbox #content h2 {
-  padding: 20px !important;
-}
 
 #chat #nav_irc a,
 #collage #nav_collages a,
@@ -189,6 +186,8 @@ p {
 #wiki #nav_wiki a {
   font-weight: 700;
 }
+
+
 
 /* ################################################################################
    0511 Ratios and Sizes
@@ -473,52 +472,6 @@ body:not(#requests):not(#friends) .box table:not(#vanityhouse) {
   background-color: #fff;
 }
 
-#inbox .vertical_space:not(#preview) {
-  width: 50%;
-  margin: 0 auto;
-  padding: 20px;
-  background: transparent url(images/convo.png) 50% 37px no-repeat;
-}
-
-#inbox .vertical_space:not(#preview) .head {
-  color: #bebebe;
-  margin-bottom: 5px;
-}
-
-#inbox .box .body {
-  width: 450px;
-  margin: 25px auto 0;
-}
-
-#inbox form .box {
-  width: 100%;
-  margin: 0 0 20px;
-  padding: 0;
-}
-
-#inbox #preview {
-  padding: 20px;
-  background: transparent url(images/convo.png) 50% 0 no-repeat;
-  margin-left: 180px;
-  width: 471px;
-}
-
-#inbox table:not(.message_table) td {
-  border-right: 1px solid #e6e6e6;
-}
-
-#inbox table:not(.message_table) td input[type=checkbox] {
-  margin-left: -140px;
-}
-
-#inbox table:not(.message_table) .label,
-#inbox table:not(.message_table) td:last-of-type {
-  border-right: none;
-}
-
-#inbox table:not(.message_table) .label label {
-  padding-left: 22px;
-}
 
 #forums h3 {
   margin: 15px 0;
@@ -2044,7 +1997,10 @@ ul#userinfo_minor a:hover {
 }
 
 #header {
-  background: hsl(208, 90%, 97%);
+ background-size: 100% 100%;
+ background-position: 0px 0px;
+ background-image: linear-gradient(90deg, #faf8FFFF 0%, #F4F8F2FF 100%);
+
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 1rem;
 }
@@ -2328,6 +2284,93 @@ margin-top: 4rem;}
 .sidebar br {
   line-height: 1px;
 }
+
+/* ################################################################################
+   1300 INBOX
+   ################################################################################ */
+
+/* ################################################################################
+   1310 Inbox elements
+   ################################################################################ */
+
+--width-inbox-preferred: 50%;
+
+#inbox #content h2 {
+  padding: 20px !important;
+}
+
+#inbox .vertical_space:not(#preview) {
+  width: var(----width-inbox-preferred);
+  margin: 0 auto;
+  padding: 20px;
+  background: transparent url(images/convo.png) 50% 37px no-repeat;
+}
+
+#inbox .vertical_space:not(#preview) .head {
+  color: #bebebe;
+  margin-bottom: 5px;
+}
+
+#inbox .box .body {
+  width: 90%;
+  margin: 25px auto 0;
+}
+
+#inbox form .box {
+  width: 100%;
+  margin: 0 0 20px;
+  padding: 0;
+}
+
+#inbox #preview {
+  padding: 20px;
+  background: transparent url(images/convo.png) 50% 0 no-repeat;
+  margin-left: 180px;
+  width: 471px;
+}
+
+#inbox table:not(.message_table) td {
+  border-right: 1px solid #e6e6e6;
+}
+
+#inbox table:not(.message_table) td input[type=checkbox] {
+  margin: 0 auto;
+}
+
+#inbox table:not(.message_table) .label,
+#inbox table:not(.message_table) td:last-of-type {
+  border-right: none;
+}
+
+#inbox table:not(.message_table) .label label {
+  padding-left: 22px;
+}
+
+#messageform {
+  width: var(----width-inbox-preferred);
+  margin: 0 auto;
+}
+
+/* manage_form at bottom of message thread */
+
+#inbox table:not(.message_table) form.manage_form td.label {
+  text-align: right
+  }
+
+#inbox form.manage_form td.label{
+  text-align:right;
+}
+
+/* flair */
+
+#inbox h3 {  
+ background-size: 100% 100%;
+ background-position: 0px 0px;
+ background-image: linear-gradient(90deg, #e6efFFFF 0%, #F2F8F0FF 100%);
+  border-radius: .4rem 2em 0 0 ; 
+  padding: 2rem 0 .4rem .4rem ;
+  width: 20vw;
+  }
 
 
 /* ################################################################################
