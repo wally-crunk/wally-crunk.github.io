@@ -2293,7 +2293,9 @@ margin-top: 4rem;}
    1310 Inbox elements
    ################################################################################ */
 
---width-inbox-preferred: 50%;
+#inbox {
+  --width-inbox-preferred: 50%;
+}
 
 #inbox #content h2 {
   padding: 20px !important;
