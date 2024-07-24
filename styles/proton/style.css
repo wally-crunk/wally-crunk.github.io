@@ -2209,14 +2209,31 @@ ul#userinfo_username {
    1199 Pages that do not follow the Usual DOM
    ################################################################################ */ 
 
-/* logchecker goes content>linkbox>thin>h2 */
 
-#content > .linkbox { 
-  background-color: skyblue;
-  border-radius: 1.5rem 1.5rem 0 0;
-  margin: 0 0 1rem 0; padding: 1.2rem;
-  width: 40%;
+/* logchecker goes content > linkbox + thin(h2),
+      not content > thin > h2 + linkbox */
+
+#content > .linkbox:has(+.thin)  { 
+   background-size: 100% 100%;
+   background-position: 0px 0px;
+   background-image: linear-gradient(90deg, #e6efFFFF 0%, #F2F8F0FF 100%);
+   border-radius: 2rem 2rem 0 0 ; 
+   margin: 0 0 1rem 0; padding: 1.2rem;
+   width: 40%;
 }
+
+/* bonus goes content > header(h2) + linkbox + thin */
+
+#content div.header + div.linkbox
+ {
+   background-size: 100% 100%;
+   background-position: 0px 0px;
+   background-image: linear-gradient(90deg, #e6efFFFF 0%, #F2F8F0FF 100%);
+   border-radius: .4rem 2em 0 0 ; 
+   margin: 0 0 1rem 0; padding: 1.2rem;
+   width: 40%;
+}
+
 
 /* staffpm goes #staffpm #wrapper #content .thin #footer
      not #wrapper > #footer */
@@ -2494,7 +2511,7 @@ ul#check.nobullet > * {
 }
 
 #footer p:last-of-type::after {
-  content: " | Proton build 240724.2328";
+  content: " | Proton build 240724.2358";
 }
 
 /* ### EOF ### */
