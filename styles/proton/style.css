@@ -2249,12 +2249,26 @@ ul#userinfo_username {
   flex-flow: column nowrap;
 }
 
+/* ################################################################################
+   1199 Pages that do not follow the Usual DOM
+   ################################################################################ */ 
+
+/* logchecker goes content>linkbox>thin>h2 */
+
 #content > .linkbox { 
   background-color: skyblue;
   border-radius: 1.5rem 1.5rem 0 0;
   margin: 0 0 1rem 0; padding: 1.2rem;
   width: 40%;
 }
+
+/* staffpm goes #staffpm #wrapper #content .thin #footer
+     not #wrapper > #footer */
+     
+html body#staffpm div#wrapper div#content div.thin div#footer 
+{border:thick solid blueviolet;
+margin-top: 4rem;}
+
 
 /* ################################################################################
    1101 Content parameters
