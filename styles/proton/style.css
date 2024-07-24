@@ -2300,7 +2300,7 @@ margin-top: 4rem;}
 }
 
 #inbox .vertical_space:not(#preview) {
-  width: var(----width-inbox-preferred);
+  width: var(--width-inbox-preferred);
   margin: 0 auto;
   padding: 20px;
   background: transparent url(images/convo.png) 50% 37px no-repeat;
@@ -2347,7 +2347,7 @@ margin-top: 4rem;}
 }
 
 #messageform {
-  width: var(----width-inbox-preferred);
+  width: var(--width-inbox-preferred);
   margin: 0 auto;
 }
 
@@ -2492,7 +2492,7 @@ ul#check.nobullet > * {
 }
 
 #footer p:last-of-type::after {
-  content: " | Proton build 240724.23";
+  content: " | Proton build 240724.2328";
 }
 
 /* ### EOF ### */
