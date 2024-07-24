@@ -3674,6 +3674,11 @@ Documentation of mobile classes:
   content: " | Apollostage build " + $build-slug;
 }
 
+/* ## 6.66 Emergency Fixes */
+
+.wrap_overflow {  word-break:break-word !important;
+}
+
 /* ########################################################################
    # End of Section
    ######################################################################## */

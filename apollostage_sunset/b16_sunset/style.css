@@ -3205,6 +3205,11 @@ Documentation of mobile classes:
   content: " | Apollostage build 240724.16 sunset";
 }
 
+/* ## 6.66 Emergency Fixes */
+.wrap_overflow {
+  word-break: break-word !important;
+}
+
 /* ########################################################################
    # End of Section
    ######################################################################## */
