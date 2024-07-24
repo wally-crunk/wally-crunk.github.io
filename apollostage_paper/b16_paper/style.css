@@ -651,7 +651,7 @@ table.box2 {
 
 @media screen {
   .forum_post .body img {
-    max-width: 720px;
+    max-width: 100%;
   }
 }
 .forum_index h4,
@@ -3202,7 +3202,7 @@ Documentation of mobile classes:
 /* ## 6.1 Debugging Tools
    various 'debug' features are avail in this doc elsewhere */
 #footer p:last-of-type::after {
-  content: " | Apollostage build 2407 paper";
+  content: " | Apollostage build 240724 paper";
 }
 
 /* ########################################################################

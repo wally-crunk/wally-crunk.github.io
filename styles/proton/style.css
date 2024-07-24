@@ -933,11 +933,12 @@ tr.torrent .bookmark > a::after {
   box-sizing: border-box;
 }
 
-#sortable .sortable_item:hover > * {
+#sortable .sortable_item:hover,
+#sortable .sortable_item > *:hover {
   cursor: move;
 }
 
-#user #sortable {
+#sortable {
   width: 50%;
 }
 

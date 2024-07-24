@@ -1,5 +1,5 @@
 // _base.scss for Apollostage
-// 2024-07-23
+// 2024-07-24
 //
 // SASS/SCSS NOTE
 // This is one of four files for the main ApolloStage theme:
@@ -782,7 +782,7 @@ table.box2 {
 
 @media screen {
   .forum_post .body img {
-    max-width: 720px;
+    max-width: 100%;
   }
 }
 
