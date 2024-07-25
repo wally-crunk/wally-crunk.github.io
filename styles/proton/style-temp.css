@@ -21,7 +21,7 @@
    0070 DEVELOPER
    ################################################################################ */
 
-/*  Help navigating: turn me on
+/*  Help navigating
 	#wrapper { border: thick solid steelblue; }
 	#header { border: thick solid skyblue; }
 	#content { border: thick solid green; }
@@ -29,6 +29,7 @@
 	#sidebar { border: thick solid gray; }
 	div.main_column { border: thick solid purple; }
 	div.sidebar.settings_sidebar {border:thick solid limegreen;}
+
  */
 
 /* ################################################################################
@@ -876,7 +877,45 @@ tr.torrent .bookmark > a::after {
 }
 
 /* ################################################################################
-   0720 User settings ~ sortable
+   0710 User profile page
+   ################################################################################ */
+
+/* 
+body#user div#wrapper div#content div.thin {
+  display: flex;
+  flex-flow: column;
+}
+
+body#user div#wrapper div#content div.thin div.header {
+  position: unset;
+  max-width: 100vw;
+}
+
+body#user div#wrapper div#content div.thin div.sidebar * {
+  position: unset;
+}
+
+html body#user div#wrapper div#content div.thin form#userform.edit_form {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+body#user div#wrapper div#content div.thin div.sidebar {
+  position: unset;
+  order: 4;
+  max-width: 12vw;
+}
+
+body#user div#wrapper div#content div.thin div.main_column {
+  position: unset;
+  order: 6;
+  max-width: 70vw;
+  overflow: hidden;
+}
+ */
+
+/* ################################################################################
+   0728 User settings ~ sortable
    ################################################################################ */
 
 #sortable .sortable_item:hover {
@@ -1736,37 +1775,6 @@ div[class~=tooltipster-base] {
   flex-flow: column wrap;
 }
 
-body#user div#wrapper div#content div.thin {
-/*   display: flex; */
-  flex-flow: column;
-}
-
-body#user div#wrapper div#content div.thin div.header {
-  position: unset;
-  max-width: 100vw;
-}
-
-body#user div#wrapper div#content div.thin div.sidebar * {
-  position: unset;
-}
-
-html body#user div#wrapper div#content div.thin form#userform.edit_form {
-  display: flex;
-  flex-flow: row nowrap;
-}
-
-body#user div#wrapper div#content div.thin div.sidebar {
-  position: unset;
-  order: 4;
-  max-width: 12vw;
-}
-
-body#user div#wrapper div#content div.thin div.main_column {
-  position: unset;
-  order: 6;
-  max-width: 70vw;
-  overflow: hidden;
-}
 
 /* ################################################################################
    1005 HEADERBOX ITEM SETUP
@@ -2194,6 +2202,7 @@ ul#userinfo_username {
   transition: 300ms ease-in-out;
 }
 
+
 /* ################################################################################
    1100 Content Flex
    ################################################################################ */
@@ -2202,6 +2211,43 @@ ul#userinfo_username {
   display: flex;
   flex-flow: column nowrap;
 }
+
+/* ################################################################################
+   1199 Pages that do not follow the Usual DOM
+   ################################################################################ */ 
+
+
+/* logchecker goes content > linkbox + thin(h2),
+      not content > thin > h2 + linkbox */
+
+#content > .linkbox:has(+.thin)  { 
+   background-size: 100% 100%;
+   background-position: 0px 0px;
+   background-image: linear-gradient(90deg, #e6efFFFF 0%, #F2F8F0FF 100%);
+   border-radius: 2rem 2rem 0 0 ; 
+   margin: 0 0 1rem 0; padding: 1.2rem;
+   width: 40%;
+}
+
+/* bonus goes content > header(h2) + linkbox + thin */
+
+#content div.header + div.linkbox
+ {
+   background-size: 100% 100%;
+   background-position: 0px 0px;
+   background-image: linear-gradient(90deg, #e6efFFFF 0%, #F2F8F0FF 100%);
+   border-radius: .4rem 2em 0 0 ; 
+   margin: 0 0 1rem 0; padding: 1.2rem;
+   width: 40%;
+}
+
+
+/* staffpm goes #staffpm #wrapper #content .thin #footer
+     not #wrapper > #footer */
+     
+html body#staffpm div#wrapper div#content div.thin div#footer 
+{border:thick solid blueviolet;
+margin-top: 4rem;}
 
 
 /* ################################################################################
@@ -2255,52 +2301,13 @@ ul#userinfo_username {
 }
 
 /* ################################################################################
-   1135 Sidebar parameters
+   1130 Sidebar parameters
    ################################################################################ */
 
 
 .sidebar br {
   line-height: 1px;
 }
-
-
-/* ################################################################################
-   1199 Pages that do not follow the Usual DOM
-   ################################################################################ */ 
-
-/* logchecker goes content > linkbox + thin(h2),
-      not content > thin > h2 + linkbox */
-
-#content > .linkbox:has(+.thin)  { 
-   background-size: 100% 100%;
-   background-position: 0px 0px;
-   background-image: linear-gradient(90deg, #e6efFFFF 0%, #F2F8F0FF 100%);
-   border-radius: 2rem 2rem 0 0 ; 
-   margin: 0 0 1rem 0; padding: 1.2rem;
-   width: 40%;
-}
-
-/* bonus goes content > header(h2) + linkbox + thin */
-
-#content div.header + div.linkbox
- {
-   background-size: 100% 100%;
-   background-position: 0px 0px;
-   background-image: linear-gradient(90deg, #e6efFFFF 0%, #F2F8F0FF 100%);
-   border-radius: .4rem 2em 0 0 ; 
-   margin: 0 0 1rem 0; padding: 1.2rem;
-   width: 40%;
-}
-
-
-/* staffpm goes #staffpm #wrapper #content .thin #footer
-     not #wrapper > #footer */
-     
-body#staffpm div#wrapper div#content div.thin div#footer {
-margin-top: 4rem;
-margin-bottom: .1rem
-}
-
 
 /* ################################################################################
    1300 INBOX
@@ -2311,8 +2318,7 @@ margin-bottom: .1rem
    ################################################################################ */
 
 #inbox {
-  --width-inbox-message-preferred: 50%;
-  --width-inbox-listing-preferred: 90%;
+  --width-inbox-preferred: 50%;
 }
 
 #inbox #content h2 {
@@ -2320,7 +2326,7 @@ margin-bottom: .1rem
 }
 
 #inbox .vertical_space:not(#preview) {
-  width: var(--width-inbox-message-preferred);
+  width: var(--width-inbox-preferred);
   margin: 0 auto;
   padding: 20px;
   background: transparent url(images/convo.png) 50% 37px no-repeat;
@@ -2334,18 +2340,12 @@ margin-bottom: .1rem
 #inbox .box .body {
   width: 90%;
   margin: 25px auto 0;
-
-  /*this goes nowhere and does nothing, to prove it: */
-  background: orangered; border: thick solid crimson;
 }
 
 #inbox form .box {
   width: 100%;
   margin: 0 0 20px;
   padding: 0;
-
-  /*this goes nowhere and does nothing, to prove it: */
-  background: orangered; border: thick solid crimson;
 }
 
 #inbox #preview {
@@ -2373,7 +2373,7 @@ margin-bottom: .1rem
 }
 
 #messageform {
-  width: var(--width-inbox-listing-preferred);
+  width: var(--width-inbox-preferred);
   margin: 0 auto;
 }
 
