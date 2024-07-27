@@ -3210,7 +3210,7 @@ Documentation of mobile classes:
 /* ## 6.1 Debugging Tools
    various 'debug' features are avail in this doc elsewhere */
 #footer p:last-of-type::after {
-  content: " | Apollostage build 240724.16";
+  content: " | Apollostage build 240726";
 }
 
 /* ## 6.66 Emergency Fixes */
