@@ -1,14 +1,14 @@
 @charset "UTF-8";
-/* ######################################################################## */
-/* APOLLOSTAGE THEME */
-/* version 2024-07-27 #unfont
-/* ######################################################################## */
+/* ######################################################################## 
+   APOLLOSTAGE THEME 
+   version 2024-07-28
+   ######################################################################## */
 /*
    ########################################################################
    CHANGELOG
    ########################################################################
 */
-/*  # 2024-07-19 - Updated with community feedback.
+/*  # 2024-07-28 - Updated with community feedback.
     # Fix: mobile menu, category stripes;
 /*  # Feature: Add SVGs, tag bubbles, italic fonts and more;
 /*  # Feature: Added new light mode theme;
@@ -3221,7 +3221,7 @@ Documentation of mobile classes:
 /* ## 6.1 Debugging Tools
    various 'debug' features are avail in this doc elsewhere */
 #footer p:last-of-type::after {
-  content: " | Apollostage build 240727 unfont";
+  content: " | Apollostage build 240728";
 }
 
 /* ## 6.66 Emergency Fixes */
