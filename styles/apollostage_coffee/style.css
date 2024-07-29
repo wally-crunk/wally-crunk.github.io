@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* ########################################################################
    APOLLOSTAGE COFFEE THEME
-   version 2024-07-28
+   version 2024-07-29
    ######################################################################## */
 /*
    ########################################################################
@@ -221,7 +221,7 @@ textarea:focus {
 .main_column .box.pad:not(#reply_box),
 .body .box.pad:not(#reply_box) {
   background-color: #322e2c;
-  border: 2px solid #3c4d50;
+  border: 2px solid #51413F;
   margin: 8px;
   border-radius: 0.25rem;
 }
@@ -299,7 +299,7 @@ li:last-child {
 
 blockquote {
   background-color: #2d2928;
-  border: 1px dashed #3c4d50;
+  border: 1px dashed #51413F;
   margin: 12px;
   padding: 12px;
 }
