@@ -1,18 +1,17 @@
 @charset "UTF-8";
 /* ########################################################################
    APOLLOSTAGE COFFEE THEME
-   version 2024-07-30
    ######################################################################## */
 /*
    ########################################################################
    CHANGELOG
    ########################################################################
 */
-/*  # 2024-07-30 - Updated with community feedback.
+/*  # 2024-08-01 - Updated with community feedback.
     # Fix: mobile menu, category stripes;
-/*  # Feature: Add SVGs, tag bubbles, italic fonts and more;
-/*  # Feature: Added new light mode theme;
-/*  # Chore: Organized and documented the SCSS.
+    # Feature: Add SVGs, tag bubbles, system fonts and more;
+    # Feature: Added new light mode theme;
+    # Chore: Organized and documented the SCSS.
     For full changelog: see uncompiled SASS file. */
 /*
 ########################################################################
@@ -39,16 +38,19 @@
    ## 1.11 Sidebar
    ## 1.12 Upload form MusicBrainz popup */
 /* # 2 MISCELLANEOUS
+   ## 2.1 Reserved
    ## 2.2 Tag Bubble Appearance on Widescreen #Wideload
    ### 2.2.1  Full clickable appearance
    ### 2.2.2  Hover effect
    ### 2.2.3  Non-clickable appearance
    ### 2.2.4  Other special cases
    ### 2.2.5  Snatched torrent indicators
-   ## 2.3 Reserved
-   ## 2.4 Pop-up Warnings and Alerts ##
-   ### 2.4.1 Upload warnings ##
-   ### 2.4.2 Alertbar and Alerts on Desktop */
+   ## 2.3 Alertbar and error handling 
+   ## 2.3.1 Base styling 
+   ## 2.3.2 additional treatment for messages that pop 
+   ## 2.4 Upload warnings ##
+   ### 2.4.1 Post-Upload Download your Torrents Message 
+   ## 2.5 Toolboxes */
 /* # 3 DOCUMENTATION OF MOBILE CLASSES */
 /* # 4 CHANGES FOR MOBILE VIEW
    ## 4.1  Site Layout
@@ -103,8 +105,11 @@
 /* CSS compiler will leave this section blank. */
 /* ## 0.3 Fonts */
 :root {
-  --system-ui: system-ui, "Segoe UI", "Roboto", "Ubuntu", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  --monospace-ui: "Cascadia Code", "Consolas", "Ubuntu Mono", "Fira Code", "Menlo", "Liberation Mono", "Monaco", monospace;
+  --system-ui: system-ui, "Segoe UI", "Roboto", "Ubuntu", "Roboto",
+    "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica", "Arial", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --monospace-ui: "Cascadia Code", "Consolas", "Ubuntu Mono", "Fira Code",
+    "Menlo", "Liberation Mono", "Monaco", monospace;
 }
 
 body,
@@ -429,6 +434,7 @@ input[type=email],
 input[type=password],
 input[type=text],
 input[type=search],
+input[type=date],
 select,
 textarea {
   background: #2d2928;
@@ -442,6 +448,7 @@ input[type=email]:focus,
 input[type=password]:focus,
 input[type=text]:focus,
 input[type=search]:focus,
+input[type=date]:focus,
 select:focus,
 textarea:focus {
   background: #322e2c;
@@ -1957,16 +1964,16 @@ body#collage .cats_music {
 }
 
 /* elevation & levitation */
-#noty_bottomRight_layout_container {
-  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.25), 0 7px 7px rgba(0, 0, 0, 0.22);
-  transition: all 0.25s cubic-bezier(0.25, 0.8, 0.25, 1);
+@media screen and (prefers-reduced-motion: no-preference) {
+  #noty_bottomRight_layout_container {
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.25), 0 7px 7px rgba(0, 0, 0, 0.22);
+    transition: all 0.25s cubic-bezier(0.25, 0.8, 0.25, 1);
+  }
+  #noty_bottomRight_layout_container:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    transform: translateY(-3.5px);
+  }
 }
-
-#noty_bottomRight_layout_container:hover {
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  transform: translateY(-3.5px);
-}
-
 /* first row of each box */
 #noty_bottomRight_layout_container .noty_message {
   background: radial-gradient(circle at top right, #563E37, #89644C) !important;
@@ -1994,17 +2001,25 @@ body#collage .cats_music {
   border: thin solid transparent; /* prevents button movement */
   border-radius: 14px;
   padding: 0 6px;
-  transition: all 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  #noty_bottomRight_layout_container .noty_buttons a {
+    transition: all 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+  }
+}
 #noty_bottomRight_layout_container .noty_buttons a:hover {
   background-color: #C2A285;
   color: #6F5042 !important;
   border: thin solid #6F5042;
   border-radius: 14px;
-  transition: all 0.15s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  #noty_bottomRight_layout_container .noty_buttons a:hover {
+    transition: all 0.15s cubic-bezier(0.25, 0.8, 0.25, 1);
+  }
+}
 /* END NOTIFICATION BOX */
 /* ************************************************ */
 /* # 1.11 BEGIN SIDEBAR */
@@ -2057,7 +2072,7 @@ body#collage .cats_music {
 /* ########################################################################
    # 2 MISCELLANEOUS
 /* ######################################################################## */
-/* ## 2.1 Reserved for future use */
+/* ## 2.1 Reserved */
 /* ************************************************ */
 /* ## 2.2 Tag bubble appearance on widescreen */
 /* ### 2.2.1 Full clickable appearance
@@ -2092,23 +2107,24 @@ body#torrents div.box.box_tags li > a:first-child {
 
 /* ### 2.2.2 Hover effect
    The people have spoken. Applies only to pages with clickable tags. */
-.collage_table .td_info .tags :not(:empty):hover,
-#torrent_table .group .tags :not(:empty):hover,
-#discog_table .tags :hover,
-#taglist td a:hover,
-#user #requests .tags a:hover,
-#artist .sidebar div.box.box_tags ul.stats.nobullet li a:hover,
-#user div.sidebar .box_userinfo_activity ul.stats.nobullet li a:hover,
-#userhistory div.group_info.clear div.tags :hover,
-table.torrent_table.cats.checkboxes.border.m_table td.td_info.big_info div.group_info.clear div.tags a:hover,
-table.torrent_table.cats.m_table td.td_info.big_info div.group_info.clear div.tags a:hover,
-body#torrents div.box.box_tags li > a:first-child:hover {
-  color: #6F5042 !important;
-  background: #C2A285 !important;
-  transition: all 0.15s cubic-bezier(0.25, 0.8, 0.25, 1);
-  box-shadow: rgba(0, 0, 0, 0.25) 0 14px 28px, rgba(0, 0, 0, 0.22) 0 10px 10px;
+@media screen and (prefers-reduced-motion: no-preference) {
+  .collage_table .td_info .tags :not(:empty):hover,
+  #torrent_table .group .tags :not(:empty):hover,
+  #discog_table .tags :hover,
+  #taglist td a:hover,
+  #user #requests .tags a:hover,
+  #artist .sidebar div.box.box_tags ul.stats.nobullet li a:hover,
+  #user div.sidebar .box_userinfo_activity ul.stats.nobullet li a:hover,
+  #userhistory div.group_info.clear div.tags :hover,
+  table.torrent_table.cats.checkboxes.border.m_table td.td_info.big_info div.group_info.clear div.tags a:hover,
+  table.torrent_table.cats.m_table td.td_info.big_info div.group_info.clear div.tags a:hover,
+  body#torrents div.box.box_tags li > a:first-child:hover {
+    color: #6F5042 !important;
+    background: #C2A285 !important;
+    transition: all 0.15s cubic-bezier(0.25, 0.8, 0.25, 1);
+    box-shadow: rgba(0, 0, 0, 0.25) 0 14px 28px, rgba(0, 0, 0, 0.22) 0 10px 10px;
+  }
 }
-
 /* ### 2.2.3 Non-clickable appearance
    Applies to top10 and request_table pages, where tags are not clickable links. */
 #request_table .tags,
@@ -2174,15 +2190,110 @@ tr.snatched_torrent div.tags::before {
   vertical-align: baseline;
 }
 
-/* ==
-   ************************************************ */
-/* ## 2.3 Reserved
-
 /* ************************************************ */
-/* ## 2.4 Pop-up Warnings and Alerts ##
-   #### see also 1.10 Notifications */
-/* ### 2.4.1 Upload warnings ## */
-/* display a popup when any upload warning occurs inline on the page */
+/* ## 2.3 Alertbar and error handling */
+/* ## 2.3.1 Base styling */
+/* Alertbar occurs when User Settings: Notifications: "Traditional" is selected. */
+/* Save_message can occur on request votes. */
+.alertbar,
+.sys_error,
+.save_message {
+  border: thick solid #5F443B;
+  padding: 1rem 1rem 1rem 48px;
+  background: #3D2C29;
+  background-image: url("/svg/site/ops-icon-harp-ccc.svg");
+  background-repeat: no-repeat;
+  background-position: 8px center;
+  background-size: 32px;
+  color: #D1B89E !important;
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: 8px;
+  text-align: center;
+}
+
+.alertbar a {
+  color: #FFFCF6 !important;
+}
+
+/* occurs on failure, for example failed request votes */
+.error_message {
+  border: thick solid hsl(348, 84%, 51%);
+  padding: 1rem 1rem 1rem 48px;
+  background-color: #633;
+  background-image: url(/svg/site/ops-icon-triangle-ccc.svg);
+  background-image: url(https://wally-crunk.github.io/svg/site/ops-icon-triangle-ccc.svg);
+  background-repeat: no-repeat;
+  background-position: 8px;
+  background-size: 32px;
+  color: #c6d2c8 !important;
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: 8px;
+  text-align: center;
+}
+
+.error_message a {
+  color: #fdfffd !important;
+}
+
+/* ## 2.3.2 additional treatment for messages that pop */
+@media screen and (prefers-reduced-motion: no-preference) {
+  @keyframes fx-borderpop-bad {
+    0% {
+      border: thick solid #f9e340;
+    }
+    30% {
+      border: thick solid hsl(348, 99%, 77%);
+    }
+    90% {
+      border: thick solid hsl(348, 84%, 51%);
+    }
+  }
+  @keyframes fx-borderpop-good {
+    0% {
+      border: thick solid #89644C;
+    } /**/
+    30% {
+      border: thick solid #563E37;
+    } /**/
+    90% {
+      border: thick solid #89644C;
+    } /**/
+  }
+  .save_message,
+  #save-message,
+  .alertbar {
+    animation-name: fx-borderpop-good;
+    animation-duration: 1.5s;
+  }
+  .error_message {
+    animation-name: fx-borderpop-bad;
+    animation-duration: 1.5s;
+  }
+}
+/* ## 2.4 Upload warnings ## */
+.upload-error,
+ul#check.nobullet > * {
+  border: thick solid #daa520;
+  padding: 1rem 1rem 1rem 48px;
+  background: hsl(183, 2.5%, 92%);
+  background-image: url("/svg/site/ops-icon-triangle-000.svg");
+  background-repeat: no-repeat;
+  background-position: 8px center;
+  background-size: 32px;
+}
+
+.upload-error,
+ul#check.nobullet *,
+ul#check.nobullet > * {
+  color: #000 !important;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* We also pop a message in header to draw attention 
+   when any upload warning occurs inline on the page */
 .upload-error::after,
 ul#check::after {
   content: "Warning!  There were one or more errors in your submission. Check below for error messages.";
@@ -2204,52 +2315,98 @@ ul#check::after {
   box-shadow: 0 10px 18px rgba(0, 0, 0, 0.55), 0 7px 7px rgba(0, 0, 0, 0.52), 0 -5px 9px rgba(0, 0, 0, 0.32);
 }
 
-.upload-error,
-ul#check.nobullet > * {
-  border: thick solid #daa520;
-  padding: 1rem 1rem 1rem 48px;
-  background: hsl(183, 2.5%, 92%);
-  background-image: url("/svg/site/ops-icon-triangle-000.svg");
-  background-repeat: no-repeat;
-  background-position: 8px center;
-  background-size: 32px;
-}
-
-.upload-error,
-ul#check.nobullet *,
-ul#check.nobullet > * {
-  color: #000 !important;
-  font-size: 12px;
-  font-weight: 700;
-}
-
+/* ### 2.4.1 Post-Upload Download Message */
 /*
    Fix for post-upload 'Warning' (no private/source flag):
    the easily missed 'click here' warning shall be highlighted,
    once CSS is available.  CSS not yet available.
 */
-/*
-### 2.4.2 Alertbar */
-/* ## alertbar occurs when User Settings: Notifications: "Traditional" is selected. */
-.alertbar {
-  border: thick solid #5F443B;
+/* ## 2.5 Toolboxes ## */
+/* ERRORS */
+.save_message {
+  border: thick solid #32a431;
   padding: 1rem 1rem 1rem 48px;
-  background: #3D2C29;
-  background-image: url("/svg/site/ops-icon-harp-ccc.svg");
+  background-color: rgba(234, 235, 235, 0.9333333333);
+  background-image: url(/svg/site/ops-icon-document-000.svg);
   background-repeat: no-repeat;
-  background-position: 8px center;
+  background-position: 8px;
   background-size: 32px;
-  color: #D1B89E !important;
-  font-weight: 700;
-  font-size: 16px;
-  margin-top: 8px;
-  text-align: center;
+  width: 90%;
 }
 
-.alertbar a {
-  color: #FFFCF6 !important;
+.elem_error,
+.error_message {
+  border: thick solid #daa520;
+  padding: 1rem 1rem 1rem 48px;
+  background-color: rgba(234, 235, 235, 0.9333333333);
+  background-image: url(/svg/site/ops-icon-triangle-000.svg);
+  background-repeat: no-repeat;
+  background-position: 8px;
+  background-size: 32px;
+  width: 90%;
+  margin: 0.5ch auto;
 }
 
+/* TOOLBOXES */
+.permission_head {
+  width: 400px;
+}
+
+.permission_head,
+.permissions {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.permissions {
+  /*! width:930px; */
+  width: min(1200px, 95%);
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.permission_container {
+  float: left;
+  padding: 5px;
+  width: 300px;
+}
+
+.permission_container input {
+  margin: 0 3px 5px 0;
+  vertical-align: top;
+}
+
+.submit_container {
+  clear: both;
+  text-align: right;
+}
+
+.toolbox_container {
+  /*! float:left; */
+  padding: 5px;
+  /*! width:200px; */
+  flex: 1 1 auto;
+  flex-basis: 30ch;
+}
+
+/* sticky headers ~ desktop */
+.toolbox_container tr.colhead {
+  position: sticky;
+  top: 0;
+}
+
+/* sticky headers ~ mobile */
+@media (max-width: 575px) {
+  body {
+    --header-row-height: 32px;
+  }
+  .toolbox_container tr.colhead {
+    position: sticky;
+    top: calc(var(--header-row-height) * 1);
+    font-size: 120%;
+    font-weight: bold;
+  }
+}
 /* ########################################################################
    # 3 DOCUMENTATION OF MOBILE CLASSES
    ########################################################################
@@ -2354,6 +2511,7 @@ Documentation of mobile classes:
     width: 100% !important;
   }
   /* END notifications */
+  /* ************************************************ */
   /* ## 4.3 BEGIN user settings */
   #user #userform {
     align-items: stretch;
@@ -3225,7 +3383,7 @@ Documentation of mobile classes:
 /* ## 6.1 Debugging Tools
    various 'debug' features are avail in this doc elsewhere */
 #footer p:last-of-type::after {
-  content: " | Apollostage build 2408rc coffee";
+  content: " | Apollostage build 2408 coffee";
 }
 
 /* ########################################################################

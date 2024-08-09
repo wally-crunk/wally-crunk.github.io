@@ -4,7 +4,7 @@
 // ////////////////////////////////////////////////////////////////////////////////
 // SLUG
 
-$build-slug: "2408rc"; // must include quotes
+$build-slug: "2408"; // must include quotes
 
 // ////////////////////////////////////////////////////////////////////////////////
 // COLORS
@@ -172,10 +172,6 @@ $color-obj-tag_bubble-foreground: $midtone-900; // menu-9 suggested
 $color-obj-tag_bubble_snatched-background: $back-600;
 $color-obj-tag_bubble_snatched-foreground: $fore-800;
 
-$color-accent-border-error: $ds-goldenrod;
-$color-background-error: $ds-gray-92;
-$color-text-error: $ds-black;
-
 $color-accent-border-blockquote: $back-900; // Dotted
 $color-accent-border-box: $back-900;
 $color-accent-border-input: $ds-fx-low;
@@ -215,6 +211,16 @@ $ds-shadow-raised:
 $ds-shadow-raised-hover:
   0 14px 28px rgba(0, 0, 0, 0.25),
   0 10px 10px rgba(0, 0, 0, 0.22);
+
+$color-accent-border-error: $ds-goldenrod;
+$color-background-error: $ds-gray-92;
+$color-text-error: $ds-black;
+
+$color-accent-border-warning-1: hsl(348,99%,77%);
+$color-accent-border-warning-2: hsl(348,84%,51%);
+$color-background-warning: #633;
+$color-text-warning: $fore-700;
+$color-anchor-warning: $fore-1000;
 
 // ////////////////////////////////////////////////////////////////////////////////
 // ICONS

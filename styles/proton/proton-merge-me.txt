@@ -1,0 +1,477 @@
+/* ################################################################################
+   0000 NEW PROTON
+   ################################################################################ */
+
+@import url('https://wally-crunk.github.io/styles/proton/font_call.css');
+
+@namespace "http://www.w3.org/1999/xhtml";
+@namespace svg "http://www.w3.org/2000/svg";
+
+:root {
+  font-family: Inter, sans-serif;
+  font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+}
+
+@supports (font-variation-settings: normal) {
+  :root { font-family: InterVariable, sans-serif; }
+}
+
+/* ################################################################################
+   0070 DEVELOPER
+   ################################################################################ */
+
+/*  Help navigating: turn me on
+	#wrapper { border: thick solid steelblue; }
+	#header { border: thick solid skyblue; }
+	#content { border: thick solid green; }
+	#footer { border: thick solid brown; }
+	#sidebar { border: thick solid gray; }
+	div.main_column { border: thick solid purple; }
+	div.sidebar.settings_sidebar {border:thick solid limegreen;}
+ */
+
+/* ################################################################################
+   0100 LEGACY PROTON STUFF
+   ################################################################################ */
+
+/* ################################################################################
+   0101 basic structure
+   ################################################################################ */
+
+body {
+  background: #ccc;
+  font-size: 0.7em;
+  margin-bottom: 0;
+  box-sizing: border-box;
+}
+
+#wrapper {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.main_column {
+  width: 695px;
+}
+
+.sidebar {
+  float: right;
+  width: 250px;
+}
+
+.hide {
+  display: none;
+}
+
+
+body:not(#requests):not(#friends) .box h2 {
+  background: none;
+  margin: 0;
+  padding: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  position: static;
+  border-bottom: 0;
+}
+  
+
+  
+/* ################################################################################
+   1000 STRUCTURE
+   ################################################################################ */
+
+#wrapper {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+
+/* ################################################################################
+   1020 HEADER BOX SETUP
+   ################################################################################ */
+
+#header {
+  padding: 0;
+}
+
+
+/* ################################################################################
+   1030 HEADER BOX LAYOUT
+   ################################################################################ */
+
+/* @media (min-width:500px) { */
+
+#header {
+  /* me */
+  width: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: 100% 100%;
+  background-position: 0px 0px;
+  background-image: linear-gradient(90deg, #faf8FaFF 44%, #F4F8F4FF 100%);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 1rem;
+  
+  /* downstream */
+  display: grid;
+   grid-auto-flow: row;
+   justify-content: center;
+  
+   grid-template-areas: 
+     "bLogo bMenu bUser bMajor"
+     "bLogo bMenu bMinor bStats"
+     "bLogo bMenu bMinor bAlertbar"
+     "bSearchbar bSearchbar bSearchbar bSearchbar";
+  
+   grid-template-columns: 120px 180px 210px 350px;
+   grid-template-rows: 1rem auto auto 1rem;
+  padding-left: auto;
+}
+
+
+/* ################################################################################
+   1031 placement
+   ################################################################################ */
+   
+#logo {
+  grid-area: bLogo;
+}
+
+#menu {
+  grid-area: bMenu;
+}
+
+#userinfo {
+  display: contents;
+} 
+
+#userinfo_stats {
+  grid-area: bStats;
+}
+
+#userinfo_minor {
+  grid-area: bMinor;
+}
+
+#userinfo_major {
+  grid-area: bMajor;  
+}
+#userinfo_username {
+  grid-area: bUser;
+}
+
+#alerts {
+    grid-area: bAlertbar;
+}
+
+#searchbars {
+    grid-area: bSearchbar;
+}
+
+/* ################################################################################
+   1041 bLogo
+   ################################################################################ */
+#logo {
+  border-right: thin solid gray;
+  margin-right: 0.5rem;
+}
+
+#logo > a {
+  background: url("https://wally-crunk.github.io/svg/site/ops-logo-loop-lightmode.svg") center no-repeat;
+  background-size: contain;
+  filter: invert(25%) sepia(78%) saturate(99%) hue-rotate(149deg) brightness(87%) contrast(125%);
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+/* ################################################################################
+   1042 bMenu
+   ################################################################################ */
+#menu {
+  border-right: thin solid gray;
+  margin-right: 0.5rem;
+}
+
+#menu ul {
+  height: 5rem;  
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.05rem;
+}
+
+/* ################################################################################
+   1043 bUser
+   ################################################################################ */
+#userinfo #userinfo_username {
+  grid-area: bUser;
+  
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  align-items: center;
+
+  border-right: thin solid gray;
+  margin-right: 0.5rem;
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* ################################################################################
+   1044 bMinor
+   ################################################################################ */
+
+#userinfo #userinfo_minor {
+  height: 6rem;  
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-end;
+
+  align-items: baseline;
+  border-right: thin solid gray;
+  margin-right: 0.5rem;
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* ################################################################################
+   1045 bMajor
+   ################################################################################ */
+#userinfo #userinfo_major {
+  grid-area: bMajor; 
+  
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  line-height: 1rem;
+  align-items: center;
+}
+
+ul#userinfo_major{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* ################################################################################
+   1046 bStats
+   ################################################################################ */
+
+ul#userinfo_stats {
+  /*downstream*/
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  line-height: 1rem;
+  align-items: center;}
+ul#userinfo_stats {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* ################################################################################
+   1047 bAlertbar
+   ################################################################################ */
+
+#alerts {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+}
+
+.alertbar {
+  font-weight: normal;
+  background-color: steelblue;
+  padding: 0.5rem 2rem 0 3rem;
+  margin-top: 0.3rem;
+  margin-right: auto;
+  background-image: url('https://wally-crunk.github.io/svg/std/notification-bell-000xeee.svg');
+  background-size: 1.2rem;
+  background-repeat: no-repeat;
+  background-position: 1.2rem center;
+  transition: all 0.175s ease;
+  border-radius: 1rem;
+}
+
+.alertbar a {
+  color: white;
+  font-weight: bold;
+  text-decoration-line: none;
+}
+
+.alertbar:hover {
+  background-color: skyblue;
+  transition: all 0.175s ease;
+  a { color: black; }
+}
+
+.alertbar:first-of-type {
+  padding-top: 4px;
+}
+
+.alertbar:last-of-type {
+  padding-bottom: 4px;
+}
+
+/* ################################################################################
+   1048 bSearchbar
+   ################################################################################ */
+
+#searchbars {
+  padding-top: 0.15rem;
+}
+
+#searchbars > ul {
+  align-items: center;
+  display: flex;
+  margin: 0;
+  padding: 0.25rem 0.25rem 0.25rem 0.25rem;
+}
+
+#searchbars > ul li {
+  display: inline;
+  flex: 1 1 auto;
+}
+
+#searchbars ul > *:not(:last-child) {
+  margin-right: 1rem;
+}
+
+#searchbars > ul input {
+  width: 100%;
+}
+
+#searchbars .search_form {
+  background: 0 0; /* sets initial values for all */
+}
+
+#searchbars .search_form input {
+  border: thin solid lightgray;
+  border-radius: 0.7rem;
+  background: unset;
+  box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.15);
+  transition: 300ms ease-in-out;
+}
+
+
+
+/* ################################################################################
+   1035 part iv alertbar alerts
+   ################################################################################ */
+
+
+/* ################################################################################
+   1036 part v searchbars
+   ################################################################################ */
+
+
+/* ################################################################################
+   1040 further styling to organize.
+   ################################################################################ */
+
+ul#userinfo_minor {
+  list-style: none;
+  padding: 0;
+}
+
+#header ul a {
+  display: inline-block;
+  padding: 1px 2px;
+}
+
+#menu ul {
+  list-style:none;
+  padding: 0;
+}
+
+ul#userinfo_username li,
+ul#userinfo_major li,
+ul#userinfo_stats li {
+  font-weight: bold;
+}
+
+ul#userinfo_username li a {
+  color: steelblue;
+  overflow: hidden;
+}
+
+ul#userinfo_username li a:hover {
+  background-color: #575757;
+  color: #e6e6e6;
+}
+
+ul#userinfo_username li a.username {
+  color: #575757;
+  max-width: 70px;
+  text-overflow: ellipsis;
+}
+
+ul#userinfo_username li a.username:hover {
+  background-color: #007dc6;
+  color: #e6e6e6;
+}
+
+ul#userinfo_major li a {
+  color: #575757;
+}
+
+ul#userinfo_major li a:hover {
+  background-color: #575757;
+  color: #e6e6e6;
+}
+
+ul#userinfo_stats li {
+  font-weight: normal;
+  color: #575757;
+}
+
+ul#userinfo_stats li a {
+  font-weight: normal;
+  color: #575757;
+}
+
+ul#userinfo_stats li span.stat {
+  color: #007dc6;
+  margin-right: 2px;
+}
+
+ul#userinfo_minor a {
+  color: #575757;
+}
+
+ul#userinfo_minor a:hover {
+  background-color: #575757;
+  color: #e6e6e6;
+}
+
+#menu a:hover {
+  background-color: #007dc6;
+  color: #e6e6e6;
+}
+
+#index #nav_index a,
+#collage #nav_collages a,
+#forums #nav_forums a,
+#chat #nav_irc a,
+#rules #nav_rules a,
+#staff #nav_staff a,
+#torrents #nav_torrents a,
+#requests #nav_requests a,
+#top10 #nav_top10 a,
+#wiki #nav_wiki a {
+  font-weight: bold;
+}
+
+#footer p:last-of-type::after, #body:after {
+  content: " | proton-worker-0801.css +...";
+}
+

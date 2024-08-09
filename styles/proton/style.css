@@ -2,7 +2,7 @@
    0000 NEW PROTON
    ################################################################################ */
 
-@import url('font_call.css');
+@import url('https://wally-crunk.github.io/styles/proton/font_call.css');
 
 @namespace "http://www.w3.org/1999/xhtml";
 @namespace svg "http://www.w3.org/2000/svg";
@@ -31,11 +31,15 @@
  */
 
 /* ################################################################################
-   0100 LEGACY PROTON STUFF
+   1000 PAGE STRUCTURE
    ################################################################################ */
 
 /* ################################################################################
-   0101 basic structure
+   1010 LEGACY PROTON STUFF
+   ################################################################################ */
+
+/* ################################################################################
+   1020 basic structure
    ################################################################################ */
 
 body {
@@ -73,539 +77,403 @@ body:not(#requests):not(#friends) .box h2 {
   position: static;
   border-bottom: 0;
 }
-
+  
+#wrapper {
+  display: flex;
+  flex-flow: column wrap;
+}
+  
 /* ################################################################################
-   0400 forms
+   2000 HEADER
    ################################################################################ */
 
-input {
-  cursor: pointer;
-}
-
-input[type=text] {
-  cursor: text;
-}
-
-textarea {
-  width: 500px !important;
-  height: 100px;
-}
-
-
-input[type=file] {
-  padding: 1px 3px;
-}
-
-select {
-  padding: 1px;
-}
-
-input[type=button],
-input[type=submit] {
-  background-color: #f4f4f4;
-  background-image: none;
-  border-color: #cdcdcd #999 #999 #cdcdcd;
-  border-style: solid;
-  border-width: 1px;
-  font-weight: 700;
-}
-
-input[type=button]:active,
-input[type=submit]:active {
-  color: #007dc7 !important;
-}
-
-input[value="Upload torrent"],
-input[value="Upload torrents"] {
-  margin: 15px 0 0;
-  background-color: #007dc7;
-  color: #fff;
-  font-size: 15px;
-  border-color: #63afdd #005488 #005488 #63afdd;
-  border-style: solid;
-  border-width: 1px;
-}
-
-input[value="Upload torrent"],
-input[value="Upload torrents"]:active {
-  color: #f4f4f4 !important;
-}
-
 /* ################################################################################
-   0500 appearance items
+   2020 HEADER BOX SETUP
    ################################################################################ */
 
-h1,
-h2,
-h3,
-h4 {
-  margin-top: 0;
+#header {
   padding: 0;
 }
 
-.nobr {
-  white-space: nowrap;
-  font-weight: 400;
-}
-
-.rowa td {
-  background-color: #f5f5f5;
-}
-
-.rowb td {
-  background-color: #fff;
-}
-
-p {
-  margin: 10px 0 5px;
-}
-
-.pad {
-  padding: 0 !important;
-}
-
-#blog .pad,
-.box2 .pad,
-.main_column .pad,
-.sidebar .pad {
-  padding: 10px !important;
-}
-
-
-#chat #nav_irc a,
-#collage #nav_collages a,
-#forums #nav_forums a,
-#index #nav_index a,
-#requests #nav_requests a,
-#rules #nav_rules a,
-#staff #nav_staff a,
-#top10 #nav_top10 a,
-#torrents #nav_torrents a,
-#wiki #nav_wiki a {
-  font-weight: 700;
-}
-
-
-
 /* ################################################################################
-   0511 Ratios and Sizes
+   2040 HEADER BOX LAYOUT
    ################################################################################ */
 
-.r00 {
-  color: red;
-}
+/* @media (min-width:500px) { */
 
-.r01,
-.r02 {
-  color: #ff1300;
-}
-
-.r03 {
-  color: #ff2600;
-}
-
-.r04 {
-  color: #ff4c00;
-}
-
-.r05,
-.r06 {
-  color: #ff5e00;
-}
-
-.r07 {
-  color: #ff7100;
-}
-
-.r08 {
-  color: #ff9700;
-}
-
-.r09 {
-  color: #fa0;
-}
-
-.r10 {
-  color: #74c42e;
-}
-
-.r20,
-.r50,
-.r99 {
-  color: #418b00;
-}
-
-span.size1 {
-  font-size: 0.8em;
-}
-
-span.size2 {
-  font-size: 1em;
-}
-
-span.size3 {
-  font-size: 1.25em;
-}
-
-span.size4 {
-  font-size: 1.5em;
-}
-
-span.size5 {
-  font-size: 1.75em;
-}
-
-span.size6 {
-  font-size: 2em;
-}
-
-span.size7 {
-  font-size: 2.25em;
-}
-
-span.size8 {
-  font-size: 2.5em;
-}
-
-span.size9 {
-  font-size: 2.75em;
-}
-
-span.size10 {
-  font-size: 3em;
-}
-
-td.r00 {
-  background-color: #faefed !important;
-}
-
-/* ################################################################################
-   0512 lightbox and curtain
-   ################################################################################ */
-
-.curtain {
-  position: fixed;
+#header {
+  /* me */
+  width: 100%;
+  box-sizing: border-box;
+  position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  background-size: 100% 100%;
+  background-position: 0px 0px;
+  background-image: linear-gradient(90deg, #faf8FaFF 44%, #F4F8F4FF 100%);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 1rem;
+  
+  /* downstream */
+  display: grid;
+   grid-auto-flow: row;
+   justify-content: center;
+  
+   grid-template-areas: 
+     "bLogo bMenu bUser bMajor"
+     "bLogo bMenu bMinor bStats"
+     "bLogo bMenu bMinor bAlertbar"
+     "bSearchbar bSearchbar bSearchbar bSearchbar";
+  
+   grid-template-columns: 120px 180px 210px 350px;
+   grid-template-rows: 1rem auto auto 1rem;
+  padding-left: auto;
+}
+
+
+/* ################################################################################
+   2060 placement
+   ################################################################################ */
+   
+#logo {
+  grid-area: bLogo;
+}
+
+#menu {
+  grid-area: bMenu;
+}
+
+#userinfo {
+  display: contents;
+} 
+
+#userinfo_stats {
+  grid-area: bStats;
+}
+
+#userinfo_minor {
+  grid-area: bMinor;
+}
+
+#userinfo_major {
+  grid-area: bMajor;  
+}
+#userinfo_username {
+  grid-area: bUser;
+}
+
+#alerts {
+    grid-area: bAlertbar;
+}
+
+#searchbars {
+    grid-area: bSearchbar;
+}
+
+/* ################################################################################
+   2070 bLogo
+   ################################################################################ */
+#logo {
+  border-right: thin solid gray;
+  margin-right: 0.5rem;
+}
+
+#logo > a {
+  background: url("https://wally-crunk.github.io/svg/site/ops-logo-loop-lightmode.svg") center no-repeat;
+  background-size: contain;
+  filter: invert(25%) sepia(78%) saturate(99%) hue-rotate(149deg) brightness(87%) contrast(125%);
   height: 100%;
-  background: #111 50% 0 no-repeat fixed;
-  z-index: 1001;
-  opacity: 0.9;
-  filter: alpha(opacity=90);
-}
-
-.lightbox {
-  position: fixed;
-  text-align: center;
-  top: 5%;
-  left: 5%;
-  width: 90%;
-  height: 90%;
-  padding: 0;
-  z-index: 1002;
-  overflow: auto;
-}
-
-.lightbox img {
-  max-width: 100%;
-  max-height: 100%;
-  background-color: transparent;
-  z-index: -1;
-}
-
-/* ################################################################################
-   0513 polls
-   ################################################################################ */
-
-.poll {
-  list-style: none;
-  padding: 3px 5px;
-  margin: 0;
-}
-
-.poll li {
-  clear: both;
-}
-
-.poll .graph {
-  padding: 0 0 5px;
-}
-
-.poll .graph span {
+  width: 100%;
   display: block;
-  height: 19px;
-  float: left;
+}
+/* ################################################################################
+   2080 bMenu
+   ################################################################################ */
+#menu {
+  border-right: thin solid gray;
+  margin-right: 0.5rem;
 }
 
-.poll .graph .left_poll {
-  width: 9px;
-  background: url(images/poll_left.png) 0 0 no-repeat;
-}
-
-.poll .graph .center_poll {
-  background: url(images/poll_middle.png) 0 0 repeat-x;
-  max-width: 865px;
-}
-
-#index .poll .graph .center_poll {
-  max-width: 185px;
-}
-
-.poll .graph .right_poll {
-  width: 11px;
-  background: url(images/poll_right.png) 0 0 no-repeat;
+#menu ul {
+  height: 5rem;  
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.05rem;
 }
 
 /* ################################################################################
-   0540 settings sidebar
+   2090 bUser
    ################################################################################ */
+#userinfo #userinfo_username {
+  grid-area: bUser;
+  
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  align-items: center;
 
-div.sidebar.settings_sidebar div#settings_sections li h2 {
-  font-size: unset;
-}
+  border-right: thin solid gray;
+  margin-right: 0.5rem;
 
-div.sidebar.settings_sidebar {
-  margin-right: 2rem;
-}
-
-/* ################################################################################
-   0550 page items
-   ################################################################################ */
-
-.linkbox {
-  text-align: center;
-  padding: 10px 0;
-}
-
-.linkbox:first-child {
-  border-top: 1px solid #e6e6e6;
-  border-bottom: 1px solid #e6e6e6;
-}
-
-.linkbox {
-  border-top: 0;
-}
-
-/* ################################################################################
-   0600 tables
-   ################################################################################ */
-
-td p {
   margin: 0;
-}
-
-td.label {
-  width: 16%;
-  border-right: 1px solid #e6e6e6;
-}
-
-table {
   padding: 0;
-  border-collapse: collapse;
+  list-style: none;
+}
+/* ################################################################################
+   2100 bMinor
+   ################################################################################ */
+
+#userinfo #userinfo_minor {
+  height: 6rem;  
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-end;
+
+  align-items: baseline;
+  border-right: thin solid gray;
+  margin-right: 0.5rem;
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* ################################################################################
+   2110 bMajor
+   ################################################################################ */
+#userinfo #userinfo_major {
+  grid-area: bMajor; 
+  
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  line-height: 1rem;
+  align-items: center;
+}
+
+ul#userinfo_major{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* ################################################################################
+   2120 bStats
+   ################################################################################ */
+
+ul#userinfo_stats {
+  /*downstream*/
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  line-height: 1rem;
+  align-items: center;}
+ul#userinfo_stats {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* ################################################################################
+   2130 bAlertbar
+   ################################################################################ */
+
+#alerts {
+  display: flex;
+  flex-flow: column;
   width: 100%;
 }
 
-#content table:not(.forum_post) td,
-#content table:not(.forum_post) th {
-  padding: 5px;
-  border-top: 1px solid #e6e6e6;
+.alertbar {
+  font-weight: normal;
+  background-color: steelblue;
+  padding: 0.5rem 2rem 0 3rem;
+  margin-top: 0.3rem;
+  margin-right: auto;
+  background-image: url('https://wally-crunk.github.io/svg/std/notification-bell-000xeee.svg');
+  background-size: 1.2rem;
+  background-repeat: no-repeat;
+  background-position: 1.2rem center;
+  transition: all 0.175s ease;
+  border-radius: 1rem;
 }
 
-#content table td h4 {
-  margin: 0;
+.alertbar a {
+  color: white;
+  font-weight: bold;
+  text-decoration-line: none;
 }
 
-#content table .colhead_dark a,
-#content table .colhead a {
-  color: #575757;
-  font-weight: 700;
+.alertbar:hover {
+  background-color: skyblue;
+  transition: all 0.175s ease;
+  a { color: black; }
 }
 
-#content table .colhead_dark a:hover,
-#content table .colhead a:hover {
-  color: #007dc6;
+.alertbar:first-of-type {
+  padding-top: 4px;
 }
 
-#vanityhouse {
-  margin: 0;
-}
-
-#vanityhouse tr:hover {
-  background-color: #f0f0f0;
-}
-
-#friends table {
-  width: 60%;
-  margin: 0 auto;
-}
-
-#friends table textarea {
-  height: 42px;
-  width: 270px !important;
-  margin: 0;
-}
-
-#friends table .left {
-  width: 50%;
-  text-align: right;
-}
-
-#friends table .left input[type=submit] {
-  min-width: 100%;
-  margin-top: 0;
-  margin-bottom: 5px;
-}
-
-#friends table td.avatar {
-  padding: 0 0 5px;
-}
-
-#friends br {
-  display: none;
-}
-
-body:not(#requests):not(#friends) .box table:not(#vanityhouse) {
-  margin: 0;
-  background-color: #fff;
-}
-
-
-#forums h3 {
-  margin: 15px 0;
-}
-
-#quickreplypreview {
-  background-color: #f0f0f0;
-  border: 1px solid #c6c6c6;
-}
-
-#blog blockquote,
-#wiki .box blockquote,
-.forum_post blockquote {
-  border: 1px dotted #dcdcdc;
-  padding: 6px;
-  background: #fff url(images/quote_bg.png) -10px -5px no-repeat;
-  margin-left: 25px;
-  margin-right: 25px;
-}
-
-#forums blockquote {
-  margin-left: 40px;
-  margin-right: 40px;
-}
-
-.torrentdetails blockquote {
-  background-image: none;
-  background-color: hsla(0, 0%, 100%, 0.6);
-}
-
-#blog div.spoiler,
-#wiki .box blockquote.spoiler,
-.forum_post blockquote.spoiler {
-  background: #fff;
-}
-
-.forum_post {
-  border: none;
-  margin: 0 0 10px;
-  border-collapse: separate;
-  border-spacing: 0;
-}
-
-.forum_post .avatar {
-  width: 150px;
-  padding: 0 13px 0 0;
-}
-
-.forum_post .colhead_dark td {
-  padding: 5px;
-}
-
-.forum_post .body {
-  padding: 10px 20px 15px 15px;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  border: 1px solid #d9d9d9;
-  border-top-style: none !important;
-  box-shadow: -4px 1px 8px rgba(187, 215, 235, 0.8);
-  background-color: #f5f5f5;
-  word-wrap: break-word;
-}
-
-.forum_post .body div {
-  margin: 10px;
-}
-
-.forum_post .body div a {
-  word-wrap: break-word;
-}
-
-#forums .forum_post .body {
-  max-width: 708px;
-}
-
-#artist .forum_post .body textarea,
-#requests .forum_post .body textarea,
-#torrents .forum_post .body textarea {
-  width: 420px !important;
-}
-
-#userhistory .forum_post .body {
-  padding: 20px 20px 20px 40px;
-}
-
-#userhistory .forum_post tr.colhead_dark {
-  background-color: #e8e8e8;
-  background-image: none;
-}
-
-#artist .forum_post .body div div,
-#collage .forum_post .body div div,
-#forums .forum_post .body div div,
-#torrents .forum_post .body div div {
-  background: none;
-  padding: 0;
-}
-
-.min_padding {
-  padding: 0;
-}
-
-#forums .forum_post li {
-  margin: 0 0 0 20px;
-  padding: 0;
-}
-
-#forums #content .thin .box form .box input[type=Text] {
-  font-size: 20px;
-  width: 500px;
-}
-
-#forums #content form .box {
-  width: 510px;
-  margin: 0 auto;
-  padding: 0;
-}
-
-strong.quoteheader {
-  color: #575757;
-}
-
-.sidebar .box .stats li div {
-  letter-spacing: 0 !important;
-}
-
-.sidebar .box .stats li div a {
-  font-family: monospace !important;
+.alertbar:last-of-type {
+  padding-bottom: 4px;
 }
 
 /* ################################################################################
-   0700 PAGE LAYOUTS
+   2140 bSearchbar
+   ################################################################################ */
+
+#searchbars {
+  padding-top: 0.15rem;
+}
+
+#searchbars > ul {
+  align-items: center;
+  display: flex;
+  margin: 0;
+  padding: 0.25rem 0.25rem 0.25rem 0.25rem;
+}
+
+#searchbars > ul li {
+  display: inline;
+  flex: 1 1 auto;
+}
+
+#searchbars ul > *:not(:last-child) {
+  margin-right: 1rem;
+}
+
+#searchbars > ul input {
+  width: 100%;
+}
+
+#searchbars .search_form {
+  background: 0 0; /* sets initial values for all */
+}
+
+#searchbars .search_form input {
+  border: thin solid lightgray;
+  border-radius: 0.7rem;
+  background: unset;
+  box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.15);
+  transition: 300ms ease-in-out;
+}
+
+
+
+/* ################################################################################
+   2150 further styling to organize.
+   ################################################################################ */
+
+ul#userinfo_minor {
+  list-style: none;
+  padding: 0;
+}
+
+#header ul a {
+  display: inline-block;
+  padding: 1px 2px;
+}
+
+#menu ul {
+  list-style:none;
+  padding: 0;
+}
+
+ul#userinfo_username li,
+ul#userinfo_major li,
+ul#userinfo_stats li {
+  font-weight: bold;
+}
+
+ul#userinfo_username li a {
+  color: steelblue;
+  overflow: hidden;
+}
+
+ul#userinfo_username li a:hover {
+  background-color: #575757;
+  color: #e6e6e6;
+}
+
+ul#userinfo_username li a.username {
+  color: #575757;
+  max-width: 70px;
+  text-overflow: ellipsis;
+}
+
+ul#userinfo_username li a.username:hover {
+  background-color: #007dc6;
+  color: #e6e6e6;
+}
+
+ul#userinfo_major li a {
+  color: #575757;
+}
+
+ul#userinfo_major li a:hover {
+  background-color: #575757;
+  color: #e6e6e6;
+}
+
+ul#userinfo_stats li {
+  font-weight: normal;
+  color: #575757;
+}
+
+ul#userinfo_stats li a {
+  font-weight: normal;
+  color: #575757;
+}
+
+ul#userinfo_stats li span.stat {
+  color: #007dc6;
+  margin-right: 2px;
+}
+
+ul#userinfo_minor a {
+  color: #575757;
+}
+
+ul#userinfo_minor a:hover {
+  background-color: #575757;
+  color: #e6e6e6;
+}
+
+#menu a:hover {
+  background-color: #007dc6;
+  color: #e6e6e6;
+}
+
+#index #nav_index a,
+#collage #nav_collages a,
+#forums #nav_forums a,
+#chat #nav_irc a,
+#rules #nav_rules a,
+#staff #nav_staff a,
+#torrents #nav_torrents a,
+#requests #nav_requests a,
+#top10 #nav_top10 a,
+#wiki #nav_wiki a {
+  font-weight: bold;
+}
+
+#footer p:last-of-type::after, #body:after {
+  content: " | proton-worker-0801.css +...";
+}
+
+
+
+/* ################################################################################
+   3000 CONTENT
    ################################################################################ */
 
 /* ################################################################################
-   0701 torrents pages
+   5200 torrents pages
    ################################################################################ */
 
 #torrents .sidebar .box .stats li span.remove_artist a {
@@ -875,7 +743,11 @@ tr.torrent .bookmark > a::after {
 }
 
 /* ################################################################################
-   0720 User settings ~ sortable
+   5500 User settings
+   ################################################################################ */
+
+/* ################################################################################
+   5510 User settings ~ sortable
    ################################################################################ */
 
 #sortable .sortable_item:hover {
@@ -894,7 +766,7 @@ tr.torrent .bookmark > a::after {
 }
 
 /* ################################################################################
-   0730 Not organized past here
+   6800 Not organized past here
    ################################################################################ */
 
 #blog .box .head,
@@ -1355,7 +1227,7 @@ div.box[style=""] .head {
 }
 
 /* ################################################################################
-   0788 MusicBrainz Popup
+   5330 MusicBrainz Popup
    ################################################################################ */
 
 #musicbrainz_popup {
@@ -1379,7 +1251,7 @@ div.box[style=""] .head {
 }
 
 /* ################################################################################
-   0790 You must be staff
+   7300 You must be staff
    ################################################################################ */
 
 .permission_container {
@@ -1404,7 +1276,7 @@ div.box[style=""] .head {
 }
 
 /* ################################################################################
-   0799 Seriously?
+   7900 Seriously?
    ################################################################################ */
 
 .OiNK #ArtistName {
@@ -1431,11 +1303,11 @@ div.box[style=""] .head {
   width: 450px;
 }
 /* ################################################################################
-   0800 Ornaments
+   7400 Ornaments
    ################################################################################ */
 
 /* ################################################################################
-   0801 Icons, Forum
+   7410 Icons, Forum
    ################################################################################ */
 
 .unread_locked_sticky {
@@ -1482,7 +1354,7 @@ div.box[style=""] .head {
 }
 
 /* ################################################################################
-   0802 Icons, Upload types
+   7420 Icons, Upload types
    ################################################################################ */
 
 .cats_applications {
@@ -1727,7 +1599,7 @@ div[class~=tooltipster-base] {
 }
 
 /* ################################################################################
-   1000 STRUCTURE
+   3000 CONTENT
    ################################################################################ */
 
 #wrapper {
@@ -1765,432 +1637,6 @@ body#user div#wrapper div#content div.thin div.main_column {
   order: 6;
   max-width: 70vw;
   overflow: hidden;
-}
-
-/* ################################################################################
-   1005 HEADERBOX ITEM SETUP
-   ################################################################################ */
-
-input,
-select,
-textarea {
-  font-family: Inter, Tahoma, Arial, sans-serif;
-  font-size: 1em;
-  border: 1px solid #9c9c9c;
-}
-
-textarea {
-  width: 500px !important;
-  height: 100px;
-}
-
-input,
-textarea {
-  color: #777;
-  padding: .2rem .2rem .2rem .5rem;
-  /*   background: white url("https://wally-crunk.github.io/styles/proton/images/inputbg.png") top left repeat-x; */
-}
-
-input[type=file] {
-  padding: 1px 3px;
-}
-
-select {
-  padding: 1px;
-}
-
-#inbox #content h2 {
-  padding: 20px !important;
-}
-
-input:focus,
-textarea:focus {
-  border: 1px solid #575757;
-  color: #575757;
-  border-radius: 11px;
-}
-
-#searchbars input {
-  height: 17px;
-  width: 131px;
-  border: 1px solid #cccccc;
-  border-radius: 1rem;
-  padding-left: 0.6rem;
-}
-
-#searchbars input:focus {
-  border: 1px solid #575757;
-  color: #575757;
-  border-radius: 1rem;
-}
-
-input[type=submit],
-input[type=button] {
-  background-color: #f4f4f4;
-  background-image: none;
-  border-top: 1px solid #cdcdcd;
-  border-left: 1px solid #cdcdcd;
-  border-bottom: 1px solid #999999;
-  border-right: 1px solid #999999;
-  font-weight: bold;
-}
-
-input[type=submit]:active,
-input[type=button]:active {
-  color: #007dc7 !important;
-}
-
-input[value="Upload torrent"],
-input[value="Upload torrents"] {
-  margin: 15px 0 0 0;
-  background-color: #007dc7;
-  color: white;
-  font-size: 15px;
-  border-top: 1px solid #63afdd;
-  border-left: 1px solid #63afdd;
-  border-bottom: 1px solid #005488;
-  border-right: 1px solid #005488;
-}
-
-input[value="Upload torrent"],
-input[value="Upload torrents"]:active {
-  color: #f4f4f4 !important;
-}
-
-/* ################################################################################
-   1020 HEADER BOX SETUP
-   ################################################################################ */
-
-#header {
-  padding: 0;
-}
-
-#menu {
-  border-right: thin solid gray;
-  margin-right: 0.5rem;
-}
-
-ul#userinfo_minor {
-  list-style: none;
-  margin-right: 0.5rem;
-  padding: 0;
-}
-
-#header ul a {
-  display: inline-block;
-  padding: 1px 2px;
-}
-
-#menu ul li,
-ul#userinfo_minor li {
-  float: left;
-  display: block;
-  width: 74px;
-}
-
-ul#userinfo_minor li {
-  width: 95px;
-}
-
-ul#userinfo_username,
-ul#userinfo_major,
-ul#userinfo_stats {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-ul#userinfo_username li,
-ul#userinfo_major li,
-ul#userinfo_stats li {
-  display: inline;
-  font-weight: bold;
-}
-
-ul#userinfo_username li a {
-  color: steelblue;
-  overflow: hidden;
-}
-
-ul#userinfo_username li a:hover {
-  background-color: #575757;
-  color: #e6e6e6;
-}
-
-ul#userinfo_username li a.username {
-  color: #575757;
-  max-width: 70px;
-  text-overflow: ellipsis;
-}
-
-ul#userinfo_username li a.username:hover {
-  background-color: #007dc6;
-  color: #e6e6e6;
-}
-
-ul#userinfo_major li a {
-  color: #575757;
-}
-
-ul#userinfo_major li a:hover {
-  background-color: #575757;
-  color: #e6e6e6;
-}
-
-ul#userinfo_stats li {
-  font-weight: normal;
-  color: #575757;
-}
-
-ul#userinfo_stats li a {
-  font-weight: normal;
-  color: #575757;
-}
-
-ul#userinfo_stats li span.stat {
-  color: #007dc6;
-  margin-right: 2px;
-}
-
-ul#userinfo_minor a {
-  color: #575757;
-}
-
-ul#userinfo_minor a:hover {
-  background-color: #575757;
-  color: #e6e6e6;
-}
-
-#menu a:hover {
-  background-color: #007dc6;
-  color: #e6e6e6;
-}
-
-#index #nav_index a,
-#collage #nav_collages a,
-#forums #nav_forums a,
-#chat #nav_irc a,
-#rules #nav_rules a,
-#staff #nav_staff a,
-#torrents #nav_torrents a,
-#requests #nav_requests a,
-#top10 #nav_top10 a,
-#wiki #nav_wiki a {
-  font-weight: bold;
-}
-
-/* ################################################################################
-   1030 HEADER BOX LAYOUT
-   ################################################################################ */
-
-#header {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  box-sizing: border-box;
-  min-width: 600px;
-  /*   position: absolute; */
-  top: 0;
-  left: 0;
-}
-
-#header {
- background-size: 100% 100%;
- background-position: 0px 0px;
- background-image: linear-gradient(90deg, #faf8FFFF 0%, #F4F8F2FF 100%);
-
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  padding: 1rem;
-}
-
-#alerts,
-#menu ul,
-ul#userinfo_major,
-ul#userinfo_minor,
-ul#userinfo_stats,
-ul#userinfo_username {
-  position: unset;
-  display: unset;
-}
-
-/* ################################################################################
-   1031 big items
-   ################################################################################ */
-   
-#logo {
-  order: 1;
-  flex: 12%;
-}
-
-#menu {
-  order: 2;
-  flex: 17%;
-}
-
-#userinfo {
-  order: 3;
-  flex: 60%;
-}
-
-#alerts {
-  order: 4;
-  flex: 100%;
-}
-
-#searchbars {
-  order: 5;
-  flex: 100%;
-}
-
-/* ################################################################################
-   1032 column i logo 
-   ################################################################################ */
-
-#logo {
-  box-sizing: content-box;
-  padding: 0;
-  border-right: thin solid gray;
-  margin-right: 0.5rem;
-}
-
-#logo > a {
-  background: url("https://wally-crunk.github.io/svg/site/ops-logo-loop-lightmode.svg") center no-repeat;
-  background-size: 100px;
-  display: block;
-  filter: invert(25%) sepia(78%) saturate(99%) hue-rotate(149deg) brightness(87%) contrast(125%);
-  height: 100%;
-  width: 100%;
-}
-
-/* ################################################################################
-   1033 column ii menu
-   ################################################################################ */
-
-
-/* ################################################################################
-   1034 column iii userinfo
-   ################################################################################ */
-
-#userinfo {
-  display: flex;
-  flex-flow: column;
-  width: 100%;
-}
-
-#userinfo #userinfo_username {
-  order: 1;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-end;
-  gap: 0.5rem;
-  align-items: baseline;
-}
-
-#userinfo #userinfo_stats {
-  order: 2;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-end;
-  gap: 0.5rem;
-  align-items: baseline;
-  padding-top: 0.1rem;
-}
-
-#userinfo #userinfo_minor {
-  order: 3;
-  display: inline-block;
-  padding-top: 0.1rem;
-}
-
-#userinfo #userinfo_major {
-  order: 4;
-  display: inline-block;
-  width: 100%;
-  padding-top: 0.1rem;
-}
-
-/* ################################################################################
-   1035 part iv alertbar alerts
-   ################################################################################ */
-
-#alerts {
-  display: flex;
-  flex-flow: column;
-  width: 100%;
-}
-
-.alertbar {
-  font-weight: normal;
-  background-color: steelblue;
-  padding: 0.5rem 2rem 0 3rem;
-  margin-top: 0.3rem;
-  margin-right: auto;
-  background-image: url('https://wally-crunk.github.io/svg/std/notification-bell-000xeee.svg');
-  background-size: 1.2rem;
-  background-repeat: no-repeat;
-  background-position: 1.2rem center;
-  transition: all 0.175s ease;
-  border-radius: 1rem;
-}
-
-.alertbar a {
-  color: white;
-  font-weight: bold;
-  text-decoration-line: none;
-}
-
-.alertbar:hover {
-  background-color: skyblue;
-  transition: all 0.175s ease;
-  a { color: black; }
-}
-
-.alertbar:first-of-type {
-  padding-top: 4px;
-}
-
-.alertbar:last-of-type {
-  padding-bottom: 4px;
-}
-
-/* ################################################################################
-   1036 part v searchbars
-   ################################################################################ */
-
-#searchbars {
-  padding-top: 0.15rem;
-}
-
-#searchbars > ul {
-  align-items: center;
-  display: flex;
-  margin: 0;
-  padding: 0.25rem 0.25rem 0.25rem 0.25rem;
-}
-
-#searchbars > ul li {
-  display: inline;
-  flex: 1 1 auto;
-}
-
-#searchbars ul > *:not(:last-child) {
-  margin-right: 1rem;
-}
-
-#searchbars > ul input {
-  width: 100%;
-}
-
-#searchbars .search_form {
-  background: 0 0; /* sets initial values for all */
-}
-
-#searchbars .search_form input {
-  border: thin solid lightgray;
-  border-radius: 0.7rem;
-  background: unset;
-  box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.15);
-  transition: 300ms ease-in-out;
 }
 
 /* ################################################################################
@@ -2254,7 +1700,7 @@ ul#userinfo_username {
 }
 
 /* ################################################################################
-   1135 Sidebar parameters
+   3040 Sidebar parameters
    ################################################################################ */
 
 
@@ -2264,7 +1710,7 @@ ul#userinfo_username {
 
 
 /* ################################################################################
-   1199 Pages that do not follow the Usual DOM
+   5900 Pages that do not follow the Usual DOM
    ################################################################################ */ 
 
 /* logchecker goes content > linkbox + thin(h2),
@@ -2302,11 +1748,11 @@ margin-bottom: .1rem
 
 
 /* ################################################################################
-   1300 INBOX
+   5100 INBOX
    ################################################################################ */
 
 /* ################################################################################
-   1310 Inbox elements
+   5110 Inbox elements
    ################################################################################ */
 
 #inbox {
@@ -2391,9 +1837,534 @@ margin-bottom: .1rem
   width: 20vw;
   }
 
+/* ################################################################################
+   6100 forms
+   ################################################################################ */
+
+input {
+  cursor: pointer;
+}
+
+input[type=text] {
+  cursor: text;
+}
+
+textarea {
+  width: 500px !important;
+  height: 100px;
+}
+
+
+input[type=file] {
+  padding: 1px 3px;
+}
+
+select {
+  padding: 1px;
+}
+
+input[type=button],
+input[type=submit] {
+  background-color: #f4f4f4;
+  background-image: none;
+  border-color: #cdcdcd #999 #999 #cdcdcd;
+  border-style: solid;
+  border-width: 1px;
+  font-weight: 700;
+}
+
+input[type=button]:active,
+input[type=submit]:active {
+  color: #007dc7 !important;
+}
+
+input[value="Upload torrent"],
+input[value="Upload torrents"] {
+  margin: 15px 0 0;
+  background-color: #007dc7;
+  color: #fff;
+  font-size: 15px;
+  border-color: #63afdd #005488 #005488 #63afdd;
+  border-style: solid;
+  border-width: 1px;
+}
+
+input[value="Upload torrent"],
+input[value="Upload torrents"]:active {
+  color: #f4f4f4 !important;
+}
 
 /* ################################################################################
-   7200 Upload Warnings
+   8200 appearance items
+   ################################################################################ */
+
+h1,
+h2,
+h3,
+h4 {
+  margin-top: 0;
+  padding: 0;
+}
+
+.nobr {
+  white-space: nowrap;
+  font-weight: 400;
+}
+
+.rowa td {
+  background-color: #f5f5f5;
+}
+
+.rowb td {
+  background-color: #fff;
+}
+
+p {
+  margin: 10px 0 5px;
+}
+
+.pad {
+  padding: 0 !important;
+}
+
+#blog .pad,
+.box2 .pad,
+.main_column .pad,
+.sidebar .pad {
+  padding: 10px !important;
+}
+
+
+#chat #nav_irc a,
+#collage #nav_collages a,
+#forums #nav_forums a,
+#index #nav_index a,
+#requests #nav_requests a,
+#rules #nav_rules a,
+#staff #nav_staff a,
+#top10 #nav_top10 a,
+#torrents #nav_torrents a,
+#wiki #nav_wiki a {
+  font-weight: 700;
+}
+
+
+
+/* ################################################################################
+   8100 Ratios and Sizes
+   ################################################################################ */
+
+.r00 {
+  color: red;
+}
+
+.r01,
+.r02 {
+  color: #ff1300;
+}
+
+.r03 {
+  color: #ff2600;
+}
+
+.r04 {
+  color: #ff4c00;
+}
+
+.r05,
+.r06 {
+  color: #ff5e00;
+}
+
+.r07 {
+  color: #ff7100;
+}
+
+.r08 {
+  color: #ff9700;
+}
+
+.r09 {
+  color: #fa0;
+}
+
+.r10 {
+  color: #74c42e;
+}
+
+.r20,
+.r50,
+.r99 {
+  color: #418b00;
+}
+
+span.size1 {
+  font-size: 0.8em;
+}
+
+span.size2 {
+  font-size: 1em;
+}
+
+span.size3 {
+  font-size: 1.25em;
+}
+
+span.size4 {
+  font-size: 1.5em;
+}
+
+span.size5 {
+  font-size: 1.75em;
+}
+
+span.size6 {
+  font-size: 2em;
+}
+
+span.size7 {
+  font-size: 2.25em;
+}
+
+span.size8 {
+  font-size: 2.5em;
+}
+
+span.size9 {
+  font-size: 2.75em;
+}
+
+span.size10 {
+  font-size: 3em;
+}
+
+td.r00 {
+  background-color: #faefed !important;
+}
+
+/* ################################################################################
+   7100 lightbox and curtain
+   ################################################################################ */
+
+.curtain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #111 50% 0 no-repeat fixed;
+  z-index: 1001;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+}
+
+.lightbox {
+  position: fixed;
+  text-align: center;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+  padding: 0;
+  z-index: 1002;
+  overflow: auto;
+}
+
+.lightbox img {
+  max-width: 100%;
+  max-height: 100%;
+  background-color: transparent;
+  z-index: -1;
+}
+
+/* ################################################################################
+   2320 polls
+   ################################################################################ */
+
+.poll {
+  list-style: none;
+  padding: 3px 5px;
+  margin: 0;
+}
+
+.poll li {
+  clear: both;
+}
+
+.poll .graph {
+  padding: 0 0 5px;
+}
+
+.poll .graph span {
+  display: block;
+  height: 19px;
+  float: left;
+}
+
+.poll .graph .left_poll {
+  width: 9px;
+  background: url(images/poll_left.png) 0 0 no-repeat;
+}
+
+.poll .graph .center_poll {
+  background: url(images/poll_middle.png) 0 0 repeat-x;
+  max-width: 865px;
+}
+
+#index .poll .graph .center_poll {
+  max-width: 185px;
+}
+
+.poll .graph .right_poll {
+  width: 11px;
+  background: url(images/poll_right.png) 0 0 no-repeat;
+}
+
+/* ################################################################################
+   5310 settings sidebar
+   ################################################################################ */
+
+div.sidebar.settings_sidebar div#settings_sections li h2 {
+  font-size: unset;
+}
+
+div.sidebar.settings_sidebar {
+  margin-right: 2rem;
+}
+
+/* ################################################################################
+   6900 page items
+   ################################################################################ */
+
+.linkbox {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.linkbox:first-child {
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.linkbox {
+  border-top: 0;
+}
+
+/* ################################################################################
+   6200 tables
+   ################################################################################ */
+
+td p {
+  margin: 0;
+}
+
+td.label {
+  width: 16%;
+  border-right: 1px solid #e6e6e6;
+}
+
+table {
+  padding: 0;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#content table:not(.forum_post) td,
+#content table:not(.forum_post) th {
+  padding: 5px;
+  border-top: 1px solid #e6e6e6;
+}
+
+#content table td h4 {
+  margin: 0;
+}
+
+#content table .colhead_dark a,
+#content table .colhead a {
+  color: #575757;
+  font-weight: 700;
+}
+
+#content table .colhead_dark a:hover,
+#content table .colhead a:hover {
+  color: #007dc6;
+}
+
+#vanityhouse {
+  margin: 0;
+}
+
+#vanityhouse tr:hover {
+  background-color: #f0f0f0;
+}
+
+#friends table {
+  width: 60%;
+  margin: 0 auto;
+}
+
+#friends table textarea {
+  height: 42px;
+  width: 270px !important;
+  margin: 0;
+}
+
+#friends table .left {
+  width: 50%;
+  text-align: right;
+}
+
+#friends table .left input[type=submit] {
+  min-width: 100%;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+#friends table td.avatar {
+  padding: 0 0 5px;
+}
+
+#friends br {
+  display: none;
+}
+
+body:not(#requests):not(#friends) .box table:not(#vanityhouse) {
+  margin: 0;
+  background-color: #fff;
+}
+
+
+#forums h3 {
+  margin: 15px 0;
+}
+
+#quickreplypreview {
+  background-color: #f0f0f0;
+  border: 1px solid #c6c6c6;
+}
+
+#blog blockquote,
+#wiki .box blockquote,
+.forum_post blockquote {
+  border: 1px dotted #dcdcdc;
+  padding: 6px;
+  background: #fff url(images/quote_bg.png) -10px -5px no-repeat;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+#forums blockquote {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.torrentdetails blockquote {
+  background-image: none;
+  background-color: hsla(0, 0%, 100%, 0.6);
+}
+
+#blog div.spoiler,
+#wiki .box blockquote.spoiler,
+.forum_post blockquote.spoiler {
+  background: #fff;
+}
+
+.forum_post {
+  border: none;
+  margin: 0 0 10px;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.forum_post .avatar {
+  width: 150px;
+  padding: 0 13px 0 0;
+}
+
+.forum_post .colhead_dark td {
+  padding: 5px;
+}
+
+.forum_post .body {
+  padding: 10px 20px 15px 15px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 1px solid #d9d9d9;
+  border-top-style: none !important;
+  box-shadow: -4px 1px 8px rgba(187, 215, 235, 0.8);
+  background-color: #f5f5f5;
+  word-wrap: break-word;
+}
+
+.forum_post .body div {
+  margin: 10px;
+}
+
+.forum_post .body div a {
+  word-wrap: break-word;
+}
+
+#forums .forum_post .body {
+  max-width: 708px;
+}
+
+#artist .forum_post .body textarea,
+#requests .forum_post .body textarea,
+#torrents .forum_post .body textarea {
+  width: 420px !important;
+}
+
+#userhistory .forum_post .body {
+  padding: 20px 20px 20px 40px;
+}
+
+#userhistory .forum_post tr.colhead_dark {
+  background-color: #e8e8e8;
+  background-image: none;
+}
+
+#artist .forum_post .body div div,
+#collage .forum_post .body div div,
+#forums .forum_post .body div div,
+#torrents .forum_post .body div div {
+  background: none;
+  padding: 0;
+}
+
+.min_padding {
+  padding: 0;
+}
+
+#forums .forum_post li {
+  margin: 0 0 0 20px;
+  padding: 0;
+}
+
+#forums #content .thin .box form .box input[type=Text] {
+  font-size: 20px;
+  width: 500px;
+}
+
+#forums #content form .box {
+  width: 510px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+strong.quoteheader {
+  color: #575757;
+}
+
+.sidebar .box .stats li div {
+  letter-spacing: 0 !important;
+}
+
+.sidebar .box .stats li div a {
+  font-family: monospace !important;
+}
+
+/* ################################################################################
+   6800 Upload Warnings
    ################################################################################ */
 
 /* display a popup when any upload warning occurs inline on the page */
@@ -2449,7 +2420,7 @@ ul#check.nobullet > * {
 }
 
 /* ################################################################################
-   8000 FOOTER
+   9000 FOOTER
    ################################################################################ */
 
 #footer {
