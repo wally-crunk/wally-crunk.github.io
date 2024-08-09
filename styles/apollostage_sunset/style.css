@@ -3224,7 +3224,7 @@ Documentation of mobile classes:
   /* Notify user they have an alert & must rotate to see. */
   #wrapper:has(#alerts):before {
     content: "";
-    background-image: url("/svg/std/notify-rotate-darkmode-ccc.svg");
+    background-image: url("/svg/std/notify-rotate-lightmode.svg");
     background-color: #ffb0a0;
     background-position: top center;
     background-size: auto 32px;
