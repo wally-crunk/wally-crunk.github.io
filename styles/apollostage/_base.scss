@@ -3671,11 +3671,11 @@ Documentation of mobile classes:
   /* Notify user they have an alert & must rotate to see. */
   #wrapper:has(#alerts):before {
     content: "";
-    background-image: url("/svg/std/notify-rotate-dark-mode-ccc.svg");
-    background-position: 0;
-    background-size: auto 24px;
+    background-image: $icon-mobile-rotate-grounded;
+    background-position: top center;
+    background-size: auto 32px;
     background-repeat: no-repeat;
-    left: 6ch;
+    left: 15%;
     pointer-events: none;
     transform: translateZ(0);
     width: 120px;
@@ -3685,7 +3685,6 @@ Documentation of mobile classes:
     top: 0;
     box-sizing: content-box;
   }
-
   /* ************************************************ */
 
   /* ## 4.18 Checkboxes ~ purpose undocumented */
