@@ -642,7 +642,7 @@ table.box2 {
 }
 
 .forum_post.forum_unread {
-  border-top: 2px solid #c9a612;
+  border-top: 2px solid #ff8c00;
 }
 
 .forum_post.wrap_overflow.box.vertical_margin td.body {
@@ -694,7 +694,7 @@ table.box2 {
 
 .last_read ::before {
   content: "➤";
-  color: #c9a612;
+  color: #ff8c00;
   display: inline-block;
 }
 
