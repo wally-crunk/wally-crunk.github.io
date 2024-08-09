@@ -2253,17 +2253,15 @@ tr.snatched_torrent div.tags::before {
   @keyframes fx-borderpop-good {
     0% {
       border: thick solid #c47891;
-    } /**/
+    }
     30% {
       border: thick solid #ff9e98;
-    } /**/
+    }
     90% {
       border: thick solid #c47891;
-    } /**/
+    }
   }
-  .save_message,
-  #save-message,
-  .alertbar {
+  .save_message {
     animation-name: fx-borderpop-good;
     animation-duration: 1.5s;
   }
@@ -2322,31 +2320,6 @@ ul#check::after {
    once CSS is available.  CSS not yet available.
 */
 /* ## 2.5 Toolboxes ## */
-/* ERRORS */
-.save_message {
-  border: thick solid #32a431;
-  padding: 1rem 1rem 1rem 48px;
-  background-color: rgba(234, 235, 235, 0.9333333333);
-  background-image: url(/svg/site/ops-icon-document-000.svg);
-  background-repeat: no-repeat;
-  background-position: 8px;
-  background-size: 32px;
-  width: 90%;
-}
-
-.elem_error,
-.error_message {
-  border: thick solid #daa520;
-  padding: 1rem 1rem 1rem 48px;
-  background-color: rgba(234, 235, 235, 0.9333333333);
-  background-image: url(/svg/site/ops-icon-triangle-000.svg);
-  background-repeat: no-repeat;
-  background-position: 8px;
-  background-size: 32px;
-  width: 90%;
-  margin: 0.5ch auto;
-}
-
 /* TOOLBOXES */
 .permission_head {
   width: 400px;

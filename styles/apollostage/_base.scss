@@ -2464,18 +2464,16 @@ tr.snatched_torrent div.tags::before {
   @keyframes fx-borderpop-good {
     0% {
       border: thick solid $color-background-notification-gradient-2;
-    } /**/
+    }
     30% {
       border: thick solid $color-background-notification-gradient-1;
-    } /**/
+    }
     90% {
       border: thick solid $color-background-notification-gradient-2;
-    } /**/
+    }
   }
 
-  .save_message,
-  #save-message,
-  .alertbar {
+  .save_message {
     animation-name: fx-borderpop-good;
     animation-duration: 1.5s;
   }
@@ -2552,30 +2550,6 @@ ul#check::after {
 
 /* ## 2.5 Toolboxes ## */
 
-/* ERRORS */
-.save_message {
-  border: thick solid #32a431;
-  padding: 1rem 1rem 1rem 48px;
-  background-color: #eaebebee;
-  background-image: url(/svg/site/ops-icon-document-000.svg);
-  background-repeat: no-repeat;
-  background-position: 8px;
-  background-size: 32px;
-  width: 90%;
-}
-.elem_error,
-.error_message {
-  border: thick solid #daa520;
-  padding: 1rem 1rem 1rem 48px;
-  background-color: #eaebebee;
-  background-image: url(/svg/site/ops-icon-triangle-000.svg);
-  background-repeat: no-repeat;
-  background-position: 8px;
-  background-size: 32px;
-  width: 90%;
-  margin: 0.5ch auto;
-}
-
 /* TOOLBOXES */
 .permission_head {
   width: 400px;
@@ -2620,7 +2594,7 @@ ul#check::after {
 }
 
 /* sticky headers ~ mobile */
-@media (max-width: 575px) {
+@media (max-width: $phone-screen-size) {
   body {
     --header-row-height: 32px;
   }
