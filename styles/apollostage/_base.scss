@@ -3450,14 +3450,14 @@ Documentation of mobile classes:
   /* topbar for mobile ~ site logo, upper left */
   #extra5 {
     background-image: $logo-site-square;
-    background-position: 0;
-    background-size: auto 24px;
+    background-position: left center;
+    background-size: auto 30px;
     background-repeat: no-repeat;
-    left: 4px;
     pointer-events: none;
     transform: translateZ(0);
-    width: 32px;
+    width: 15%;
     z-index: $z-mobilemenu_closed-tab-icons;
+    
   }
 
   #extra4,
@@ -3671,14 +3671,15 @@ Documentation of mobile classes:
   /* Notify user they have an alert & must rotate to see. */
   #wrapper:has(#alerts):before {
     content: "";
-    background-image: $icon-mobile-rotate-grounded;
+    background-image: $icon-mobile-rotate;
+    background-color: $color-mobilemenu-closed-overlays;
     background-position: top center;
     background-size: auto 32px;
     background-repeat: no-repeat;
     left: 15%;
     pointer-events: none;
     transform: translateZ(0);
-    width: 120px;
+    width: calc(85% /3);
     z-index: 5000;
     height: 32px;
     position: fixed;

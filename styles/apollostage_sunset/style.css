@@ -3053,13 +3053,12 @@ Documentation of mobile classes:
   /* topbar for mobile ~ site logo, upper left */
   #extra5 {
     background-image: url("/svg/site/ops-logo-loop-darkmode.svg");
-    background-position: 0;
-    background-size: auto 24px;
+    background-position: left center;
+    background-size: auto 30px;
     background-repeat: no-repeat;
-    left: 4px;
     pointer-events: none;
     transform: translateZ(0);
-    width: 32px;
+    width: 15%;
     z-index: 500;
   }
   #extra4,
@@ -3225,14 +3224,15 @@ Documentation of mobile classes:
   /* Notify user they have an alert & must rotate to see. */
   #wrapper:has(#alerts):before {
     content: "";
-    background-image: url("/svg/std/notify-rotate-grounded.svg");
+    background-image: url("/svg/std/notify-rotate-darkmode-ccc.svg");
+    background-color: #ffb0a0;
     background-position: top center;
     background-size: auto 32px;
     background-repeat: no-repeat;
     left: 15%;
     pointer-events: none;
     transform: translateZ(0);
-    width: 120px;
+    width: 28.3333333333%;
     z-index: 5000;
     height: 32px;
     position: fixed;
