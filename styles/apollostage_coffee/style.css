@@ -3216,48 +3216,29 @@ Documentation of mobile classes:
     height: calc(var(--row-height) - 9px);
   }
   /* END searchboxes */
-  /* ## 4.17.10 Alertbar and Alerts on Mobile */
-  /*  Alertbar is part of the DIV #header, which is designed to collapse on mobile. */
+  /* ## 4.17.10 Alerts for mobile users */
+  /*  Alertbar is part of the #header, which is shown as a pulldown on mobile. 
+      No room for alerts in the pulldown. */
   #alerts {
     display: none;
   }
-  /*    TODO: Alertbar alerts are not visible on Mobile.
-  /*
-  /*    DETAILS: Per site code, #alerts and .alertbar are delivered in the 'header'
-  /*      group, which we restyle to be a pulldown menu.
-  /*      If we turn on .alertbar and position it inside the pulldown menu,
-  /*      for example hovering over row 2 (the statistics block), or
-  /*      below the menu in the 'shadow' area, — then when the menu is closed,
-  /*      hovering over the invisible .alertbar position shouldn't do anything,
-  /*      but it opens the menu, which is unacceptable.
-  /*      Why isn't Alertbar hover disabled when the menu is closed?
-  /*     Possible solution: move hoverbar to the 1st row of menu and float (z-height)
-  /*      over what's ordinarily there.  That solution is not chosen because
-  /*      in the first row, it blocks the 'settings' button until notifs are cleared.
-  /*     TODO: Find a better way.
-  /*  Meantime, fearless users: UNCOMMENT the block below
-  /*  to turn ON alertbar on mobile. Codeblock below requires debugging.
-
-  /* =========== */
-  /*
-  /*  #alerts > .alertbar {
-  /*    display: inline-block;
-  /*    position: absolute;
-  /*    margin: 0;
-  /*    top: 0;
-  /*    left: 2%;
-  /*    width: 96%;
-  /*    height: auto;
-  /*    z-index: 99999;
-  /*    opacity: 1 !important;
-  /*    }
-  /*
-  /*  /* on mobile, suppress any other non-alertbar alerts (if any) */
-  /*  #alerts > :not(.alertbar) {
-  /*    display: none;
-  /*    }
-  /*
-  /* =========== */
+  /* Notify user they have an alert & must rotate to see. */
+  #wrapper:has(#alerts):before {
+    content: "";
+    background-image: url("/svg/std/notify-rotate-dark-mode-ccc.svg");
+    background-position: 0;
+    background-size: auto 24px;
+    background-repeat: no-repeat;
+    left: 6ch;
+    pointer-events: none;
+    transform: translateZ(0);
+    width: 120px;
+    z-index: 5000;
+    height: 32px;
+    position: fixed;
+    top: 0;
+    box-sizing: content-box;
+  }
   /* ************************************************ */
   /* ## 4.18 Checkboxes ~ purpose undocumented */
   #extracb1 {
