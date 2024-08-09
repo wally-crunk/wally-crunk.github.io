@@ -1976,7 +1976,7 @@ body#collage .cats_music {
 }
 /* first row of each box */
 #noty_bottomRight_layout_container .noty_message {
-  background: radial-gradient(circle at top right, #23d1a5, #126c56) !important;
+  background: radial-gradient(circle at top right, #23d1a5, #157d63) !important;
   color: #fdfffd !important;
   font-weight: 700;
   padding: 0.6rem !important;
@@ -2243,22 +2243,22 @@ tr.snatched_torrent div.tags::before {
     0% {
       border: thick solid #f9e340;
     }
-    30% {
+    70% {
       border: thick solid hsl(348, 99%, 77%);
     }
-    90% {
+    100% {
       border: thick solid hsl(348, 84%, 51%);
     }
   }
   @keyframes fx-borderpop-good {
     0% {
-      border: thick solid #126c56;
+      border: thick solid #099909;
     }
-    30% {
-      border: thick solid #23d1a5;
+    70% {
+      border: thick solid #157d63;
     }
-    90% {
-      border: thick solid #126c56;
+    100% {
+      border: thick solid #157d63;
     }
   }
   .save_message {

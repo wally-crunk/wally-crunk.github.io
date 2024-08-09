@@ -2243,22 +2243,22 @@ tr.snatched_torrent div.tags::before {
     0% {
       border: thick solid #f9e340;
     }
-    30% {
+    70% {
       border: thick solid hsl(348, 99%, 77%);
     }
-    90% {
+    100% {
       border: thick solid hsl(348, 84%, 51%);
     }
   }
   @keyframes fx-borderpop-good {
     0% {
+      border: thick solid #099909;
+    }
+    70% {
       border: thick solid #c47891;
     }
-    30% {
-      border: thick solid #ff9e98;
-    }
-    90% {
-      border: thick solid #c47891;
+    100% {
+      border: thick solid #F78DA6;
     }
   }
   .save_message {

@@ -2453,23 +2453,23 @@ tr.snatched_torrent div.tags::before {
     0% {
       border: thick solid $ds-yellow;
     }
-    30% {
+    70% {
       border: thick solid $color-accent-border-warning-1;
     }
-    90% {
+    100% {
       border: thick solid $color-accent-border-warning-2;
     }
   }
 
   @keyframes fx-borderpop-good {
     0% {
+      border: thick solid $ds-green;
+    }
+    70% {
       border: thick solid $color-background-notification-gradient-2;
     }
-    30% {
-      border: thick solid $color-background-notification-gradient-1;
-    }
-    90% {
-      border: thick solid $color-background-notification-gradient-2;
+    100% {
+      border: thick solid $color-accent-border-alert;
     }
   }
 
