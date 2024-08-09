@@ -3802,7 +3802,7 @@ Documentation of mobile classes:
    various 'debug' features are avail in this doc elsewhere */
 
 #footer p:last-of-type::after {
-  content: " | Apollostage build " + $build-slug;
+  content: " | " + $build-slug;
 }
 
 /* ########################################################################
