@@ -2387,7 +2387,7 @@ ul#check::after {
 /* sticky headers ~ mobile */
 @media (max-width: 575px) {
   body {
-    --header-row-height: 32px;
+    --header-row-height: $height-mobilemenu_closed-tab;
   }
   .toolbox_container tr.colhead {
     position: sticky;
@@ -3084,6 +3084,7 @@ Documentation of mobile classes:
   }
   /* ## 4.17.4 Mobile Menu when Open, Setup */
   /* debugging. remove the nonce words DEBUGGING to see how this works */
+  /* keyword: x-debug */
   #debugging #userinfo_major,
   #debugging #userinfo_major > * {
     border: thin dotted blue;
@@ -3120,7 +3121,7 @@ Documentation of mobile classes:
   }
   /* end setup
 
-    /* ## 4.17.5  Menu when open, Row One */
+  /* ## 4.17.5  Menu when open, Row One */
   /* Left side ~ site logo */
   #logo {
     position: inherit;
@@ -3240,7 +3241,6 @@ Documentation of mobile classes:
   #wrapper:has(#alerts)::before {
     content: "";
     background-image: url("/svg/std/notify-rotate-lightmode.svg");
-    background-color: #ffb0a0;
     background-position: top center;
     background-size: auto 32px;
     background-repeat: no-repeat;
@@ -3248,7 +3248,7 @@ Documentation of mobile classes:
     pointer-events: none;
     transform: translateZ(0);
     width: 28.3333333333%;
-    z-index: 5000;
+    z-index: 500;
     height: 32px;
     position: fixed;
     top: 0;
@@ -3350,7 +3350,7 @@ Documentation of mobile classes:
    # 6 CLOSING
    ######################################################################## */
 /* ## 6.1 Debugging Tools
-   various 'debug' features are avail in this doc elsewhere */
+   various 'debug' and x-debug features are avail in this doc elsewhere */
 #footer p:last-of-type::after {
   content: " | Apollostage build 240808 sunset";
 }
