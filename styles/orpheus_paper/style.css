@@ -45,11 +45,11 @@
    ### 2.2.3  Non-clickable appearance
    ### 2.2.4  Other special cases
    ### 2.2.5  Snatched torrent indicators
-   ## 2.3 Alertbar and error handling 
-   ## 2.3.1 Base styling 
-   ## 2.3.2 additional treatment for messages that pop 
+   ## 2.3 Alertbar and error handling
+   ## 2.3.1 Base styling
+   ## 2.3.2 additional treatment for messages that pop
    ## 2.4 Upload warnings ##
-   ### 2.4.1 Post-Upload Download your Torrents Message 
+   ### 2.4.1 Post-Upload Download your Torrents Message
    ## 2.5 Toolboxes */
 /* # 3 DOCUMENTATION OF MOBILE CLASSES */
 /* # 4 CHANGES FOR MOBILE VIEW
@@ -105,11 +105,30 @@
 /* CSS compiler will leave this section blank. */
 /* ## 0.3 Fonts */
 :root {
-  --system-ui: system-ui, "Segoe UI", "Roboto", "Ubuntu", "Roboto",
-    "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica", "Arial", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  --monospace-ui: "Cascadia Code", "Consolas", "Ubuntu Mono", "Fira Code",
-    "Menlo", "Liberation Mono", "Monaco", monospace;
+  --system-ui:
+    system-ui,
+    "Segoe UI",
+    "Roboto",
+    "Ubuntu",
+    "Roboto",
+    "Oxygen-Sans",
+    "Ubuntu",
+    "Cantarell",
+    "Helvetica",
+    "Arial",
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  --monospace-ui:
+    "Cascadia Code",
+    "Consolas",
+    "Ubuntu Mono",
+    "Fira Code",
+    "Menlo",
+    "Liberation Mono",
+    "Monaco",
+    monospace;
 }
 
 body,
@@ -1142,16 +1161,13 @@ ul.collage_images li a > span {
 .lightbox {
   align-items: center;
   background-color: rgba(0, 0, 0, 0.32);
-  bottom: 0;
+  inset: 0 0 0 0;
   cursor: pointer;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
-  left: 0;
   margin: auto;
   position: fixed;
-  right: 0;
-  top: 0;
   user-select: none;
   z-index: 1000;
 }
@@ -2221,8 +2237,8 @@ tr.snatched_torrent div.tags::before {
   border: thick solid hsl(348, 84%, 51%);
   padding: 1rem 1rem 1rem 48px;
   background-color: #633;
-  background-image: url(/svg/site/ops-icon-triangle-ccc.svg);
-  background-image: url(https://wally-crunk.github.io/svg/site/ops-icon-triangle-ccc.svg);
+  background-image: url("/svg/site/ops-icon-triangle-ccc.svg");
+  background-image: url("https://wally-crunk.github.io/svg/site/ops-icon-triangle-ccc.svg");
   background-repeat: no-repeat;
   background-position: 8px;
   background-size: 32px;
@@ -2290,7 +2306,7 @@ ul#check.nobullet > * {
   font-weight: 700;
 }
 
-/* We also pop a message in header to draw attention 
+/* We also pop a message in header to draw attention
    when any upload warning occurs inline on the page */
 .upload-error::after,
 ul#check::after {
@@ -2607,7 +2623,7 @@ Documentation of mobile classes:
   .m_table td {
     display: block;
   }
-  .m_table tr:not(.colhead):not(.colhead_dark) td:not(.m_td_left):not(.m_td_right) {
+  .m_table tr:not(.colhead, .colhead_dark) td:not(.m_td_left, .m_td_right) {
     padding-bottom: 0;
     padding-top: 0;
     text-align: left;
@@ -2788,7 +2804,7 @@ Documentation of mobile classes:
   /* ************************************************ */
   /* ## 4.11 BEGIN collage table */
   /* ## 4.11.1 collage setup */
-  table.m_table.collage_table tr:not(.colhead):not(.colhead) {
+  table.m_table.collage_table tr:not(.colhead, .colhead) {
     display: flex;
     flex-direction: column;
   }
@@ -2917,11 +2933,10 @@ Documentation of mobile classes:
   .forum_post tbody {
     align-items: stretch;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-flow: column wrap;
     width: 100%;
   }
-  .forum_post tr:not(.colhead_dark):not(.hidden) {
+  .forum_post tr:not(.colhead_dark, .hidden) {
     display: block;
     position: relative;
     width: 100%;
@@ -3091,16 +3106,16 @@ Documentation of mobile classes:
     line-height: 50px;
     text-align: center;
   }
-  #header ul:not(#userinfo_major):not(#userinfo_stats) {
+  #header ul:not(#userinfo_major, #userinfo_stats) {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
   }
-  #header ul:not(#userinfo_major):not(#userinfo_stats) li {
+  #header ul:not(#userinfo_major, #userinfo_stats) li {
     margin: 0;
     width: 33.3%;
   }
-  #header ul:not(#userinfo_major):not(#userinfo_stats) a {
+  #header ul:not(#userinfo_major, #userinfo_stats) a {
     line-height: var(--row-height);
   }
   /* end setup
@@ -3216,13 +3231,13 @@ Documentation of mobile classes:
   }
   /* END searchboxes */
   /* ## 4.17.10 Alerts for mobile users */
-  /*  Alertbar is part of the #header, which is shown as a pulldown on mobile. 
+  /*  Alertbar is part of the #header, which is shown as a pulldown on mobile.
       No room for alerts in the pulldown. */
   #alerts {
     display: none;
   }
   /* Notify user they have an alert & must rotate to see. */
-  #wrapper:has(#alerts):before {
+  #wrapper:has(#alerts)::before {
     content: "";
     background-image: url("/svg/std/notify-rotate-darkmode-ccc.svg");
     background-color: #003d2d;
@@ -3321,7 +3336,7 @@ Documentation of mobile classes:
     --row-height: 35px;
   }
 }
-@media (max-width: 575px) and (max-height: 510px) {
+@media (max-width: 575px) and (height <= 510px) {
   #userinfo_major,
   #userinfo_major > * {
     display: none;
