@@ -4,6 +4,7 @@
 // pro-03 plus live-good
 // 0041 was: ok, menu shrink and menu 3cols are problems.
 // 0042: tackle menu 3cols and other flyouts, also content 2 cols into 1 via flex.
+// 0043: menu now 2 cols or 1 and grows vertically.
    ################################################################################ */
 
 @import url('https://wally-crunk.github.io/styles/proton/font_call.css');
@@ -57,12 +58,12 @@ body {
 }
 
 .main_column {
-  width: 695px;
+  width: min(69%,695px);
 }
 
 .sidebar {
   float: right;
-  width: 250px;
+  width: min(20%,250px);
 }
 
 .hide {
@@ -79,14 +80,13 @@ body {
 
 #header {
   /* me */
-  width: 100%;
+  width: min(98%, 1000px);
+  margin: 0 auto 1rem auto;
   box-sizing: border-box;
   top: 0;
   left: 0;
-  background-size: 100% 100%;
-  background-position: 0px 0px;
-  background-image: linear-gradient(90deg, #e6e6e6FF 44%, #F4F8F4FF 100%);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-image: linear-gradient(180deg, #e6e6e6FF 44%, #F4F8F4FF 100%) fill 0//0 100vw;
+/*   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
   padding: 1rem;
   
   /* downstream */
@@ -100,10 +100,13 @@ body {
      "bLogo bMenu bMinor bAlertbar"
      "bSearchbar bSearchbar bSearchbar bSearchbar";
   
-   grid-template-columns: 1fr 2fr 3fr 4fr;
+   grid-template-columns: 1.5fr 2fr 3fr 3.5fr;
    grid-template-rows: auto auto auto auto;
   padding-left: auto;
-}
+  
+ }
+
+
 
 
 /* ################################################################################
@@ -166,31 +169,38 @@ body {
 }
 
 #menu ul {
-  height: 5rem;  
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 0.05rem;
-
   list-style:none;
   padding: 0;
 }
+
+#menu ul {
+/* responsive without media query */
+  --w: 8ch;
+  --n: 2;
+ display: grid;
+     grid-template-columns:repeat(auto-fit,minmax(clamp(100%/(var(--n) + 1) + 0.1%,var(--w),100%),1fr));
+ gap: 1px;)
+}
+
+
 /* ################################################################################
    1043 bUser
    ################################################################################ */
 #userinfo #userinfo_username {
   border-right: thin solid gray;
-  margin: 0 0.5rem 0 0;
-  padding: 0;
- 
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-  gap: 0.5rem;
-  align-items: center;
+  margin: 0 0.5rem 0;
+  padding: 0 0 0.5rem 0;
+  list-style: none;
 
-   list-style: none;
+/* responsive without media query */
+  --w: 9ch;
+  --n: 3;
+ display: grid;
+     grid-template-columns:repeat(auto-fit,minmax(clamp(100%/(var(--n) + 1) + 0.1%,var(--w),100%),1fr));)
+}
+#userinfo_username > * {/*! border:thick solid blue; */ margin:0; padding:0;}
+#nav_userclass:has(.hidden) {
+  display: none;
 }
 /* ################################################################################
    1044 bMinor
@@ -199,28 +209,40 @@ body {
 #userinfo #userinfo_minor {
   border-right: thin solid gray;
   margin: 0 0.5rem 0 0;
-  padding: 0 0 0 0.5rem;
-  height: 6rem;  
+  padding: 0;
+  
   /*downstream*/
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: flex-end;
   align-items: baseline;
   list-style: none;
 }
+
+ */#userinfo #userinfo_minor  {
+  list-style:none;
+  padding: 0;
+}
+
+#userinfo #userinfo_minor  {
+/* responsive without media query */
+  --w: 12ch;
+  --n: 2;
+ display: grid;
+     grid-template-columns:repeat(auto-fit,minmax(clamp(100%/(var(--n) + 1) + 0.1%,var(--w),100%),1fr));
+ gap: 1px;)
+}
+
 
 /* ################################################################################
    1045 bMajor
    ################################################################################ */
 #userinfo #userinfo_major {
   margin: 0;
-  padding: 0;
+  padding: 0 0 0.5rem 0;
 
   /*downstream*/
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
-  gap: 0.5rem;
+  gap: 0 0.5rem;
   list-style: none;
 }
 
@@ -236,7 +258,7 @@ ul#userinfo_stats {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
-  gap: 0.5rem;
+  gap: 0 0.5rem;
   align-items: center;
   list-style: none;
 }
@@ -298,7 +320,7 @@ ul#userinfo_stats {
   align-items: center;
   display: flex;
   margin: 0;
-  gap: 1.25rem;
+  gap: min(3%,2ch);
   padding: .15rem 0;
   }
 
@@ -318,7 +340,7 @@ ul#userinfo_stats {
 
 #searchbars .search_form input {
   border: thin solid lightgray;
-  border-radius: 0.7rem;
+  border-radius: 0.35rem;
   background: unset;
   box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.15);
   transition: 300ms ease-in-out;
@@ -438,8 +460,7 @@ ul#userinfo_stats li span.stat {
 /* ################################################################################
    2000 CONTENT...
    ################################################################################ */
-@namespace url(http://www.w3.org/1999/xhtml);
-@namespace svg url(http://www.w3.org/2000/svg);
+
 
 /* GLOBAL */
 // TODO: FIX_STATIC_SERVER
@@ -571,7 +592,7 @@ input[type="text"] {
 input,
 select,
 textarea {
-  font-family: Arial, sans-serif;
+  font-family: system-ui, sans-serif;
   font-size: 1em;
   border: 1px solid #9c9c9c;
 }
@@ -688,17 +709,14 @@ input[value="Upload torrents"]:active {
 
 /* CONTENT */
 #content {
-  padding: 20px 20px 20px 20px;
+  padding: min(10%, 20px);
   margin: 38px auto;
   background-color: white;
   color: #575757;
   border-radius: 11px;
   z-index: 2;
-  /*! position: relative; */
   border: 1px solid #b5b5b5;
-  /*! background-clip: padding-box; */
-  -webkit-background-clip: border-box;
-  width: 999px;
+  width: clamp(65vw,999px,99vw);
   align-content: center;
 }
 
@@ -1260,15 +1278,14 @@ tr.torrent .bookmark > a::after {
 
 /* ################################################################ */
 
-
 /* MAIN STRUCTURE */
 .main_column {
-  width: 695px;
+  width: min(695px,95%);
 }
 
 .sidebar {
   float: right;
-  width: 250px;
+  width: min(250px,95%);
 }
 
 /* ################################################################ */
@@ -1904,9 +1921,10 @@ h3 {
   margin: 0 0 5px -10px;
 }
 
-#userinfo_username .brackets {
+/* #userinfo_username .brackets {
   padding: 0 0 0 9px;
 }
+/* no, handle with grid*/
 
 #userinfo_major .brackets {
   padding: 0 8px 0 0;
@@ -2338,8 +2356,3 @@ TODO: Make these rules apply globally and add exceptions where needed
 #footer p:last-of-type::after {
   content: " | proton-0043 ~ experimental quality";
 }
-
-#content {
-  /*! width: 999px; */
-  /*! align-content: center; */
-  }
