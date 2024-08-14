@@ -1,24 +1,40 @@
 
 /* ################################################################################
    0000 NEW PROTON
-// pro-03 plus live-good
-// 0041 was: ok, menu shrink and menu 3cols are problems.
-// 0042: tackle menu 3cols and other flyouts, also content 2 cols into 1 via flex.
-// 0043: menu now 2 cols or 1 and grows vertically.
+// added system stack of fonts
+// todo: check 005.
+// todo: reflow settings page.
    ################################################################################ */
 
-@import url('https://wally-crunk.github.io/styles/proton/font_call.css');
 
 @namespace "http://www.w3.org/1999/xhtml";
 @namespace svg "http://www.w3.org/2000/svg";
 
 :root {
-  font-family: system-ui, Inter, sans-serif;
-  font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
-}
-
-@supports (font-variation-settings: normal) {
-  :root { font-family: system-ui, InterVariable, sans-serif; }
+  --system-ui:
+    system-ui,
+    "Segoe UI",
+    "Roboto",
+    "Ubuntu",
+    "Roboto",
+    "Oxygen-Sans",
+    "Ubuntu",
+    "Cantarell",
+    "Helvetica",
+    "Arial",
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  --monospace-ui:
+    "Cascadia Code",
+    "Consolas",
+    "Ubuntu Mono",
+    "Fira Code",
+    "Menlo",
+    "Liberation Mono",
+    "Monaco",
+    monospace;
 }
 
 /* ################################################################################
@@ -48,6 +64,7 @@ body {
   font-size: 0.7em;
   box-sizing: border-box;
   margin: 0;
+  font-family: var(--system-ui);
 }
 
 #wrapper {
@@ -1013,11 +1030,11 @@ strong.quoteheader {
 }
 
 .sidebar .box .stats li div a {
-  font-family: monospace !important;
+  font-family: var(--monospace-ui) !important;
 }
 
 #torrents .sidebar .box .stats li span.remove_artist a {
-  font-family: monospace;
+  font-family: var(--monospace-ui);
 }
 
 #torrents .sidebar .remove_tag a:hover,
