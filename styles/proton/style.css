@@ -409,13 +409,13 @@ ul#userinfo_stats li {
 
 ul#userinfo_username li a,
 #menu a {
-  color: --thatblue;
+  color: var(--thatblue);
   overflow: hidden;
 }
 
 ul#userinfo_username li a:hover,
 ul#userinfo_username li a.username:hover {
-  background-color: --thatblue;
+  background-color: var(--thatblue);
   color: #e6e6e6;
 }
 
@@ -440,12 +440,12 @@ ul#userinfo_major li a:hover,ul#userinfo_minor a:hover
 }
 
 ul#userinfo_stats li span.stat {
-  color: --thatblue;
+  color: var(--thatblue);
   margin-right: 2px;
 }
 
 #menu a:hover {
-  background-color: --thatblue;
+  background-color: var(--thatblue);
   color: #e6e6e6;
 }
 
@@ -486,7 +486,7 @@ ul#userinfo_stats li span.stat {
 {}
 
 a, a:visited, a:active {
-  color: --thatblue;
+  color: var(--thatblue);
   text-decoration-line: none;
 }
 
@@ -496,7 +496,7 @@ a:hover {
 }
 
 svg|a {
-  fill: --thatblue;
+  fill: var(--thatblue);
 }
 
 svg|a:hover {
@@ -805,7 +805,7 @@ table {
 
 #content table .colhead a:hover,
 #content table .colhead_dark a:hover {
-  color: --thatblue;
+  color: var(--thatblue);
 }
 
 #vanityhouse {
@@ -1166,7 +1166,7 @@ strong.quoteheader {
 }
 
 .tags a:hover {
-  color: --thatblue;
+  color: var(--thatblue);
 }
 
 #content form.search_form + .torrent_table {
@@ -1252,7 +1252,7 @@ tr.torrent .bookmark > a::after {
 
 #torrent_table tr.group_torrent td span a,
 .torrent_table tr.group_torrent td span a {
-  color: --thatblue;
+  color: var(--thatblue);
 }
 
 #torrent_table tr.group_torrent td span a:hover,
@@ -1268,7 +1268,7 @@ tr.torrent .bookmark > a::after {
 
 #torrent_table tr.group_torrent a:hover,
 .torrent_table tr.group_torrent a:hover {
-  color: --thatblue;
+  color: var(--thatblue);
 }
 
 #torrents #content .center .box form div input[type="text"],
@@ -2171,7 +2171,7 @@ div.box[style=""] .head {
 #forums img[width="500"] {
   width: 100%;
   height: 100%;
-  border-right: 5px --thatblue solid;
+  border-right: 5px var(--thatblue) solid;
   cursor: pointer;
   margin: 2px auto;
 }
