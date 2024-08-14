@@ -409,13 +409,13 @@ ul#userinfo_stats li {
 
 ul#userinfo_username li a,
 #menu a {
-  color: var(--thatblue);
+  color: --thatblue;
   overflow: hidden;
 }
 
 ul#userinfo_username li a:hover,
 ul#userinfo_username li a.username:hover {
-  background-color: var(--thatblue);
+  background-color: --thatblue;
   color: #e6e6e6;
 }
 
@@ -440,12 +440,12 @@ ul#userinfo_major li a:hover,ul#userinfo_minor a:hover
 }
 
 ul#userinfo_stats li span.stat {
-  color: var(--thatblue);
+  color: --thatblue;
   margin-right: 2px;
 }
 
 #menu a:hover {
-  background-color: var(--thatblue);
+  background-color: --thatblue;
   color: #e6e6e6;
 }
 
