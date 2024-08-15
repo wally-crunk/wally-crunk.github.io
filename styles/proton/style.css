@@ -510,7 +510,7 @@ a img {
 }
 
 #footer {
-  padding: 42px 0 20px 0;
+  padding: 42px 5ch 20px 0;
   color: #a5a5a5;
   text-align: left;
   background: #575757 url('images/footer_bg.png') top left repeat-x;
@@ -520,7 +520,9 @@ a img {
   border-radius: 11px;
   overflow: hidden;
   clear: both;
-  width: 950px;
+  width: clamp(99vw, 999px, 65vw);
+  align-content: center;
+
 }
 
 #footer p {
