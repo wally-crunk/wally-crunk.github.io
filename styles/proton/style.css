@@ -734,7 +734,7 @@ input[value="Upload torrents"]:active {
   border-radius: 11px;
   z-index: 2;
   border: 1px solid #b5b5b5;
-  width: clamp(65vw,999px,99vw);
+  width: clamp(99vw, 999px, 65vw);
   align-content: center;
 }
 
