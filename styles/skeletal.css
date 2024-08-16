@@ -1,0 +1,379 @@
+
+
+/* ################################################################################
+   0007 HYGIENE
+   ################################################################################ */
+
+body {
+  background: #ddc;
+  font-size: 0.7em;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: system-ui;
+}
+body {
+  --thatblue: hsl(207.1,100%,39%);
+}
+body ul {
+  list-style: none;
+}
+
+/* ################################################################################
+   0070 DEVELOPER
+   ################################################################################ */
+
+	#wrapper { border: thick solid steelblue; }
+	#header { border: thick solid skyblue; }
+	#content { border: thick solid black; }
+	#footer { border: thick solid brown; }
+	div.main_column { border: thick solid purple; }
+	div.sidebar { border: thick solid gray; }
+	div.sidebar.settings_sidebar {border:thick solid limegreen;}
+
+#content {display:none}
+#footer {display:none}
+
+/* ################################################################################
+   0101 SKELETON FOR MAIN/SIDEBAR LAYOUTS
+   ################################################################################ */
+
+#content .thin {
+
+  /* heydonworks' holy albatross method */
+  display: flex;
+  flex-wrap: wrap;
+  --margin: 1rem;
+  --modifier: calc(40rem - 100%);
+  margin: calc(var(--margin) * -1);
+}
+
+#content .thin > * {
+  flex-grow: 1;
+  flex-basis: calc(var(--modifier) * 999);
+  margin: var(--margin);
+}
+
+#content .thin  > .sidebar {
+  flex-grow: 1;
+  order: 20;
+}
+#content .thin  > .main_column {
+  flex-grow: 3;
+  order: 10;
+}
+
+/* ################################################################################
+   0121 SKELETON FOR 1-COLUMN LAYOUTS
+   ################################################################################ */
+
+body#forums div#wrapper div#content div.thin {
+   display: flex;
+   flex-flow: column nowrap;
+}
+
+
+
+
+
+
+
+
+
+
+/*
+ * 
+ * 
+ * 
+ */
+
+/* ################################################################################
+   2010 HEADER BOX LAYOUT
+   ################################################################################ */
+
+/* @media (min-width:500px) { */
+
+#header {
+  /* me */
+  width: min(98%, 1000px);
+  margin: 0 auto 1rem auto;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  border-image: linear-gradient(180deg, #e6e6e6FF 44%, #F4F8F4FF 100%) fill 0//0 100vw;
+/*   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  padding: 1rem;
+  
+  /* downstream */
+  display: grid;
+   grid-auto-flow: row;
+   justify-content: center;
+  
+   grid-template-areas: 
+     "bLogo bMenu bUser bMajor"
+     "bLogo bMenu bMinor bStats"
+     "bLogo bMenu bMinor bAlertbar"
+     "bSearchbar bSearchbar bSearchbar bSearchbar";
+  
+   grid-template-columns: 1.5fr 2fr 3fr 3.5fr;
+   grid-template-rows: auto auto auto auto;
+  padding-left: auto;
+  
+ }
+
+
+
+
+/* ################################################################################
+   2020 placement
+   ################################################################################ */
+   
+#logo {
+  grid-area: bLogo;
+}
+#menu {
+  grid-area: bMenu;
+}
+#userinfo {
+  display: contents;
+} 
+#userinfo_username {
+  grid-area: bUser;
+}
+#userinfo_stats {
+  grid-area: bStats;
+}
+#userinfo_minor {
+  grid-area: bMinor;
+}
+#userinfo_major {
+  grid-area: bMajor;  
+}
+#userinfo_username {
+  grid-area: bUser;
+}
+#alerts {
+    grid-area: bAlertbar;
+}
+#searchbars {
+    grid-area: bSearchbar;
+}
+
+/* ################################################################################
+   2041 bLogo
+   ################################################################################ */
+#logo {
+  border-right: thin solid gray;
+  margin-right: 0.5rem;
+}
+
+#logo > a {
+  background: url("https://wally-crunk.github.io/svg/site/ops-logo-loop-lightmode.svg") center no-repeat;
+  background-size: contain;
+  height: 80%;
+  width: 80%;
+  display: block;
+}
+
+/* ################################################################################
+   1042 bMenu
+   ################################################################################ */
+#menu {
+  border-right: thin solid gray;
+  margin-right: 0.5rem;
+}
+
+#menu ul {
+  list-style:none;
+  padding: 0;
+}
+
+#menu ul {
+/* responsive without media query */
+  --w: 8ch;
+  --n: 2;
+ display: grid;
+     grid-template-columns:repeat(auto-fit,minmax(clamp(100%/(var(--n) + 1) + 0.1%,var(--w),100%),1fr));
+ gap: 1px;)
+}
+
+
+/* ################################################################################
+   2043 bUser
+   ################################################################################ */
+#userinfo #userinfo_username {
+  border-right: thin solid gray;
+  margin: 0 0.5rem 0;
+  padding: 0 0 0.5rem 0;
+  list-style: none;
+
+/* responsive without media query */
+  --w: 9ch;
+  --n: 3;
+ display: grid;
+     grid-template-columns:repeat(auto-fit,minmax(clamp(100%/(var(--n) + 1) + 0.1%,var(--w),100%),1fr));)
+}
+#userinfo_username > * {/*! border:thick solid blue; */ margin:0; padding:0;}
+#nav_userclass:has(.hidden) {
+  display: none;
+}
+/* ################################################################################
+   2044 bMinor
+   ################################################################################ */
+
+#userinfo #userinfo_minor {
+  border-right: thin solid gray;
+  margin: 0 0.5rem 0 0;
+  padding: 0;
+  
+  /*downstream*/
+  align-items: baseline;
+  list-style: none;
+}
+
+ */#userinfo #userinfo_minor  {
+  list-style:none;
+  padding: 0;
+}
+
+#userinfo #userinfo_minor  {
+/* responsive without media query */
+  --w: 12ch;
+  --n: 2;
+ display: grid;
+     grid-template-columns:repeat(auto-fit,minmax(clamp(100%/(var(--n) + 1) + 0.1%,var(--w),100%),1fr));
+ gap: 1px;)
+}
+
+
+/* ################################################################################
+   2045 bMajor
+   ################################################################################ */
+#userinfo #userinfo_major {
+  margin: 0;
+  padding: 0 0 0.5rem 0;
+
+  /*downstream*/
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  gap: 0 0.5rem;
+  list-style: none;
+}
+
+/* ################################################################################
+   2046 bStats
+   ################################################################################ */
+
+ul#userinfo_stats {
+  margin: 0;
+  padding: 0;
+
+  /*downstream*/
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  gap: 0 0.5rem;
+  align-items: center;
+  list-style: none;
+}
+
+/* ################################################################################
+   2047 bAlertbar
+   ################################################################################ */
+
+#alerts {
+  width: 100%;
+  /*downstream*/
+  display: flex;
+  flex-flow: column;
+}
+
+.alertbar {
+  font-weight: normal;
+  background-color: var(--thatblue); 
+  padding: 0.5rem 2rem 0 3rem;
+  margin-top: 0.3rem;
+  margin-right: auto;
+  background-image: url('https://wally-crunk.github.io/svg/std/notification-bell-000xeee.svg');
+  background-size: 1.2rem;
+  background-repeat: no-repeat;
+  background-position: 1.2rem center;
+  transition: all 0.175s ease;
+  border-radius: 1rem;
+}
+
+.alertbar a {
+  color: antiquewhite !important; /*mustfix*/
+  font-weight: bold;
+  text-decoration-line: none;
+}
+
+.alertbar:hover {
+  background-color: skyblue;
+  transition: all 0.175s ease;
+  a { color: black; }
+}
+
+.alertbar:first-of-type {
+  padding-top: 4px;
+}
+
+.alertbar:last-of-type {
+  padding-bottom: 4px;
+}
+
+/* ################################################################################
+   2048 bSearchbar
+   ################################################################################ */
+
+#searchbars {
+  padding-top: 0.35rem;
+}
+
+#searchbars > ul {
+  align-items: center;
+  display: flex;
+  margin: 0;
+  gap: min(3%,2ch);
+  padding: .15rem 0;
+  }
+
+#searchbars > ul li {
+  display: inline;
+  flex: 1 1 auto;
+}
+
+#searchbars > ul input {
+  width: 100%;
+  font-size: inherit;
+}
+
+#searchbars .search_form {
+  background: 0 0; /* sets initial values for all */
+}
+
+#searchbars .search_form input {
+  border: thin solid lightgray;
+  border-radius: 0.35rem;
+  background: unset;
+  box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.15);
+  transition: 300ms ease-in-out;
+}
+
+
+#searchbars .search_form input:focus {
+  border: thick solid crimson;
+  border-radius: 0.7rem;
+  background: unset;
+  box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.15);
+  transition: 300ms ease-in-out;
+}
+
+#searchbars .search_form input:active {
+  border: thick solid gold;
+  border-radius: 0.7rem;
+  background: unset;
+  box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.15);
+  transition: 300ms ease-in-out;
+}
+

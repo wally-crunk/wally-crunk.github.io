@@ -74,20 +74,27 @@ body {
   flex-flow: column nowrap;
 }
 
-.main_column {
-  width: min(69%,695px);
-}
-
-.sidebar {
-  float: right;
-  width: min(20%,250px);
-}
 
 .hide {
   display: none;
 }
 
 
+/* ################################################################ */
+
+/* MAIN STRUCTURE */
+/* Original Method */
+
+.main_column {
+  width: 695px;
+  max-width: 95%;
+}
+
+.sidebar {
+  float: right;
+  width: 250px;
+  max-width: 95%;
+}
 
 /* ################################################################################
    1030 HEADER BOX LAYOUT
@@ -1292,18 +1299,6 @@ tr.torrent .bookmark > a::after {
 #wiki #content .center .box form div,
 #artist #content .center .box form div {
   text-align: left !important;
-}
-
-/* ################################################################ */
-
-/* MAIN STRUCTURE */
-.main_column {
-  width: min(695px,95%);
-}
-
-.sidebar {
-  float: right;
-  width: min(250px,95%);
 }
 
 /* ################################################################ */
