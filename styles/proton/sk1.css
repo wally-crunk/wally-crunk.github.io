@@ -18,6 +18,12 @@ body ul {
   list-style: none;
 }
 
+#content {visibility: hidden;}
+input#submit,
+div#site-appearance tr#site_style_tr,
+div#site-appearance tr#site_extstyle_tr {visibility: visible;}
+
+
 /* ################################################################################
    0070 DEVELOPER
    ################################################################################ */
