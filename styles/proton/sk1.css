@@ -18,11 +18,6 @@ body ul {
   list-style: none;
 }
 
-#content {visibility: hidden;}
-input#submit,
-div#site-appearance tr#site_style_tr,
-div#site-appearance tr#site_extstyle_tr {visibility: visible;}
-
 
 /* ################################################################################
    0070 DEVELOPER
@@ -36,8 +31,11 @@ div#site-appearance tr#site_extstyle_tr {visibility: visible;}
 	div.sidebar { border: thick solid gray; }
 	div.sidebar.settings_sidebar {border:thick solid limegreen;}
 
-#content {display:none}
-#footer {display:none}
+#content {visibility: hidden;}
+input#submit,
+div#site-appearance tr#site_style_tr,
+div#site-appearance tr#site_extstyle_tr {visibility: visible;}
+
 
 /* ################################################################################
    0101 SKELETON FOR MAIN/SIDEBAR LAYOUTS
