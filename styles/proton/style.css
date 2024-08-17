@@ -1789,8 +1789,10 @@ ul.collage_images li a:hover img {
 }
 
 ul.collage_images {
+/* 
   width: 695px !important;
   margin: 0 !important;
+ */
 }
 
 /* ################################################################ */
