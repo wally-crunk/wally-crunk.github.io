@@ -328,8 +328,8 @@ blockquote {
 }
 
 ::selection {
-  background-color: #888483;
-  color: #879092;
+  background-color: #918D8C;
+  color: #101313;
 }
 
 table {
@@ -652,8 +652,8 @@ table.box2 {
 }
 
 .autocomplete-suggestions .autocomplete-suggestion.autocomplete-selected {
-  background-color: #888483;
-  color: #879092;
+  background-color: #918D8C;
+  color: #101313;
 }
 
 .autocomplete-suggestions .autocomplete-suggestion strong {
