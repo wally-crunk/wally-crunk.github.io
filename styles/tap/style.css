@@ -166,7 +166,7 @@ code {
 body {
   background-color: #1d1c1c;
   box-sizing: border-box;
-  color: #879092;
+  color: #A6AFB2;
   font-size: 12px;
   line-height: 1.6;
   margin: 0 8px;
@@ -174,7 +174,7 @@ body {
 
 pre,
 code {
-  color: #4E5253;
+  color: #879092;
 }
 
 h1,
@@ -414,7 +414,7 @@ form {
 }
 
 form table td.label {
-  color: #879092;
+  color: #A6AFB2;
   padding-top: 9px;
   font-weight: 600;
   text-align: left;
@@ -786,9 +786,9 @@ table.box2 {
 }
 
 div#flip_view_1 div#similar-artist .name {
-  border: 1px solid #879092;
+  border: 1px solid #A6AFB2;
   background: rgba(60, 60, 60, 0.7);
-  color: #879092;
+  color: #A6AFB2;
   margin: 0;
   padding: 0 5px;
 }
@@ -2013,7 +2013,7 @@ body#collage .cats_music {
 /* buttons */
 #noty_bottomRight_layout_container .noty_buttons a {
   background-color: none;
-  color: #918D8C !important;
+  color: #9B9695 !important;
   border: thin solid transparent; /* prevents button movement */
   border-radius: 14px;
   padding: 0 6px;
@@ -2025,7 +2025,7 @@ body#collage .cats_music {
   }
 }
 #noty_bottomRight_layout_container .noty_buttons a:hover {
-  background-color: #918D8C;
+  background-color: #9B9695;
   color: #4D4C4C !important;
   border: thin solid #4D4C4C;
   border-radius: 14px;
@@ -2060,7 +2060,7 @@ body#collage .cats_music {
 /* ************************************************ */
 /* # 1.12 Upload form MusicBrainz popup */
 #musicbrainz_popup {
-  color: #879092;
+  color: #313333;
   background: #1d2424;
   border: #888483;
   padding: 1rem;
@@ -2068,7 +2068,7 @@ body#collage .cats_music {
 }
 
 #musicbrainz_popup a {
-  color: #C7CFD2;
+  color: #4E5253;
 }
 
 #musicbrainz_popup a:hover {
@@ -2113,7 +2113,7 @@ body#torrents div.box.box_tags li > a:first-child {
   font-weight: 700;
   font-size: 0.6rem;
   vertical-align: baseline;
-  color: #918D8C;
+  color: #9B9695;
   background: #4D4C4C;
   padding: 0 0.5rem;
   border-radius: 1rem;
@@ -2136,7 +2136,7 @@ body#torrents div.box.box_tags li > a:first-child {
   table.torrent_table.cats.m_table td.td_info.big_info div.group_info.clear div.tags a:hover,
   body#torrents div.box.box_tags li > a:first-child:hover {
     color: #4D4C4C !important;
-    background: #918D8C !important;
+    background: #9B9695 !important;
     transition: all 0.15s cubic-bezier(0.25, 0.8, 0.25, 1);
     box-shadow: rgba(0, 0, 0, 0.25) 0 14px 28px, rgba(0, 0, 0, 0.22) 0 10px 10px;
   }
@@ -2178,7 +2178,7 @@ tr.snatched_torrent div.tags::before {
 tr.snatched_group div.tags::before,
 tr.snatched_torrent div.tags::before {
   visibility: visible;
-  background: #918D8C;
+  background: #9B9695;
   color: #4D4C4C;
   border-radius: 1rem;
   box-sizing: border-box;
@@ -2854,7 +2854,7 @@ Documentation of mobile classes:
     font-weight: 400;
     font-size: 0.55rem;
     vertical-align: baseline;
-    color: #918D8C;
+    color: #9B9695;
     background: #4D4C4C !important;
     padding: 0.05rem 0.5rem;
     border: none !important;
@@ -3170,7 +3170,7 @@ Documentation of mobile classes:
     right: 2vw;
     width: 60vw;
     margin: auto;
-    color: #879092;
+    color: #A6AFB2;
     top: calc(100% - var(--row-height) * 10 - 125px);
     height: calc(2.4 * var(--row-height));
     flex-direction: column;
@@ -3290,14 +3290,14 @@ Documentation of mobile classes:
   /* when tags are set to display in profile settings. */
   #taglist tr.label {
     height: auto;
-    border: thick solid #918D8C;
+    border: thick solid #9B9695;
   }
   #taglist tr.label td {
     background: #4D4C4C;
-    color: #918D8C;
+    color: #9B9695;
     align-content: center;
     text-align: center;
-    border: #918D8C;
+    border: #9B9695;
     width: 100%;
   }
   #taglist tr.label td::after {
@@ -3316,7 +3316,7 @@ Documentation of mobile classes:
     text-overflow: ellipsis;
     font-style: italic;
     vertical-align: baseline;
-    color: #918D8C !important;
+    color: #9B9695 !important;
     background: #4D4C4C;
     padding: 0.25rem;
     border-radius: 1rem;
