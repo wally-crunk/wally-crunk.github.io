@@ -1992,8 +1992,8 @@ body#collage .cats_music {
 }
 /* first row of each box */
 #noty_bottomRight_layout_container .noty_message {
-  background: radial-gradient(circle at top right, #615F5E, #9B9695) !important;
-  color: #E8EFF2 !important;
+  background: radial-gradient(circle at top right, #7E7B7A, #9B9695) !important;
+  color: #000 !important;
   font-weight: 700;
   padding: 0.6rem !important;
 }
@@ -2005,7 +2005,7 @@ body#collage .cats_music {
 
 /* second row of each box */
 #noty_bottomRight_layout_container .noty_buttons {
-  background-color: #000 !important;
+  background-color: #615F5E !important;
   border: none !important;
   padding: 0.4rem !important;
 }
@@ -2013,7 +2013,7 @@ body#collage .cats_music {
 /* buttons */
 #noty_bottomRight_layout_container .noty_buttons a {
   background-color: none;
-  color: #6B7173 !important;
+  color: #918D8C !important;
   border: thin solid transparent; /* prevents button movement */
   border-radius: 14px;
   padding: 0 6px;
@@ -2025,9 +2025,9 @@ body#collage .cats_music {
   }
 }
 #noty_bottomRight_layout_container .noty_buttons a:hover {
-  background-color: #6B7173;
-  color: #7E7B7A !important;
-  border: thin solid #7E7B7A;
+  background-color: #918D8C;
+  color: #4D4C4C !important;
+  border: thin solid #4D4C4C;
   border-radius: 14px;
 }
 
@@ -2113,8 +2113,8 @@ body#torrents div.box.box_tags li > a:first-child {
   font-weight: 700;
   font-size: 0.6rem;
   vertical-align: baseline;
-  color: #6B7173;
-  background: #7E7B7A;
+  color: #918D8C;
+  background: #4D4C4C;
   padding: 0 0.5rem;
   border-radius: 1rem;
   margin-bottom: 0.1rem;
@@ -2135,8 +2135,8 @@ body#torrents div.box.box_tags li > a:first-child {
   table.torrent_table.cats.checkboxes.border.m_table td.td_info.big_info div.group_info.clear div.tags a:hover,
   table.torrent_table.cats.m_table td.td_info.big_info div.group_info.clear div.tags a:hover,
   body#torrents div.box.box_tags li > a:first-child:hover {
-    color: #7E7B7A !important;
-    background: #6B7173 !important;
+    color: #4D4C4C !important;
+    background: #918D8C !important;
     transition: all 0.15s cubic-bezier(0.25, 0.8, 0.25, 1);
     box-shadow: rgba(0, 0, 0, 0.25) 0 14px 28px, rgba(0, 0, 0, 0.22) 0 10px 10px;
   }
@@ -2178,8 +2178,8 @@ tr.snatched_torrent div.tags::before {
 tr.snatched_group div.tags::before,
 tr.snatched_torrent div.tags::before {
   visibility: visible;
-  background: #3e3837;
-  color: #A6AFB2;
+  background: #918D8C;
+  color: #4D4C4C;
   border-radius: 1rem;
   box-sizing: border-box;
   display: inline-block;
@@ -2854,8 +2854,8 @@ Documentation of mobile classes:
     font-weight: 400;
     font-size: 0.55rem;
     vertical-align: baseline;
-    color: #6B7173;
-    background: #7E7B7A !important;
+    color: #918D8C;
+    background: #4D4C4C !important;
     padding: 0.05rem 0.5rem;
     border: none !important;
     border-radius: 1rem;
@@ -3290,14 +3290,14 @@ Documentation of mobile classes:
   /* when tags are set to display in profile settings. */
   #taglist tr.label {
     height: auto;
-    border: thick solid #6B7173;
+    border: thick solid #918D8C;
   }
   #taglist tr.label td {
-    background: #7E7B7A;
-    color: #6B7173;
+    background: #4D4C4C;
+    color: #918D8C;
     align-content: center;
     text-align: center;
-    border: #6B7173;
+    border: #918D8C;
     width: 100%;
   }
   #taglist tr.label td::after {
@@ -3316,8 +3316,8 @@ Documentation of mobile classes:
     text-overflow: ellipsis;
     font-style: italic;
     vertical-align: baseline;
-    color: #6B7173 !important;
-    background: #7E7B7A;
+    color: #918D8C !important;
+    background: #4D4C4C;
     padding: 0.25rem;
     border-radius: 1rem;
     margin-bottom: 0.1rem;
@@ -3359,6 +3359,5 @@ Documentation of mobile classes:
 /* ########################################################################
    # End of Section
    ######################################################################## */
-
 
 /*# sourceMappingURL=style.css.map */
