@@ -195,7 +195,7 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-  color: #E8EFF2;
+  color: #f2f9fc;
 }
 
 h1,
@@ -217,7 +217,7 @@ h5 {
 }
 
 a {
-  color: #E8EFF2;
+  color: #f2f9fc;
   text-decoration: none;
 }
 
@@ -288,7 +288,7 @@ textarea:focus {
 }
 
 svg|a {
-  fill: #E8EFF2;
+  fill: #f2f9fc;
 }
 
 svg|a:hover {
@@ -640,7 +640,7 @@ table.box2 {
 /* #2024 note: Many of these appear to be overridden by
  * global.css or auto-complete.css: your mileage may vary. */
 .autocomplete-suggestions {
-  background-color: #E8EFF2;
+  background-color: #f2f9fc;
   border: none;
   color: #26282e;
   margin-top: 4px;
@@ -1137,7 +1137,7 @@ ul.collage_images li a > span {
 
 #userform #settings_sections h2 a,
 .rule_short {
-  color: #E8EFF2;
+  color: #f2f9fc;
 }
 
 .poll li {
@@ -1736,7 +1736,7 @@ body#collage .cats_music {
 
 #menu ul li:not(#nav_staff) a,
 #userinfo a.username {
-  color: #E8EFF2;
+  color: #f2f9fc;
   text-shadow: initial;
 }
 
@@ -2229,7 +2229,7 @@ tr.snatched_torrent div.tags::before {
 }
 
 .alertbar a {
-  color: #E8EFF2 !important;
+  color: #f2f9fc !important;
 }
 
 /* occurs on failure, for example failed request votes */
@@ -3031,7 +3031,7 @@ Documentation of mobile classes:
     opacity: 0;
   }
   #header a {
-    color: #E8EFF2;
+    color: #f2f9fc;
   }
   /* ## 4.17.2 Mobile Menu opens on hover */
   #header:hover {
