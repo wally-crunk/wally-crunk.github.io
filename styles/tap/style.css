@@ -3359,5 +3359,20 @@ Documentation of mobile classes:
 /* ########################################################################
    # End of Section
    ######################################################################## */
+/* Test: Active Tab */
+html body div#wrapper div#header div#menu ul li.active {
+  background-color: #22201a;
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='24' viewBox='0 0 12 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23f4aa00' fill-opacity='0.18' %3E%3Cpath d='M2 0h2v12H2V0zm1 20c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM9 8c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zm-1 4h2v12H8V12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  border: thin solid;
+  border-radius: 1ch;
+  border-bottom: solid thick gold;
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+  border-image-source: linear-gradient(to left, #bbc853, rgba(255, 249, 89, 0.8));
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+}
 
 /*# sourceMappingURL=style.css.map */
