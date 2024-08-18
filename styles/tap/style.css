@@ -661,7 +661,7 @@ table.box2 {
 }
 
 .forum_post.forum_unread {
-  border-top: 2px solid #C98258;
+  border-top: 2px solid #e3dac9;
 }
 
 .forum_post.wrap_overflow.box.vertical_margin td.body {
@@ -713,7 +713,7 @@ table.box2 {
 
 .last_read ::before {
   content: "➤";
-  color: #C98258;
+  color: #e3dac9;
   display: inline-block;
 }
 
