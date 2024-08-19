@@ -166,7 +166,7 @@ code {
 body {
   background-color: #1d1c1c;
   box-sizing: border-box;
-  color: #A6AFB2;
+  color: #a6afb2;
   font-size: 12px;
   line-height: 1.6;
   margin: 0 8px;
@@ -222,7 +222,7 @@ a {
 }
 
 a:hover {
-  color: #9B9695;
+  color: #9b9695;
 }
 
 a:active,
@@ -244,7 +244,7 @@ textarea:focus {
 .main_column .box.pad:not(#reply_box),
 .body .box.pad:not(#reply_box) {
   background-color: #322e2c;
-  border: 2px solid #51413F;
+  border: 2px solid #51413f;
   margin: 8px;
   border-radius: 0.25rem;
 }
@@ -292,12 +292,12 @@ svg|a {
 }
 
 svg|a:hover {
-  fill: #9B9695;
+  fill: #9b9695;
 }
 
 b,
 strong {
-  color: #A6AFB2;
+  color: #a6afb2;
   font-weight: 600;
 }
 
@@ -322,13 +322,13 @@ li:last-child {
 
 blockquote {
   background-color: #2d2928;
-  border: 1px dashed #51413F;
+  border: 1px dashed #51413f;
   margin: 12px;
   padding: 12px;
 }
 
 ::selection {
-  background-color: #918D8C;
+  background-color: #918d8c;
   color: #101313;
 }
 
@@ -414,7 +414,7 @@ form {
 }
 
 form table td.label {
-  color: #A6AFB2;
+  color: #a6afb2;
   padding-top: 9px;
   font-weight: 600;
   text-align: left;
@@ -458,7 +458,7 @@ select,
 textarea {
   background: #2d2928;
   border: 1px solid rgba(255, 255, 255, 0.08);
-  color: #6B7173;
+  color: #6b7173;
   height: 32px;
   padding: 0 8px;
 }
@@ -472,7 +472,7 @@ select:focus,
 textarea:focus {
   background: #322e2c;
   border: 1px solid rgba(255, 255, 255, 0.25);
-  color: #C7CFD2;
+  color: #c7cfd2;
 }
 
 textarea {
@@ -652,7 +652,7 @@ table.box2 {
 }
 
 .autocomplete-suggestions .autocomplete-suggestion.autocomplete-selected {
-  background-color: #918D8C;
+  background-color: #918d8c;
   color: #101313;
 }
 
@@ -786,9 +786,9 @@ table.box2 {
 }
 
 div#flip_view_1 div#similar-artist .name {
-  border: 1px solid #A6AFB2;
+  border: 1px solid #a6afb2;
   background: rgba(60, 60, 60, 0.7);
-  color: #A6AFB2;
+  color: #a6afb2;
   margin: 0;
   padding: 0 5px;
 }
@@ -936,7 +936,7 @@ div#flip_view_1 div#similar-artist .name {
  but NOT personal 'snatches, downloads,..' pages. */
 #torrents #torrent_details .group_torrent td.edition_info,
 .group ~ .group_torrent.edition {
-  background-color: #4D4C4C;
+  background-color: #4d4c4c;
 }
 
 .torrentdetails .linkbox {
@@ -970,7 +970,7 @@ div#flip_view_1 div#similar-artist .name {
 }
 
 .tags a:hover {
-  color: #9B9695;
+  color: #9b9695;
 }
 
 .group_info > span:first-child,
@@ -1152,7 +1152,7 @@ ul.collage_images li a > span {
 }
 
 .poll .graph span {
-  background-color: #918D8C;
+  background-color: #918d8c;
   display: block;
   float: left;
   height: 8px;
@@ -1284,7 +1284,7 @@ ul.collage_images li a > span {
 }
 
 #userform #settings_sections h2 a:hover {
-  color: #9B9695;
+  color: #9b9695;
 }
 
 #userform #settings_sections input {
@@ -1487,14 +1487,14 @@ form input {
 
 #discog_table tr[id^=torrents_] :not(a.tooltip.brackets) strong {
   font-size: large;
-  color: #A6AFB2;
+  color: #a6afb2;
 }
 
 /* Discog table: for names of albums, to help them stand out somewhat */
 #discog_table .discog strong a,
 #discog_table td.td_info.big_info div.group_info.clear strong a {
   font-size: 115%;
-  color: #918D8C;
+  color: #918d8c;
 }
 
 /* Discog table:  for encodings, to get breathing room after the >> character */
@@ -1511,7 +1511,7 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
 }
 
 #discog_table > div.box.center::before {
-  color: #A6AFB2 !important;
+  color: #a6afb2 !important;
   font-size: large !important;
   content: "⇩ Jump to" !important;
   font-weight: 600;
@@ -1559,7 +1559,7 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
 }
 
 .tooltipster-default .tooltipster-content a:hover {
-  color: #9B9695;
+  color: #9b9695;
 }
 
 /* ************************************************ */
@@ -1594,7 +1594,7 @@ body#collage .cats_music {
 .cats_music {
   /* Memo: If you desire NO decoration on music uploads,
     /* turn this off. */
-  border-right: thin solid #1F2829;
+  border-right: thin solid #1f2829;
 }
 
 .cats_applications {
@@ -1602,11 +1602,11 @@ body#collage .cats_music {
 }
 
 .cats_audiobooks {
-  border-right: thick solid #3E4042;
+  border-right: thick solid #3e4042;
 }
 
 .cats_comedy {
-  border-right: thick solid #004466;
+  border-right: thick solid #046;
 }
 
 .cats_comics {
@@ -1809,7 +1809,7 @@ body#collage .cats_music {
   }
   #menu > ul > #nav_staff > a:hover {
     background-color: transparent;
-    color: #9B9695;
+    color: #9b9695;
   }
   #userinfo_minor::before {
     background: url("/svg/std/chevrons-down-ccc.svg") no-repeat;
@@ -1992,7 +1992,7 @@ body#collage .cats_music {
 }
 /* first row of each box */
 #noty_bottomRight_layout_container .noty_message {
-  background: radial-gradient(circle at top right, #7E7B7A, #9B9695) !important;
+  background: radial-gradient(circle at top right, #7e7b7a, #9b9695) !important;
   color: #000 !important;
   font-weight: 700;
   padding: 0.6rem !important;
@@ -2005,7 +2005,7 @@ body#collage .cats_music {
 
 /* second row of each box */
 #noty_bottomRight_layout_container .noty_buttons {
-  background-color: #615F5E !important;
+  background-color: #615f5e !important;
   border: none !important;
   padding: 0.4rem !important;
 }
@@ -2013,7 +2013,7 @@ body#collage .cats_music {
 /* buttons */
 #noty_bottomRight_layout_container .noty_buttons a {
   background-color: none;
-  color: #9B9695 !important;
+  color: #9b9695 !important;
   border: thin solid transparent; /* prevents button movement */
   border-radius: 14px;
   padding: 0 6px;
@@ -2025,9 +2025,9 @@ body#collage .cats_music {
   }
 }
 #noty_bottomRight_layout_container .noty_buttons a:hover {
-  background-color: #9B9695;
-  color: #4D4C4C !important;
-  border: thin solid #4D4C4C;
+  background-color: #9b9695;
+  color: #4d4c4c !important;
+  border: thin solid #4d4c4c;
   border-radius: 14px;
 }
 
@@ -2068,11 +2068,11 @@ body#collage .cats_music {
 }
 
 #musicbrainz_popup a {
-  color: #4E5253;
+  color: #4e5253;
 }
 
 #musicbrainz_popup a:hover {
-  color: #9B9695;
+  color: #9b9695;
 }
 
 #musicbrainz_popup .brackets {
@@ -2113,8 +2113,8 @@ body#torrents div.box.box_tags li > a:first-child {
   font-weight: 700;
   font-size: 0.6rem;
   vertical-align: baseline;
-  color: #9B9695;
-  background: #4D4C4C;
+  color: #9b9695;
+  background: #4d4c4c;
   padding: 0 0.5rem;
   border-radius: 1rem;
   margin-bottom: 0.1rem;
@@ -2135,8 +2135,8 @@ body#torrents div.box.box_tags li > a:first-child {
   table.torrent_table.cats.checkboxes.border.m_table td.td_info.big_info div.group_info.clear div.tags a:hover,
   table.torrent_table.cats.m_table td.td_info.big_info div.group_info.clear div.tags a:hover,
   body#torrents div.box.box_tags li > a:first-child:hover {
-    color: #4D4C4C !important;
-    background: #9B9695 !important;
+    color: #4d4c4c !important;
+    background: #9b9695 !important;
     transition: all 0.15s cubic-bezier(0.25, 0.8, 0.25, 1);
     box-shadow: rgba(0, 0, 0, 0.25) 0 14px 28px, rgba(0, 0, 0, 0.22) 0 10px 10px;
   }
@@ -2178,8 +2178,8 @@ tr.snatched_torrent div.tags::before {
 tr.snatched_group div.tags::before,
 tr.snatched_torrent div.tags::before {
   visibility: visible;
-  background: #9B9695;
-  color: #4D4C4C;
+  background: #9b9695;
+  color: #4d4c4c;
   border-radius: 1rem;
   box-sizing: border-box;
   display: inline-block;
@@ -2214,7 +2214,7 @@ tr.snatched_torrent div.tags::before {
 .alertbar,
 .sys_error,
 .save_message {
-  border: thick solid #6A6867;
+  border: thick solid #6a6867;
   padding: 1rem 1rem 1rem 48px;
   background: #444342;
   background-image: url("/svg/site/ops-icon-harp-ccc.svg");
@@ -2271,10 +2271,10 @@ tr.snatched_torrent div.tags::before {
       border: thick solid #099909;
     }
     70% {
-      border: thick solid #9B9695;
+      border: thick solid #9b9695;
     }
     100% {
-      border: thick solid #6A6867;
+      border: thick solid #6a6867;
     }
   }
   .save_message {
@@ -2720,7 +2720,7 @@ Documentation of mobile classes:
   .td_seeders.m_td_right::before,
   .td_leechers.m_td_right::before {
     background: left/10px no-repeat url("/svg/std/arrow-loop-ccc.svg");
-    color: #A6AFB2;
+    color: #a6afb2;
     content: ":";
     filter: brightness(80%);
     position: absolute;
@@ -2866,8 +2866,8 @@ Documentation of mobile classes:
     font-weight: 400;
     font-size: 0.55rem;
     vertical-align: baseline;
-    color: #9B9695;
-    background: #4D4C4C !important;
+    color: #9b9695;
+    background: #4d4c4c !important;
     padding: 0.05rem 0.5rem;
     border: none !important;
     border-radius: 1rem;
@@ -2963,7 +2963,7 @@ Documentation of mobile classes:
   }
   .forum_post tr.colhead_dark span,
   .forum_post tr.colhead_dark strong {
-    color: #6B7173;
+    color: #6b7173;
   }
   .forum_post tr.colhead_dark div {
     display: inline;
@@ -3182,7 +3182,7 @@ Documentation of mobile classes:
     right: 2vw;
     width: 60vw;
     margin: auto;
-    color: #A6AFB2;
+    color: #a6afb2;
     top: calc(100% - var(--row-height) * 10 - 125px);
     height: calc(2.4 * var(--row-height));
     flex-direction: column;
@@ -3302,14 +3302,14 @@ Documentation of mobile classes:
   /* when tags are set to display in profile settings. */
   #taglist tr.label {
     height: auto;
-    border: thick solid #9B9695;
+    border: thick solid #9b9695;
   }
   #taglist tr.label td {
-    background: #4D4C4C;
-    color: #9B9695;
+    background: #4d4c4c;
+    color: #9b9695;
     align-content: center;
     text-align: center;
-    border: #9B9695;
+    border: #9b9695;
     width: 100%;
   }
   #taglist tr.label td::after {
@@ -3328,8 +3328,8 @@ Documentation of mobile classes:
     text-overflow: ellipsis;
     font-style: italic;
     vertical-align: baseline;
-    color: #9B9695 !important;
-    background: #4D4C4C;
+    color: #9b9695 !important;
+    background: #4d4c4c;
     padding: 0.25rem;
     border-radius: 1rem;
     margin-bottom: 0.1rem;
@@ -3371,7 +3371,8 @@ Documentation of mobile classes:
 /* ########################################################################
    # End of Section
    ######################################################################## */
-/* Test: Active Tab */
+/*  Custom for 1.8.1 Menu Handling */
+/*  Active Tab */
 html body div#wrapper div#header div#menu ul li.active {
   background-color: #22201a;
   /* version 1 */
@@ -3385,6 +3386,15 @@ html body div#wrapper div#header div#menu ul li.active {
   border-left: 0;
   border-right: 0;
   border-top: 0;
+}
+
+/* Custom for 2.4 Noty */
+/* hazation */
+#noty_bottomRight_layout_container li {
+  box-shadow: unset !important;
+  background: unset !important;
+  box-shadow: 2.3px 2.3px 1.9px rgba(0, 0, 0, 0.1), 9.7px 9.7px 7.7px rgba(0, 0, 0, 0.15), 26.5px 26.5px 21.2px rgba(0, 0, 0, 0.2), 100px 100px 80px rgba(0, 0, 0, 0.33) !important;
+  backdrop-filter: blur(1.1px);
 }
 
 /*# sourceMappingURL=style.css.map */
