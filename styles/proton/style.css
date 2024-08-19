@@ -119,17 +119,16 @@ body {
    justify-content: center;
   
    grid-template-areas: 
-     "bLogo bMenu bUser bMajor"
-     "bLogo bMenu bMinor bStats"
-     "bLogo bMenu bMinor bAlertbar"
-     "bSearchbar bSearchbar bSearchbar bSearchbar";
+     "bSpaceStart bLogo bMenu bUser bMajor bSpaceEnd"
+     "bSpaceStart bLogo bMenu bMinor bStats bSpaceEnd"
+     "bSpaceStart bLogo bMenu bMinor bAlertbar bSpaceEnd"
+     "bSpaceStart bSearchbar bSearchbar bSearchbar bSearchbar bSpaceEnd";
   
-   grid-template-columns: 1.5fr 2fr 3fr 3.5fr;
+   grid-template-columns: 1.2fr 1.5fr 2fr 3fr 3.5fr 1.2fr;
    grid-template-rows: auto auto auto auto;
-  padding-left: auto;
+   padding-left: auto;
   
  }
-
 
 
 
