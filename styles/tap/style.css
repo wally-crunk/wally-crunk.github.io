@@ -3397,4 +3397,14 @@ html body div#wrapper div#header div#menu ul li.active {
   backdrop-filter: blur(1.1px);
 }
 
+/* first row of each box */
+#noty_bottomRight_layout_container .noty_message {
+  background: radial-gradient(circle at top right, rgba(126, 123, 122, 0.5333333333), rgba(155, 150, 149, 0.5333333333)) !important;
+}
+
+/* second row of each box */
+#noty_bottomRight_layout_container .noty_buttons {
+  background-color: rgba(97, 95, 94, 0.8) !important;
+}
+
 /*# sourceMappingURL=style.css.map */
