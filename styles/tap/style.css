@@ -3411,58 +3411,15 @@ html body div#wrapper div#header div#menu ul li.active a {
 .autocomplete-suggestions {
   margin-top: 5px;
   border: 1px solid #999;
-  background: #222 !important;
-  width: auto !important;
-}
-
-.autocomplete-suggestion {
-  padding: 2px 5px;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.autocomplete-selected {
-  background: #000 !important;
-}
-
-.autocomplete-suggestions strong {
-  font-weight: 400;
-  color: #39f;
-  color: fuchsia !important;
-}
-
-/* ***** */
-.autocomplete-suggestions {
-  margin-top: 5px;
-  border: 1px solid #999;
   background: #322e2c !important;
   color: black !important;
   width: auto !important;
-}
-
-.autocomplete-suggestion {
-  padding: 2px 5px;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.autocomplete-selected {
-  background: #000 !important;
-}
-
-.autocomplete-suggestions strong {
-  font-weight: 400;
-  color: #39f;
-  color: #efe !important;
-}
-
-.autocomplete-suggestions {
   text-align: left;
   cursor: default;
   border: 1px solid #555;
-  border-top: 1px dotted #777;
+  border-top: 1px dashed #777;
   background: #fff;
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
+  box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.8) !important;
   /* core styles should not be changed */
   position: absolute;
   display: none;
@@ -3473,7 +3430,15 @@ html body div#wrapper div#header div#menu ul li.active a {
   box-sizing: border-box;
 }
 
+.autocomplete-suggestions strong {
+  font-weight: 400;
+  color: #fef !important;
+}
+
 .autocomplete-suggestion {
+  padding: 2px 5px;
+  white-space: nowrap;
+  cursor: pointer;
   position: relative;
   padding: 0 0.6em;
   line-height: 23px;
@@ -3484,14 +3449,16 @@ html body div#wrapper div#header div#menu ul li.active a {
 }
 
 .autocomplete-suggestion b {
-  /* font-weight: normal; */
   color: #b300b5;
   border-bottom: 1px dotted #0900da;
-  /*     background-color: #fbff92; */
 }
 
 .autocomplete-suggestion.selected {
   background: #d3f5ff;
+}
+
+.autocomplete-selected {
+  background: #000 !important;
 }
 
 /*# sourceMappingURL=style.css.map */
