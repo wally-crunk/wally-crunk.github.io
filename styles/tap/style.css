@@ -2397,14 +2397,11 @@ ul#check::after {
 }
 
 /* sticky headers ~ mobile */
-@media screen and (max-width: 575px) {
-  * {
-    --header-tab-height: 2rem;
-  }
+@media (max-width: 575px) {
   #dnulist tr.colhead,
   .toolbox_container tr.colhead {
     position: sticky;
-    top: var(--header-tab-height);
+    top: 32px;
     font-size: 120%;
     font-weight: bold;
   }
@@ -3345,7 +3342,6 @@ Documentation of mobile classes:
    compact the Menu responsively in two steps */
 @media (max-width: 575px) and (max-height: 575px) {
   #header {
-    --row-height: $height-mobilemenu_closed-tab; /* future */
     --row-height: 2rem;
   }
 }
@@ -3393,7 +3389,9 @@ html body div#wrapper div#header div#menu ul li.active a {
   box-shadow: unset !important;
   background: unset !important;
   box-shadow: 2.3px 2.3px 1.9px rgba(0, 0, 0, 0.1), 9.7px 9.7px 7.7px rgba(0, 0, 0, 0.15), 26.5px 26.5px 21.2px rgba(0, 0, 0, 0.2), 100px 100px 80px rgba(0, 0, 0, 0.33) !important;
-  backdrop-filter: blur(1.1px);
+  backdrop-filter: blur(1.5px);
+  /* 2024 status */
+  -webkit-backdrop-filter: blur(1.5px);
 }
 
 /* first row of each box */
@@ -3408,17 +3406,21 @@ html body div#wrapper div#header div#menu ul li.active a {
 
 /* ftf autocomplete */
 /* ***** */
-.autocomplete-suggestions {
+/* ***** */
+/* ### XXX.XXX FIX AUTOCOMPLETE */
+/* ***** */
+/* Complete list of matches */
+div.autocomplete-suggestions {
   margin-top: 5px;
   border: 1px solid #999;
   background: #322e2c !important;
-  color: black !important;
+  background: #000 !important;
+  color: #fff !important;
   width: auto !important;
   text-align: left;
   cursor: default;
   border: 1px solid #555;
   border-top: 1px dashed #777;
-  background: #fff;
   box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.8) !important;
   /* core styles should not be changed */
   position: absolute;
@@ -3430,35 +3432,28 @@ html body div#wrapper div#header div#menu ul li.active a {
   box-sizing: border-box;
 }
 
-.autocomplete-suggestions strong {
-  font-weight: 400;
-  color: #fef !important;
-}
-
-.autocomplete-suggestion {
-  padding: 2px 5px;
+/* Each match in the list of matches */
+.autocomplete-suggestions .autocomplete-suggestion {
   white-space: nowrap;
   cursor: pointer;
   position: relative;
-  padding: 0 0.6em;
-  line-height: 23px;
+  padding: 0 6px;
+  line-height: 1.5rem;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   color: slategray !important;
 }
 
-.autocomplete-suggestion b {
-  color: #b300b5;
-  border-bottom: 1px dotted #0900da;
+/* Portion that matches */
+.autocomplete-suggestions .autocomplete-suggestion strong {
+  font-weight: 400;
+  color: #fef !important;
 }
 
-.autocomplete-suggestion.selected {
-  background: #d3f5ff;
-}
-
-.autocomplete-selected {
-  background: #000 !important;
+/* When one match is highlighted by mouse */
+.autocomplete-suggestions .autocomplete-suggestion.autocomplete-selected {
+  background-color: rgba(255, 255, 255, 0.25) !important;
 }
 
 /*# sourceMappingURL=style.css.map */
