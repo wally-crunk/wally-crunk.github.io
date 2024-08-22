@@ -378,6 +378,8 @@ table ul.options_list {
 .colhead_dark {
   background-color: #B5B9BA;
   line-height: 18px;
+  position: sticky;
+  top: 0;
 }
 
 .colhead td,
@@ -636,29 +638,6 @@ table.box2 {
 .box.pad:has(.session_table.border),
 .box.pad .session_table.border {
   overflow: scroll !important;
-}
-
-/* #2024 note: Many of these appear to be overridden by
- * global.css or auto-complete.css: your mileage may vary. */
-.autocomplete-suggestions {
-  background-color: #0055CC;
-  border: none;
-  color: #26282e;
-  margin-top: 4px;
-}
-
-.autocomplete-suggestions .autocomplete-suggestion {
-  line-height: 24px;
-  padding: 0 8px;
-}
-
-.autocomplete-suggestions .autocomplete-suggestion.autocomplete-selected {
-  background-color: #005943;
-  color: #fff;
-}
-
-.autocomplete-suggestions .autocomplete-suggestion strong {
-  color: #12a1e3;
 }
 
 .forum_post.forum_unread {
@@ -2412,7 +2391,7 @@ ul#check::after {
 /* ************************************************ */
 /* ## 2.6 Autocompletes */
 /* Complete list of matches */
-div.autocomplete-suggestions {
+.autocomplete-suggestions {
   margin-top: 5px;
   border: 1px solid #999;
   background: #D0D4D5;
@@ -2420,14 +2399,14 @@ div.autocomplete-suggestions {
   width: auto !important;
   text-align: left;
   cursor: default;
-  border: 1px solid #555;
-  border-top: 1px dashed #777;
+  border: 1px solid #0f5b49;
+  border-top: 1px dashed #0f5b49;
   box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.8) !important;
   /* core styles should not be changed */
   position: absolute;
   display: none;
-  z-index: 9999;
-  max-height: 254px;
+  z-index: 800;
+  max-height: min(80vw, 254px);
   overflow: hidden;
   overflow-y: auto;
   box-sizing: border-box;
@@ -2454,7 +2433,7 @@ div.autocomplete-suggestions {
 
 /* When one match is highlighted by mouse */
 .autocomplete-suggestions .autocomplete-suggestion.autocomplete-selected {
-  background-color: #00A280 !important;
+  background-color: rgba(255, 255, 255, 0.25) !important;
 }
 
 /* ########################################################################
@@ -3052,7 +3031,13 @@ Documentation of mobile classes:
   /* ## 4.15 reserved */
   /* ************************************************ */
   /* ## 4.16 Handling for sticky table headers on Mobile */
-  /* Deleted and burninated */
+  .colhead,
+  .colhead_dark {
+    position: sticky;
+    top: 32px;
+    font-size: 120%;
+    font-weight: bold;
+  }
   /* ************************************************ */
   /* ## 4.17 SITE HEADER AND MOBILE MENU */
   /* ## 4.17.1 Mobile Menu When Closed, Setup */
