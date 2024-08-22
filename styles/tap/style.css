@@ -1993,7 +1993,7 @@ body#collage .cats_music {
 }
 /* first row of each box */
 #noty_bottomRight_layout_container .noty_message {
-  background: radial-gradient(circle at top right, #7e7b7a, #000 /*#9b9695*/) !important;
+  background: radial-gradient(circle at top right, #615f5e, #7e7b7a) !important;
   color: #f2f9fc !important;
   font-weight: 700;
   padding: 0.6rem !important;
@@ -2006,7 +2006,7 @@ body#collage .cats_music {
 
 /* second row of each box */
 #noty_bottomRight_layout_container .noty_buttons {
-  background-color: #615f5e !important;
+  background-color: #6a6867 !important;
   border: none !important;
   padding: 0.4rem !important;
 }
@@ -2272,7 +2272,7 @@ tr.snatched_torrent div.tags::before {
       border: thick solid #099909;
     }
     70% {
-      border: thick solid #9b9695;
+      border: thick solid #7e7b7a;
     }
     100% {
       border: thick solid #6a6867;
