@@ -3435,7 +3435,7 @@ html body div#wrapper div#header div#menu ul li.active a {
 /*  #################################################### */
 /*  Custom Override for 1.10 Notifications */
 /*  Only for desktop, and respect user preference */
-@media only screen and (min-width: 575px) and (prefers-contrast: unset) {
+@media only screen and (min-width: 575px) and (prefers-contrast: no-preference) {
   /* Provide Haze Effect */
   #noty_bottomRight_layout_container li {
     box-shadow: unset !important;
