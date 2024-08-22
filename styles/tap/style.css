@@ -1993,7 +1993,7 @@ body#collage .cats_music {
 }
 /* first row of each box */
 #noty_bottomRight_layout_container .noty_message {
-  background: radial-gradient(circle at top right, #7e7b7a, #9b9695) !important;
+  background: radial-gradient(circle at top right, #7e7b7a, #000 /*#9b9695*/) !important;
   color: #f2f9fc !important;
   font-weight: 700;
   padding: 0.6rem !important;
@@ -3412,7 +3412,7 @@ Documentation of mobile classes:
 /* ## 6.1 Debugging Tools
    various 'debug' and x-debug features are avail in this doc elsewhere */
 #footer p:last-of-type::after {
-  content: " | Apollostage build 240822 240818 haze";
+  content: " | Apollostage build 240822 240822a haze";
 }
 
 /* ########################################################################
@@ -3433,7 +3433,7 @@ html body div#wrapper div#header div#menu ul li.active a {
 }
 
 /*  #################################################### */
-/*  Custom Override for 2.4 Notifications */
+/*  Custom Override for 1.10 Notifications */
 /*  Only for desktop, and respect user preference */
 @media only screen and (min-width: 575px) and (prefers-contrast: unset) {
   /* Provide Haze Effect */
