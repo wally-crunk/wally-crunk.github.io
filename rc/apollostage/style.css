@@ -2390,6 +2390,7 @@ ul#check::after {
 }
 /* ************************************************ */
 /* ## 2.6 Autocompletes */
+/* foo */
 /* Complete list of matches */
 .autocomplete-suggestions {
   margin-top: 5px;
@@ -3397,7 +3398,7 @@ Documentation of mobile classes:
 /* ## 6.1 Debugging Tools
    various 'debug' and x-debug features are avail in this doc elsewhere */
 #footer p:last-of-type::after {
-  content: " | Apollostage build 240822";
+  content: " | Apollostage build 240822211914";
 }
 
 /* ########################################################################
