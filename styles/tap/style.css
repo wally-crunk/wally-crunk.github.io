@@ -50,7 +50,8 @@
    ## 2.3.2 additional treatment for messages that pop
    ## 2.4 Upload warnings ##
    ### 2.4.1 Post-Upload Download your Torrents Message
-   ## 2.5 Toolboxes */
+   ## 2.5 Toolboxes
+   ## 2.6 Autocompletes */
 /* # 3 DOCUMENTATION OF MOBILE CLASSES */
 /* # 4 CHANGES FOR MOBILE VIEW
    ## 4.1  Site Layout
@@ -1993,7 +1994,7 @@ body#collage .cats_music {
 /* first row of each box */
 #noty_bottomRight_layout_container .noty_message {
   background: radial-gradient(circle at top right, #7e7b7a, #9b9695) !important;
-  color: #fff !important;
+  color: #f2f9fc !important;
   font-weight: 700;
   padding: 0.6rem !important;
 }
@@ -2286,6 +2287,7 @@ tr.snatched_torrent div.tags::before {
     animation-duration: 1.5s;
   }
 }
+/* ************************************************ */
 /* ## 2.4 Upload warnings ## */
 .upload-error,
 ul#check.nobullet > * {
@@ -2299,7 +2301,7 @@ ul#check.nobullet > * {
 }
 
 .upload-error a {
-  color: #000 !important;
+  color: #b71010 !important;
   text-decoration-line: underline;
 }
 
@@ -2319,7 +2321,7 @@ ul#check.nobullet > * {
 /* We also pop a message in header to draw attention
    when any upload warning occurs inline on the page */
 /* TODO: When HTML becomes available for this message,
-   content will be deleted. */
+   content attribute will be deleted. */
 .upload-error::after,
 ul#check::after {
   content: "Warning!  There were one or more errors in your submission. Check below for error messages.";
@@ -2347,6 +2349,7 @@ ul#check::after {
    the easily missed 'click here' warning shall be highlighted,
    once CSS is available.  CSS not yet available.
 */
+/* ************************************************ */
 /* ## 2.5 Toolboxes ## */
 /* TOOLBOXES */
 .permission_head {
@@ -2406,6 +2409,54 @@ ul#check::after {
     font-weight: bold;
   }
 }
+/* ************************************************ */
+/* ## 2.6 Autocompletes */
+/* Complete list of matches */
+div.autocomplete-suggestions {
+  margin-top: 5px;
+  border: 1px solid #999;
+  background: #101313;
+  color: #888;
+  width: auto !important;
+  text-align: left;
+  cursor: default;
+  border: 1px solid #555;
+  border-top: 1px dashed #777;
+  box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.8) !important;
+  /* core styles should not be changed */
+  position: absolute;
+  display: none;
+  z-index: 9999;
+  max-height: 254px;
+  overflow: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+/* Each match in the list of matches */
+.autocomplete-suggestions .autocomplete-suggestion {
+  white-space: nowrap;
+  cursor: pointer;
+  position: relative;
+  padding: 0 6px;
+  line-height: 1.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #6b7173 !important;
+}
+
+/* Portion that matches */
+.autocomplete-suggestions .autocomplete-suggestion strong {
+  font-weight: 400;
+  color: #f2f9fc !important;
+}
+
+/* When one match is highlighted by mouse */
+.autocomplete-suggestions .autocomplete-suggestion.autocomplete-selected {
+  background-color: #101313 !important;
+}
+
 /* ########################################################################
    # 3 DOCUMENTATION OF MOBILE CLASSES
    ########################################################################
@@ -3361,19 +3412,18 @@ Documentation of mobile classes:
 /* ## 6.1 Debugging Tools
    various 'debug' and x-debug features are avail in this doc elsewhere */
 #footer p:last-of-type::after {
-  content: " | Apollostage build 240808 240818 haze";
+  content: " | Apollostage build 240822 240818 haze";
 }
 
 /* ########################################################################
    # End of Section
    ######################################################################## */
-/*  #################################################### */
-/*  Custom for 1.8.1 Menu Handling */
+/*  Custom Override for 1.8.1 Menu Handling */
 /*  Active Tab */
 html body div#wrapper div#header div#menu ul li.active a {
-  background-color: #22201a;
+  background-color: hsl(45, 13%, 12%);
   background-image: url("data:image/svg+xml,%3Csvg id='patternId' width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cpattern id='a' patternUnits='userSpaceOnUse' width='70' height='8' patternTransform='scale(1) rotate(0)'%3E%3Crect x='0' y='0' width='100%25' height='100%25' fill='hsla(0,0%25,100%25,0)'/%3E%3Cpath d='M-.02 22c8.373 0 11.938-4.695 16.32-9.662C20.785 7.258 25.728 2 35 2c9.272 0 14.215 5.258 18.7 10.338C58.082 17.305 61.647 22 70.02 22M-.02 14.002C8.353 14 11.918 9.306 16.3 4.339 20.785-.742 25.728-6 35-6 44.272-6 49.215-.742 53.7 4.339c4.382 4.967 7.947 9.661 16.32 9.664M70 6.004c-8.373-.001-11.918-4.698-16.3-9.665C49.215-8.742 44.272-14 35-14c-9.272 0-14.215 5.258-18.7 10.339C11.918 1.306 8.353 6-.02 6.002' stroke-width='1' stroke='hsla(33, 15%25, 35%25, 0.25)' fill='none'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='800%25' height='800%25' transform='translate(0,0)' fill='url(%23a)'/%3E%3C/svg%3E");
-  border-bottom: solid thick gold; /* fallback */
+  border-bottom: solid thick hsl(51, 100%, 40%); /* fallback */
   border-image-slice: 1;
   border-width: 5px;
   border-image-source: linear-gradient(to left, hsla(67, 18%, 55%, 0.44), hsla(58, 24%, 67%, 0.8));
@@ -3383,77 +3433,26 @@ html body div#wrapper div#header div#menu ul li.active a {
 }
 
 /*  #################################################### */
-/* Custom for 2.4 Noty */
-/* hazation */
-#noty_bottomRight_layout_container li {
-  box-shadow: unset !important;
-  background: unset !important;
-  box-shadow: 2.3px 2.3px 1.9px rgba(0, 0, 0, 0.1), 9.7px 9.7px 7.7px rgba(0, 0, 0, 0.15), 26.5px 26.5px 21.2px rgba(0, 0, 0, 0.2), 100px 100px 80px rgba(0, 0, 0, 0.33) !important;
-  backdrop-filter: blur(1.5px);
-  /* 2024 status */
-  -webkit-backdrop-filter: blur(1.5px);
-}
-
-/* first row of each box */
-#noty_bottomRight_layout_container .noty_message {
-  background: radial-gradient(circle at top right, rgba(126, 123, 122, 0.23), rgba(155, 150, 149, 0.23)) !important;
-}
-
-/* second row of each box */
-#noty_bottomRight_layout_container .noty_buttons {
-  background-color: rgba(97, 95, 94, 0.42) !important;
-}
-
-/* ftf autocomplete */
-/* ***** */
-/* ***** */
-/* ### XXX.XXX FIX AUTOCOMPLETE */
-/* ***** */
-/* Complete list of matches */
-div.autocomplete-suggestions {
-  margin-top: 5px;
-  border: 1px solid #999;
-  background: #322e2c !important;
-  background: #000 !important;
-  color: #fff !important;
-  width: auto !important;
-  text-align: left;
-  cursor: default;
-  border: 1px solid #555;
-  border-top: 1px dashed #777;
-  box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.8) !important;
-  /* core styles should not be changed */
-  position: absolute;
-  display: none;
-  z-index: 9999;
-  max-height: 254px;
-  overflow: hidden;
-  overflow-y: auto;
-  box-sizing: border-box;
-}
-
-/* Each match in the list of matches */
-.autocomplete-suggestions .autocomplete-suggestion {
-  white-space: nowrap;
-  cursor: pointer;
-  position: relative;
-  padding: 0 6px;
-  line-height: 1.5rem;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  color: slategray !important;
-}
-
-/* Portion that matches */
-.autocomplete-suggestions .autocomplete-suggestion strong {
-  font-weight: 400;
-  color: #fef !important;
-}
-
-/* When one match is highlighted by mouse */
-.autocomplete-suggestions .autocomplete-suggestion.autocomplete-selected {
-  background-color: rgba(255, 255, 255, 0.25) !important;
+/*  Custom Override for 2.4 Notifications */
+/*  Only for desktop, and respect user preference */
+@media only screen and (min-width: 575px) and (prefers-contrast: unset) {
+  /* Provide Haze Effect */
+  #noty_bottomRight_layout_container li {
+    box-shadow: unset !important;
+    background: unset !important;
+    box-shadow: 2.3px 2.3px 1.9px rgba(0, 0, 0, 0.1), 9.7px 9.7px 7.7px rgba(0, 0, 0, 0.15), 26.5px 26.5px 21.2px rgba(0, 0, 0, 0.2), 100px 100px 80px rgba(0, 0, 0, 0.33) !important;
+    backdrop-filter: blur(1.5px);
+    /* 2024 status */
+    -webkit-backdrop-filter: blur(1.5px);
+  }
+  /* first row of each box */
+  #noty_bottomRight_layout_container .noty_message {
+    background: radial-gradient(circle at top right, rgba(126, 123, 122, 0.23), rgba(155, 150, 149, 0.23)) !important;
+  }
+  /* second row of each box */
+  #noty_bottomRight_layout_container .noty_buttons {
+    background-color: rgba(97, 95, 94, 0.42) !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
