@@ -2395,7 +2395,7 @@ ul#check::after {
 .autocomplete-suggestions {
   margin-top: 5px;
   border: 1px solid #999;
-  background: #342A33;
+  background: #342A33 !important;
   color: #888;
   width: auto !important;
   text-align: left;
@@ -2415,7 +2415,6 @@ ul#check::after {
 
 /* Each match in the list of matches */
 .autocomplete-suggestions .autocomplete-suggestion {
-  white-space: nowrap;
   cursor: pointer;
   position: relative;
   padding: 0 6px;
