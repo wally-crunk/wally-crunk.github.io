@@ -253,11 +253,14 @@ textarea:focus {
 /* #developmentlife; #TODO additional bug checks on this. */
 /* The following overflow: hidden will be defeated when table is present;
    sticky headers don't work inside overflow: hidden. */
+/* TODO: user settings page sticky 'sections box' floats & that does not work
+   with stickys and is exempted. */
 #content > .thin:not(:has(table)),
 .box,
 .box2,
 .main_column:not(:has(table)),
-.sidebar {
+.sidebar,
+body#user .main_column {
   overflow: hidden;
 }
 
