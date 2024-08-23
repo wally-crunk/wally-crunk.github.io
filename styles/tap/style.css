@@ -256,7 +256,7 @@ textarea:focus {
 #content > .thin:not(:has(table)),
 .box,
 .box2,
-.main_column,
+.main_column:not(:has(table)),
 .sidebar {
   overflow: hidden;
 }
