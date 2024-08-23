@@ -1519,14 +1519,14 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
 
 .tooltipster-default {
   background-color: #1d1c1c;
-  border: 0 solid #888483;
+  border: 4px solid #888483;
   border-radius: 2.5px;
-  color: #888483;
+  color: #879092;
 }
 
 .tooltipster-default .tooltipster-content {
   background-color: #1d1c1c;
-  color: #888483;
+  color: #879092;
   font-size: 12px;
   line-height: 1.4;
   padding: 4px 6px;
@@ -1534,12 +1534,12 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
 
 .tooltipster-default .tooltipster-content a {
   background-color: #1d1c1c;
-  color: #9b9695;
+  color: #c7cfd2;
   font-weight: 600;
 }
 
 .tooltipster-default .tooltipster-content a:hover {
-  color: #918d8c;
+  color: #a6afb2;
 }
 
 /* ************************************************ */
@@ -2394,7 +2394,6 @@ ul#check::after {
 /* Complete list of matches */
 .autocomplete-suggestions {
   margin-top: 5px;
-  border: 1px solid #999;
   background: #101313 !important;
   color: #888;
   width: auto !important;
