@@ -353,7 +353,7 @@ table .rowb:nth-child(even),
 #dnulist tr:not(.colhead, .colhead_dark):nth-child(even),
 #upload tr:nth-child(even),
 #inbox .message_table tr.a {
-  background-color: #2A242C;
+  background-color: #342A33;
 }
 
 table {
@@ -368,7 +368,7 @@ table .rowb:nth-child(odd),
 #dnulist tr:not(.colhead, .colhead_dark):nth-child(odd),
 #upload tr:nth-child(odd),
 #inbox .message_table tr.b {
-  background-color: #342A33;
+  background-color: #423438;
 }
 
 table ul.options_list {
@@ -379,7 +379,7 @@ table ul.options_list {
 #content div.thin div.head,
 .colhead,
 .colhead_dark {
-  background-color: #423438;
+  background-color: #324041;
   line-height: 18px;
   position: sticky;
   top: 0;
