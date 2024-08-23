@@ -250,7 +250,10 @@ textarea:focus {
   border-radius: 0.25rem;
 }
 
-#content > .thin,
+/* #developmentlife; #TODO additional bug checks on this. */
+/* The following overflow: hidden will be defeated when table is present;
+   sticky headers don't work inside overflow: hidden. */
+#content > .thin:not(:has(table)),
 .box,
 .box2,
 .main_column,
@@ -380,6 +383,7 @@ table ul.options_list {
   line-height: 18px;
   position: sticky;
   top: 0;
+  z-index: 1;
 }
 
 .colhead td,
