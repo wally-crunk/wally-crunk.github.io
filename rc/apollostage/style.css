@@ -1521,12 +1521,12 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
   background-color: #121616;
   border: 0 solid #1daf8b;
   border-radius: 2.5px;
-  color: #188e71;
+  color: #1daf8b;
 }
 
 .tooltipster-default .tooltipster-content {
   background-color: #121616;
-  color: #188e71;
+  color: #1daf8b;
   font-size: 12px;
   line-height: 1.4;
   padding: 4px 6px;
@@ -1534,12 +1534,12 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
 
 .tooltipster-default .tooltipster-content a {
   background-color: #121616;
-  color: #1daf8b;
+  color: #23d1a5;
   font-weight: 600;
 }
 
 .tooltipster-default .tooltipster-content a:hover {
-  color: #23d1a5;
+  color: #20c098;
 }
 
 /* ************************************************ */
