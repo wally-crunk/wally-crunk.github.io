@@ -1527,7 +1527,7 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
 .tooltipster-default .tooltipster-content {
   background-color: #121616;
   color: #c6d2c8;
-  font-size: 0.95rem;
+  font-size: 13px;
   line-height: 1.4;
   padding: 4px 6px;
 }
