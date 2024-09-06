@@ -17,6 +17,9 @@
 ########################################################################
     TABLE OF CONTENTS
 ######################################################################## */
+
+ div#content:before {   content:'This beta stylesheet has expired and will stop working soon.  Please update your stylesheet at the settings page.';   width: 80%;   height: 2rem;   border: 1rem double pink;   padding: 2rem;   background: darkmagenta;   color: pink;   font-size: larger;   margin: 2rem;   position: relative;   display: block;   text-align: center; } 
+
 /* # 0 GENERAL SETUP
    ## 0.1 Housekeeping
    ## 0.2 Global variables
