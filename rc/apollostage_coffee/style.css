@@ -244,7 +244,7 @@ textarea:focus {
 .box .box.pad,
 .main_column .box.pad:not(#reply_box),
 .body .box.pad:not(#reply_box) {
-  background-color: #322e2c;
+  background-color: rgba(141, 125, 112, 0.15);
   border: 2px solid #51413F;
   margin: 8px;
   border-radius: 0.25rem;
@@ -328,7 +328,7 @@ li:last-child {
 }
 
 blockquote {
-  background-color: #2d2928;
+  background-color: rgba(141, 125, 112, 0.15);
   border: 1px dashed #51413F;
   margin: 12px;
   padding: 12px;
@@ -1364,9 +1364,8 @@ blockquote {
 
 .filelist_table td,
 .reportinfo_table,
-.torrentdetails,
-blockquote {
-  background-color: #2d2928;
+.torrentdetails {
+  background-color: rgba(141, 125, 112, 0.15);
 }
 
 #bookmarks #torrent_table tr:not(.colhead, .colhead_dark) td:nth-child(2) {

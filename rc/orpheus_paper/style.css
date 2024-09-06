@@ -1364,8 +1364,7 @@ blockquote {
 
 .filelist_table td,
 .reportinfo_table,
-.torrentdetails,
-blockquote {
+.torrentdetails {
   background-color: #C2C6C7;
 }
 

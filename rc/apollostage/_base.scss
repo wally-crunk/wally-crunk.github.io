@@ -32,6 +32,16 @@
 //  Feature:  Add styling for autocompletes to match theme, and prevent
 //    white-on-white. Section 2.6.
 //
+//  Fix: Styling and legibility improvements for tooltips.
+//
+//  Fix: Sticky headers on most tables where it's possible.
+//
+//  Formatting: Minor color adjustments to enable the above.
+//
+//  Feature:  Add new "Orpheus Haze" stylesheet, replacing Linohaze.
+//    This stylesheet includes 'haze' effects which respect are disabled for
+//    when the user/operating system requests for high-contrast.
+//
 //  Updated 2024-08-01:
 //
 //  Fix: Fixed the mobile view (media <575px) (thanks @hawkeye). Mobile
@@ -216,6 +226,7 @@ $z-mobilemenu_closed-tab: 400;
 $z-mobilemenu_closed-tab-icons: 500;
 $z-desktop-menu-open: 800;
 $z-desktop-menu-closed: 900;
+$z-sticky-table-headers: 1;
 $height-mobilemenu_closed-tab: 32px;
 $wrapper-max-width: 1020px;
 
@@ -369,11 +380,19 @@ textarea:focus {
   border-radius: 0.25rem;
 }
 
-#content > .thin,
+/* #developmentlife; #TODO additional bug checks on this. */
+/* The following overflow: hidden will be defeated when table is present;
+   sticky headers don't work inside overflow: hidden. */
+
+/* TODO: user settings page sticky 'sections box' floats & that does not work
+   with stickys and is exempted. */
+
+#content > .thin:not(:has(table)),
 .box,
 .box2,
-.main_column,
-.sidebar {
+.main_column:not(:has(table)),
+.sidebar,
+body#user .main_column {
   overflow: hidden;
 }
 
@@ -501,6 +520,7 @@ table ul.options_list {
   line-height: 18px;
   position: sticky;
   top: 0;
+  z-index: $z-sticky-table-headers;
 }
 
 .colhead td,
@@ -1489,8 +1509,7 @@ blockquote {
 
 .filelist_table td,
 .reportinfo_table,
-.torrentdetails,
-blockquote {
+.torrentdetails {
   background-color: $color-background-blockquote;
 }
 
@@ -1657,22 +1676,22 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
 }
 
 .tooltipster-default {
-  background-color: $color-background-base;
-  border: 0 solid $color-accent-border-tooltipster;
+  background-color: $color-background-tooltipster;
+  border: 4px solid $color-accent-border-tooltipster;
   border-radius: 2.5px;
   color: $color-text-tooltipster;
 }
 
 .tooltipster-default .tooltipster-content {
-  background-color: $color-background-base;
+  background-color: $color-background-tooltipster;
   color: $color-text-tooltipster;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1.4;
   padding: 4px 6px;
 }
 
 .tooltipster-default .tooltipster-content a {
-  background-color: $color-background-base;
+  background-color: $color-background-tooltipster;
   color: $color-text-tooltipster-anchor;
   font-weight: 600;
 }
@@ -2624,8 +2643,7 @@ ul#check::after {
 /* Complete list of matches */
 .autocomplete-suggestions {
   margin-top: 5px;
-  border: 1px solid #999;
-  background: $color-background-autocompletes;
+  background: $color-background-autocompletes !important;
   color: #888;  //does nothing
   width: auto !important;
   text-align: left;
@@ -2646,7 +2664,6 @@ ul#check::after {
 
 /* Each match in the list of matches */
 .autocomplete-suggestions .autocomplete-suggestion {
-  white-space: nowrap;
   cursor: pointer;
   position: relative;
   padding: 0 6px;
@@ -2660,7 +2677,7 @@ ul#check::after {
 /* Portion that matches */
 .autocomplete-suggestions .autocomplete-suggestion strong {
   font-weight: 400;
-  color: $color-text-highlight-match !important; // fore-1000
+  color: $color-text-autocomplete-highlight-match !important; // fore-1000
 }
 
 /* When one match is highlighted by mouse */
