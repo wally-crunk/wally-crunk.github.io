@@ -9,7 +9,7 @@
 @import "../apollostage/_variables";
 
 // debug slugs: must be after import.
-$build-slug: $build-slug + " " + "240822a haze";
+$build-slug: $build-slug + " " + "240906 haze";
 
 // and override as follows:
 
@@ -29,7 +29,7 @@ $back-700: #443b3a;
 $back-800: #4a3e3c;
 $back-900: #51413f;
 $back-1000: #574340;
-$back-500-low: rgba(169, 148, 134.7, 0.15);
+$back-500-low: rgba(169, 148, 134.7, 0.07);
 
 // Mids
 $midtone-100: #444342;
@@ -238,7 +238,6 @@ html body div#wrapper div#header div#menu ul li.active a {
 @media only screen and (min-width: 575px) and (prefers-contrast: no-preference) {
   /* Provide Haze Effect */
   #noty_bottomRight_layout_container li {
-    box-shadow: unset !important;
     background: unset !important;
     box-shadow:
       2.3px 2.3px 1.9px rgba(0, 0, 0, 0.1),

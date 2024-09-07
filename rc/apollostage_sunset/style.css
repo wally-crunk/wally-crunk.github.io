@@ -2202,7 +2202,7 @@ tr.snatched_torrent div.tags::before {
 .save_message {
   border: thick solid #F78DA6;
   padding: 1rem 1rem 1rem 48px;
-  background: #674242;
+  background-color: #674242;
   background-image: url("/svg/site/ops-icon-harp-ccc.svg");
   background-repeat: no-repeat;
   background-position: 8px center;
@@ -2224,7 +2224,6 @@ tr.snatched_torrent div.tags::before {
   padding: 1rem 1rem 1rem 48px;
   background-color: #633;
   background-image: url("/svg/site/ops-icon-triangle-ccc.svg");
-  background-image: url("https://wally-crunk.github.io/svg/site/ops-icon-triangle-ccc.svg");
   background-repeat: no-repeat;
   background-position: 8px;
   background-size: 32px;
@@ -2320,7 +2319,7 @@ ul#check::after {
   border: thick solid #daa520;
   border-radius: 0.25rem;
   padding: 1rem 1rem 1rem 48px;
-  background: hsl(183, 2.5%, 92%);
+  background-color: hsl(183, 2.5%, 92%);
   background-image: url("/svg/site/ops-icon-triangle-000.svg");
   background-repeat: no-repeat;
   background-position: 8px center;
@@ -3400,9 +3399,9 @@ Documentation of mobile classes:
    # 6 CLOSING
    ######################################################################## */
 /* ## 6.1 Debugging Tools
-   various 'debug' and x-debug features are avail in this doc elsewhere */
+   variou 'debug' and x-debug features are avail in this doc elsewhere */
 #footer p:last-of-type::after {
-  content: " | Apollostage build 240822211914 sunset";
+  content: " | Apollostage build 240906 sunset";
 }
 
 /* ########################################################################
