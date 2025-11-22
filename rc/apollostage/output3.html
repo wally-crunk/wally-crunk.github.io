@@ -1,0 +1,525 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Color Swatches</title>
+    <style>
+        body {
+            transition: background-color 0.05s ease;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        td {
+            border: thin solid gray;
+            padding: 5px;
+        }
+        .swatch {
+            width: 50px;
+            height: 50px;
+        }
+        .info {
+            font-size: 8px;
+        }
+        .name {
+            font-size: 8px;
+            font-weight: bold;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, Inter, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <!-- Toggle button to change background color -->
+    <button onclick="toggleBackground()">Toggle Background</button>
+
+    <script>
+        function toggleBackground() {
+            var body = document.body;
+            var currentColor = body.style.backgroundColor;
+            if (currentColor === "rgb(255, 255, 255)") {
+                body.style.backgroundColor = "rgb(128, 128, 128)"; // 50% gray
+            } else if (currentColor === "rgb(128, 128, 128)") {
+                body.style.backgroundColor = "rgb(40,40,40)"; // near-Black
+            } else {
+                body.style.backgroundColor = "rgb(255, 255, 255)"; // White
+            }
+        }
+    </script>
+
+
+<h1>Input Filename: _variables.scss</h1>
+<h2>//Backgrounds -- 100-600 are used</h2>
+<table>
+<tr valign=top>
+<td>
+<div class="swatch" style="background-color: #121616;"></div>
+<div class="info">rgb(18, 22, 22)</div>
+<div class="info">hsl(180, 10%, 8%)</div>
+<div class="info">hsv(180, 18%, 9%)</div>
+<div class="info">#121616</div>
+<div class="name">$back-100:</div>
+</td>
+<td>
+<div class="swatch" style="background-color: #181d1d;"></div>
+<div class="info">rgb(24, 29, 29)</div>
+<div class="info">hsl(180, 9%, 10%)</div>
+<div class="info">hsv(180, 17%, 11%)</div>
+<div class="info">#181d1d</div>
+<div class="name">$back-200:</div>
+</td>
+<td>
+<div class="swatch" style="background-color: #1d2424;"></div>
+<div class="info">rgb(29, 36, 36)</div>
+<div class="info">hsl(180, 11%, 13%)</div>
+<div class="info">hsv(180, 19%, 14%)</div>
+<div class="info">#1d2424</div>
+<div class="name">$back-300:</div>
+</td>
+<td>
+<div class="swatch" style="background-color: #222b2b;"></div>
+<div class="info">rgb(34, 43, 43)</div>
+<div class="info">hsl(180, 12%, 15%)</div>
+<div class="info">hsv(180, 21%, 17%)</div>
+<div class="info">#222b2b</div>
+<div class="name">$back-400:</div>
+</td>
+<td>
+<div class="swatch" style="background-color: #252f32;"></div>
+<div class="info">rgb(37, 47, 50)</div>
+<div class="info">hsl(194, 15%, 17%)</div>
+<div class="info">hsv(194, 26%, 20%)</div>
+<div class="info">#252f32</div>
+<div class="name">$back-500:</div>
+</td>
+<td>
+<div class="swatch" style="background-color: #2d393a;"></div>
+<div class="info">rgb(45, 57, 58)</div>
+<div class="info">hsl(185, 13%, 20%)</div>
+<div class="info">hsv(185, 22%, 23%)</div>
+<div class="info">#2d393a</div>
+<div class="name">$back-600:</div>
+</td>
+<td>
+<div class="swatch" style="background-color: #324041;"></div>
+<div class="info">rgb(50, 64, 65)</div>
+<div class="info">hsl(184, 13%, 23%)</div>
+<div class="info">hsv(184, 23%, 25%)</div>
+<div class="info">#324041</div>
+<div class="name">$back-700:</div>
+</td>
+<td>
+<div class="swatch" style="background-color: #384749;"></div>
+<div class="info">rgb(56, 71, 73)</div>
+<div class="info">hsl(187, 13%, 25%)</div>
+<div class="info">hsv(187, 23%, 29%)</div>
+<div class="info">#384749</div>
+<div class="name">$back-800:</div>
+</td>
+<td>
+<div class="swatch" style="background-color: #3c4d50;"></div>
+<div class="info">rgb(60, 77, 80)</div>
+<div class="info">hsl(189, 14%, 27%)</div>
+<div class="info">hsv(189, 25%, 31%)</div>
+<div class="info">#3c4d50</div>
+<div class="name">$back-900:</div>
+</td>
+<td>
+<div class="swatch" style="background-color: #405256;"></div>
+<div class="info">rgb(64, 82, 86)</div>
+<div class="info">hsl(191, 15%, 29%)</div>
+<div class="info">hsv(191, 26%, 34%)</div>
+<div class="info">#405256</div>
+<div class="name">$back-1000:</div>
+</td>
+</tr>
+</table>
+<h2>//Mids</h2>
+<table>
+<tr valign=top>
+<td>
+<div class="swatch" style="background-color: #093a2e;"></div>
+<div class="info">rgb(9, 58, 46)</div>
+<div class="info">hsl(165, 73%, 13%)</div>
+<div class="info">hsv(165, 84%, 23%)</div>
+<div class="info">#093a2e</div>
+<div class="name">$midtone-100:</div>
+</td>
+<td>
+<div class="swatch" style="background-color: #0c4a3b;"></div>
+<div class="info">rgb(12, 74, 59)</div>
+<div class="info">hsl(165, 72%, 17%)</div>
+<div class="info">hsv(165, 84%, 29%)</div>
+<div class="info">#0c4a3b</div>
+<div class="name">$midtone-200:</div>
+</td>
+<td>
+<div class="swatch" style="background-color: #0f5b49;"></div>
+<div class="info">rgb(15, 91, 73)</div>
+<div class="info">hsl(166, 72%, 21%)</div>
+<div class="info">hsv(166, 84%, 36%)</div>
+<div class="info">#0f5b49</div>
+<div class="name">$midtone-300:</div>
+</td>
+<td>
+<div class="swatch" style="background-color: #126c56;"></div>
+<div class="info">rgb(18, 108, 86)</div>
+<div class="info">hsl(165, 71%, 25%)</div>
+<div class="info">hsv(165, 83%, 42%)</div>
+<div class="info">#126c56</div>
+<div class="name">$midtone-400:</div>
+</td>
+<td>
+<div class="swatch" style="background-color: #157d63;"></div>
+<div class="info">rgb(21, 125, 99)</div>
+<div class="info">hsl(165, 71%, 29%)</div>
+<div class="info">hsv(165, 83%, 49%)</div>
+<div class="info">#157d63</div>
+<div class="name">$midtone-500:</div>
+</td>
+<td>
+<div class="swatch" style="background-color: #188e71;"></div>
+<div class="info">rgb(24, 142, 113)</div>
+<div class="info">hsl(165, 71%, 33%)</div>
+<div class="info">hsv(165, 83%, 56%)</div>
+<div class="info">#188e71</div>
+<div class="name">$midtone-600:</div>
+</td>
+<td>
+<div class="swatch" style="background-color: #1a9f7e;"></div>
+<div class="info">rgb(26, 159, 126)</div>
+<div class="info">hsl(165, 72%, 36%)</div>
+<div class="info">hsv(165, 84%, 62%)</div>
+<div class="info">#1a9f7e</div>
+<div class="name">$midtone-700:</div>
+</td>
+<td>
+<div class="swatch" style="background-color: #1daf8b;"></div>
+<div class="info">rgb(29, 175, 139)</div>
+<div class="info">hsl(165, 72%, 40%)</div>
+<div class="info">hsv(165, 83%, 69%)</div>
+<div class="info">#1daf8b</div>
+<div class="name">$midtone-800:</div>
+</td>
+<td>
+<div class="swatch" style="background-color: #20c098;"></div>
+<div class="info">rgb(32, 192, 152)</div>
+<div class="info">hsl(165, 71%, 44%)</div>
+<div class="info">hsv(165, 83%, 75%)</div>
+<div class="info">#20c098</div>
+<div class="name">$midtone-900:</div>
+</td>
+<td>
+<div class="swatch" style="background-color: #23d1a5;"></div>
+<div class="info">rgb(35, 209, 165)</div>
+<div class="info">hsl(165, 71%, 48%)</div>
+<div class="info">hsv(165, 83%, 82%)</div>
+<div class="info">#23d1a5</div>
+<div class="name">$midtone-1000:</div>
+</td>
+</tr>
+</table>
+<h2>//can be same as "midtone" above.</h2>
+<table>
+<tr valign=top>
+<td>
+<div class="swatch" style="background-color: #003d2d;"></div>
+<div class="info">rgb(0, 61, 45)</div>
+<div class="info">hsl(164, 100%, 12%)</div>
+<div class="info">hsv(164, 100%, 24%)</div>
+<div class="info">#003d2d</div>
+<div class="name">$menutheme-100:</div>
+</td>
+<td>
+<div class="swatch" style="background-color: #004b38;"></div>
+<div class="info">rgb(0, 75, 56)</div>
+<div class="info">hsl(165, 100%, 15%)</div>
+<div class="info">hsv(165, 100%, 29%)</div>
+<div class="info">#004b38</div>
+<div class="name">$menutheme-200:</div>
+</td>
+<td>
+<div class="swatch" style="background-color: #005943;"></div>
+<div class="info">rgb(0, 89, 67)</div>
+<div class="info">hsl(165, 100%, 17%)</div>
+<div class="info">hsv(165, 100%, 35%)</div>
+<div class="info">#005943</div>
+<div class="name">$menutheme-300:</div>
+</td>
+<td>
+<div class="swatch" style="background-color: #00674e;"></div>
+<div class="info">rgb(0, 103, 78)</div>
+<div class="info">hsl(165, 100%, 20%)</div>
+<div class="info">hsv(165, 100%, 40%)</div>
+<div class="info">#00674e</div>
+<div class="name">$menutheme-400:</div>
+</td>
+<td>
+<div class="swatch" style="background-color: #00745a;"></div>
+<div class="info">rgb(0, 116, 90)</div>
+<div class="info">hsl(167, 100%, 23%)</div>
+<div class="info">hsv(167, 100%, 45%)</div>
+<div class="info">#00745a</div>
+<div class="name">$menutheme-500:</div>
+</td>
+<td>
+<div class="swatch" style="background-color: #008265;"></div>
+<div class="info">rgb(0, 130, 101)</div>
+<div class="info">hsl(167, 100%, 25%)</div>
+<div class="info">hsv(167, 100%, 51%)</div>
+<div class="info">#008265</div>
+<div class="name">$menutheme-600:</div>
+</td>
+<td>
+<div class="swatch" style="background-color: #008d6d;"></div>
+<div class="info">rgb(0, 141, 109)</div>
+<div class="info">hsl(166, 100%, 28%)</div>
+<div class="info">hsv(166, 100%, 55%)</div>
+<div class="info">#008d6d</div>
+<div class="name">$menutheme-700:</div>
+</td>
+<td>
+<div class="swatch" style="background-color: #009777;"></div>
+<div class="info">rgb(0, 151, 119)</div>
+<div class="info">hsl(167, 100%, 30%)</div>
+<div class="info">hsv(167, 100%, 59%)</div>
+<div class="info">#009777</div>
+<div class="name">$menutheme-800:</div>
+</td>
+<td>
+<div class="swatch" style="background-color: #00a280;"></div>
+<div class="info">rgb(0, 162, 128)</div>
+<div class="info">hsl(167, 100%, 32%)</div>
+<div class="info">hsv(167, 100%, 64%)</div>
+<div class="info">#00a280</div>
+<div class="name">$menutheme-900:</div>
+</td>
+<td>
+<div class="swatch" style="background-color: #00ad89;"></div>
+<div class="info">rgb(0, 173, 137)</div>
+<div class="info">hsl(168, 100%, 34%)</div>
+<div class="info">hsv(168, 100%, 68%)</div>
+<div class="info">#00ad89</div>
+<div class="name">$menutheme-1000:</div>
+</td>
+</tr>
+</table>
+<h2>//Fores -- 400-1000 are used</h2>
+<table>
+<tr valign=top>
+<td>
+<div class="swatch" style="background-color: #6e7968;"></div>
+<div class="info">rgb(110, 121, 104)</div>
+<div class="info">hsl(99, 8%, 44%)</div>
+<div class="info">hsv(99, 14%, 47%)</div>
+<div class="info">#6e7968</div>
+<div class="name">$fore-100:</div>
+</td>
+<td>
+<div class="swatch" style="background-color: #7e887b;"></div>
+<div class="info">rgb(126, 136, 123)</div>
+<div class="info">hsl(106, 5%, 51%)</div>
+<div class="info">hsv(106, 10%, 53%)</div>
+<div class="info">#7e887b</div>
+<div class="name">$fore-200:</div>
+</td>
+<td>
+<div class="swatch" style="background-color: #8c978a;"></div>
+<div class="info">rgb(140, 151, 138)</div>
+<div class="info">hsl(111, 6%, 57%)</div>
+<div class="info">hsv(111, 9%, 59%)</div>
+<div class="info">#8c978a</div>
+<div class="name">$fore-300:</div>
+</td>
+<td>
+<div class="swatch" style="background-color: #99a598;"></div>
+<div class="info">rgb(153, 165, 152)</div>
+<div class="info">hsl(115, 7%, 62%)</div>
+<div class="info">hsv(115, 8%, 65%)</div>
+<div class="info">#99a598</div>
+<div class="name">$fore-400:</div>
+</td>
+<td>
+<div class="swatch" style="background-color: #a7b4a8;"></div>
+<div class="info">rgb(167, 180, 168)</div>
+<div class="info">hsl(125, 8%, 68%)</div>
+<div class="info">hsv(125, 7%, 71%)</div>
+<div class="info">#a7b4a8</div>
+<div class="name">$fore-500:</div>
+</td>
+<td>
+<div class="swatch" style="background-color: #b6c3b8;"></div>
+<div class="info">rgb(182, 195, 184)</div>
+<div class="info">hsl(129, 10%, 74%)</div>
+<div class="info">hsv(129, 7%, 76%)</div>
+<div class="info">#b6c3b8</div>
+<div class="name">$fore-600:</div>
+</td>
+<td>
+<div class="swatch" style="background-color: #c6d2c8;"></div>
+<div class="info">rgb(198, 210, 200)</div>
+<div class="info">hsl(130, 12%, 80%)</div>
+<div class="info">hsv(130, 6%, 82%)</div>
+<div class="info">#c6d2c8</div>
+<div class="name">$fore-700:</div>
+</td>
+<td>
+<div class="swatch" style="background-color: #d5e0d9;"></div>
+<div class="info">rgb(213, 224, 217)</div>
+<div class="info">hsl(142, 15%, 86%)</div>
+<div class="info">hsv(142, 5%, 88%)</div>
+<div class="info">#d5e0d9</div>
+<div class="name">$fore-800:</div>
+</td>
+<td>
+<div class="swatch" style="background-color: #e5efe9;"></div>
+<div class="info">rgb(229, 239, 233)</div>
+<div class="info">hsl(144, 24%, 92%)</div>
+<div class="info">hsv(144, 4%, 94%)</div>
+<div class="info">#e5efe9</div>
+<div class="name">$fore-900:</div>
+</td>
+<td>
+<div class="swatch" style="background-color: #fdfffd;"></div>
+<div class="info">rgb(253, 255, 253)</div>
+<div class="info">hsl(120, 100%, 100%)</div>
+<div class="info">hsv(120, 1%, 100%)</div>
+<div class="info">#fdfffd</div>
+<div class="name">$fore-1000:</div>
+</td>
+</tr>
+</table>
+<h2>//Direct-Specialty</h2>
+<table>
+<tr valign=top>
+<td>
+<div class="swatch" style="background-color: #dcdfe4;"></div>
+<div class="info">rgb(220, 223, 228)</div>
+<div class="info">hsl(218, 13%, 88%)</div>
+<div class="info">hsv(218, 4%, 89%)</div>
+<div class="info">#dcdfe4</div>
+<div class="name">$ds-neutral-300:</div>
+</td>
+<td>
+<div class="swatch" style="background-color: #b8b8b8;"></div>
+<div class="info">rgb(184, 184, 184)</div>
+<div class="info">hsl(0, 0%, 72%)</div>
+<div class="info">hsv(0, 0%, 72%)</div>
+<div class="info">#b8b8b8</div>
+<div class="name">$ds-neutral-400:</div>
+</td>
+<td>
+<div class="swatch" style="background-color: #8591a2;"></div>
+<div class="info">rgb(133, 145, 162)</div>
+<div class="info">hsl(215, 13%, 58%)</div>
+<div class="info">hsv(215, 18%, 64%)</div>
+<div class="info">#8591a2</div>
+<div class="name">$ds-neutral-500:</div>
+</td>
+<td>
+<div class="swatch" style="background-color: #000;"></div>
+<div class="info">rgb(0, 0, 0)</div>
+<div class="info">hsl(0, 0%, 0%)</div>
+<div class="info">hsv(0, 0%, 0%)</div>
+<div class="info">#000</div>
+<div class="name">$ds-neutral-000:</div>
+</td>
+<td>
+<div class="swatch" style="background-color: #b71010;"></div>
+<div class="info">rgb(183, 16, 16)</div>
+<div class="info">hsl(0, 84%, 39%)</div>
+<div class="info">hsv(0, 91%, 72%)</div>
+<div class="info">#b71010</div>
+<div class="name">$ds-red:</div>
+</td>
+<td>
+<div class="swatch" style="background-color: #099909;"></div>
+<div class="info">rgb(9, 153, 9)</div>
+<div class="info">hsl(120, 89%, 32%)</div>
+<div class="info">hsv(120, 94%, 60%)</div>
+<div class="info">#099909</div>
+<div class="name">$ds-green:</div>
+</td>
+<td>
+<div class="swatch" style="background-color: #f9e340;"></div>
+<div class="info">rgb(249, 227, 64)</div>
+<div class="info">hsl(53, 94%, 61%)</div>
+<div class="info">hsv(53, 74%, 98%)</div>
+<div class="info">#f9e340</div>
+<div class="name">$ds-yellow:</div>
+</td>
+<td>
+<div class="swatch" style="background-color: #daa520;"></div>
+<div class="info">rgb(218, 165, 32)</div>
+<div class="info">hsl(43, 74%, 49%)</div>
+<div class="info">hsv(43, 85%, 85%)</div>
+<div class="info">#daa520</div>
+<div class="name">$ds-goldenrod:</div>
+</td>
+</tr>
+</table>
+<h2>$ds-gray-92: hsl(183deg 2.5% 92%);</h2>
+<table>
+<tr valign=top>
+<td>
+<div class="swatch" style="background-color: #000;"></div>
+<div class="info">rgb(0, 0, 0)</div>
+<div class="info">hsl(0, 0%, 0%)</div>
+<div class="info">hsv(0, 0%, 0%)</div>
+<div class="info">#000</div>
+<div class="name">$ds-black:</div>
+</td>
+</tr>
+</table>
+<h2>$color-accent-cats_music: darkslategray;</h2>
+<table>
+<tr valign=top>
+<td>
+<div class="swatch" style="background-color: #fed100;"></div>
+<div class="info">rgb(254, 209, 0)</div>
+<div class="info">hsl(49, 100%, 50%)</div>
+<div class="info">hsv(49, 100%, 100%)</div>
+<div class="info">#fed100</div>
+<div class="name">$color-accent-forum-inline-last-read:</div>
+</td>
+<td>
+<div class="swatch" style="background-color: #fed100;"></div>
+<div class="info">rgb(254, 209, 0)</div>
+<div class="info">hsl(49, 100%, 50%)</div>
+<div class="info">hsv(49, 100%, 100%)</div>
+<div class="info">#fed100</div>
+<div class="name">$color-accent-forum-unread:</div>
+</td>
+</tr>
+</table>
+<h2>$color-accent-selection-background: $midtone-800;</h2>
+<table>
+<tr valign=top>
+<td>
+<div class="swatch" style="background-color: #fff;"></div>
+<div class="info">rgb(255, 255, 255)</div>
+<div class="info">hsl(0, 0%, 100%)</div>
+<div class="info">hsv(0, 0%, 100%)</div>
+<div class="info">#fff</div>
+<div class="name">$color-accent-selection-text: $fore-700; // usually</div>
+</td>
+</tr>
+</table>
+<h2>$color-accent-border-warning-2: hsl(348deg 84% 51%);</h2>
+<table>
+<tr valign=top>
+<td>
+<div class="swatch" style="background-color: #633;"></div>
+<div class="info">rgb(102, 51, 51)</div>
+<div class="info">hsl(0, 33%, 30%)</div>
+<div class="info">hsv(0, 50%, 40%)</div>
+<div class="info">#633</div>
+<div class="name">$color-background-warning:</div>
+</td>
+</tr>
+</table>
+
+</body>
+</html>
