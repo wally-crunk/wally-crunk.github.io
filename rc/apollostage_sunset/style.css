@@ -2021,7 +2021,7 @@ body#collage .cats_music {
 /* buttons */
 #noty_bottomRight_layout_container .noty_buttons a {
   background-color: none;
-  color: #CDB6C5 !important;
+  color: #fff8f8 !important;
   border: thin solid transparent; /* prevents button movement */
   border-radius: 14px;
   padding: 0 6px;
@@ -2033,7 +2033,7 @@ body#collage .cats_music {
   }
 }
 #noty_bottomRight_layout_container .noty_buttons a:hover {
-  background-color: #CDB6C5;
+  background-color: #fff8f8;
   color: #D19DC8 !important;
   border: thin solid #D19DC8;
   border-radius: 14px;
@@ -2122,7 +2122,7 @@ body#torrents div.box.box_tags li > a:first-child {
   font-weight: 700;
   font-size: 0.6rem;
   vertical-align: baseline;
-  color: #CDB6C5;
+  color: #fff8f8;
   background: #D19DC8;
   padding: 0 0.5rem;
   border-radius: 1rem;
@@ -2145,7 +2145,7 @@ body#torrents div.box.box_tags li > a:first-child {
   table.torrent_table.cats.m_table td.td_info.big_info div.group_info.clear div.tags a:hover,
   body#torrents div.box.box_tags li > a:first-child:hover {
     color: #D19DC8 !important;
-    background: #CDB6C5 !important;
+    background: #fff8f8 !important;
     transition: all 0.15s cubic-bezier(0.25, 0.8, 0.25, 1);
     box-shadow: rgba(0, 0, 0, 0.25) 0 14px 28px, rgba(0, 0, 0, 0.22) 0 10px 10px;
   }
@@ -2238,7 +2238,7 @@ tr.snatched_torrent div.tags::before {
 .tl_snatched_torrent, tr.snatched_group div.tags::before,
 tr.snatched_torrent div.tags::before {
   background: #8591a2;
-  color: #000;
+  color: #fff8f8;
   font-style: italic;
   font-weight: 300;
 }
@@ -2249,20 +2249,20 @@ tr.snatched_torrent div.tags::before {
 .tl_bad_folders,
 .tl_bad_files {
   background: #A196C4;
-  color: #DADDEA;
+  color: #fff8f8;
 }
 
 .tl-status--warning, .tl_checksum,
 .tl_trumpable,
 .tl_missing_lineage {
   background: #DE93B7;
-  color: #CDB6C5;
+  color: #fff8f8;
 }
 
 .tl-status--approved, .tl_cassette_approved,
 .tl_lossymaster_approved {
   background: #F78DA6;
-  color: #A595AF;
+  color: #fff8f8;
 }
 
 .tl-status--gratis, .tl_freeload,
@@ -2271,7 +2271,7 @@ tr.snatched_torrent div.tags::before {
 .tl_personal,
 .tl_neutral {
   background: #8c978a;
-  color: #F78DA6;
+  color: #fff8f8;
 }
 
 /* ************************************************ */
@@ -2990,7 +2990,7 @@ Documentation of mobile classes:
     font-weight: 400;
     font-size: 0.55rem;
     vertical-align: baseline;
-    color: #CDB6C5;
+    color: #fff8f8;
     background: #D19DC8 !important;
     padding: 0.05rem 0.5rem;
     border: none !important;
@@ -3420,14 +3420,14 @@ Documentation of mobile classes:
   /* when tags are set to display in profile settings. */
   #taglist tr.label {
     height: auto;
-    border: thick solid #CDB6C5;
+    border: thick solid #fff8f8;
   }
   #taglist tr.label td {
     background: #D19DC8;
-    color: #CDB6C5;
+    color: #fff8f8;
     align-content: center;
     text-align: center;
-    border: #CDB6C5;
+    border: #fff8f8;
     width: 100%;
   }
   #taglist tr.label td::after {
@@ -3446,7 +3446,7 @@ Documentation of mobile classes:
     text-overflow: ellipsis;
     font-style: italic;
     vertical-align: baseline;
-    color: #CDB6C5 !important;
+    color: #fff8f8 !important;
     background: #D19DC8;
     padding: 0.25rem;
     border-radius: 1rem;
