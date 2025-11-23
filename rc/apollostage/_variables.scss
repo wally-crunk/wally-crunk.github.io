@@ -169,12 +169,18 @@ $color-obj-button-base-1: $ds-gray-62;
 $color-obj-button-base-2: $ds-gray-92;
 $color-obj-poll: $midtone-900; // poll active part of bargraph
 
-$color-obj-tag_bubble-background: $midtone-200; // menu-2 suggested
-$color-obj-tag_bubble-foreground: $midtone-900; // menu-9 suggested
-$color-obj-tag_bubble_snatched-background: $back-600;
-$color-obj-tag_bubble_snatched-foreground: $fore-800;
-$color-obj-reported_bubble_background: $ds-yellow-high;
-$color-obj-reported_bubble_foreground: $ds-gray-05; 
+$color-obj-tag-bubble-fg: $midtone-800;
+$color-obj-tag-bubble-bg: $fore-700;
+$color-obj-info-bubble-bg: $ds-neutral-500; 
+$color-obj-info-bubble-fg: $ds-neutral-000;
+$color-obj-reported-bubble-bg: $midtone-900;
+$color-obj-reported_bubble-fg: $fore-900;
+$color-obj-warning-bubble-bg: $midtone-700;
+$color-obj-warning-bubble-fg: $fore-700;
+$color-obj-approved-bubble-bg: $midtone-500;
+$color-obj-approved-bubble-fg: $fore-500;
+$color-obj-gratis-bubble-bg: $fore-300;
+$color-obj-gratis-bubble-fg: $midtone-500;
 
 // Autocompletes
 $color-background-autocompletes: $color-background-searchbars;

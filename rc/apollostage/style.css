@@ -44,7 +44,7 @@
    ### 2.2.2  Hover effect
    ### 2.2.3  Non-clickable appearance
    ### 2.2.4  Other special cases
-   ### 2.2.5  Snatched torrent indicators
+   ### 2.2.5  Snatched & other Torrent Indicators
    ## 2.3 Alertbar and error handling
    ## 2.3.1 Base styling
    ## 2.3.2 additional treatment for messages that pop
@@ -2019,7 +2019,7 @@ body#collage .cats_music {
 /* buttons */
 #noty_bottomRight_layout_container .noty_buttons a {
   background-color: none;
-  color: #20c098 !important;
+  color: #1daf8b !important;
   border: thin solid transparent; /* prevents button movement */
   border-radius: 14px;
   padding: 0 6px;
@@ -2031,9 +2031,9 @@ body#collage .cats_music {
   }
 }
 #noty_bottomRight_layout_container .noty_buttons a:hover {
-  background-color: #20c098;
-  color: #0c4a3b !important;
-  border: thin solid #0c4a3b;
+  background-color: #1daf8b;
+  color: #c6d2c8 !important;
+  border: thin solid #c6d2c8;
   border-radius: 14px;
 }
 
@@ -2120,8 +2120,8 @@ body#torrents div.box.box_tags li > a:first-child {
   font-weight: 700;
   font-size: 0.6rem;
   vertical-align: baseline;
-  color: #20c098;
-  background: #0c4a3b;
+  color: #1daf8b;
+  background: #c6d2c8;
   padding: 0 0.5rem;
   border-radius: 1rem;
   margin-bottom: 0.1rem;
@@ -2142,8 +2142,8 @@ body#torrents div.box.box_tags li > a:first-child {
   table.torrent_table.cats.checkboxes.border.m_table td.td_info.big_info div.group_info.clear div.tags a:hover,
   table.torrent_table.cats.m_table td.td_info.big_info div.group_info.clear div.tags a:hover,
   body#torrents div.box.box_tags li > a:first-child:hover {
-    color: #0c4a3b !important;
-    background: #20c098 !important;
+    color: #c6d2c8 !important;
+    background: #1daf8b !important;
     transition: all 0.15s cubic-bezier(0.25, 0.8, 0.25, 1);
     box-shadow: rgba(0, 0, 0, 0.25) 0 14px 28px, rgba(0, 0, 0, 0.22) 0 10px 10px;
   }
@@ -2170,63 +2170,104 @@ table.torrent_table.cats.m_table td.td_info.big_info div.group_info.clear div.ta
   color: rgba(0, 0, 0, 0.1);
 }
 
-/* ### 2.2.5 Snatched torrent indicators
-   the following must be after 2.2.4 invisibility */
-tr.snatched_group div.tags::before {
-  content: "snatched group";
-  /* plus formatting below */
-}
-
-tr.snatched_torrent div.tags::before {
-  content: "snatched torrent";
-  /* plus formatting below */
-}
-
-tr.snatched_group div.tags::before,
-tr.snatched_torrent div.tags::before {
+/* ============================================
+   2.2.5  Snatched & other Torrent Indicators
+   Must be after 2.2.4 invisibility
+   ============================================ */
+/* ============================================
+   TOKEN: Base bubble style for ALL tag labels
+   (applies to elements and pseudo-elements)
+   ============================================ */
+.tl-tag, tr.snatched_group div.tags::before,
+tr.snatched_torrent div.tags::before, .tl_freeload,
+.tl_freeleech,
+.tl_personal,
+.tl_neutral, .tl_cassette_approved,
+.tl_lossymaster_approved, .tl_checksum,
+.tl_trumpable,
+.tl_missing_lineage, .tl_reported,
+.tl_notice,
+.tl_bad_tags,
+.tl_bad_folders,
+.tl_bad_files, .tl_snatched,
+.tl_snatched_group,
+.tl_snatched_torrent {
   visibility: visible;
-  background: #2d393a;
-  color: #d5e0d9;
   border-radius: 1rem;
   box-sizing: border-box;
   display: inline-block;
   font-size: 0.6rem;
-  font-style: italic;
-  font-weight: 200;
   margin-bottom: 0.1rem;
   padding: 0 0.5rem;
   vertical-align: baseline;
 }
 
-/* album pages */
-#torrent_details.snatched .group_torrent.snatched_torrent .torrent_label.tooltip.tl_snatched {
-  background: #2d393a;
-  border-radius: 1rem;
-  box-sizing: border-box;
-  display: inline-block;
-  font-size: 0.6rem;
-  font-style: italic;
-  font-weight: 400;
-  margin-bottom: 0.1rem;
-  margin-inline: 0.5rem;
-  padding: 0 0.5rem;
-  vertical-align: baseline;
+/* ============================================
+   SEMANTIC STATUS ROLES
+   (no color here, roles only)
+   ============================================ */
+/* ============================================
+   STATUS ASSIGNMENTS (extend tokens + roles)
+   ============================================ */
+/* INFO (snatched / informational) */
+/* ERROR (bad metadata / corrupted / reported) */
+/* WARNING (fixable / trumpable / missing lineage) */
+/* APPROVED (masters / provenance approved) */
+/* GRATIS (freeleech / personal / neutral economy) */
+/* ============================================
+   PSEUDO-LABELS: Snatched indicators on GROUPS
+   (content separate from styling)
+   ============================================ */
+tr.snatched_group div.tags::before {
+  content: "✔︎ Snatched group";
 }
 
-/* ### 2.2.6 Reported torrent indicators */
-.tl_notice, .tl_reported, .tl_trumpable {
-  background: hsla(50, 90%, 50%, 0.777);
-  color: hsl(178, 2.5%, 5%);
-  border-radius: 1rem;
-  box-sizing: border-box;
-  display: inline-block;
-  font-size: 0.6rem;
+tr.snatched_torrent div.tags::before {
+  content: "✔︎ Snatched torrent";
+}
+
+/* Pseudo-elements inherit tag + semantic styling */
+/* ============================================
+   VISUAL THEME COLORS ONLY (defined as variables)
+   ============================================ */
+.tl-status--info, .tl_snatched,
+.tl_snatched_group,
+.tl_snatched_torrent, tr.snatched_group div.tags::before,
+tr.snatched_torrent div.tags::before {
+  background: #8591a2;
+  color: #000;
   font-style: italic;
-  font-weight: 400;
-  margin-bottom: 0.1rem;
-  margin-inline: 0.5rem;
-  padding: 0 0.5rem;
-  vertical-align: baseline;
+  font-weight: 300;
+}
+
+.tl-status--error, .tl_reported,
+.tl_notice,
+.tl_bad_tags,
+.tl_bad_folders,
+.tl_bad_files {
+  background: #20c098;
+  color: #e5efe9;
+}
+
+.tl-status--warning, .tl_checksum,
+.tl_trumpable,
+.tl_missing_lineage {
+  background: #1a9f7e;
+  color: #c6d2c8;
+}
+
+.tl-status--approved, .tl_cassette_approved,
+.tl_lossymaster_approved {
+  background: #157d63;
+  color: #a7b4a8;
+}
+
+.tl-status--gratis, .tl_freeload,
+.tl_freeleech,
+.tl_personal,
+.tl_neutral {
+  background: #8c978a;
+  color: #157d63;
 }
 
 /* ************************************************ */
@@ -2945,8 +2986,8 @@ Documentation of mobile classes:
     font-weight: 400;
     font-size: 0.55rem;
     vertical-align: baseline;
-    color: #20c098;
-    background: #0c4a3b !important;
+    color: #1daf8b;
+    background: #c6d2c8 !important;
     padding: 0.05rem 0.5rem;
     border: none !important;
     border-radius: 1rem;
@@ -3375,14 +3416,14 @@ Documentation of mobile classes:
   /* when tags are set to display in profile settings. */
   #taglist tr.label {
     height: auto;
-    border: thick solid #20c098;
+    border: thick solid #1daf8b;
   }
   #taglist tr.label td {
-    background: #0c4a3b;
-    color: #20c098;
+    background: #c6d2c8;
+    color: #1daf8b;
     align-content: center;
     text-align: center;
-    border: #20c098;
+    border: #1daf8b;
     width: 100%;
   }
   #taglist tr.label td::after {
@@ -3401,8 +3442,8 @@ Documentation of mobile classes:
     text-overflow: ellipsis;
     font-style: italic;
     vertical-align: baseline;
-    color: #20c098 !important;
-    background: #0c4a3b;
+    color: #1daf8b !important;
+    background: #c6d2c8;
     padding: 0.25rem;
     border-radius: 1rem;
     margin-bottom: 0.1rem;
