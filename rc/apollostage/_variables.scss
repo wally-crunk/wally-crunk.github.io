@@ -38,9 +38,7 @@ $midtone-800: #1daf8b;
 $midtone-900: #20c098;
 $midtone-1000: #23d1a5;
 
-// Menu theme
-// can be same as "midtone" above.
-
+// Menu theme; can be same as "midtone" above.
 $menutheme-100: #003d2d;
 $menutheme-200: #004b38;
 $menutheme-300: #005943;
@@ -169,6 +167,7 @@ $color-obj-button-base-1: $ds-gray-62;
 $color-obj-button-base-2: $ds-gray-92;
 $color-obj-poll: $midtone-900; // poll active part of bargraph
 
+// bubbles
 $color-obj-tag-bubble-fg: $fore-700;
 $color-obj-tag-bubble-bg: $midtone-800;
 $color-obj-info-bubble-bg: $ds-neutral-500; 
