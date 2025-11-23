@@ -17,6 +17,8 @@
    ########################################################################
 */
 
+/*  # 2024-11-23 - Fixes are wip
+
 /*  # 2024-08-08 - Updated with community feedback.
     # Fix: mobile menu, category stripes;
     # Feature: Add SVGs, tag bubbles, system fonts and more;
@@ -2484,6 +2486,7 @@ table.torrent_table.cats.m_table td.td_info.big_info div.group_info.clear div.ta
 /* GRATIS (freeleech / personal / neutral economy) */
 .tl_freeload,
 .tl_freeleech,
+.tl_free,
 .tl_personal,
 .tl_neutral {
   @extend .tl-tag;

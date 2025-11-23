@@ -7,6 +7,8 @@
    CHANGELOG
    ########################################################################
 */
+/*  # 2024-11-23 - Fixes are wip
+
 /*  # 2024-08-08 - Updated with community feedback.
     # Fix: mobile menu, category stripes;
     # Feature: Add SVGs, tag bubbles, system fonts and more;
@@ -2019,7 +2021,7 @@ body#collage .cats_music {
 /* buttons */
 #noty_bottomRight_layout_container .noty_buttons a {
   background-color: none;
-  color: #1daf8b !important;
+  color: #c6d2c8 !important;
   border: thin solid transparent; /* prevents button movement */
   border-radius: 14px;
   padding: 0 6px;
@@ -2031,9 +2033,9 @@ body#collage .cats_music {
   }
 }
 #noty_bottomRight_layout_container .noty_buttons a:hover {
-  background-color: #1daf8b;
-  color: #c6d2c8 !important;
-  border: thin solid #c6d2c8;
+  background-color: #c6d2c8;
+  color: #1daf8b !important;
+  border: thin solid #1daf8b;
   border-radius: 14px;
 }
 
@@ -2120,8 +2122,8 @@ body#torrents div.box.box_tags li > a:first-child {
   font-weight: 700;
   font-size: 0.6rem;
   vertical-align: baseline;
-  color: #1daf8b;
-  background: #c6d2c8;
+  color: #c6d2c8;
+  background: #1daf8b;
   padding: 0 0.5rem;
   border-radius: 1rem;
   margin-bottom: 0.1rem;
@@ -2142,8 +2144,8 @@ body#torrents div.box.box_tags li > a:first-child {
   table.torrent_table.cats.checkboxes.border.m_table td.td_info.big_info div.group_info.clear div.tags a:hover,
   table.torrent_table.cats.m_table td.td_info.big_info div.group_info.clear div.tags a:hover,
   body#torrents div.box.box_tags li > a:first-child:hover {
-    color: #c6d2c8 !important;
-    background: #1daf8b !important;
+    color: #1daf8b !important;
+    background: #c6d2c8 !important;
     transition: all 0.15s cubic-bezier(0.25, 0.8, 0.25, 1);
     box-shadow: rgba(0, 0, 0, 0.25) 0 14px 28px, rgba(0, 0, 0, 0.22) 0 10px 10px;
   }
@@ -2181,6 +2183,7 @@ table.torrent_table.cats.m_table td.td_info.big_info div.group_info.clear div.ta
 .tl-tag, tr.snatched_group div.tags::before,
 tr.snatched_torrent div.tags::before, .tl_freeload,
 .tl_freeleech,
+.tl_free,
 .tl_personal,
 .tl_neutral, .tl_cassette_approved,
 .tl_lossymaster_approved, .tl_checksum,
@@ -2264,6 +2267,7 @@ tr.snatched_torrent div.tags::before {
 
 .tl-status--gratis, .tl_freeload,
 .tl_freeleech,
+.tl_free,
 .tl_personal,
 .tl_neutral {
   background: #8c978a;
@@ -2986,8 +2990,8 @@ Documentation of mobile classes:
     font-weight: 400;
     font-size: 0.55rem;
     vertical-align: baseline;
-    color: #1daf8b;
-    background: #c6d2c8 !important;
+    color: #c6d2c8;
+    background: #1daf8b !important;
     padding: 0.05rem 0.5rem;
     border: none !important;
     border-radius: 1rem;
@@ -3416,14 +3420,14 @@ Documentation of mobile classes:
   /* when tags are set to display in profile settings. */
   #taglist tr.label {
     height: auto;
-    border: thick solid #1daf8b;
+    border: thick solid #c6d2c8;
   }
   #taglist tr.label td {
-    background: #c6d2c8;
-    color: #1daf8b;
+    background: #1daf8b;
+    color: #c6d2c8;
     align-content: center;
     text-align: center;
-    border: #1daf8b;
+    border: #c6d2c8;
     width: 100%;
   }
   #taglist tr.label td::after {
@@ -3442,8 +3446,8 @@ Documentation of mobile classes:
     text-overflow: ellipsis;
     font-style: italic;
     vertical-align: baseline;
-    color: #1daf8b !important;
-    background: #c6d2c8;
+    color: #c6d2c8 !important;
+    background: #1daf8b;
     padding: 0.25rem;
     border-radius: 1rem;
     margin-bottom: 0.1rem;
