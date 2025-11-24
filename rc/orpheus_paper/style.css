@@ -2021,7 +2021,7 @@ body#collage .cats_music {
 /* buttons */
 #noty_bottomRight_layout_container .noty_buttons a {
   background-color: none;
-  color: hsl(120, 100%, 99.6%) !important;
+  color: #00A280 !important;
   border: thin solid transparent; /* prevents button movement */
   border-radius: 14px;
   padding: 0 6px;
@@ -2033,9 +2033,9 @@ body#collage .cats_music {
   }
 }
 #noty_bottomRight_layout_container .noty_buttons a:hover {
-  background-color: hsl(120, 100%, 99.6%);
-  color: #005943 !important;
-  border: thin solid #005943;
+  background-color: #00A280;
+  color: #004B38 !important;
+  border: thin solid #004B38;
   border-radius: 14px;
 }
 
@@ -2122,8 +2122,8 @@ body#torrents div.box.box_tags li > a:first-child {
   font-weight: 700;
   font-size: 0.6rem;
   vertical-align: baseline;
-  color: hsl(120, 100%, 99.6%);
-  background: #005943;
+  color: #00A280;
+  background: #004B38;
   padding: 0 0.5rem;
   border-radius: 1rem;
   margin-bottom: 0.1rem;
@@ -2144,8 +2144,8 @@ body#torrents div.box.box_tags li > a:first-child {
   table.torrent_table.cats.checkboxes.border.m_table td.td_info.big_info div.group_info.clear div.tags a:hover,
   table.torrent_table.cats.m_table td.td_info.big_info div.group_info.clear div.tags a:hover,
   body#torrents div.box.box_tags li > a:first-child:hover {
-    color: #005943 !important;
-    background: hsl(120, 100%, 99.6%) !important;
+    color: #004B38 !important;
+    background: #00A280 !important;
     transition: all 0.15s cubic-bezier(0.25, 0.8, 0.25, 1);
     box-shadow: rgba(0, 0, 0, 0.25) 0 14px 28px, rgba(0, 0, 0, 0.22) 0 10px 10px;
   }
@@ -2271,7 +2271,7 @@ tr.snatched_torrent div.tags::before {
 .tl_personal,
 .tl_neutral {
   background: #2E5D95;
-  color: hsl(120, 100%, 99.6%);
+  color: #008265;
 }
 
 /* ************************************************ */
@@ -2990,8 +2990,8 @@ Documentation of mobile classes:
     font-weight: 400;
     font-size: 0.55rem;
     vertical-align: baseline;
-    color: hsl(120, 100%, 99.6%);
-    background: #005943 !important;
+    color: #00A280;
+    background: #004B38 !important;
     padding: 0.05rem 0.5rem;
     border: none !important;
     border-radius: 1rem;
@@ -3420,14 +3420,14 @@ Documentation of mobile classes:
   /* when tags are set to display in profile settings. */
   #taglist tr.label {
     height: auto;
-    border: thick solid hsl(120, 100%, 99.6%);
+    border: thick solid #00A280;
   }
   #taglist tr.label td {
-    background: #005943;
-    color: hsl(120, 100%, 99.6%);
+    background: #004B38;
+    color: #00A280;
     align-content: center;
     text-align: center;
-    border: hsl(120, 100%, 99.6%);
+    border: #00A280;
     width: 100%;
   }
   #taglist tr.label td::after {
@@ -3446,8 +3446,8 @@ Documentation of mobile classes:
     text-overflow: ellipsis;
     font-style: italic;
     vertical-align: baseline;
-    color: hsl(120, 100%, 99.6%) !important;
-    background: #005943;
+    color: #00A280 !important;
+    background: #004B38;
     padding: 0.25rem;
     border-radius: 1rem;
     margin-bottom: 0.1rem;
