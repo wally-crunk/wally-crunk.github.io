@@ -1840,7 +1840,7 @@ body#collage .cats_music {
   }
   #userinfo_minor:hover,
   #userinfo_username:hover {
-    z-index: 800;
+    z-index: 850;
   }
   #userinfo_username:hover {
     border-radius: 0 10px 0 0;
@@ -2504,7 +2504,7 @@ ul#check::after {
   /* core styles should not be changed */
   position: absolute;
   display: none;
-  z-index: 800;
+  z-index: 850;
   max-height: min(80vw, 254px);
   overflow: hidden;
   overflow-y: auto;
