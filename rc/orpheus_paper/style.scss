@@ -212,16 +212,16 @@ variables.$color-obj-button-base-2:  $ds-gray-95-high; // lightened for light mo
 variables.$color-obj-poll: variables.$midtone-900; // poll active part of bargraph
 
 //bubbles
-variables.$color-obj-tag-bubble-bg: variables.$midtone-900;
-variables.$color-obj-tag-bubble-fg: variables.$midtone-200;
+variables.$color-obj-tag-bubble-bg: variables.$midtone-200;
+variables.$color-obj-tag-bubble-fg: variables.$midtone-900;
 variables.$color-obj-info-bubble-bg: variables.$ds-neutral-500; 
-variables.$color-obj-info-bubble-fg: $ds-gray-99;
+variables.$color-obj-info-bubble-fg: variables.$back-100;
 variables.$color-obj-reported-bubble-bg: variables.$midtone-900;
-variables.$color-obj-reported_bubble-fg: $ds-gray-99;
+variables.$color-obj-reported_bubble-fg: variables.$back-100;
 variables.$color-obj-warning-bubble-bg: variables.$midtone-700;
-variables.$color-obj-warning-bubble-fg: $ds-gray-99;
+variables.$color-obj-warning-bubble-fg: variables.$back-100;
 variables.$color-obj-approved-bubble-bg: variables.$midtone-500;
-variables.$color-obj-approved-bubble-fg: $ds-gray-99;
+variables.$color-obj-approved-bubble-fg: variables.$back-100;
 variables.$color-obj-gratis-bubble-bg: variables.$fore-300;
 variables.$color-obj-gratis-bubble-fg: variables.$midtone-500;
 

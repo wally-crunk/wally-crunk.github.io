@@ -2021,7 +2021,7 @@ body#collage .cats_music {
 /* buttons */
 #noty_bottomRight_layout_container .noty_buttons a {
   background-color: none;
-  color: #00A280 !important;
+  color: #004B38 !important;
   border: thin solid transparent; /* prevents button movement */
   border-radius: 14px;
   padding: 0 6px;
@@ -2033,9 +2033,9 @@ body#collage .cats_music {
   }
 }
 #noty_bottomRight_layout_container .noty_buttons a:hover {
-  background-color: #00A280;
-  color: #004B38 !important;
-  border: thin solid #004B38;
+  background-color: #004B38;
+  color: #00A280 !important;
+  border: thin solid #00A280;
   border-radius: 14px;
 }
 
@@ -2122,8 +2122,8 @@ body#torrents div.box.box_tags li > a:first-child {
   font-weight: 700;
   font-size: 0.6rem;
   vertical-align: baseline;
-  color: #00A280;
-  background: #004B38;
+  color: #004B38;
+  background: #00A280;
   padding: 0 0.5rem;
   border-radius: 1rem;
   margin-bottom: 0.1rem;
@@ -2144,8 +2144,8 @@ body#torrents div.box.box_tags li > a:first-child {
   table.torrent_table.cats.checkboxes.border.m_table td.td_info.big_info div.group_info.clear div.tags a:hover,
   table.torrent_table.cats.m_table td.td_info.big_info div.group_info.clear div.tags a:hover,
   body#torrents div.box.box_tags li > a:first-child:hover {
-    color: #004B38 !important;
-    background: #00A280 !important;
+    color: #00A280 !important;
+    background: #004B38 !important;
     transition: all 0.15s cubic-bezier(0.25, 0.8, 0.25, 1);
     box-shadow: rgba(0, 0, 0, 0.25) 0 14px 28px, rgba(0, 0, 0, 0.22) 0 10px 10px;
   }
@@ -2238,7 +2238,7 @@ tr.snatched_torrent div.tags::before {
 .tl_snatched_torrent, tr.snatched_group div.tags::before,
 tr.snatched_torrent div.tags::before {
   background: #5d6670;
-  color: hsl(120, 100%, 99.6%);
+  color: #EBEFF0;
   font-style: italic;
   font-weight: 300;
 }
@@ -2249,20 +2249,20 @@ tr.snatched_torrent div.tags::before {
 .tl_bad_folders,
 .tl_bad_files {
   background: #004B38;
-  color: hsl(120, 100%, 99.6%);
+  color: #EBEFF0;
 }
 
 .tl-status--warning, .tl_checksum,
 .tl_trumpable,
 .tl_missing_lineage {
   background: #00674E;
-  color: hsl(120, 100%, 99.6%);
+  color: #EBEFF0;
 }
 
 .tl-status--approved, .tl_cassette_approved,
 .tl_lossymaster_approved {
   background: #008265;
-  color: hsl(120, 100%, 99.6%);
+  color: #EBEFF0;
 }
 
 .tl-status--gratis, .tl_freeload,
@@ -2990,8 +2990,8 @@ Documentation of mobile classes:
     font-weight: 400;
     font-size: 0.55rem;
     vertical-align: baseline;
-    color: #00A280;
-    background: #004B38 !important;
+    color: #004B38;
+    background: #00A280 !important;
     padding: 0.05rem 0.5rem;
     border: none !important;
     border-radius: 1rem;
@@ -3420,14 +3420,14 @@ Documentation of mobile classes:
   /* when tags are set to display in profile settings. */
   #taglist tr.label {
     height: auto;
-    border: thick solid #00A280;
+    border: thick solid #004B38;
   }
   #taglist tr.label td {
-    background: #004B38;
-    color: #00A280;
+    background: #00A280;
+    color: #004B38;
     align-content: center;
     text-align: center;
-    border: #00A280;
+    border: #004B38;
     width: 100%;
   }
   #taglist tr.label td::after {
@@ -3446,8 +3446,8 @@ Documentation of mobile classes:
     text-overflow: ellipsis;
     font-style: italic;
     vertical-align: baseline;
-    color: #00A280 !important;
-    background: #004B38;
+    color: #004B38 !important;
+    background: #00A280;
     padding: 0.25rem;
     border-radius: 1rem;
     margin-bottom: 0.1rem;
