@@ -768,7 +768,7 @@ table.box2 {
 }
 
 #noty_bottomRight_layout_container {
-  z-index: 850;
+  z-index: 750;
 }
 
 .thin > .header h1,
