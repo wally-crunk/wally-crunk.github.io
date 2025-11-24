@@ -769,7 +769,7 @@ table.box2 {
 
 #noty_bottomRight_layout_container {
   position: relative;
-  z-index: 750;
+  z-index: 750 !important;
 }
 
 .thin > .header h1,
@@ -1836,11 +1836,11 @@ body#collage .cats_music {
   #userinfo_minor,
   #userinfo_username {
     position: absolute;
-    z-index: 900;
+    z-index: 10000002 !important;
   }
   #userinfo_minor:hover,
   #userinfo_username:hover {
-    z-index: 850;
+    z-index: 10000001 !important;
   }
   #userinfo_username:hover {
     border-radius: 0 10px 0 0;
@@ -2504,7 +2504,7 @@ ul#check::after {
   /* core styles should not be changed */
   position: absolute;
   display: none;
-  z-index: 850;
+  z-index: 10000001;
   max-height: min(80vw, 254px);
   overflow: hidden;
   overflow-y: auto;

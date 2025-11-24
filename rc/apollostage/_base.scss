@@ -245,8 +245,8 @@ $z-upload-error-popups: 900;
 $z-mobilemenu-closed: 1000;
 $z-mobilemenu_closed-tab: 400;
 $z-mobilemenu_closed-tab-icons: 500;
-$z-desktop-menu-open: 850;
-$z-desktop-menu-closed: 900;
+$z-desktop-menu-open: 10000001;
+$z-desktop-menu-closed: 10000002;
 $z-notifications: 750; 
 $z-sticky-table-headers: 1;
 $z-avatar-mobile: 1;
@@ -933,7 +933,7 @@ table.box2 {
 
 #noty_bottomRight_layout_container {
   position: relative;
-  z-index: $z-notifications;
+  z-index: $z-notifications !important;
 }
 
 .thin > .header h1,
@@ -2028,12 +2028,12 @@ body#collage .cats_music {
   #userinfo_minor,
   #userinfo_username {
     position: absolute;
-    z-index: $z-desktop-menu-closed;
+    z-index: $z-desktop-menu-closed !important;
   }
 
   #userinfo_minor:hover,
   #userinfo_username:hover {
-    z-index: $z-desktop-menu-open;
+    z-index: $z-desktop-menu-open !important;
   }
 
   #userinfo_username:hover {
