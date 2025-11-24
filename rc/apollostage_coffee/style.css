@@ -726,35 +726,35 @@ table.box2 {
 }
 
 .read {
-  background: url('https://beta.edge.opsfet.ch'/svg/std/document-ccc.svg) center no-repeat;
+  background: url(https://beta.edge.opsfet.ch/svg/std/document-ccc.svg) center no-repeat;
 }
 
 .unread {
-  background: url('https://beta.edge.opsfet.ch'/svg/std/document-round-ccc.svg) center no-repeat;
+  background: url(https://beta.edge.opsfet.ch/svg/std/document-round-ccc.svg) center no-repeat;
 }
 
 .read_locked {
-  background: url('https://beta.edge.opsfet.ch'/svg/std/lock-ccc.svg) center no-repeat;
+  background: url(https://beta.edge.opsfet.ch/svg/std/lock-ccc.svg) center no-repeat;
 }
 
 .unread_locked {
-  background: url('https://beta.edge.opsfet.ch'/svg/std/lock-round-ccc.svg) center no-repeat;
+  background: url(https://beta.edge.opsfet.ch/svg/std/lock-round-ccc.svg) center no-repeat;
 }
 
 .read_sticky {
-  background: url('https://beta.edge.opsfet.ch'/svg/std/pin-ccc.svg) center no-repeat;
+  background: url(https://beta.edge.opsfet.ch/svg/std/pin-ccc.svg) center no-repeat;
 }
 
 .unread_sticky {
-  background: url('https://beta.edge.opsfet.ch'/svg/std/pin-round-ccc.svg) center no-repeat;
+  background: url(https://beta.edge.opsfet.ch/svg/std/pin-round-ccc.svg) center no-repeat;
 }
 
 .read_locked_sticky {
-  background: url('https://beta.edge.opsfet.ch'/svg/std/pin-and-lock-ccc.svg) center no-repeat;
+  background: url(https://beta.edge.opsfet.ch/svg/std/pin-and-lock-ccc.svg) center no-repeat;
 }
 
 .unread_locked_sticky {
-  background: url('https://beta.edge.opsfet.ch'/svg/std/pin-and-lock-round-ccc.svg) center no-repeat;
+  background: url(https://beta.edge.opsfet.ch/svg/std/pin-and-lock-round-ccc.svg) center no-repeat;
 }
 
 #footer {
@@ -1657,7 +1657,7 @@ body#collage .cats_music {
   }
   /* main logo during desktop view */
   #logo a {
-    background: url('https://beta.edge.opsfet.ch'/svg/site/ops-logo-lockup-darkmode.svg) right no-repeat;
+    background: url(https://beta.edge.opsfet.ch/svg/site/ops-logo-lockup-darkmode.svg) right no-repeat;
   }
   #logo > a {
     background-size: 200px;
@@ -1809,7 +1809,7 @@ body#collage .cats_music {
     color: #89644C;
   }
   #userinfo_minor::before {
-    background: url('https://beta.edge.opsfet.ch'/svg/std/chevrons-down-ccc.svg) no-repeat;
+    background: url(https://beta.edge.opsfet.ch/svg/std/chevrons-down-ccc.svg) no-repeat;
     filter: brightness(200%); /* force white */
     background-size: 28px;
     background-position: center;
@@ -1836,11 +1836,11 @@ body#collage .cats_music {
   #userinfo_minor,
   #userinfo_username {
     position: absolute;
-    z-index: 10000002 !important;
+    z-index: 10000020 !important;
   }
   #userinfo_minor:hover,
   #userinfo_username:hover {
-    z-index: 10000001 !important;
+    z-index: 10000010 !important;
   }
   #userinfo_username:hover {
     border-radius: 0 10px 0 0;
@@ -1883,7 +1883,7 @@ body#collage .cats_music {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-image: url('https://beta.edge.opsfet.ch'/svg/std/menu-ccc.svg);
+  background-image: url(https://beta.edge.opsfet.ch/svg/std/menu-ccc.svg);
   background-size: 30px;
   background-origin: padding-box;
   background-clip: border-box;
@@ -2300,7 +2300,7 @@ tr.snatched_torrent div.tags::before {
 }
 
 .alertbar:first-of-type {
-  background-image: url('https://beta.edge.opsfet.ch'/svg/site/ops-icon-harp-ccc.svg);
+  background-image: url(https://beta.edge.opsfet.ch/svg/site/ops-icon-harp-ccc.svg);
   background-position: 8px center;
   background-repeat: no-repeat;
   background-size: 32px;
@@ -2313,7 +2313,7 @@ tr.snatched_torrent div.tags::before {
 /* occurs on failure, for example failed request votes */
 .error_message {
   background-color: #633;
-  background-image: url('https://beta.edge.opsfet.ch'/svg/site/ops-icon-triangle-000.svg);
+  background-image: url(https://beta.edge.opsfet.ch/svg/site/ops-icon-triangle-000.svg);
   background-position: 8px;
   background-repeat: no-repeat;
   background-size: 32px;
@@ -2370,7 +2370,7 @@ ul#check.nobullet > * {
   border: thick solid #daa520;
   padding: 1rem 1rem 1rem 48px;
   background: hsl(183, 2.5%, 92%);
-  background-image: url('https://beta.edge.opsfet.ch'/svg/site/ops-icon-triangle-000.svg);
+  background-image: url(https://beta.edge.opsfet.ch/svg/site/ops-icon-triangle-000.svg);
   background-repeat: no-repeat;
   background-position: 8px center;
   background-size: 32px;
@@ -2414,7 +2414,7 @@ ul#check::after {
   border-radius: 0.25rem;
   padding: 1rem 1rem 1rem 48px;
   background-color: hsl(183, 2.5%, 92%);
-  background-image: url('https://beta.edge.opsfet.ch'/svg/site/ops-icon-triangle-000.svg);
+  background-image: url(https://beta.edge.opsfet.ch/svg/site/ops-icon-triangle-000.svg);
   background-repeat: no-repeat;
   background-position: 8px center;
   background-size: 32px;
@@ -2504,7 +2504,7 @@ ul#check::after {
   /* core styles should not be changed */
   position: absolute;
   display: none;
-  z-index: 10000001;
+  z-index: 10000010;
   max-height: min(80vw, 254px);
   overflow: hidden;
   overflow-y: auto;
@@ -2844,7 +2844,7 @@ Documentation of mobile classes:
   .td_snatched.m_td_right::before,
   .td_seeders.m_td_right::before,
   .td_leechers.m_td_right::before {
-    background: left/10px no-repeat url('https://beta.edge.opsfet.ch'/svg/std/arrow-loop-ccc.svg);
+    background: left/10px no-repeat url(https://beta.edge.opsfet.ch/svg/std/arrow-loop-ccc.svg);
     color: #E0CDB8;
     content: ":";
     filter: brightness(80%);
@@ -2854,10 +2854,10 @@ Documentation of mobile classes:
     width: 14px;
   }
   .td_seeders.m_td_right::before {
-    background-image: url('https://beta.edge.opsfet.ch'/svg/std/arrow-up-round-ccc.svg);
+    background-image: url(https://beta.edge.opsfet.ch/svg/std/arrow-up-round-ccc.svg);
   }
   .td_leechers.m_td_right::before {
-    background-image: url('https://beta.edge.opsfet.ch'/svg/std/arrow-down-round-ccc.svg);
+    background-image: url(https://beta.edge.opsfet.ch/svg/std/arrow-down-round-ccc.svg);
   }
   .m_table.checkboxes td:first-child {
     display: block;
@@ -3206,7 +3206,7 @@ Documentation of mobile classes:
     opacity: 1 !important;
     width: 25px;
     height: 25px;
-    background-image: url('https://beta.edge.opsfet.ch'/svg/std/chevrons-down-ccc.svg);
+    background-image: url(https://beta.edge.opsfet.ch/svg/std/chevrons-down-ccc.svg);
     background-size: contain;
     z-index: 500;
     pointer-events: none;
@@ -3222,7 +3222,7 @@ Documentation of mobile classes:
   }
   /* topbar for mobile ~ site logo, upper left */
   #extra5 {
-    background-image: url('https://beta.edge.opsfet.ch'/svg/site/ops-logo-loop-darkmode.svg);
+    background-image: url(https://beta.edge.opsfet.ch/svg/site/ops-logo-loop-darkmode.svg);
     background-position: left center;
     background-size: auto 30px;
     background-repeat: no-repeat;
@@ -3287,7 +3287,7 @@ Documentation of mobile classes:
   }
   #logo a {
     display: inline-block;
-    background: url('https://beta.edge.opsfet.ch'/svg/site/ops-logo-loop-darkmode.svg) center no-repeat;
+    background: url(https://beta.edge.opsfet.ch/svg/site/ops-logo-loop-darkmode.svg) center no-repeat;
     background-size: var(--row-height);
     height: var(--row-height);
     width: var(--row-height);
