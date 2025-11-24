@@ -9,7 +9,7 @@
 @use "../apollostage/_variables" as variables;
 
 // debug slugs: must be after import.
-variables.$build-slug: variables.$build-slug + " " + "251031a haze";
+variables.$build-slug: variables.$build-slug + " " + "haze";
 
 // and override as follows:
 

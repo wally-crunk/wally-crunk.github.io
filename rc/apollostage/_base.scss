@@ -932,6 +932,7 @@ table.box2 {
 }
 
 #noty_bottomRight_layout_container {
+  position: relative;
   z-index: $z-notifications;
 }
 

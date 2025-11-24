@@ -768,6 +768,7 @@ table.box2 {
 }
 
 #noty_bottomRight_layout_container {
+  position: relative;
   z-index: 750;
 }
 
@@ -3482,7 +3483,7 @@ Documentation of mobile classes:
 /* ## 6.1 Debugging Tools
    variou 'debug' and x-debug features are avail in this doc elsewhere */
 #footer p:last-of-type::after {
-  content: " | Apollostage build 251031a 251031a paper";
+  content: " | Apollostage build 251031acd  251031a paper";
 }
 
 /* ########################################################################
