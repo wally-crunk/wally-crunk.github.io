@@ -2272,8 +2272,8 @@ tr.snatched_torrent div.tags::before {
 .tl_free,
 .tl_personal,
 .tl_neutral {
-  background: #8c978a;
-  color: #fff8f8;
+  background: #ffb0a0;
+  color: #1E1D1F;
 }
 
 /* ************************************************ */
