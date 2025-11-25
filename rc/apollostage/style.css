@@ -1532,6 +1532,7 @@ div#discog_table td.td_info:not(span.torrent_links_block) > a {
 .tooltipster-base {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
   width: auto !important;
+  z-index: 825;
 }
 
 .tooltipster-default {
@@ -2022,7 +2023,7 @@ body#collage .cats_music {
 /* buttons */
 #noty_bottomRight_layout_container .noty_buttons a {
   background-color: none;
-  color: #c6d2c8 !important;
+  color: #20c098 !important;
   border: thin solid transparent; /* prevents button movement */
   border-radius: 14px;
   padding: 0 6px;
@@ -2034,9 +2035,9 @@ body#collage .cats_music {
   }
 }
 #noty_bottomRight_layout_container .noty_buttons a:hover {
-  background-color: #c6d2c8;
-  color: #1daf8b !important;
-  border: thin solid #1daf8b;
+  background-color: #20c098;
+  color: #0c4a3b !important;
+  border: thin solid #0c4a3b;
   border-radius: 14px;
 }
 
@@ -2123,8 +2124,8 @@ body#torrents div.box.box_tags li > a:first-child {
   font-weight: 700;
   font-size: 0.6rem;
   vertical-align: baseline;
-  color: #c6d2c8;
-  background: #1daf8b;
+  color: #20c098;
+  background: #0c4a3b;
   padding: 0 0.5rem;
   border-radius: 1rem;
   margin-bottom: 0.1rem;
@@ -2145,8 +2146,8 @@ body#torrents div.box.box_tags li > a:first-child {
   table.torrent_table.cats.checkboxes.border.m_table td.td_info.big_info div.group_info.clear div.tags a:hover,
   table.torrent_table.cats.m_table td.td_info.big_info div.group_info.clear div.tags a:hover,
   body#torrents div.box.box_tags li > a:first-child:hover {
-    color: #1daf8b !important;
-    background: #c6d2c8 !important;
+    color: #0c4a3b !important;
+    background: #20c098 !important;
     transition: all 0.15s cubic-bezier(0.25, 0.8, 0.25, 1);
     box-shadow: rgba(0, 0, 0, 0.25) 0 14px 28px, rgba(0, 0, 0, 0.22) 0 10px 10px;
   }
@@ -2249,14 +2250,14 @@ tr.snatched_torrent div.tags::before {
 .tl_bad_tags,
 .tl_bad_folders,
 .tl_bad_files {
-  background: #20c098;
+  background: #093a2e;
   color: #e5efe9;
 }
 
 .tl-status--warning, .tl_checksum,
 .tl_trumpable,
 .tl_missing_lineage {
-  background: #1a9f7e;
+  background: #0f5b49;
   color: #c6d2c8;
 }
 
@@ -2271,8 +2272,8 @@ tr.snatched_torrent div.tags::before {
 .tl_free,
 .tl_personal,
 .tl_neutral {
-  background: #8c978a;
-  color: #157d63;
+  background: #23d1a5;
+  color: #181d1d;
 }
 
 /* ************************************************ */
@@ -2991,8 +2992,8 @@ Documentation of mobile classes:
     font-weight: 400;
     font-size: 0.55rem;
     vertical-align: baseline;
-    color: #c6d2c8;
-    background: #1daf8b !important;
+    color: #20c098;
+    background: #0c4a3b !important;
     padding: 0.05rem 0.5rem;
     border: none !important;
     border-radius: 1rem;
@@ -3421,14 +3422,14 @@ Documentation of mobile classes:
   /* when tags are set to display in profile settings. */
   #taglist tr.label {
     height: auto;
-    border: thick solid #c6d2c8;
+    border: thick solid #20c098;
   }
   #taglist tr.label td {
-    background: #1daf8b;
-    color: #c6d2c8;
+    background: #0c4a3b;
+    color: #20c098;
     align-content: center;
     text-align: center;
-    border: #c6d2c8;
+    border: #20c098;
     width: 100%;
   }
   #taglist tr.label td::after {
@@ -3447,8 +3448,8 @@ Documentation of mobile classes:
     text-overflow: ellipsis;
     font-style: italic;
     vertical-align: baseline;
-    color: #c6d2c8 !important;
-    background: #1daf8b;
+    color: #20c098 !important;
+    background: #0c4a3b;
     padding: 0.25rem;
     border-radius: 1rem;
     margin-bottom: 0.1rem;
@@ -3483,7 +3484,7 @@ Documentation of mobile classes:
 /* ## 6.1 Debugging Tools
    variou 'debug' and x-debug features are avail in this doc elsewhere */
 #footer p:last-of-type::after {
-  content: " | Apollostage build 251031acd ";
+  content: " | Apollostage build 251125a";
 }
 
 /* ########################################################################
