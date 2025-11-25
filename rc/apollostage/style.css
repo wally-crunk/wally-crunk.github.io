@@ -2264,7 +2264,7 @@ tr.snatched_torrent div.tags::before {
 .tl-status--approved, .tl_cassette_approved,
 .tl_lossymaster_approved {
   background: #157d63;
-  color: #a7b4a8;
+  color: #d5e0d9;
 }
 
 .tl-status--gratis, .tl_freeload,
