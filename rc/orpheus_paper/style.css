@@ -2182,7 +2182,7 @@ table.torrent_table.cats.m_table td.td_info.big_info div.group_info.clear div.ta
    TOKEN: Base bubble style for ALL tag labels
    (applies to elements and pseudo-elements)
    ============================================ */
-.tl-tag, tr.snatched_group div.tags::before,
+.token-badge, tr.snatched_group div.tags::before,
 tr.snatched_torrent div.tags::before, .tl_freeload,
 .tl_freeleech,
 .tl_free,
@@ -2208,7 +2208,7 @@ tr.snatched_torrent div.tags::before, .tl_freeload,
 }
 
 /* ============================================
-   SEMANTIC STATUS ROLES
+   SEMANTIC BADGE ROLES
    (no color here, roles only)
    ============================================ */
 /* ============================================
@@ -2231,11 +2231,11 @@ tr.snatched_torrent div.tags::before {
   content: "✔︎ Snatched torrent";
 }
 
-/* Pseudo-elements inherit tag + semantic styling */
+/* Pseudo-elements inherit badge + semantic styling */
 /* ============================================
    VISUAL THEME COLORS ONLY (defined as variables)
    ============================================ */
-.tl-status--info, .tl_snatched,
+.token-badge-info, .tl_snatched,
 .tl_snatched_group,
 .tl_snatched_torrent, tr.snatched_group div.tags::before,
 tr.snatched_torrent div.tags::before {
@@ -2245,7 +2245,7 @@ tr.snatched_torrent div.tags::before {
   font-weight: 300;
 }
 
-.tl-status--error, .tl_reported,
+.token-badge-error, .tl_reported,
 .tl_notice,
 .tl_bad_tags,
 .tl_bad_folders,
@@ -2254,20 +2254,20 @@ tr.snatched_torrent div.tags::before {
   color: #EBEFF0;
 }
 
-.tl-status--warning, .tl_checksum,
+.token-badge-warning, .tl_checksum,
 .tl_trumpable,
 .tl_missing_lineage {
   background: #00674E;
   color: #EBEFF0;
 }
 
-.tl-status--approved, .tl_cassette_approved,
+.token-badge-approved, .tl_cassette_approved,
 .tl_lossymaster_approved {
   background: #008265;
   color: #EBEFF0;
 }
 
-.tl-status--gratis, .tl_freeload,
+.token-badge-gratis, .tl_freeload,
 .tl_freeleech,
 .tl_free,
 .tl_personal,

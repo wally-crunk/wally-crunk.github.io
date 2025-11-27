@@ -156,7 +156,7 @@ variables.$color-obj-poll: variables.$midtone-900; // poll active part of bargra
 // variables.$color-obj-tag_bubble-background: variables.$midtone-200; // changed
 // variables.$color-obj-tag_bubble-foreground: variables.$midtone-1000; // changed
 
-//bubbles
+// Bubblesbles
 variables.$color-obj-tag-bubble-bg: variables.$midtone-800;
 variables.$color-obj-tag-bubble-fg: $ds-haze-gold-12;
 variables.$color-obj-info-bubble-bg: variables.$ds-neutral-500; 
@@ -222,7 +222,7 @@ $icon-menu-open-state: url(config('STATIC_SERVER') + "/svg/std/menu-ccc.svg"); /
 // ////////////////////////////////////////////////////////////////////////////////
 // WITH ALL VARIABLES SET, NOW IMPORT THE BASE CODE
 
-@import "../apollostage/_base";
+@use "../apollostage/_base";
 
 // ////////////////////////////////////////////////////////////////////////////////
 // CUSTOM OVERRIDES
