@@ -223,7 +223,7 @@ variables.$color-obj-warning-bubble-fg: variables.$back-100;
 variables.$color-obj-approved-bubble-bg: variables.$midtone-500;
 variables.$color-obj-approved-bubble-fg: variables.$back-100;
 variables.$color-obj-gratis-bubble-bg: variables.$fore-300;
-variables.$color-obj-gratis-bubble-fg: variables.$ds-gray-99;
+variables.$color-obj-gratis-bubble-fg: $ds-gray-99;
 
 // Autocompletes
 variables.$color-background-autocompletes: variables.$color-background-searchbars;
