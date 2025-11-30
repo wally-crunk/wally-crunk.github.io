@@ -3149,6 +3149,10 @@ Documentation of mobile classes:
   .layout .colhead_dark {
     position: static;
   }
+  /* Staff Inbox container: allow overflow for sticky header to work */
+  body#staffpm #inbox {
+    overflow: visible;
+  }
   /* Staff Inbox: keep sticky with same offset as menu tab to avoid droop */
   body#staffpm .message_table .colhead,
   body#staffpm .message_table .colhead_dark,
@@ -3494,7 +3498,7 @@ Documentation of mobile classes:
 /* ## 6.1 Debugging Tools
    variou 'debug' and x-debug features are avail in this doc elsewhere */
 #footer p:last-of-type::after {
-  content: " | Apollostage build 251130a haze";
+  content: " | Apollostage build 251130b haze";
 }
 
 /* ########################################################################
