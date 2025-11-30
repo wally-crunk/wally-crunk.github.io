@@ -3151,9 +3151,13 @@ Documentation of mobile classes:
   }
   /* Staff Inbox: keep sticky with same offset as menu tab to avoid droop */
   body#staffpm .message_table .colhead,
-  body#staffpm .message_table .colhead_dark {
+  body#staffpm .message_table .colhead_dark,
+  body#staffpm .message_table .colhead td,
+  body#staffpm .message_table .colhead_dark td {
     position: sticky;
     top: 32px;
+    z-index: 1;
+    background: #443B3A;
   }
   /* ************************************************ */
   /* ## 4.17 SITE HEADER AND MOBILE MENU */
@@ -3490,7 +3494,7 @@ Documentation of mobile classes:
 /* ## 6.1 Debugging Tools
    variou 'debug' and x-debug features are avail in this doc elsewhere */
 #footer p:last-of-type::after {
-  content: " | Apollostage build 251125a coffee";
+  content: " | Apollostage build 251130a coffee";
 }
 
 /* ########################################################################
