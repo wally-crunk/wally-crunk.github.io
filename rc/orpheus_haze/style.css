@@ -3149,6 +3149,12 @@ Documentation of mobile classes:
   .layout .colhead_dark {
     position: static;
   }
+  /* Staff Inbox: keep sticky with same offset as menu tab to avoid droop */
+  body#staffpm .message_table .colhead,
+  body#staffpm .message_table .colhead_dark {
+    position: sticky;
+    top: 32px;
+  }
   /* ************************************************ */
   /* ## 4.17 SITE HEADER AND MOBILE MENU */
   /* ## 4.17.1 Mobile Menu When Closed, Setup */

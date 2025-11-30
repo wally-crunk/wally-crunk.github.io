@@ -21,15 +21,16 @@
      inkscape:pagecheckerboard="true"
      inkscape:deskcolor="#d1d1d1"
      showguides="true"
-     inkscape:zoom="4.3059208"
-     inkscape:cx="38.31933"
-     inkscape:cy="24.849505"
+     inkscape:zoom="4.1561025"
+     inkscape:cx="40.783402"
+     inkscape:cy="23.098564"
      inkscape:window-width="1312"
      inkscape:window-height="449"
-     inkscape:window-x="135"
-     inkscape:window-y="185"
+     inkscape:window-x="2695"
+     inkscape:window-y="157"
      inkscape:window-maximized="0"
-     inkscape:current-layer="layer1" />
+     inkscape:current-layer="layer1"
+     showgrid="false" />
   <defs
      id="defs4">
     <linearGradient
@@ -69,7 +70,7 @@
     </linearGradient>
     <linearGradient
        id="mainGradientRight"
-       xlink:href="#mainGradientBase"
+       xlink:href="#linearGradient12"
        gradientUnits="userSpaceOnUse"
        gradientTransform="matrix(-1.0145733,0,0,-0.9978439,64.437197,54.587939)"
        x1="30"
