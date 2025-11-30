@@ -3149,6 +3149,16 @@ Documentation of mobile classes:
   .layout .colhead_dark {
     position: static;
   }
+  /* Re-enable sticky for settings tables (layout class) with menu-tab offset */
+  body#user .user_options .colhead,
+  body#user .user_options .colhead_dark,
+  body#user .user_options .colhead td,
+  body#user .user_options .colhead_dark td {
+    position: sticky;
+    top: 32px;
+    z-index: 1;
+    background: #2A2727;
+  }
   /* Staff Inbox container: allow overflow for sticky header to work */
   body#staffpm #inbox {
     overflow: visible;
@@ -3498,7 +3508,7 @@ Documentation of mobile classes:
 /* ## 6.1 Debugging Tools
    variou 'debug' and x-debug features are avail in this doc elsewhere */
 #footer p:last-of-type::after {
-  content: " | Apollostage build 251130b haze";
+  content: " | Apollostage build 251130e haze";
 }
 
 /* ########################################################################
