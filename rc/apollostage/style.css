@@ -3149,6 +3149,10 @@ Documentation of mobile classes:
   .layout .colhead_dark {
     position: static;
   }
+  /* Settings page: allow sticky headers by letting content overflow */
+  body#user .main_column {
+    overflow: visible;
+  }
   /* Re-enable sticky for settings tables (layout class) with menu-tab offset */
   body#user .user_options .colhead,
   body#user .user_options .colhead_dark,
@@ -3508,7 +3512,7 @@ Documentation of mobile classes:
 /* ## 6.1 Debugging Tools
    variou 'debug' and x-debug features are avail in this doc elsewhere */
 #footer p:last-of-type::after {
-  content: " | Apollostage build 251130e";
+  content: " | Apollostage build 251130f";
 }
 
 /* ########################################################################
