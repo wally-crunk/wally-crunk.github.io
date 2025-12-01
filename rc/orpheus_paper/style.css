@@ -1949,6 +1949,17 @@ body#collage .cats_music {
   text-align: right;
 }
 
+/* Quote notifications page ~ center the empty-state message */
+body#userhistory .header + .center {
+  width: 100%;
+  min-height: 4rem;
+  font-size: 140%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .linkbox br {
   display: block;
   line-height: 4px;
@@ -3512,7 +3523,7 @@ Documentation of mobile classes:
 /* ## 6.1 Debugging Tools
    variou 'debug' and x-debug features are avail in this doc elsewhere */
 #footer p:last-of-type::after {
-  content: " | Apollostage build 251130f 251031a paper";
+  content: " | Apollostage build 251201a 251031a paper";
 }
 
 /* ########################################################################
