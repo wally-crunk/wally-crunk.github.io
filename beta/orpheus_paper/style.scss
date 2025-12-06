@@ -1,0 +1,382 @@
+/* ########################################################################
+   ORPHEUS PAPER THEME
+   ######################################################################## */
+
+// ////////////////////////////////////////////////////////////////////////////////
+// ABOUT
+
+// This theme provides "light mode" appearance and is based on apollostage.
+// Most code is imported from apollostage.
+
+// ////////////////////////////////////////////////////////////////////////////////
+// SLUG/SETUP
+
+// import basic colors as a backup:
+@use '../apollostage/_variables' as variables;
+
+// debug slugs: must be after import.
+variables.$build-slug: variables.$build-slug + " " + "251031a paper";
+
+// override as follows:
+// ////////////////////////////////////////////////////////////////////////////////
+// COLORS
+
+// physical_layout -> token, and token -> raw value.
+
+// Backgrounds
+variables.$back-100: #EBEFF0;
+variables.$back-200: #DEE2E2;
+variables.$back-300: #D0D4D5;
+variables.$back-400: #C2C6C7;
+variables.$back-500: #B5B9BA;
+variables.$back-600: #A7ABAC;
+variables.$back-700: #9A9E9F;
+variables.$back-800: #8D9091;
+variables.$back-900: #808384;
+variables.$back-1000: #727576;
+
+$back-800-low: #8D909155;
+
+// Mids
+variables.$midtone-100: #00AD89;
+variables.$midtone-200: #00A280;
+variables.$midtone-300: #009777;
+variables.$midtone-400: #008D6D;
+variables.$midtone-500: #008265;
+variables.$midtone-600: #00745A;
+variables.$midtone-700: #00674E;
+variables.$midtone-800: #005943;
+variables.$midtone-900: #004B38;
+variables.$midtone-1000: #003D2D;
+
+// Menu theme; ~ for base apollostage, same as mids
+variables.$menutheme-100: #003D2D;
+variables.$menutheme-200: #004B38;
+variables.$menutheme-300: #005943;
+variables.$menutheme-400: #00674E;
+variables.$menutheme-500: #00745A;
+variables.$menutheme-600: #008265;
+variables.$menutheme-700: #008D6D;
+variables.$menutheme-800: #009777;
+variables.$menutheme-900: #00A280;
+variables.$menutheme-1000: #00AD89;
+
+// Fores
+variables.$fore-100: #8E9FB3;
+variables.$fore-200: #577AA4;
+variables.$fore-300: #2E5D95;
+variables.$fore-400: #174A86;
+variables.$fore-500: #0C3376;
+variables.$fore-600: #0D3167;
+variables.$fore-700: #123058;
+variables.$fore-800: #162E49;
+variables.$fore-900: #17212E;
+variables.$fore-1000: #0E0F0F;
+
+// Neutrals (Ink)
+$neutral-000: #FFFFFF;
+$neutral-100: #F7F8F9;
+$neutral-200: #F1F2F4;
+$neutral-300: #DCDFE4;
+$neutral-400: #B3B9C4;
+$neutral-500: #8590A2;
+$neutral-600: #758195;
+$neutral-700: #626F86;
+$neutral-800: #44546F;
+$neutral-900: #2C3E5D;
+$neutral-1000: #172B4D;
+$neutral-1100: #091E42;
+
+// Blues
+$blue-000: hsla(215deg, 100%, 95.7%, 1); 
+$blue-100: hsla(216deg, 100%, 90.0%, 1); 
+$blue-200: hsla(215deg, 100%, 76.1%, 1);
+$blue-300: hsla(215deg, 100%, 67.1%, 1);
+$blue-400: hsla(215deg, 100%, 61.0%, 1);
+$blue-500: hsla(215deg, 97.4%, 55.1%, 1);
+$blue-600: hsla(215deg, 90.0%, 47.1%, 1);
+$blue-700: hsla(215deg, 100%, 40.0%, 1);
+$blue-800: hsla(215deg, 84.6%, 22.9%, 1);
+$blue-900: hsla(216deg, 39.8%, 18.2%, 1);
+//Perhaps check hsla(225deg, 100%, 44%, 100%);
+
+// Direct-Specialty
+variables.$ds-neutral-300: #979a9c;
+variables.$ds-neutral-400: #7f807f;
+variables.$ds-neutral-500: #5d6670;
+variables.$ds-neutral-000: #000;
+variables.$ds-red: #a41610;
+variables.$ds-green: #11890e;
+variables.$ds-yellow: #c9a612;
+
+$ds-orange: #ff8c00;
+variables.$ds-fx-low: rgb(0 0 0 / 15%);
+variables.$ds-fx-mid: rgb(0 0 0 / 22.5%);
+
+$ds-fx-blue: hsl(215deg 90% 56% / 30%);
+variables.$ds-gray-05: hsl(178deg 100% 5.1%);
+
+$ds-gray-13: hsl(180deg 11% 13%); // goes nowhere does nothing;
+$ds-gray-52: hsl(181deg 3.5% 52%);
+$ds-gray-72: hsl(183deg 4% 72%);
+$ds-gray-99: hsl(120deg 100% 99.6%);
+$ds-gray-75-high: hsla(181deg, 7.6%, 75.3%, 0.75); // for light mode buttons
+$ds-gray-95-high: hsla(183deg, 6.0%, 94.8%, 0.75);
+$ds-buff:  hsl(45, 59%, 88%);
+variables.$ds-yellow-high: hsla(50, 90%, 50%, 0.777); // for reported bubbles
+variables.$ds-black: #000;
+variables.$ds-gray-92: hsl(183deg 2.5% 92%);
+variables.$ds-fx-menutheme: rgb(255 255 255 / 25%);
+variables.$back-600-mid: #A7ABAC88;
+variables.$back-600-low: #A7ABAC54;
+
+// DEFINE FROM LOGICAL LAYOUT TO TOKENS
+
+variables.$color-background-base: variables.$back-100;
+variables.$color-background-blockquote: $back-800-low;
+variables.$color-background-box: $back-800-low;
+variables.$color-background-form: variables.$back-200; // also boxes on frontpage
+variables.$color-background-input: variables.$back-400;
+variables.$color-background-input-active: variables.$back-500;
+variables.$color-background-poll: variables.$back-500;
+variables.$color-background-popup: variables.$back-300; // upload musicbrainz info
+$color-background-popup-warning: variables.$ds-yellow;
+variables.$color-background-searchbars: variables.$back-300;
+variables.$color-background-searchbars-field-focus: variables.$back-100;
+variables.$color-background-searchbars-surround: variables.$back-500;
+variables.$color-background-table: variables.$back-200; // tables/forms without odd-even treatment
+
+variables.$color-background-table-discog: variables.$midtone-300; // navigation row ~ "jump down to.."
+variables.$color-background-table-row-th: variables.$back-500;
+variables.$color-background-table-row-odd: variables.$back-400;
+variables.$color-background-table-row-even: variables.$back-300;
+variables.$color-background-table-keyrows: variables.$midtone-300; // navigation row ~ "jump up to.."
+variables.$color-background-table-torrenttable: variables.$back-300; // also form field in focus
+variables.$color-background-table-details: variables.$back-300; // equal to blockquote
+variables.$color-background-table-torrents-group: variables.$back-600;
+variables.$color-background-tooltipster: variables.$back-100;
+variables.$color-background-torrent: variables.$midtone-200; // edition in group-list
+variables.$color-background-fx-unread: $ds-fx-blue;
+
+variables.$color-text-anchor-hover: $blue-800;
+variables.$color-text-anchor: $blue-700;
+variables.$color-text-base: $neutral-1000;
+variables.$color-text-bold: $neutral-1100;
+variables.$color-text-button: variables.$ds-gray-05;  // xx checkme
+variables.$color-text-footer: variables.$ds-neutral-300;
+variables.$color-text-heading-anchor: $blue-700; // x
+variables.$color-text-heading: variables.$fore-700;
+variables.$color-text-important-alt: variables.$ds-green;
+variables.$color-text-important: variables.$ds-red;
+variables.$color-text-input: variables.$fore-600; // for pre-populated inputs
+variables.$color-text-input-active: variables.$fore-900;
+variables.$color-text-linkbox: $blue-700; // links in linkbox
+variables.$color-text-menu: $ds-gray-99; // new
+variables.$color-text-menu-hover: $ds-gray-99; // new // during pulldown
+variables.$color-text-mono: variables.$fore-500;
+variables.$color-text-popup-anchor-hover: $blue-800;
+variables.$color-text-popup-anchor: $blue-700;
+variables.$color-text-popup: $neutral-1000;
+variables.$color-text-ratio-greenzone: variables.$ds-green;
+variables.$color-text-ratio-redzone: variables.$ds-red;
+variables.$color-text-ratio-yellowzone: variables.$ds-yellow;
+variables.$color-text-span-blue: hsl(235deg 90% 55%); // x lower
+variables.$color-text-span-green: hsl(145deg 90% 35%); // x lower
+variables.$color-text-span-red: variables.$ds-red;
+variables.$color-text-table-discog-titles: variables.$fore-300;
+variables.$color-text-tooltipster: variables.$fore-700;
+variables.$color-text-tooltipster-anchor: variables.$fore-900;
+variables.$color-text-tooltipster-anchor-hover: variables.$fore-800;
+
+variables.$color-menu-1: orangered; // unused (could be home)
+variables.$color-menu-2: variables.$menutheme-100; // torrents
+variables.$color-menu-3: variables.$menutheme-200; // collages
+variables.$color-menu-4: variables.$menutheme-300; // requests
+variables.$color-menu-5: variables.$menutheme-400; // forums
+variables.$color-menu-6: variables.$menutheme-500; // irc
+variables.$color-menu-7: variables.$menutheme-600; // top10
+variables.$color-menu-8: variables.$menutheme-700; // rules
+variables.$color-menu-9: variables.$menutheme-800; // wiki
+variables.$color-menu-username: variables.$menutheme-900; // username menu ~ closed
+variables.$color-menu-userinfo: variables.$menutheme-1000; // VV pulldown menu ~ closed
+variables.$color-menu-hover: variables.$menutheme-300;
+variables.$color-menu-username-hover: variables.$menutheme-900; // username menu ~ open
+variables.$color-menu-userinfo-hover: variables.$menutheme-900; // VV pulldown menu ~ open
+variables.$color-menu-fx-selection: variables.$ds-fx-menutheme;
+variables.$color-mobilemenu-userinfo-1: variables.$menutheme-400; // mobile pulldown menu gradient 1
+variables.$color-mobilemenu-userinfo-2: variables.$menutheme-900; // mobile pulldown menu gradient 2
+variables.$color-mobilemenu-closed: variables.$midtone-700; // rules, also mobile menu header
+variables.$color-mobilemenu-shadow: variables.$midtone-500; // mobile menu
+
+variables.$color-obj-button-base-1:  $ds-gray-75-high; // lightened for light mode
+variables.$color-obj-button-base-2:  $ds-gray-95-high; // lightened for light mode 
+
+variables.$color-obj-poll: variables.$midtone-900; // poll active part of bargraph
+
+// Bubblesbles
+variables.$color-obj-tag-bubble-bg: variables.$midtone-200;
+variables.$color-obj-tag-bubble-fg: variables.$midtone-900;
+variables.$color-obj-info-bubble-bg: variables.$ds-neutral-500; 
+variables.$color-obj-info-bubble-fg: variables.$back-100;
+variables.$color-obj-reported-bubble-bg: variables.$midtone-900;
+variables.$color-obj-reported_bubble-fg: variables.$back-100;
+variables.$color-obj-warning-bubble-bg: variables.$midtone-700;
+variables.$color-obj-warning-bubble-fg: variables.$back-100;
+variables.$color-obj-approved-bubble-bg: variables.$midtone-500;
+variables.$color-obj-approved-bubble-fg: variables.$back-100;
+variables.$color-obj-gratis-bubble-bg: variables.$fore-300;
+variables.$color-obj-gratis-bubble-fg: $ds-gray-99;
+
+// Autocompletes
+variables.$color-background-autocompletes: variables.$color-background-searchbars;
+variables.$color-accent-border-autocompletes: variables.$midtone-300;
+variables.$color-text-autocomplete: variables.$color-text-input;
+variables.$color-text-autocomplete-highlight-match: variables.$fore-1000;
+
+variables.$color-accent-border-blockquote: variables.$back-900; // Dotted
+variables.$color-accent-border-box: variables.$back-900;
+variables.$color-accent-border-input: variables.$ds-fx-low;
+variables.$color-accent-border-input-active: variables.$ds-fx-mid;
+variables.$color-accent-border-tooltipster: variables.$midtone-800;
+variables.$color-accent-border-popup: variables.$midtone-800;
+variables.$color-accent-border-tableouter: variables.$back-600-mid;
+variables.$color-accent-border-tablerows: variables.$back-600-low;
+variables.$color-accent-border-tablerows-torrent: variables.$back-600-mid;
+variables.$color-accent-shadow-menutext: initial; // provisioned for derivative themes
+
+variables.$color-accent-cats_applications: silver;
+variables.$color-accent-cats_audiobooks: cornflowerblue;
+variables.$color-accent-cats_comedy: deepskyblue;
+variables.$color-accent-cats_comics: gold;
+variables.$color-accent-cats_ebooks: chocolate;
+variables.$color-accent-cats_elearningvideos: mediumpurple;
+variables.$color-accent-cats_music: darkslategray;
+variables.$color-accent-forum-inline-last-read: $ds-orange;
+variables.$color-accent-forum-unread: $ds-orange;
+variables.$color-accent-selection-background: variables.$midtone-800;
+variables.$color-accent-selection-text: #fff; // usually #fff or $color-text-bold
+
+// popup notifications
+variables.$color-background-notification-gradient-1: variables.$midtone-1000; // menu low/high suggested
+variables.$color-background-notification-gradient-2: variables.$midtone-500;  // menu high/low suggested
+variables.$color-background-notification: #fff;
+variables.$color-text-notification-words: #fff;
+
+// alerts (light mode style)
+variables.$color-accent-border-alert: variables.$midtone-500;
+variables.$color-background-alert:  $ds-buff;
+variables.$color-text-alert: variables.$ds-black;
+variables.$color-anchor-alert: variables.$ds-gray-05;
+
+// ////////////////////////////////////////////////////////////////////////////////
+// ICONS
+
+// changing to #000 black version
+variables.$icon-message-unread: url(config('STATIC_SERVER') + "/svg/std/document-round-000.svg");
+variables.$icon-message-unread-locked: url(config('STATIC_SERVER') + "/svg/std/lock-round-000.svg");
+variables.$icon-message-unread-sticky: url(config('STATIC_SERVER') + "/svg/std/pin-round-000.svg");
+variables.$icon-message-unread-locked-sticky: url(config('STATIC_SERVER') + "/svg/std/pin-and-lock-round-000.svg");
+variables.$icon-message-read: url(config('STATIC_SERVER') + "/svg/std/document-000.svg");
+variables.$icon-message-read-locked: url(config('STATIC_SERVER') + "/svg/std/lock-000.svg");
+variables.$icon-message-read-sticky: url(config('STATIC_SERVER') + "/svg/std/pin-000.svg");
+variables.$icon-message-read-locked-sticky: url(config('STATIC_SERVER') + "/svg/std/pin-and-lock-000.svg");
+
+// Header Pulldown Menu (hamburger/chevron icon)
+// not changing, still dark background
+
+// Used in Header
+// changing to light mode version
+// // Orpheus specific:
+variables.$logo-site-lockup: url(config('STATIC_SERVER') + "/svg/site/ops-logo-lockup-lightmode.svg");
+variables.$logo-site-square: url(config('STATIC_SERVER') + "/svg/site/ops-logo-loop-lightmode.svg");
+
+// Used on Mobile
+// changing to #000 black version
+variables.$icon-number-snatches: url(config('STATIC_SERVER') + "/svg/std/arrow-loop-000.svg");
+variables.$icon-number-seeders: url(config('STATIC_SERVER') + "/svg/std/arrow-up-round-000.svg");
+variables.$icon-number-leechers: url(config('STATIC_SERVER') + "/svg/std/arrow-down-round-000.svg");
+
+// // standard:
+// changing to #000 black version
+// variables.$icon-notification: url(config('STATIC_SERVER') + "/svg/std/notification-bell-000.svg");
+// variables.$icon-warning: url(config('STATIC_SERVER') + "/svg/std/x-000.svg")
+
+// // Orpheus specific; other deployments, use the above.
+// changing to #000 black version
+variables.$icon-notification: url(config('STATIC_SERVER') + "/svg/site/ops-icon-harp-000.svg");
+variables.$icon-warning: url(config('STATIC_SERVER') + "/svg/site/ops-icon-triangle-000.svg");
+
+@use '../apollostage/_base';
+
+// EOF
+
+/* ****************************** */
+/* Local overrides for this theme */
+
+/* no fonts */
+
+/* orpheus_paper prefers bolder buttons */
+
+
+button,
+input[type=button],
+input[type=submit],
+#popup_close  {
+  align-items: center;
+  background: $blue-600;
+  border: 0;
+  border-radius: 100px;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 100%;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 20px;
+  max-width: 480px;
+  min-height: 1.2em;
+  min-width: 0px;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  touch-action: manipulation;
+  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+}
+
+button:active,
+input[type=button]:active,
+input[type=submit]:active,
+#popup_close:active {
+  background: $blue-800;
+  color: $blue-000;
+}
+
+button:hover,
+input[type=button]:hover,
+input[type=submit]:hover,
+#popup_close:hover,
+button:focus,
+input[type=button]:focus,
+input[type=submit]:focus,
+#popup_close:focus
+ { 
+  background-color: $blue-800;
+  color: $blue-100; 
+}
+
+button:disabled,
+input[type=button]:disabled,
+input[type=submit]:disabled,
+#popup_close:disabled { 
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, .08);
+  color: rgba(0, 0, 0, .3);
+}
+// EOF
+// ////////////////////////////////////////////////////////////////////////////////
