@@ -3187,10 +3187,10 @@ Documentation of mobile classes:
   }
   /* Sessions page: open container + horizontal scroll without relying on :has */
   body#user .box.pad {
-    overflow: visible;
+    overflow: visible !important;
   }
   body#user .session_table.border {
-    overflow-x: auto;
+    overflow-x: auto !important;
   }
   /* Staff Inbox container: allow overflow for sticky header to work */
   body#staffpm #inbox {
