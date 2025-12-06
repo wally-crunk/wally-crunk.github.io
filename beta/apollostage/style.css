@@ -1441,6 +1441,12 @@ blockquote {
   word-break: break-word !important;
 }
 
+/* 'sessions' page forms */
+form.manage_form[name=sessions],
+form.delete_form[name=session] {
+  background-color: inherit;
+}
+
 /* END desktop view, handling of classes */
 /* ************************************************ */
 /* # 1.2 Reserved [for more organization in the future]
