@@ -3185,6 +3185,13 @@ Documentation of mobile classes:
     z-index: 1;
     background: #443B3A;
   }
+  /* Sessions page: open container + horizontal scroll without relying on :has */
+  body#user .box.pad {
+    overflow: visible;
+  }
+  body#user .session_table.border {
+    overflow-x: auto;
+  }
   /* Staff Inbox container: allow overflow for sticky header to work */
   body#staffpm #inbox {
     overflow: visible;
