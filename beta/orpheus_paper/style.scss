@@ -88,17 +88,18 @@ $neutral-1000: #172B4D;
 $neutral-1100: #091E42;
 
 // Blues
-$blue-000: hsla(215deg, 100%, 95.7%, 1); 
-$blue-100: hsla(216deg, 100%, 90.0%, 1); 
-$blue-200: hsla(215deg, 100%, 76.1%, 1);
-$blue-300: hsla(215deg, 100%, 67.1%, 1);
-$blue-400: hsla(215deg, 100%, 61.0%, 1);
-$blue-500: hsla(215deg, 97.4%, 55.1%, 1);
-$blue-600: hsla(215deg, 90.0%, 47.1%, 1);
-$blue-700: hsla(215deg, 100%, 40.0%, 1);
-$blue-800: hsla(215deg, 84.6%, 22.9%, 1);
-$blue-900: hsla(216deg, 39.8%, 18.2%, 1);
-//Perhaps check hsla(225deg, 100%, 44%, 100%);
+$blue-000: hsl(215deg 100% 95.7% / 100%); 
+$blue-100: hsl(216deg 100% 90.0% / 100%); 
+$blue-200: hsl(215deg 100% 76.1% / 100%);
+$blue-300: hsl(215deg 100% 67.1% / 100%);
+$blue-400: hsl(215deg 100% 61.0% / 100%);
+$blue-500: hsl(215deg 97.4% 55.1% / 100%);
+$blue-600: hsl(215deg 90.0% 47.1% / 100%);
+$blue-700: hsl(215deg 100% 40.0% / 100%);
+$blue-800: hsl(215deg 84.6% 22.9% / 100%);
+$blue-900: hsl(216deg 39.8% 18.2% / 100%);
+
+// Perhaps check hsla(225deg, 100%, 44%, 100%);
 
 // Direct-Specialty
 variables.$ds-neutral-300: #979a9c;
@@ -120,10 +121,10 @@ $ds-gray-13: hsl(180deg 11% 13%); // goes nowhere does nothing;
 $ds-gray-52: hsl(181deg 3.5% 52%);
 $ds-gray-72: hsl(183deg 4% 72%);
 $ds-gray-99: hsl(120deg 100% 99.6%);
-$ds-gray-75-high: hsla(181deg, 7.6%, 75.3%, 0.75); // for light mode buttons
-$ds-gray-95-high: hsla(183deg, 6.0%, 94.8%, 0.75);
-$ds-buff:  hsl(45, 59%, 88%);
-variables.$ds-yellow-high: hsla(50, 90%, 50%, 0.777); // for reported bubbles
+$ds-gray-75-high: hsl(181deg 7.6% 75.3% / 75%); // for light mode buttons
+$ds-gray-95-high: hsl(183deg 6.0% 94.8% / 75%);
+$ds-buff: hsl(45deg 59% 88%);
+variables.$ds-yellow-high: hsl(50deg 90% 50% / 77.7%); // for reported bubbles
 variables.$ds-black: #000;
 variables.$ds-gray-92: hsl(183deg 2.5% 92%);
 variables.$ds-fx-menutheme: rgb(255 255 255 / 25%);
@@ -319,8 +320,8 @@ variables.$icon-warning: url(config('STATIC_SERVER') + "/svg/site/ops-icon-trian
 
 
 button,
-input[type=button],
-input[type=submit],
+input[type="button"],
+input[type="submit"],
 #popup_close  {
   align-items: center;
   background: $blue-600;
@@ -336,9 +337,9 @@ input[type=submit],
   line-height: 20px;
   max-width: 480px;
   min-height: 1.2em;
-  min-width: 0px;
+  min-width: 0;
   overflow: hidden;
-  padding: 0px;
+  padding: 0;
   padding-left: 20px;
   padding-right: 20px;
   text-align: center;
@@ -350,20 +351,20 @@ input[type=submit],
 }
 
 button:active,
-input[type=button]:active,
-input[type=submit]:active,
+input[type="button"]:active,
+input[type="submit"]:active,
 #popup_close:active {
   background: $blue-800;
   color: $blue-000;
 }
 
 button:hover,
-input[type=button]:hover,
-input[type=submit]:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
 #popup_close:hover,
 button:focus,
-input[type=button]:focus,
-input[type=submit]:focus,
+input[type="button"]:focus,
+input[type="submit"]:focus,
 #popup_close:focus
  { 
   background-color: $blue-800;
@@ -371,12 +372,13 @@ input[type=submit]:focus,
 }
 
 button:disabled,
-input[type=button]:disabled,
-input[type=submit]:disabled,
+input[type="button"]:disabled,
+input[type="submit"]:disabled,
 #popup_close:disabled { 
   cursor: not-allowed;
-  background: rgba(0, 0, 0, .08);
-  color: rgba(0, 0, 0, .3);
+  background: rgb(0 0 0 / 8%);
+  color: rgb(0 0 0 / 30%);
 }
+
 // EOF
 // ////////////////////////////////////////////////////////////////////////////////

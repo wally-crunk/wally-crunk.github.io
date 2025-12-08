@@ -29,7 +29,8 @@ variables.$back-700: #2A2727;
 variables.$back-800: #2C2928;
 variables.$back-900: #2E2A2A;
 variables.$back-1000: #2F2B2B;
-$back-500-low: rgba(169, 148, 134.7, 0.07);
+
+$back-500-low: rgb(169 148 134.7 / 7%);
 
 // Mids
 variables.$midtone-100: #444342;
@@ -66,10 +67,10 @@ variables.$fore-1000: #f2f9fc;
 
 // direct-specialty
 $ds-bone-83: #e3dac9;
-$ds-haze-gold-12: hsl(45, 13%, 12%);
-$ds-haze-gold-40: hsl(51, 100%, 40%);
-$ds-haze-gold-fx-44: hsla(67, 18%, 55%, 0.44);
-$ds-haze-gold-fx-80: hsla(58, 24%, 67%, 0.8);
+$ds-haze-gold-12: hsl(45deg 13% 12%);
+$ds-haze-gold-40: hsl(51deg 100% 40%);
+$ds-haze-gold-fx-44: hsl(67deg 18% 55% / 44%);
+$ds-haze-gold-fx-80: hsl(58deg 24% 67% / 80%);
 $ds-haze-gold-pattern: url("data:image/svg+xml,%3Csvg id='patternId' width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cpattern id='a' patternUnits='userSpaceOnUse' width='70' height='8' patternTransform='scale(1) rotate(0)'%3E%3Crect x='0' y='0' width='100%25' height='100%25' fill='hsla(0,0%25,100%25,0)'/%3E%3Cpath d='M-.02 22c8.373 0 11.938-4.695 16.32-9.662C20.785 7.258 25.728 2 35 2c9.272 0 14.215 5.258 18.7 10.338C58.082 17.305 61.647 22 70.02 22M-.02 14.002C8.353 14 11.918 9.306 16.3 4.339 20.785-.742 25.728-6 35-6 44.272-6 49.215-.742 53.7 4.339c4.382 4.967 7.947 9.661 16.32 9.664M70 6.004c-8.373-.001-11.918-4.698-16.3-9.665C49.215-8.742 44.272-14 35-14c-9.272 0-14.215 5.258-18.7 10.339C11.918 1.306 8.353 6-.02 6.002' stroke-width='1' stroke='hsla(33, 15%25, 35%25, 0.25)' fill='none'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='800%25' height='800%25' transform='translate(0,0)' fill='url(%23a)'/%3E%3C/svg%3E");
 
 // ////////////////////////////////////////////////////////////////////////////////
@@ -82,7 +83,7 @@ variables.$color-background-form: variables.$back-200; // also boxes on frontpag
 variables.$color-background-input: variables.$back-400;
 variables.$color-background-input-active: variables.$back-500;
 variables.$color-background-poll: variables.$back-500;
-variables.$color-background-searchbars: variables.$menutheme-100; //changed for tap
+variables.$color-background-searchbars: variables.$menutheme-100; // changed for tap
 variables.$color-background-searchbars-field-focus: variables.$back-100;
 variables.$color-background-searchbars-surround: variables.$back-500;
 variables.$color-background-table: variables.$back-200; // tables/forms without odd-even treatment
@@ -116,17 +117,19 @@ $color-menu-fx-selection: variables.$ds-fx-menutheme;
 variables.$color-mobilemenu-userinfo-1: variables.$menutheme-400; // mobile pulldown menu gradient 1
 variables.$color-mobilemenu-userinfo-2: variables.$menutheme-900; // mobile pulldown menu gradient 2
 variables.$color-mobilemenu-closed: variables.$menutheme-700; // rules, also mobile menu header
-variables.$color-mobilemenu-shadow: variables.$menutheme-500; //mobile menu
+variables.$color-mobilemenu-shadow: variables.$menutheme-500; // mobile menu
 variables.$color-mobilemenu-closed-overlays: variables.$menutheme-100; // bg for icons on the hedaer
 
 variables.$color-text-anchor-hover: variables.$midtone-1000;
 variables.$color-text-anchor: variables.$fore-1000;
 variables.$color-text-base: variables.$fore-800;
 variables.$color-text-bold: variables.$fore-800;
+
 $color-text-button: variables.$ds-gray-05;
 $color-text-footer: variables.$ds-neutral-300;
-variables.$color-text-heading-anchor: variables.$fore-1000; //uniqueue
+variables.$color-text-heading-anchor: variables.$fore-1000; // uniqueue
 variables.$color-text-heading: variables.$fore-700;
+
 $color-text-important-alt: variables.$ds-green;
 $color-text-important: variables.$ds-red;
 variables.$color-text-input: variables.$fore-600; // for pre-populated inputs
@@ -179,6 +182,7 @@ variables.$color-text-autocomplete-highlight-match: variables.$fore-1000;
 
 variables.$color-accent-border-blockquote: variables.$back-900; // Dotted
 variables.$color-accent-border-box: variables.$back-900;
+
 $color-accent-border-input: variables.$ds-fx-low;
 $color-accent-border-input-active: variables.$ds-fx-mid;
 variables.$color-accent-border-tooltipster: variables.$midtone-800;
@@ -190,8 +194,8 @@ variables.$color-accent-shadow-menutext: initial; // provisioned for derivative 
 
 variables.$color-accent-cats_applications: silver;
 variables.$color-accent-cats_audiobooks: #3e4042;
-variables.$color-accent-cats_comedy: #046; //blue
-variables.$color-accent-cats_comics: #999060; //gold
+variables.$color-accent-cats_comedy: #046; // blue
+variables.$color-accent-cats_comics: #999060; // gold
 variables.$color-accent-cats_ebooks: #523e2c;
 variables.$color-accent-cats_elearningvideos: #483d4d;
 variables.$color-accent-cats_music: #1f2829;
@@ -212,6 +216,7 @@ variables.$color-accent-border-alert: variables.$midtone-500;
 variables.$color-background-alert: variables.$midtone-100;
 variables.$color-text-alert: variables.$fore-700;
 variables.$color-anchor-alert: variables.$fore-1000;
+
 $ds-shadow-heavy: 0 10px 18px rgb(0 0 0 / 55%), 0 7px 7px rgb(0 0 0 / 52%),
   0 -5px 9px rgb(0 0 0 / 32%);
 $ds-shadow-raised: 0 10px 18px rgb(0 0 0 / 25%), 0 7px 7px rgb(0 0 0 / 22%);
@@ -257,15 +262,15 @@ div#header {
 /*  Custom Override for 1.10 Notifications */
 
 /*  Only for desktop, and respect user preference */
-@media only screen and (min-width: 575px) and (prefers-contrast: no-preference) {
+@media only screen and (width >= 575px) and (prefers-contrast: no-preference) {
   /* Provide Haze Effect */
   #noty_bottomRight_layout_container li {
     background: unset !important;
     box-shadow:
-      2.3px 2.3px 1.9px rgba(0, 0, 0, 0.1),
-      9.7px 9.7px 7.7px rgba(0, 0, 0, 0.15),
-      26.5px 26.5px 21.2px rgba(0, 0, 0, 0.2),
-      100px 100px 80px rgba(0, 0, 0, 0.33) !important;
+      2.3px 2.3px 1.9px rgb(0 0 0 / 10%),
+      9.7px 9.7px 7.7px rgb(0 0 0 / 15%),
+      26.5px 26.5px 21.2px rgb(0 0 0 / 20%),
+      100px 100px 80px rgb(0 0 0 / 33%) !important;
     backdrop-filter: blur(2.75px);
     /* 2024 status */
     -webkit-backdrop-filter: blur(2.75px);
@@ -276,14 +281,14 @@ div#header {
     background:
       radial-gradient(
         circle at top right,
-        rgba(126, 123, 122, 0.23),
-        rgba(155, 150, 149, 0.23)
+        rgb(126 123 122 / 23%),
+        rgb(155 150 149 / 23%)
       ) !important;
   }
 
   /* second row of each box */
   #noty_bottomRight_layout_container .noty_buttons {
-    background-color: rgba(97, 95, 94, 0.42) !important;
+    background-color: rgb(97 95 94 / 42%) !important;
   }
 }
 

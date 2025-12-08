@@ -125,8 +125,8 @@
     "Segoe UI Symbol";
   --monospace-ui:
     ui-monospace,
-    Menlo,
-    Monaco,
+    menlo,
+    monaco,
     "Cascadia Mono",
     "Segoe UI Mono",
     "Roboto Mono",
@@ -135,7 +135,7 @@
     "Source Code Pro",
     "Fira Mono",
     "Droid Sans Mono",
-    Consolas,
+    consolas,
     "Courier New",
     monospace;
 }
@@ -656,8 +656,7 @@ table.box2 {
 /* Sessions table should scroll */
 .box.pad:has(.session_table.border),
 .box.pad .session_table.border {
-  overflow-x: auto !important;
-  overflow-y: visible !important;
+  overflow: auto visible !important;
 }
 
 .forum_post.forum_unread {
@@ -2200,7 +2199,7 @@ table.torrent_table.cats.m_table td.td_info.big_info div.group_info.clear div.ta
    TOKEN: Base bubble style for ALL tag labels
    (applies to elements and pseudo-elements)
    ============================================ */
-.token-badge, tr.snatched_group div.tags::before,
+tr.snatched_group div.tags::before,
 tr.snatched_torrent div.tags::before, .tl_freeload,
 .tl_freeleech,
 .tl_free,
@@ -2226,9 +2225,50 @@ tr.snatched_torrent div.tags::before, .tl_freeload,
 }
 
 /* ============================================
-   SEMANTIC BADGE ROLES
-   (no color here, roles only)
+   TOKEN: SEMANTIC BADGE ROLES
+   VISUAL THEME COLORS ONLY (defined as variables)
    ============================================ */
+tr.snatched_group div.tags::before,
+tr.snatched_torrent div.tags::before, .tl_snatched,
+.tl_snatched_group,
+.tl_snatched_torrent {
+  background: #8591a2;
+  color: hsl(45, 13%, 12%);
+  font-style: italic;
+  font-weight: 300;
+}
+
+.tl_reported,
+.tl_notice,
+.tl_bad_tags,
+.tl_bad_folders,
+.tl_bad_files {
+  background: #918d8c;
+  color: hsl(45, 13%, 12%);
+}
+
+.tl_checksum,
+.tl_trumpable,
+.tl_missing_lineage {
+  background: #7e7b7a;
+  color: hsl(45, 13%, 12%);
+}
+
+.tl_cassette_approved,
+.tl_lossymaster_approved {
+  background: #6a6867;
+  color: hsl(45, 13%, 12%);
+}
+
+.tl_freeload,
+.tl_freeleech,
+.tl_free,
+.tl_personal,
+.tl_neutral {
+  background: #8c978a;
+  color: hsl(45, 13%, 12%);
+}
+
 /* ============================================
    STATUS ASSIGNMENTS (extend tokens + roles)
    ============================================ */
@@ -2250,50 +2290,6 @@ tr.snatched_torrent div.tags::before {
 }
 
 /* Pseudo-elements inherit badge + semantic styling */
-/* ============================================
-   VISUAL THEME COLORS ONLY (defined as variables)
-   ============================================ */
-.token-badge-info, .tl_snatched,
-.tl_snatched_group,
-.tl_snatched_torrent, tr.snatched_group div.tags::before,
-tr.snatched_torrent div.tags::before {
-  background: #8591a2;
-  color: hsl(45, 13%, 12%);
-  font-style: italic;
-  font-weight: 300;
-}
-
-.token-badge-error, .tl_reported,
-.tl_notice,
-.tl_bad_tags,
-.tl_bad_folders,
-.tl_bad_files {
-  background: #918d8c;
-  color: hsl(45, 13%, 12%);
-}
-
-.token-badge-warning, .tl_checksum,
-.tl_trumpable,
-.tl_missing_lineage {
-  background: #7e7b7a;
-  color: hsl(45, 13%, 12%);
-}
-
-.token-badge-approved, .tl_cassette_approved,
-.tl_lossymaster_approved {
-  background: #6a6867;
-  color: hsl(45, 13%, 12%);
-}
-
-.token-badge-gratis, .tl_freeload,
-.tl_freeleech,
-.tl_free,
-.tl_personal,
-.tl_neutral {
-  background: #8c978a;
-  color: hsl(45, 13%, 12%);
-}
-
 /* ************************************************ */
 /* ## 2.3 Alertbar and error handling */
 /* ## 2.3.1 Base styling */
@@ -3579,7 +3575,7 @@ div#header {
 /*  #################################################### */
 /*  Custom Override for 1.10 Notifications */
 /*  Only for desktop, and respect user preference */
-@media only screen and (min-width: 575px) and (prefers-contrast: no-preference) {
+@media only screen and (width >= 575px) and (prefers-contrast: no-preference) {
   /* Provide Haze Effect */
   #noty_bottomRight_layout_container li {
     background: unset !important;
