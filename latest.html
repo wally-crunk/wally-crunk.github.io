@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Color Swatches</title>
+    <style>
+        body {
+            transition: background-color 0.05s ease;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        td {
+            border: thin solid gray;
+            padding: 5px;
+        }
+        .swatch {
+            width: 50px;
+            height: 50px;
+        }
+        .info {
+            font-size: 8px;
+        }
+        .name {
+            font-size: 8px;
+            font-weight: bold;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, Inter, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <!-- Toggle button to change background color -->
+    <button onclick="toggleBackground()">Toggle Background</button>
+
+    <script>
+        function toggleBackground() {
+            var body = document.body;
+            var currentColor = body.style.backgroundColor;
+            if (currentColor === "rgb(255, 255, 255)") {
+                body.style.backgroundColor = "rgb(128, 128, 128)"; // 50% gray
+            } else if (currentColor === "rgb(128, 128, 128)") {
+                body.style.backgroundColor = "rgb(40,40,40)"; // near-Black
+            } else {
+                body.style.backgroundColor = "rgb(255, 255, 255)"; // White
+            }
+        }
+    </script>
+
+
+<h1>Input Filename: ./live/linohaze2026/2026/colors.scss</h1>
+<h2>background-image: none;</h2>
+<table>
+<tr valign=top>
+<td>
+<div class="swatch" style="background-color: #4f4f4f;"></div>
+<div class="info">rgb(79, 79, 79)</div>
+<div class="info">hsl(0, 0%, 31%)</div>
+<div class="info">hsv(0, 0%, 31%)</div>
+<div class="info">#4f4f4f</div>
+<div class="name">background:</div>
+</td>
+<td>
+<div class="swatch" style="background-color: #111;"></div>
+<div class="info">rgb(17, 17, 17)</div>
+<div class="info">hsl(0, 0%, 7%)</div>
+<div class="info">hsv(0, 0%, 7%)</div>
+<div class="info">#111</div>
+<div class="name">background:</div>
+</td>
+<td>
+<div class="swatch" style="background-color: #dadada;"></div>
+<div class="info">rgb(218, 218, 218)</div>
+<div class="info">hsl(0, 0%, 85%)</div>
+<div class="info">hsv(0, 0%, 85%)</div>
+<div class="info">#dadada</div>
+<div class="name">background:</div>
+</td>
+<td>
+<div class="swatch" style="background-color: #dadada;"></div>
+<div class="info">rgb(218, 218, 218)</div>
+<div class="info">hsl(0, 0%, 85%)</div>
+<div class="info">hsv(0, 0%, 85%)</div>
+<div class="info">#dadada</div>
+<div class="name">background:</div>
+</td>
+<td>
+<div class="swatch" style="background-color: #e5e5e5;"></div>
+<div class="info">rgb(229, 229, 229)</div>
+<div class="info">hsl(0, 0%, 90%)</div>
+<div class="info">hsv(0, 0%, 90%)</div>
+<div class="info">#e5e5e5</div>
+<div class="name">background:</div>
+</td>
+<td>
+<div class="swatch" style="background-color: #e5e5e5;"></div>
+<div class="info">rgb(229, 229, 229)</div>
+<div class="info">hsl(0, 0%, 90%)</div>
+<div class="info">hsv(0, 0%, 90%)</div>
+<div class="info">#e5e5e5</div>
+<div class="name">background:</div>
+</td>
+<td>
+<div class="swatch" style="background-color: #eee;"></div>
+<div class="info">rgb(238, 238, 238)</div>
+<div class="info">hsl(0, 0%, 93%)</div>
+<div class="info">hsv(0, 0%, 93%)</div>
+<div class="info">#eee</div>
+<div class="name">background:</div>
+</td>
+<td>
+<div class="swatch" style="background-color: #f3f3f3;"></div>
+<div class="info">rgb(243, 243, 243)</div>
+<div class="info">hsl(0, 0%, 95%)</div>
+<div class="info">hsv(0, 0%, 95%)</div>
+<div class="info">#f3f3f3</div>
+<div class="name">background:</div>
+</td>
+<td>
+<div class="swatch" style="background-color: #f3f3f3;"></div>
+<div class="info">rgb(243, 243, 243)</div>
+<div class="info">hsl(0, 0%, 95%)</div>
+<div class="info">hsv(0, 0%, 95%)</div>
+<div class="info">#f3f3f3</div>
+<div class="name">background:</div>
+</td>
+<td>
+<div class="swatch" style="background-color: #fff;"></div>
+<div class="info">rgb(255, 255, 255)</div>
+<div class="info">hsl(0, 0%, 100%)</div>
+<div class="info">hsv(0, 0%, 100%)</div>
+<div class="info">#fff</div>
+<div class="name">background:</div>
+</td>
+<td>
+<div class="swatch" style="background-color: #fff;"></div>
+<div class="info">rgb(255, 255, 255)</div>
+<div class="info">hsl(0, 0%, 100%)</div>
+<div class="info">hsv(0, 0%, 100%)</div>
+<div class="info">#fff</div>
+<div class="name">background:</div>
+</td>
+<td>
+<div class="swatch" style="background-color: #fff;"></div>
+<div class="info">rgb(255, 255, 255)</div>
+<div class="info">hsl(0, 0%, 100%)</div>
+<div class="info">hsv(0, 0%, 100%)</div>
+<div class="info">#fff</div>
+<div class="name">background:</div>
+</td>
+<td>
+<div class="swatch" style="background-color: #fff;"></div>
+<div class="info">rgb(255, 255, 255)</div>
+<div class="info">hsl(0, 0%, 100%)</div>
+<div class="info">hsv(0, 0%, 100%)</div>
+<div class="info">#fff</div>
+<div class="name">background:</div>
+</td>
+<td>
+<div class="swatch" style="background-color: #fff;"></div>
+<div class="info">rgb(255, 255, 255)</div>
+<div class="info">hsl(0, 0%, 100%)</div>
+<div class="info">hsv(0, 0%, 100%)</div>
+<div class="info">#fff</div>
+<div class="name">background:</div>
+</td>
+<td>
+<div class="swatch" style="background-color: #fff;"></div>
+<div class="info">rgb(255, 255, 255)</div>
+<div class="info">hsl(0, 0%, 100%)</div>
+<div class="info">hsv(0, 0%, 100%)</div>
+<div class="info">#fff</div>
+<div class="name">background:</div>
+</td>
+<td>
+<div class="swatch" style="background-color: #fff;"></div>
+<div class="info">rgb(255, 255, 255)</div>
+<div class="info">hsl(0, 0%, 100%)</div>
+<div class="info">hsv(0, 0%, 100%)</div>
+<div class="info">#fff</div>
+<div class="name">background:</div>
+</td>
+</tr>
+</table>
+
+</body>
+</html>

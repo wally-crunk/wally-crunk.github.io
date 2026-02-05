@@ -1,0 +1,195 @@
+/* ########################################################################
+   ORPHEUS HAZE 2026 - LINOHAZE COLOR VARIANT
+   ######################################################################## */
+
+// ////////////////////////////////////////////////////////////////////////////////
+// ABOUT
+
+// This theme provides LinoHaze colors with Orpheus Haze structure
+// Based on orpheus_haze but with LinoHaze 2024 color palette
+
+// ////////////////////////////////////////////////////////////////////////////////
+// SLUG/SETUP
+
+// import basic colors as a backup:
+@use "../apollostage/_variables" as variables;
+
+// debug slugs: must be after import.
+variables.$build-slug: variables.$build-slug + " " + "linohaze-variant";
+
+// and override as follows:
+
+// ////////////////////////////////////////////////////////////////////////////////
+// COLOR TOKENS - LINOHAZE PALETTE
+
+// LinoHaze uses #424242 background with white text
+// Converting to similar structure as orpheus_haze
+
+// Backgrounds - LinoHaze style (lighter grays)
+variables.$back-100: #424242;  // LinoHaze main background
+variables.$back-200: #4a4a4a;  // Slightly lighter
+variables.$back-300: #525252;  // Even lighter
+variables.$back-400: #5a5a5a;  // Form backgrounds
+variables.$back-500: #626262;  // Hover states
+variables.$back-600: #6a6a6a;
+variables.$back-700: #727272;  // Headers
+variables.$back-800: #7a7a7a;
+variables.$back-900: #828282;
+variables.$back-1000: #8a8a8a;
+
+$back-500-low: rgba(33, 33, 33, 0.32);  // LinoHaze form background
+
+// Mids - keeping similar progression but lighter
+variables.$midtone-100: #909090;
+variables.$midtone-200: #989898;
+variables.$midtone-300: #a0a0a0;
+variables.$midtone-400: #a8a8a8;
+variables.$midtone-500: #b0b0b0;
+variables.$midtone-600: #b8b8b8;
+variables.$midtone-700: #c0c0c0;
+variables.$midtone-800: #c8c8c8;
+variables.$midtone-900: #d0d0d0;
+variables.$midtone-1000: #d8d8d8;
+
+// Menu - LinoHaze menu colors (gradients converted to solid)
+variables.$menutheme-100: rgba(33, 33, 33, 0.7);   // LinoHaze menu base
+variables.$menutheme-200: rgba(33, 33, 33, 0.64);
+variables.$menutheme-300: rgba(33, 33, 33, 0.58);
+variables.$menutheme-400: rgba(33, 33, 33, 0.52);
+variables.$menutheme-500: rgba(33, 33, 33, 0.46);
+variables.$menutheme-600: rgba(33, 33, 33, 0.4);
+variables.$menutheme-700: rgba(33, 33, 33, 0.34);
+variables.$menutheme-800: rgba(33, 33, 33, 0.28);
+variables.$menutheme-900: rgba(33, 33, 33, 0.22);
+variables.$menutheme-1000: rgba(33, 33, 33, 0.16);
+
+// Foregrounds - LinoHaze uses white text
+variables.$fore-400: #cccccc;
+variables.$fore-500: #dddddd;
+variables.$fore-600: #eeeeee;
+variables.$fore-700: #ffffff;  // LinoHaze main text color
+variables.$fore-800: #ffffff;  // LinoHaze main text color
+variables.$fore-900: #ffffff;  // LinoHaze main text color
+variables.$fore-1000: #ffffff; // LinoHaze main text color
+
+// LinoHaze link colors
+$linohaze-link: rgba(255, 255, 255, 0.6);  // LinoHaze link color
+$linohaze-link-hover: #ffffff;              // LinoHaze link hover
+
+// ////////////////////////////////////////////////////////////////////////////////
+// DEFINE FROM LOGICAL LAYOUT TO TOKENS
+
+variables.$color-background-base: variables.$back-100;
+variables.$color-background-blockquote: $back-500-low;
+variables.$color-background-box: $back-500-low;
+variables.$color-background-form: variables.$back-200;
+variables.$color-background-input: variables.$back-400;
+variables.$color-background-input-active: variables.$back-500;
+variables.$color-background-poll: variables.$back-500;
+variables.$color-background-searchbars: variables.$menutheme-100;
+variables.$color-background-searchbars-field-focus: variables.$back-100;
+variables.$color-background-searchbars-surround: variables.$back-500;
+variables.$color-background-table: variables.$back-200;
+variables.$color-background-table-row-th: variables.$back-700;
+variables.$color-background-table-row-odd: variables.$back-500;
+variables.$color-background-table-row-even: variables.$back-300;
+
+variables.$color-background-table-torrenttable: variables.$back-300;
+variables.$color-background-table-details: variables.$back-400;
+variables.$color-background-table-torrents-group: variables.$back-600;
+variables.$color-background-tooltipster: variables.$back-100;
+variables.$color-background-torrent: variables.$midtone-200;
+variables.$color-background-table-discog: variables.$midtone-300;
+variables.$color-background-table-keyrows: variables.$midtone-300;
+
+// Menu colors - LinoHaze style
+variables.$color-menu-1: variables.$menutheme-1000;
+variables.$color-menu-2: variables.$menutheme-100;
+variables.$color-menu-3: variables.$menutheme-200;
+variables.$color-menu-4: variables.$menutheme-300;
+variables.$color-menu-5: variables.$menutheme-400;
+variables.$color-menu-6: variables.$menutheme-500;
+variables.$color-menu-7: variables.$menutheme-600;
+variables.$color-menu-8: variables.$menutheme-700;
+variables.$color-menu-9: variables.$menutheme-800;
+variables.$color-menu-username: variables.$menutheme-900;
+variables.$color-menu-userinfo: variables.$menutheme-1000;
+variables.$color-menu-hover: #ffffff;  // LinoHaze hover (white)
+variables.$color-menu-username-hover: variables.$menutheme-900;
+variables.$color-menu-userinfo-hover: variables.$menutheme-900;
+
+// Text colors - LinoHaze style (white-based)
+variables.$color-text-anchor-hover: $linohaze-link-hover;
+variables.$color-text-anchor: $linohaze-link;
+variables.$color-text-base: variables.$fore-800;
+variables.$color-text-bold: variables.$fore-800;
+variables.$color-text-heading-anchor: variables.$fore-1000;
+variables.$color-text-heading: variables.$fore-700;
+variables.$color-text-input: variables.$fore-600;
+variables.$color-text-input-active: variables.$fore-900;
+variables.$color-text-linkbox: variables.$midtone-800;
+variables.$color-text-menu: variables.$fore-1000;
+variables.$color-text-menu-hover: #212121;  // LinoHaze menu hover text (dark)
+variables.$color-text-mono: variables.$fore-700;
+variables.$color-text-popup-anchor-hover: variables.$midtone-1000;
+variables.$color-text-popup-anchor: variables.$fore-500;
+variables.$color-text-popup: variables.$fore-400;
+variables.$color-text-table-discog-titles: variables.$midtone-900;
+variables.$color-text-tooltipster: variables.$fore-700;
+variables.$color-text-tooltipster-anchor: variables.$fore-900;
+variables.$color-text-tooltipster-anchor-hover: variables.$fore-800;
+
+// Keep original semantic colors
+$color-text-important-alt: variables.$ds-green;
+$color-text-important: variables.$ds-red;
+$color-text-ratio-greenzone: variables.$ds-green;
+$color-text-ratio-redzone: variables.$ds-red;
+$color-text-ratio-yellowzone: variables.$ds-yellow;
+
+// Bubbles - adjust for LinoHaze palette
+variables.$color-obj-tag-bubble-bg: variables.$midtone-800;
+variables.$color-obj-tag-bubble-fg: variables.$back-100;
+variables.$color-obj-info-bubble-bg: variables.$midtone-700;
+variables.$color-obj-info-bubble-fg: variables.$back-100;
+
+// Borders and accents
+variables.$color-accent-border-blockquote: variables.$back-900;
+variables.$color-accent-border-box: variables.$back-900;
+variables.$color-accent-border-tooltipster: variables.$midtone-800;
+variables.$color-accent-border-popup: variables.$midtone-800;
+
+// Selection
+variables.$color-accent-selection-background: rgba(255, 255, 255, 0.4);  // LinoHaze selection
+variables.$color-accent-selection-text: variables.$back-100;
+
+// ////////////////////////////////////////////////////////////////////////////////
+// WITH ALL VARIABLES SET, NOW IMPORT THE BASE CODE
+
+@use "../apollostage/_base";
+
+// ////////////////////////////////////////////////////////////////////////////////
+// CUSTOM OVERRIDES - LinoHaze Style
+
+/* LinoHaze menu hover effects */
+#menu > ul a:hover {
+  color: #212121 !important;
+  background: #fff !important;
+  border: solid rgba(0, 0, 0, 0) !important;
+  border-width: 1px 0 !important;
+  font-weight: 400;
+}
+
+#menu > ul a:active {
+  background: #f3f3f3 !important;
+}
+
+/* LinoHaze-style text shadows for headers */
+h2 {
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.1), 0 0 1px rgba(0, 0, 0, 0.8);
+}
+
+h2 a {
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.1), 0 0 1px rgba(0, 0, 0, 0.8);
+}
+
+// EOF

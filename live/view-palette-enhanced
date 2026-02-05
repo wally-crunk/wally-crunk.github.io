@@ -1,0 +1,227 @@
+#!/usr/bin/env python3
+
+import sys
+import re
+import os
+import colorsys
+
+# Named colors mapping
+NAMED_COLORS = {
+    'red': (255, 0, 0), 'green': (0, 128, 0), 'blue': (0, 0, 255),
+    'white': (255, 255, 255), 'black': (0, 0, 0), 'gray': (128, 128, 128),
+    'transparent': (0, 0, 0), 'silver': (192, 192, 192)
+}
+
+def read_file(filename):
+    with open(filename, "r") as file:
+        return file.readlines()
+
+def parse_color_to_rgb(color_str):
+    """Convert any CSS color format to RGB tuple"""
+    color_str = color_str.strip()
+    
+    # Hex colors
+    if color_str.startswith('#'):
+        return hex_to_rgb(color_str)
+    
+    # RGB/RGBA
+    if color_str.startswith(('rgb(', 'rgba(')):
+        return parse_rgb_rgba(color_str)
+    
+    # HSL/HSLA
+    if color_str.startswith(('hsl(', 'hsla(')):
+        return parse_hsl_hsla(color_str)
+    
+    # Named colors
+    if color_str.lower() in NAMED_COLORS:
+        return NAMED_COLORS[color_str.lower()]
+    
+    return None
+
+def hex_to_rgb(hex_code):
+    hex_code = hex_code.lstrip("#")
+    if len(hex_code) == 3:
+        hex_code = "".join([char * 2 for char in hex_code])
+    if len(hex_code) == 6 and all(c in "0123456789ABCDEFabcdef" for c in hex_code):
+        return tuple(int(hex_code[i:i+2], 16) for i in (0, 2, 4))
+    return None
+
+def parse_rgb_rgba(color_str):
+    """Parse rgb(r,g,b) or rgba(r,g,b,a) to RGB tuple"""
+    match = re.search(r'rgba?\(\s*([^)]+)\s*\)', color_str)
+    if not match:
+        return None
+    
+    values = [v.strip() for v in match.group(1).split(',')]
+    if len(values) < 3:
+        return None
+    
+    try:
+        r = int(float(values[0]))
+        g = int(float(values[1]))
+        b = int(float(values[2]))
+        return (r, g, b)
+    except ValueError:
+        return None
+
+def parse_hsl_hsla(color_str):
+    """Parse hsl(h,s%,l%) or hsla(h,s%,l%,a) to RGB tuple"""
+    match = re.search(r'hsla?\(\s*([^)]+)\s*\)', color_str)
+    if not match:
+        return None
+    
+    values = [v.strip() for v in match.group(1).split(',')]
+    if len(values) < 3:
+        return None
+    
+    try:
+        h = float(values[0]) / 360.0
+        s = float(values[1].rstrip('%')) / 100.0
+        l = float(values[2].rstrip('%')) / 100.0
+        
+        r, g, b = colorsys.hls_to_rgb(h, l, s)
+        return (int(r * 255), int(g * 255), int(b * 255))
+    except ValueError:
+        return None
+
+def rgb_to_hsl(rgb):
+    r, g, b = rgb[0] / 255.0, rgb[1] / 255.0, rgb[2] / 255.0
+    h, l, s = colorsys.rgb_to_hls(r, g, b)
+    return h * 360, s * 100, l * 100
+
+def format_hsl(h, s, l):
+    return f"hsl({round(h)}, {round(s)}%, {round(l)}%)"
+
+def format_rgb_255(rgb):
+    return f"rgb({rgb[0]}, {rgb[1]}, {rgb[2]})"
+
+def split_around_first_color_code(text):
+    """Find first color code in text and split around it"""
+    # Combined pattern for all color formats
+    color_pattern = r'(?:#(?:[0-9a-fA-F]{3}){1,2}\b|rgba?\([^)]+\)|hsla?\([^)]+\)|(?:\b(?:red|green|blue|white|black|gray|silver|transparent)\b))'
+    
+    match = re.search(color_pattern, text, re.IGNORECASE)
+    
+    if match:
+        start, end = match.span()
+        before = text[:start]
+        color_code = match.group(0)
+        after = text[end:]
+        return before, color_code, after
+    else:
+        return text, None, None
+
+def parse_content(lines):
+    parsed_data = []
+    current_label = None
+    current_swatches = []
+
+    for line in lines:
+        line = line.strip()
+        if not line:
+            continue
+
+        before, color_code, after = split_around_first_color_code(line)
+
+        if not color_code:
+            if current_label is not None and current_swatches:
+                parsed_data.append((current_label, current_swatches))
+            current_label = line
+            current_swatches = []
+        else:
+            while color_code:
+                current_color_name = before.strip() if before.strip() else None
+                current_swatches.append((current_color_name, color_code))
+                
+                line = after.strip()
+                before, color_code, after = split_around_first_color_code(line)
+
+    if current_label is not None and current_swatches:
+        parsed_data.append((current_label, current_swatches))
+
+    return parsed_data
+
+def generate_html(parsed_data, output_filename, input_filename):
+    html_content = """<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Color Swatches</title>
+    <style>
+        body { transition: background-color 0.05s ease; font-family: system-ui, sans-serif; }
+        table { border-collapse: collapse; }
+        td { border: thin solid gray; padding: 5px; }
+        .swatch { width: 50px; height: 50px; }
+        .info { font-size: 8px; }
+        .name { font-size: 8px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <button onclick="toggleBackground()">Toggle Background</button>
+    <script>
+        function toggleBackground() {
+            var body = document.body;
+            var current = body.style.backgroundColor;
+            if (current === "rgb(255, 255, 255)") {
+                body.style.backgroundColor = "rgb(128, 128, 128)";
+            } else if (current === "rgb(128, 128, 128)") {
+                body.style.backgroundColor = "rgb(40, 40, 40)";
+            } else {
+                body.style.backgroundColor = "rgb(255, 255, 255)";
+            }
+        }
+    </script>
+"""
+
+    html_content += f"<h1>Input: {input_filename}</h1>\n"
+    
+    for label, swatches in parsed_data:
+        html_content += f"<h2>{label}</h2>\n<table>\n<tr valign=top>\n"
+        
+        for color_name, color_code in swatches:
+            rgb = parse_color_to_rgb(color_code)
+            if rgb:
+                h, s, l = rgb_to_hsl(rgb)
+                hsl = format_hsl(h, s, l)
+                rgb_str = format_rgb_255(rgb)
+                
+                html_content += f"<td>\n"
+                html_content += f'<div class="swatch" style="background-color: {color_code};"></div>\n'
+                html_content += f'<div class="info">{rgb_str}</div>\n'
+                html_content += f'<div class="info">{hsl}</div>\n'
+                html_content += f'<div class="info">{color_code}</div>\n'
+                if color_name:
+                    html_content += f'<div class="name">{color_name}</div>\n'
+                html_content += "</td>\n"
+        
+        html_content += "</tr>\n</table>\n"
+
+    html_content += "</body>\n</html>"
+
+    with open(output_filename, "w") as file:
+        file.write(html_content)
+    print(f"HTML file generated: {output_filename}")
+
+def main():
+    if len(sys.argv) < 2:
+        filename = input("Enter filename: ")
+    else:
+        filename = sys.argv[1]
+    
+    if not os.path.exists(filename):
+        print(f"File not found: {filename}")
+        return
+    
+    lines = read_file(filename)
+    parsed_data = parse_content(lines)
+    
+    output_filename = "output.html"
+    counter = 1
+    while os.path.exists(output_filename):
+        counter += 1
+        output_filename = f"output{counter}.html"
+    
+    generate_html(parsed_data, output_filename, filename)
+
+if __name__ == "__main__":
+    main()
