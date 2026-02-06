@@ -1,0 +1,116 @@
+
+/* Pseudo-elements inherit badge + semantic styling */
+/* ************************************************ */
+/* ## 2.3 Alertbar and error handling */
+/* ## 2.3.1 Base styling */
+
+#alerts {
+  border: 2px solid #008265; /* varies by stylesheet */
+  border-radius: 5px;
+  margin: 10px auto 0 auto;
+  max-width: fit-content;
+  min-width: 40%;
+}
+
+/* Alertbar occurs when User Settings: Notifications: "Traditional" is selected. */
+/* Save_message can occur on request votes. */
+.alertbar,
+.sys_error,
+.save_message {
+  background-color: hsl(45, 59%, 88%); /* varies by stylesheet */
+  color: #172B4D !important; /* varies by stylesheet */
+  font-size: 13px;
+  font-weight: 500;
+  padding: 10px 10px 10px 48px;
+  text-align: center;
+}
+
+.alertbar:first-of-type {
+  background-image: url("https://beta.edge.opsfet.ch/svg/site/ops-icon-harp-000.svg");
+  background-position: 8px center;
+  background-repeat: no-repeat;
+  background-size: 32px;
+}
+
+.alertbar a {
+  color: hsl(178, 100%, 5.1%) !important;
+}
+
+/* occurs on failure, for example failed request votes */
+.error_message {
+  background-color: #633;
+  background-image: url("https://beta.edge.opsfet.ch/svg/site/ops-icon-triangle-000.svg");
+  background-position: 8px;
+  background-repeat: no-repeat;
+  background-size: 32px;
+  border: thick solid hsl(348, 84%, 51%);
+  color: #c6d2c8 !important;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 8px;
+  padding: 1rem 1rem 1rem 48px;
+  text-align: center;
+}
+
+.error_message a {
+  color: #fdfffd !important;
+}
+
+/* ## 2.3.2 additional treatment for messages that pop */
+@media screen and (prefers-reduced-motion: no-preference) {
+  @keyframes fx-borderpop-bad {
+    0% {
+      border: thick solid #c9a612;
+    }
+    70% {
+      border: thick solid hsl(348, 99%, 77%);
+    }
+    100% {
+      border: thick solid hsl(348, 84%, 51%);
+    }
+  }
+  @keyframes fx-borderpop-good {
+    0% {
+      border: thick solid #11890e;
+    }
+    70% {
+      border: thick solid #008265;
+    }
+    100% {
+      border: thick solid #008265;
+    }
+  }
+  .save_message {
+    animation-name: fx-borderpop-good;
+    animation-duration: 1.5s;
+  }
+  .error_message {
+    animation-name: fx-borderpop-bad;
+    animation-duration: 1.5s;
+  }
+}
+
+.alertbar:before {
+  content: ".alertbar";
+  background-color: #ff0066;
+  color: white;
+  padding: 2px 5px;
+  margin-right: 5px;
+  border-radius: 0 9rem 9rem 9rem;
+  font-size: 0.5em;
+  position: absolute;
+}
+
+#alerts:before {
+  content: ".alerts";
+  background-color: #ff0066;
+  color: white;
+  padding: 2px 5px;
+  margin-right: 5px;
+  border-radius: 0 9rem 9rem 9rem;
+  font-size: 0.5em;
+  position: absolute;
+}
+
+/////////
+
