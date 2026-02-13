@@ -2326,7 +2326,7 @@ tr.snatched_torrent div.tags::before {
 /* ## 2.3 Alertbar and error handling */
 /* ## 2.3.1 Base styling */
 #alerts {
-  margin: 10px auto 0 auto;
+  margin: 8px auto 8px auto;
   max-width: fit-content;
   min-width: 40%;
 }
@@ -2334,10 +2334,14 @@ tr.snatched_torrent div.tags::before {
 /* Alertbar occurs when User Settings: Notifications: "Traditional" is selected. */
 /* Save_message can occur on request votes. */
 .alertbar,
+#alertbar_user,
+.alertbar_user,
+#alertbar_staff,
+.alertbar_staff,
 .sys_error,
 .save_message {
   border: 0;
-  border-radius: 5px;
+  border-radius: 4px;
   box-shadow: 0 0 0 2px #F78DA6;
   background-color: #433437; /* varies by stylesheet */
   color: #CDB6C5 !important; /* varies by stylesheet */
@@ -2345,16 +2349,25 @@ tr.snatched_torrent div.tags::before {
   font-weight: 500;
   padding: 10px 10px 10px 48px;
   text-align: center;
+  margin: 10px;
 }
 
-.alertbar:first-of-type {
+.alertbar:first-of-type,
+#alertbar_user:first-of-type,
+.alertbar_user:first-of-type,
+#alertbar_staff:first-of-type,
+.alertbar_staff:first-of-type {
   background-image: url(https://wally-crunk.github.io/svg/site/ops-icon-harp-ccc.svg);
   background-position: 1.1rem center;
   background-repeat: no-repeat;
   background-size: 1.2rem;
 }
 
-.alertbar a {
+.alertbar a,
+#alertbar_user a,
+.alertbar_user a,
+#alertbar_staff a,
+.alertbar_staff a {
   color: #F9ECEC !important;
 }
 

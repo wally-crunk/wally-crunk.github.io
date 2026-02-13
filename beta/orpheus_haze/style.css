@@ -2105,18 +2105,18 @@ body#userhistory .header + .center {
 /* # 1.12 Upload form MusicBrainz popup */
 #musicbrainz_popup {
   color: #313333;
-  background: #181d1d;
+  background: #313333;
   border: #888483;
   padding: 1rem;
   font-weight: 600;
 }
 
 #musicbrainz_popup a {
-  color: #4e5253;
+  color: #a6afb2;
 }
 
 #musicbrainz_popup a:hover {
-  color: #9b9695;
+  color: #c7cfd2;
 }
 
 #musicbrainz_popup .brackets {
@@ -2326,7 +2326,7 @@ tr.snatched_torrent div.tags::before {
 /* ## 2.3 Alertbar and error handling */
 /* ## 2.3.1 Base styling */
 #alerts {
-  margin: 10px auto 0 auto;
+  margin: 8px auto 8px auto;
   max-width: fit-content;
   min-width: 40%;
 }
@@ -2334,10 +2334,14 @@ tr.snatched_torrent div.tags::before {
 /* Alertbar occurs when User Settings: Notifications: "Traditional" is selected. */
 /* Save_message can occur on request votes. */
 .alertbar,
+#alertbar_user,
+.alertbar_user,
+#alertbar_staff,
+.alertbar_staff,
 .sys_error,
 .save_message {
   border: 0;
-  border-radius: 5px;
+  border-radius: 4px;
   box-shadow: 0 0 0 2px #6a6867;
   background-color: #444342; /* varies by stylesheet */
   color: #a6afb2 !important; /* varies by stylesheet */
@@ -2345,16 +2349,25 @@ tr.snatched_torrent div.tags::before {
   font-weight: 500;
   padding: 10px 10px 10px 48px;
   text-align: center;
+  margin: 10px;
 }
 
-.alertbar:first-of-type {
+.alertbar:first-of-type,
+#alertbar_user:first-of-type,
+.alertbar_user:first-of-type,
+#alertbar_staff:first-of-type,
+.alertbar_staff:first-of-type {
   background-image: url(https://wally-crunk.github.io/svg/site/ops-icon-harp-ccc.svg);
   background-position: 1.1rem center;
   background-repeat: no-repeat;
   background-size: 1.2rem;
 }
 
-.alertbar a {
+.alertbar a,
+#alertbar_user a,
+.alertbar_user a,
+#alertbar_staff a,
+.alertbar_staff a {
   color: #f2f9fc !important;
 }
 
@@ -3582,7 +3595,7 @@ Documentation of mobile classes:
 /* ## 6.1 Debugging Tools
    variou 'debug' and x-debug features are avail in this doc elsewhere */
 #footer p:last-of-type::after {
-  content: " | Apollostage build 20260211 haze";
+  content: " | Apollostage build 20260211 haze!";
 }
 
 /* ########################################################################
