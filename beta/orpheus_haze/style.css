@@ -3645,6 +3645,9 @@ div#header {
   #noty_bottomRight_layout_container .noty_buttons {
     background-color: rgba(97, 95, 94, 0.42) !important;
   }
+  #noty_bottomRight_layout_container .noty_buttons a {
+    color: hsl(45, 13%, 72%) !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

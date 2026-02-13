@@ -299,6 +299,10 @@ div#header {
   #noty_bottomRight_layout_container .noty_buttons {
     background-color: rgb(97 95 94 / 42%) !important;
   }
+
+  #noty_bottomRight_layout_container .noty_buttons a {
+    color: hsl(45, 13%, 72%) !important
+  } 
 }
 
 // EOF
