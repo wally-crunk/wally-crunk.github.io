@@ -3616,6 +3616,7 @@ html body div#wrapper div#header div#menu ul li.active a {
 }
 
 /* Header and Menu Upper Case, like old linohaze stylesheet */
+div#content .box .head strong,
 div#content tr.colhead_dark a strong,
 div#header {
   white-space: nowrap;
@@ -3623,7 +3624,7 @@ div#header {
   font-weight: 250;
   font-stretch: condensed;
   font-width: condensed;
-  font-size: 100%;
+  font-size: 115%;
 }
 
 /*  #################################################### */
