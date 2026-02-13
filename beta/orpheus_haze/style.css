@@ -477,7 +477,7 @@ input[type=date],
 input[type=number],
 select {
   background: #252323;
-  border: 1px solid #126c56;
+  border: 1px solid rgba(255, 255, 255, 0.08);
   color: #6b7173;
   height: 32px;
   padding: 0 8px;
@@ -485,7 +485,7 @@ select {
 
 textarea {
   background: #252323;
-  border: 1px solid #126c56;
+  border: 1px solid rgba(255, 255, 255, 0.08);
   color: #6b7173;
   padding: 0 8px;
 }
@@ -499,7 +499,7 @@ input[type=number]:focus,
 select:focus,
 textarea:focus {
   background: #272424;
-  border: 1px solid #d5e0d9;
+  border: 1px solid rgba(255, 255, 255, 0.25);
   color: #c7cfd2;
 }
 
