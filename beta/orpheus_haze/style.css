@@ -3616,13 +3616,14 @@ html body div#wrapper div#header div#menu ul li.active a {
 }
 
 /* Header and Menu Upper Case, like old linohaze stylesheet */
+div#content tr.colhead_dark a strong,
 div#header {
   white-space: nowrap;
   text-transform: uppercase;
-  font-weight: 350;
+  font-weight: 250;
   font-stretch: condensed;
   font-width: condensed;
-  font-size: 115%;
+  font-size: 100%;
 }
 
 /*  #################################################### */
