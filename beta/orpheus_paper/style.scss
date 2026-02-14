@@ -158,7 +158,6 @@ variables.$color-background-table-torrents-group: variables.$back-600;
 variables.$color-background-tooltipster: variables.$back-100;
 variables.$color-background-torrent: variables.$midtone-200; // edition in group-list
 variables.$color-background-fx-unread: $ds-fx-blue;
-variables.$color-background-highlight-non-primary: variables.$ds-yellow-high;
 
 variables.$color-text-anchor-hover: $blue-800;
 variables.$color-text-anchor: $blue-700;
@@ -189,7 +188,6 @@ variables.$color-text-table-discog-titles: variables.$fore-300;
 variables.$color-text-tooltipster: variables.$fore-700;
 variables.$color-text-tooltipster-anchor: variables.$fore-900;
 variables.$color-text-tooltipster-anchor-hover: variables.$fore-800;
-variables.$color-text-highlight-non-primary: variables.$ds-black;
 
 variables.$color-menu-1: orangered; // unused (could be home)
 variables.$color-menu-2: variables.$menutheme-100; // torrents
@@ -320,9 +318,11 @@ variables.$icon-warning: url(config('STATIC_SERVER') + "/svg/site/ops-icon-trian
 
 /* orpheus_paper prefers bolder buttons */
 
+
 button,
 input[type="button"],
-input[type="submit"]  {
+input[type="submit"],
+#popup_close  {
   align-items: center;
   background: $blue-600;
   border: 0;
@@ -350,33 +350,10 @@ input[type="submit"]  {
   vertical-align: middle;
 }
 
-#musicbrainz_popup #popup_close {
-  background: $blue-600;
-  border: 0;
-  border-radius: 100px;
-  box-sizing: border-box;
-  color: white;
-  cursor: pointer;
-  align-items: center;
-  justify-content: center;
-  width: 32px;
-  height: 32px;
-  padding: 0;
-  line-height: 1;
-  align-content: normal;
-  color: white;
-  background: $blue-600;
-  border: 0;
-  border-radius: 100px;
-  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
-}
-
 button:active,
 input[type="button"]:active,
 input[type="submit"]:active,
-#popup_close:active,
-#musicbrainz_popup #popup_close:active
- {
+#popup_close:active {
   background: $blue-800;
   color: $blue-000;
 }
@@ -385,12 +362,10 @@ button:hover,
 input[type="button"]:hover,
 input[type="submit"]:hover,
 #popup_close:hover,
-#musicbrainz_popup #popup_close:hover,
 button:focus,
 input[type="button"]:focus,
 input[type="submit"]:focus,
-#popup_close:focus,
-#musicbrainz_popup #popup_close:focus
+#popup_close:focus
  { 
   background-color: $blue-800;
   color: $blue-100; 
@@ -399,8 +374,7 @@ input[type="submit"]:focus,
 button:disabled,
 input[type="button"]:disabled,
 input[type="submit"]:disabled,
-#popup_close:disabled,
-#musicbrainz_popup #popup_close:disabled { 
+#popup_close:disabled { 
   cursor: not-allowed;
   background: rgb(0 0 0 / 8%);
   color: rgb(0 0 0 / 30%);

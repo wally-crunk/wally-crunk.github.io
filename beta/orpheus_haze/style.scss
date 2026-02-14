@@ -15,7 +15,7 @@
 @use "../apollostage/_variables" as variables;
 
 // debug slugs: must be after import.
-variables.$build-slug: variables.$build-slug + " " + "haze!";
+variables.$build-slug: variables.$build-slug + " " + "haze";
 
 // and override as follows:
 
@@ -96,6 +96,7 @@ variables.$color-background-table: variables.$back-200; // tables/forms without 
 variables.$color-background-table-row-th: variables.$back-700;
 variables.$color-background-table-row-odd: variables.$back-500;
 variables.$color-background-table-row-even: variables.$back-300;
+
 variables.$color-background-table-torrenttable: variables.$back-300; // also form field in focus
 variables.$color-background-table-details: variables.$back-400; // equal to blockquote
 variables.$color-background-table-torrents-group: variables.$back-600;
@@ -103,8 +104,6 @@ variables.$color-background-tooltipster: variables.$back-100;
 variables.$color-background-torrent: variables.$midtone-200; // edition in group-list
 variables.$color-background-table-discog: variables.$midtone-300; // navigation row ~ "jump down to.."
 variables.$color-background-table-keyrows: variables.$midtone-300; // navigation row ~ "jump up to.."
-variables.$color-background-highlight-non-primary: variables.$fore-800;
-variables.$color-background-popup: variables.$fore-400; // upload musicbrainz info
 
 variables.$color-menu-1: variables.$menutheme-1000; // unused (could be home)
 variables.$color-menu-2: variables.$menutheme-100; // torrents
@@ -131,7 +130,6 @@ variables.$color-text-anchor-hover: variables.$midtone-1000;
 variables.$color-text-anchor: variables.$fore-1000;
 variables.$color-text-base: variables.$fore-800;
 variables.$color-text-bold: variables.$fore-800;
-variables.$color-text-highlight-non-primary: $back-500-low;
 
 $color-text-button: variables.$ds-gray-05;
 $color-text-footer: variables.$ds-neutral-300;
@@ -146,8 +144,8 @@ variables.$color-text-linkbox: variables.$midtone-800; // links in linkbox
 variables.$color-text-menu: variables.$fore-1000;
 variables.$color-text-menu-hover: variables.$fore-700; // during pulldown // changed
 variables.$color-text-mono: variables.$fore-700;
-variables.$color-text-popup-anchor-hover: variables.$fore-900;
-variables.$color-text-popup-anchor: variables.$fore-800;
+variables.$color-text-popup-anchor-hover: variables.$midtone-1000;
+variables.$color-text-popup-anchor: variables.$fore-500;
 variables.$color-text-popup: variables.$fore-400; // white background
 $color-text-ratio-greenzone: variables.$ds-green;
 $color-text-ratio-redzone: variables.$ds-red;
@@ -191,8 +189,8 @@ variables.$color-text-autocomplete-highlight-match: variables.$fore-1000;
 variables.$color-accent-border-blockquote: variables.$back-900; // Dotted
 variables.$color-accent-border-box: variables.$back-900;
 
-variables.$color-accent-border-input: variables.$midtone-500;
-variables.$color-accent-border-input-active: variables.$fore-800;
+$color-accent-border-input: variables.$ds-fx-low;
+$color-accent-border-input-active: variables.$ds-fx-mid;
 variables.$color-accent-border-tooltipster: variables.$midtone-800;
 variables.$color-accent-border-popup: variables.$midtone-800;
 variables.$color-accent-border-tableouter: variables.$back-600-mid;
@@ -257,12 +255,10 @@ html body div#wrapper div#header div#menu ul li.active a {
 
 /* Header and Menu Upper Case, like old linohaze stylesheet */
 
-div#content .box .head strong,
-div#content tr.colhead_dark a strong,
 div#header {
   white-space: nowrap;
   text-transform: uppercase;
-  font-weight: 250;
+  font-weight: 350;
   font-stretch: condensed; // currently (2025) deprecated
   font-width: condensed;   // currently (2025) not yet supported by browsers
   font-size: 115%;
@@ -301,10 +297,6 @@ div#header {
   #noty_bottomRight_layout_container .noty_buttons {
     background-color: rgb(97 95 94 / 42%) !important;
   }
-
-  #noty_bottomRight_layout_container .noty_buttons a {
-    color: hsl(45, 13%, 72%) !important
-  } 
 }
 
 // EOF

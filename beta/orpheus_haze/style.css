@@ -7,7 +7,6 @@
    CHANGELOG
    ########################################################################
 */
-/*  # 2026-02-11 - Updates for new site features */
 /*  # 2025-12-15 - Bug fixes per community feedback, including
     # pulldown menu will appear over notifications, and color highlighting
     # for the active page breadcrumb. */
@@ -145,7 +144,6 @@
 body,
 button,
 h1,
-#musicbrainz_popup h1,
 h2,
 h3,
 h4,
@@ -474,10 +472,9 @@ input[type=password],
 input[type=text],
 input[type=search],
 input[type=date],
-input[type=number],
 select {
   background: #252323;
-  border: 1px solid #6a6867;
+  border: 1px solid rgba(255, 255, 255, 0.08);
   color: #6b7173;
   height: 32px;
   padding: 0 8px;
@@ -485,7 +482,7 @@ select {
 
 textarea {
   background: #252323;
-  border: 1px solid #6a6867;
+  border: 1px solid rgba(255, 255, 255, 0.08);
   color: #6b7173;
   padding: 0 8px;
 }
@@ -495,11 +492,10 @@ input[type=password]:focus,
 input[type=text]:focus,
 input[type=search]:focus,
 input[type=date]:focus,
-input[type=number]:focus,
 select:focus,
 textarea:focus {
   background: #272424;
-  border: 1px solid #a6afb2;
+  border: 1px solid rgba(255, 255, 255, 0.25);
   color: #c7cfd2;
 }
 
@@ -2105,18 +2101,18 @@ body#userhistory .header + .center {
 /* # 1.12 Upload form MusicBrainz popup */
 #musicbrainz_popup {
   color: #313333;
-  background: #313333;
+  background: #1d2424;
   border: #888483;
   padding: 1rem;
   font-weight: 600;
 }
 
 #musicbrainz_popup a {
-  color: #a6afb2;
+  color: #4e5253;
 }
 
 #musicbrainz_popup a:hover {
-  color: #c7cfd2;
+  color: #9b9695;
 }
 
 #musicbrainz_popup .brackets {
@@ -2125,21 +2121,6 @@ body#userhistory .header + .center {
 
 #musicbrainz_popup #popup_close {
   color: hsl(178, 2.5%, 5%);
-  border: 0;
-  border-radius: 100px;
-  box-sizing: border-box;
-  color: white;
-  cursor: pointer;
-  align-items: center;
-  justify-content: center;
-  width: 32px;
-  height: 32px;
-  padding: 0;
-  line-height: 1;
-  align-content: normal;
-  border: 0;
-  border-radius: 100px;
-  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
 }
 
 /* popup close button, see 'button' */
@@ -2334,9 +2315,7 @@ tr.snatched_torrent div.tags::before {
 /* Alertbar occurs when User Settings: Notifications: "Traditional" is selected. */
 /* Save_message can occur on request votes. */
 .alertbar,
-#alertbar_user,
 .alertbar_user,
-#alertbar_staff,
 .alertbar_staff,
 .sys_error,
 .save_message {
@@ -2353,9 +2332,7 @@ tr.snatched_torrent div.tags::before {
 }
 
 .alertbar:first-of-type,
-#alertbar_user:first-of-type,
 .alertbar_user:first-of-type,
-#alertbar_staff:first-of-type,
 .alertbar_staff:first-of-type {
   background-image: url(https://wally-crunk.github.io/svg/site/ops-icon-harp-ccc.svg);
   background-position: 1.1rem center;
@@ -2364,9 +2341,7 @@ tr.snatched_torrent div.tags::before {
 }
 
 .alertbar a,
-#alertbar_user a,
 .alertbar_user a,
-#alertbar_staff a,
 .alertbar_staff a {
   color: #f2f9fc !important;
 }
@@ -2981,12 +2956,6 @@ Documentation of mobile classes:
   }
   /* END top10 */
   /* END torrent table */
-  /* ## 4.9.3 Highlight */
-  td.number_column.td_size.highlight_non_primary {
-    font-weight: 800;
-    color: rgba(169, 148, 135, 0.07);
-    background-color: #a6afb2;
-  }
   /* ************************************************ */
   /* ## 4.10 BEGIN invite table */
   .invite_table tr:not(.colhead) td:nth-child(3)::before {
@@ -3595,7 +3564,7 @@ Documentation of mobile classes:
 /* ## 6.1 Debugging Tools
    variou 'debug' and x-debug features are avail in this doc elsewhere */
 #footer p:last-of-type::after {
-  content: " | Apollostage build 20260211 haze!";
+  content: " | Apollostage build 20251215 haze";
 }
 
 /* ########################################################################
@@ -3616,12 +3585,10 @@ html body div#wrapper div#header div#menu ul li.active a {
 }
 
 /* Header and Menu Upper Case, like old linohaze stylesheet */
-div#content .box .head strong,
-div#content tr.colhead_dark a strong,
 div#header {
   white-space: nowrap;
   text-transform: uppercase;
-  font-weight: 250;
+  font-weight: 350;
   font-stretch: condensed;
   font-width: condensed;
   font-size: 115%;
@@ -3646,8 +3613,5 @@ div#header {
   /* second row of each box */
   #noty_bottomRight_layout_container .noty_buttons {
     background-color: rgba(97, 95, 94, 0.42) !important;
-  }
-  #noty_bottomRight_layout_container .noty_buttons a {
-    color: hsl(45, 13%, 72%) !important;
   }
 }
