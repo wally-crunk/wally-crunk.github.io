@@ -2333,7 +2333,7 @@ tr.snatched_torrent div.tags::before {
 
 /* Staff alertbars keep a distinct, muted ring. */
 .alertbar_staff {
-  box-shadow: 0 0 0 2px #4e485b;
+  box-shadow: 0 0 0 2px #4b414f;
 }
 
 .alertbar a,
