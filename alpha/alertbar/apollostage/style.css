@@ -2340,6 +2340,26 @@ tr.snatched_torrent div.tags::before {
   background-size: 1.2rem;
 }
 
+/* user/default alert bars keep notification icon */
+.alertbar:not(.alertbar_staff),
+.alertbar_user_1 {
+  background-image: url(https://wally-crunk.github.io/svg/site/ops-icon-harp-ccc.svg);
+  background-position: 1.1rem center;
+  background-repeat: no-repeat;
+  background-size: 1.2rem;
+}
+
+/* user/default alert bars keep notification icon */
+.alertbar:not(.alertbar_staff),
+.alertbar_user_2 {
+  background-image: url(https://wally-crunk.github.io/svg/site/ops-icon-harp-ccc.svg);
+  background-position: 1.1rem center;
+  background-repeat: no-repeat;
+  background-size: 1.2rem;
+}
+
+
+
 /* staff alert bars: no icon and no left icon gutter */
 .alertbar_staff {
   background-image: none;

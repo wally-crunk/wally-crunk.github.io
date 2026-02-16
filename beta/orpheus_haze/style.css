@@ -2326,18 +2326,9 @@ tr.snatched_torrent div.tags::before {
   color: #a6afb2 !important; /* varies by stylesheet */
   font-size: 13px;
   font-weight: 500;
-  padding: 10px 10px 10px 48px;
+  padding: 0.4rem 1.6rem;
   text-align: center;
   margin: 10px;
-}
-
-.alertbar:first-of-type,
-.alertbar_user:first-of-type,
-.alertbar_staff:first-of-type {
-  background-image: url(https://wally-crunk.github.io/svg/site/ops-icon-harp-ccc.svg);
-  background-position: 1.1rem center;
-  background-repeat: no-repeat;
-  background-size: 1.2rem;
 }
 
 .alertbar a,
@@ -3564,7 +3555,7 @@ Documentation of mobile classes:
 /* ## 6.1 Debugging Tools
    variou 'debug' and x-debug features are avail in this doc elsewhere */
 #footer p:last-of-type::after {
-  content: " | Apollostage build 20251215 haze";
+  content: " | Apollostage build 20260214 haze";
 }
 
 /* ########################################################################
