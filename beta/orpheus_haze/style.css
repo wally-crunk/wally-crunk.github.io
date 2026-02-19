@@ -7,6 +7,7 @@
    CHANGELOG
    ########################################################################
 */
+/*  # 2026-02-11 - Updates for new site features */
 /*  # 2025-12-15 - Bug fixes per community feedback, including
     # pulldown menu will appear over notifications, and color highlighting
     # for the active page breadcrumb. */
@@ -427,6 +428,13 @@ td:last-child {
   padding-right: 12px;
 }
 
+/* ## 1.1.1 Non-primary size highlight (desktop + mobile) */
+td.number_column.td_size.highlight_non_primary {
+  font-weight: 800;
+  color: rgba(169, 148, 135, 0.07);
+  background-color: #a6afb2;
+}
+
 form {
   background-color: #222020;
 }
@@ -467,11 +475,18 @@ input[type=submit]:active,
   background: linear-gradient(hsl(183, 2.5%, 92%), hsl(181, 3.5%, 62%));
 }
 
-input[type=email],
-input[type=password],
-input[type=text],
-input[type=search],
 input[type=date],
+input[type=datetime-local],
+input[type=email],
+input[type=month],
+input[type=number],
+input[type=password],
+input[type=search],
+input[type=tel],
+input[type=text],
+input[type=time],
+input[type=url],
+input[type=week],
 select {
   background: #252323;
   border: 1px solid rgba(255, 255, 255, 0.08);
@@ -479,29 +494,35 @@ select {
   height: 32px;
   padding: 0 8px;
 }
-
-textarea {
-  background: #252323;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  color: #6b7173;
-  padding: 0 8px;
-}
-
-input[type=email]:focus,
-input[type=password]:focus,
-input[type=text]:focus,
-input[type=search]:focus,
 input[type=date]:focus,
-select:focus,
-textarea:focus {
+input[type=datetime-local]:focus,
+input[type=email]:focus,
+input[type=month]:focus,
+input[type=number]:focus,
+input[type=password]:focus,
+input[type=search]:focus,
+input[type=tel]:focus,
+input[type=text]:focus,
+input[type=time]:focus,
+input[type=url]:focus,
+input[type=week]:focus,
+select:focus {
   background: #272424;
   border: 1px solid rgba(255, 255, 255, 0.25);
   color: #c7cfd2;
 }
 
 textarea {
-  padding-top: 6px;
+  background: #252323;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #6b7173;
+  padding: 6px 8px 0;
   width: 100%;
+}
+textarea:focus {
+  background: #272424;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #c7cfd2;
 }
 
 .body,
@@ -2101,18 +2122,18 @@ body#userhistory .header + .center {
 /* # 1.12 Upload form MusicBrainz popup */
 #musicbrainz_popup {
   color: #313333;
-  background: #1d2424;
+  background: #313333;
   border: #888483;
   padding: 1rem;
   font-weight: 600;
 }
 
 #musicbrainz_popup a {
-  color: #4e5253;
+  color: #a6afb2;
 }
 
 #musicbrainz_popup a:hover {
-  color: #9b9695;
+  color: #c7cfd2;
 }
 
 #musicbrainz_popup .brackets {
@@ -2307,7 +2328,9 @@ tr.snatched_torrent div.tags::before {
 /* ## 2.3 Alertbar and error handling */
 /* ## 2.3.1 Base styling */
 #alerts {
-  margin: 8px auto 8px auto;
+  border: 2px solid #6a6867; /* varies by stylesheet */
+  border-radius: 5px;
+  margin: 10px auto 0 auto;
   max-width: fit-content;
   min-width: 40%;
 }
@@ -2315,30 +2338,24 @@ tr.snatched_torrent div.tags::before {
 /* Alertbar occurs when User Settings: Notifications: "Traditional" is selected. */
 /* Save_message can occur on request votes. */
 .alertbar,
-.alertbar_user,
-.alertbar_staff,
 .sys_error,
 .save_message {
-  border: 0;
-  border-radius: 4px;
-  box-shadow: 0 0 0 2px #6a6867;
   background-color: #444342; /* varies by stylesheet */
   color: #a6afb2 !important; /* varies by stylesheet */
   font-size: 13px;
   font-weight: 500;
-  padding: 0.4rem 1.6rem;
+  padding: 10px 10px 10px 48px;
   text-align: center;
-  margin: 10px;
 }
 
-/* Staff alertbars keep a distinct, muted ring. */
-.alertbar_staff {
-  box-shadow: 0 0 0 2px #343534;
+.alertbar:first-of-type {
+  background-image: url(https://wally-crunk.github.io/svg/site/ops-icon-harp-ccc.svg);
+  background-position: 8px center;
+  background-repeat: no-repeat;
+  background-size: 32px;
 }
 
-.alertbar a,
-.alertbar_user a,
-.alertbar_staff a {
+.alertbar a {
   color: #f2f9fc !important;
 }
 
@@ -2689,10 +2706,11 @@ Documentation of mobile classes:
   /* END user settings */
   /* ************************************************ */
   /* ## 4.4 BEGIN forms */
-  input[type=search],
-  input[type=text],
   input[type=email],
   input[type=password],
+  input[type=search],
+  input[type=text],
+  input[type=url],
   select {
     width: 100%;
   }
