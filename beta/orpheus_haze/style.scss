@@ -131,7 +131,7 @@ variables.$color-text-anchor-hover: variables.$midtone-1000;
 variables.$color-text-anchor: variables.$fore-1000;
 variables.$color-text-base: variables.$fore-800;
 variables.$color-text-bold: variables.$fore-800;
-variables.$color-text-highlight-non-primary: $back-500-low;
+variables.$color-text-highlight-non-primary: variables.$ds-black;
 
 $color-text-button: variables.$ds-gray-05;
 $color-text-footer: variables.$ds-neutral-300;
