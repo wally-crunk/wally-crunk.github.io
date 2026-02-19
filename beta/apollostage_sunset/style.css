@@ -28,7 +28,8 @@
 /* # 1 DESKTOP VIEW
    ## 1.1 Desktop view, handling of all classes
    ## 1.2 Reserved
-   ## 1.3 Reserved
+   ## 1.3 Tables
+   ### 1.3.1 Non-primary size highlight (desktop + mobile)
    ## 1.4 Sortable Items
    ## 1.5 Discog Pages
    ## 1.6 Tooltips
@@ -426,13 +427,6 @@ td:first-child {
 
 td:last-child {
   padding-right: 12px;
-}
-
-/* ## 1.1.1 Non-primary size highlight (desktop + mobile) */
-td.number_column.td_size.highlight_non_primary {
-  font-weight: 800;
-  color: #000;
-  background-color: #A595AF;
 }
 
 form {
@@ -1482,10 +1476,16 @@ body#userhistory .thin .header .center {
 
 /* END desktop view, handling of classes */
 /* ************************************************ */
-/* # 1.2 Reserved [for more organization in the future]
-
+/* # 1.2 Reserved [for more organization in the future] */
 /* ************************************************ */
-/* # 1.3 Reserved [for more organization in the future]
+/* # 1.3 Tables */
+/* Reserved for future reorg */
+/* ## 1.3.1 Non-primary size highlight (desktop + mobile) */
+td.number_column.td_size.highlight_non_primary {
+  font-weight: 800;
+  color: #000;
+  background-color: #A595AF;
+}
 
 /* ************************************************ */
 /* # 1.4 Sortable items */
