@@ -1,4 +1,27 @@
 @charset "UTF-8";
+
+:root{
+  --slug: "Beta Stylesheet"
+}
+#logo a {
+  position: relative;
+  overflow: visible;
+}
+#logo a::before {
+  content: var(--slug);
+  position: absolute;
+  z-index: 6;
+  min-width: 3rem;
+  padding: .2rem 1rem;
+  background-color: crimson;
+  color: white;
+  font-weight: 600; 
+  font-size: 0.9rem;
+  border-radius: 3rem;
+  text-align: center;
+}
+
+
 /* ########################################################################
    APOLLOSTAGE THEME
    ######################################################################## */

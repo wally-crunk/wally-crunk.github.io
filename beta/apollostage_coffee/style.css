@@ -1,4 +1,32 @@
 @charset "UTF-8";
+
+
+:root{
+  --slug: "beta"
+}
+#logo a {
+  position: relative;
+  overflow: visible;
+}
+#logo a::before {
+  content: var(--slug);
+  position: absolute;
+  z-index: 6;
+  min-width: 3rem;
+  padding: 1rem;
+  background-color: crimson;
+  color: white;
+  font-weight: 700; 
+  font-size: 1.0rem;
+  border-radius: 3rem;
+  text-align: center;
+}
+
+
+
+
+
+
 /* ########################################################################
    APOLLOSTAGE COFFEE THEME
    ######################################################################## */
