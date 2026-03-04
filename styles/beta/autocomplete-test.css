@@ -357,10 +357,10 @@ body:has(ul.autocomplete-menu.show) .autocomplete-menu {
   z-index: 3100;
 }
 
-body:has(ul.autocomplete-menu.show) #logchecker #wrapper #header #searchbars,
-body:has(ul.autocomplete-menu.show) #logchecker #wrapper #header #searchbars #searchbar_artists,
-body:has(ul.autocomplete-menu.show) html body#logchecker div#wrapper div#header div#searchbars ul li#searchbar_artists,
-body:has(ul.autocomplete-menu.show) #logchecker #wrapper #header #searchbars #searchbar_artists input[data-gazelle-autocomplete="true"] {
+body:has(ul.autocomplete-menu.show) #wrapper #header #searchbars,
+body:has(ul.autocomplete-menu.show) #wrapper #header #searchbars #searchbar_artists,
+body:has(ul.autocomplete-menu.show) #wrapper #header #searchbars ul li#searchbar_artists,
+body:has(ul.autocomplete-menu.show) #wrapper #header #searchbars #searchbar_artists input[data-gazelle-autocomplete="true"] {
   position: relative;
   z-index: 3100;
 }
@@ -373,7 +373,7 @@ body:has(ul.autocomplete-menu.show) #wrapper {
 body:has(ul.autocomplete-menu.show) .autocomplete-menu {
   filter: brightness(1.54);
 }
-body:has(ul.autocomplete-menu.show) #logchecker #wrapper #header #searchbars #searchbar_artists {
+body:has(ul.autocomplete-menu.show) #wrapper #header #searchbars #searchbar_artists {
   filter: brightness(1.54);
 }
 */
