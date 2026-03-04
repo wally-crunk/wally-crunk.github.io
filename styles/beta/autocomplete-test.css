@@ -1,0 +1,407 @@
+/* Artist Autocomplete - Beta version 4 tokenized */
+/* ------------------------------------ */
+
+/*
+  Custom stylesheet developer notes:
+
+  - Z-index stacking:
+    * 3000: dimming overlay (body::before)
+    * 3100: autocomplete menu + header/searchbar kept above the overlay
+    These sit above theme menus and notification layers.
+    
+  - Colors: Theme authors: override the local variables below to change
+    colors of the autocomplete. Place this snippet after the defaults 
+    (e.g., bottom of your theme).
+    Replace each `var(...)` with a concrete color, or 
+    define those `--theme-*` tokens on `:root` or `body`.
+
+      #artistsearch + ul.autocomplete-menu {
+        --ac-bio-text-color: var(--theme-muted-text);
+        --ac-border-color: var(--theme-border);
+        --ac-hover-outline-color: var(--theme-surface-2);
+        --ac-hover-background-color: var(--theme-surface-2);
+        --ac-hover-text-color: var(--theme-on-surface-2);
+        --ac-hover-anchor-color: var(--theme-on-surface-2-link);
+      }
+
+  - or if using SCSS:
+      #artistsearch + ul.autocomplete-menu {
+      --ac-hover-background-color: #{$scss-token-color-foo};
+      --ac-hover-text-color: #{$scss-token-color-on-foo};
+      --ac-hover-anchor-color: #{$scss-token-color-link-on-foo};
+      }
+  
+  - Default selected-row style is neutral gray with a thick border in the
+    same color; selected text/link colors inherit from the active theme.
+    Theme authors can still override with the existing `--ac-hover-*` vars.
+
+  - Load theme SCSS/CSS after this stylesheet so these variable overrides
+    take effect.
+*/
+
+
+/* Setup: resets + local vars */
+/* Resets */
+#menu ul.autocomplete-menu > li {
+  float: none;
+  margin: 0.25em 0;
+}
+/* Set local theme + layout variables */
+#artistsearch + ul.autocomplete-menu {
+  --ac-bio-text-color: hsl(200deg, 20%, 48%);
+  --ac-border-color: hsl(240deg, 15%, 75%);
+  --ac-hover-background-color: rgb(110 110 110 / 50%);
+  --ac-hover-outline-color: var(--ac-hover-background-color);
+  --ac-hover-text-color: hsl(0deg, 0%, 100%);
+  --ac-hover-anchor-color: hsl(55, 95%, 60%);
+  --ac-label-groups: "📂";
+  --ac-label-snatches: "⤾";
+  --ac-label-seeds: "⬆︎";
+  --ac-menu-width: 70em;
+  --ac-menu-max-width: min(90vw, var(--ac-menu-width));
+  --ac-menu-max-height: min(70vh, 50em);
+  --ac-anchor-offset-y: 0.2rem;
+  --ac-img-size: 154px;
+  --ac-img-top: 2px;
+  --ac-entry-pad-x: 1ch;
+  --ac-grid-stat-label-1: 9ch;
+  --ac-grid-stat-value-1: 4ch;
+  --ac-grid-stat-label-2: 8ch;
+  --ac-grid-stat-value-2: 4ch;
+  --ac-step2-stat-label-min: 3.5ch;
+  --ac-step2-stat-value-min: 4ch;
+  --ac-step2-gap: 0.45ch;
+  --ac-step2-row-gap: 0.15rem;
+  --ac-name-line-height: 1.2;
+  --ac-name-pad-bottom: 2px;
+  --ac-bio-lines: 2;
+  --ac-bio-line-height: 1.2;
+  --ac-bio-margin-top: 6px;
+  --ac-bio-margin-bottom: 10px;
+  --ac-bio-pad-right: 6px;
+  --ac-bio-pad-left: 2ch;
+  --ac-menu-border-width: 0.15rem;
+  --ac-menu-border-radius: 0.15rem;
+  --ac-entry-border-width: 0.02rem;
+  --ac-hover-outline-width: 0.20rem;
+  --ac-hover-outline-radius: 0.10rem;
+}
+
+/* Menu sizing */
+#artistsearch + ul.autocomplete-menu {
+  width: var(--ac-menu-width);
+  max-width: var(--ac-menu-max-width);
+  max-height: var(--ac-menu-max-height) !important;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* Responsive width guard: smooth right-side inset from <=1000 down to <=775 */
+@media (max-width: 1000px) {
+  #artistsearch + ul.autocomplete-menu,
+  #artistsearch + ul.autocomplete-menu.show {
+    width: min(
+      var(--ac-menu-width),
+      calc(100vw - clamp(6rem, calc(12rem - (1000px - 100vw) * 0.0266667), 12rem))
+    );
+    max-width: min(
+      var(--ac-menu-width),
+      calc(100vw - clamp(6rem, calc(12rem - (1000px - 100vw) * 0.0266667), 12rem))
+    ) !important;
+  }
+}
+
+/* Force artist autocomplete to anchor below the search input */
+#searchbar_artists {
+  position: relative;
+}
+#artistsearch + ul.autocomplete-menu.show {
+  position: absolute !important;
+  top: calc(100% + var(--ac-anchor-offset-y)) !important;
+  right: auto !important;
+  bottom: auto !important;
+  left: 0 !important;
+  transform: none !important;
+}
+
+/* Must be after the base anchor rule above, so it wins in cascade */
+@media (max-width: 900px) {
+  #artistsearch + ul.autocomplete-menu.show {
+    left: -1rem !important;
+  }
+}
+
+@media (max-width: 825px) {
+  #artistsearch + ul.autocomplete-menu .cae-tag {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+/* Expand items and keep links block-level */
+#artistsearch + ul.autocomplete-menu > li > a {
+  text-decoration: none;
+  display: block;
+}
+
+/* Allow name row to grow so alias doesn't overlap tags */
+.autocomplete-menu .collage-artist-entry {
+  grid-template:
+    "cae-img cae-name cae-l-grp cae-v-grp cae-l-sna cae-v-sna" max-content
+    "cae-img cae-tag  cae-l-dcg cae-v-dcg cae-l-see cae-v-see" max-content
+    "cae-img cae-bio  cae-bio  cae-bio  cae-bio  cae-bio" auto
+    / calc(var(--ac-img-size) + var(--ac-entry-pad-x))
+      1fr
+      var(--ac-grid-stat-label-1) minmax(var(--ac-grid-stat-value-1), max-content)
+      var(--ac-grid-stat-label-2) minmax(var(--ac-grid-stat-value-2), max-content);
+  column-gap: 1ch;
+  row-gap: 0;
+  align-items: start;
+  align-content: start;
+  position: relative;
+  padding-left: var(--ac-entry-pad-x);
+  padding-right: var(--ac-entry-pad-x);
+  min-height: var(--ac-img-size);
+  margin-bottom: 0;
+}
+
+/* Reflow draft from ac104_000, applied to all widths <=900px */
+@media (max-width: 900px) {
+  .autocomplete-menu .collage-artist-entry {
+    grid-template:
+      "cae-img cae-name  cae-name  cae-name  cae-name  cae-name  cae-name  cae-name  cae-name" max-content
+      "cae-img cae-tag   cae-tag   cae-tag   cae-tag   cae-tag   cae-tag   cae-tag   cae-tag" max-content
+      "cae-img cae-bio   cae-bio   cae-bio   cae-bio   cae-bio   cae-bio   cae-bio   cae-bio" auto
+      "cae-img cae-l-grp cae-v-grp cae-l-sna cae-v-sna cae-l-dcg cae-v-dcg cae-l-see cae-v-see" max-content
+      / calc(var(--ac-img-size) + var(--ac-entry-pad-x))
+        minmax(var(--ac-step2-stat-label-min), max-content) minmax(var(--ac-step2-stat-value-min), max-content)
+        minmax(var(--ac-step2-stat-label-min), max-content) minmax(var(--ac-step2-stat-value-min), max-content)
+        minmax(var(--ac-step2-stat-label-min), max-content) minmax(var(--ac-step2-stat-value-min), max-content)
+        minmax(var(--ac-step2-stat-label-min), max-content) minmax(var(--ac-step2-stat-value-min), max-content);
+    column-gap: var(--ac-step2-gap);
+    row-gap: var(--ac-step2-row-gap);
+  }
+
+  .autocomplete-menu .cae-l-grp,
+  .autocomplete-menu .cae-v-grp,
+  .autocomplete-menu .cae-l-sna,
+  .autocomplete-menu .cae-v-sna,
+  .autocomplete-menu .cae-l-dcg,
+  .autocomplete-menu .cae-v-dcg,
+  .autocomplete-menu .cae-l-see,
+  .autocomplete-menu .cae-v-see {
+    font-size: 0.9em;
+    line-height: 1.15;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 775px) {
+  .autocomplete-menu .collage-artist-entry {
+    grid-template:
+      "cae-img cae-name  cae-name  cae-name  cae-name" max-content
+      "cae-img cae-tag   cae-tag   cae-tag   cae-tag" max-content
+      "cae-img cae-bio   cae-bio   cae-bio   cae-bio" auto
+      "cae-img ac-stat-1 ac-stat-2 ac-stat-3 ac-stat-4" max-content
+      / calc(var(--ac-img-size) + var(--ac-entry-pad-x))
+        minmax(0, 3fr) minmax(0, 3fr) minmax(0, 4fr) minmax(0, 3fr);
+    column-gap: 0.35ch;
+    row-gap: var(--ac-step2-row-gap);
+  }
+
+  .autocomplete-menu .cae-l-grp,
+  .autocomplete-menu .cae-l-sna,
+  .autocomplete-menu .cae-l-see,
+  .autocomplete-menu .cae-v-dcg {
+    display: none;
+  }
+
+  .autocomplete-menu .cae-v-grp,
+  .autocomplete-menu .cae-v-sna,
+  .autocomplete-menu .cae-l-dcg,
+  .autocomplete-menu .cae-v-see {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .autocomplete-menu .cae-v-grp {
+    grid-area: ac-stat-1;
+  }
+
+  .autocomplete-menu .cae-v-sna {
+    grid-area: ac-stat-2;
+  }
+
+  .autocomplete-menu .cae-l-dcg {
+    grid-area: ac-stat-3;
+  }
+
+  .autocomplete-menu .cae-v-see {
+    grid-area: ac-stat-4;
+  }
+
+  .autocomplete-menu .cae-v-grp::before {
+    content: var(--ac-label-groups) " ";
+    font-weight: 700;
+  }
+
+  .autocomplete-menu .cae-v-sna::before {
+    content: var(--ac-label-snatches) " ";
+    font-weight: 700;
+  }
+
+  .autocomplete-menu .cae-v-see::before {
+    content: var(--ac-label-seeds) " ";
+    font-weight: 700;
+  }
+}
+
+/* Keep internals stable while only adjusting popup horizontal anchoring */
+
+
+/* Name/alias readability */
+.autocomplete-menu .cae-name {
+  line-height: var(--ac-name-line-height);
+  padding-bottom: var(--ac-name-pad-bottom);
+}
+
+.autocomplete-menu .cae-img {
+  position: absolute;
+  left: var(--ac-entry-pad-x);
+  top: var(--ac-img-top);
+  width: var(--ac-img-size);
+  height: var(--ac-img-size);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.autocomplete-menu .cae-img img {
+  display: block;
+  max-width: 100%;
+  max-height: var(--ac-img-size);
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.autocomplete-menu .cae-artist-text {
+  display: block;
+  margin: 0;
+}
+
+/* Bio area: clamp to 2 lines */
+.autocomplete-menu .cae-bio {
+  margin: var(--ac-bio-margin-top) 0 var(--ac-bio-margin-bottom);
+  font-stretch: condensed;
+}
+
+.autocomplete-menu .cae-bio-content {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--ac-bio-lines);
+  -webkit-box-orient: vertical;
+  overflow: hidden !important;
+  line-height: var(--ac-bio-line-height);
+  max-height: calc(var(--ac-bio-line-height) * 1em * var(--ac-bio-lines));
+  padding-right: var(--ac-bio-pad-right);
+  padding-left: var(--ac-bio-pad-left);
+/*   color: hsla(20, 13%, 50%, 0.7); (theme color) */
+  color: var(--ac-bio-text-color);
+}
+
+/* Defloat tags */
+.autocomplete-menu .cae-tag {
+  float: none !important;
+  clear: both;
+  display: block;
+  margin-top: 0;
+}
+.autocomplete-menu .cae-tag-entry {
+  float: none !important;
+  display: inline-block;
+}
+
+/* Defloat postlist inside bios */
+.autocomplete-menu .postlist {
+  position: static !important;
+  float: none !important;
+  display: block;
+  margin: 0.5rem 0 0 !important;
+  padding-left: 1.2rem;
+  background: none;
+  box-shadow: none;
+}
+.autocomplete-menu .postlist li {
+  display: list-item;
+  float: none;
+  margin: 0.1rem 0;
+}
+
+/* Dim page except search inputs and autocomplete menu when open */
+/* Overlay-based dimming (current approach) */
+body:has(ul.autocomplete-menu.show) {
+  --ac-dim-overlay: rgba(0, 0, 0, 0.5);
+}
+body:has(ul.autocomplete-menu.show)::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: var(--ac-dim-overlay);
+  z-index: 3000;
+  pointer-events: none;
+}
+body:has(ul.autocomplete-menu.show) .autocomplete-menu {
+  z-index: 3100;
+}
+
+body:has(ul.autocomplete-menu.show) #logchecker #wrapper #header #searchbars,
+body:has(ul.autocomplete-menu.show) #logchecker #wrapper #header #searchbars #searchbar_artists,
+body:has(ul.autocomplete-menu.show) html body#logchecker div#wrapper div#header div#searchbars ul li#searchbar_artists,
+body:has(ul.autocomplete-menu.show) #logchecker #wrapper #header #searchbars #searchbar_artists input[data-gazelle-autocomplete="true"] {
+  position: relative;
+  z-index: 3100;
+}
+
+/* Filter-based dimming (alternative approach) */
+/*
+body:has(ul.autocomplete-menu.show) #wrapper {
+  filter: brightness(0.65);
+}
+body:has(ul.autocomplete-menu.show) .autocomplete-menu {
+  filter: brightness(1.54);
+}
+body:has(ul.autocomplete-menu.show) #logchecker #wrapper #header #searchbars #searchbar_artists {
+  filter: brightness(1.54);
+}
+*/
+
+/* Borders */
+body:has(ul.autocomplete-menu.show) #artistsearch + ul.autocomplete-menu.show {
+  border: var(--ac-menu-border-width) solid var(--ac-border-color);
+  border-radius: var(--ac-menu-border-radius);
+  box-sizing: border-box;
+}
+
+/* Border color between each list item  */
+#artistsearch + ul.autocomplete-menu .collage-artist-entry.box2 {
+  margin: 0;
+  border: var(--ac-entry-border-width) solid var(--ac-border-color);
+}
+
+/* Hovered/active autocomplete row */
+#artistsearch + ul.autocomplete-menu > li:is(:hover, :focus-within, .active, .highlight, .autocomplete-selected) .collage-artist-entry,
+#artistsearch + ul.autocomplete-menu > li > a:is(:hover, :focus, .active, .highlight, .autocomplete-selected, [aria-selected="true"]) .collage-artist-entry {
+  outline: var(--ac-hover-outline-width) solid var(--ac-hover-outline-color);
+  outline-offset: -1px;
+  border-color: var(--ac-hover-outline-color);
+  border-radius: var(--ac-hover-outline-radius);
+  background-color: var(--ac-hover-background-color); /* use selection color */
+}
+
+#artistsearch + ul.autocomplete-menu > li:is(:hover, :focus-within, .active, .highlight, .autocomplete-selected) .cae-name a,
+#artistsearch + ul.autocomplete-menu > li > a:is(:hover, :focus, .active, .highlight, .autocomplete-selected, [aria-selected="true"]) .cae-name a {
+  text-decoration: underline;
+}
