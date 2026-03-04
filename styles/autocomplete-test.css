@@ -18,7 +18,7 @@
       #artistsearch + ul.autocomplete-menu {
         --ac-bio-text-color: var(--theme-muted-text);
         --ac-border-color: var(--theme-border);
-        --ac-hover-outline-color: var(--theme-accent);
+        --ac-hover-outline-color: var(--theme-surface-2);
         --ac-hover-background-color: var(--theme-surface-2);
         --ac-hover-text-color: var(--theme-on-surface-2);
         --ac-hover-anchor-color: var(--theme-on-surface-2-link);
@@ -31,7 +31,12 @@
       --ac-hover-anchor-color: #{$scss-token-color-link-on-foo};
       }
   
-  - Load theme SCSS/CSS after this stylesheet so these variable overrides take effect.
+  - Default selected-row style is neutral gray with a thick border in the
+    same color; selected text/link colors inherit from the active theme.
+    Theme authors can still override with the existing `--ac-hover-*` vars.
+
+  - Load theme SCSS/CSS after this stylesheet so these variable overrides
+    take effect.
 */
 
 
@@ -45,8 +50,8 @@
 #artistsearch + ul.autocomplete-menu {
   --ac-bio-text-color: hsl(200deg, 20%, 48%);
   --ac-border-color: hsl(240deg, 15%, 75%);
-  --ac-hover-outline-color: hsl(200deg, 25%, 72%);
-  --ac-hover-background-color: hsl(240, 63%, 50%);
+  --ac-hover-background-color: rgb(110 110 110 / 50%);
+  --ac-hover-outline-color: var(--ac-hover-background-color);
   --ac-hover-text-color: hsl(0deg, 0%, 100%);
   --ac-hover-anchor-color: hsl(55, 95%, 60%);
   --ac-label-groups: "📂";
@@ -78,7 +83,7 @@
   --ac-menu-border-width: 0.15rem;
   --ac-menu-border-radius: 0.15rem;
   --ac-entry-border-width: 0.02rem;
-  --ac-hover-outline-width: 0.10rem;
+  --ac-hover-outline-width: 0.20rem;
   --ac-hover-outline-radius: 0.10rem;
 }
 
@@ -391,6 +396,7 @@ body:has(ul.autocomplete-menu.show) #artistsearch + ul.autocomplete-menu.show {
 #artistsearch + ul.autocomplete-menu > li > a:is(:hover, :focus, .active, .highlight, .autocomplete-selected, [aria-selected="true"]) .collage-artist-entry {
   outline: var(--ac-hover-outline-width) solid var(--ac-hover-outline-color);
   outline-offset: -1px;
+  border-color: var(--ac-hover-outline-color);
   border-radius: var(--ac-hover-outline-radius);
   background-color: var(--ac-hover-background-color); /* use selection color */
 }
@@ -398,22 +404,4 @@ body:has(ul.autocomplete-menu.show) #artistsearch + ul.autocomplete-menu.show {
 #artistsearch + ul.autocomplete-menu > li:is(:hover, :focus-within, .active, .highlight, .autocomplete-selected) .cae-name a,
 #artistsearch + ul.autocomplete-menu > li > a:is(:hover, :focus, .active, .highlight, .autocomplete-selected, [aria-selected="true"]) .cae-name a {
   text-decoration: underline;
-}
-
-/* Enforce contrast: row text and nested non-link elements */
-#artistsearch + ul.autocomplete-menu > li:is(:hover, :focus-within, .active, .highlight, .autocomplete-selected) .collage-artist-entry,
-#artistsearch + ul.autocomplete-menu > li:is(:hover, :focus-within, .active, .highlight, .autocomplete-selected) .collage-artist-entry *,
-#artistsearch + ul.autocomplete-menu > li > a:is(:hover, :focus, .active, .highlight, .autocomplete-selected, [aria-selected="true"]) .collage-artist-entry,
-#artistsearch + ul.autocomplete-menu > li > a:is(:hover, :focus, .active, .highlight, .autocomplete-selected, [aria-selected="true"]) .collage-artist-entry * {
-  color: var(--ac-hover-text-color) !important;
-}
-
-/* Enforce link contrast for any anchor chain (h3 a, nested spans, etc.) */
-#artistsearch + ul.autocomplete-menu > li:is(:hover, :focus-within, .active, .highlight, .autocomplete-selected) .collage-artist-entry a,
-#artistsearch + ul.autocomplete-menu > li:is(:hover, :focus-within, .active, .highlight, .autocomplete-selected) .collage-artist-entry a *,
-#artistsearch + ul.autocomplete-menu > li:is(:hover, :focus-within, .active, .highlight, .autocomplete-selected) .collage-artist-entry a:is(:link, :visited, :hover, :focus, :active),
-#artistsearch + ul.autocomplete-menu > li > a:is(:hover, :focus, .active, .highlight, .autocomplete-selected, [aria-selected="true"]) .collage-artist-entry a,
-#artistsearch + ul.autocomplete-menu > li > a:is(:hover, :focus, .active, .highlight, .autocomplete-selected, [aria-selected="true"]) .collage-artist-entry a *,
-#artistsearch + ul.autocomplete-menu > li > a:is(:hover, :focus, .active, .highlight, .autocomplete-selected, [aria-selected="true"]) .collage-artist-entry a:is(:link, :visited, :hover, :focus, :active) {
-  color: var(--ac-hover-anchor-color) !important;
 }
