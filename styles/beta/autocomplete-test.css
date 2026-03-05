@@ -61,7 +61,10 @@
   --ac-menu-max-width: min(90vw, var(--ac-menu-width));
   --ac-menu-max-height: min(70vh, 50em);
   --ac-anchor-offset-y: 0.2rem;
-  --ac-img-size: 154px;
+  --ac-img-size-step-wide: 154px;
+  --ac-img-size-step-med: 10rem;
+  --ac-img-size-step-phone: 10rem;
+  --ac-img-size: var(--ac-img-size-step-wide);
   --ac-img-top: 2px;
   --ac-entry-pad-x: 1ch;
   --ac-grid-stat-label-1: 9ch;
@@ -96,17 +99,19 @@
   overflow-x: hidden;
 }
 
-/* Responsive width guard: smooth right-side inset from <=1000 down to <=775 */
+/* Responsive width guard: continuous right-side inset with no breakpoint jump */
 @media (max-width: 1000px) {
   #artistsearch + ul.autocomplete-menu,
   #artistsearch + ul.autocomplete-menu.show {
+    --ac-img-size: var(--ac-img-size-step-med);
+    --ac-menu-gutter-right: clamp(3rem, 10vw, 6.5rem);
     width: min(
       var(--ac-menu-width),
-      calc(100vw - clamp(6rem, calc(12rem - (1000px - 100vw) * 0.0266667), 12rem))
+      calc(100vw - var(--ac-menu-gutter-right))
     );
     max-width: min(
       var(--ac-menu-width),
-      calc(100vw - clamp(6rem, calc(12rem - (1000px - 100vw) * 0.0266667), 12rem))
+      calc(100vw - var(--ac-menu-gutter-right))
     ) !important;
   }
 }
@@ -198,6 +203,11 @@
 }
 
 @media (max-width: 775px) {
+  #artistsearch + ul.autocomplete-menu,
+  #artistsearch + ul.autocomplete-menu.show {
+    --ac-img-size: var(--ac-img-size-step-phone);
+  }
+
   .autocomplete-menu .collage-artist-entry {
     grid-template:
       "cae-img cae-name  cae-name  cae-name  cae-name" max-content
