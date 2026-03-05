@@ -57,11 +57,18 @@
   --ac-label-groups: "📂";
   --ac-label-snatches: "⤾";
   --ac-label-seeds: "⬆︎";
+  --ac-label-icon-size: 1em;
+  --ac-label-icon-gap: 0.25em;
+  --ac-icon-snatches-mask: url("/svg/std/arrow-loop.svg");
+  --ac-icon-seeds-mask: url("/svg/std/arrow-up-round.svg");
   --ac-menu-width: 70em;
   --ac-menu-max-width: min(90vw, var(--ac-menu-width));
   --ac-menu-max-height: min(70vh, 50em);
   --ac-anchor-offset-y: 0.2rem;
-  --ac-img-size: 154px;
+  --ac-img-size-step-wide: 154px;
+  --ac-img-size-step-med: 10rem;
+  --ac-img-size-step-phone: 8rem;
+  --ac-img-size: var(--ac-img-size-step-wide);
   --ac-img-top: 2px;
   --ac-entry-pad-x: 1ch;
   --ac-grid-stat-label-1: 9ch;
@@ -96,18 +103,18 @@
   overflow-x: hidden;
 }
 
-/* Responsive width guard below 1000px */
+/* Responsive width guard: smooth right-side inset from <=1000 down to <=775 */
 @media (max-width: 1000px) {
   #artistsearch + ul.autocomplete-menu,
   #artistsearch + ul.autocomplete-menu.show {
-    --ac-menu-gutter-total: clamp(7rem, 20vw, 13rem);
+    --ac-img-size: var(--ac-img-size-step-med);
     width: min(
       var(--ac-menu-width),
-      calc(100vw - var(--ac-menu-gutter-total))
+      calc(100vw - clamp(6rem, calc(12rem - (1000px - 100vw) * 0.0266667), 12rem))
     );
     max-width: min(
       var(--ac-menu-width),
-      calc(100vw - var(--ac-menu-gutter-total))
+      calc(100vw - clamp(6rem, calc(12rem - (1000px - 100vw) * 0.0266667), 12rem))
     ) !important;
   }
 }
@@ -126,10 +133,9 @@
 }
 
 /* Must be after the base anchor rule above, so it wins in cascade */
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
   #artistsearch + ul.autocomplete-menu.show {
-    left: auto !important;
-    right: 0 !important;
+    left: -1rem !important;
   }
 }
 
@@ -200,6 +206,11 @@
 }
 
 @media (max-width: 775px) {
+  #artistsearch + ul.autocomplete-menu,
+  #artistsearch + ul.autocomplete-menu.show {
+    --ac-img-size: var(--ac-img-size-step-phone);
+  }
+
   .autocomplete-menu .collage-artist-entry {
     grid-template:
       "cae-img cae-name  cae-name  cae-name  cae-name" max-content
@@ -258,6 +269,31 @@
   .autocomplete-menu .cae-v-see::before {
     content: var(--ac-label-seeds) " ";
     font-weight: 700;
+  }
+
+  @supports ((-webkit-mask: url("")) or (mask: url(""))) {
+    .autocomplete-menu .cae-v-sna::before,
+    .autocomplete-menu .cae-v-see::before {
+      content: "";
+      display: inline-block;
+      width: var(--ac-label-icon-size);
+      height: var(--ac-label-icon-size);
+      margin-right: var(--ac-label-icon-gap);
+      vertical-align: -0.125em;
+      background-color: currentColor;
+      -webkit-mask: center / contain no-repeat;
+      mask: center / contain no-repeat;
+    }
+
+    .autocomplete-menu .cae-v-sna::before {
+      -webkit-mask-image: var(--ac-icon-snatches-mask);
+      mask-image: var(--ac-icon-snatches-mask);
+    }
+
+    .autocomplete-menu .cae-v-see::before {
+      -webkit-mask-image: var(--ac-icon-seeds-mask);
+      mask-image: var(--ac-icon-seeds-mask);
+    }
   }
 }
 
