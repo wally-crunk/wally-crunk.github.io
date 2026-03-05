@@ -51,7 +51,7 @@
   --ac-bio-text-color: hsl(200deg, 20%, 48%);
   --ac-border-color: hsl(240deg, 15%, 75%);
   --ac-hover-background-color: rgb(110 110 110 / 50%);
-  --ac-hover-outline-color: rgb(60 60 60 / 85%);
+  --ac-hover-outline-color: var(--ac-hover-background-color);
   --ac-hover-text-color: hsl(0deg, 0%, 100%);
   --ac-hover-anchor-color: hsl(55, 95%, 60%);
   --ac-label-groups: "📂";
@@ -61,10 +61,7 @@
   --ac-menu-max-width: min(90vw, var(--ac-menu-width));
   --ac-menu-max-height: min(70vh, 50em);
   --ac-anchor-offset-y: 0.2rem;
-  --ac-img-size-step-wide: 154px;
-  --ac-img-size-step-med: 10rem;
-  --ac-img-size-step-phone: 10rem;
-  --ac-img-size: var(--ac-img-size-step-wide);
+  --ac-img-size: 154px;
   --ac-img-top: 2px;
   --ac-entry-pad-x: 1ch;
   --ac-grid-stat-label-1: 9ch;
@@ -99,19 +96,18 @@
   overflow-x: hidden;
 }
 
-/* Responsive width guard: continuous right-side inset with no breakpoint jump */
+/* Responsive width guard below 1000px */
 @media (max-width: 1000px) {
   #artistsearch + ul.autocomplete-menu,
   #artistsearch + ul.autocomplete-menu.show {
-    --ac-img-size: var(--ac-img-size-step-med);
-    --ac-menu-gutter-right: clamp(3rem, 10vw, 6.5rem);
+    --ac-menu-gutter-total: clamp(7rem, 20vw, 13rem);
     width: min(
       var(--ac-menu-width),
-      calc(100vw - var(--ac-menu-gutter-right))
+      calc(100vw - var(--ac-menu-gutter-total))
     );
     max-width: min(
       var(--ac-menu-width),
-      calc(100vw - var(--ac-menu-gutter-right))
+      calc(100vw - var(--ac-menu-gutter-total))
     ) !important;
   }
 }
@@ -130,9 +126,10 @@
 }
 
 /* Must be after the base anchor rule above, so it wins in cascade */
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   #artistsearch + ul.autocomplete-menu.show {
-    left: -1rem !important;
+    left: auto !important;
+    right: 0 !important;
   }
 }
 
@@ -203,11 +200,6 @@
 }
 
 @media (max-width: 775px) {
-  #artistsearch + ul.autocomplete-menu,
-  #artistsearch + ul.autocomplete-menu.show {
-    --ac-img-size: var(--ac-img-size-step-phone);
-  }
-
   .autocomplete-menu .collage-artist-entry {
     grid-template:
       "cae-img cae-name  cae-name  cae-name  cae-name" max-content
