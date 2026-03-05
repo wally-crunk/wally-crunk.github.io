@@ -51,7 +51,7 @@
   --ac-bio-text-color: hsl(200deg, 20%, 48%);
   --ac-border-color: hsl(240deg, 15%, 75%);
   --ac-hover-background-color: rgb(110 110 110 / 50%);
-  --ac-hover-outline-color: var(--ac-hover-background-color);
+  --ac-hover-outline-color: rgb(60 60 60 / 85%);
   --ac-hover-text-color: hsl(0deg, 0%, 100%);
   --ac-hover-anchor-color: hsl(55, 95%, 60%);
   --ac-label-groups: "📂";
