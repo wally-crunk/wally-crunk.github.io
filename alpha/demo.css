@@ -190,7 +190,7 @@ code {
 }
 
 code {
-  background-color: rgba(110.7, 149, 169, 0.15);
+  background-color: rgba(111, 149, 169, 0.15);
   border-radius: 0.2rem;
   border: transparent;
   padding: 0.05rem 0.2rem;
@@ -262,7 +262,7 @@ textarea:focus {
 .box .box.pad,
 .main_column .box.pad:not(#reply_box),
 .body .box.pad:not(#reply_box) {
-  background-color: rgba(110.7, 149, 169, 0.15);
+  background-color: rgba(111, 149, 169, 0.15);
   border: 2px solid #3c4d50;
   margin: 8px;
   border-radius: 0.25rem;
@@ -346,7 +346,7 @@ li:last-child {
 }
 
 blockquote {
-  background-color: rgba(110.7, 149, 169, 0.15);
+  background-color: rgba(111, 149, 169, 0.15);
   border: 1px dashed #3c4d50;
   margin: 12px;
   padding: 12px;
@@ -742,35 +742,35 @@ table.box2 {
 }
 
 .read {
-  background: url("/static/svg/std/document-ccc.svg") center no-repeat;
+  background: url(config("STATIC_SERVER")/svg/std/document-ccc.svg) center no-repeat;
 }
 
 .unread {
-  background: url("/static/svg/std/document-round-ccc.svg") center no-repeat;
+  background: url(config("STATIC_SERVER")/svg/std/document-round-ccc.svg) center no-repeat;
 }
 
 .read_locked {
-  background: url("/static/svg/std/lock-ccc.svg") center no-repeat;
+  background: url(config("STATIC_SERVER")/svg/std/lock-ccc.svg) center no-repeat;
 }
 
 .unread_locked {
-  background: url("/static/svg/std/lock-round-ccc.svg") center no-repeat;
+  background: url(config("STATIC_SERVER")/svg/std/lock-round-ccc.svg) center no-repeat;
 }
 
 .read_sticky {
-  background: url("/static/svg/std/pin-ccc.svg") center no-repeat;
+  background: url(config("STATIC_SERVER")/svg/std/pin-ccc.svg) center no-repeat;
 }
 
 .unread_sticky {
-  background: url("/static/svg/std/pin-round-ccc.svg") center no-repeat;
+  background: url(config("STATIC_SERVER")/svg/std/pin-round-ccc.svg) center no-repeat;
 }
 
 .read_locked_sticky {
-  background: url("/static/svg/std/pin-and-lock-ccc.svg") center no-repeat;
+  background: url(config("STATIC_SERVER")/svg/std/pin-and-lock-ccc.svg) center no-repeat;
 }
 
 .unread_locked_sticky {
-  background: url("/static/svg/std/pin-and-lock-round-ccc.svg") center no-repeat;
+  background: url(config("STATIC_SERVER")/svg/std/pin-and-lock-round-ccc.svg) center no-repeat;
 }
 
 #footer {
@@ -1395,7 +1395,7 @@ blockquote {
 .filelist_table td,
 .reportinfo_table,
 .torrentdetails {
-  background-color: rgba(110.7, 149, 169, 0.15);
+  background-color: rgba(111, 149, 169, 0.15);
 }
 
 #bookmarks #torrent_table tr:not(.colhead, .colhead_dark) td:nth-child(2) {
@@ -1698,7 +1698,7 @@ body#collage .cats_music {
   }
   /* main logo during desktop view */
   #logo a {
-    background: url("/static/svg/site/ops-logo-lockup-darkmode.svg") right no-repeat;
+    background: url(config("STATIC_SERVER")/svg/site/ops-logo-lockup-darkmode.svg) right no-repeat;
   }
   #logo > a {
     background-size: 200px;
@@ -1850,7 +1850,7 @@ body#collage .cats_music {
     color: #23d1a5;
   }
   #userinfo_minor::before {
-    background: url("/static/svg/std/chevrons-down-ccc.svg") no-repeat;
+    background: url(config("STATIC_SERVER")/svg/std/chevrons-down-ccc.svg) no-repeat;
     filter: brightness(200%); /* force white */
     background-size: 28px;
     background-position: center;
@@ -1924,7 +1924,7 @@ body#collage .cats_music {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-image: url("/static/svg/std/menu-ccc.svg");
+  background-image: url(config("STATIC_SERVER")/svg/std/menu-ccc.svg);
   background-size: 30px;
   background-origin: padding-box;
   background-clip: border-box;
@@ -2364,7 +2364,7 @@ tr.snatched_torrent div.tags::before {
 }
 
 .alertbar:first-of-type {
-  background-image: url("/static/svg/site/ops-icon-harp-ccc.svg");
+  background-image: url(config("STATIC_SERVER")/svg/site/ops-icon-harp-ccc.svg);
   background-position: 8px center;
   background-repeat: no-repeat;
   background-size: 32px;
@@ -2377,7 +2377,7 @@ tr.snatched_torrent div.tags::before {
 /* occurs on failure, for example failed request votes */
 .error_message {
   background-color: #633;
-  background-image: url("/static/svg/site/ops-icon-triangle-000.svg");
+  background-image: url(config("STATIC_SERVER")/svg/site/ops-icon-triangle-000.svg);
   background-position: 8px;
   background-repeat: no-repeat;
   background-size: 32px;
@@ -2434,7 +2434,7 @@ ul#check.nobullet > * {
   border: thick solid #daa520;
   padding: 1rem 1rem 1rem 48px;
   background: hsl(183, 2.5%, 92%);
-  background-image: url("/static/svg/site/ops-icon-triangle-000.svg");
+  background-image: url(config("STATIC_SERVER")/svg/site/ops-icon-triangle-000.svg);
   background-repeat: no-repeat;
   background-position: 8px center;
   background-size: 32px;
@@ -2478,7 +2478,7 @@ ul#check::after {
   border-radius: 0.25rem;
   padding: 1rem 1rem 1rem 48px;
   background-color: hsl(183, 2.5%, 92%);
-  background-image: url("/static/svg/site/ops-icon-triangle-000.svg");
+  background-image: url(config("STATIC_SERVER")/svg/site/ops-icon-triangle-000.svg);
   background-repeat: no-repeat;
   background-position: 8px center;
   background-size: 32px;
@@ -2909,7 +2909,7 @@ Documentation of mobile classes:
   .td_snatched.m_td_right::before,
   .td_seeders.m_td_right::before,
   .td_leechers.m_td_right::before {
-    background: left/10px no-repeat url("/static/svg/std/arrow-loop-ccc.svg");
+    background: left/10px no-repeat url(config("STATIC_SERVER")/svg/std/arrow-loop-ccc.svg);
     color: #d5e0d9;
     content: ":";
     filter: brightness(80%);
@@ -2919,10 +2919,10 @@ Documentation of mobile classes:
     width: 14px;
   }
   .td_seeders.m_td_right::before {
-    background-image: url("/static/svg/std/arrow-up-round-ccc.svg");
+    background-image: url(config("STATIC_SERVER")/svg/std/arrow-up-round-ccc.svg);
   }
   .td_leechers.m_td_right::before {
-    background-image: url("/static/svg/std/arrow-down-round-ccc.svg");
+    background-image: url(config("STATIC_SERVER")/svg/std/arrow-down-round-ccc.svg);
   }
   .m_table.checkboxes td:first-child {
     display: block;
@@ -3316,7 +3316,7 @@ Documentation of mobile classes:
     opacity: 1 !important;
     width: 25px;
     height: 25px;
-    background-image: url("/static/svg/std/chevrons-down-ccc.svg");
+    background-image: url(config("STATIC_SERVER")/svg/std/chevrons-down-ccc.svg);
     background-size: contain;
     z-index: 2200;
     pointer-events: none;
@@ -3332,7 +3332,7 @@ Documentation of mobile classes:
   }
   /* topbar for mobile ~ site logo, upper left */
   #extra5 {
-    background-image: url("/static/svg/site/ops-logo-loop-darkmode.svg");
+    background-image: url(config("STATIC_SERVER")/svg/site/ops-logo-loop-darkmode.svg);
     background-position: left center;
     background-size: auto 30px;
     background-repeat: no-repeat;
@@ -3397,7 +3397,7 @@ Documentation of mobile classes:
   }
   #logo a {
     display: inline-block;
-    background: url("/static/svg/site/ops-logo-loop-darkmode.svg") center no-repeat;
+    background: url(config("STATIC_SERVER")/svg/site/ops-logo-loop-darkmode.svg) center no-repeat;
     background-size: var(--row-height);
     height: var(--row-height);
     width: var(--row-height);
@@ -3593,7 +3593,7 @@ Documentation of mobile classes:
 /* ## 6.1 Debugging Tools
    variou 'debug' and x-debug features are avail in this doc elsewhere */
 #footer p:last-of-type::after {
-  content: " | Apollostage build 20260219";
+  content: " | Apollostage build 20260311";
 }
 
 /* ########################################################################
@@ -3602,27 +3602,5 @@ Documentation of mobile classes:
 /* ########################################################################
    # End of File
    ######################################################################## */
-/* ===== demo0844: autocomplete non-clickable tag bubbles (no hover affordance) ===== */
-/* Mirrors intent of 2.2.1 + 2.2.3 + 2.2.4 for non-anchor tags in artist autocomplete rows */
-.collage-artist-entry .tags > span:not(:empty) {
-  visibility: visible;
-  box-sizing: border-box;
-  display: inline-block;
-  font-style: italic;
-  font-weight: 400;
-  font-size: 0.6rem;
-  vertical-align: baseline;
-  color: #103e6f;
-  background: #c7e6fb;
-  padding: 0 0.5rem;
-  border-radius: 1rem;
-  margin-bottom: 0.1rem;
-}
 
-/* comma handling for mixed/inconsistent markup patterns */
-.collage-artist-entry .tags {
-  color: rgb(0 0 0 / 10%);
-}
-.collage-artist-entry .tags > span:not(:empty) {
-  color: #103e6f;
-}
+/*# sourceMappingURL=demo.css.map */
