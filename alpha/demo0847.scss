@@ -1,0 +1,34 @@
+/* demo0847.scss: conjoined non-clickable autocomplete tag bubble */
+.collage-artist-entry .cae-tag {
+  justify-self: start;
+}
+
+.collage-artist-entry .tags {
+  visibility: visible;
+  box-sizing: border-box;
+  display: inline-block;
+  justify-self: start;
+  width: fit-content;
+  max-width: 100%;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 0.6rem;
+  vertical-align: baseline;
+  color: variables.$color-obj-tag-bubble-fg;
+  background: variables.$color-obj-tag-bubble-bg;
+  padding: 0 0.5rem;
+  border-radius: 1rem;
+  margin-bottom: 0.1rem;
+}
+
+.collage-artist-entry .tags > span:not(:empty) {
+  display: inline;
+  font-style: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  color: inherit;
+  background: none;
+  padding: 0;
+  border-radius: 0;
+  margin: 0;
+}

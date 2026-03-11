@@ -3602,12 +3602,18 @@ Documentation of mobile classes:
 /* ########################################################################
    # End of File
    ######################################################################## */
-/* ===== demo0847: autocomplete conjoined non-clickable tag bubble (no hover affordance) ===== */
-/* Intent: preserve bubble appearance while signaling non-clickable via italics */
+/* ===== demo0847: autocomplete conjoined non-clickable tag bubble (content width) ===== */
+.collage-artist-entry .cae-tag {
+  justify-self: start;
+}
+
 .collage-artist-entry .tags {
   visibility: visible;
   box-sizing: border-box;
   display: inline-block;
+  justify-self: start;
+  width: fit-content;
+  max-width: 100%;
   font-style: italic;
   font-weight: 400;
   font-size: 0.6rem;
@@ -3619,7 +3625,6 @@ Documentation of mobile classes:
   margin-bottom: 0.1rem;
 }
 
-/* Keep children plain so tags appear conjoined in a single bubble */
 .collage-artist-entry .tags > span:not(:empty) {
   display: inline;
   font-style: inherit;
